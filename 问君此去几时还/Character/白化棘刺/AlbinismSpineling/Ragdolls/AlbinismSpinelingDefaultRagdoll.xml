@@ -1,0 +1,258 @@
+﻿<Ragdoll type="AlbinismSpineling" canentersubmarine="False" canwalk="False" spritesheetorientation="90" limbscale="0.5" jointscale="0.5" texturescale="1" colliderheightfromfloor="45" impacttolerance="20" draggable="True" mainlimb="Torso" 
+texture="%ModDir%/Character/白化棘刺/AlbinismSpineling/AlbinismSpineling.png">
+  <collider radius="45" width="0" name="Main Collider" height="100" />
+  <limb id="0" name="Head" type="Head" height="0" width="0" notes="" spriteorientation="NaN" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" attackpriority="2" steerforce="10" stepoffset="0,0" radius="45" mass="0" density="10" pullpos="0,0" refjoint="-1" ignorecollisions="False" healthindex="0" friction="0.3" restitution="0.05" angulardamping="7" mouthpos="1.2,-0.5" constanttorque="0" constantangle="0" scale="1" attackforcemultiplier="1" minseverancedamage="10" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear">
+    <sprite sourcerect="138,0,91,121" origin="0.36367497,0.49676934" depth="0.01" texture="" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
+    <damagemodifier damagesound="" damagemultiplier="2" armorsector="0,360" deflectprojectiles="False" afflictionidentifiers="" afflictiontypes="damage,bleeding,burn" probabilitymultiplier="1" damageparticle="" />
+  </limb>
+  <limb id="1" width="164.69998" height="65" name="Torso" type="Torso" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="NaN" steerforce="50" radius="0" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
+    <sprite texture="" sourcerect="0,129,183,83" origin="0.5,0.5" depth="0.5" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
+  </limb>
+  <limb id="2" width="125.09999" height="60" name="Tail1" type="Tail" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="270" steerforce="0" radius="0" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
+    <sprite texture="" sourcerect="0,43,139,86" origin="0.5,0.5" depth="1" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
+  </limb>
+  <limb id="3" radius="0" width="125.09999" height="60" name="Tail2" type="Tail" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="270" steerforce="0" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
+    <sprite texture="" sourcerect="0,43,139,86" origin="0.5,0.5" depth="0.9" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
+  </limb>
+  <limb id="4" radius="0" width="125.09999" height="60" name="Tail3" type="Tail" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="270" steerforce="0" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
+    <sprite texture="" sourcerect="0,43,139,86" origin="0.5,0.5" depth="0.8" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
+  </limb>
+  <limb id="5" width="113.40001" height="39.6" name="TailEnd" type="Tail" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="270" steerforce="0" radius="0" density="10" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="0" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
+    <sprite texture="" sourcerect="0,0,126,43" origin="0.5,0.5" depth="0.7" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
+  </limb>
+  <!-- Spikes -->
+  <limb id="6" width="15" height="160" name="Spike1" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="0" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
+    <sprite texture="" sourcerect="229,0,26,183" origin="0.5385919,0.47905606" depth="0.61" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
+    <attack ranged="True" avoidfriendlyfire="False" requiredangle="10" structuresoundtype="StructureBlunt" context="Any" targettype="Any" targetlimbtype="None" hitdetectiontype="Distance" afterattack="FallBackUntilCanAttack" afterattackdelay="0.1" reverse="False" retreat="False" fullspeedafterattack="True" range="700" damagerange="700" duration="0.1" cooldown="0.4" secondarycooldown="0" cooldownrandomfactor="0" structuredamage="0" itemdamage="0" stun="0" onlyhumans="False" applyforceonlimbs="" force="0" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" torque="0" applyforcesonlyonce="False" targetimpulse="0" targetimpulseworld="0,0" targetforce="0" targetforceworld="0,0" severlimbsprobability="0" priority="0">
+      <StatusEffect type="OnFailure" target="This">
+        <SpawnItem identifier="spinelingspike" spawnposition="This" count="1" aimspread="5" rotationtype="Limb" rotation="90" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This">
+        <HideLimb duration="5" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+      </StatusEffect>
+    </attack>
+    <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
+      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Character/白化棘刺/AlbinismSpineling/AlbinismSpineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+    </lightsource>
+  </limb>
+  <limb id="7" width="15" height="160" name="Spike2" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="10" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
+    <sprite texture="" sourcerect="229,0,26,183" origin="0.5385919,0.47905606" depth="0.61" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
+    <attack ranged="True" avoidfriendlyfire="False" requiredangle="10" structuresoundtype="StructureBlunt" context="Any" targettype="Any" targetlimbtype="None" hitdetectiontype="Distance" afterattack="FallBackUntilCanAttack" afterattackdelay="0.1" reverse="False" retreat="False" fullspeedafterattack="True" range="700" damagerange="700" duration="0.1" cooldown="0.4" secondarycooldown="0" cooldownrandomfactor="0" structuredamage="0" itemdamage="0" stun="0" onlyhumans="False" applyforceonlimbs="" force="0" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" torque="0" applyforcesonlyonce="False" targetimpulse="0" targetimpulseworld="0,0" targetforce="0" targetforceworld="0,0" severlimbsprobability="0" priority="0">
+      <StatusEffect type="OnFailure" target="This">
+        <SpawnItem identifier="spinelingspike" spawnposition="This" count="1" aimspread="5" rotationtype="Limb" rotation="90" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This">
+        <HideLimb duration="5" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+      </StatusEffect>
+    </attack>
+    <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
+      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Character/白化棘刺/AlbinismSpineling/AlbinismSpineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+    </lightsource>
+  </limb>
+  <limb id="8" width="15" height="160" name="Spike3" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="20" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
+    <sprite texture="" sourcerect="229,0,26,183" origin="0.5385919,0.47905606" depth="0.61" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
+    <attack ranged="True" avoidfriendlyfire="False" requiredangle="10" structuresoundtype="StructureBlunt" context="Any" targettype="Any" targetlimbtype="None" hitdetectiontype="Distance" afterattack="FallBackUntilCanAttack" afterattackdelay="0.1" reverse="False" retreat="False" fullspeedafterattack="True" range="700" damagerange="700" duration="0.1" cooldown="0.4" secondarycooldown="0" cooldownrandomfactor="0" structuredamage="0" itemdamage="0" stun="0" onlyhumans="False" applyforceonlimbs="" force="0" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" torque="0" applyforcesonlyonce="False" targetimpulse="0" targetimpulseworld="0,0" targetforce="0" targetforceworld="0,0" severlimbsprobability="0" priority="0">
+      <StatusEffect type="OnFailure" target="This">
+        <SpawnItem identifier="spinelingspike" spawnposition="This" count="1" aimspread="5" rotationtype="Limb" rotation="90" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This">
+        <HideLimb duration="5" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+      </StatusEffect>
+    </attack>
+    <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
+      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Character/白化棘刺/AlbinismSpineling/AlbinismSpineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+    </lightsource>
+  </limb>
+  <limb id="9" width="15" height="160" name="Spike4" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="30" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
+    <sprite texture="" sourcerect="229,0,26,183" origin="0.5385919,0.47905606" depth="0.61" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
+    <attack ranged="True" avoidfriendlyfire="False" requiredangle="10" structuresoundtype="StructureBlunt" context="Any" targettype="Any" targetlimbtype="None" hitdetectiontype="Distance" afterattack="FallBackUntilCanAttack" afterattackdelay="0.1" reverse="False" retreat="False" fullspeedafterattack="True" range="700" damagerange="700" duration="0.1" cooldown="0.4" secondarycooldown="0" cooldownrandomfactor="0" structuredamage="0" itemdamage="0" stun="0" onlyhumans="False" applyforceonlimbs="" force="0" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" torque="0" applyforcesonlyonce="False" targetimpulse="0" targetimpulseworld="0,0" targetforce="0" targetforceworld="0,0" severlimbsprobability="0" priority="0">
+      <StatusEffect type="OnFailure" target="This">
+        <SpawnItem identifier="spinelingspike" spawnposition="This" count="1" aimspread="5" rotationtype="Limb" rotation="90" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This">
+        <HideLimb duration="5" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+      </StatusEffect>
+    </attack>
+    <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
+      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Character/白化棘刺/AlbinismSpineling/AlbinismSpineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+    </lightsource>
+  </limb>
+  <limb id="10" width="15" height="160" name="Spike5" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="40" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
+    <sprite texture="" sourcerect="229,0,26,183" origin="0.5385919,0.47905606" depth="0.61" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
+    <attack ranged="True" avoidfriendlyfire="False" requiredangle="10" structuresoundtype="StructureBlunt" context="Any" targettype="Any" targetlimbtype="None" hitdetectiontype="Distance" afterattack="FallBackUntilCanAttack" afterattackdelay="0.1" reverse="False" retreat="False" fullspeedafterattack="True" range="700" damagerange="700" duration="0.1" cooldown="0.4" secondarycooldown="0" cooldownrandomfactor="0" structuredamage="0" itemdamage="0" stun="0" onlyhumans="False" applyforceonlimbs="" force="0" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" torque="0" applyforcesonlyonce="False" targetimpulse="0" targetimpulseworld="0,0" targetforce="0" targetforceworld="0,0" severlimbsprobability="0" priority="0">
+      <StatusEffect type="OnFailure" target="This">
+        <SpawnItem identifier="spinelingspike" spawnposition="This" count="1" aimspread="5" rotationtype="Limb" rotation="90" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This">
+        <HideLimb duration="5" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+      </StatusEffect>
+    </attack>
+    <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
+      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Character/白化棘刺/AlbinismSpineling/AlbinismSpineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+    </lightsource>
+  </limb>
+  <limb id="11" width="15" height="160" name="Spike6" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="50" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
+    <sprite texture="" sourcerect="229,0,26,183" origin="0.5385919,0.47905606" depth="0.61" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
+    <attack ranged="True" avoidfriendlyfire="False" requiredangle="10" structuresoundtype="StructureBlunt" context="Any" targettype="Any" targetlimbtype="None" hitdetectiontype="Distance" afterattack="FallBackUntilCanAttack" afterattackdelay="0.1" reverse="False" retreat="False" fullspeedafterattack="True" range="700" damagerange="700" duration="0.1" cooldown="0.4" secondarycooldown="0" cooldownrandomfactor="0" structuredamage="0" itemdamage="0" stun="0" onlyhumans="False" applyforceonlimbs="" force="0" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" torque="0" applyforcesonlyonce="False" targetimpulse="0" targetimpulseworld="0,0" targetforce="0" targetforceworld="0,0" severlimbsprobability="0" priority="0">
+      <StatusEffect type="OnFailure" target="This">
+        <SpawnItem identifier="spinelingspike" spawnposition="This" count="1" aimspread="5" rotationtype="Limb" rotation="90" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This">
+        <HideLimb duration="5" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+      </StatusEffect>
+    </attack>
+    <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
+      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Character/白化棘刺/AlbinismSpineling/AlbinismSpineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+    </lightsource>
+  </limb>
+  <limb id="12" width="15" height="160" name="Spike7" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="-180" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
+    <sprite texture="" sourcerect="229,0,26,183" origin="0.5385919,0.47905606" depth="0.61" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
+    <attack ranged="True" avoidfriendlyfire="False" requiredangle="10" structuresoundtype="StructureBlunt" context="Any" targettype="Any" targetlimbtype="None" hitdetectiontype="Distance" afterattack="FallBackUntilCanAttack" afterattackdelay="0.1" reverse="False" retreat="False" fullspeedafterattack="True" range="700" damagerange="700" duration="0.1" cooldown="0.4" secondarycooldown="0" cooldownrandomfactor="0" structuredamage="0" itemdamage="0" stun="0" onlyhumans="False" applyforceonlimbs="" force="0" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" torque="0" applyforcesonlyonce="False" targetimpulse="0" targetimpulseworld="0,0" targetforce="0" targetforceworld="0,0" severlimbsprobability="0" priority="0">
+      <StatusEffect type="OnFailure" target="This">
+        <SpawnItem identifier="spinelingspike" spawnposition="This" count="1" aimspread="5" rotationtype="Limb" rotation="90" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This">
+        <HideLimb duration="5" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+      </StatusEffect>
+    </attack>
+    <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
+      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Character/白化棘刺/AlbinismSpineling/AlbinismSpineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+    </lightsource>
+  </limb>
+  <limb id="13" width="15" height="160" name="Spike8" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="-190" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
+    <sprite texture="" sourcerect="229,0,26,183" origin="0.5385919,0.47905606" depth="0.61" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
+    <attack ranged="True" avoidfriendlyfire="False" requiredangle="10" structuresoundtype="StructureBlunt" context="Any" targettype="Any" targetlimbtype="None" hitdetectiontype="Distance" afterattack="FallBackUntilCanAttack" afterattackdelay="0.1" reverse="False" retreat="False" fullspeedafterattack="True" range="700" damagerange="700" duration="0.1" cooldown="0.4" secondarycooldown="0" cooldownrandomfactor="0" structuredamage="0" itemdamage="0" stun="0" onlyhumans="False" applyforceonlimbs="" force="0" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" torque="0" applyforcesonlyonce="False" targetimpulse="0" targetimpulseworld="0,0" targetforce="0" targetforceworld="0,0" severlimbsprobability="0" priority="0">
+      <StatusEffect type="OnFailure" target="This">
+        <SpawnItem identifier="spinelingspike" spawnposition="This" count="1" aimspread="5" rotationtype="Limb" rotation="90" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This">
+        <HideLimb duration="5" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+      </StatusEffect>
+    </attack>
+    <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
+      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Character/白化棘刺/AlbinismSpineling/AlbinismSpineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+    </lightsource>
+  </limb>
+  <limb id="14" width="15" height="160" name="Spike9" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="-200" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
+    <sprite texture="" sourcerect="229,0,26,183" origin="0.539,0.47905606" depth="0.61" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
+    <attack ranged="True" avoidfriendlyfire="False" requiredangle="10" structuresoundtype="StructureBlunt" context="Any" targettype="Any" targetlimbtype="None" hitdetectiontype="Distance" afterattack="FallBackUntilCanAttack" afterattackdelay="0.1" reverse="False" retreat="False" fullspeedafterattack="True" range="700" damagerange="700" duration="0.1" cooldown="0.4" secondarycooldown="0" cooldownrandomfactor="0" structuredamage="0" itemdamage="0" stun="0" onlyhumans="False" applyforceonlimbs="" force="0" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" torque="0" applyforcesonlyonce="False" targetimpulse="0" targetimpulseworld="0,0" targetforce="0" targetforceworld="0,0" severlimbsprobability="0" priority="0">
+      <StatusEffect type="OnFailure" target="This">
+        <SpawnItem identifier="spinelingspike" spawnposition="This" count="1" aimspread="5" rotationtype="Limb" rotation="90" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This">
+        <HideLimb duration="5" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+      </StatusEffect>
+    </attack>
+    <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
+      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Character/白化棘刺/AlbinismSpineling/AlbinismSpineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+    </lightsource>
+  </limb>
+  <limb id="15" width="15" height="160" name="Spike10" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="-210" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
+    <sprite texture="" sourcerect="229,0,26,183" origin="0.539,0.479" depth="0.6" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
+    <attack ranged="True" avoidfriendlyfire="False" requiredangle="10" structuresoundtype="StructureBlunt" context="Any" targettype="Any" targetlimbtype="None" hitdetectiontype="Distance" afterattack="FallBackUntilCanAttack" afterattackdelay="0.1" reverse="False" retreat="False" fullspeedafterattack="True" range="700" damagerange="700" duration="0.1" cooldown="0.4" secondarycooldown="0" cooldownrandomfactor="0" structuredamage="0" itemdamage="0" stun="0" onlyhumans="False" applyforceonlimbs="" force="0" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" torque="0" applyforcesonlyonce="False" targetimpulse="0" targetimpulseworld="0,0" targetforce="0" targetforceworld="0,0" severlimbsprobability="0" priority="0">
+      <StatusEffect type="OnFailure" target="This">
+        <SpawnItem identifier="spinelingspike" spawnposition="This" count="1" aimspread="5" rotationtype="Limb" rotation="90" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This">
+        <HideLimb duration="5" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+      </StatusEffect>
+    </attack>
+    <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
+      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Character/白化棘刺/AlbinismSpineling/AlbinismSpineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+    </lightsource>
+  </limb>
+  <limb id="16" width="15" height="160" name="Spike11" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="-220" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
+    <sprite texture="" sourcerect="229,0,26,183" origin="0.539,0.479" depth="0.6" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
+    <attack ranged="True" avoidfriendlyfire="False" requiredangle="10" structuresoundtype="StructureBlunt" context="Any" targettype="Any" targetlimbtype="None" hitdetectiontype="Distance" afterattack="FallBackUntilCanAttack" afterattackdelay="0.1" reverse="False" retreat="False" fullspeedafterattack="True" range="700" damagerange="700" duration="0.1" cooldown="0.4" secondarycooldown="0" cooldownrandomfactor="0" structuredamage="0" itemdamage="0" stun="0" onlyhumans="False" applyforceonlimbs="" force="0" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" torque="0" applyforcesonlyonce="False" targetimpulse="0" targetimpulseworld="0,0" targetforce="0" targetforceworld="0,0" severlimbsprobability="0" priority="0">
+      <StatusEffect type="OnFailure" target="This">
+        <SpawnItem identifier="spinelingspike" spawnposition="This" count="1" aimspread="5" rotationtype="Limb" rotation="90" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This">
+        <HideLimb duration="5" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+      </StatusEffect>
+    </attack>
+    <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
+      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Character/白化棘刺/AlbinismSpineling/AlbinismSpineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+    </lightsource>
+  </limb>
+  <limb id="17" width="15" height="160" name="Spike12" type="None" notes="" scale="1" flip="True" mirrorvertically="False" mirrorhorizontally="False" hide="False" spriteorientation="0" steerforce="0" radius="0" density="1" ignorecollisions="False" angulardamping="7" attackpriority="1" pullpos="0,0" stepoffset="0,0" refjoint="-1" mouthpos="0,0" constanttorque="600" constantangle="-230" attackforcemultiplier="1" minseverancedamage="1" severedfadeouttime="10" applytailangle="False" sinefrequencymultiplier="1" sineamplitudemultiplier="1" blinkfrequency="0" blinkdurationin="0.2" blinkdurationout="0.5" blinkholdtime="0" blinkrotationin="0" blinkrotationout="45" blinkforce="50" blinktransitionin="Linear" blinktransitionout="Linear" healthindex="0" friction="0.3" restitution="0.05">
+    <sprite texture="" sourcerect="229,0,26,183" origin="0.539,0.479" depth="0.61" color="255,255,255,255" deadcolor="255,255,255,255" deadcolortime="0" />
+    <attack ranged="True" avoidfriendlyfire="True" requiredangle="10" structuresoundtype="StructureBlunt" context="Any" targettype="Any" targetlimbtype="None" hitdetectiontype="Distance" afterattack="FallBackUntilCanAttack" afterattackdelay="0.1" reverse="False" retreat="False" fullspeedafterattack="True" range="700" damagerange="700" duration="0.1" cooldown="0.4" secondarycooldown="0" cooldownrandomfactor="0" structuredamage="0" itemdamage="0" stun="0" onlyhumans="False" applyforceonlimbs="" force="0" rootforceworldstart="0,0" rootforceworldmiddle="0,0" rootforceworldend="0,0" roottransitioneasing="Linear" torque="0" applyforcesonlyonce="False" targetimpulse="0" targetimpulseworld="0,0" targetforce="0" targetforceworld="0,0" severlimbsprobability="0" priority="0">
+      <StatusEffect type="OnFailure" target="This">
+        <SpawnItem identifier="spinelingspike" spawnposition="This" count="1" aimspread="5" rotationtype="Limb" rotation="90" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This">
+        <HideLimb duration="5" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile1.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile2.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+        <sound file="Content/Characters/Spineling/SPINELING_attackProjectile3.ogg" range="2000" volume="0.1" selectionmode="random" dontmuffle="true" />
+      </StatusEffect>
+    </attack>
+    <lightsource color="200,200,255,0" range="0" castshadows="false" scale="1" offset="-4,0" rotation="-90" flicker="0" flickerspeed="1" pulsefrequency="0" pulseamount="0" blinkfrequency="0">
+      <lighttexture texture="Content/Lights/pointlight_falloff.png" origin="0.5,0.5" size="1,1" />
+      <Sprite texture="%ModDir%/Character/白化棘刺/AlbinismSpineling/AlbinismSpineling.png" sourcerect="0,230,180,23" origin="0.5,0.5" alpha="0.3" />
+    </lightsource>
+  </limb>
+  <joint limb1="1" limb2="0" limb1anchor="53.459984,0.13700119" limb2anchor="-12.687627,1.0334542" name="Joint 1 - 0" canbesevered="True" severanceprobabilitymodifier="0" breaksound="gore" limitenabled="True" upperlimit="20" lowerlimit="-20" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="1" limb2="2" limb1anchor="-68.91254,-0.042072795" limb2anchor="48.99339,0.6712364" name="Joint 1 - 2" canbesevered="True" severanceprobabilitymodifier="0" breaksound="gore" limitenabled="True" upperlimit="20" lowerlimit="-20" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="2" limb2="3" limb1anchor="-44.255592,1.3942264" limb2anchor="48.894485,0.9996484" name="Joint 2 - 3" canbesevered="True" severanceprobabilitymodifier="0" breaksound="gore" limitenabled="True" upperlimit="20" lowerlimit="-20" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="3" limb2="4" limb1anchor="-44.52195,1.1683774" limb2anchor="49.140663,0.5382765" name="Joint 3 - 4" canbesevered="True" severanceprobabilitymodifier="0" breaksound="gore" limitenabled="True" upperlimit="20" lowerlimit="-20" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="4" limb2="5" limb1anchor="-58.583008,0.50441504" limb2anchor="48.61572,-0.5269808" name="Joint 4 - 5" canbesevered="True" severanceprobabilitymodifier="0" breaksound="gore" limitenabled="True" upperlimit="20" lowerlimit="-20" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="False" />
+  <!-- Spikes -->
+  <joint limb1="1" limb2="6" limb1anchor="38.803356,32.105003" limb2anchor="-0.6675032,-80.70492" name="Joint 1 - 6" canbesevered="True" severanceprobabilitymodifier="1" breaksound="gore" limitenabled="True" upperlimit="90" lowerlimit="-90" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="1" limb2="7" limb1anchor="19.144674,32.90096" limb2anchor="-0.66719764,-80.64778" name="Joint 1 - 7" canbesevered="True" severanceprobabilitymodifier="1" breaksound="gore" limitenabled="True" upperlimit="90" lowerlimit="-90" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="1" limb2="8" limb1anchor="0.61178035,30.470446" limb2anchor="-0.6138888,-80.86028" name="Joint 1 - 8" canbesevered="True" severanceprobabilitymodifier="1" breaksound="gore" limitenabled="True" upperlimit="90" lowerlimit="-90" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="1" limb2="9" limb1anchor="-15.78891,26.618137" limb2anchor="-0.35509402,-80.75977" name="Joint 1 - 9" canbesevered="True" severanceprobabilitymodifier="1" breaksound="gore" limitenabled="True" upperlimit="90" lowerlimit="-90" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="1" limb2="10" limb1anchor="-32.171745,25.870317" limb2anchor="-0.6604538,-81.32308" name="Joint 1 - 10" canbesevered="True" severanceprobabilitymodifier="1" breaksound="gore" limitenabled="True" upperlimit="90" lowerlimit="-90" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="1" limb2="11" limb1anchor="-52.232475,21.229612" limb2anchor="-0.33156964,-80.72825" name="Joint 1 - 11" canbesevered="True" severanceprobabilitymodifier="1" breaksound="gore" limitenabled="True" upperlimit="90" lowerlimit="-90" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="1" limb2="12" limb1anchor="40.20516,-29.857975" limb2anchor="-0.5219292,-80.871025" name="Joint 1 - 12" canbesevered="True" severanceprobabilitymodifier="1" breaksound="gore" limitenabled="False" upperlimit="-90" lowerlimit="-270" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="1" limb2="13" limb1anchor="21.3416,-31.680763" limb2anchor="-0.32905856,-80.768486" name="Joint 1 - 13" canbesevered="True" severanceprobabilitymodifier="1" breaksound="gore" limitenabled="True" upperlimit="-90" lowerlimit="-270" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="1" limb2="14" limb1anchor="2.1109645,-31.09153" limb2anchor="-0.34390283,-80.67595" name="Joint 1 - 14" canbesevered="True" severanceprobabilitymodifier="1" breaksound="gore" limitenabled="True" upperlimit="-90" lowerlimit="-270" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="1" limb2="15" limb1anchor="-14.091572,-26.078642" limb2anchor="-0.33120048,-80.43433" name="Joint 1 - 15" canbesevered="True" severanceprobabilitymodifier="1" breaksound="gore" limitenabled="True" upperlimit="-90" lowerlimit="-270" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="1" limb2="16" limb1anchor="-32.452126,-21.518396" limb2anchor="-0.6829336,-81.00032" name="Joint 1 - 16" canbesevered="True" severanceprobabilitymodifier="1" breaksound="gore" limitenabled="True" upperlimit="-90" lowerlimit="-270" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="False" />
+  <joint limb1="1" limb2="17" limb1anchor="-51.084232,-19.63034" limb2anchor="-0.48342818,-80.82745" name="Joint 1 - 17" canbesevered="True" severanceprobabilitymodifier="1" breaksound="gore" limitenabled="True" upperlimit="-90" lowerlimit="-270" stiffness="0.25" scale="1" weldjoint="False" clockwiserotation="False" />
+</Ragdoll>

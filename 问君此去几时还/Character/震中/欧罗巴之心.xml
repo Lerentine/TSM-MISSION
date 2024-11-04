@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Charactervariant inherit="震中" speciesname="欧罗巴之心" usebosshealthbar="true">
+  <health vitality="15000" />
+  <ragdoll scalemultiplier="1" />
+  <attack damagemultiplier="1.3" rangemultiplier="1.25" impactmultiplier="1.5" />
+  <ai combatstrength="30000" sight="0.5" hearing="3" avoidabyss="False" stayinabyss="False" />
+</Charactervariant>

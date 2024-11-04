@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+  <!--原版-->
+  <!-- tsmmission11 -->
+  <missionname.tsmmission11>Border Case</missionname.tsmmission11>
+  <missiondescription.tsmmission11>Since the opening of the Abyssal Gate, many uninvited visitors have come to the shallow waters of the Abyss. We marked them from a distance during the last confrontation, and this time, the signal was detected inside the territory of The Sea of Miracles. So, warriors, with swords in hand, let's fight to the end!</missiondescription.tsmmission11>
+  <missionsuccess.tsmmission11>Falling Stars</missionsuccess.tsmmission11>
+  <missionheader0.tsmmission11>Recorded in Border Archive, No. 011.</missionheader0.tsmmission11>
+  <missionmessage0.tsmmission11>Our land is not to be trampled on by any hostile creature.</missionmessage0.tsmmission11>
+  <missionsonarlabel.tsmmission11>Disk Star</missionsonarlabel.tsmmission11>
+  <!-- tsmmission12 -->
+  <missionname.tsmmission12>Eclipse</missionname.tsmmission12>
+  <missiondescription.tsmmission12>T.S.M is fighting in frontline Area 73 and has no time to worry about the safety of this area, but T.S.M guarantees a [reward] mk to the captain who kills these beasts.</missiondescription.tsmmission12>
+  <missionsuccess.tsmmission12>Congratulations, you made it!</missionsuccess.tsmmission12>
+  <missionheader0.tsmmission12>Third Contact of Eclipse</missionheader0.tsmmission12>
+  <missionmessage0.tsmmission12>What a bright performance!</missionmessage0.tsmmission12>
+  <missionsonarlabel.tsmmission12>Target</missionsonarlabel.tsmmission12>
+  <!-- tsmmission13 -->
+  <missionname.tsmmission13>BUG! BUG!</missionname.tsmmission13>
+  <missiondescription.tsmmission13>We have detected a swarm of large worms nearby and expect them to reach this outpost within five hours. Captain, please repel them, or we will all be buried in the ocean.</missiondescription.tsmmission13>
+  <missionsuccess.tsmmission13>All targets eliminated.</missionsuccess.tsmmission13>
+  <missionheader0.tsmmission13>Swarm Terminator</missionheader0.tsmmission13>
+  <missionmessage0.tsmmission13>We don't fear the worms anymore!</missionmessage0.tsmmission13>
+  <missionsonarlabel.tsmmission13>BUG</missionsonarlabel.tsmmission13>
+  <!-- tsmmission14 -->
+  <missionname.tsmmission14>The Deepest Nightmares</missionname.tsmmission14>
+  <missiondescription.tsmmission14>!!! Emergency !!! T.S.M frontline observatory found some giant beasts quickly approaching this area, but the 日暮山 special-op assault squad is out on a mission, they cannot rush back in time. T.S.M is calling for heroic captains to stop disaster from happening and promising that the captain who can return alive will be rewarded with [reward] mk.</missiondescription.tsmmission14>
+  <missionsuccess.tsmmission14>We've brought down the gods.</missionsuccess.tsmmission14>	
+  <missionheader0.tsmmission14>Monsters and Demons</missionheader0.tsmmission14>
+  <missionmessage0.tsmmission14>It's incredible, you really made it, worthy of a legendary captain!</missionmessage0.tsmmission14>
+  <missionsonarlabel.tsmmission14>Nightmares</missionsonarlabel.tsmmission14>
+  <!-- tsmmission15 -->
+  <missionname.tsmmission15>The storm gathering close, the submarine carried to the clouds</missionname.tsmmission15>
+  <missiondescription.tsmmission15>A school of hammerheads is endangering submarines travelling between [location1] and [location2]. They have swept away many outposts and are enthroned as a god in some areas. Captain, please attack and destroy them.</missiondescription.tsmmission15>
+  <missionsuccess.tsmmission15>I have destroyed Gods.</missionsuccess.tsmmission15>
+  <missionheader0.tsmmission15>Not worthy of a fight.</missionheader0.tsmmission15>
+  <missionmessage0.tsmmission15>Old gods fall, new gods rise.</missionmessage0.tsmmission15>
+  <missionsonarlabel.tsmmission15>Storm</missionsonarlabel.tsmmission15>
+  <!-- tsmmission16 -->
+  <missionname.tsmmission16>Latchers Incoming!</missionname.tsmmission16>
+  <missiondescription.tsmmission16>The Sea of Miracles has observed a group of Latchers advancing towards this area. We promise to reward the captain who repels them with [reward]mk.</missiondescription.tsmmission16>
+  <missionsuccess.tsmmission16>Breaking the latch</missionsuccess.tsmmission16>
+  <missionheader0.tsmmission16>The impact not to take place</missionheader0.tsmmission16>
+  <missionmessage0.tsmmission16>Captain, well done, you have protected this area once again.</missionmessage0.tsmmission16>
+  <missionsonarlabel.tsmmission16>Latcher</missionsonarlabel.tsmmission16>
+  <!-- tsmmission17 -->
+  <missionname.tsmmission17>The lamenting First Creatures</missionname.tsmmission17>
+  <missiondescription.tsmmission17>Captain, we have found in this area multiple crawler clans fighting for territory. They are interfering with inter-outpost navigation, so we sent down a squad to deal with them, but the contact was lost quickly. It's an emergency, so we decided to hire you to find the whereabouts of the lost soldiers and annihilate the threats - every one of them.</missiondescription.tsmmission17>
+  <missionsuccess.tsmmission17>The crawlers' graveyard? No, our graveyard.</missionsuccess.tsmmission17>
+  <missionheader0.tsmmission17>The dissolved past</missionheader0.tsmmission17>
+  <missionmessage0.tsmmission17>We found our warriors in uniforms of The Sea of Miracles inside the stomachs of the crawlers. So young they were, yet they received treatment like soldiers, deployment like weapons, and burial like objects. In the end, they received no honor or praise which they deserved, or even a decent funeral.</missionmessage0.tsmmission17>
+  <missionsonarlabel.tsmmission17>Crawler</missionsonarlabel.tsmmission17>
+  <!--EMBI实验体-->
+  <!-- tsmmission21 -->
+  <missionname.tsmmission21>Test Subjects of Europa Magic and Biology Inc.</missionname.tsmmission21>
+  <missiondescription.tsmmission21>The Europa Magic and Biology Inc. has donated a batch of modified mysterious creatures to East Asia Heavy Industries. However, during testing, the subjects escaped. We have previously sent the Higurashi Forces to suppress them, but the contact was lost immediately they encountered the subjects. Be aware, captain, these are not ordinary spinelings, so please handle them carefully.</missiondescription.tsmmission21>
+  <missionsuccess.tsmmission21>This mission must be kept confidential, or East Asia Heavy Industries will face heavy fines.</missionsuccess.tsmmission21>
+  <missionheader0.tsmmission21>Containment Failure</missionheader0.tsmmission21>
+  <missionmessage0.tsmmission21>Hush! Silence!</missionmessage0.tsmmission21>
+  <missionsonarlabel.tsmmission21>Subject 001</missionsonarlabel.tsmmission21>
+  <!-- tsmmission23 --> 
+  <missionname.tsmmission23>EMBI Testing Ground</missionname.tsmmission23>
+  <missiondescription.tsmmission23>The Europa Magic and Biology Inc. has issued a challenge. Their new test subjects are ready for use and they are recruiting captains undaunted by death to record and analyze the subjects' capabilities. If you make it back alive and triumphant, they will offer a generous reward.</missiondescription.tsmmission23>
+  <missionsuccess.tsmmission23>“The gods are mourning! Let me hear... who is wailing...”</missionsuccess.tsmmission23>
+  <missionfailure.tsmmission23>You didn't finish the experiment...</missionfailure.tsmmission23>
+  <missionheader0.tsmmission23>The Death Knell</missionheader0.tsmmission23>
+  <missionmessage0.tsmmission23>The knell rings, but it is a salute to the opening of another world gate.</missionmessage0.tsmmission23>
+  <missionsonarlabel.tsmmission23>The Triumvirate</missionsonarlabel.tsmmission23>
+  <!-- tsmmission24 -->
+  <missionname.tsmmission24>A Broken Star, a Solitary Flame</missionname.tsmmission24>
+  <missiondescription.tsmmission24>EMBI has modified Subject T-044 based on data collected from the last combat and is currently recruiting crew members for the challenge. I wonder if you are interested.</missiondescription.tsmmission24>
+  <missionsuccess.tsmmission24>"The cry of the inferno echoes in the abyss, its angry roar resonating, the sharp whistling sound from its mouthparts filling the waters. The flames it spewed are still burning, and will keep burning...”</missionsuccess.tsmmission24>
+  <missionfailure.tsmmission24>You didn't finish the experiment...</missionfailure.tsmmission24>
+  <missionheader0.tsmmission24>Mark of the Dead</missionheader0.tsmmission24>
+  <missionmessage0.tsmmission24>In the abyss, the inferno mourns, I am clad in armor, all were just a few sparks.</missionmessage0.tsmmission24>
+  <missionsonarlabel.tsmmission24>T-044-γ</missionsonarlabel.tsmmission24>
+  <!-- tsmmission25 -->
+  <missionname.tsmmission25>Stump Wood, Feeble Torch</missionname.tsmmission25>
+  <missiondescription.tsmmission25>EMBI has modified Subject 009 based on data collected from the last combat and is currently recruiting crew members for the challenge. I wonder if you are interested.</missiondescription.tsmmission25>
+  <missionsuccess.tsmmission25>"The poisonous fangs of Subject 009 have been pulled out. The decaying torch wanders in the abyss, corpses lay between layers of ice, but do not feel afraid, for our iron beast is blessing us."</missionsuccess.tsmmission25>
+  <missionfailure.tsmmission25>You didn't finish the experiment...</missionfailure.tsmmission25>
+  <missionheader0.tsmmission25>A Realization that Never Fades</missionheader0.tsmmission25>
+  <missionmessage0.tsmmission25>In the ice, the plague sweeps, I hold my gun, there was nothing more than the ordinary.</missionmessage0.tsmmission25>
+  <missionsonarlabel.tsmmission25>Subject 009</missionsonarlabel.tsmmission25>
+  <!-- tsmmission26 -->
+  <missionname.tsmmission26>Minions of Memory</missionname.tsmmission26>
+  <missiondescription.tsmmission26>EMBI has modified Subject T-037 based on data collected from the last combat and is currently recruiting crew members for the challenge. I wonder if you are interested.</missiondescription.tsmmission26>
+  <missionsuccess.tsmmission26>"I will present to you my creation that surpasses the gods'."</missionsuccess.tsmmission26>
+  <missionfailure.tsmmission26>You didn't finish the experiment...</missionfailure.tsmmission26>
+  <missionheader0.tsmmission26>Darkness of the Abyss</missionheader0.tsmmission26>
+  <missionmessage0.tsmmission26>In Europa, the thunder roars, our machine advances, and the defense line stands.</missionmessage0.tsmmission26>
+  <missionsonarlabel.tsmmission26>T-037-α</missionsonarlabel.tsmmission26>
+  <!--新生-->
+  <!-- tsmmission31 -->
+  <missionname.tsmmission31>Mudraptor hunting</missionname.tsmmission31>
+  <missiondescription.tsmmission31>While passing through this outpost, we heard that a group of mutated mudraptors are wantonly attacking submarines around. As travelling warriors, we must lend our help.</missiondescription.tsmmission31>
+  <missionsuccess.tsmmission31>Friend</missionsuccess.tsmmission31>
+  <missionheader0.tsmmission31>Helping others is helping yourselves.</missionheader0.tsmmission31>
+  <missionmessage0.tsmmission31>We come from all corners of the world and go to all ends of it.</missionmessage0.tsmmission31>
+  <missionsonarlabel.tsmmission31>Nightmare deathraptor</missionsonarlabel.tsmmission31>
+  <!-- tsmmission32 -->
+  <missionname.tsmmission32>The Everlasting Past</missionname.tsmmission32>
+  <missiondescription.tsmmission32>We found fractal guardians in a cave, apparently still executing their last task - clearing the cave. The minerals in this cave are exactly what this outpost needs. The Sea of Miracles would have ignored this, but they paid us too much. So, what do you choose?</missiondescription.tsmmission32>
+  <missionsuccess.tsmmission32>This is a story of one forsaken people destroying another.</missionsuccess.tsmmission32>
+  <missionheader0.tsmmission32>When this war ends</missionheader0.tsmmission32>
+  <missionmessage0.tsmmission32>If I ever get a chance to leave Europa like whoever created these machines, I want to see the sunset and feel the seasons. I think she would wish the same.</missionmessage0.tsmmission32>
+  <missionsonarlabel.tsmmission32>Fractal Cleaner</missionsonarlabel.tsmmission32>
+  <!-- tsmmission33 -->
+  <missionname.tsmmission33>Turbulent Waves, Towering Tides</missionname.tsmmission33>
+  <missiondescription.tsmmission33>Peace did not last long after we expelled hammerheads from this region. Soon, a new group of native creatures came to occupy this lane. This time, we won't just drive them away: an example is to be made. Eradicate them! We will reward you handsomely.</missiondescription.tsmmission33>
+  <missionsuccess.tsmmission33>The blood spatters on the hull have not cooled down</missionsuccess.tsmmission33>
+  <missionheader0.tsmmission33>More lives are lost at the point of guns</missionheader0.tsmmission33>
+  <missionmessage0.tsmmission33>We have fought for peace in the area.</missionmessage0.tsmmission33>
+  <missionsonarlabel.tsmmission33>Swordhead Shark</missionsonarlabel.tsmmission33>
+  <!-- tsmmission34 -->
+  <missionname.tsmmission34>Microscopic War</missionname.tsmmission34>
+  <missiondescription.tsmmission34>Haha, guess what. We used miniaturizing weapons to shrink some latchers down, but they became too small and escaped the shackles. Captain, take care of them before they cause troubles!</missiondescription.tsmmission34>
+  <missionsuccess.tsmmission34>An Interesting Experiment</missionsuccess.tsmmission34>
+  <missionheader0.tsmmission34>There's no turning back.</missionheader0.tsmmission34>
+  <missionmessage0.tsmmission34>Hopefully, one day I can have my long-cherished wish realized, cutting off all chains of karma.</missionmessage0.tsmmission34>
+  <missionsonarlabel.tsmmission34>Microscopic Latcher</missionsonarlabel.tsmmission34>
+  <!-- tsmmission35 -->
+  <missionname.tsmmission35>Moloch Surge</missionname.tsmmission35>
+  <missiondescription.tsmmission35>We detected a group of anomalous Molochs attacking ships traveling between [location1] and [location2]. Be aware, these Molochs are exceptionally aggresive, please be cautious!</missiondescription.tsmmission35>
+  <missionsuccess.tsmmission35>The moloch group has been cleared.</missionsuccess.tsmmission35>
+  <missionheader0.tsmmission35>The Great Purge Completed</missionheader0.tsmmission35>
+  <missionmessage0.tsmmission35>All targets neutralized, return to the base!</missionmessage0.tsmmission35>
+  <missionsonarlabel.tsmmission35>Moloch</missionsonarlabel.tsmmission35>
+  <!-- tsmmission36 -->
+  <missionname.tsmmission36>Their Land, Their Blood</missionname.tsmmission36>
+  <missiondescription.tsmmission36>Immigrants are flooding into the outpost, making it almost overcrowded. Therefore, we decided to open a new outpost. We scanned a alien ruin in a perfect position, but there are many guardians inside. We hope you can help us with them, the reward will of course not be an issue.</missiondescription.tsmmission36>
+  <missionsuccess.tsmmission36>"Here intertwines eternity and destruction."</missionsuccess.tsmmission36>
+  <missionheader0.tsmmission36>Plunderer</missionheader0.tsmmission36>
+  <missionmessage0.tsmmission36>We were born plunderers.</missionmessage0.tsmmission36>
+  <missionsonarlabel.tsmmission36>Fractal Guardians</missionsonarlabel.tsmmission36>
+  <!-- tsmmission37 -->
+  <missionname.tsmmission37>Witch Hunt</missionname.tsmmission37>
+  <missiondescription.tsmmission37>We located the sub that attacked the "choirs", and it seems to have undergone a secondary mutation. According to information from Vila, this mutated worm seems to be the carrier of previously missing lieutenant, Brynhild. We're unclear about what happened during its disappearance, and no further information was transmitted from Vila yet. But no matter who or what the worm is, it will only cause greater destruction if left alone.</missiondescription.tsmmission37>
+  <missionsuccess.tsmmission37>The Jaw of the Witch</missionsuccess.tsmmission37>
+  <missionheader0.tsmmission37>Eternal Tombstone</missionheader0.tsmmission37>
+  <missionmessage0.tsmmission37>End</missionmessage0.tsmmission37> <!-- todo -->
+  <missionsonarlabel.tsmmission37>The Witch</missionsonarlabel.tsmmission37>
+  <!-- tsmmission38 -->
+  <missionname.tsmmission38>Albino Creature</missionname.tsmmission38>
+  <missiondescription.tsmmission38>A group of unwelcome guests has arrived in the channel, but it's clear that these creatures are not natural mutants. Alright sailors, it's time to clean up the trash, no matter whose work they are.</missiondescription.tsmmission38>
+  <missionsuccess.tsmmission38>First Appearance of the Albino Family</missionsuccess.tsmmission38>
+  <missionfailure.tsmmission38>Ongoing Death</missionfailure.tsmmission38>
+  <missionheader0.tsmmission38>Breaking Dawn</missionheader0.tsmmission38>
+  <missionmessage0.tsmmission38>I stand in a fusion of water and blood. Above me streak meteors across the sky; below me lay bodies covering the seabed.</missionmessage0.tsmmission38>
+  <missionsonarlabel.tsmmission38>Albino Spineling</missionsonarlabel.tsmmission38>
+  <!--移植-->
+  <!-- tsmmission41 -->
+  <missionname.tsmmission41>Earthquake</missionname.tsmmission41>
+  <missiondescription.tsmmission41>A massive pulse interference has been detected in the area with severe vibration sensible across the shipping lane. Submarines passing by are advised to steer clear of this lane until The Sea of Miracles resolves the issue.</missiondescription.tsmmission41>
+  <missionsuccess.tsmmission41>A world-shattering change is upon us.</missionsuccess.tsmmission41>
+  <missionheader0.tsmmission41>Judgment</missionheader0.tsmmission41>
+  <missionmessage0.tsmmission41>I entrust the years to the abyss, letting it undulate beneath my steed. I excavate my own grave in my own eyes.</missionmessage0.tsmmission41>
+  <missionsonarlabel.tsmmission41>Epicenter</missionsonarlabel.tsmmission41>
+  <!-- tsmmission42 -->
+  <missionname.tsmmission42>Whale Surge</missionname.tsmmission42>
+  <missiondescription.tsmmission42>There's a profession called whaleman on Earth, and there's also one on Europa, but with different whales. Sailors, proceed to the target area and hunt down the whales there.</missiondescription.tsmmission42>
+  <missionsuccess.tsmmission42>Doomsday of Whales</missionsuccess.tsmmission42>
+  <missionheader0.tsmmission42>Whaleman</missionheader0.tsmmission42>
+  <missionmessage0.tsmmission42>Congratulations on becoming a qualified whaleman.</missionmessage0.tsmmission42>
+  <missionsonarlabel.tsmmission42>Whale</missionsonarlabel.tsmmission42>
+  <!-- tsmmission43 -->
+  <missionname.tsmmission43>Dreadnought Fleet</missionname.tsmmission43>
+  <missiondescription.tsmmission43>A few days ago, the Coalition's Dreadnought Fleet fell in this area. According to gathered information, they are still 'alive.' Our mission now is to ensure their true demise. Be cautious: this operation requires high maneuverability.</missiondescription.tsmmission43>
+  <missionsuccess.tsmmission43>Hypermobile Warfare</missionsuccess.tsmmission43>
+  <missionheader0.tsmmission43>Dreadnought? Deadnought!</missionheader0.tsmmission43>
+  <missionmessage0.tsmmission43>The true Dreadnought Fleet should rest in the ship graveyard.</missionmessage0.tsmmission43>
+  <missionsonarlabel.tsmmission43>Dreadnought</missionsonarlabel.tsmmission43>
+  <!-- tsmmission44 -->
+  <missionname.tsmmission44>Pretenders</missionname.tsmmission44>
+  <missiondescription.tsmmission44>Captain, this is a commission from the mining outpost. It's said that their mining ships were attacked by the mines themselves. I'm not sure how such an absurd statement came about, but please investigate.</missiondescription.tsmmission44>
+  <missionsuccess.tsmmission44>Mineral Encounter</missionsuccess.tsmmission44>
+  <missionheader0.tsmmission44>The Birth of Heresy</missionheader0.tsmmission44>
+  <missionmessage0.tsmmission44>I feel that our misdeeds will eventually lead to our demise in this foreign land.</missionmessage0.tsmmission44>
+  <missionsonarlabel.tsmmission44>"Mine"</missionsonarlabel.tsmmission44>
+  <!-- tsmmission45 -->
+  <missionname.tsmmission45>Twin Paradox</missionname.tsmmission45>
+  <missiondescription.tsmmission45>We discovered two alien constructs driven by the brains of a pair of twins. I don't know how I feel about this kind of brain extraction, but it must have been cruel and inhumane. However, we have no capacity to pity these twins; the only thing we can do is to send them to their deaths and hope they will never reborn on Europa.</missiondescription.tsmmission45>
+  <missionsuccess.tsmmission45>The Operator, the Rioter, the Originator</missionsuccess.tsmmission45>
+  <missionheader0.tsmmission45>It's actually a sad story.</missionheader0.tsmmission45>
+  <missionmessage0.tsmmission45>Civilization and history weigh heavily on it.</missionmessage0.tsmmission45>
+  <missionsonarlabel.tsmmission45>Twin</missionsonarlabel.tsmmission45>
+  <!-- tsmmission46 -->
+  <missionname.tsmmission46>Ecliptic Shadow</missionname.tsmmission46>
+  <missiondescription.tsmmission46>When wings turn into swimming fish, the curtain of invasion falls. They dwell in deep caves, guarding treasures like dragons. Their thunderous blasts resonate. This is their kingdom; entering it means starting a war.</missiondescription.tsmmission46>
+  <missionsuccess.tsmmission46>The Machine of War</missionsuccess.tsmmission46>
+  <missionheader0.tsmmission46>The March of History</missionheader0.tsmmission46>
+  <missionmessage0.tsmmission46>The victor is not who respects life and harmonic coexistence. When the final strike fell, the last guardians of the cave became nourishment for the sea, leaving nothing behind.</missionmessage0.tsmmission46>
+  <missionsonarlabel.tsmmission46>Shadow Raider</missionsonarlabel.tsmmission46>
+  <!-- tsmmission47 -->
+  <missionname.tsmmission47>Cloud Piercer</missionname.tsmmission47>
+  <missiondescription.tsmmission47>Recently, people at the outpost discovered a new species of fish. Its meat is delicious and fetches a good price. However, most of them live in caves. Fishermen here are offering a bounty for someone to enter the caves and drive them out, which would allow for unobstructed fishing.</missiondescription.tsmmission47>
+  <missionsuccess.tsmmission47>Money is Your Lie</missionsuccess.tsmmission47>
+  <missionheader0.tsmmission47>Bloody Massacre</missionheader0.tsmmission47>
+  <missionmessage0.tsmmission47>A photograph was taken, documenting another achievement of the crew, another great victory of human over nature...</missionmessage0.tsmmission47>
+  <missionsonarlabel.tsmmission47>Skypiercing Dolphin</missionsonarlabel.tsmmission47>
+  <!--站点-->
+  <!-- tsmmission51 -->
+  <missionname.tsmmission51>Living Carcass</missionname.tsmmission51>	
+  <missiondescription.tsmmission51>We lost contact with this outpost a while ago. Before that, a special cargo of eggs was delivered there. We suspect someone deliberately placed them at the outpost. Your mission is to clear everything that still moves at the outpost and destroy the reactor.</missiondescription.tsmmission51>
+  <missionsuccess.tsmmission51>The outpost has been cleared, leave the follow-up to us.</missionsuccess.tsmmission51>
+  <missionheader0.tsmmission51>Tartarus</missionheader0.tsmmission51>
+  <missionmessage0.tsmmission51>The Sea of Miracles has found information about this cargo, but give us some time to decrypt it. We will find out who is behind this and make them pay.</missionmessage0.tsmmission51>
+  <missionsonarlabel.tsmmission51>Unknown Lifeform</missionsonarlabel.tsmmission51>
+  <!-- tsmmission52 -->
+  <missionname.tsmmission52>Crisis! Sinking of the Choir</missionname.tsmmission52>
+  <missiondescription.tsmmission52>Captain, our submarine transporting genes... let me correct my self, our submarine transporting a choir was attacked by an unknown creature and sunk. Please search the area and retrieve important data on the wreck as soon as possible.</missiondescription.tsmmission52>
+  <missionsuccess.tsmmission52>Retrieval Succeeds</missionsuccess.tsmmission52>
+  <missionheader0.tsmmission52>Everyone sinks until they cannot sink anymore.</missionheader0.tsmmission52>
+  <missionmessage0.tsmmission52>Well done, Captain. The Sea of Miracles will give you further orders as soon as we decrypt the data. What a pity about these choir boys...</missionmessage0.tsmmission52>
+  <missionsonarlabel.tsmmission52>Wreck</missionsonarlabel.tsmmission52>
+  <!-- tsmmission53 -->
+  <missionname.tsmmission53>Concert</missionname.tsmmission53>
+  <missiondescription.tsmmission53>The music of death echoes in their ears, souls from the abyss climb into the outpost, nothing reflects from their turbid eyes. I feel like I've slept for a long time, but now I'm finally awake. (Clear all living creatures in the outpost and destroy the reactor)</missiondescription.tsmmission53>
+  <missionsuccess.tsmmission53>Concerto of Death</missionsuccess.tsmmission53>
+  <missionheader0.tsmmission53>Fear of the Unknown</missionheader0.tsmmission53>
+  <missionmessage0.tsmmission53>There is no longer a soul inside the carcass, but the singing continues, she's still chanting...</missionmessage0.tsmmission53>
+  <missionsonarlabel.tsmmission53>The Singer</missionsonarlabel.tsmmission53>
+  <missionname.tsmmission60>All in the Name of Justice</missionname.tsmmission60>
+  <missiondescription.tsmmission60>The Sea of Miracles has blocked the lane between [location1] and [location2], but you're willing to take the risk...</missiondescription.tsmmission60>
+  <missionsuccess.tsmmission60>Lives dissipate as blood disappears into water.</missionsuccess.tsmmission60>
+  <missionheader0.tsmmission60>The Tomb</missionheader0.tsmmission60>
+  <missionmessage0.tsmmission60>“Now this is really not worth it...”</missionmessage0.tsmmission60> <!-- todo -->
+  <missionsonarlabel.tsmmission60>HTC24 Turquoise</missionsonarlabel.tsmmission60>
+  <missionname.tsmmission54>Quick Reaction Force</missionname.tsmmission54>
+  <missiondescription.tsmmission54>An elite squadron of the Coalition attacked and took over this outpost. They may launch a preemtive attack on any docked submarine. Eliminate them and destroy the reactor to claim the Separatists' bounty.</missiondescription.tsmmission54>
+  <missionsuccess.tsmmission54>Underwater Mist</missionsuccess.tsmmission54>
+  <missionheader0.tsmmission54>The Tomb</missionheader0.tsmmission54>
+  <missionmessage0.tsmmission54>Mission accomplished. Return to the submarine and contact the Separatists to collect your reward.</missionmessage0.tsmmission54>
+  <missionsonarlabel.tsmmission54>Quick Reaction Force</missionsonarlabel.tsmmission54>
+  <!--名字-->
+  <character.Experiment_T044Y>The Inferno</character.Experiment_T044Y>
+  <character.荒疫>The Plague</character.荒疫>
+  <character.雷龙>The Thunder</character.雷龙>
+  <character.T037α>Subject T-037-α</character.T037α>
+  <character.T044Y>Subject T-044-γ</character.T044Y>
+  <character.Experiment009>Subject 009</character.Experiment009>
+  <character.巨型女妖>Giant Charybdis</character.巨型女妖>
+  <character.微观捕勾兽>Microscopic Latcher</character.微观捕勾兽>
+  <character.微观捕勾兽模板>Microscopic Latcher</character.微观捕勾兽模板>
+  <character.NightmareMudraptor>Nightmare Mudraptor</character.NightmareMudraptor>
+  <character.FractalTwin_Destruction>Destruction</character.FractalTwin_Destruction>
+  <character.FractalTwin_Sabotage>Sabotage</character.FractalTwin_Sabotage>
+  <character.Shadowreave>Shadow Reave</character.Shadowreave>
+  <character.Eclipticshadow>Ecliptic Shadow</character.Eclipticshadow>
+  <character.Skypiercingdolphin>Skypiercing Dolphin</character.Skypiercingdolphin>
+  <character.Shadowcharm>Shadowcharm</character.Shadowcharm>
+  <character.AlbinismSpineling_giant>Albino Spineling</character.AlbinismSpineling_giant>
+  <character.AlbinismSpineling>Albino Spineling</character.AlbinismSpineling>
+  <character.corruptionMachinery>Corrupt Machinery</character.corruptionMachinery>
+  <character.OceanEnchantress>Ocean Enchantress</character.OceanEnchantress>
+  <character.zhaoge>Zhaoge</character.zhaoge>
+  <!--跳帮人员-->
+  <character.corrode>Corrosion</character.corrode>
+  <character.MobileTaskForce>TSM Mobile Task Force</character.MobileTaskForce>
+  <character.MobileTaskForce1>TSM Mobile Task Force</character.MobileTaskForce1>
+  <character.RiotSquad>TSM Mobile Task Force</character.RiotSquad>
+  <character.sundownm>Higurashi Forces</character.sundownm>
+  <character.Ship>HTC24 Turquoise Troop Carrier</character.Ship>
+  <character.Ship1>HTC24 Turquoise</character.Ship1>
+  <character.Ship2>HTC24 Turquoise</character.Ship2>
+  <character.Ship3>HTC24 Turquoise</character.Ship3>
+  <character.sight>Landing Craft</character.sight>
+  <character.sight1>Landing Craft</character.sight1>
+  <character.sight2>Landing Craft</character.sight2>
+  <character.sight3>Landing Craft</character.sight3>
+  <!--镇暴部队-->
+  <character.UnionRiotRaiders>Coalition Riot Commando</character.UnionRiotRaiders>
+  <character.UnionRiotAttacker>Coalition Riot Attacker</character.UnionRiotAttacker>
+  <character.QuickReactionForce>Coalition Riot Quick Reaction Force</character.QuickReactionForce>
+  <character.QuickReactionForce1>Coalition Riot Quick Reaction Force</character.QuickReactionForce1>
+  <tsm.a1>Hello, I am the captain of Peregrine Falcon Squad, The Sea of Miracles. We're overwhelmed with tasks and can't handle everything, so we're hoping for some assistance with certain matters, and of course, we'll pay for it!</tsm.a1>
+  <tsm.a2>The situation in The Sea of Miracles is not great. We were about to head to Kyushu Armory, but then commissions came up here. What's your opinion about finishing them for us? </tsm.a2>
+  <tsm.a3>Hello, I am the liaison officer from EMBI. We have posted a few commissions; are you interested in any of them?</tsm.a3>
+  <tsm.a4>Europa is vast, we love it in its immensity; time is long, we love it in its brevity; our lives are eager and fiery, deserving of living slowly, and also deserving of sudden death. This is a world where departure is common, but sadly, we're not good at goodbyes. Thus, before setting sail, the most important thing is to first be brave, then honest, and finally, believe in the existence of miracles! And, never forget each other...</tsm.a4>
+  <tsm.a4>I still have precious memories of Earth in my mind. The azure sky with gleaming stars, how beautiful the world was...</tsm.a4>
+  <tsm.a4>What is more important than wealth and glory in Europa is trust. Sailor, can I trust you?</tsm.a4>
+  <tsm.a4>Hi sailor, have you seen captain Eagle recently? No, I'm just asking. I think I left a toy duck in his locker before I realized it was stuffed with UEX...</tsm.a4>
+  <tsm.a4>Human beings are distinguished from animals because they have not only animal instincts but also free will and absolute spirituality. Do you want to live like a human or an animal, sailor?</tsm.a4>
+  <tsm.a5>What? You say you want to buy some slaves for your ship? Sorry, this is no longer a slave market. Slavery has been banned, so now we call it a talent market.</tsm.a5>
+  <tsm.a5>The 'summer' I spent with them was cruel indeed, so many people I'll never see again...</tsm.a5>
+  <tsm.a5>What paranormal event? Don't give me that nonsense about ghosts and goblins; the engine's tail flame can melt all ignorance and superstition.</tsm.a5>
+  <tsm.a5>We are now walking the path our predecessors have trodden. For them in another dimension, these are history, but for us, they are experiences.</tsm.a5>
+  <tsm.a6>Don't negate all the meetings and companionships just because everything ends in death and departure.</tsm.a6>
+  <tsm.a7>Hello I Kuiteman<!-- [sic] -->, I've sent the recent commissions to your terminal, thanks for your cooperation.</tsm.a7>
+  <tsm.a71>I guess you are kuiteman pig!</tsm.a71>
+  <tsm.a72>O.o</tsm.a72>
+  <tsm.a8>Hey, dude, welcome to our outpost. We've been having some trouble lately, can I ask you a favor?</tsm.a8>
+  <tsm.a81>Though he wears a clown mask, his flamboyant attire allows you to instantly recognize him as a bishop wanted by both the Coalition and TSM. Looking around, you decided to listen to what kind of favor he's going to ask.</tsm.a81> <!-- todo -->
+  <tsm.a82>I was heading to the next outpost, but the channel is blocked by The Sea of Miracles right now. I have something very important to do there, if... I mean, if you could help deal with them...</tsm.a82>
+  <tsm.a83>It would depend on how sincere you'd like to be.</tsm.a83>
+  <tsm.a84>Oh! My friend, I can be as sincere as you want me to be.</tsm.a84>
+  <tsm.a8a>You recognize him as a wanted man and handcuff him.</tsm.a8a>
+  <tsm.a8b>"You asshole, do you know where you are! This is not the territory of your The Seditionists of Mendacity! Somebody, somebody!" The bishop yells over, and everyone around you leans toward you with all kinds of weapons.</tsm.a8b> <!-- This is the best I could come up with - The Seditionists of Mendacity - I wonder if there are better ones -->
+  <tsm.a8c>You have a bad feeling and are about to flee when an explosion goes off and the Coalition Riot Suppression Force invades from all over the place.</tsm.a8c>
+  <tsm.a8d>While you're still in a daze, you hear from a walkie-talkie, "Empty the room, leave no one alive!"</tsm.a8d>
+  <tsm.b8>Ignore him and leave.</tsm.b8>
+
+  <tsm.lq>Getting the job done</tsm.lq>
+  <tsm.dh>redemption item</tsm.dh>
+  <tsm.see>I'd better take another look.</tsm.see>
+  <tsm.wait>Come back later.</tsm.wait>
+  <tsm.wait1>Let me wait a little longer.</tsm.wait1>
+  <tsm.next>Welcome to the next one.</tsm.next>
+  <tsm.next1>Sorry about that, the price is still a bit high for you, come back next time.</tsm.next1>
+  <tsm.next2>You don't have enough money, should you take on some tasks to earn money?</tsm.next2>
+  <tsm.zssd>50 MK for tactical flashlight</tsm.zssd>
+  <!--test:charactor-->
+  <charactername.TSMnpc_1>Lang</charactername.TSMnpc_1>
+  <charactername.TSMnpc_2>Youmu</charactername.TSMnpc_2>
+  <charactername.TSMnpc_3>EMBI Liaison Officer</charactername.TSMnpc_3>
+  <charactername.TSMnpc_4>Tom Suger</charactername.TSMnpc_4> <!-- takes the meaning of 'sugar' but spelt as 'suger' in the original text -->
+  <charactername.TSMnpc_5>Lerentine</charactername.TSMnpc_5>
+  <charactername.TSMnpc_6>Qijiang</charactername.TSMnpc_6>
+  <charactername.TSMnpc_7>Kuiteman</charactername.TSMnpc_7> <!-- He Kuiteman -->
+  <charactername.TSMnpc_8>The Bishop</charactername.TSMnpc_8>
+  <!-- Boss奖励 -->
+  <entityname.mvdxe>Witch's Jaw</entityname.mvdxe>
+  <entitydescription.mvdxe>A proof of your victory over her.</entitydescription.mvdxe>
+  <entityname.lldyj>T037's Eye</entityname.lldyj>
+  <entitydescription.lldyj>A proof of your victory over her.</entitydescription.lldyj>
+  <entityname.hyddx>009's Poison Gland</entityname.hyddx>
+  <entitydescription.hyddx>A proof of your victory over her.</entitydescription.hyddx>
+  <entityname.ddbm>T044's Organ</entityname.ddbm>
+  <entitydescription.ddbm>A proof of your victory over her.</entitydescription.ddbm>
+  <entityname.AlbinismSpineling>Albino Spineling's Spike</entityname.AlbinismSpineling>
+  <entitydescription.AlbinismSpineling>Can be used to construct railgun shells or deconstructed into steel.</entitydescription.AlbinismSpineling>
+  <entityname.tsm_soundplayer>Music Player</entityname.tsm_soundplayer>
+  <entitydescription.tsm_soundplayer>Plays audio tapes obtained from creatures or purchased at outposts.</entitydescription.tsm_soundplayer>
+  <entityname.Extra_hat_male_tsm>Chief Officer's Hat</entityname.Extra_hat_male_tsm>
+  <entitydescription.Extra_hat_male_tsm>The last piece of conscience, the last balance of order</entitydescription.Extra_hat_male_tsm>
+  <entityname.suger_boardingaxe>‖color:159,207,217,255‖'Suger's Battle Axe'‖color:end‖</entityname.suger_boardingaxe>
+  <entitydescription.suger_boardingaxe>‖color:159,207,217,255‖Swing towards the enemy, and also towards one's former self.‖color:end‖</entitydescription.suger_boardingaxe>
+  <entityname.tsm_tcr_missions>‖color:210,110,0,255‖'Chariots' Assault Rifle‖color:end‖</entityname.tsm_tcr_missions>
+  <entitydescription.tsm_tcr_missions>‖color:210,110,0,255‖A flower to the fallen.‖color:end‖</entitydescription.tsm_tcr_missions>
+  <entityname.tsmmissions_fymagazine>‖color:55,45,155,255‖'Raven' Rifle‖color:end‖</entityname.tsmmissions_fymagazine>
+  <entitydescription.tsmmissions_fymagazine>‖color:55,45,155,255‖A variable, an opportunity.‖color:end‖</entitydescription.tsmmissions_fymagazine>
+  <entityname.tsmmissions_Icarus>‖color:159,207,217,255‖Hand Cannon Icarus‖color:end‖</entityname.tsmmissions_Icarus>
+  <entitydescription.tsmmissions_Icarus>‖color:159,207,217,255‖Suger's sidearm, a rotary pistol with integrated flashlight and grenade launcher, fires regular handcannon rounds. It was gifted by Commander Lerentine when Suger joined TSM, and has remained reliable through battles large and small. No one knows how a man of Suger's stature can single-handedly operate a pistol of this horrendously large caliber.\n\n“In mid-air, the wax of hypocrisy melted under the sun, and Icarus crashed into the sea”‖color:end‖</entitydescription.tsmmissions_Icarus>
+  <entityname.tsmmissions_lrmagazine>'Raven' Magazine</entityname.tsmmissions_lrmagazine>
+  <entitydescription.tsmmissions_lrmagazine></entitydescription.tsmmissions_lrmagazine>
+  <entityname.tsmmissions_magazine_bg>'Chariots' Special Cartridge</entityname.tsmmissions_magazine_bg>
+  <entitydescription.tsmmissions_magazine_bg></entitydescription.tsmmissions_magazine_bg>
+  <entityname.tsmmissions_magazine_kr>'Chariots' Expanded Magazine</entityname.tsmmissions_magazine_kr>
+  <entitydescription.tsmmissions_magazine_kr></entitydescription.tsmmissions_magazine_kr>
+  <entityname.tsmmissions_TTI2011>‖color:100,0,0,255‖TTI2011‖color:end‖</entityname.tsmmissions_TTI2011>
+  <entitydescription.tsmmissions_TTI2011>‖color:100,0,0,255‖The only heirloom left by Father.‖color:end‖</entitydescription.tsmmissions_TTI2011>
+  <entityname.tsmmissions_TTI2011ammo>TTI2011 Magazine</entityname.tsmmissions_TTI2011ammo>
+  <entitydescription.tsmmissions_TTI2011ammo></entitydescription.tsmmissions_TTI2011ammo>
+  <entityname.AlbinismSpineling_shell>Albino Spineling Canister Shell</entityname.AlbinismSpineling_shell>
+  <entitydescription.AlbinismSpineling_shell>Can be reloaded.</entitydescription.AlbinismSpineling_shell>
+  <entityname.tsmmissions_flashlight>Tactical Flashlight</entityname.tsmmissions_flashlight>
+  <entitydescription.tsmmissions_flashlight>Flashlight, but better.</entitydescription.tsmmissions_flashlight>
+  <entityname.tsmmissions_laser>Laser Pointer</entityname.tsmmissions_laser>
+  <entitydescription.tsmmissions_laser></entitydescription.tsmmissions_laser>
+  <!--跳帮人员武器&服装-->
+  <entityname.tsm_advancedcomsuit>Military Advanced Protective Suit</entityname.tsm_advancedcomsuit>
+  <entitydescription.tsm_advancedcomsuit>Low-oxygen alarm was damaged in combat.</entitydescription.tsm_advancedcomsuit>
+  <entityname.tsm_riotcontrolsuit>Riot Control Suit</entityname.tsm_riotcontrolsuit>
+  <entitydescription.tsm_riotcontrolsuit>Low-oxygen alarm was damaged in combat.</entitydescription.tsm_riotcontrolsuit>
+  <entityname.tsm_hdlcsuits>Heavy-Duty Cast Lead Diving Suit</entityname.tsm_hdlcsuits>
+  <entitydescription.tsm_hdlcsuits>Low-oxygen alarm was damaged in combat.</entitydescription.tsm_hdlcsuits>
+  <entityname.tsm_advancedcombat_helmet_thermalgoggles>Advanced Combat Helmet (Thermal Imaging)</entityname.tsm_advancedcombat_helmet_thermalgoggles>
+  <entitydescription.tsm_advancedcombat_helmet_thermalgoggles></entitydescription.tsm_advancedcombat_helmet_thermalgoggles>
+  <entityname.tsm_advancedcombat_helmet_mask>Advanced Combat Helmet (Riot Mask)</entityname.tsm_advancedcombat_helmet_mask>
+  <entitydescription.tsm_advancedcombat_helmet_mask></entitydescription.tsm_advancedcombat_helmet_mask>
+  <entityname.tsm_Coalitioncontingents_helmet>Coalition Contingent Helmet</entityname.tsm_Coalitioncontingents_helmet>
+  <entitydescription.tsm_Coalitioncontingents_helmet></entitydescription.tsm_Coalitioncontingents_helmet>
+  <entityname.tsm_Coalitioncontingents_vest>Coalition Contingent Body Armor</entityname.tsm_Coalitioncontingents_vest>
+  <entitydescription.tsm_Coalitioncontingents_vest></entitydescription.tsm_Coalitioncontingents_vest>
+  <entityname.tsm_Coalitioncontingents_uniform>Coalition Contingent Combat Uniform</entityname.tsm_Coalitioncontingents_uniform>
+  <entitydescription.tsm_Coalitioncontingents_uniform></entitydescription.tsm_Coalitioncontingents_uniform>
+  <entityname.tsm_old>Old Combat Uniform</entityname.tsm_old>
+  <entitydescription.tsm_old></entitydescription.tsm_old>
+  <entityname.tsm_orangeconstant_o1>Damaged Orange-Uncertainty Suit</entityname.tsm_orangeconstant_o1>
+  <entitydescription.tsm_orangeconstant_o1>This suit was damaged in combat, with many functions disabled.</entitydescription.tsm_orangeconstant_o1>
+  <entityname.tsm_orangeconstant_o2>Damaged Orange-Uncertainty Suit</entityname.tsm_orangeconstant_o2>
+  <entitydescription.tsm_orangeconstant_o1>This suit was damaged in combat, with many functions disabled.</entitydescription.tsm_orangeconstant_o1>
+  <entityname.tsm_orangeconstant_o3>Damaged Orange-Uncertainty Suit</entityname.tsm_orangeconstant_o3>
+  <entitydescription.tsm_orangeconstant_o3>This suit was damaged in combat, with many functions disabled.</entitydescription.tsm_orangeconstant_o3>
+  <!-- 子分类 -->
+  <subcategory.tsmmissions>T.S.M. MISSIONS - The Sea of Miracles</subcategory.tsmmissions>
+</infotexts>

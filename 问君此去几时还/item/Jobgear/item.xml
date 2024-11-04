@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!--衣服-->
+  <Item name="西服" identifier="tsm_suit_O5" category="Equipment" subcategory="tsmmissions" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true" >
+    <PreferredContainer primary="crewcab" />
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon name="Security Officer's Uniform 1 Icon" texture="suit_male.png" sourcerect="449,0,63,48" origin="0.5,0.5" />
+    <Sprite name="Captain's Uniform 3" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="244,292,126,64" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Security Officer's Uniform 1 Torso" texture="suit_[gender].png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="true" origin="0.1,0.35"/>
+      <sprite name="Security Officer's Uniform 1 Right Hand" texture="suit_[gender].png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1"/>
+      <sprite name="Security Officer's Uniform 1 Left Hand" texture="suit_[gender].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1"/>
+      <sprite name="Security Officer's Uniform 1 Left Lower Arm" texture="suit_[gender].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 1 Right Lower Arm" texture="suit_[gender].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+      <sprite name="Security Officer's Uniform 1 Left Upper Arm" texture="suit_[gender].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 1 Right Upper Arm" texture="suit_[gender].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 1 Waist" texture="suit_[gender].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 1 Right Thigh" texture="suit_[gender].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 1 Left Thigh" texture="suit_[gender].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 1 Right Leg" texture="suit_[gender].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 1 Left Leg" texture="suit_[gender].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 1 Right Shoe" texture="suit_[gender].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Security Officer's Uniform 1 Left Shoe" texture="suit_[gender].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.9" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.9" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bleeding" damagemultiplier="0.85" />
+    </Wearable>
+  </Item>
+  <Item name="奇迹之海宪兵纠察制服" identifier="tsm_gendarmerie_uniforms" subcategory="tsmmissions" category="Equipment" tags="smallitem,clothing" fireproof="true" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true" >
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+	  <RequiredItem identifier="organicfiber" amount="4" />
+	  <RequiredItem identifier="ballisticfiber" amount="1" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <RequiredItem identifier="organicfiber" amount="3" />
+    </Deconstruct>
+    <InventoryIcon name="tsm_gendarmerie Icon" texture="tsm_gendarmerie_female.png" sourcerect="423,8,89,49" origin="0.5,0.5" />
+    <Sprite name="tsm_gendarmerie" texture="tsm_gendarmerie_female.png" sourcerect="423,8,89,49" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="tsm_gendarmerie Torso" texture="tsm_gendarmerie_[GENDER].png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="false" origin="0.45,0.4" inheritsourcerect="false" sourcerect="172,18,102,193" />
+      <sprite name="tsm_gendarmerie Right Hand" texture="tsm_gendarmerie_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="tsm_gendarmerie Left Hand" texture="tsm_gendarmerie_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="tsm_gendarmerie Right Lower Arm" texture="tsm_gendarmerie_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="tsm_gendarmerie Left Lower Arm" texture="tsm_gendarmerie_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="tsm_gendarmerie Right Upper Arm" texture="tsm_gendarmerie_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="tsm_gendarmerie Left Upper Arm" texture="tsm_gendarmerie_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="tsm_gendarmerie Waist" texture="tsm_gendarmerie_[GENDER].png" limb="Waist" hideotherwearables="true" hidelimb="true" inherittexturescale="false" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+      <sprite name="tsm_gendarmerie Right Thigh" texture="tsm_gendarmerie_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="tsm_gendarmerie Left Thigh" texture="tsm_gendarmerie_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="tsm_gendarmerie Right Leg" texture="tsm_gendarmerie_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="tsm_gendarmerie Left Leg" texture="tsm_gendarmerie_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="tsm_gendarmerie Left Shoe" texture="tsm_gendarmerie_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="tsm_gendarmerie Right Shoe" texture="tsm_gendarmerie_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.9" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.9" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bleeding" damagemultiplier="0.8" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="burn" damagemultiplier="0.5" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidburn" damagemultiplier="0.9" />
+      <SkillModifier skillidentifier="helm" skillvalue="10" />
+    </Wearable>
+  </Item>
+  <Item name="奇迹之海宪兵纠察帽" identifier="tsm_gendarmerie_hat" subcategory="tsmmissions" category="Equipment" hideinmenus="true" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" scale="0.38">
+    <Deconstruct time="10" />
+    <Sprite name="Ceremonial hat" texture="hat.png" depth="0.6" sourcerect="5,0,100,60" origin="0.5,0.5" />
+    <Body width="75" height="50" density="30" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <sprite name="Ceremonial hat Wearable" texture="hat.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.67" hidelimb="false" sourcerect="5,0,100,60" origin="0.49,1.1" />
+      <SkillModifier skillidentifier="helm" skillvalue="15" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.85" />
+    </Wearable>
+  </Item>
+</Items>

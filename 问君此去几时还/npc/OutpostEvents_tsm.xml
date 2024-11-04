@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Randomevents>
+  <EventSprites>
+  <Sprite identifier="suger" texture="%ModDir%/Texture/suger.png" sourcerect="0,0,0,0" origin="0.5,0.5"/>
+  <Sprite identifier="Lerentine" texture="%ModDir%/Texture/Lerentine.png" sourcerect="113,77,529,315" origin="0.5,0.5"/>
+  <Sprite identifier="kuiteman" texture="%ModDir%/Texture/kuiteman.png" sourcerect="0,0,0,0" origin="0.5,0.5"/>
+  <Sprite identifier="youmu" texture="%ModDir%/Texture/youmu.png" sourcerect="0,0,0,0" origin="0.5,0.5"/>
+  <Sprite identifier="hxl" texture="%ModDir%/Texture/hxl.png" sourcerect="0,0,0,0" origin="0.5,0.5"/>
+  </EventSprites>
+  <EventPrefabs>
+    <ScriptedEvent identifier="tsm_missionevent_TSM1" commonness="100">
+      <TagAction criteria="player" tag="player" />
+      <SpawnAction npcsetidentifier="tsmnpc" npcidentifier="tsmnpc_1" targettag="tsmnpc_1" spawnlocation="Outpost" targetmoduletags="airlock" />
+      <StatusEffectAction targettag="tsmnpc_1">
+        <StatusEffect target="This" UseHealthWindow="false" />
+      </StatusEffectAction>
+      <NPCWaitAction npctag="tsmnpc_1" wait="false" />
+      <TriggerAction target1tag="tsmnpc_1" target2tag="player" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
+      <ConversationAction targettag="triggerer_player" speakertag="tsmnpc_1" text="你好，我是奇迹之海武装部负责人雨琅，我还在寻找找我失踪的队员" eventsprite="hxl">
+        <Option text="抱歉打扰了"/>
+      </ConversationAction>
+  </ScriptedEvent>
+    <ScriptedEvent identifier="tsm_missionevent_TSM2" commonness="100">
+      <SpawnAction npcsetidentifier="tsmnpc" npcidentifier="tsmnpc_2" targettag="tsmnpc_2" spawnlocation="Outpost" targetmoduletags="airlock" />
+      <StatusEffectAction targettag="tsmnpc_2">
+        <StatusEffect target="This" UseHealthWindow="false" />
+      </StatusEffectAction>
+      <ConversationAction targettag="triggerer_player" speakertag="tsmnpc_1" text="我正在办事，别打扰我" eventsprite="youmu">
+        <Option text="......"/>
+      </ConversationAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="tsm_missionevent_TSM3" commonness="100">
+      <SpawnAction npcsetidentifier="tsmnpc" npcidentifier="tsmnpc_3" targettag="tsmnpc_3" spawnlocation="Outpost" targetmoduletags="airlock" />
+      <StatusEffectAction targettag="tsmnpc_3">
+        <StatusEffect target="This" UseHealthWindow="false" />
+      </StatusEffectAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="tsm_missionevent_TSM4" commonness="100">
+      <TagAction criteria="player" tag="player" />
+      <SpawnAction npcsetidentifier="tsmnpc" npcidentifier="tsmnpc_4" targettag="tsmnpc_4" spawnlocation="Outpost" targetmoduletags="airlock"/>
+      <StatusEffectAction targettag="tsmnpc_4">
+        <StatusEffect target="This" UseHealthWindow="false" />
+      </StatusEffectAction>
+      <Label name="beginningofthejourney" />
+      <NPCWaitAction npctag="tsmnpc_4" wait="false" />
+      <TriggerAction target1tag="tsmnpc_4" target2tag="player" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
+      <ConversationAction targettag="triggerer_player" text="tsm.a4" eventsprite="suger">
+        <Option text="兑换物品">
+            <ConversationAction targettag="triggerer_player" text="价格公道，童叟无欺" eventsprite="suger">
+              <Option text="400MK兑换阿糖幻化器">
+                  <CheckMoneyAction amount="400">
+                      <Success>
+                          <MoneyAction amount="-400" />
+                          <ConversationAction targettag="triggerer_player" text="嘿，这些可都是可遇不可求的好东西，虽然都是山寨…复制品，但我急筹mk修我的无人机南希，不然我可不舍得卖给你" />
+                          <SpawnAction itemidentifier="tsm_suger" targetinventory="triggerer_player" />
+                          <ClearTagAction tag="triggerer_player"/>
+                          <GoTo name="beginningofthejourney" />
+                      </Success>
+                      <Failure>
+                          <ConversationAction targettag="triggerer_player" text="tsm.next2" />
+                          <ClearTagAction tag="triggerer_player"/>
+                          <GoTo name="beginningofthejourney" />
+                      </Failure>
+                  </CheckMoneyAction>
+              </Option>
+              <Option text="300MK兑换阿糖作战服">
+                <CheckMoneyAction amount="300">
+                  <Success>
+                    <MoneyAction amount="-300" />
+                    <ConversationAction targettag="triggerer_player" text="嘿，这些可都是可遇不可求的好东西，虽然都是山寨…复制品，但我急筹mk修我的无人机南希，不然我可不舍得卖给你" />
+                    <SpawnAction itemidentifier="suger_combat_uniform" targetinventory="triggerer_player" />
+                    <ClearTagAction tag="triggerer_player"/>
+                    <GoTo name="beginningofthejourney" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.next2" />
+                    <ClearTagAction tag="triggerer_player"/>
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckMoneyAction>
+              </Option>
+              <Option text="250MK兑换阿糖连帽衫">
+                <CheckMoneyAction amount="250">
+                <Success>
+                  <MoneyAction amount="-250" />
+                  <ConversationAction targettag="triggerer_player" text="嘿，这些可都是可遇不可求的好东西，虽然都是山寨…复制品，但我急筹mk修我的无人机南希，不然我可不舍得卖给你" />
+                  <SpawnAction itemidentifier="suger_clothes" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player"/>
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm.next2" />
+                  <ClearTagAction tag="triggerer_player"/>
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckMoneyAction>
+              </Option>
+              <Option text="450MK兑换阿糖的战斧">
+                <CheckMoneyAction amount="450">
+                  <Success>
+                    <MoneyAction amount="-450" />
+                    <ConversationAction targettag="triggerer_player" text="嘿，这些可都是可遇不可求的好东西，虽然都是山寨…复制品，但我急筹mk修我的无人机南希，不然我可不舍得卖给你" />
+                    <SpawnAction itemidentifier="suger_boardingaxe" targetinventory="triggerer_player" />
+                    <ClearTagAction tag="triggerer_player"/>
+                    <GoTo name="beginningofthejourney" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.next2" />
+                    <ClearTagAction tag="triggerer_player"/>
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckMoneyAction>
+              </Option>
+              <Option text="150MK兑换海军大幅帽">
+                <CheckMoneyAction amount="150">
+                  <Success>
+                    <MoneyAction amount="-150" />
+                    <ConversationAction targettag="triggerer_player" text="嘿，这些可都是可遇不可求的好东西，虽然都是山寨…复制品，但我急筹mk修我的无人机南希，不然我可不舍得卖给你" />
+                    <SpawnAction itemidentifier="Extra_hat_male_tsm" targetinventory="triggerer_player" />
+                    <ClearTagAction tag="triggerer_player"/>
+                    <GoTo name="beginningofthejourney" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.next2" />
+                    <ClearTagAction tag="triggerer_player"/>
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckMoneyAction>
+              </Option>
+              <Option text="2300MK兑换伊卡洛斯手炮">
+                <CheckMoneyAction amount="2300">
+                  <Success>
+                    <MoneyAction amount="-2300" />
+                    <ConversationAction targettag="triggerer_player" text="嘿，这些可都是可遇不可求的好东西，虽然都是山寨…复制品，但我急筹mk修我的无人机南希，不然我可不舍得卖给你" />
+                    <SpawnAction itemidentifier="tsmmissions_Icarus" targetinventory="triggerer_player" />
+                    <ClearTagAction tag="triggerer_player"/>
+                    <GoTo name="beginningofthejourney" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.next2" />
+                    <ClearTagAction tag="triggerer_player"/>
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckMoneyAction>
+              </Option>
+              <Option text="1000MK兑换6手炮子弹">
+                <CheckMoneyAction amount="1000">
+                  <Success>
+                    <MoneyAction amount="-1000" />
+                    <ConversationAction targettag="triggerer_player" text="6发子弹，足够干掉12个人了" />
+                    <SpawnAction itemidentifier="handcannonround" amount="6" targetinventory="triggerer_player" />
+                    <ClearTagAction tag="triggerer_player"/>
+                    <GoTo name="beginningofthejourney" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.next2" />
+                    <ClearTagAction tag="triggerer_player"/>
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckMoneyAction>
+              </Option>
+              <Option text="1800MK兑换医疗补给">
+                <CheckMoneyAction amount="1800">
+                  <Success>
+                    <MoneyAction amount="-1800" />
+                    <ConversationAction targettag="triggerer_player" text="这是奇迹之海的特供物资补给" />
+                    <SpawnAction itemidentifier="tsm_mcrate_replenishment_med" targetinventory="triggerer_player" />
+                    <ClearTagAction tag="triggerer_player"/>
+                    <GoTo name="beginningofthejourney" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.next1" />
+                    <ClearTagAction tag="triggerer_player"/>
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckMoneyAction>
+            </Option>
+              <Option text="tsm.wait">
+                  <ConversationAction text="tsm.wait1" dialogtype="Small" targettag="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player"/>
+                  <GoTo name="beginningofthejourney" />
+              </Option>
+            </ConversationAction>
+        </Option>
+      </ConversationAction>
+      <NPCWaitAction npctag="tsmnpc_4" wait="false" />
+    </ScriptedEvent>
+    <ScriptedEvent identifier="tsm_missionevent_TSM5" commonness="100">
+      <TagAction criteria="player" tag="player" />
+      <SpawnAction npcsetidentifier="tsmnpc" npcidentifier="tsmnpc_5" targettag="tsmnpc_5" spawnlocation="Outpost" targetmoduletags="airlock" />
+      <StatusEffectAction targettag="tsmnpc_5">
+        <StatusEffect target="This" UseHealthWindow="false" />
+      </StatusEffectAction>
+      <Label name="beginningofthejourney" />
+      <NPCWaitAction npctag="tsmnpc_5" wait="false" />
+      <TriggerAction target1tag="tsmnpc_5" target2tag="player" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
+      <ConversationAction targettag="triggerer_player" text="tsm.a5" eventsprite="Lerentine">
+        <Option text="兑换物品">
+          <ConversationAction targettag="triggerer_player" text="东西不多，看你需要什么" eventsprite="Lerentine">
+            <Option text="400MK兑换莱伦汀幻化器">
+                  <CheckMoneyAction amount="400">
+                      <Success>
+                          <MoneyAction amount="-400" />
+                          <ConversationAction targettag="triggerer_player" text="别拿去做坏事！" />
+                          <SpawnAction itemidentifier="tsm_lerentine" targetinventory="triggerer_player" />
+                          <ClearTagAction tag="triggerer_player"/>
+                          <GoTo name="beginningofthejourney" />
+                      </Success>
+                      <Failure>
+                          <ConversationAction targettag="triggerer_player" text="tsm.next2" />
+                          <ClearTagAction tag="triggerer_player"/>
+                          <GoTo name="beginningofthejourney" />
+                      </Failure>
+                  </CheckMoneyAction>
+            </Option>
+            <Option text="300MK兑换女款常服">
+                <CheckMoneyAction amount="300">
+                  <Success>
+                    <MoneyAction amount="-300" />
+                    <ConversationAction targettag="triggerer_player" text="这是九州的女款常服" />
+                    <SpawnAction itemidentifier="tsm_common_uniform" targetinventory="triggerer_player" />
+                    <ClearTagAction tag="triggerer_player"/>
+                    <GoTo name="beginningofthejourney" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.next2" />
+                    <ClearTagAction tag="triggerer_player"/>
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckMoneyAction>
+            </Option>
+            <Option text="2600MK兑换灰瞳">
+                <CheckMoneyAction amount="2600">
+                  <Success>
+                    <MoneyAction amount="-2600" />
+                    <ConversationAction targettag="triggerer_player" text="这把枪陪伴我很久了，如果你够格，那就拿上她" />
+                    <SpawnAction itemidentifier="tsm_grey_pupils" targetinventory="triggerer_player" />
+                    <ClearTagAction tag="triggerer_player"/>
+                    <GoTo name="beginningofthejourney" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.next2" />
+                    <ClearTagAction tag="triggerer_player"/>
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckMoneyAction>
+            </Option>
+            <Option text="200MK兑换军官帽">
+                <CheckMoneyAction amount="200">
+                  <Success>
+                    <MoneyAction amount="-200" />
+                    <ConversationAction targettag="triggerer_player" text="权力的象征" />
+                    <SpawnAction itemidentifier="tsm_hat_officer" targetinventory="triggerer_player" />
+                    <ClearTagAction tag="triggerer_player"/>
+                    <GoTo name="beginningofthejourney" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.next2" />
+                    <ClearTagAction tag="triggerer_player"/>
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckMoneyAction>
+            </Option>
+            <Option text="350MK兑换西服">
+              <CheckMoneyAction amount="350">
+                <Success>
+                  <MoneyAction amount="-350" />
+                  <ConversationAction targettag="triggerer_player" text="看起来不错" />
+                  <SpawnAction itemidentifier="tsm_suit_O5" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player"/>
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm.next2" />
+                  <ClearTagAction tag="triggerer_player"/>
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckMoneyAction>
+          </Option>
+            <Option text="1000MK兑换6手炮子弹">
+              <CheckMoneyAction amount="1000">
+                <Success>
+                  <MoneyAction amount="-1000" />
+                  <ConversationAction targettag="triggerer_player" text="每次开枪前，请好好思考" />
+                  <SpawnAction itemidentifier="handcannonround" amount="6" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player"/>
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm.next2" />
+                  <ClearTagAction tag="triggerer_player"/>
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="1500MK兑换物资补给">
+                <CheckMoneyAction amount="1500">
+                  <Success>
+                    <MoneyAction amount="-1500" />
+                    <ConversationAction targettag="triggerer_player" text="这是奇迹之海的特供物资补给" />
+                    <SpawnAction itemidentifier="tsm_wz_cl_flare" targetinventory="triggerer_player" />
+                    <ClearTagAction tag="triggerer_player"/>
+                    <GoTo name="beginningofthejourney" />
+                  </Success>
+                  <Failure>
+                    <ConversationAction targettag="triggerer_player" text="tsm.next1" />
+                    <ClearTagAction tag="triggerer_player"/>
+                    <GoTo name="beginningofthejourney" />
+                  </Failure>
+                </CheckMoneyAction>
+            </Option>
+            <Option text="tsm.wait">
+                  <ConversationAction text="tsm.wait1" dialogtype="Small" targettag="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player"/>
+                  <GoTo name="beginningofthejourney" />
+            </Option>
+          </ConversationAction>
+        </Option>
+      </ConversationAction>
+      <NPCWaitAction npctag="tsmnpc_5" wait="false" />
+    </ScriptedEvent>
+    <ScriptedEvent identifier="tsm_missionevent_TSM6" commonness="100">
+      <SpawnAction npcsetidentifier="tsmnpc" npcidentifier="tsmnpc_6" targettag="tsmnpc_6" spawnlocation="Outpost" targetmoduletags="airlock" />
+      <StatusEffectAction targettag="tsmnpc_6">
+        <StatusEffect target="This" UseHealthWindow="false" />
+      </StatusEffectAction>
+    </ScriptedEvent>
+  </EventPrefabs>
+  <!--EventSet identifier="outpostevents_tsm_npc" leveltype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="true" ignorecooldown="true" eventcount="2" commonness="100" locationtype="tsm_city">
+    <EventSet identifier="tsm_all_npc" minleveldifficulty="0" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="2" >
+      <ScriptedEvent identifier="tsm_missionevent_TSM2" commonness="25"/>
+      <ScriptedEvent identifier="tsm_missionevent_TSM3" commonness="25"/>
+      <ScriptedEvent identifier="tsm_missionevent_TSM4" commonness="25"/>
+      <ScriptedEvent identifier="tsm_missionevent_TSM5" commonness="25"/>
+      <ScriptedEvent identifier="tsm_missionevent_TSM6" commonness="25"/>
+    </EventSet>
+  </EventSet-->
+</Randomevents>

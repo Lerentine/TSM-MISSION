@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <Factions>
+  <Faction identifier="tsm" initialreputation="0" minreputation="-100" maxreputation="100" menuorder="0" startoutpost="false" opposingfaction="反对派别">
+    <Icon name="tsm" texture="%ModDir%/faction/tsm.png" sourcerect="494,1,233,208" color="150,150,150,255"/>
+    <IconSmall name="tsmIconSmall" texture="%ModDir%/faction/tsm.png" sourcerect="16,16,48,42"/>
+    <Portrait name="tsmPortrait" texture="%ModDir%/faction/main.png" sourcerect="0,0,0,0" />
+    <Hireable npcsetidentifier="tsm_city_npcs" npcidentifier="hireabletsmsecurityofficer" minreputation="20" />
+    <Hireable npcsetidentifier="tsm_city_npcs" npcidentifier="hireabletsmengineer" minreputation="20" />
+    <Hireable npcsetidentifier="tsm_city_npcs" npcidentifier="hireabletsmmechanic" minreputation="20" />
+    <Hireable npcsetidentifier="tsm_city_npcs" npcidentifier="hireabletsmmedic" minreputation="20" />
+    <Hireable npcsetidentifier="tsm_city_npcs" npcidentifier="hireabletsmsecurityofficerveteran" minreputation="50" />
+    <Hireable npcsetidentifier="tsm_city_npcs" npcidentifier="hireabletsmengineerveteran" minreputation="50" />
+    <Hireable npcsetidentifier="tsm_city_npcs" npcidentifier="hireabletsmmechanicveteran" minreputation="50" />
+    <Hireable npcsetidentifier="tsm_city_npcs" npcidentifier="hireabletsmmedicveteran" minreputation="50" />
+    <AutomaticMission leveltype="LocationConnection" missiontag="tsmattack" minreputation="-100" maxreputation="-50" MaxDistanceFromFactionOutpost="3" DisallowBetweenOtherFactionOutposts="true" minprobability="0.6" maxprobability="0.5"/>
+  </Faction>
+</Factions>

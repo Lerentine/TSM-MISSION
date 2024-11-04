@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!--ai用物品-->
+  <Item name="奇迹之海站点安保恶疫注射器" identifier="tsm_ai_eyi_outpost_sundown" subcategory="tsmmissions" description="" hideinmenus="true" category="Misc" maxstacksize="1" Tags="smallitem" scale="0.5" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="Content/Items/Medical/Medicines.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnContained" target="Character" interval="1" multiplyafflictionsbymaxvitality="true">
+        <GiveTalentInfo giverandom="false" talentidentifiers="tsm_ai_outpost" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item identifier="tsm_ai_advancedgenesplicer" scale="0.4" category="Equipment" subcategory="tsmmissions" tags="smallitem,geneticdevice" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="True">
+    <InventoryIcon texture="Content/Items/Genetic/Genetic.png" sourcerect="244,62,76,65" origin="0.5,0.5" />
+    <Sprite name="Headset" texture="Content/Items/Genetic/Genetic.png" depth="0.6" sourcerect="67,85,73,35" origin="0.5,0.5" />
+    <Body radius="15" width="45" density="25" />
+    <ItemContainer capacity="2" maxstacksize="1" autoinject="true" autoinjectthreshold="Infinity" allowswappingcontaineditems="false">
+      <Containable items="geneticmaterial" />
+      <StatusEffect type="OnSpawn" target="This" targetitemcomponent="ItemContainer">
+        <SpawnItem identifier="geneticmaterialhammerheadmatriarch" spawnposition="ThisInventory" />
+        <SpawnItem identifier="geneticmaterialmoloch" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Wearable limbtype="Head" slots="Any,HealthInterface" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+      <sprite name="Gene Splicer Wearable" texture="Content/Items/Genetic/Genetic.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hideotherwearables="false" sourcerect="258,131,64,54" origin="0.6,0.0" />
+      <StatusEffect type="OnContained" target="This" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Wearable>
+  </Item>
+  <Item name="不稳定恶疫异常注射器" identifier="tsm_eyi_instability" description="" subcategory="tsmmissions" hideinmenus="true" category="Misc" maxstacksize="1" Tags="smallitem" scale="0.5" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="Content/Items/Medical/Medicines.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnContained" target="Character" interval="1" multiplyafflictionsbymaxvitality="true">
+        <GiveTalentInfo giverandom="false" talentidentifiers="tsm_eyi_instability" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!--事件用-->
+  <Item name="事件生成器" identifier="tsm_event_spawn_npc" category="Misc" subcategory="tsmmissions" maxstacksize="8" tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" description="">
+    <Sprite texture="%ModDir:2852411866%/Texture/MissionIcons.png" sourcerect="0,0,234,234" origin="0.5,0.5" />
+    <Body width="16" height="12" density="10.05" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="100,0" handle1="-15,-3" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="NearbyCharacters,This" Interval="5" range="3000" spawnItemRandomly="true">
+        <Conditional speciesname="human" />
+        <SpawnItem identifiers="tsm_event_spawn_npc_tsm1" commonness="1" />
+        <SpawnItem identifiers="tsm_event_spawn_npc_tsm2" commonness="1" />
+        <SpawnItem identifiers="tsm_event_spawn_npc_tsm3" commonness="1" />
+        <SpawnItem identifiers="tsm_event_spawn_npc_tsm4" commonness="1" />
+        <SpawnItem identifiers="tsm_event_spawn_npc_tsm5" commonness="1" />
+        <SpawnItem identifiers="tsm_event_spawn_npc_tsm6" commonness="1" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <aitarget soundrange="800" fadeouttime="5" />
+  </Item>
+  <Item name="tsm1生成器" identifier="tsm_event_spawn_npc_tsm1" category="Misc" subcategory="tsmmissions" maxstacksize="8" tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" description="">
+    <Sprite texture="%ModDir:2852411866%/Texture/MissionIcons.png" sourcerect="0,0,234,234" origin="0.5,0.5" />
+    <Body width="16" height="12" density="10.05" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="100,0" handle1="-15,-3" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="NearbyCharacters,This" Interval="5" range="20000">
+        <Conditional speciesname="human" />
+        <TriggerEvent identifier="tsm_missionevent_TSM1" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <aitarget soundrange="800" fadeouttime="5" />
+  </Item>
+  <Item name="tsm2生成器" identifier="tsm_event_spawn_npc_tsm2" category="Misc" subcategory="tsmmissions" maxstacksize="8" tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" description="">
+    <Sprite texture="%ModDir:2852411866%/Texture/MissionIcons.png" sourcerect="0,0,234,234" origin="0.5,0.5" />
+    <Body width="16" height="12" density="10.05" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="100,0" handle1="-15,-3" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="NearbyCharacters,This" Interval="5" range="20000">
+        <Conditional speciesname="human" />
+        <TriggerEvent identifier="tsm_missionevent_TSM2" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <aitarget soundrange="800" fadeouttime="5" />
+  </Item>
+  <Item name="tsm3生成器" identifier="tsm_event_spawn_npc_tsm3" category="Misc" subcategory="tsmmissions" maxstacksize="8" tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" description="">
+    <Sprite texture="%ModDir:2852411866%/Texture/MissionIcons.png" sourcerect="0,0,234,234" origin="0.5,0.5" />
+    <Body width="16" height="12" density="10.05" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="100,0" handle1="-15,-3" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="NearbyCharacters,This" Interval="5" range="20000">
+        <Conditional speciesname="human" />
+        <TriggerEvent identifier="tsm_missionevent_TSM3" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <aitarget soundrange="800" fadeouttime="5" />
+  </Item>
+  <Item name="tsm4生成器" identifier="tsm_event_spawn_npc_tsm4" category="Misc" subcategory="tsmmissions" maxstacksize="8" tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" description="">
+    <Sprite texture="%ModDir:2852411866%/Texture/MissionIcons.png" sourcerect="0,0,234,234" origin="0.5,0.5" />
+    <Body width="16" height="12" density="10.05" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="100,0" handle1="-15,-3" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="NearbyCharacters,This" Interval="5" range="20000">
+        <Conditional speciesname="human" />
+        <TriggerEvent identifier="tsm_missionevent_TSM4" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <aitarget soundrange="800" fadeouttime="5" />
+  </Item>
+  <Item name="tsm5生成器" identifier="tsm_event_spawn_npc_tsm5" category="Misc" subcategory="tsmmissions" maxstacksize="8" tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" description="">
+    <Sprite texture="%ModDir:2852411866%/Texture/MissionIcons.png" sourcerect="0,0,234,234" origin="0.5,0.5" />
+    <Body width="16" height="12" density="10.05" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="100,0" handle1="-15,-3" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="NearbyCharacters,This" Interval="5" range="20000">
+        <Conditional speciesname="human" />
+        <TriggerEvent identifier="tsm_missionevent_TSM5" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <aitarget soundrange="800" fadeouttime="5" />
+  </Item>
+  <Item name="tsm6生成器" identifier="tsm_event_spawn_npc_tsm6" category="Misc" subcategory="tsmmissions" maxstacksize="8" tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" description="">
+    <Sprite texture="%ModDir:2852411866%/Texture/MissionIcons.png" sourcerect="0,0,234,234" origin="0.5,0.5" />
+    <Body width="16" height="12" density="10.05" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="100,0" handle1="-15,-3" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="NearbyCharacters,This" Interval="5" range="20000">
+        <Conditional speciesname="human" />
+        <TriggerEvent identifier="tsm_missionevent_TSM6" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <aitarget soundrange="800" fadeouttime="5" />
+  </Item>
+  <Item name="军需官生成器" identifier="tsm_event_spawn_npc_quartermaster" category="Misc" subcategory="tsmmissions" maxstacksize="8" tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" description="">
+    <Sprite texture="%ModDir:2852411866%/Texture/MissionIcons.png" sourcerect="0,0,234,234" origin="0.5,0.5" />
+    <Body width="16" height="12" density="10.05" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="100,0" handle1="-15,-3" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="NearbyCharacters,This" Interval="5" range="20000">
+        <Conditional speciesname="human" />
+        <TriggerEvent identifier="tsm_wz_ff_event" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <aitarget soundrange="800" fadeouttime="5" />
+  </Item>
+  <Item name="站点入侵生成器" identifier="tsm_event_spawn_outpost_invasions_coalition" category="Misc" subcategory="tsmmissions" maxstacksize="8" tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" description="">
+    <PreferredContainer secondary="tsm_event_em" minamount="1" maxamount="1" spawnprobability="0.07" />
+    <Sprite texture="%ModDir:2852411866%/Texture/MissionIcons.png" sourcerect="0,0,234,234" origin="0.5,0.5" />
+    <Body width="16" height="12" density="10.05" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="100,0" handle1="-15,-3" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="NearbyCharacters,This" Interval="5" range="20000">
+        <Conditional speciesname="human" />
+        <TriggerEvent identifier="tsm_outpost_invasions_coalition" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <aitarget soundrange="800" fadeouttime="5" />
+  </Item>
+  <Item name="信标站补给生成器" identifier="tsm_event_xbz_bg" category="Misc" subcategory="tsmmissions" maxstacksize="8" tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" description="">
+    <Sprite texture="%ModDir:2852411866%/Texture/MissionIcons.png" sourcerect="0,0,234,234" origin="0.5,0.5" />
+    <Body width="16" height="12" density="10.05" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="100,0" handle1="-15,-3" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="NearbyCharacters,This" Interval="5" range="2000">
+        <Conditional speciesname="human" />
+        <TriggerEvent identifier="tsm_wz_ff_event_xbz" />
+        <TriggerEvent identifier="tsm_wz_ff_event_xbz_ab" />
+        <TriggerEvent identifier="tsm_wz_ff_event_xbz_ab" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <aitarget soundrange="800" fadeouttime="5" />
+  </Item>
+  <Item name="站点安保增强生成器" identifier="tsm_event_outpost_enhance" category="Misc" subcategory="tsmmissions" maxstacksize="8" tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" description="">
+    <Sprite texture="%ModDir:2852411866%/Texture/MissionIcons.png" sourcerect="0,0,234,234" origin="0.5,0.5" />
+    <Body width="16" height="12" density="10.05" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="100,0" handle1="-15,-3" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="NearbyCharacters,This" Interval="5" range="2000">
+        <Conditional speciesname="human" />
+        <TriggerEvent identifier="tsmmission_sundown_buff" />
+        <TriggerEvent identifier="tsm_wz_ff_event_xbz_ab" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <aitarget soundrange="800" fadeouttime="5" />
+  </Item>
+</Items>

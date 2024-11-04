@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="来时莫徘徊" identifier="tsm_soundplayer" subcategory="tsmmissions" description="" category="Misc" Tags="smallitem,tsm_soundplayer" scale="0.4" impactsoundtag="impact_metal_heavy" HideConditionBar="true">
+    <Price baseprice="542">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" minavailable="1" />
+      <Price storeidentifier="merchantresearch" multiplier="1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" />
+      <Price storeidentifier="merchantmine" multiplier="1" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="5">
+      <RequiredItem identifier="fpgacircuit" amount="2" />
+      <RequiredItem identifier="plastic" amount="1" />
+      <RequiredItem identifier="plastic" amount="1" />
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/soundplayer/soundplayer.png" sourcerect="3,115,147,117" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/soundplayer/soundplayer.png" sourcerect="3,115,147,117" depth="0.55" origin="0.5,0.5" />
+    <Body width="260" height="350" density="15" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" holdpos="-20,-100" handle1="-20,-50" holdangle="0" aimable="false" PickingTime="1.0" msg="ItemMsgDetach" />
+    <ItemContainer capacity="1" canbeselected="true" hideitems="true" allowuioverlap="false" allowdraganddrop="true">
+      <GuiFrame relativesize="0.3,0.3" anchor="Center" minsize="200,220" maxsize="300,320" style="ItemUI" />
+      <Containable items="tsm_audio" />
+    </ItemContainer>
+  </Item>
+  <!--Item name="今宵别梦寒" identifier="tsm_walkman" subcategory="tsmmissions" description="" category="Misc" Tags="smallitem,tsm_soundplayer" scale="0.4" impactsoundtag="impact_metal_heavy" HideConditionBar="true">
+    <Price baseprice="542">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" minavailable="1" />
+      <Price storeidentifier="merchantresearch" multiplier="1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" />
+      <Price storeidentifier="merchantmine" multiplier="1" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="5">
+      <RequiredItem identifier="fpgacircuit" amount="2" />
+      <RequiredItem identifier="plastic" amount="1" />
+      <RequiredItem identifier="plastic" amount="1" />
+      <RequiredItem identifier="plastic" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/soundplayer/soundplayer.png" sourcerect="3,115,147,117" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/soundplayer/soundplayer.png" sourcerect="3,115,147,117" depth="0.55" origin="0.5,0.5" />
+    <Body width="260" height="350" density="15" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" holdpos="-20,-100" handle1="-20,-50" holdangle="0" aimable="false" PickingTime="1.0" msg="ItemMsgDetach" />
+    <ItemContainer capacity="1" canbeselected="true" hideitems="true" allowuioverlap="false" allowdraganddrop="true">
+      <GuiFrame relativesize="0.3,0.3" anchor="Center" minsize="200,220" maxsize="300,320" style="ItemUI" />
+      <Containable items="tsm_audio" />
+    </ItemContainer>
+  </Item-->
+  <!--BGM-->
+  <Item name="Adèsso e Fortuna" identifier="Adèsso e Fortuna" subcategory="tsmmissions" category="Misc" Tags="smallitem,tsm_audio" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" scale="0.2">
+    <Price baseprice="37">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" minavailable="1" />
+      <Price storeidentifier="merchantresearch" multiplier="1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" />
+      <Price storeidentifier="merchantmine" multiplier="1" />
+    </Price>
+    <Sprite texture="%ModDir%/soundplayer/soundplayer.png" sourcerect="40,2,72,41" depth="0.6" origin="0.5,0.5" />
+    <Body width="128" height="128" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="5,-55" holdangle="0" handle1="0,1" msg="ItemMsgPickUpSelect" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This" interval="0.5" duration="0.6">
+        <Conditional hastag="eq tsm_soundplayer" targetcontainer="true" />
+        <sound file="%ModDir%/Sounds/Adèsso e Fortuna.ogg" range="1000" loop="true" volume="0.7" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="猜疑链" identifier="猜疑链" subcategory="tsmmissions" category="Misc" Tags="smallitem,tsm_audio" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" scale="0.2">
+    <Price baseprice="37">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" minavailable="1" />
+      <Price storeidentifier="merchantresearch" multiplier="1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" />
+      <Price storeidentifier="merchantmine" multiplier="1" />
+    </Price>
+    <Sprite texture="%ModDir%/soundplayer/soundplayer.png" sourcerect="40,2,72,41" depth="0.6" origin="0.5,0.5" />
+    <Body width="128" height="128" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="5,-55" holdangle="0" handle1="0,1" msg="ItemMsgPickUpSelect" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This" interval="0.5" duration="0.6">
+        <Conditional hastag="eq tsm_soundplayer" targetcontainer="true" />
+        <sound file="%ModDir%/Sounds/猜疑链.ogg" range="1000" loop="true" volume="0.7" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="降神典仪" identifier="降神典仪" subcategory="tsmmissions" category="Misc" Tags="smallitem,tsm_audio" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" scale="0.2">
+    <Price baseprice="37">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" minavailable="1" />
+      <Price storeidentifier="merchantresearch" multiplier="1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" />
+      <Price storeidentifier="merchantmine" multiplier="1" />
+    </Price>
+    <Sprite texture="%ModDir%/soundplayer/soundplayer.png" sourcerect="40,2,72,41" depth="0.6" origin="0.5,0.5" />
+    <Body width="128" height="128" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="5,-55" holdangle="0" handle1="0,1" msg="ItemMsgPickUpSelect" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This" interval="0.5" duration="0.6">
+        <Conditional hastag="eq tsm_soundplayer" targetcontainer="true" />
+        <sound file="%ModDir%/Sounds/降神典仪.ogg" range="1000" loop="true" volume="0.7" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="at'aek ON βαD" identifier="at'aek ON βαD" subcategory="tsmmissions" category="Misc" Tags="smallitem,tsm_audio" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" scale="0.2">
+  <Price baseprice="37">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" minavailable="1" />
+      <Price storeidentifier="merchantresearch" multiplier="1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" />
+      <Price storeidentifier="merchantmine" multiplier="1" />
+    </Price>
+    <Sprite texture="%ModDir%/soundplayer/soundplayer.png" sourcerect="40,2,72,41" depth="0.6" origin="0.5,0.5" />
+    <Body width="128" height="128" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="5,-55" holdangle="0" handle1="0,1" msg="ItemMsgPickUpSelect" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This" interval="0.5" duration="0.6">
+        <Conditional hastag="eq tsm_soundplayer" targetcontainer="true" />
+        <sound file="%ModDir%/Sounds/at'aek ON βαD.ogg" range="1000" loop="true" volume="0.7" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="attack on titan" identifier="attack on titan" subcategory="tsmmissions" category="Misc" Tags="smallitem,tsm_audio" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" scale="0.2">
+    <Sprite texture="%ModDir%/soundplayer/soundplayer.png" sourcerect="40,2,72,41" depth="0.6" origin="0.5,0.5" />
+    <Body width="128" height="128" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="5,-55" holdangle="0" handle1="0,1" msg="ItemMsgPickUpSelect" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This" interval="0.5" duration="0.6">
+        <Conditional hastag="eq tsm_soundplayer" targetcontainer="true" />
+        <sound file="%ModDir%/Sounds/att.ogg" range="1000" loop="true" volume="0.7" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Vanquish" identifier="Vanquish" subcategory="tsmmissions" category="Misc" Tags="smallitem,tsm_audio" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" scale="0.2">
+    <Sprite texture="%ModDir%/soundplayer/soundplayer.png" sourcerect="40,2,72,41" depth="0.6" origin="0.5,0.5" />
+    <Body width="128" height="128" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="5,-55" holdangle="0" handle1="0,1" msg="ItemMsgPickUpSelect" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This" interval="0.5" duration="0.6">
+        <Conditional hastag="eq tsm_soundplayer" targetcontainer="true" />
+        <sound file="%ModDir%/Sounds/Vanquish.ogg" range="1000" loop="true" volume="0.7" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="腐败机械" identifier="腐败机械" subcategory="tsmmissions" category="Misc" Tags="smallitem,tsm_audio" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" scale="0.2">
+    <Sprite texture="%ModDir%/soundplayer/soundplayer.png" sourcerect="40,2,72,41" depth="0.6" origin="0.5,0.5" />
+    <Body width="128" height="128" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="5,-55" holdangle="0" handle1="0,1" msg="ItemMsgPickUpSelect" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This" interval="0.5" duration="0.6">
+        <Conditional hastag="eq tsm_soundplayer" targetcontainer="true" />
+        <sound file="%ModDir%/Sounds/腐败机械.ogg" range="1000" loop="true" volume="0.7" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="玛娜的叙事诗其一 · 摩耶" identifier="玛娜的叙事诗其一 · 摩耶" subcategory="tsmmissions" category="Misc" Tags="smallitem,tsm_audio" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" scale="0.2">
+    <Sprite texture="%ModDir%/soundplayer/soundplayer.png" sourcerect="40,2,72,41" depth="0.6" origin="0.5,0.5" />
+    <Body width="128" height="128" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="5,-55" holdangle="0" handle1="0,1" msg="ItemMsgPickUpSelect" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This" interval="0.5" duration="0.6">
+        <Conditional hastag="eq tsm_soundplayer" targetcontainer="true" />
+        <sound file="%ModDir%/Sounds/玛娜的叙事诗其一 · 摩耶.ogg" range="1000" loop="true" volume="0.7" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Attack on Titan S4" identifier="Attack on Titan S4" subcategory="tsmmissions" category="Misc" Tags="smallitem,tsm_audio" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" scale="0.2">
+    <Sprite texture="%ModDir%/soundplayer/soundplayer.png" sourcerect="40,2,72,41" depth="0.6" origin="0.5,0.5" />
+    <Body width="128" height="128" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="5,-55" holdangle="0" handle1="0,1" msg="ItemMsgPickUpSelect" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This" interval="0.5" duration="0.6">
+        <Conditional hastag="eq tsm_soundplayer" targetcontainer="true" />
+        <sound file="%ModDir%/Sounds/Attack on Titan S4.ogg" range="1000" loop="true" volume="0.7" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="BEAST" identifier="BEAST" subcategory="tsmmissions" category="Misc" Tags="smallitem,tsm_audio" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" scale="0.2">
+    <Sprite texture="%ModDir%/soundplayer/soundplayer.png" sourcerect="40,2,72,41" depth="0.6" origin="0.5,0.5" />
+    <Body width="128" height="128" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="5,-55" holdangle="0" handle1="0,1" msg="ItemMsgPickUpSelect" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This" interval="0.5" duration="0.6">
+        <Conditional hastag="eq tsm_soundplayer" targetcontainer="true" />
+        <sound file="%ModDir%/Sounds/BEAST.ogg" range="1000" loop="true" volume="0.7" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Leshphon" identifier="Leshphon" subcategory="tsmmissions" category="Misc" Tags="smallitem,tsm_audio" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" scale="0.2">
+  <Price baseprice="37">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" minavailable="1" />
+      <Price storeidentifier="merchantresearch" multiplier="1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" />
+      <Price storeidentifier="merchantmine" multiplier="1" />
+    </Price>
+    <Sprite texture="%ModDir%/soundplayer/soundplayer.png" sourcerect="40,2,72,41" depth="0.6" origin="0.5,0.5" />
+    <Body width="128" height="128" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="5,-55" holdangle="0" handle1="0,1" msg="ItemMsgPickUpSelect" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This" interval="0.5" duration="0.6">
+        <Conditional hastag="eq tsm_soundplayer" targetcontainer="true" />
+        <sound file="%ModDir%/Sounds/Leshphon.ogg" range="1000" loop="true" volume="0.7" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="sand dream+砂塵の彼方へ…" identifier="sz" subcategory="tsmmissions" category="Misc" Tags="smallitem,tsm_audio" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" scale="0.2">
+  <Price baseprice="37">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" minavailable="1" />
+      <Price storeidentifier="merchantresearch" multiplier="1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" />
+      <Price storeidentifier="merchantmine" multiplier="1" />
+    </Price>
+    <Sprite texture="%ModDir%/soundplayer/soundplayer.png" sourcerect="40,2,72,41" depth="0.6" origin="0.5,0.5" />
+    <Body width="128" height="128" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="5,-55" holdangle="0" handle1="0,1" msg="ItemMsgPickUpSelect" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This" interval="0.5" duration="0.6">
+        <Conditional hastag="eq tsm_soundplayer" targetcontainer="true" />
+        <sound file="%ModDir%/Sounds/沙丘之梦+致沙丘的彼岸.ogg" range="1000" loop="true" volume="0.7" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="Tears In Rain" identifier="Tears in the Rain" subcategory="tsmmissions" category="Misc" Tags="smallitem,tsm_audio" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" scale="0.2">
+    <Sprite texture="%ModDir%/soundplayer/soundplayer.png" sourcerect="40,2,72,41" depth="0.6" origin="0.5,0.5" />
+    <Body width="128" height="128" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="5,-55" holdangle="0" handle1="0,1" msg="ItemMsgPickUpSelect" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This" interval="0.5" duration="0.6">
+        <Conditional hastag="eq tsm_soundplayer" targetcontainer="true" />
+        <sound file="%ModDir%/Sounds/Tears In Rain.ogg" range="1000" loop="true" volume="0.7" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="真实之棺" identifier="zszg" subcategory="tsmmissions" category="Misc" Tags="smallitem,tsm_audio" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" scale="0.2">
+    <Sprite texture="%ModDir%/soundplayer/soundplayer.png" sourcerect="40,2,72,41" depth="0.6" origin="0.5,0.5" />
+    <Body width="128" height="128" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="5,-55" holdangle="0" handle1="0,1" msg="ItemMsgPickUpSelect" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This" interval="0.5" duration="0.6">
+        <Conditional hastag="eq tsm_soundplayer" targetcontainer="true" />
+        <sound file="%ModDir%/Sounds/真实之棺.ogg" range="1000" loop="true" volume="0.7" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="悲剧之城艾罗雷诺" identifier="bjzc" subcategory="tsmmissions" category="Misc" Tags="smallitem,tsm_audio" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" scale="0.2">
+    <Price baseprice="37">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" minavailable="1" />
+      <Price storeidentifier="merchantresearch" multiplier="1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1" />
+      <Price storeidentifier="merchantmine" multiplier="1" />
+    </Price>
+    <Sprite texture="%ModDir%/soundplayer/soundplayer.png" sourcerect="40,2,72,41" depth="0.6" origin="0.5,0.5" />
+    <Body width="128" height="128" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="5,-55" holdangle="0" handle1="0,1" msg="ItemMsgPickUpSelect" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This" interval="0.5" duration="0.6">
+        <Conditional hastag="eq tsm_soundplayer" targetcontainer="true" />
+        <sound file="%ModDir%/Sounds/悲剧之城艾罗雷诺.ogg" range="1000" loop="true" volume="0.7" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="卡隆一" identifier="kl1" subcategory="tsmmissions" category="Misc" Tags="smallitem,tsm_audio" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" scale="0.2">
+    <Sprite texture="%ModDir%/soundplayer/soundplayer.png" sourcerect="40,2,72,41" depth="0.6" origin="0.5,0.5" />
+    <Body width="128" height="128" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="5,-55" holdangle="0" handle1="0,1" msg="ItemMsgPickUpSelect" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This" interval="0.5" duration="0.6">
+        <Conditional hastag="eq tsm_soundplayer" targetcontainer="true" />
+        <sound file="%ModDir%/Sounds/卡隆1.ogg" range="1000" loop="true" volume="0.7" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="卡隆二" identifier="kl2" subcategory="tsmmissions" category="Misc" Tags="smallitem,tsm_audio" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" scale="0.2">
+    <Sprite texture="%ModDir%/soundplayer/soundplayer.png" sourcerect="40,2,72,41" depth="0.6" origin="0.5,0.5" />
+    <Body width="128" height="128" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="5,-55" holdangle="0" handle1="0,1" msg="ItemMsgPickUpSelect" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This" interval="0.5" duration="0.6">
+        <Conditional hastag="eq tsm_soundplayer" targetcontainer="true" />
+        <sound file="%ModDir%/Sounds/卡隆2.ogg" range="1000" loop="true" volume="0.7" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+</Items>

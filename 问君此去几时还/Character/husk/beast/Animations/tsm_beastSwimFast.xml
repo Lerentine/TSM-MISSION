@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<beastSwimFast footrotatestrength="25" LegMoveAmount="0.79564655" LegCycleLength="16.727322" HandMoveAmount="0.85835665,2.6084974" HandCycleSpeed="3.4334266" HandMoveOffset="0,0" FootAngle="0" ArmMoveStrength="1" HandMoveStrength="0.10000002" FixedHeadAngle="True" SteerTorque="25" LegTorque="25" MovementSpeed="1.5823294" CycleSpeed="1.5823294" HeadAngle="61.999996" TorsoAngle="NaN" HeadTorque="50" TorsoTorque="50" FootTorque="25" AnimationType="SwimFast" ArmIKStrength="1" HandIKStrength="1" />

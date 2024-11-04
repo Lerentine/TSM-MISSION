@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<prefabs>
+  <!-- -->
+  <decal name="黑色污渍1" Aliases="" identifier="tsm_black_stain" scale="0.7" category="Decorative" tags="tsm">
+    <sprite texture="%ModDir%/Map/blood.png" sourcerect="0,0,114,128" depth="0.85" origin="0.5,0.5" />
+    <Upgrade gameversion="1.5.9.1" texturescale="0.5,0.5" />
+  </decal>
+  <!-- -->
+  <decal name="黑色污渍2" Aliases="" identifier="tsm_black_stain_1" scale="0.7" category="Decorative" tags="tsm">
+    <sprite texture="%ModDir%/Map/blood.png" sourcerect="116,1,140,127" depth="0.85" origin="0.5,0.5" />
+  </decal>
+  <!-- -->
+  <decal name="大型血迹" Aliases="" identifier="tsm_blood_big" scale="0.7" category="Decorative" tags="tsm">
+    <sprite texture="%ModDir%/Map/blood.png" sourcerect="0,128,118,127" depth="0.85" origin="0.5,0.5" />
+  </decal>
+  <!-- -->
+  <decal name="污渍1" Aliases="" identifier="tsm_stain_1" scale="0.7" category="Decorative" tags="tsm">
+    <sprite texture="%ModDir%/Map/blood.png" sourcerect="0,256,128,128" depth="0.85" origin="0.5,0.5" />
+  </decal>
+  <!-- -->
+  <decal name="污渍2" Aliases="" identifier="tsm_stain_2" scale="0.7" category="Decorative" tags="tsm">
+    <sprite texture="%ModDir%/Map/blood.png" sourcerect="128,256,128,128" depth="0.85" origin="0.5,0.5" />
+  </decal>
+  <!-- -->
+  <decal name="血液污渍" Aliases="" identifier="tsm_blood_stain" scale="0.7" category="Decorative" tags="tsm">
+    <sprite texture="%ModDir%/Map/blood.png" sourcerect="0,384,128,128" depth="0.85" origin="0.5,0.5" />
+  </decal>
+  <!-- -->
+  <decal name="沙渍" Aliases="" identifier="tsm_stain_sand" scale="0.7" category="Decorative" tags="tsm">
+    <sprite texture="%ModDir%/Map/blood.png" sourcerect="128,384,128,128" depth="0.85" origin="0.5,0.5" />
+  </decal>
+  <!-- #3 -->
+  <decal name="飞溅的血1" Aliases="" identifier="tsm_blood_1" scale="0.7" category="Decorative" tags="tsm">
+    <sprite texture="%ModDir%/Map/blood.png" sourcerect="256,0,128,128" depth="0.85" origin="0.5,0.5" />
+  </decal>
+  <!-- -->
+  <decal name="飞溅的血2" Aliases="" identifier="tsm_blood_2" scale="0.7" category="Decorative" tags="tsm">
+    <sprite texture="%ModDir%/Map/blood.png" sourcerect="384,0,128,128" depth="0.85" origin="0.5,0.5" />
+  </decal>
+  <!-- -->
+  <decal name="飞溅的血3" Aliases="" identifier="tsm_blood_3" scale="0.7" category="Decorative" tags="tsm">
+    <sprite texture="%ModDir%/Map/blood.png" sourcerect="256,128,128,128" depth="0.85" origin="0.5,0.5" />
+  </decal>
+  <!-- -->
+  <decal name="飞溅的血4" Aliases="" identifier="tsm_blood_4" scale="0.7" category="Decorative" tags="tsm">
+    <sprite texture="%ModDir%/Map/blood.png" sourcerect="384,128,128,128" depth="0.85" origin="0.5,0.5" />
+  </decal>
+  <!-- #4 -->
+  <decal name="飞溅的油漆1" Aliases="" identifier="tsm_paint_1" scale="0.7" category="Decorative" tags="tsm">
+    <sprite texture="%ModDir%/Map/blood.png" sourcerect="256,256,128,128" depth="0.85" origin="0.5,0.5" />
+  </decal>
+  <!-- -->
+  <decal name="飞溅的油漆2" Aliases="" identifier="tsm_paint_2" scale="0.7" category="Decorative" tags="tsm">
+    <sprite texture="%ModDir%/Map/blood.png" sourcerect="384,256,128,128" depth="0.85" origin="0.5,0.5" />
+  </decal>
+  <!-- -->
+  <decal name="飞溅的油漆3" Aliases="" identifier="tsm_paint_3" scale="0.7" category="Decorative" tags="tsm">
+    <sprite texture="%ModDir%/Map/blood.png" sourcerect="256,384,128,128" depth="0.85" origin="0.5,0.5" />
+  </decal>
+  <!-- -->
+  <decal name="飞溅的油漆4" Aliases="" identifier="tsm_paint_4" scale="0.7" category="Decorative" tags="tsm">
+    <sprite texture="%ModDir%/Map/blood.png" sourcerect="384,384,128,128" depth="0.85" origin="0.5,0.5" />
+  </decal>
+ 
+</prefabs>

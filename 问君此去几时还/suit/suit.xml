@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+ <!--恶疫-->
+ <Item name="恶疫防护头盔" identifier="tsm_eyi_helmet" subcategory="tsmmissions" aliases="divinghelmet" category="diving" tags="smallitem,helmet" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.2">
+  <Deconstruct time="10">
+    <Item identifier="ballisticfiber" />
+    <RequiredItem identifier="rubber" />
+  </Deconstruct>
+  <Sprite name="TSM ey Helmet" texture="%ModDir%/suit/eyisuit.png" sourcerect="464,1312,177,192" depth="0.58" origin="0.5,0.5" />
+  <Body radius="30" density="50" />
+  <Holdable slots="RightHand,LeftHand" controlpose="true" holdpos="0,-30" handle1="-10,10" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
+  <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+    <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+    <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+    <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.85" damagesound="LimbArmor" deflectprojectiles="true" />
+    <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+    <damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+    <damagemodifier afflictionidentifiers="tsm_stress" armorsector="0.0,360.0" damagemultiplier="0.25" deflectprojectiles="true"/>
+    <damagemodifier afflictionidentifiers="tsm_virusstage" armorsector="0.0,360.0" probabilitymultiplier="0.0" deflectprojectiles="true"/>
+    <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+    <sprite name="TSM ey Helmet" texture="%ModDir%/suit/eyisuit.png" limb="Head" inheritscale="true" ignorelimbscale="true" scale="0.42" hidelimb="true" alphaclipotherwearables="true" hidewearablesoftype="moustache,beard,hair,faceattachment,husk,herpes" sourcerect="464,1312,177,192" origin="0.495,0.53" />
+    <StatusEffect type="OnWearing" target="Character" ObstructVision="true" LowPassMultiplier="0.9" setvalue="true" disabledeltatime="true"></StatusEffect>
+    <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="1000.0" Condition="-0.5" comparison="Or">
+      <Conditional IsDead="false" />
+      <RequiredItem items="oxygensource" type="Contained" />
+    </StatusEffect>
+    <StatusEffect type="OnWearing" target="Contained,Character" OxygenAvailable="-100.0" Oxygen="-3.0" Condition="-3.0">
+      <Conditional IsDead="false" />
+      <RequiredItem items="weldingfueltank" type="Contained" />
+    </StatusEffect>
+    <StatusEffect type="OnWearing" target="Contained,Character" targetlimbs="Torso" OxygenAvailable="-100.0" Oxygen="-5.0" Condition="-3.0">
+      <RequiredItem items="incendiumfueltank" type="Contained" />
+      <Affliction identifier="burn" amount="3.0" />
+    </StatusEffect>
+  </Wearable>
+  <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
+    <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
+    <Containable items="oxygensource,weldingtoolfuel" excludeditems="oxygenitetank" />
+    <Containable items="oxygenitetank">
+      <StatusEffect type="OnContaining" target="Character" SpeedMultiplier="1.2" setvalue="true" targetslot="0">
+        <Conditional IsDead="false" />
+      </StatusEffect>
+    </Containable>
+  </ItemContainer>
+</Item>
+<Item name="恶疫防护服" identifier="tsm_eyi_suit" subcategory="tsmmissions" category="diving" tags="diving,deepdiving,divinggear_wearableindoors,provocative,tsm_suit" scale="0.3" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
+  <Deconstruct time="20">
+    <Item identifier="rubber" />
+    <Item identifier="organicfiber" />
+    <Item identifier="titanium" />
+  </Deconstruct>
+  <InventoryIcon texture="%ModDir%/suit/eyisuit.png" sourcerect="0,1200,372,305" origin="0.5,0.5" />
+  <Sprite texture="%ModDir%/suit/eyisuit.png" sourcerect="1201,69,255,179" depth="0.51" origin="0.5,0.5" />
+  <ContainedSprite name="eyi suit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/suit/eyisuit.png" sourcerect="416,48,196,384" depth="0.55" origin="0.5,0.5" />
+  <ContainedSprite name="eyi suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/suit/eyisuit.png" sourcerect="1420,1292,80,208" depth="0.55" origin="-0.12,-0.14" />
+  <ContainedSprite name="eyi suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/suit/eyisuit.png" sourcerect="1072,0,432,400" depth="0.55" origin="0.6305996,0.3576287" />
+  <Body width="120" height="35" density="25" />
+  <Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
+    <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.4" deflectprojectiles="true"/>
+    <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.8" deflectprojectiles="true"/>
+    <damagemodifier afflictionidentifiers="burn" armorsector="0.0,360.0" damagemultiplier="0.5" deflectprojectiles="true"/>
+    <damagemodifier afflictionidentifiers="tsm_virusstage" armorsector="0.0,360.0" probabilitymultiplier="0.0" deflectprojectiles="true"/>
+    <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.6" deflectprojectiles="true"/>
+    <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.35" deflectprojectiles="true"/>
+    <damagemodifier afflictionidentifiers="tsm_stress" armorsector="0.0,360.0" damagemultiplier="0.0" deflectprojectiles="true"/>
+    <damagemodifier afflictionidentifiers="huskinfection" armorsector="0.0,360.0" probabilitymultiplier="0.1" deflectprojectiles="true"/>
+    <damagemodifier afflictionidentifiers="stun" armorsector="0.0,360.0" damagemultiplier="0.7" />
+    <SkillModifier skillidentifier="medical" skillvalue="+10" />
+    <sprite name="eyi suit Torso" texture="%ModDir%/suit/eyisuit.png" limb="Torso" depthlimb="Jaw" hidelimb="true" inherittexturescale="false" scale="0.22" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="369,0,271,448" origin="0.54148054,0.59" />
+    <sprite name="eyi suit Right Hand" texture="%ModDir%/suit/eyisuit.png" limb="RightHand" hidelimb="true" inherittexturescale="false" scale="0.22" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="736,0,160,144" origin="0.46,0.465" />
+    <sprite name="eyi suit Left Hand" texture="%ModDir%/suit/eyisuit.png" limb="LeftHand" hidelimb="true" inherittexturescale="false" scale="0.22" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="896,0,148,144" origin="0.48074526,0.495" />
+    <sprite name="eyi suit Right Lower Arm" texture="%ModDir%/suit/eyisuit.png" limb="RightArm" hidelimb="true" inherittexturescale="false" scale="0.22" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="0,0,160,240" origin="0.45316538,0.44" />
+    <sprite name="eyi suit Left Lower Arm" texture="%ModDir%/suit/eyisuit.png" limb="LeftArm" hidelimb="true" inherittexturescale="false" scale="0.22" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="160,0,160,240" origin="0.4670269,0.45" />
+    <sprite name="eyi suit Right Upper Arm" texture="%ModDir%/suit/eyisuit.png" limb="RightForearm" hidelimb="true" inherittexturescale="false" scale="0.21" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="0,240,160,240" origin="0.46,0.48" />
+    <sprite name="eyi suit Left Upper Arm" texture="%ModDir%/suit/eyisuit.png" limb="LeftForearm" hidelimb="true" inherittexturescale="false" scale="0.21" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="160,240,160,240" origin="0.485,0.56" />
+    <sprite name="eyi suit Waist" texture="%ModDir%/suit/eyisuit.png" limb="Waist" hidelimb="true" inherittexturescale="false" scale="0.22" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="368,512,272,160" origin="0.53519696,0.5602966" />
+    <sprite name="eyi suit Right Thigh" texture="%ModDir%/suit/eyisuit.png" limb="RightThigh" hidelimb="true" inherittexturescale="false" scale="0.22" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="0,592,160,336" origin="0.5,0.515" />
+    <sprite name="eyi suit Left Thigh" texture="%ModDir%/suit/eyisuit.png" limb="LeftThigh" hidelimb="true" inherittexturescale="false" scale="0.22" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="160,592,192,336" origin="0.5,0.515" />
+    <sprite name="eyi suit Right Leg" texture="%ModDir%/suit/eyisuit.png" limb="RightLeg" hidelimb="true" inherittexturescale="false" scale="0.21" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="800,160,272,336" origin="0.5205919,0.475" />
+    <sprite name="eyi suit Left Leg" texture="%ModDir%/suit/eyisuit.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" scale="0.21" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="800,160,272,336" origin="0.5,0.515" />
+    <sprite name="eyi suit Left Shoe" texture="%ModDir%/suit/eyisuit.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" scale="0.22" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="784,848,224,160" origin="0.53,0.49" />
+    <sprite name="eyi suit Right Shoe" texture="%ModDir%/suit/eyisuit.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" scale="0.22" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="560,848,224,160" origin="0.52,0.49" />
+    <sprite name="Hide Boobs" texture="%ModDir%/suit/eyisuit.png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="false" sourcerect="0,0,17,17" inheritorigin="false" inheritsourcerect="true" origin="0.5,0.5" />
+    <StatusEffect type="OnWearing" target="Character" PressureProtection="8000.0" SpeedMultiplier="0.75" PropulsionSpeedMultiplier="0.9" setvalue="true" disabledeltatime="true"/>
+  </Wearable>
+</Item>
+</Items>

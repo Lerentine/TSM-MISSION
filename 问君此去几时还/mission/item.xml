@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!--紧急货物-->
+  <Item identifier="tsm_mcrate_time1" tags="crate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" hideinmenus="true" impacttolerance="2.9">
+    <Sprite texture="%ModDir%/mission/tsm_mission_item.png" depth="0.54" sourcerect="0,0,222,105" origin="0.5,0.5" />
+    <Body width="150" height="85" density="50" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="This" disabledeltatime="true" stackable="false" delay="1" condition="-0.185" />
+      <StatusEffect type="OnImpact" target="This" disabledeltatime="true" Condition="-5.0" />
+      <StatusEffect type="InWater" target="This" disabledeltatime="true" stackable="false" delay="1" Condition="-3" />
+      <StatusEffect type="OnFire" target="This" disabledeltatime="true" stackable="false" delay="1" Condition="-10" />
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="All" range="5000" />
+        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" selectionmode="All" range="5000" />
+        <Explosion range="500.0" structuredamage="300" force="40.0" applyfireeffects="true">
+          <Affliction identifier="burn" strength="50" />
+          <Affliction identifier="stun" strength="3.7" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!--干燥货物-->
+  <Item identifier="tsm_mcrate_water1" tags="crate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" hideinmenus="true">
+    <Sprite texture="%ModDir%/mission/tsm_mission_item.png" depth="0.54" sourcerect="8,911,146,83" origin="0.5,0.5" />
+    <Body width="150" height="85" density="50" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="InWater" target="This" Condition="-100" delay="1" disabledeltatime="true" checkconditionalalways="true" />
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionDebris4.ogg" selectionmode="All" range="5000" />
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!--希洛克-->
+  <Item identifier="tsm_mcrate_shillok" category="Equipment" tags="crate,mediumitem" fireproof="true" impactsoundtag="impact_soft" hideinmenus="true" scale="0.4">
+    <PreferredContainer secondary="ruintreasure,pirateengcab,wreckmedcab" minamount="0" maxamount="1" spawnprobability="0.1" />
+    <Deconstruct time="10" chooserandom="true" amount="1">
+      <Item identifier="poop" commonness="0.7" />
+      <Item identifier="guitar" commonness="0.5" />
+      <Item identifier="endocrinebooster" commonness="0.1" />
+      <Item identifier="tsm_eyi_relics" commonness="0.08" />
+      <Item identifier="tsm_eyi_stabilise_reagent" commonness="0.01" />
+      <Item identifier="tsm_virusstage_inhibitory" commonness="0.3" />
+      <Item identifier="tsm_virusstage_clear" commonness="0.3" />
+      <Item identifier="tsm_virusstage_deep_inhibitory" commonness="0.3" />
+      <Item identifier="tsm_eyi_embryo" commonness="0.4" />
+      <Item identifier="tsm_lighter" commonness="0.3" />
+      <Item identifier="tsm_marlboro_box" commonness="0.5" />
+      <Item identifier="tsm_Chinesecigar_box" commonness="0.5" />
+      <Item identifier="tsm_universe_box" commonness="0.5" />
+      <Item identifier="tsm_suit_O5" commonness="0.6" />
+      <Item identifier="tsm_shipammo_shell" commonness="0.5" />
+      <Item identifier="AlbinismSpineling_shell" commonness="0.5" />
+      <Item identifier="lldyj" commonness="0.05" />
+      <Item identifier="mvdxe" commonness="0.05" />
+      <Item identifier="hyddx" commonness="0.05" />
+      <Item identifier="ddbm" commonness="0.05" />
+      <Item identifier="tsm_identifier" commonness="0.1" />
+      <Item identifier="titaniumaluminiumalloy" commonness="0.3" />
+      <Item identifier="physicorium" commonness="0.2" />
+      <Item identifier="dementonite" commonness="0.2" />
+      <Item identifier="incendium" commonness="0.2" />
+      <Item identifier="fulgurium" commonness="0.2" />
+      <Item identifier="nuclearshell" commonness="0.3" />
+      <Item identifier="cigar" commonness="0.3" />
+      <Item identifier="unidentifiedgeneticmaterial" commonness="0.1" />
+      <Item identifier="flamerunique" commonness="0.2" />
+      <Item identifier="clownmaskunique" commonness="0.3" />
+      <Item identifier="clownsuitunique" commonness="0.3" />
+      <Item identifier="safetyharness" commonness="0.5" />
+      <Item identifier="tsm_wz_cl_flare" commonness="0.08" />
+      <Item identifier="tsm_wz_yl_flare" commonness="0.08" />
+    </Deconstruct>
+    <Sprite texture="%ModDir%/mission/tsm_mission_item.png" depth="0.54" sourcerect="820,911,204,109" origin="0.5,0.5" />
+    <Body width="120" radius="45" density="20" friction="1.0" restitution="0.01" />
+    <Holdable slots="RightHand,LeftHand" holdpos="0,-80" handle1="0,50" handle2="0,50" aimable="false" msg="ItemMsgPickUpSelect"/>
+  </Item>
+  <!--任务目标-->
+  <Item name="蛋" identifier="tsm_egg" Tags="largeitem,ignorebyai,mudraptoregg" hideinmenus="true" health="60" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true" category="Misc" scale="0.4" impactsoundtag="impact_soft">
+    <Upgrade gameversion="0.20.15.0" scale="0.4" />
+    <Price baseprice="1000" sold="false"/>
+    <Sprite texture="Content/Items/CreatureLoot/CreatureLoot.png" depth="0.18" sourcerect="80,105,124,147" origin="0.5,0.5" />
+    <Deconstruct time="10">
+      <Item identifier="alienblood" amount="2" />
+      <Item identifier="adrenalinegland" amount="2" />
+    </Deconstruct>
+    <Body width="120" height="120" friction="1.0" restitution="0.01" angulardamping="1.0" density="12" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false">
+      <StatusEffect type="OnBroken" target="This">
+        <particleemitter particle="whitegoosplash" particleamount="20" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.5" scalemax="1.0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+        <particleemitter particle="mudrapeggbrownchunks" particleamount="100" velocitymin="100" velocitymax="2000" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.5" />
+        <Sound file="Content/Sounds/Damage/Gore6.ogg" range="500" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnDamaged" target="This">
+        <particleemitter particle="mudrapeggbrownchunks" particleamount="8" velocitymin="100" velocitymax="1000" anglemin="0" anglemax="360" scalemin="0.2" scalemax="0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="-5.0"/>
+    </Holdable>
+    <LightComponent range="5" lightcolor="127,196,196,61" powerconsumption="0" IsOn="true" castshadows="false" allowingameediting="false" pulsefrequency="1" pulseamount="0.30">
+      <sprite texture="Content/Items/CreatureLoot/CreatureLoot.png" depth="0.025" sourcerect="300,291,98,113" origin="0.5,0.5" alpha="1.0" />
+    </LightComponent>
+    <LightComponent range="40" lightcolor="255,199,0,58" powerconsumption="0" IsOn="true" castshadows="false" allowingameediting="false">
+      <sprite texture="Content/Items/CreatureLoot/CreatureLoot.png" depth="0.025" sourcerect="410,301,88,95" origin="0.5,0.5" alpha="1.0" />
+    </LightComponent>
+  </Item>
+  <Item name="信标基座" identifier="tsm_mission_egg" hideinmenus="true" health="20" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true" category="Misc" spritecolor="199,253,172,255" scale="0.5" impactsoundtag="impact_soft">
+    <Sprite texture="%ModDir%/Character/monsteritem.png" depth="0.18" sourcerect="31,24,216,132" origin="0.5,0.5" />
+    <Price baseprice="200" sold="false"/>
+    <Deconstruct time="10">
+      <Item identifier="alienblood" />
+      <Item identifier="sulphuricacid" />
+    </Deconstruct>
+    <Body width="110" height="120" friction="1.0" restitution="0.01" angulardamping="1.0" density="12"/>
+    <LightComponent range="5" lightcolor="255,0,0,61" powerconsumption="0" IsOn="true" castshadows="false" allowingameediting="false" pulsefrequency="1" pulseamount="0.30" >
+      <sprite texture="Content/Items/CreatureLoot/CreatureLoot.png" depth="0.025" sourcerect="300,291,98,113" origin="0.5,0.6" alpha="1.0" />
+    </LightComponent>
+    <LightComponent range="40" lightcolor="255,199,0,58" powerconsumption="0" IsOn="true" castshadows="false" allowingameediting="false">
+      <sprite texture="Content/Items/CreatureLoot/CreatureLoot.png" depth="0.025" sourcerect="410,301,88,95" origin="0.5,0.6" alpha="1.0" />
+    </LightComponent>
+  </Item>
+  <Item name="活骸箱" identifier="tsm_mission_husk_box" hideinmenus="true" health="20" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true" category="Misc" spritecolor="199,253,172,255" scale="0.5" impactsoundtag="impact_soft">
+    <Sprite texture="%ModDir%/Character/monsteritem.png" depth="0.18" sourcerect="8,793,147,86" origin="0.5,0.5" />
+    <Price baseprice="200" sold="false"/>
+    <Body width="110" height="120" friction="1.0" restitution="0.01" angulardamping="1.0" density="12"/>
+    <LightComponent range="5" lightcolor="255,0,0,61" powerconsumption="0" IsOn="true" castshadows="false" allowingameediting="false" pulsefrequency="1" pulseamount="0.30" >
+      <sprite texture="Content/Items/CreatureLoot/CreatureLoot.png" depth="0.025" sourcerect="300,291,98,113" origin="0.5,0.6" alpha="1.0" />
+    </LightComponent>
+    <LightComponent range="40" lightcolor="255,199,0,58" powerconsumption="0" IsOn="true" castshadows="false" allowingameediting="false">
+      <sprite texture="Content/Items/CreatureLoot/CreatureLoot.png" depth="0.025" sourcerect="410,301,88,95" origin="0.5,0.6" alpha="1.0" />
+    </LightComponent>
+  </Item>
+  <!--材料补给-->
+  <Item identifier="tsm_mcrate_replenishment1" tags="crate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" hideinmenus="true" impacttolerance="2.9">
+    <Sprite texture="%ModDir%/mission/tsm_mission_item.png" depth="0.54" sourcerect="0,478,275,105" origin="0.5,0.5" />
+    <Body width="150" height="85" density="50" />
+    <Holdable slots="RightHand,LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect"/>
+    <Deconstruct time="8" chooserandom="true" amount="5">
+      <Item identifier="titanite" commonness="0.1" />
+      <Item identifier="brockite" commonness="0.1" />
+      <Item identifier="thorianite" commonness="0.1" />
+      <Item identifier="amblygonite" commonness="0.1" />
+      <Item identifier="sphalerite" commonness="0.1" />
+      <Item identifier="pyromorphite" commonness="0.1" />
+      <Item identifier="quartz" commonness="0.1" />
+      <Item identifier="diamond" commonness="0.1" />
+      <Item identifier="hydroxyapatite" commonness="0.1" />
+      <Item identifier="uraniumore" commonness="0.1" />
+      <Item identifier="ilmenite" commonness="0.1" />
+      <Item identifier="stannite" commonness="0.1" />
+      <Item identifier="chalcopyrite" commonness="0.1" />
+      <Item identifier="esperite" commonness="0.1" />
+      <Item identifier="galena" commonness="0.1" />
+      <Item identifier="triphylite" commonness="0.1" />
+      <Item identifier="langbeinite" commonness="0.1" />
+      <Item identifier="chamosite" commonness="0.1" />
+      <Item identifier="ironore" commonness="0.1" />
+      <Item identifier="polyhalite" commonness="0.1" />
+      <Item identifier="graphite" commonness="0.1" />
+      <Item identifier="sylvite" commonness="0.1" />
+      <Item identifier="lazulite" commonness="0.1" />
+      <Item identifier="bornite" commonness="0.1" />
+      <Item identifier="cassiterite" commonness="0.1" />
+      <Item identifier="cryolite" commonness="0.1" />
+      <Item identifier="aragonite" commonness="0.1" />
+      <Item identifier="chrysoprase" commonness="0.1" />
+    </Deconstruct>
+  </Item>
+  <Item identifier="tsm_mcrate_replenishment2" tags="crate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" hideinmenus="true" impacttolerance="2.9">
+    <Sprite texture="%ModDir%/mission/tsm_mission_item.png" depth="0.54" sourcerect="0,478,275,105" origin="0.5,0.5" />
+    <Body width="150" height="85" density="50" />
+    <Holdable slots="RightHand,LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect"/>
+    <Deconstruct time="8" chooserandom="true" amount="5">
+      <Item identifier="slimebacteria" commonness="0.1" />
+      <Item identifier="aquaticpoppy" commonness="0.1" />
+      <Item identifier="yeastshroom" commonness="0.1" />
+      <Item identifier="elastin" commonness="0.1" />
+      <Item identifier="fiberplant" commonness="0.1" />
+      <Item identifier="hallucinogenicbufotoxin" commonness="0.1" />
+      <Item identifier="mucusball" commonness="0.1" />
+      <Item identifier="swimbladder" commonness="0.1" />
+      <Item identifier="adrenalinegland" commonness="0.1" />
+      <Item identifier="paralyxis" commonness="0.1" />
+      <Item identifier="ethanol" commonness="0.1" />
+      <Item identifier="opium" commonness="0.1" />
+    </Deconstruct>
+  </Item>
+  <Item identifier="tsm_mcrate_replenishment_med" tags="crate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" hideinmenus="true" impacttolerance="2.9">
+    <Sprite texture="%ModDir%/mission/tsm_mission_item.png" depth="0.54" sourcerect="0,630,275,105" origin="0.5,0.5" />
+    <Body width="150" height="85" density="50" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect"/>
+    <Deconstruct time="8" amount="3">
+      <Item identifier="antibleeding2" amount="8"/>
+      <Item identifier="antibleeding3" amount="5"/>
+      <Item identifier="antibiotics" amount="8"/>
+      <Item identifier="stabilozine" amount="8"/>
+      <Item identifier="antidama2" amount="8"/>
+      <Item identifier="antibloodloss2" amount="8"/>
+      <Item identifier="antidama2" amount="8"/>
+    </Deconstruct>
+  </Item>
+</Items>

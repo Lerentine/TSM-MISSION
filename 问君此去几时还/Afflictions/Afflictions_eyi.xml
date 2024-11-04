@@ -1,0 +1,709 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+<!--恶疫源-->
+<Affliction name="基因同源"
+identifier="tsm_virusstage_inhibitory"
+description=""
+type="resistance"
+isbuff="true"
+limbspecific="false"
+maxstrength="600"
+affectmachines="false"
+MedicalSkillGain="0.01">
+<Effect minstrength="0" maxstrength="600"
+  strengthchange="-1"
+  resistancefor="tsm_virusstage"
+  minresistance="0"
+  maxresistance="0.9"/>
+<icon texture="Content/UI/MainIconsAtlas.png" sourcerect="384,896,128,128" color="10,193,114,255" origin="0,0"/>
+</Affliction>
+<Affliction name="血肉胚胎"
+identifier="tsm_virusstage"
+description=""
+type="eyi"
+targets="human"
+causeofdeathdescription=""
+selfcauseofdeathdescription=""
+limbspecific="false"
+indicatorlimb="Torso"
+activationthreshold="0"
+showiconthreshold="45"
+showinhealthscannerthreshold="30"
+karmachangeonapplied="-1"
+maxstrength="100"
+transferbuffs="true"
+dormantthreshold="50"
+activethreshold="75"
+transformthresholdondeath="100"
+transitionthreshold="100"
+healcostmultiplier="2.5"
+basehealcost="200"
+iconcolors="186,153,242,255;140,77,245,255;105,20,245,255">
+<!--0~30缓慢增长压力，不可检测-->
+<Effect minstrength="0" maxstrength="30"
+  maxvitalitydecrease="0"
+  strengthchange="0.3"
+  minbodytint="195,195,195,0"
+  maxbodytint="195,195,195,150">
+  <StatusEffect target="Character">
+    <Affliction identifier="tsm_stress" amount="0.3" />
+  </StatusEffect>
+</Effect>
+<!--30~60快速增长压力直至压力达60-->
+<Effect minstrength="30" maxstrength="60"
+  maxvitalitydecrease="0"
+  strengthchange="1"
+  minbodytint="195,195,195,150"
+  maxbodytint="195,195,195,200">
+  <StatusEffect target="Character" comparison="and">
+    <Conditional tsm_stress="lt 60" />
+    <Affliction identifier="tsm_stress" amount="1.7" />
+  </StatusEffect>
+  <StatusEffect target="Character">
+    <Conditional tsm_stress="gte 60" />
+    <Affliction identifier="tsm_stress" amount="1.5" />
+  </StatusEffect>
+  <StatusEffect target="Character">
+    <Affliction identifier="eyibugspawnner" amount="5" />
+  </StatusEffect>
+</Effect>
+<!--60~80倒地呕吐-->
+<Effect minstrength="60" maxstrength="80"
+  maxvitalitydecrease="0"
+  strengthchange="0.7"
+  minbodytint="195,195,195,200"
+  maxbodytint="195,195,195,255">
+  <StatusEffect target="Character">
+    <Affliction identifier="stun" amount="0.35" />
+    <Affliction identifier="nausea" amount="1" />
+  </StatusEffect>
+</Effect>
+<!--80以后进入第二阶段，无法治疗-->
+<Effect minstrength="80" maxstrength="100"
+  maxvitalitydecrease="0"
+  strengthchange="0.3"
+  minbodytint="195,195,195,200"
+  maxbodytint="195,195,195,255">
+  <StatusEffect target="Character" setvalue="true">
+    <Affliction identifier="eyiinfection" amount="30" />
+    <ReduceAffliction identifier="tsm_virusstage" strength="100" />
+    <ReduceAffliction identifier="tsm_stress" strength="100" />
+    <ReduceAffliction identifier="psychosis" strength="100" />
+  </StatusEffect>
+</Effect>
+<icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="128,1,122,119" color="255,0,0,255" origin="0,0" />
+</Affliction>
+<!--病毒第二阶段-->
+<AfflictionHusk name="恶疫"
+identifier="eyiinfection"
+description=""
+type="eyi"
+causeofdeathdescription=""
+selfcauseofdeathdescription=""
+activationthreshold="0"
+huskedspeciesname="[speciesname]eyi"
+targets="human"
+SendMessages="false"
+dormantthreshold="50"
+activethreshold="100"
+transferbuffs="true"
+transformthresholdondeath="80"
+transitionthreshold="100"
+limbspecific="false"
+indicatorlimb="Torso"
+showiconthreshold="90"
+showinhealthscannerthreshold="90"
+maxstrength="100"
+healableinmedicalclinic="false"
+iconcolors="186,153,242,255;140,77,245,255;105,20,245,255">
+<!--0-10 死亡产生破皮者-->
+<Effect minstrength="0" maxstrength="10"
+  maxvitalitydecrease="0"
+  strengthchange="0"
+  minbodytint="195,195,195,0"
+  maxbodytint="195,195,195,150">
+  <StatusEffect target="Character">
+    <Affliction identifier="eyiskinbreakerspawnner" amount="5"/>
+  </StatusEffect>
+</Effect>
+<!--10-40 死亡产生抱身者-->
+<Effect minstrength="10" maxstrength="40"
+  maxvitalitydecrease="0"
+  strengthchange="1"
+  minbodytint="195,195,195,0"
+  maxbodytint="195,195,195,150">
+  <StatusEffect target="Character" comparison="and" type="OnDeath" delay="3">
+    <ReduceAffliction identifier="eyiskinbreakerspawnner" strength="100" />
+    <Conditional eyiinfection="gte 10.0" />
+    <Conditional eyiinfection="lte 30.0" />
+    <SpawnCharacter speciesname="Eyi_hugger" count="1" spread="0" />
+  </StatusEffect>
+</Effect>
+<!--40-45 死亡产生变体-->
+<Effect minstrength="40" maxstrength="45"
+  maxvitalitydecrease="0"
+  strengthchange="1"
+  minbodytint="195,195,195,0"
+  maxbodytint="195,195,195,150">
+  <StatusEffect target="Character" comparison="and" type="OnDeath" delay="3">
+    <Conditional eyiinfection="gte 40.0" />
+    <Conditional eyiinfection="lte 45.0" />
+    <SpawnCharacter speciesname="eyivariant" count="1" spread="0" />
+  </StatusEffect>
+</Effect>
+<!--45-75 死亡产生吃骨者-->
+<Effect minstrength="45" maxstrength="75"
+  maxvitalitydecrease="0"
+  strengthchange="1"
+  minbodytint="195,195,195,0"
+  maxbodytint="195,195,195,150">
+  <StatusEffect target="Character" comparison="and" type="OnDeath" delay="3">
+    <Conditional eyiinfection="gte 45.0" />
+    <Conditional eyiinfection="lte 75.0" />
+    <SpawnCharacter speciesname="boneeater" count="1" spread="0" />
+  </StatusEffect>
+</Effect>
+<!--75~90，短暂的可活动阶段-->
+<Effect minstrength="75" maxstrength="90"
+  maxvitalitydecrease="0"
+  strengthchange="0.5"
+  minbodytint="195,195,195,0"
+  maxbodytint="195,195,195,150"
+  minspeedmultiplier="0.15"
+  maxspeedmultiplier="0.15" >
+  <StatusEffect target="Character" setvalue="true">
+    <Affliction identifier="eyiskinbreakerspawnner" amount="5"/>
+    <ReduceAffliction identifier="stun" strength="100" />
+    <ReduceAffliction identifier="eyibugspawnner" strength="100" />
+  </StatusEffect>
+</Effect>
+<!--最终阶段，眩晕并呕吐，达到100时开始转变-->
+<Effect minstrength="90" maxstrength="100"
+  maxvitalitydecrease="0"
+  strengthchange="1"
+  minbodytint="195,195,195,150"
+  maxbodytint="195,195,195,255">
+  <StatusEffect target="Character">
+    <Affliction identifier="stun" amount="1" />
+    <Affliction identifier="nausea" amount="3" />
+  </StatusEffect>
+  <StatusEffect target="Character" comparison="and">
+    <Conditional isdead="false" />
+    <Conditional eyiinfection="eq 94.0" />
+    <ParticleEmitter particle="bloodsplash" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="blackblood" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="waterblood" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="tsm_redwaterblood" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+  </StatusEffect>
+  <StatusEffect target="Character" comparison="and">
+    <Conditional isdead="false" />
+    <Conditional eyiinfection="eq 96.0" />
+    <ParticleEmitter particle="bloodsplash" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="blackblood" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="waterblood" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="tsm_redwaterblood" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+  </StatusEffect>
+  <StatusEffect target="Character" comparison="and">
+    <Conditional isdead="false" />
+    <Conditional eyiinfection="eq 98.0" />
+    <ReduceAffliction identifier="tsm_stress" strength="100" />
+    <ReduceAffliction identifier="stun" strength="0.5" />
+    <ParticleEmitter particle="bloodsplash" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="blackblood" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="waterblood" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="tsm_redwaterblood" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+  </StatusEffect>
+  <StatusEffect target="Character" comparison="and">
+    <Conditional isdead="false" />
+    <Conditional eyiinfection="eq 100.0" />
+    <Affliction identifier="internaldamage" amount="17" />
+    <ReduceAffliction identifier="stun" strength="0.5" />
+    <ParticleEmitter particle="bloodsplash" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="blackblood" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="waterblood" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="tsm_redwaterblood" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
+  </StatusEffect>
+  
+</Effect>
+<icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="0,137,122,119" color="255,0,0,255"
+  origin="0,0" />
+</AfflictionHusk>
+<Affliction name="精神压力"
+identifier="tsm_stress"
+description=""
+type="stress"
+targets="human"
+causeofdeathdescription=""
+selfcauseofdeathdescription=""
+limbspecific="false"
+indicatorlimb="Torso"
+activationthreshold="0"
+showiconthreshold="0"
+showinhealthscannerthreshold="0"
+maxstrength="100"
+healcostmultiplier="2.5"
+basehealcost="200"
+iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
+<Effect minstrength="0" maxstrength="40"
+  maxvitalitydecrease="0"
+  strengthchange="-0.25"
+  minbodytint="195,195,195,0"
+  maxbodytint="195,195,195,150"
+  MinAfflictionOverlayAlphaMultiplier="0.0" MaxAfflictionOverlayAlphaMultiplier="0.1" />
+<!--40~60修理速度下降，buff1在下面periodicEffect里面-->
+<Effect minstrength="40" maxstrength="60"
+  maxvitalitydecrease="0"
+  strengthchange="-0.6"
+  minbodytint="195,195,195,0"
+  maxbodytint="195,195,195,150">
+  <StatValue stattype="RepairSpeed" value="-0.50" 
+  MinAfflictionOverlayAlphaMultiplier="0.1" MaxAfflictionOverlayAlphaMultiplier="0.2"/>
+</Effect>
+<!--60~75修理速度大幅下降，只能行走，buff1在下面periodicEffect里面-->
+<Effect minstrength="60" maxstrength="75"
+  maxvitalitydecrease="0"
+  strengthchange="-0.6"
+  minbodytint="195,195,195,0"
+  maxbodytint="195,195,195,150">
+  <StatValue stattype="RepairSpeed" value="-0.7" />
+  <AbilityFlag flagtype="MustWalk" 
+  MinAfflictionOverlayAlphaMultiplier="0.2" MaxAfflictionOverlayAlphaMultiplier="0.3"/>
+</Effect>
+<!--75~90提供buff2，修理速度大幅度下降，只能行走，精神病-->
+<Effect minstrength="75" maxstrength="90"
+  maxvitalitydecrease="0"
+  strengthchange="-1"
+  minbodytint="195,195,195,150"
+  maxbodytint="195,195,195,255"
+  MinAfflictionOverlayAlphaMultiplier="0.3" MaxAfflictionOverlayAlphaMultiplier="0.4">
+  <StatValue stattype="RepairSpeed" value="-0.85" />
+  <StatusEffect target="Character">
+    <!--此处buff自行更改为对应效果buff，buff2-->
+    <Affliction identifier="stun" amount="0.1" />
+    <Affliction identifier="psychosis" amount="5" />
+  </StatusEffect>
+</Effect>
+<!--压力大于40时相隔随机时间产生buff1-->
+<PeriodicEffect mininterval="30" maxinterval="120">
+  <StatusEffect target="Character">
+    <Conditional tsm_stress="gte 40.0" />
+    <!--此处buff自行更改为对应效果buff，buff1-->
+    <Affliction identifier="tsm_crash" amount="2" />
+    <Affliction identifier="stun" amount="0.5" />
+  </StatusEffect>
+</PeriodicEffect>
+<!--Description
+textidentifier="afflictiondescription.tsm_stress.low"
+minstrength="0"
+maxstrength="40"/>
+<Description
+textidentifier="afflictiondescription.tsm_stress"
+minstrength="40"
+maxstrength="200"/-->
+<icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="266,5,118,118" color="0,255,0,255" origin="0,0" />
+<AfflictionOverlay texture="%ModDir%/Afflictions/street.png" sourcerect="0,0,1024,640" color="255,255,255,255" />
+</Affliction>
+<!--崩溃锁手减速用-->
+<Affliction identifier="tsm_crash" type="" limbspecific="false" indicatorlimb="Torso" maxstrength="100" showiconthreshold="0" showicontoothersthreshold="0">
+  <Effect minstrength="0" maxstrength="100" strengthchange="-10">
+  <StatusEffect target="Character" lockhands="true" setvalue="true" />
+  </Effect>
+  <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="384,256,128,128" color="195,136,60,255" origin="0,0" />
+</Affliction>
+<!--精神压力治疗-->
+<Affliction
+    identifier="tsm_stress_resistance"
+    type="resistance"
+    isbuff="true"
+    limbspecific="false"
+    indicatorlimb="Head"
+    maxstrength="300"
+    affectmachines="false"
+    MedicalSkillGain="0.01">
+    <Effect minstrength="0" maxstrength="300"
+      strengthchange="-1"
+      resistancefor="tsm_stress"
+      minresistance="0"
+      maxresistance="1"/>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,896,128,128" color="10,193,114,255" origin="0,0"/>
+</Affliction>
+<!--控制-->
+<!--Mounted Weapons-->
+<Affliction identifier="eyiattack_lift" type="Attacked" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="20" indicatorlimb="Torso" iconcolors="255,162,0,255">
+  <Effect minstrength="0" maxstrength="60" strengthchange="-2" >
+  <AbilityFlag flagtype="MustWalk" />
+  <StatusEffect target="Character" disabledeltatime="true" >
+    <TriggerAnimation Type="Walk" path="%ModDir%/Afflictions/Humanattackedlift.xml" priority="1" ExpectedSpecies="Human" />
+    </StatusEffect>
+</Effect>
+  <!--icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="18,10,145,145" color="255,255,255,255" origin="0.5,0.5" /--><!--记得替换图标-->
+</Affliction>
+<Affliction identifier="eyiattack_tackle" type="Attacked" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="20" indicatorlimb="Torso" iconcolors="255,162,0,255">
+  <Effect minstrength="0" maxstrength="60" strengthchange="-2" >
+  <AbilityFlag flagtype="MustWalk" />
+  <StatusEffect target="Character" disabledeltatime="true" >
+    <TriggerAnimation Type="Walk" path="%ModDir%/Afflictions/Humanattackedlow.xml" priority="0.5" ExpectedSpecies="Human" />
+    </StatusEffect>
+</Effect>
+  <!--icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="18,10,145,145" color="255,255,255,255" origin="0.5,0.5" /--><!--记得替换图标-->
+</Affliction>
+<Affliction identifier="tsm_eyi_stop" type="None" limbspecific="false" indicatorlimb="Torso" maxstrength="100" duration="2.0" showiconthreshold="infinity" showicontoothersthreshold="infinity">
+ <Effect minstrength="0" maxstrength="60" strengthchange="-5" >
+ <statvalue stattype="MovementSpeed" value="-0.9" />
+</Effect>
+</Affliction>
+<Affliction identifier="tsmmission_eyi_bite"
+    description=""
+    type="debuff"
+    limbspecific="false"
+    maxstrength="100"
+    affectmachines="false">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-2">
+      <StatusEffect target="Character">
+        <Affliction identifier="haste" amount="3" />
+        <Affliction identifier="huskinfectionresistance" amount="10" />
+        <Affliction identifier="bleeding" amount="2" />
+        <Affliction identifier="organdamage" amount="0.7" />
+        <Affliction identifier="paralysis" amount="1" />
+        <ReduceAffliction identifier="tsm_virusstage" amount="2" />
+      </StatusEffect>
+      </Effect>
+    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="671,0,126,126" color="255,255,255,255" origin="0,0"/>
+</Affliction>
+<Affliction identifier="tsmmission_eyi_huge_lacerations"
+    description=""
+    type="debuff"
+    limbspecific="false"
+    maxstrength="100"
+    affectmachines="false">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-2">
+      <StatusEffect target="Character">
+        <Affliction identifier="lacerations" amount="0.5" />
+        <ReduceAffliction identifier="oxygenlow" amount="2" />
+      </StatusEffect>
+      </Effect>
+    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="671,0,126,126" color="255,255,255,255" origin="0,0"/>
+</Affliction>
+<Affliction identifier="tsmmission_eyi_voice" type="debuff" showiconthreshold="999" showinhealthscannerthreshold="999" limbspecific="false" maxstrength="100" affectmachines="false">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-100">
+      <StatusEffect target="Character">
+        <Conditional IsLocalPlayer="True" />
+        <Sound file="%ModDir%/item/eyi/eyi_zs_voice1.ogg" loop="false" selectionmode="Random"/>
+        <Sound file="%ModDir%/item/eyi/eyi_zs_voice2.ogg" loop="false" />
+        <Sound file="%ModDir%/item/eyi/eyi_zs_voice3.ogg" loop="false" />
+      </StatusEffect>
+      </Effect>
+</Affliction>
+<Affliction identifier="eyibugspawnner" type="None" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="50" limbspecific="false" indicatorlimb="Torso" iconcolors="255,162,0,255">
+  <Effect minstrength="0" maxstrength="50" strengthchange="0" maxvitalitydecrease="0" >
+    <StatusEffect target="Character" type="OnDeath" >
+      <ParticleEmitter particle="bloodtrail" particleamount="50" scalemin="2" scalemax="5" velocitymin="200" velocitymadx="1000" anglemin="0" anglemax="360" />
+      <ParticleEmitter particle="blackwaterblood" particleamount="50" scalemin="3" scalemax="5" velocitymin="0" velocitymax="20" anglemin="0" anglemax="360" />
+      <ParticleEmitter particle="heavygib" particleamount="3" scalemin="15" scalemax="15" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" />
+      <ParticleEmitter particle="gib" particleamount="100" scalemin="1" scalemax="2" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" />
+    </StatusEffect>
+    <StatusEffect type="OnDeath" target="Character" disabledeltatime="true" delay="2.0">
+      <SpawnCharacter SpeciesName="eyibug" count="3" spawnposition="This" />
+    </StatusEffect>
+</Effect>
+</Affliction>
+<Affliction identifier="eyiskinbreakerspawnner" type="None" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="50" limbspecific="false" indicatorlimb="Torso" iconcolors="255,162,0,255">
+  <Effect minstrength="0" maxstrength="50" strengthchange="0" maxvitalitydecrease="0" >
+    <StatusEffect target="Character" type="OnDeath" >
+      <ParticleEmitter particle="bloodtrail" particleamount="50" scalemin="2" scalemax="5" velocitymin="200" velocitymadx="1000" anglemin="0" anglemax="360" />
+      <ParticleEmitter particle="blackwaterblood" particleamount="50" scalemin="3" scalemax="5" velocitymin="0" velocitymax="20" anglemin="0" anglemax="360" />
+      <ParticleEmitter particle="heavygib" particleamount="3" scalemin="15" scalemax="15" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" />
+      <ParticleEmitter particle="gib" particleamount="100" scalemin="1" scalemax="2" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" />
+    </StatusEffect>
+    <StatusEffect type="OnDeath" target="Character" disabledeltatime="true" delay="2.0">
+      <SpawnCharacter SpeciesName="skinbreaker" count="1" spawnposition="This" />
+    </StatusEffect>
+</Effect>
+</Affliction>
+<!--猎物-->
+  <Affliction
+    identifier="tsm_eyi_provocative"
+    type="buff"
+    isbuff="true"
+    limbspecific="false"
+    maxstrength="30"
+    treatmentthreshold="1000"
+    hideiconafterdelay="true"
+    duration="1"
+    iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+    <Effect minstrength="0" maxstrength="30" tag="provocative" strengthchange="-1" resistancefor="lacerations,bitewounds,bleeding" minresistance="0" maxresistance="-0.7">
+      <StatValue stattype="SoundRangeMultiplier" value="3.0" />
+      <StatValue stattype="SightRangeMultiplier" value="3.0" />
+    </Effect>
+    <Icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="819,3,118,117" origin="0,0"/>
+  </Affliction>
+<!--加成-->
+  <Affliction name="战斗恶疫常态" identifier="tsm_eyi_attack" description="" type="eyi" isbuff="true" limbspecific="false" indicatorlimb="Torso" showiconthreshold="1000" activationthreshold="1000" showinhealthscannerthreshold="1000" showicontoothersthreshold="1000" maxstrength="10">
+  <Effect minstrength="0" maxstrength="1" strengthchange="0">
+    <StatValue stattype="RangedAttackSpeed" value="0.3" />
+        <StatValue stattype="RangedSpreadReduction" value="0.8" />
+        <StatValue stattype="meleeattackmultiplier" value="2" />
+        <StatValue stattype="AttackMultiplier" value="0.8" />
+        <AbilityFlag flagtype="AlwaysStayConscious" />
+        <AbilityFlag flagtype="IgnoredByEnemyAI"/>
+  </Effect>
+  <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="127,133,121,123" color="200,100,0,255" origin="0,0" />
+  </Affliction>
+  <!--ai用-->
+  <Affliction identifier="tsmmission_ai_asphyxiating_pressure" type="ai_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="100" maxstrength="1">
+    <Effect minstrength="0" maxstrength="1" resistancefor="huskinfection,oxygenlow,incrementalstun,tsm_stress,eyiinfection,tsm_virusstage" minresistance="0" maxresistance="1">
+      <AbilityFlag flagtype="ImmuneToPressure" />
+      <StatValue stattype="TeamAttackMultiplier" value="-1" />
+      <StatusEffect target="Character" usehulloxygen="false" needsair="false" setvalue="true">
+        <ReduceAffliction identifier="huskinfection" amount="50" />
+        <ReduceAffliction identifier="oxygenlow" strength="100" />
+        <ReduceAffliction identifier="opiatewithdrawal" strength="100" />
+        <ReduceAffliction identifier="opiateaddiction" strength="100" />
+        <ReduceAffliction identifier="burn" strength="1" />
+        <ReduceAffliction identifier="eyiinfection" strength="50" />
+        <ReduceAffliction identifier="tsm_virusstage" strength="50" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="稳定恶疫常态" identifier="tsmmission_ai_mod_resistancefor" type="ai_buff" isbuff="true" limbspecific="false" showiconthreshold="1" showinhealthscannerthreshold="1" maxstrength="1">
+    <Effect minstrength="0" maxstrength="1" resistancefor="huskmutation,symbiotichusk,huskheadhijacking1,blacktoxin" minresistance="0" maxresistance="1">
+    </Effect>
+    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="127,133,121,123" color="255,100,100,255" origin="0,0" />
+  </Affliction>
+  <Affliction identifier="tsmmission_ai_mod_necroinfection" type="ai_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="100" maxstrength="1">
+    <Effect minstrength="0" maxstrength="1" resistancefor="necroinfection" minresistance="0" maxresistance="1">
+    </Effect>
+    <Icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="0,0,119,120" origin="0,0"/>
+  </Affliction>
+  <Affliction identifier="tsm_bleeding_online" type="eyi" isbuff="true" limbspecific="false" hideiconafterdelay="true" showiconthreshold="1000" maxstrength="100" treatmentthreshold="1000" iconcolors="122,231,156;14,62,250;92,197,237;254,244,245">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-5" resistancefor="radiationsickness,cyanidepoisoning,morbusinepoisoning,psychosis,drunk,opiatewithdrawal,opiateoverdose,opiateaddiction,morbusinepoisoning,sufforinpoisoning,paralysis,organdamage,nausea,concussion,incrementalstun,stun,pressure" minresistance="0.00" maxresistance="1" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="bleeding" amount="4" />
+        <ReduceAffliction type="burn" amount="3" />
+        <ReduceAffliction type="damage" amount="0.8" />
+        <ReduceAffliction type="bloodloss" amount="1" />
+        <ReduceAffliction type="stun" amount="0.3" />
+        <ReduceAffliction identifier="huskinfection" amount="5" />
+        <ReduceAffliction identifier="acidburn" amount="3" />
+      </StatusEffect>
+    </Effect>
+    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="152,148,57,255" origin="0,0" />
+  </Affliction>
+  <Affliction identifier="tsm_eyi_instability_d" hideiconafterdelay="true" isbuff="true" limbspecific="false" showiconthreshold="100" maxstrength="15">
+    <Effect minstrength="0" maxstrength="15" strengthchange="-10" resistancefor="damage,bleeding,burn,acidburn,stun" 
+    minresistance="0.5" 
+    maxresistance="0.5" 
+    minspeedmultiplier="1.0" 
+    maxspeedmultiplier="1.0">
+    </Effect>
+    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="255,133,122,123" color="255,255,255,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="不稳定恶疫异常态" identifier="tsm_eyi_instability" description="" type="eyi" isbuff="true" limbspecific="false" indicatorlimb="Torso" showiconthreshold="0" activationthreshold="0" showinhealthscannerthreshold="50" showicontoothersthreshold="1000" maxstrength="100">
+    <Effect minstrength="0" maxstrength="54" strengthchange="0">
+    </Effect>
+    <Effect minstrength="55" maxstrength="58" strengthchange="0">
+      <StatusEffect target="Character" SpeedMultiplier="1.1" OxygenAvailable="1000.0" setvalue="true" />
+      <AbilityFlag flagtype="ImmuneToPressure" />
+      <StatusEffect target="Character">
+        <Affliction identifier="tsmmission_ai_asphyxiating_pressure" amount="10" />
+        <Affliction identifier="tsm_eyi_instability_d" amount="50" />
+        <Affliction identifier="tsm_bleeding_online" amount="50" />
+        <Affliction identifier="tsm_nt_protect" amount="50" />
+        <Affliction identifier="tsmmission_mod_resistancefor" amount="50" />
+        <Affliction identifier="tsm_eyi_attack" amount="50" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="59" maxstrength="100" strengthchange="0">
+    </Effect>
+    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="127,133,121,123" color="255,255,255,255" origin="0,0" />
+  </Affliction>
+  <Affliction identifier="tsmmission_mod_resistancefor" type="ai_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="100" maxstrength="1">
+    <Effect minstrength="0" maxstrength="1" resistancefor="huskmutation,symbiotichusk,huskheadhijacking1,blacktoxin" minresistance="0" maxresistance="1">
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_nt_protect" type="eyi" isbuff="true" hideiconafterdelay="true" limbspecific="false" maxstrength="100" showiconthreshold="1000" treatmentthreshold="1000" showinhealthscannerthreshold="1000" MedicalSkillGain="0.005">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" 
+    resistancefor="dislocation1,dislocation2,dislocation3,dislocation4,ll_arterialcut,rl_arterialcut,la_arterialcut,ra_arterialcut,t_arterialcut,h_arterialcut,t_paralysis,th_amputation,tll_amputation,trl_amputation,tla_amputation,tra_amputation,n_fracture,h_fracture,t_fracture,ll_fracture,rl_fracture,la_fracture,ra_fracture,sepsis,foreignbody,tamponade,internalbleeding,sym_palpitations,inflammation,pneumothorax,lungdamage,alkalosis,acidosis,kidneydamage,bonedamage,liverdamage,cerebralhypoxia,heartdamage" 
+    minresistance="1" maxresistance="1">
+    </Effect>
+  </Affliction>
+  <!--恶疫佳作-->
+  <Affliction name="稳定恶疫常态" identifier="tsm_eyi_stable_state" type="eyi" isbuff="true" limbspecific="false" hideiconafterdelay="true" indicatorlimb="Torso" showiconthreshold="0" activationthreshold="0" showinhealthscannerthreshold="0" showicontoothersthreshold="0" maxstrength="100">
+    <Effect minstrength="0" maxstrength="1" strengthchange="0">
+      <AbilityFlag flagtype="ImmuneToPressure" />
+      <StatusEffect target="Character" usehulloxygen="false" needsair="false" setvalue="true">
+        <ReduceAffliction identifier="huskinfection" amount="50" />
+        <ReduceAffliction identifier="opiateoverdose" strength="100" />
+        <ReduceAffliction identifier="opiatewithdrawal" strength="100" />
+        <ReduceAffliction identifier="opiateaddiction" strength="100" />
+        <ReduceAffliction identifier="burn" strength="1" />
+        <ReduceAffliction identifier="eyiinfection" strength="50" />
+        <ReduceAffliction identifier="tsm_virusstage" strength="50" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="1" maxstrength="4" strengthchange="0">
+      <StatusEffect target="Character" usehulloxygen="false" needsair="false" setvalue="true"/>
+      <StatValue stattype="swimmingspeed" value="0.3" />
+    </Effect>
+    <Effect minstrength="4" maxstrength="8" strengthchange="0" 
+    resistancefor="radiationsickness,cyanidepoisoning,psychosis,drunk,opiatewithdrawal,opiateoverdose,opiateaddiction,morbusinepoisoning,sufforinpoisoning,paralysis,organdamage,nausea,concussion,incrementalstun" 
+    minresistance="0.00" maxresistance="1" minspeedmultiplier="1.0" maxspeedmultiplier="1.0">
+    </Effect>
+    <Effect minstrength="8" maxstrength="16" strengthchange="0">
+      <StatusEffect target="Character" PressureProtection="4000.0" usehulloxygen="false" setvalue="true">
+        <ReduceAffliction identifier="oxygenlow" strength="0.5"/>
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="16" maxstrength="22" strengthchange="0" >
+      <StatusEffect target="Character" >
+        <ReduceAffliction identifier="bleeding" strength="3"/>
+        <ReduceAffliction identifier="bleedingnonstop" strength="3"/>
+        <ReduceAffliction identifier="bloodloss" strength="1"/>
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="22" maxstrength="28" strengthchange="0"
+    resistancefor="damage" 
+    minresistance="0.00" maxresistance="0.3" minspeedmultiplier="1.0" maxspeedmultiplier="1.0">
+    </Effect>
+    <Effect minstrength="28" maxstrength="33" strengthchange="0">
+      <StatValue stattype="RangedAttackSpeed" value="0.1" />
+      <StatValue stattype="RangedSpreadReduction" value="0.2" />
+    </Effect>
+    <Effect minstrength="33" maxstrength="37" strengthchange="0"
+    resistancefor="stun,burn" 
+    minresistance="0.00" maxresistance="0.5" minspeedmultiplier="1.0" maxspeedmultiplier="1.0">
+    </Effect>
+    <Effect minstrength="37" maxstrength="39" strengthchange="0">
+      <StatusEffect target="Character" >
+        <ReduceAffliction identifier="damage" strength="0.5"/>
+        <ReduceAffliction identifier="burn" strength="0.3"/>
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="39" maxstrength="42" strengthchange="0" 
+    resistancefor="acidburn" 
+    minresistance="0.00" maxresistance="0.5" minspeedmultiplier="1.0" maxspeedmultiplier="1.0">
+        <StatusEffect target="Character" >
+          <ReduceAffliction identifier="huskinfection" strength="2"/>
+          <ReduceAffliction identifier="acidburn" strength="1"/>
+          <ReduceAffliction identifier="psychosis" strength="1"/>
+          <ReduceAffliction identifier="opiateoverdose" strength="1"/>
+          <ReduceAffliction identifier="drunk" strength="2"/>
+          <ReduceAffliction identifier="opiatewithdrawal" strength="1"/>
+          <ReduceAffliction identifier="opiateaddiction" strength="1"/>
+        </StatusEffect>
+    </Effect>
+    <Effect minstrength="42" maxstrength="44" strengthchange="0">
+      <StatValue stattype="meleeattackmultiplier" value="0.5" />
+      <StatValue stattype="AttackMultiplier" value="0.25" />
+      <StatValue stattype="TurretAttackSpeed" value="0.1" />
+    </Effect>
+    <Effect minstrength="44" maxstrength="48" strengthchange="0" 
+    resistancefor="bleeding" 
+    minresistance="0.00" maxresistance="0.8" minspeedmultiplier="1.0" maxspeedmultiplier="1.0">
+    </Effect>
+    <Effect minstrength="48" maxstrength="55" strengthchange="0">
+      <StatusEffect target="Character" PressureProtection="5112.0" usehulloxygen="false" setvalue="true">
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="55" maxstrength="59" strengthchange="0">
+      <StatValue stattype="ElectricalSkillBonus" value="18" />
+      <StatValue stattype="HelmSkillBonus" value="18" />
+      <StatValue stattype="MechanicalSkillBonus" value="18" />
+      <StatValue stattype="MedicalSkillBonus" value="18" />
+      <StatValue stattype="WeaponsSkillBonus" value="18" />
+      <StatValue stattype="RepairSpeed" value="0.44" />
+      <StatValue stattype="RepairToolStructureRepairMultiplier" value="0.44" />
+    </Effect>
+    <Effect minstrength="59" maxstrength="63" strengthchange="0" 
+    resistancefor="stun" 
+    minresistance="0.00" maxresistance="0.4" minspeedmultiplier="1.0" maxspeedmultiplier="1.0">
+      <StatValue stattype="MeleeAttackSpeed" value="0.3" />
+      <StatValue stattype="MovementSpeed" value="0.2" />
+    </Effect>
+    <Effect minstrength="63" maxstrength="65" strengthchange="0" 
+    resistancefor="damage" 
+    minresistance="0.00" maxresistance="0.3" minspeedmultiplier="1.0" maxspeedmultiplier="1.0">
+      <StatValue stattype="MaximumHealthMultiplier" value="0.3" />
+    </Effect>
+    <Effect minstrength="65" maxstrength="69" strengthchange="0">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="radiationsickness" amount="0.5" />
+        <ReduceAffliction type="cyanidepoisoning" amount="0.5" />
+        <ReduceAffliction type="psychosis" amount="0.5" />
+        <ReduceAffliction type="drunk" amount="0.5" />
+        <ReduceAffliction type="opiatewithdrawal" amount="0.5" />
+        <ReduceAffliction type="opiateoverdose" amount="0.5" />
+        <ReduceAffliction identifier="opiateaddiction" amount="0.5" />
+        <ReduceAffliction type="morbusinepoisoning" amount="0.5" />
+        <ReduceAffliction type="sufforinpoisoning" amount="0.5" />
+        <ReduceAffliction type="paralysis" amount="0.5" />
+        <ReduceAffliction type="organdamage" amount="0.5" />
+        <ReduceAffliction type="nausea" amount="0.5" />
+        <ReduceAffliction type="concussion" amount="0.5" />
+        <ReduceAffliction type="incrementalstun" amount="0.5" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="69" maxstrength="72" strengthchange="0">
+      <StatusEffect target="Character" >
+        <ReduceAffliction identifier="stun" strength="0.8"/>
+      </StatusEffect>
+      <StatValue stattype="AttackMultiplier" value="0.3" />
+      <StatValue stattype="RangedAttackSpeed" value="0.05" />
+    </Effect>
+    <Effect minstrength="72" maxstrength="76" strengthchange="0">
+      <AbilityFlag flagtype="CanNotDieToAfflictions" />
+    </Effect>
+    <Effect minstrength="76" maxstrength="83" strengthchange="0">
+      <StatValue stattype="SkillGainSpeed" value="1.5" />
+      <StatValue stattype="IncreaseFabricationQuality" value="2" />
+    </Effect>
+    <Effect minstrength="83" maxstrength="85" strengthchange="0">
+      <StatusEffect target="Character" PressureProtection="6177.0" needsair="false" setvalue="true">
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="85" maxstrength="90" strengthchange="0" 
+    resistancefor="burn,damage" 
+    minresistance="0.00" maxresistance="0.25" minspeedmultiplier="1.0" maxspeedmultiplier="1.0">
+    <StatValue stattype="AttackMultiplier" value="0.25" />
+    </Effect>
+    <Effect minstrength="90" maxstrength="95" strengthchange="0">
+    <StatValue stattype="MaximumHealthMultiplier" value="2" />
+    </Effect>
+    <Effect minstrength="95" maxstrength="100" strengthchange="0"
+    resistancefor="huskinfection,oxygenlow,incrementalstun,tsm_stress,eyiinfection,tsm_virusstage" minresistance="0" maxresistance="1">
+      <StatusEffect target="Character">
+        <Affliction identifier="tsmmission_ai_mod_necroinfection" amount="10" />
+        <Affliction identifier="tsmmission_mod_resistancefor" amount="10" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="255,133,122,123" color="255,255,255,255" origin="0,0" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_0_1" minstrength="0" maxstrength="1" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_1_4" minstrength="1" maxstrength="4" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_4_8" minstrength="4" maxstrength="8" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_8_16" minstrength="8" maxstrength="16" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_16_22" minstrength="16" maxstrength="22" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_22_28" minstrength="22" maxstrength="28" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_28_33" minstrength="28" maxstrength="33" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_33_37" minstrength="33" maxstrength="37" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_37_39" minstrength="37" maxstrength="39" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_39_42" minstrength="39" maxstrength="42" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_42_44" minstrength="42" maxstrength="44" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_44_48" minstrength="44" maxstrength="48" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_48_55" minstrength="48" maxstrength="55" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_55_59" minstrength="55" maxstrength="59" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_59_63" minstrength="59" maxstrength="63" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_63_65" minstrength="63" maxstrength="65" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_65_69" minstrength="65" maxstrength="69" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_69_72" minstrength="69" maxstrength="72" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_72_76" minstrength="72" maxstrength="76" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_76_83" minstrength="76" maxstrength="83" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_83_85" minstrength="83" maxstrength="85" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_85_90" minstrength="85" maxstrength="90" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_90_95" minstrength="90" maxstrength="95" />
+    <Description textidentifier="afflictiondescription.tsmmission_eyi_95_100" minstrength="95" maxstrength="100" />
+    
+    
+  </Affliction>
+  
+  
+</Afflictions>

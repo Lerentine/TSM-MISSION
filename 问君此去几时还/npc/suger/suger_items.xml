@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!--suger-->
+  <Item name="阿糖幻化器继承" identifier="tsm_headset_suger" subcategory="tsmmissions" scale="0.5" category="Equipment,Medical" hideinmenus="true" tags="smallitem,mobileradio" allowasextracargo="true" description="" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="113,264,58,45" origin="0.5,0.5" />
+    <Sprite name="Headset" texture="Content/Items/JobGear/TalentGear.png" depth="0.6" sourcerect="255,305,72,60" origin="0.35,0.5" />
+    <Body radius="20" height="20" density="15" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredItem identifier="tsm_suger" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="copper" />
+      <Item identifier="plastic" />
+      <Item identifier="fpgacgircuit" />
+    </Deconstruct>
+    <WifiComponent range="55000.0" LinkToChat="true" MinChatMessageInterval="0.0" />
+    <ItemContainer capacity="1" maxstacksize="1" autoinject="true">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
+      <Containable items="chem,syringe" />
+    </ItemContainer>
+    <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+      <sprite name="Headset Wearable" texture="Content/Items/JobGear/TalentGear.png" sourcerect="255,305,72,58" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" origin="0.5,0.5" />
+      <StatusEffect type="OnWearing" target="Character,Contained" noninteractable="true" condition="-10" targetslot="0">
+        <ReduceAffliction type="bloodloss" amount="2.5" />
+        <RequiredItem items="antibloodloss1" type="Contained" targetslot="0" />
+        <Conditional bloodloss="gt 5.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character,Contained" condition="-5" targetslot="0">
+        <ReduceAffliction type="bloodloss" amount="6" />
+        <RequiredItem items="antibloodloss2" type="Contained" targetslot="0" />
+        <Conditional bloodloss="gt 5.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character,Contained" condition="-5" targetslot="0">
+        <Affliction identifier="psychosis" amount="2.25" />
+        <ReduceAffliction type="bloodloss" amount="6" />
+        <RequiredItem items="alienblood" type="Contained" targetslot="0" />
+        <Conditional bloodloss="gt 5.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character,Contained" comparison="or" condition="-10" targetslot="1">
+        <ReduceAffliction type="damage" amount="5" />
+        <ReduceAffliction type="burn" amount="0.1" />
+        <Affliction identifier="oxygenlow" amount="2" />
+        <Affliction identifier="opiateaddiction" amount="0.5" />
+        <Affliction identifier="opiateoverdose" amount="1.0" />
+        <ReduceAffliction identifier="opiatewithdrawal" amount="3.0" />
+        <RequiredItem items="antidama1" type="Contained" targetslot="1" />
+        <Conditional internaldamage="gt 0.0" />
+        <Conditional blunttrauma="gt 0.0" />
+        <Conditional lacerations="gt 0.0" />
+        <Conditional bitewounds="gt 0.0" />
+        <Conditional gunshotwound="gt 0.0" />
+        <Conditional organdamage="gt 0.0" />
+        <Conditional explosiondamage="gt 0.0" />
+        <Conditional concussion="gt 0.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character,Contained" comparison="or" condition="-20" targetslot="1">
+        <ReduceAffliction type="damage" amount="15" />
+        <ReduceAffliction type="burn" amount="1" />
+        <Affliction identifier="oxygenlow" amount="6" />
+        <Affliction identifier="opiateaddiction" amount="1.5" />
+        <Affliction identifier="opiateoverdose" amount="4.5" />
+        <ReduceAffliction identifier="opiatewithdrawal" amount="20" />
+        <RequiredItem items="antidama2" type="Contained" targetslot="1" />
+        <Conditional internaldamage="gt 0.0" />
+        <Conditional blunttrauma="gt 0.0" />
+        <Conditional lacerations="gt 0.0" />
+        <Conditional bitewounds="gt 0.0" />
+        <Conditional gunshotwound="gt 0.0" />
+        <Conditional organdamage="gt 0.0" />
+        <Conditional explosiondamage="gt 0.0" />
+        <Conditional concussion="gt 0.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character,Contained" comparison="or" condition="-5" targetslot="1">
+        <Affliction identifier="burn" amount="0.02" />
+        <ReduceAffliction type="damage" amount="3" />
+        <ReduceAffliction identifier="oxygenlow" amount="3" />
+        <ReduceAffliction identifier="bloodloss" amount="2" />
+        <RequiredItem items="deusizine" type="Contained" targetslot="1" />
+        <Conditional internaldamage="gt 0.0" />
+        <Conditional blunttrauma="gt 0.0" />
+        <Conditional lacerations="gt 0.0" />
+        <Conditional bitewounds="gt 0.0" />
+        <Conditional gunshotwound="gt 0.0" />
+        <Conditional organdamage="gt 0.0" />
+        <Conditional explosiondamage="gt 0.0" />
+        <Conditional concussion="gt 0.0" />
+        <Conditional bloodloss="gt 5.0" />
+        <Conditional oxygenlow="gt 50.0" />
+      </StatusEffect>
+    </Wearable>
+  </Item>
+  <Item name="阿糖幻化器" subcategory="tsmmissions" identifier="tsm_suger" hideinmenus="true" tags="smallitem,mobileradio,sonar" description="阿糖的耳机，可以幻化成阿糖" variantof="tsm_headset_suger">
+    <InventoryIcon texture="%ModDir%/npc/suger/suger_head.png" sourcerect="488,283,84,133" origin="0.5,0.5" />
+    <Sprite name="Headset" texture="%ModDir%/npc/suger/suger_head.png" sourcerect="488,283,84,133" origin="0.5,0.5" />
+    <WifiComponent range="50000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" target="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <Upgrade gameversion="0.18.0.0">
+      <WifiComponent>
+        <RequiredItems items="" />
+      </WifiComponent>
+    </Upgrade>
+    <ItemContainer capacity="0" maxstacksize="0" autoinject="false" containedstateindicatorstyle="syringe">
+      <Containable items="none" />
+      <SlotIcon slotindex="0" texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,448,64,64" origin="0.5,0.45" />
+      <SlotIcon slotindex="1" texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,448,64,64" origin="0.5,0.45" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="antibloodloss1,antibloodloss2,alienblood" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="antidama1,antidama2,deusizine" />
+      </SubContainer>
+    </ItemContainer>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredItem identifier="tsm_suger" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="copper" />
+      <Item identifier="plastic" />
+      <Item identifier="fpgacgircuit" />
+    </Deconstruct>
+    <Wearable slots="Any,Headset" displaycontainedstatus="false" msg="ItemMsgPickUpSelect">
+      <sprite name="AT Head" texture="%ModDir%/npc/suger/suger_head.png" limb="Head" sourcerect="0,0,160,160" inheritsourcerect="false" alphaclipotherwearables="false" hidelimb="true" hidewearablesoftype="moustache,beard,hair,faceattachment,husk,herpes" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="false" Scale="1" hideotherwearables="false" inheritorigin="false" origin="0.47048324,0.48" />
+      <sprite name="AT Torso" texture="%ModDir%/npc/suger/suger_body.png" limb="Torso" sourcerect="144,0,112,160" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.49,0.545" />
+      <sprite name="AT Right Hand" texture="%ModDir%/npc/suger/suger_body.png" limb="RightHand" sourcerect="256,151,64,57" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.36,0.53" />
+      <sprite name="AT Left Hand" texture="%ModDir%/npc/suger/suger_body.png" limb="LeftHand" sourcerect="320,151,64,57" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.36,0.52" />
+      <sprite name="AT Left Lower Arm" texture="%ModDir%/npc/suger/suger_body.png" limb="LeftForearm" sourcerect="320,80,64,72" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.37812376,0.565" />
+      <sprite name="AT Right Lower Arm" texture="%ModDir%/npc/suger/suger_body.png" limb="RightForearm" sourcerect="256,80,64,72" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.41425222,0.565" />
+      <sprite name="AT Left Upper Arm" texture="%ModDir%/npc/suger/suger_body.png" limb="LeftArm" sourcerect="320,0,64,80" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.42934397,0.43" />
+      <sprite name="AT Right Upper Arm" texture="%ModDir%/npc/suger/suger_body.png" limb="RightArm" sourcerect="256,0,64,80" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.423565,0.43" />
+      <sprite name="AT Waist" texture="%ModDir%/npc/suger/suger_body.png" limb="Waist" sourcerect="144,160,112,96" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.72,0.55" />
+      <sprite name="AT Right Thigh" texture="%ModDir%/npc/suger/suger_body.png" limb="RightThigh" sourcerect="0,0,64,112" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.38,0.48" />
+      <sprite name="AT Left Thigh" texture="%ModDir%/npc/suger/suger_body.png" limb="LeftThigh" sourcerect="64,0,80,112" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.49,0.48" />
+      <sprite name="AT Right Leg" texture="%ModDir%/npc/suger/suger_body.png" limb="RightLeg" sourcerect="0,112,64,144" inheritsourcerect="false" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.35,0.415" />
+      <sprite name="AT Left Leg" texture="%ModDir%/npc/suger/suger_body.png" limb="LeftLeg" sourcerect="64,112,80,144" inheritsourcerect="false" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.45,0.415" />
+      <sprite name="AT Right Shoe" texture="%ModDir%/npc/suger/suger_body.png" limb="RightFoot" sourcerect="256,208,64,48" inheritsourcerect="false" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.5,0.475" />
+      <sprite name="AT Left Shoe" texture="%ModDir%/npc/suger/suger_body.png" limb="LeftFoot" sourcerect="320,208,64,48" inheritsourcerect="false" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.45,0.475" />
+      <sprite name="AT Boobs" texture="%ModDir%/npc/suger/suger_body.png" limb="Tail" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
+      <sprite name="AT Boobs" texture="%ModDir%/npc/suger/suger_body.png" limb="Jaw" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
+      <!--StatusEffect type="OnWearing" target="Character" SoundRange="55000" setvalue="true">
+        <AiTarget soundrange="55000" />
+        <Affliction identifier="radio" strength="150" />
+        </StatusEffect-->
+      <StatusEffect type="OnWearing" target="Character,Contained" noninteractable="true" condition="-10" targetslot="0">
+        <ReduceAffliction type="bloodloss" amount="2.5" />
+        <RequiredItem items="antibloodloss1" type="Contained" targetslot="0" />
+        <Conditional bloodloss="gt 5.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character,Contained" condition="-5" targetslot="0">
+        <ReduceAffliction type="bloodloss" amount="6" />
+        <RequiredItem items="antibloodloss2" type="Contained" targetslot="0" />
+        <Conditional bloodloss="gt 5.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character,Contained" condition="-5" targetslot="0">
+        <Affliction identifier="psychosis" amount="2.25" />
+        <ReduceAffliction type="bloodloss" amount="6" />
+        <RequiredItem items="alienblood" type="Contained" targetslot="0" />
+        <Conditional bloodloss="gt 5.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character,Contained" comparison="or" condition="-10" targetslot="1">
+        <ReduceAffliction type="damage" amount="5" />
+        <ReduceAffliction type="burn" amount="0.1" />
+        <Affliction identifier="oxygenlow" amount="2" />
+        <Affliction identifier="opiateaddiction" amount="0.5" />
+        <Affliction identifier="opiateoverdose" amount="1.0" />
+        <ReduceAffliction identifier="opiatewithdrawal" amount="3.0" />
+        <RequiredItem items="antidama1" type="Contained" targetslot="1" />
+        <Conditional internaldamage="gt 0.0" />
+        <Conditional blunttrauma="gt 0.0" />
+        <Conditional lacerations="gt 0.0" />
+        <Conditional bitewounds="gt 0.0" />
+        <Conditional gunshotwound="gt 0.0" />
+        <Conditional organdamage="gt 0.0" />
+        <Conditional explosiondamage="gt 0.0" />
+        <Conditional concussion="gt 0.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character,Contained" comparison="or" condition="-20" targetslot="1">
+        <ReduceAffliction type="damage" amount="15" />
+        <ReduceAffliction type="burn" amount="1" />
+        <Affliction identifier="oxygenlow" amount="6" />
+        <Affliction identifier="opiateaddiction" amount="1.5" />
+        <Affliction identifier="opiateoverdose" amount="4.5" />
+        <ReduceAffliction identifier="opiatewithdrawal" amount="20" />
+        <RequiredItem items="antidama2" type="Contained" targetslot="1" />
+        <Conditional internaldamage="gt 0.0" />
+        <Conditional blunttrauma="gt 0.0" />
+        <Conditional lacerations="gt 0.0" />
+        <Conditional bitewounds="gt 0.0" />
+        <Conditional gunshotwound="gt 0.0" />
+        <Conditional organdamage="gt 0.0" />
+        <Conditional explosiondamage="gt 0.0" />
+        <Conditional concussion="gt 0.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character,Contained" comparison="or" condition="-5" targetslot="1">
+        <Affliction identifier="burn" amount="0.02" />
+        <ReduceAffliction type="damage" amount="3" />
+        <ReduceAffliction identifier="oxygenlow" amount="3" />
+        <ReduceAffliction identifier="bloodloss" amount="2" />
+        <RequiredItem items="deusizine" type="Contained" targetslot="1" />
+        <Conditional internaldamage="gt 0.0" />
+        <Conditional blunttrauma="gt 0.0" />
+        <Conditional lacerations="gt 0.0" />
+        <Conditional bitewounds="gt 0.0" />
+        <Conditional gunshotwound="gt 0.0" />
+        <Conditional organdamage="gt 0.0" />
+        <Conditional explosiondamage="gt 0.0" />
+        <Conditional concussion="gt 0.0" />
+        <Conditional bloodloss="gt 5.0" />
+        <Conditional oxygenlow="gt 50.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" interval="5">
+        <GiveTalentInfo giverandom="false" talentidentifiers="suger_tail_handle" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="Suger_Tail_Spawn" strength="10" />
+      </StatusEffect>
+    </Wearable>
+  </Item>
+  <Item name="阿糖作战服站点" identifier="tsm_suger_uniform" subcategory="tsmmissions" aliases="securityuniform" category="Equipment" tags="smallitem,clothing,vest" hideinmenus="true" fireproof="true" description="站点防穿模" scale="0.5" noninteractable="True" impactsoundtag="impact_soft">
+    <InventoryIcon name="pgc uniform Icon" texture="%ModDir%/npc/suger/suger_head.png" sourcerect="296,151,54,99" origin="0.5,0.5" />
+    <Sprite name="pgc uniform" texture="%ModDir%/npc/suger/suger_head.png" sourcerect="263,22,133,63" depth="0.55" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="AT Head" texture="%ModDir%/npc/suger/suger_head.png" limb="Head" sourcerect="0,0,160,160" inheritsourcerect="false" alphaclipotherwearables="false" hidelimb="true" hidewearablesoftype="moustache,beard,hair,faceattachment,husk,herpes" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="false" Scale="1" hideotherwearables="false" inheritorigin="false" origin="0.47048324,0.48" />
+      <sprite name="AT Torso" texture="%ModDir%/npc/suger/suger_uniform_body_ai.png" limb="Torso" depthlimb="Jaw" sourcerect="130,14,104,206" inheritsourcerect="false" hidewearablesoftype="hair" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.575,0.33" />
+      <sprite name="AT Right Hand" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="RightHand" sourcerect="256,151,64,57" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.38,0.52" />
+      <sprite name="AT Left Hand" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="LeftHand" sourcerect="320,151,64,57" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.38,0.51" />
+      <sprite name="AT Left Lower Arm" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="LeftForearm" sourcerect="320,80,64,72" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.37812376,0.565" />
+      <sprite name="AT Right Lower Arm" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="RightForearm" sourcerect="256,80,64,72" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.41425222,0.565" />
+      <sprite name="AT Left Upper Arm" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="LeftArm" sourcerect="320,0,64,80" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.425,0.435" />
+      <sprite name="AT Right Upper Arm" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="RightArm" sourcerect="256,0,64,80" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.420,0.435" />
+      <sprite name="AT Waist" texture="%ModDir%/npc/suger/suger_uniform_body_ai.png" limb="Waist" sourcerect="272,0,144,144" hideotherwearables="true" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" origin="0.80608195,0.26" />
+      <sprite name="AT Right Thigh" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="RightThigh" sourcerect="0,0,64,112" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.38,0.48" />
+      <sprite name="AT Left Thigh" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="LeftThigh" sourcerect="64,0,80,112" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.49,0.48" />
+      <sprite name="AT Right Leg" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="RightLeg" sourcerect="0,112,64,144" inheritsourcerect="false" inheritdepth="false" depth="0.121" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.35,0.415" />
+      <sprite name="AT Left Leg" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="LeftLeg" sourcerect="64,112,80,144" inheritsourcerect="false" inheritdepth="false" depth="0.131" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.45,0.415" />
+      <sprite name="AT Right Shoe" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="RightFoot" sourcerect="256,208,63,48" inheritsourcerect="false" inheritdepth="false" depth="0.122" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.5,0.475" />
+      <sprite name="AT Left Shoe" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="LeftFoot" sourcerect="320,208,64,48" inheritsourcerect="false" inheritdepth="false" depth="0.132" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.45,0.475" />
+      <sprite name="pgc Boobs" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="Tail" hidelimb="true" sourcerect="0,0,1,1" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.85" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.75" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.75" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.85" />
+      <damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.75" />
+      <damagemodifier afflictionidentifiers="stun" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      <SkillModifier skillidentifier="medical" skillvalue="-5" />
+      <SkillModifier skillidentifier="mechanical" skillvalue="-7" />
+      <SkillModifier skillidentifier="electrical" skillvalue="-7" />
+    </Wearable>
+    <ItemContainer capacity="4">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
+    </ItemContainer>
+  </Item>
+  <Item name="阿糖作战服" identifier="suger_combat_uniform" subcategory="tsmmissions" aliases="securityuniform" hideinmenus="true" category="Equipment" tags="smallitem,clothing,vest" fireproof="false" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon name="at uniform Icon" texture="%ModDir%/npc/suger/suger_head.png" sourcerect="296,151,54,99" origin="0.5,0.5" />
+    <Sprite name="at uniform" texture="%ModDir%/npc/suger/suger_head.png" sourcerect="263,22,133,63" depth="0.55" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="AT Torso" texture="%ModDir%/npc/suger/suger_uniform_body.png" limb="Torso" depthlimb="Jaw" sourcerect="112,0,144,256" inheritsourcerect="false" hidewearablesoftype="hair" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.575,0.33"></sprite>
+      <sprite name="AT Right Hand" texture="%ModDir%/npc/suger/suger_uniform.png" limb="RightHand" sourcerect="256,151,64,57" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.38,0.52" />
+      <sprite name="AT Left Hand" texture="%ModDir%/npc/suger/suger_uniform.png" limb="LeftHand" sourcerect="320,151,64,57" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.38,0.51" />
+      <sprite name="AT Left Lower Arm" texture="%ModDir%/npc/suger/suger_uniform.png" limb="LeftForearm" sourcerect="320,80,64,72" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.37812376,0.565" />
+      <sprite name="AT Right Lower Arm" texture="%ModDir%/npc/suger/suger_uniform.png" limb="RightForearm" sourcerect="256,80,64,72" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.41425222,0.565" />
+      <sprite name="AT Left Upper Arm" texture="%ModDir%/npc/suger/suger_uniform.png" limb="LeftArm" sourcerect="320,0,64,80" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.425,0.435" />
+      <sprite name="AT Right Upper Arm" texture="%ModDir%/npc/suger/suger_uniform.png" limb="RightArm" sourcerect="256,0,64,80" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.420,0.435" />
+      <sprite name="AT Waist" texture="%ModDir%/npc/suger/suger_uniform_body.png" limb="Waist" sourcerect="272,0,144,144" hideotherwearables="true" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritorigin="false" origin="0.80608195,0.26" />
+      <sprite name="AT Right Thigh" texture="%ModDir%/npc/suger/suger_uniform.png" limb="RightThigh" sourcerect="0,0,64,112" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.38,0.48" />
+      <sprite name="AT Left Thigh" texture="%ModDir%/npc/suger/suger_uniform.png" limb="LeftThigh" sourcerect="64,0,80,112" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.49,0.48" />
+      <sprite name="AT Right Leg" texture="%ModDir%/npc/suger/suger_uniform.png" limb="RightLeg" sourcerect="0,112,64,144" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.35,0.415" />
+      <sprite name="AT Left Leg" texture="%ModDir%/npc/suger/suger_uniform.png" limb="LeftLeg" sourcerect="64,112,80,144" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.45,0.415" />
+      <sprite name="AT Right Shoe" texture="%ModDir%/npc/suger/suger_uniform.png" limb="RightFoot" sourcerect="256,208,63,48" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.5,0.475" />
+      <sprite name="AT Left Shoe" texture="%ModDir%/npc/suger/suger_uniform.png" limb="LeftFoot" sourcerect="320,208,64,48" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.45,0.475" />
+      <sprite name="At Boobs" texture="%ModDir%/npc/suger/suger_uniform.png" limb="Tail" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
+      <sprite name="AT Boobs" texture="%ModDir%/npc/suger/suger_uniform.png" limb="Jaw" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.75" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.75" />
+      <damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.75" />
+      <damagemodifier afflictiontypes="damage" armorsector="0.0,360.0" damagemultiplier="0.85" />
+      <SkillModifier skillidentifier="helm" skillvalue="15" />
+      <SkillModifier skillidentifier="weapons" skillvalue="10" />
+      <SkillModifier skillidentifier="medical" skillvalue="10" />
+      <SkillModifier skillidentifier="mechanical" skillvalue="-15" />
+      <SkillModifier skillidentifier="electrical" skillvalue="-20" />
+    </Wearable>
+    <ItemContainer capacity="4">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest" />
+    </ItemContainer>
+  </Item>
+  <Item name="阿糖的连帽衫" identifier="suger_clothes" subcategory="tsmmissions" aliases="securityuniform" hideinmenus="true" category="Equipment" tags="smallitem,clothing,vest" fireproof="false" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon name="suger uniform Icon" texture="%ModDir%/npc/suger/suger_clothes.png" sourcerect="402,242,114,122" origin="0.5,0.5" />
+    <Sprite name="suger uniform" texture="%ModDir%/npc/suger/suger_head.png" sourcerect="263,22,133,63" depth="0.55" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="suger Torso" texture="%ModDir%/npc/suger/suger_clothes.png" limb="Torso" depthlimb="Jaw" sourcerect="156,14,68,140" inheritsourcerect="false" hidewearablesoftype="hair" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.575,0.49"/>
+      <sprite name="suger Right Hand" texture="%ModDir%/npc/suger/suger_clothes.png" limb="RightHand" sourcerect="266,153,31,37" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.3,0.7" />
+      <sprite name="suger Left Hand" texture="%ModDir%/npc/suger/suger_clothes.png" limb="LeftHand" sourcerect="331,151,28,36" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.3,0.7" />
+      <sprite name="suger Left Lower Arm" texture="%ModDir%/npc/suger/suger_clothes.png" limb="RightForearm" sourcerect="474,99,42,63" inheritsourcerect="false" hidelimb="true" inherittexturescale="false" inheritlimbdepth="true" inheritorigin="false" scale="0.45" origin="0.4,0.6" />
+      <sprite name="suger Right Lower Arm" texture="%ModDir%/npc/suger/suger_clothes.png" limb="LeftForearm" sourcerect="399,93,43,64" inheritsourcerect="false" hidelimb="true" inherittexturescale="false" inheritlimbdepth="true" inheritorigin="false" scale="0.45" origin="0.44,0.6" />
+      <sprite name="suger Left Upper Arm" texture="%ModDir%/npc/suger/suger_clothes.png" limb="RightArm" sourcerect="266,0,38,104" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.425,0.4" />
+      <sprite name="suger Right Upper Arm" texture="%ModDir%/npc/suger/suger_clothes.png" limb="LeftArm" sourcerect="328,0,39,103" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.420,0.4" />
+      <sprite name="suger Waist" texture="%ModDir%/npc/suger/suger_clothes.png" limb="Waist" sourcerect="148,182,94,72" hideotherwearables="true" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" origin="0.75,0.3" />
+      <sprite name="suger Right Thigh" texture="%ModDir%/npc/suger/suger_clothes.png" limb="RightThigh" sourcerect="0,0,50,100" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.48,0.48" />
+      <sprite name="suger Left Thigh" texture="%ModDir%/npc/suger/suger_clothes.png" limb="LeftThigh" sourcerect="75,0,52,99" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.53,0.48" />
+      <sprite name="suger Right Leg" texture="%ModDir%/npc/suger/suger_clothes.png" limb="RightLeg" sourcerect="4,123,36,97" hidelimb="false" inherittexturescale="true" inheritorigin="false" origin="0.48,0.49" />
+      <sprite name="suger Left Leg" texture="%ModDir%/npc/suger/suger_clothes.png" limb="LeftLeg" sourcerect="79,122,36,97" hidelimb="false" inherittexturescale="true" inheritorigin="false" origin="0.51,0.49" />
+      <sprite name="suger Right Shoe" texture="%ModDir%/npc/suger/suger_clothes.png" limb="RightFoot" sourcerect="258,215,53,31" hidelimb="false" inherittexturescale="true" inheritorigin="false" origin="0.58,0.53" />
+      <sprite name="suger Left Shoe" texture="%ModDir%/npc/suger/suger_clothes.png" limb="LeftFoot" sourcerect="318,216,53,31" hidelimb="false" inherittexturescale="true" inheritorigin="false" origin="0.55,0.53" />
+      <sprite name="suger Boobs" texture="%ModDir%/npc/suger/suger_clothes.png" limb="Tail" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
+      <sprite name="suger Boobs" texture="%ModDir%/npc/suger/suger_clothes.png" limb="Jaw" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
+      <damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="1.2" setvalue="true" />
+      <SkillModifier skillidentifier="helm" skillvalue="5" />
+      <SkillModifier skillidentifier="weapons" skillvalue="5" />
+      <SkillModifier skillidentifier="medical" skillvalue="5" />
+      <SkillModifier skillidentifier="mechanical" skillvalue="5" />
+      <SkillModifier skillidentifier="electrical" skillvalue="5" />
+    </Wearable>
+    <ItemContainer capacity="2">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest" />
+    </ItemContainer>
+  </Item>
+  <Item name="阿糖的战斧" identifier="suger_boardingaxe" health="100" subcategory="tsmmissions" hideinmenus="true" category="Weapon" Tags="smallitem,weapon" scale="0.35" impactsoundtag="impact_metal_light" allowasextracargo="true" HideConditionBar="true">
+    <InventoryIcon texture="%ModDir%/npc/suger/suger_weapons.png" sourcerect="405,86,215,234" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/npc/suger/suger_weapons.png" sourcerect="0,257,318,145" depth="0.55" origin="0.5,0.3" />
+    <BrokenSprite texture="%ModDir%/npc/suger/suger_weapons.png" depth="0.55" sourcerect="0,69,318,145" origin="0.5,0.5" maxcondition="60" />
+    <Body width="300" height="90" density="50" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,0" handle1="-22,0" handle2="0,5" holdangle="30" reload="1" aimangle="10" range="160" combatPriority="45" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="2" severlimbsprobability="8.5" itemdamage="50" ballastfloradamage="50" penetration="0.1" structuredamage="60">
+        <Affliction identifier="stun" strength="0.5" />
+        <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+      </Attack>
+      <StatusEffect type="OnUse" target="This,Limb" checkconditionalalways="true">
+        <Conditional voltage="lt 0.5" />
+        <Affliction identifier="lacerations" strength="25" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This,Limb" checkconditionalalways="true">
+        <Conditional voltage="gt 0.5" />
+        <Affliction identifier="lacerations" strength="40" />
+        <Affliction identifier="bleeding" strength="10" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This,AllLimbs" checkconditionalalways="true">
+        <Conditional voltage="gt 0.5" />
+        <Affliction identifier="burn" strength="0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" checkconditionalalways="true">
+        <Conditional voltage="gt 0.5" />
+      </StatusEffect>
+      <StatusEffect type="always" target="This" Condition="100" setvalue="true">
+        <Conditional voltage="lt 0.5" />
+      </StatusEffect>
+      <StatusEffect type="always" target="This" Condition="50" setvalue="true">
+        <Conditional voltage="gt 0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" delay="0.1">
+        <Conditional voltage="gt 0.5" />
+        <ParticleEmitter particle="bubbles" particlespersecond="10" position="0,0" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" scalemin="0.6" scalemax="0.6" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" delay="0.1">
+        <Conditional voltage="gt 0.5" />
+        <ParticleEmitter particle="bubbles" particlespersecond="10" position="0,0" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" scalemin="0.6" scalemax="0.6" />
+      </StatusEffect>
+    </MeleeWeapon>
+    <LightComponent LightColor="50,130,150,200" Flicker="0.02" range="450" powerconsumption="10" IsOn="true"></LightComponent>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.12,0.12" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
+      <TickBox text="启动">
+        <StatusEffect type="OnUse" target="This" targetslot="0" Voltage="1.0" setvalue="true" checkconditionalalways="true">
+          <RequiredItem items="mobilebattery" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" targetslot="0" targettype="Contained" Condition="-0" checkconditionalalways="true">
+          <RequiredItem items="batterycell" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" targetslot="0" targettype="Contained" Condition="-0" checkconditionalalways="true">
+          <RequiredItem items="fulguriumbatterycell" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" targetslot="0" targettype="Contained" Condition="-0" checkconditionalalways="true">
+          <RequiredItem excludedidentifiers="batterycell,fulguriumbatterycell" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnSecondaryUse" target="This" targetslot="0" Voltage="0" setvalue="true" />
+      </TickBox>
+    </CustomInterface>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="battery">
+      <Containable items="mobilebattery" />
+    </ItemContainer>
+    <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="伊卡洛斯" identifier="tsmmissions_Icarus" category="Weapon" subcategory="tsmmissions" hideinmenus="true" tags="smallitem,weapon,tsm_gun,pistolitem,gunsmith,mountableweapon" Scale="0.4" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/npc/suger/suger_weapons.png" sourcerect="318,1,63,71" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/npc/suger/suger_weapons.png" sourcerect="14,5,196,54" depth="0.55" origin="0.5,0.5" />
+    <Body width="72" height="40" density="25" />
+    <Holdable slots="Any,RightHand" controlpose="true" holdpos="30,-35" holdangle="80" aimpos="105,7" handle1="-70,-7" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon barrelpos="29,11" spread="0" unskilledspread="8" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" reload="1">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <Sound file="%ModDir%/Sounds/Icarus.ogg" type="OnUse" range="3000" volume="2" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <StatusEffect type="OnUse" target="This">
+        <Explosion range="150.0" force="4" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="70" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" setvalue="true">
+        <Conditional skillrequirement="true" weapons="lt 90" />
+        <Conditional recoilstabilized="lte 0" />
+        <Conditional incrementalstun="lte 90" />
+        <Affliction identifier="incrementalstun" strength="40" />
+        <Affliction identifier="internaldamage" strength="20" />
+      </StatusEffect>
+      <RequiredItems items="handcannonammo,grenade" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="90" />
+    </RangedWeapon>
+    <ItemContainer capacity="4" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
+      <Containable items="handcannonammo,grenade" />
+    </ItemContainer>
+    <aitarget sightrange="4500" soundrange="6000" fadeouttime="10" />
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
+    </Quality>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <LightComponent LightColor="0.8,0.8,0.8,1.0" Flicker="0.02" range="480" powerconsumption="0" IsOn="false" canbeselected="true">
+      <LightTexture texture="Content/Lights/lightcone.png" origin="0.005, 0.495" size="1.5,1.0" />
+    </LightComponent>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.08,0.08" anchor="BottomLeft" relativeoffset="0,0.4" style="ItemUI" />
+      <TickBox text="flashlight">
+        <StatusEffect type="OnUse" target="This" IsOn="true" />
+        <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
+      </TickBox>
+    </CustomInterface>
+    <SkillRequirementHint identifier="weapons" level="90" />
+  </Item>
+  <Item name="海军大幅帽" identifier="Extra_hat_male_tsm" subcategory="tsmmissions" category="Equipment" hideinmenus="true" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="最后的良心，秩序的天平" scale="0.38">
+    <Deconstruct time="10" />
+    <Sprite name="Ceremonial hat" texture="%ModDir%/npc/suger/suger_head.png" depth="0.6" sourcerect="470,22,100,60" origin="0.5,0.5" />
+    <Body width="75" height="50" density="30" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <sprite name="Ceremonial hat Wearable" texture="%ModDir%/npc/suger/suger_head.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.67" hidelimb="false" sourcerect="470,22,100,60" origin="0.49,1.1" />
+      <SkillModifier skillidentifier="helm" skillvalue="10" />
+      <SkillModifier skillidentifier="weapons" skillvalue="10" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.9" />
+    </Wearable>
+  </Item>
+</Items>

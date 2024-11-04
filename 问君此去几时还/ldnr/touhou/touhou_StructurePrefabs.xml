@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<prefabs>
+  <fin name="东方花饰" identifier="tsm_touhou_1" description="" body="false" allowattachitems="true" hideinmenus="true">
+    <sprite texture="%ModDir%/ldnr/touhou/touhou.png" sourcerect="0,0,1194,838" depth="0.985" origin="0.5,0.5" />
+  </fin>
+  <fin name="东方花饰" identifier="tsm_touhou_2" description="" body="false" allowattachitems="true" hideinmenus="true">
+    <sprite texture="%ModDir%/ldnr/touhou/touhou.png" sourcerect="0,0,1280,720" depth="0.985" origin="0.5,0.5" />
+  </fin>
+  <fin name="东方花饰" identifier="tsm_touhou_3" description="" body="false" allowattachitems="true" hideinmenus="true">
+    <sprite texture="%ModDir%/ldnr/touhou/touhou.png" sourcerect="0,0,1280,720" depth="0.985" origin="0.5,0.5" />
+  </fin>
+</prefabs>

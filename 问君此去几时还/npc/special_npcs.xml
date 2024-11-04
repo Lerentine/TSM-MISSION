@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<npcsets>
+  <!--任务npc-->
+  <npcset identifier="tsmnpc">
+    <npc identifier="tsmnpc_1" spawnpointtags="admin" behavior="Patrol" healthmultiplier="2" aimspeed="50" aimaccuracy="1" >
+      <Character speciesname="human" gender="female" headspriteid="8" hairindex="12" moustacheindex="0" faceattachmentindex="0" personality="professional">
+        <job name="tsm_outpostsecurityofficer" identifier="tsm_outpostsecurityofficer">
+          <skill identifier="electrical" level="100" />
+          <skill identifier="mechanical" level="100" />
+          <skill identifier="weapons" level="100" />
+          <skill identifier="medical" level="100" />
+          <skill identifier="helm" level="100" />
+        </job>
+      </Character>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_hxl_unform_ai" equip="true" />
+        <Item identifier="tsmmissions_px18_pistols"/>
+        <Item identifier="tsm_9_mag" amount="4" />
+        <Item identifier="tsm_eyi_instability">
+        <Item identifier="hxl_knife" />
+        </Item>
+        <Item identifier="tsmmissions_hx870" equip="true">
+        <Item identifier="shotgunslugexplosive" amount="9"/>
+        <Item identifier="shotgunshell" amount="9"/>
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="tsmnpc_2" spawnpointtags="admin" behavior="Patrol" healthmultiplier="2" aimspeed="50" aimaccuracy="1" >
+      <Character speciesname="human" gender="female" headspriteid="8" hairindex="8" beardindex="0" moustacheindex="0" faceattachmentindex="0" personality="professional">
+        <job name="tsm_outpostsecurityofficer" identifier="tsm_outpostsecurityofficer">
+          <skill identifier="electrical" level="89" />
+          <skill identifier="mechanical" level="90" />
+          <skill identifier="weapons" level="90" />
+          <skill identifier="medical" level="90" />
+          <skill identifier="helm" level="90" />
+        </job>
+      </Character>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="watchmanclothes" equip="true" />
+        <Item identifier="smgunique" equip="true" />
+        <Item identifier="smgmagazinedepletedfuel" amount="3" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="ballistichelmet3" equip="true"/>
+        <Item identifier="tsm_ai_eyi_outpost_sundown">
+        </Item>
+        <Item identifier="tsmmissions_TTI2011" equip="true" >
+        <Item identifier="tsm_9_mag" amount="8" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="tsmnpc_3" spawnpointtags="admin" behavior="Patrol" healthmultiplier="2" aimspeed="50" aimaccuracy="1" >
+      <Character speciesname="human" gender="female" headspriteid="4" hairindex="26" beardindex="0" moustacheindex="0" faceattachmentindex="0" personality="professional">
+        <job name="tsm_outpostsecurityofficer" identifier="tsm_outpostsecurityofficer">
+          <skill identifier="electrical" level="100" />
+          <skill identifier="mechanical" level="100" />
+          <skill identifier="weapons" level="100" />
+          <skill identifier="medical" level="100" />
+          <skill identifier="helm" level="100" />
+        </job>
+      </Character>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_common_uniform" equip="true" />
+        <Item identifier="tsm_ai_eyi_outpost_sundown">
+        </Item>
+        <Item identifier="handcannon" equip="true">
+        <Item identifier="handcannonround" amount="24" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="tsmnpc_4" spawnpointtags="admin" behavior="Patrol" healthmultiplier="3" aimspeed="50" aimaccuracy="1" >
+      <Character speciesname="human" gender="male" headspriteid="1" hairindex="12" beardindex="0" moustacheindex="0" faceattachmentindex="0" personality="professional">
+        <job name="tsm_outpostsecurityofficer" identifier="tsm_outpostsecurityofficer">
+          <skill identifier="electrical" level="100" />
+          <skill identifier="mechanical" level="100" />
+          <skill identifier="weapons" level="100" />
+          <skill identifier="medical" level="100" />
+          <skill identifier="helm" level="100" />
+        </job>
+      </Character>
+       <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_suger_uniform" equip="true" />
+        <Item identifier="suger_boardingaxe" equip="true"/>
+        <Item identifier="Extra_hat_male_tsm" equip="true"/>
+        <Item identifier="handcannonround" amount="6">
+        <Item identifier="tsm_eyi_instability"/>
+        </Item>
+        <Item identifier="tsmmissions_Icarus" equip="true">
+        <Item identifier="handcannonround" amount="18" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="tsmnpc_5" spawnpointtags="admin" behavior="Patrol" healthmultiplier="3" aimspeed="50" aimaccuracy="1" >
+      <Character speciesname="human" gender="female" headspriteid="6" hairindex="0" beardindex="0" moustacheindex="0" faceattachmentindex="0" personality="professional">
+        <job name="tsm_outpostsecurityofficer" identifier="tsm_outpostsecurityofficer">
+          <skill identifier="electrical" level="100" />
+          <skill identifier="mechanical" level="100" />
+          <skill identifier="weapons" level="100" />
+          <skill identifier="medical" level="100" />
+          <skill identifier="helm" level="100" />
+        </job>
+      </Character>
+       <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_lerentine_uniform" equip="true" />
+        <Item identifier="handcannonround" amount="6">
+        <Item identifier="tsm_eyi_instability"/>
+        </Item>
+         <Item identifier="tsm_grey_pupils" equip="true">
+        <Item identifier="handcannonround" amount="18" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="tsmnpc_6" spawnpointtags="admin" behavior="Patrol" healthmultiplier="2" aimspeed="50" aimaccuracy="1" >
+      <Character speciesname="human" gender="female" headspriteid="7" hairindex="9" moustacheindex="0" faceattachmentindex="0" personality="professional">
+        <job name="tsm_outpostsecurityofficer" identifier="tsm_outpostsecurityofficer">
+          <skill identifier="electrical" level="100" />
+          <skill identifier="mechanical" level="100" />
+          <skill identifier="weapons" level="100" />
+          <skill identifier="medical" level="100" />
+          <skill identifier="helm" level="100" />
+        </job>
+      </Character>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="captainsuniform2" equip="true" />
+        <Item identifier="banana" equip="true" />
+        <Item identifier="Extra_hat_male_tsm" equip="true"/>
+        <Item identifier="tsm_ai_eyi_outpost_sundown">
+        </Item>
+        <Item identifier="handcannon" equip="true">
+        <Item identifier="handcannonround" amount="24" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="tsmnpc_7" spawnpointtags="admin" behavior="Patrol" healthmultiplier="1.5" aimspeed="50" aimaccuracy="1">
+      <Character speciesname="human" gender="male" headspriteid="6" hairindex="2" beardindex="3" moustacheindex="0" faceattachmentindex="2" personality="professional">
+        <job name="securityofficer" identifier="securityofficer">
+          <skill identifier="electrical" level="50" />
+          <skill identifier="mechanical" level="50" />
+          <skill identifier="weapons" level="50" />
+          <skill identifier="medical" level="50" />
+          <skill identifier="helm" level="50" />
+        </job>
+      </Character>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="vipclothes1" equip="true" />
+        <Item identifier="clownmask" equip="true">
+        </Item>
+        <Item identifier="revolver" equip="true" >
+        <Item identifier="revolverround" amount="12"/>
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="tsmnpc_8" spawnpointtags="admin" behavior="Patrol" healthmultiplier="2" aimspeed="50" aimaccuracy="1" >
+      <Character speciesname="human" gender="female" headspriteid="8" hairindex="8" beardindex="0" moustacheindex="0" faceattachmentindex="0" personality="professional">
+        <job name="tsm_outpostsecurityofficer" identifier="tsm_outpostsecurityofficer">
+          <skill identifier="electrical" level="89" />
+          <skill identifier="mechanical" level="90" />
+          <skill identifier="weapons" level="90" />
+          <skill identifier="medical" level="90" />
+          <skill identifier="helm" level="90" />
+        </job>
+      </Character>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="securityuniform2" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="tsm_ai_eyi_outpost_sundown">
+        </Item>
+        <Item identifier="handcannon" equip="true" >
+        <Item identifier="handcannonround" amount="8" />
+        </Item>
+      </ItemSet>
+    </npc>
+  </npcset>
+</npcsets>

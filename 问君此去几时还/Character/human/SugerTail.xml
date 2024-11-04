@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<huskappendage>
+  <!-- 肢体-尾巴 -->
+  <limb name="suger_tail" id="15" height="30" width="19" ignorecollisions="True" flip="True">
+    <damagemodifier armorsector="0,360" afflictiontypes="damage" damagemultiplier="0.1" />
+    <damagemodifier armorsector="0,360" afflictiontypes="bleeding" damagemultiplier="0.1" />
+    <damagemodifier armorsector="0,360" afflictiontypes="burn" damagemultiplier="0.1" />
+    <sprite texture="%ModDir%/npc/suger/suger_body.png" sourcerect="1,357,48,42" origin="0.55,0.93" depth="0.125" ignoretint="true"/>
+  </limb>
+  <!-- 关节 -->
+  <joint name="suger_tail to Waist" limb1="12" limb2="15" limb1anchor="-21.5,-7.9" limb2anchor="12.4,15.9" upperlimit="-5" weldjoint="false" lowerlimit="10" canbesevered="true" limitenabled="True" stiffness="0.5" />
+</huskappendage>

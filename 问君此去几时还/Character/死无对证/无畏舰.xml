@@ -1,0 +1,124 @@
+﻿<Character SpeciesName="无畏舰" SpeciesTranslationOverride="" DisplayName="无畏舰载体" Group="abyss" Humanoid="False" HasInfo="False" CanInteract="False" Husk="False" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="True" Noise="100" Visibility="100" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="200" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="30000" DisableDistance="100000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="">
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <damageemitter drawontop="True" Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="0.5" ScaleMax="1" VelocityMin="200" VelocityMax="300" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="2" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <bloodemitter Particle="waterblood" AngleMin="0" AngleMax="360" ScaleMin="7" ScaleMax="15" VelocityMin="0" VelocityMax="100" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <gibemitter Particle="waterblood" AngleMin="0" AngleMax="360" ScaleMin="7" ScaleMax="15" VelocityMin="0" VelocityMax="100" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="2" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <gibemitter drawontop="True" Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="0.5" ScaleMax="1" VelocityMin="200" VelocityMax="700" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="20" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <gibemitter Particle="heavygib" AngleMin="0" AngleMax="360" ScaleMin="2" ScaleMax="4" VelocityMin="50" VelocityMax="1000" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="20" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <health Vitality="8000" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0" ConstantHealthRegeneration="0" HealthRegenerationWhenEating="0" StunImmunity="True" PoisonImmunity="False" PoisonVulnerability="1" EmpVulnerability="0" ApplyAfflictionColors="False">
+    <Limb />
+    <Limb />
+    <Limb />
+    <Limb />
+    <Limb />
+    <Limb />
+    <Limb />
+    <Limb />
+    <Limb />
+    <Limb />
+    <Limb />
+    <Limb />
+    <Limb />
+  </health>
+  <Inventory Slots="Any, Any,Any" AccessibleWhenAlive="False" Commonness="100">
+    <Item Identifier="Vanquish" />
+  </Inventory>
+  <sound gender="None" File="Content/Characters/Carrier/CARRIER_idle2.ogg" State="Idle" Range="20000" Volume="1" Tags="" />
+  <sound gender="None" File="Content/Characters/Carrier/CARRIER_idle1.ogg" State="Idle" Range="20000" Volume="1" Tags="" />
+  <sound gender="None" File="Content/Characters/Carrier/CARRIER_attack1.ogg" State="Attack" Range="20000" Volume="1" Tags="" />
+  <sound gender="None" File="Content/Characters/Carrier/CARRIER_attack2.ogg" State="Attack" Range="20000" Volume="1" Tags="" />
+  <sound gender="None" File="Content/Characters/Carrier/CARRIER_attack3.ogg" State="Attack" Range="20000" Volume="1" Tags="" />
+  <sound gender="None" File="Content/Characters/Carrier/CARRIER_damage1.ogg" State="Damage" Range="20000" Volume="1" Tags="" />
+  <sound gender="None" File="Content/Characters/Carrier/CARRIER_damage2.ogg" State="Damage" Range="20000" Volume="1" Tags="" />
+  <sound gender="None" File="Content/Characters/Carrier/CARRIER_death1.ogg" State="Die" Range="30000" Volume="1" Tags="" />
+  <ai CombatStrength="7000" Sight="3" Hearing="7" AggressionHurt="100" AggressionGreed="10" FleeHealthThreshold="0" AttackWhenProvoked="False" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="False" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="True" RandomAttack="False" CanOpenDoors="False" UsePathFindingToGetInside="False" KeepDoorsClosed="False" AvoidAbyss="False" StayInAbyss="False" PatrolFlooded="False" PatrolDry="False" StartAggression="100" MaxAggression="100" AggressionCumulation="25" WallTargetingMethod="6">
+    <target Tag="decoy" State="Attack" Priority="500" ReactDistance="0" AttackDistance="0" Timer="5" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="3800" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="weaker" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="3800" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="human" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="dead" State="Eat" Priority="90" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="room" State="Attack" Priority="80" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="10000" IgnoreTargetSize="False" CircleRotationSpeed="2" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="2" CircleMaxRandomOffset="10" />
+    <target Tag="sonar" State="Attack" Priority="10" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="7000" IgnoreTargetSize="False" CircleRotationSpeed="2" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="2" CircleMaxRandomOffset="10" />
+    <target Tag="terminalcell" State="Idle" Priority="1" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="leucocyte" State="Idle" Priority="1" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+  </ai>
+  <StatusEffect type="OnActive" target="this">
+    <Affliction identifier="tsmbosswudifangxuan" strength="1" />
+  </StatusEffect>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="2">
+    <Item Identifier="skillbooksubmarinewarfare" />
+    <Item Identifier="sulphuricacid" />
+    <Item Identifier="brockite" />
+    <Item Identifier="fuelrod" />
+    <Item Identifier="fuelrod" />
+    <Item Identifier="calyxanide" />
+    <Item Identifier="huskeggs" />
+    <Item Identifier="huskeggs" />
+    <Item Identifier="rifle" />
+  </Inventory>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="2">
+    <Item Identifier="fuelrod" />
+    <Item Identifier="endocrinebooster" />
+    <Item Identifier="thorianite" />
+    <Item Identifier="fuelrod" />
+    <Item Identifier="fuelrod" />
+    <Item Identifier="calyxanide" />
+    <Item Identifier="huskeggs" />
+    <Item Identifier="assaultrifle" />
+    <Item Identifier="smg" />
+  </Inventory>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="2">
+    <Item Identifier="titanite" />
+    <Item Identifier="titanite" />
+    <Item Identifier="thorianite" />
+    <Item Identifier="amblygonite" />
+    <Item Identifier="pyromorphite" />
+    <Item Identifier="fuelrod" />
+    <Item Identifier="fuelrod" />
+    <Item Identifier="thoriumfuelrod" />
+    <Item Identifier="titaniumaluminiumalloy" />
+  </Inventory>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="2">
+    <Item Identifier="coalitionmedal" />
+    <Item Identifier="titaniumaluminiumalloy" />
+    <Item Identifier="titanite" />
+    <Item Identifier="quartz" />
+    <Item Identifier="diamond" />
+    <Item Identifier="diamond" />
+    <Item Identifier="fulguriumfuelrod" />
+    <Item Identifier="fulguriumfuelrod" />
+    <Item Identifier="fuelrod" />
+    <Item Identifier="titanite" />
+  </Inventory>
+  <Inventory Slots="Any, Any, Any, Any, Any, Any, Any, Any, Any, Any" AccessibleWhenAlive="False" Commonness="2">
+    <Item Identifier="titaniumaluminiumalloy" />
+    <Item Identifier="coalitionmedal" />
+    <Item Identifier="thoriumfuelrod" />
+    <Item Identifier="thoriumfuelrod" />
+    <Item Identifier="thoriumfuelrod" />
+    <Item Identifier="huskeggs" />
+    <Item Identifier="huskeggs" />
+    <Item Identifier="titanite" />
+    <Item Identifier="titanite" />
+  </Inventory>
+  <!-- Requires a separate status effect, because there can only be one sound channel per status effect -->
+  <StatusEffect type="OnActive" target="this">
+    <Sound file="%ModDir%/Sounds/Vanquish.ogg" loop="true" range="40000" dontmuffle="true" Volume="2.7" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="this">
+    <Sound file="Content/Characters/Carrier/CARRIER_Idle1.ogg" loop="true" range="20000" dontmuffle="true" selectionmode="Random" />
+    <Sound file="Content/Characters/Carrier/CARRIER_Idle2.ogg" loop="true" range="20000" dontmuffle="true" />
+    <Sound file="Content/Map/Thalamus/Sounds/CARRIER_Idle3.ogg" loop="true" range="20000" dontmuffle="true" />
+    <Sound file="Content/Map/Thalamus/Sounds/CARRIER_Idle4.ogg" loop="true" range="20000" dontmuffle="true" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="NearbyCharacters" range="10000">
+    <Affliction identifier="carrierbeacon1" strength="1" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="This" stackable="false" delay="20">
+    <SpawnCharacter speciesname="deadnoughtshell" count="1" spread="50" />
+    <Sound file="%ModDir%/Character/死无对证/FIRE.ogg" range="6000" dontmuffle="true" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="NearbyCharacters" range="10000">
+    <Affliction identifier="carrierbeacon1" strength="-100" />
+  </StatusEffect>
+</Character>

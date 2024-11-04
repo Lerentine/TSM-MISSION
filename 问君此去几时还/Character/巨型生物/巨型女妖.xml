@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Charactervariant inherit="Charybdis" speciesname="巨型女妖" usebosshealthbar="true">
+  <health vitality="12000" />
+  <ragdoll scalemultiplier="1.5" />
+  <attack damagemultiplier="3" rangemultiplier="3" impactmultiplier="2" />
+  <ai combatstrength="30000" sight="0.5" hearing="3" avoidabyss="False" stayinabyss="False" />
+</Charactervariant>

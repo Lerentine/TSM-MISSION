@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Character SpeciesName="deadnoughtshell" SpeciesTranslationOverride="" DisplayName="" Group="deadnought" Humanoid="False" HasInfo="False" CanInteract="False" Husk="False" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" IsMachine="True" CanSpeak="False" ShowHealthBar="False" UseBossHealthBar="False" Noise="250" Visibility="100" BloodDecal="" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="False" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="True" AITurretPriority="1" AISlowTurretPriority="1">
+  <!--group="ek_shell_ai"-->
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <health Vitality="3" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0" ConstantHealthRegeneration="0" HealthRegenerationWhenEating="0" StunImmunity="True" PoisonImmunity="True" PoisonVulnerability="1" EmpVulnerability="0" ApplyAfflictionColors="False" />
+  <ai attackpriorityrooms="0" attackpriorityhumans="0" attackonlywhenprovoked="False" retaliatewhentakingdamage="True" CombatStrength="80" Sight="6" Hearing="3" AggressionHurt="50" AggressionGreed="0" FleeHealthThreshold="0" AttackWhenProvoked="False" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="False" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="True" RandomAttack="False" CanOpenDoors="False" UsePathFindingToGetInside="False" KeepDoorsClosed="False" AvoidAbyss="False" StayInAbyss="False" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Target">
+    <target tag="human" state="Attack" priority="80" reactdistance="0" attackdistance="0" />
+    <target tag="wall" state="Attack" priority="60" reactdistance="0" attackdistance="0" />
+    <target tag="door" state="Attack" priority="40" reactdistance="0" attackdistance="0" />
+  </ai>
+  <StatusEffect type="OnActive" target="This">
+    <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="0.5" scalemax="1.5" />
+    <sound file="%ModDir%/Character/死无对证/deadnoughtshell/homingshell_motor.ogg" type="OnActive" range="4500.0" loop="true" />
+    <Affliction identifier="internaldamage" strength="0.1" />
+    <Affliction identifier="concealed" amount="1" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="This" targetlimb="Head">
+    <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" type="OnBroken" range="3000" selectionmode="All" />
+    <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" type="OnBroken" range="3000" />
+    <Explosion range="700.0" structuredamage="250" stun="5" force="20.0" severlimbsprobability="0.5">
+      <Affliction identifier="burn" strength="150" />
+      <Affliction identifier="explosiondamage" strength="20" />
+      <Affliction identifier="bleeding" strength="40" />
+      <Affliction identifier="internaldamage" strength="20" />
+    </Explosion>
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="This" targetlimb="Head" delay="0.1">
+    <RemoveCharacter />
+  </StatusEffect>
+</Character>

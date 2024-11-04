@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="奇迹之海异常事物收容箱" identifier="tsm_danger_box" subcategory="TSM" category="Equipment" tags="mediumitem,mobilecontainer,artifactcontainer,poweredcontainer,tsm_danger_box" cargocontaineridentifier="tsm_metalcrate" showcontentsintooltip="true" Scale="0.37" fireproof="true" waterproof="true" mpactsoundtag="impact_metal_heavy" RequireAimToUse="True">
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="15">
+      <RequiredSkill identifier="mechanical" level="20" />
+      <Item identifier="steel" amount="2" />
+      <Item identifier="iron" amount="2" />
+      <Item identifier="dementonite" amount="1" />
+      <Item identifier="lead" amount="2" />
+    </Fabricate>
+    <Price baseprice="377">
+      <Price locationtype="city" multiplier="1.2" maxavailable="1" />
+      <Price locationtype="research" multiplier="0.8" maxavailable="1" />
+      <Price locationtype="military" multiplier="1" maxavailable="1" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/item/containers/containers.png" sourcerect="15,18,147,144" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/item/containers/containers.png" sourcerect="15,18,147,144" origin="0.5,0.5" depth="0.6" />
+    <Body width="140" height="135" density="0" />
+    <MeleeWeapon slots="Any,RightHand,LeftHand" controlpose="true" aimpos="45,15" handle1="0,30" holdangle="90" reload="1" range="50" combatpriority="6" msg="ItemMsgPickUpSelect">   
+      <Attack structuredamage="10" itemdamage="5" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Affliction identifier="stun" strength="0.6" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="1" hideitems="true" ContainedStateIndicatorSlot="1">
+      <Containable items="tsm_danger_item,tsm_danger_bloack,alienartifact,traitormissionitem"/>
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <SubContainer capacity="1"  maxstacksize="1">
+        <Containable items="mobilebattery">
+          <StatusEffect type="OnContaining" target="Contained" Condition="-0.5" >
+            <RequiredItem items="tsm_danger_item,tsm_danger_bloack,alienartifact,traitormissionitem" type="Contained"/>
+          </StatusEffect>
+          <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true" />
+        </Containable>
+      </SubContainer>
+    </ItemContainer>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+</Items>

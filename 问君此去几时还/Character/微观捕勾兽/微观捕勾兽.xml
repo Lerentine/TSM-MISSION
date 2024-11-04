@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Charactervariant inherit="微观捕勾兽模板" speciesname="微观捕勾兽" usebosshealthbar="true">
+  <health vitality="1000" />
+  <attack damagemultiplier="1" rangemultiplier="1" impactmultiplier="1" />
+  <ai combatstrength="30000" sight="0.5" hearing="3" avoidabyss="False" stayinabyss="False" />
+</Charactervariant>
