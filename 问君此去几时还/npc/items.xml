@@ -14,6 +14,19 @@
       </StatusEffect>
     </Holdable>
   </Item>
+  <Item name="奇迹之海VIP随行安保恶疫注射器" identifier="tsm_vip_bodyguard" subcategory="tsmmissions" description="" hideinmenus="true" category="Misc" maxstacksize="1" Tags="smallitem" scale="0.5" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="Content/Items/Medical/Medicines.png" sourcerect="448,256,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+    <Holdable slots="Any,RightHand,LeftHand" aimpos="-26,-48" holdpos="30,-15" holdangle="0" aimangle="300" aimable="false" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnContained" target="Character" interval="1" multiplyafflictionsbymaxvitality="true">
+        <GiveTalentInfo giverandom="false" talentidentifiers="tsm_vip_bodyguard,bigguns,lightningwizard,quickdraw,tsm_olympian" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" delay="1">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
   <Item identifier="tsm_ai_advancedgenesplicer" scale="0.4" category="Equipment" subcategory="tsmmissions" tags="smallitem,geneticdevice" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="True">
     <InventoryIcon texture="Content/Items/Genetic/Genetic.png" sourcerect="244,62,76,65" origin="0.5,0.5" />
     <Sprite name="Headset" texture="Content/Items/Genetic/Genetic.png" depth="0.6" sourcerect="67,85,73,35" origin="0.5,0.5" />

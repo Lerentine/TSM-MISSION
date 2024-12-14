@@ -15,16 +15,42 @@
     </Effect>
     <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="533,0,126,126" color="255,255,255,255" origin="0,0" />
   </Affliction>
-   <Affliction name="死海" identifier="tsm_ondeath" targets="human" description="" type="tsm_ondeath" limbspecific="false" indicatorlimb="Torso" causeofdeathdescription="" selfcauseofdeathdescription="" activationthreshold="0" showinhealthscannerthreshold="1" showiconthreshold="1" showicontoothersthreshold="1" maxstrength="1">
+  <Affliction name="死海" identifier="tsm_ondeath" targets="human" description="" type="tsm_ondeath" limbspecific="false" indicatorlimb="Torso" activationthreshold="0" showinhealthscannerthreshold="1" showiconthreshold="1" showicontoothersthreshold="1" maxstrength="1">
     <Effect minstrength="0.1" maxstrength="1" minvitalitydecrease="0" maxvitalitydecrease="2" multiplybymaxvitality="true" strengthchange="0.1">
       <StatusEffect target="Character" comparison="and">
         <Conditional speciesname="human" />
-        <Affliction identifier="Bleeding" strength="100" />
+        <Affliction identifier="bleedingnonstop" strength="100" />
       </StatusEffect>
       <StatusEffect type="OnDeath" target="Character">
       </StatusEffect>
     </Effect>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,512,128,128" color="195,136,60,255" origin="0,0" />
+    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="316,278,126,126" color="195,136,60,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="沸腾之海" identifier="tsm_fire_water" type="contamination" IsBuff="true" activationthreshold="0" showinhealthscannerthreshold="1" showiconthreshold="1" showicontoothersthreshold="1" maxstrength="10" limbspecific="false" indicatorlimb="Head">
+    <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
+      <StatValue stattype="MaximumHealthMultiplier" value="-0.3" />
+      <StatusEffect type="InWater" target="Limb" disabledeltatime="false">
+        <!--Conditional pressureprotection="lt 3000"/-->
+        <Affliction identifier="burn" amount="0.8" />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="Limb" disabledeltatime="false">
+        <!--Conditional pressureprotection="lt 4000"/-->
+        <Affliction identifier="burn" amount="0.7" />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="Limb" disabledeltatime="false">
+        <!--Conditional pressureprotection="lt 5000"/-->
+        <Affliction identifier="burn" amount="0.6" />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="Limb" disabledeltatime="false">
+        <!--Conditional pressureprotection="lt 6000"/-->
+        <Affliction identifier="burn" amount="0.5" />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="Limb" disabledeltatime="false">
+        <!--Conditional pressureprotection="lt 7000"/-->
+        <Affliction identifier="burn" amount="0.4" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="492,278,126,126" color="0,0,0,255" origin="0,0" />
   </Affliction>
   <!--防炫！炫你🐎-->
   <Affliction name="防炫标识" identifier="tsmbosswudifangxuan" description="" type="genericaffliction" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="1">
@@ -146,7 +172,7 @@
   </AfflictionHusk>
   <!--站点用-->
   <Affliction name="眩晕恢复" identifier="tsmmission_ai_stun" description="" isbuff="true" type="ai_buff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
-    <Effect minstrength="0" maxstrength="1">
+    <Effect minstrength="0" maxstrength="1" resistancefor="paralysis" minresistance="1" maxresistance="1" minspeedmultiplier="1.0" maxspeedmultiplier="1">
       <StatusEffect target="Character" interval="1" disabledeltatime="true">
         <ReduceAffliction type="stun" amount="0.5" />
       </StatusEffect>
@@ -167,4 +193,7 @@
     <StatValue stattype="MovementSpeed" value="0.25" />
     </Effect>
     </Affliction>
+  <Affliction name="防骨折脱臼" identifier="tsmmission_eyi_nt" description="" isbuff="true" type="ai_buff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="1" strengthchange="0" resistancefor="blunttrauma,ra_fracture,la_fracture,rl_fracture,ll_fracture,t_fracture,h_fracture,n_fracture,dislocation1,dislocation2,dislocation3,dislocation4" minresistance="1" maxresistance="1" minspeedmultiplier="1.0" maxspeedmultiplier="1"/>
+  </Affliction>
 </Afflictions>

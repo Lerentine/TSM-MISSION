@@ -108,7 +108,7 @@
   <StatusEffect type="OnDeath" delay="40" target="This" targetlimb="Head">
     <sound file="%ModDir%/Sounds/自毁警报.ogg" range="60000" volume="8" selectionmode="All" />
     <ParticleEmitter particle="underwaterexplosion" drawontop="True" particleamount="1" scalemin="30" scalemax="30" velocitymin="0" velocitymax="20" anglemin="0" anglemax="360" />
-    <Explosion range="7500.0" structuredamage="1250" itemdamage="1000" ballastfloradamage="1000" force="100.0" severlimbsprobability="2" decal="explosion" decalsize="12.0" camerashake="1000" camerashakerange="50000" flashrange="20000" flashduration="5" screencolor="255,200,200,255" screencolorrange="20000" screencolorduration="7" penetration="1">
+    <Explosion range="6000.0" ignoreCover="true" structuredamage="1250" itemdamage="1000" ballastfloradamage="1000" force="100.0" severlimbsprobability="2" decal="explosion" decalsize="12.0" camerashake="1000" camerashakerange="50000" flashrange="20000" flashduration="5" screencolor="255,200,200,255" screencolorrange="20000" screencolorduration="7" penetration="1">
       <Affliction identifier="explosiondamage" strength="750" />
       <Affliction identifier="burn" strength="500" />
       <Affliction identifier="radiationsickness" strength="70" />

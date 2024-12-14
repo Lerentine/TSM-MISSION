@@ -88,7 +88,7 @@
   <StatusEffect type="OnDeath" delay="20" target="This" targetlimb="Head">
     <sound file="%ModDir%/Sounds/自毁警报.ogg" range="6000" volume="8" selectionmode="All" />
     <ParticleEmitter particle="underwaterexplosion" drawontop="True" particleamount="1" scalemin="30" scalemax="30" velocitymin="0" velocitymax="20" anglemin="0" anglemax="360" />
-    <Explosion range="15000" stun="0.5" structuredamage="1000" force="0.1" smoke="false" sparks="true" empstrength="15" shockwave="true" underwaterbubble="true" severlimbsprobability="1.0" camerashake="800" camerashakerange="10000">
+    <Explosion range="15000" stun="0.5" ignoreCover="true" structuredamage="1000" force="0.1" smoke="false" sparks="true" empstrength="15" shockwave="true" underwaterbubble="true" severlimbsprobability="1.0" camerashake="800" camerashakerange="10000">
       <Affliction identifier="burn" strength="60" />
       <Affliction identifier="radiationsickness" strength="35" />
       <Affliction identifier="explosiondamage" strength="30" />

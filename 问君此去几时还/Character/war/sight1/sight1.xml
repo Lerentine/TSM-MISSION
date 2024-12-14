@@ -25,7 +25,7 @@
   <bloodemitter Particle="blackblood" AngleMin="1" AngleMax="2" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
   <bloodemitter Particle="blackwaterblood" AngleMin="1" AngleMax="2" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="1" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
   <gibemitter Particle="blackgib" AngleMin="0" AngleMax="360" ScaleMin="1" ScaleMax="2" VelocityMin="200" VelocityMax="1500" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="30" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
-  <StatusEffect type="OnActive" target="This" delay="40">
+  <StatusEffect type="OnActive" target="This" delay="40" Interval="1">
     <Affliction identifier="explosiondamage" strength="500" />
   </StatusEffect>
   <StatusEffect type="OnDeath" target="This" targetlimb="Waist">
@@ -37,7 +37,7 @@
     <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" range="10000" volume="2" />
     <ParticleEmitter particle="underwaterexplosion" drawontop="True" particleamount="1" scalemin="7" scalemax="7" velocitymin="0" velocitymax="20" anglemin="0" anglemax="360" />
   </StatusEffect>
-  <StatusEffect type="OnDeath" target="This" disabledeltatime="true" stackable="false" delay="10">
+  <StatusEffect type="OnDeath" target="This" disabledeltatime="true" stackable="false" delay="5">
     <RemoveCharacter />
   </StatusEffect>
 </Character>

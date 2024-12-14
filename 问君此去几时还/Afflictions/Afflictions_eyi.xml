@@ -451,22 +451,29 @@ maxstrength="200"/-->
   </Affliction>
   <!--ai用-->
   <Affliction identifier="tsmmission_ai_asphyxiating_pressure" type="ai_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="100" maxstrength="1">
-    <Effect minstrength="0" maxstrength="1" resistancefor="huskinfection,oxygenlow,incrementalstun,tsm_stress,eyiinfection,tsm_virusstage" minresistance="0" maxresistance="1">
+    <Effect minstrength="0" maxstrength="1" resistancefor="huskinfection,oxygenlow,incrementalstun,tsm_stress,eyiinfection,tsm_virusstage,paralysis,blunttrauma" minresistance="0" maxresistance="1">
       <AbilityFlag flagtype="ImmuneToPressure" />
       <StatValue stattype="TeamAttackMultiplier" value="-1" />
-      <StatusEffect target="Character" usehulloxygen="false" needsair="false" setvalue="true">
-        <ReduceAffliction identifier="huskinfection" amount="50" />
+      <StatusEffect target="Character" usehulloxygen="false" needsair="false" setvalue="true" interval="5">
+        <ReduceAffliction identifier="huskinfection" amount="100" />
         <ReduceAffliction identifier="oxygenlow" strength="100" />
         <ReduceAffliction identifier="opiatewithdrawal" strength="100" />
         <ReduceAffliction identifier="opiateaddiction" strength="100" />
-        <ReduceAffliction identifier="burn" strength="1" />
-        <ReduceAffliction identifier="eyiinfection" strength="50" />
-        <ReduceAffliction identifier="tsm_virusstage" strength="50" />
+        <ReduceAffliction identifier="burn" strength="5" />
+        <ReduceAffliction identifier="eyiinfection" strength="80" />
+        <ReduceAffliction identifier="tsm_virusstage" strength="80" />
       </StatusEffect>
     </Effect>
   </Affliction>
   <Affliction name="稳定恶疫常态" identifier="tsmmission_ai_mod_resistancefor" type="ai_buff" isbuff="true" limbspecific="false" showiconthreshold="1" showinhealthscannerthreshold="1" maxstrength="1">
+    <Effect minstrength="0" maxstrength="1" resistancefor="huskmutation,symbiotichusk,huskheadhijacking1,blacktoxin,blunttrauma" minresistance="0" maxresistance="1">
+    </Effect>
+    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="127,133,121,123" color="255,100,100,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="安保恶疫" identifier="tsmmission_bodyguard_resistancefor" type="ai_buff" isbuff="true" limbspecific="false" showiconthreshold="1" showinhealthscannerthreshold="1" maxstrength="1">
     <Effect minstrength="0" maxstrength="1" resistancefor="huskmutation,symbiotichusk,huskheadhijacking1,blacktoxin" minresistance="0" maxresistance="1">
+      <StatValue stattype="RangedSpreadReduction" value="0.25" />
+      <StatValue stattype="AttackMultiplier" value="0.25" />
     </Effect>
     <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="127,133,121,123" color="255,100,100,255" origin="0,0" />
   </Affliction>
@@ -523,7 +530,7 @@ maxstrength="200"/-->
   </Affliction>
   <Affliction identifier="tsm_nt_protect" type="eyi" isbuff="true" hideiconafterdelay="true" limbspecific="false" maxstrength="100" showiconthreshold="1000" treatmentthreshold="1000" showinhealthscannerthreshold="1000" MedicalSkillGain="0.005">
     <Effect minstrength="0" maxstrength="10" strengthchange="0" 
-    resistancefor="dislocation1,dislocation2,dislocation3,dislocation4,ll_arterialcut,rl_arterialcut,la_arterialcut,ra_arterialcut,t_arterialcut,h_arterialcut,t_paralysis,th_amputation,tll_amputation,trl_amputation,tla_amputation,tra_amputation,n_fracture,h_fracture,t_fracture,ll_fracture,rl_fracture,la_fracture,ra_fracture,sepsis,foreignbody,tamponade,internalbleeding,sym_palpitations,inflammation,pneumothorax,lungdamage,alkalosis,acidosis,kidneydamage,bonedamage,liverdamage,cerebralhypoxia,heartdamage" 
+    resistancefor="blunttrauma,dislocation1,dislocation2,dislocation3,dislocation4,ll_arterialcut,rl_arterialcut,la_arterialcut,ra_arterialcut,t_arterialcut,h_arterialcut,t_paralysis,th_amputation,tll_amputation,trl_amputation,tla_amputation,tra_amputation,n_fracture,h_fracture,t_fracture,ll_fracture,rl_fracture,la_fracture,ra_fracture,sepsis,foreignbody,tamponade,internalbleeding,sym_palpitations,inflammation,pneumothorax,lungdamage,alkalosis,acidosis,kidneydamage,bonedamage,liverdamage,cerebralhypoxia,heartdamage"
     minresistance="1" maxresistance="1">
     </Effect>
   </Affliction>

@@ -63,7 +63,7 @@
   <StatusEffect type="OnDeath" target="This" stackable="false">
     <Sound file="%ModDir:2852411866%/Character/war/ogg/红松石/坠毁.ogg" range="6000" dontmuffle="true" />
   </StatusEffect>
-  <StatusEffect type="OnDeath" target="This" delay="13">
+  <StatusEffect type="OnDeath" target="This" delay="11">
     <Explosion range="1000" structuredamage="250" force="500" smoke="false" sparks="false" shockwave="true" underwaterbubble="true" severlimbsprobability="1.0" camerashake="50" camerashakerange="10000" flashrange="1000" flashduration="2.0">
       <Affliction identifier="explosiondamage" strength="200" />
       <Affliction identifier="burn" strength="80" />

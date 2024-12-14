@@ -83,10 +83,39 @@
   <tsm.see>兑换物品</tsm.see>
   <tsm.wait>等下再来</tsm.wait>
   <tsm.wait1>好的，有什么需要可以随时给我说</tsm.wait1>
+  <tsm.npc.wait>随时静候你的光临</tsm.npc.wait>
   <tsm.next>欢迎下次再来</tsm.next>
   <tsm.next1>抱歉呢，这个价格对于你来说还是有点高了，下次再来吧。</tsm.next1>
   <tsm.next2>钱不够，要不要接点任务赚赚钱呢？</tsm.next2>
-  <tsm.zssd>50MK兑换战术手电</tsm.zssd>
+  <tsm.no.id>您身上并没有友军识别码，请您不要浪费我的时间</tsm.no.id>
+  <tsm.no.faction>您并没有足够的声望，请您不要浪费我的时间</tsm.no.faction>
+  <tsm.dh.faction.25>你首先要达到25声望以上才能够兑换补给</tsm.dh.faction.25>
+  <tsm.jxg.help>你好，我是奇迹之海的军需官，请问您能需要什么帮助</tsm.jxg.help>
+  <tsm.dh.yjsbm>用友军识别码兑换物品</tsm.dh.yjsbm>
+  <tsm.dh.faction>用奇迹之海声望兑换物品</tsm.dh.faction>
+  <tsm.dh.vip>VIP服务</tsm.dh.vip>
+  <tsm.dh.vip.js>当您的声望达到一定水平后，我们将指派专业保镖为您提供全方位的人身安全保护服务。</tsm.dh.vip.js>
+  <tsm.dh.vip.60.success>尊敬的客户，您好！您已成为我们尊贵的VIP客户，我们将特别为您提供安全保护，蚍蜉将会跟随您，为您的安全与权益保驾护航。</tsm.dh.vip.60.success>
+  <tsm.dh.vip.60.failure>尊敬的客户，您好！经查询您的声望值，目前尚未达到60，未能达到VIP服务的标准。对此我们深表遗憾，感谢您的理解与支持！</tsm.dh.vip.60.failure>
+  <tsm.dh.vip.success>尊敬的客户，蚍蜉已经在您的船员列表了</tsm.dh.vip.success>
+  <tsm.dh.vip.rd.success>蚍蜉：您好，长官，为您服务是我的荣幸！</tsm.dh.vip.rd.success>
+  <tsm.over>请您收好你的物品</tsm.over>
+  <tsm.dh.xh1>因为目前各方势力混战，情况很不乐观，所以暂时只能兑换这些</tsm.dh.xh1>
+  <tsm.dh.xh2>价格公道，童叟无欺</tsm.dh.xh2>
+  <tsm.dh.xbz>欢迎来到奇迹之海补给信标站，请问有什么需要帮助的吗？</tsm.dh.xbz>
+  <tsm.dh.kw>兑换矿物补给</tsm.dh.kw>
+  <tsm.dh.yl>兑换医疗补给</tsm.dh.yl>
+  <tsm.dh.dy>兑换弹药补给</tsm.dh.dy>
+  <tsm.dh.hw>兑换护卫服务</tsm.dh.hw>
+
+  <!--test:航道封锁-->
+  <tsm.warming1.1>这条航道已经被奇迹之海封锁，请立即返航，否则我们将采取武力驱逐！</tsm.warming1.1>
+  <tsm.warming1.2>最后一次警告！请立即返航！</tsm.warming1.2>
+  <!--test:站点入侵-->
+  <tsm.outpost_invasions.1>你看见一个男子鬼鬼祟祟的，于是你上前去看看他要干什么</tsm.outpost_invasions.1>
+  <tsm.outpost_invasions.1.1>你在干什么？”你一边说话,一边把手搭在他肩上</tsm.outpost_invasions.1.1>
+  <tsm.outpost_invasions.1.2>“别跑！”你刚追没两步，站点就开始响起了警报声</tsm.outpost_invasions.1.2>
+  <tsm.outpost_invasions.1.3>奇迹之海：\n检测到未知势力入侵，现已启动T-71防御协议，全站点进入封锁状态。请各位市民保持冷静，立即前往最近的安全避难所。日暮山作战部门将全面展开对入侵者的清理行动，请勿擅自行动，耐心等待局势恢复。</tsm.outpost_invasions.1.3>
   <!--test:charactor-->
   <npctitle.TSMnpc_1>狼隼小队队长</npctitle.TSMnpc_1>
   <charactername.TSMnpc_1>幻下琅</charactername.TSMnpc_1>
@@ -101,6 +130,9 @@
   <npctitle.TSMnpc_7>降临派的主教</npctitle.TSMnpc_7>
   <charactername.TSMnpc_7>裴拉文</charactername.TSMnpc_7>
   <charactername.TSMnpc_8>Alice</charactername.TSMnpc_8>
+
+  <npctitle.tsm_vip_bodyguard_1>奇迹之海VIP安保</npctitle.tsm_vip_bodyguard_1>
+  <charactername.tsm_vip_bodyguard_1>蚍蜉</charactername.tsm_vip_bodyguard_1>
 
   <npctitle.tsm_outpost_combat_npc>奇迹之海日暮山作战部</npctitle.tsm_outpost_combat_npc>
   <npctitle.tsm_outpostmanager>管制官</npctitle.tsm_outpostmanager>
@@ -189,6 +221,9 @@
   <entitydescription.tsm_soundplayer>音频播放器，可以播放从BOSS身上获得到的音频磁带，又或者是站点购买的。</entitydescription.tsm_soundplayer>
   <entityname.tsm_walkman>今宵别梦寒</entityname.tsm_walkman>
   <entitydescription.tsm_walkman>随身听，可以播放从BOSS身上获得到的音频磁带，又或者是站点购买的。</entitydescription.tsm_walkman>
+
+  <entityname.tsm_shipammo_shell>科技弹</entityname.tsm_shipammo_shell>
+  <entitydescription.tsm_shipammo_shell>轨道炮弹药&#xD;&#xA;这种弹药主要针对结构使用，在爆炸后会产生酸液腐蚀船壳</entitydescription.tsm_shipammo_shell>
   <!--阿糖-->
   <entityname.tsm_suger>阿糖的幻化器</entityname.tsm_suger>
   <entitydescription.tsm_suger>阿糖的幻化器，可以变化成阿糖的模样</entitydescription.tsm_suger>
@@ -202,6 +237,14 @@
   <entitydescription.suger_boardingaxe>‖color:159,207,217,255‖挥向敌人，也挥向过去的自己‖color:end‖</entitydescription.suger_boardingaxe>
   <entityname.tsmmissions_Icarus>‖color:159,207,217,255‖手炮·伊卡洛斯‖color:end‖</entityname.tsmmissions_Icarus>
   <entitydescription.tsmmissions_Icarus>‖color:159,207,217,255‖suger的配枪使用手炮子弹\n一把机械结构及其复杂的转轮手枪，集成了照明和榴弹发射器一体。是suger入职奇迹之海时莱沦汀所赠，历经大大小小的战斗依然可靠。没人知道以suger的身板是怎样单手操作这把口径大得可怕的手枪\n\n“半空中，炽热的阳光融化了虚伪的蜡，伊卡洛斯坠亡在了大海里”‖color:end‖</entitydescription.tsmmissions_Icarus>
+  <tsm.suger1>嘿，这些可都是可遇不可求的好东西，虽然都是山寨…复制品，但我急筹mk修我的无人机南希，不然我可不舍得卖给你</tsm.suger1>
+  <tsm.dh.suger.hhq>400MK兑换阿糖幻化器</tsm.dh.suger.hhq>
+  <tsm.dh.suger.combatuniform>300MK兑换阿糖作战服</tsm.dh.suger.combatuniform>
+  <tsm.dh.suger.colthes>250MK兑换阿糖连帽衫</tsm.dh.suger.colthes>
+  <tsm.dh.suger.aex>450MK兑换阿糖的战斧</tsm.dh.suger.aex>
+  <tsm.dh.suger.handgun>2300MK兑换伊卡洛斯手炮</tsm.dh.suger.handgun>
+  <tsm.dh.handgunammo>1000MK兑换6发手炮子弹</tsm.dh.handgunammo>
+  <tsm.dh.handgunammo.xh>每次开枪前，请好好思考</tsm.dh.handgunammo.xh>
   <!--莱伦汀-->
   <entityname.tsm_grey_pupils>‖color:221,106,29,255‖灰瞳‖color:end‖</entityname.tsm_grey_pupils>
   <entitydescription.tsm_grey_pupils>‖color:221,106,29,255‖莱伦汀的配枪,使用手炮子弹\n据说是当初她还在先进作战部中的一个小队队长的配枪，当时他们在受到伏击后，队长为了救她自己中弹身亡。之后她捡起了这把枪，戴上队长的头盔，发号施令。\n"噩兆天子"，大家这么叫她，她是奇迹之海的孩子，是你被死亡笼罩时的最后救星。‖color:end‖</entitydescription.tsm_grey_pupils>
@@ -210,7 +253,18 @@
   <entityname.tsm_lerentine>莱伦汀幻化器</entityname.tsm_lerentine>
   <entitydescription.tsm_lerentine>莱伦汀的幻化器，可以变化成莱伦汀的模样</entitydescription.tsm_lerentine>
   <entityname.tsm_hat_officer>军官帽</entityname.tsm_hat_officer>
-  <entitydescription.tsm_hat_officer></entitydescription.tsm_hat_officer>
+  <entitydescription.tsm_hat_officer>长官好</entitydescription.tsm_hat_officer>
+  <tsm.dh.lerentine.xh>东西不多，看你需要什么</tsm.dh.lerentine.xh>
+  <tsm.dh.lerentine.hhq>400MK兑换莱伦汀幻化器</tsm.dh.lerentine.hhq>
+  <tsm.dh.lerentine.hhq.xh>别拿去做坏事！</tsm.dh.lerentine.hhq.xh>
+  <tsm.dh.lerentine.colthes>300MK兑换女款常服</tsm.dh.lerentine.colthes>
+  <tsm.dh.lerentine.colthes.xh>这是九州的女款常服！</tsm.dh.lerentine.colthes.xh>
+  <tsm.dh.lerentine.handgun>2600MK兑换灰瞳！</tsm.dh.lerentine.handgun>
+  <tsm.dh.lerentine.handgun.xh>这把枪陪伴我很久了，如果你够格，那就带上他</tsm.dh.lerentine.handgun.xh>
+  <tsm.dh.lerentine.hat>200MK兑换军官帽！</tsm.dh.lerentine.hat>
+  <tsm.dh.lerentine.hat.xh>权力的象征</tsm.dh.lerentine.hat.xh>
+  <tsm.dh.lerentine.suit>350MK兑换西服！</tsm.dh.lerentine.suit>
+  <tsm.dh.lerentine.suit.xh>看起来不错</tsm.dh.lerentine.suit.xh>
   <!--幻下琅-->
   <entityname.tsmmissions_px18_pistols>‖color:150,0,0,255‖PX-18‖color:end‖</entityname.tsmmissions_px18_pistols>
   <entitydescription.tsmmissions_px18_pistols>使用‖color:150,0,0,255‖9mm‖color:end‖手枪弹匣</entitydescription.tsmmissions_px18_pistols>
@@ -220,6 +274,17 @@
   <entitydescription.tsm_hxl_unform>琅\n幻影下的实体</entitydescription.tsm_hxl_unform>
   <entityname.tsm_hxl_unform>幻下琅的衣服</entityname.tsm_hxl_unform>
   <entitydescription.tsm_hxl_unform>琅\n幻影下的实体</entitydescription.tsm_hxl_unform>
+  <tsm.hxl1>你好，我是奇迹之海武装部负责人雨琅，我应指示在这里给路过的船长发放奇迹之海的悬赏任务。</tsm.hxl1>
+  <tsm.hxl.a1>你是……幻下琅？</tsm.hxl.a1>
+  <tsm.hxl2>啊，对，那是我的昵称。你也可以这样叫我。</tsm.hxl2>
+  <tsm.hxl.a2>不是，我的意思是：我之前见过叫“幻下琅”的人……</tsm.hxl.a2>
+  <tsm.hxl3>哦，我知道，你说的是我的人，他们之前是代我来发放指令的，但是好多都联系不上，像失踪了一样……你如果有见到他们的话，一定要告诉我。</tsm.hxl3>
+  <tsm.hxl.a3>这样啊，好吧好吧，那现在你这里现在有什么任务吗？</tsm.hxl.a3>
+  <tsm.hxl4>嗯……任务我已经发送在你的面板上了，请谨慎执行。\n并且尽量……活下来。</tsm.hxl4>
+  <tsm.hxl.a4>这样啊，好吧好吧，那现在你这里现在有什么任务吗？</tsm.hxl.a4>
+  <tsm.hxl.1>你好，我是奇迹之海武装部负责人雨琅，我还在寻找找我失踪的队员</tsm.hxl.1>
+  <tsm.hxl.a1>抱歉打扰了</tsm.hxl.a1>
+
   <!--妖梦-->
   <entityname.tsmmissions_TTI2011>‖color:200,0,0,255‖TTI2011‖color:end‖</entityname.tsmmissions_TTI2011>
   <entitydescription.tsmmissions_TTI2011>妖梦父亲留给妖梦的唯一遗物，使用‖color:100,0,0,255‖9mm‖color:end‖手枪弹匣</entitydescription.tsmmissions_TTI2011>
@@ -256,7 +321,7 @@
   <entitydescription.tsm_gendarmerie_uniforms>奇迹之海的宪兵制服，主要维持部队纪律，保障部队命令的执行</entitydescription.tsm_gendarmerie_uniforms>
 
   <entityname.tsm_gendarmerie_hat>奇迹之海宪兵帽</entityname.tsm_gendarmerie_hat>
-  <entitydescription.tsm_gendarmerie_hat></entitydescription.tsm_gendarmerie_hat>
+  <entitydescription.tsm_gendarmerie_hat>违规违纪，严惩不贷</entitydescription.tsm_gendarmerie_hat>
 
   <!--跳帮人员武器&服装-->
   <entityname.tsm_advancedcombatsuit>损坏的军用先进防护服</entityname.tsm_advancedcombatsuit>
@@ -272,22 +337,22 @@
   <entitydescription.tsm_rz_2a>与2号B型不同的是，他并没有自带武器，仅仅只是作为一个全覆式外骨骼使用</entitydescription.tsm_rz_2a>
 
   <entityname.tsm_advancedcombat_helmet_thermalgoggles>老式作战头盔I型</entityname.tsm_advancedcombat_helmet_thermalgoggles>
-  <entitydescription.tsm_advancedcombat_helmet_thermalgoggles></entitydescription.tsm_advancedcombat_helmet_thermalgoggles>
+  <entitydescription.tsm_advancedcombat_helmet_thermalgoggles>老式作战头盔</entitydescription.tsm_advancedcombat_helmet_thermalgoggles>
 
   <entityname.tsm_advancedcombat_helmet_mask>老式作战头盔II型</entityname.tsm_advancedcombat_helmet_mask>
-  <entitydescription.tsm_advancedcombat_helmet_mask></entitydescription.tsm_advancedcombat_helmet_mask>
+  <entitydescription.tsm_advancedcombat_helmet_mask>老式作战头盔</entitydescription.tsm_advancedcombat_helmet_mask>
 
   <entityname.lm_rapidreaction_helmet>联盟快速反应部队头盔</entityname.lm_rapidreaction_helmet>
-  <entitydescription.lm_rapidreaction_helmet></entitydescription.lm_rapidreaction_helmet>
+  <entitydescription.lm_rapidreaction_helmet>联盟快反部队制式头盔</entitydescription.lm_rapidreaction_helmet>
 
   <entityname.lm_rapidreaction_vest>联盟快速反应部队防弹衣</entityname.lm_rapidreaction_vest>
-  <entitydescription.lm_rapidreaction_vest></entitydescription.lm_rapidreaction_vest>
+  <entitydescription.lm_rapidreaction_vest>联盟快反部队制式防弹衣</entitydescription.lm_rapidreaction_vest>
 
   <entityname.lm_rapidreaction_uniform>联盟快速反应部队战斗服</entityname.lm_rapidreaction_uniform>
-  <entitydescription.lm_rapidreaction_uniform></entitydescription.lm_rapidreaction_uniform>
+  <entitydescription.lm_rapidreaction_uniform>联盟快反部队制式作战服</entitydescription.lm_rapidreaction_uniform>
 
   <entityname.tsm_old_uniform>老式作战服</entityname.tsm_old_uniform>
-  <entitydescription.tsm_old_uniform></entitydescription.tsm_old_uniform>
+  <entitydescription.tsm_old_uniform>老式作训服</entitydescription.tsm_old_uniform>
 
   <entityname.adventists_uniform>降临派首领教袍</entityname.adventists_uniform>
   <entitydescription.adventists_uniform></entitydescription.adventists_uniform>
@@ -333,9 +398,22 @@
   <talentname.tsm_beatcop>巡检警察</talentname.tsm_beatcop>
   <talentname.tsm_bleeding_outpost_sundown>凝血剂</talentname.tsm_bleeding_outpost_sundown>
 
+  <talenttree.tsm_gunner>炮手</talenttree.tsm_gunner>
+  <talenttree.tsm_frogman>蛙人</talenttree.tsm_frogman>
+  <talenttree.tsm_enforcer>执法者</talenttree.tsm_enforcer>
+  <talenttree.tsm_outpostsecurityofficer_gunner>炮手</talenttree.tsm_outpostsecurityofficer_gunner>
+  <talenttree.tsm_outpostsecurityofficer_frogman>蛙人</talenttree.tsm_outpostsecurityofficer_frogman>
+  <talenttree.tsm_outpostsecurityofficer_enforcer>执法者</talenttree.tsm_outpostsecurityofficer_enforcer>
+  <talenttree.tsm_outpostsecurityofficer_primary>初始</talenttree.tsm_outpostsecurityofficer_primary>
+
   <talentname.suger_tail_handle>阿糖拟态</talentname.suger_tail_handle>
   <talentdescription.suger_tail_handle>当你身着幻化器时，你将长出猫耳猫尾。</talentdescription.suger_tail_handle>
 
+  <talentname.tsm_olympian>奥林匹斯</talentname.tsm_olympian>
+  <talentdescription.tsm_olympian>你的技能点最高可增加到200</talentdescription.tsm_olympian>
+
+  <talentname.tsm_vip_bodyguard>奇迹之海VIP安保增强</talentname.tsm_vip_bodyguard>
+  <talentdescription.tsm_vip_bodyguard>为了更好的保护VIP用户，随行安保会获得更多增益</talentdescription.tsm_vip_bodyguard>
 
   <talentname.tsm_ai_outpost>奇迹之海稳定恶疫常态</talentname.tsm_ai_outpost>
   <talentdescription.tsm_ai_outpost>改变部分dna序列，让身体排斥外来寄生。</talentdescription.tsm_ai_outpost>
@@ -379,7 +457,10 @@
 
   <afflictionname.tsmmission_ai_mod_resistancefor>奇迹之海日暮山稳定恶疫常态</afflictionname.tsmmission_ai_mod_resistancefor>
   <afflictiondescription.tsmmission_ai_mod_resistancefor>改变部分dna序列，让身体排斥外来寄生。</afflictiondescription.tsmmission_ai_mod_resistancefor>
-  
+
+  <afflictionname.tsmmission_bodyguard_resistancefor>奇迹之海安保稳定恶疫常态</afflictionname.tsmmission_bodyguard_resistancefor>
+  <afflictiondescription.tsmmission_bodyguard_resistancefor>VIP随行安保使用的稳定常态，目的在于免疫画皮感染，避免感染后让VIP安全受到威胁</afflictiondescription.tsmmission_bodyguard_resistancefor>
+
   <afflictionname.tsm_eyi_stable_state>稳定恶疫常态</afflictionname.tsm_eyi_stable_state>
   <afflictiondescription.tsmmission_eyi_0_1>在此阶段，你将会免疫水压，不需要氧气，最大生命值提高30%，并且不再会药物成瘾，烧伤迅速恢复，会迅速治疗血肉胚胎以及画皮</afflictiondescription.tsmmission_eyi_0_1>
   <afflictiondescription.tsmmission_eyi_1_4>在此阶段，你将不会需要氧气，并且获得30%游泳速度</afflictiondescription.tsmmission_eyi_1_4>

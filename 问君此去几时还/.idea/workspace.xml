@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5eb3ec72-5614-4157-9099-e282dcad86f4" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -7,22 +10,27 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2o8izan8kKEiD4w92JKmOkUvnOa" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/SteamLibrary/steamapps/common/Barotrauma/LocalMods/九州武库",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/SteamLibrary/steamapps/common/Barotrauma/LocalMods/九州武库&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -40,7 +48,23 @@
       <option name="presentableId" value="Default" />
       <updated>1730257867402</updated>
       <workItem from="1730257868967" duration="32000" />
+      <workItem from="1730822461409" duration="553000" />
+      <workItem from="1730823032283" duration="1266000" />
+      <workItem from="1731723104877" duration="31000" />
+      <workItem from="1731812114634" duration="49000" />
+      <workItem from="1732931758682" duration="623000" />
+      <workItem from="1733070719557" duration="99000" />
+      <workItem from="1733110306555" duration="113000" />
+      <workItem from="1733110426933" duration="4000" />
+      <workItem from="1733930512032" duration="61000" />
+      <workItem from="1733930582521" duration="7000" />
+      <workItem from="1733930597031" duration="419000" />
+      <workItem from="1733931028065" duration="22000" />
+      <workItem from="1734204873118" duration="285000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

@@ -148,6 +148,31 @@
         </Item>
       </ItemSet>
     </npc>
+    <!--vip服务-->
+    <npc identifier="tsm_vip_bodyguard_1" tags="securitynpc" job="tsm_outpostsecurityofficer" behavior="Active" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.2" aimspeed="30" aimaccuracy="1" reportrange="10000">
+      <Character speciesname="human" gender="female" hairindex="12">
+        <job name="tsm_outpostsecurityofficer" identifier="tsm_outpostsecurityofficer">
+          <skill identifier="electrical" level="80" />
+          <skill identifier="mechanical" level="80" />
+          <skill identifier="weapons" level="101" />
+          <skill identifier="medical" level="80" />
+          <skill identifier="helm" level="80" />
+        </job>
+      </Character>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
+        <Item identifier="securitypatrolclothes" equip="true"/>
+        <Item identifier="bodyarmor" equip="true"/>
+        <Item identifier="ballistichelmet1" equip="true"/>
+        <Item identifier="tsm_vip_bodyguard"/>
+        <Item identifier="stunbaton">
+          <Item identifier="batterycell"/>
+        </Item>
+        <Item identifier="assaultrifle" equip="true">
+          <Item identifier="assaultriflemagazine" amount="5"/>
+        </Item>
+      </ItemSet>
+    </npc>
   </npcset>
   <!--站点管理员-->
   <npcset identifier="tsm_city_npcs">
@@ -455,7 +480,7 @@
   </npcset>
   <!--站点增援-->
   <npcset identifier="tsm_combat_npcs">
-    <npc identifier="tsm_outpost_combat_1" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule,banditleader" job="tsm_outpostsecurityofficer" behavior="Active" healthmultiplier="2.0" aimspeed="30" aimaccuracy="1" reportrange="5000" skillmultiplier="4">
+    <npc identifier="tsm_outpost_combat_1" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule,banditleader" job="tsm_outpostsecurityofficer" behavior="Active" healthmultiplier="1.5" aimspeed="30" aimaccuracy="1" reportrange="5000" skillmultiplier="4">
       <ItemSet commonness="1">
         <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
         <Item identifier="securitypatrolclothes" equip="true"/>

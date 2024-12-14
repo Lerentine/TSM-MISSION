@@ -139,19 +139,38 @@
         <Abilities>
           <CharacterAbilityApplyStatusEffects>
             <StatusEffects>
-              <StatusEffect type="OnAbility" target="Character">
-                <ReduceAffliction identifier="bleeding" strength="3.0"/>
-                <ReduceAffliction identifier="bleedingnonstop" strength="3.0"/>
+              <StatusEffect type="OnAbility" target="Character" interval="5" duration="5">
+                <ReduceAffliction identifier="bleeding" strength="10"/>
+                <ReduceAffliction identifier="bleedingnonstop" strength="10"/>
               </StatusEffect>
             </StatusEffects>
           </CharacterAbilityApplyStatusEffects>
         </Abilities>
       </AbilityGroupInterval>
     </Talent>
+    <Talent identifier="tsm_vip_bodyguard">
+    <Icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="255,133,122,123"/>
+    <Description tag="talentdescription.tsm_vip_bodyguard"/>
+    <AbilityGroupInterval>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character" interval="5" duration="5">
+              <ReduceAffliction identifier="bleeding" strength="3"/>
+              <ReduceAffliction identifier="bleedingnonstop" strength="3"/>
+            </StatusEffect>
+            <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true" disabledeltatime="true" compaison="And">
+              <Affliction identifier="tsmmission_bodyguard_resistancefor" amount="1"/>
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
     <Talent identifier="suger_tail_handle">
       <Icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="161,290,115,123" />
       <Description tag="talentdescription.suger_tail_handle" />
-      <AbilityGroupInterval interval="5">
+      <AbilityGroupInterval>
         <Abilities>
           <CharacterAbilityApplyStatusEffects>
             <StatusEffects>
@@ -163,5 +182,14 @@
         </Abilities>
       </AbilityGroupInterval>
     </Talent>
+    <Talent identifier="tsm_olympian">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,4" sheetelementsize="128,128" />
+    <Description tag="talentdescription.tsm_olympian" />
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveFlag flagtype="GainSkillPastMaximum" />
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
 
   </Talents>

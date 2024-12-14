@@ -43,7 +43,7 @@
     </Containable>
   </ItemContainer>
 </Item>
-<Item name="恶疫防护服" identifier="tsm_eyi_suit" subcategory="tsmmissions" category="diving" tags="diving,deepdiving,divinggear_wearableindoors,provocative,tsm_suit" scale="0.3" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
+<Item name="恶疫防护服" identifier="tsm_eyi_suit" subcategory="tsmmissions" category="diving" tags="smallitem,diving,deepdiving,divinggear_wearableindoors,provocative,tsm_suit" scale="0.3" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_soft">
   <Deconstruct time="20">
     <Item identifier="rubber" />
     <Item identifier="organicfiber" />
@@ -51,9 +51,6 @@
   </Deconstruct>
   <InventoryIcon texture="%ModDir%/suit/eyisuit.png" sourcerect="0,1200,372,305" origin="0.5,0.5" />
   <Sprite texture="%ModDir%/suit/eyisuit.png" sourcerect="1201,69,255,179" depth="0.51" origin="0.5,0.5" />
-  <ContainedSprite name="eyi suit In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/suit/eyisuit.png" sourcerect="416,48,196,384" depth="0.55" origin="0.5,0.5" />
-  <ContainedSprite name="eyi suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/suit/eyisuit.png" sourcerect="1420,1292,80,208" depth="0.55" origin="-0.12,-0.14" />
-  <ContainedSprite name="eyi suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/suit/eyisuit.png" sourcerect="1072,0,432,400" depth="0.55" origin="0.6305996,0.3576287" />
   <Body width="120" height="35" density="25" />
   <Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
     <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.4" deflectprojectiles="true"/>

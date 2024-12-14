@@ -75,7 +75,7 @@
         <ParticleEmitter particle="cyborgammotracer" anglemax="360" distancemax="0" particlespersecond="300" scalemultiplier="1.5,1.5" />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="This" condition="-100" setvalue="true">
-        <Spawnitem identifier="acidemitter" spawnposition="This" count="5" spread="30"/>
+        <Spawnitem identifier="acidemitter" spawnposition="This" count="5" spread="15"/>
         <ParticleEmitter particle="cyborgammotracer" anglemax="360" distancemax="200" scalemultiplier="3,3" particleamount="40" />
         <Explosion range="500.0" ballastfloradamage="100" structuredamage="350" itemdamage="200" force="10.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.3" penetration="0.5">
           <Affliction identifier="explosiondamage" strength="200" />

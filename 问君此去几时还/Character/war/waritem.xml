@@ -106,7 +106,7 @@
     </Projectile>
   </Item>
   <!--潜水服-->
-   <Item name="军用先进防护服" description="这件防护服在战斗中损坏了，很多功能都失效了" subcategory="tsmmissions" identifier="tsm_advancedcombatsuit" tags="diving,deepdiving,divinggear_wearableindoors" hideinmenus="true" allowasextracargo="false" scale="0.5" fireproof="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="0" cargocontaineridentifier="" inventoryiconcolor="136,142,166,255" spritecolor="136,142,166">
+  <Item name="军用先进防护服" description="这件防护服在战斗中损坏了，很多功能都失效了" subcategory="tsmmissions" identifier="tsm_advancedcombatsuit" tags="diving,deepdiving,divinggear_wearableindoors" hideinmenus="true" allowasextracargo="false" scale="0.5" fireproof="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="0" cargocontaineridentifier="" inventoryiconcolor="136,142,166,255" spritecolor="136,142,166">
     <Deconstruct time="25">
       <Item identifier="titaniumaluminiumalloy" amount="1" />
       <Item identifier="incendium" />
@@ -152,6 +152,7 @@
       <sprite name="Hide Boobs" texture="%ModDir%/Character/war/1.png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
       <StatusEffect type="OnWearing" target="Character" ObstructVision="true" PropulsionSpeedMultiplier="0.9" setvalue="true" disabledeltatime="true">
+        <StatValue stattype="FlowResistance" value="0.8" />
         <TriggerAnimation Type="Walk" path="Content/Characters/Human/Animations/HumanWalkDivingSuit.xml" />
         <TriggerAnimation Type="Run" path="Content/Characters/Human/Animations/HumanRunDivingSuit.xml" />
       </StatusEffect>
@@ -225,6 +226,7 @@
       <sprite name="Heavy duty lead cast suit Right Shoe" texture="%ModDir%/Character/war/Heavydutyleadcastdivingsuits.png" limb="RightFoot" sound="%ModDir%/ogg/tsm_footstep_heavy.ogg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Hide Boobs" texture="%ModDir%/Character/war/1.png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" >
+      <StatValue stattype="FlowResistance" value="1" />
       <Sound file="%ModDir%/Character/war/BreathSuitLoop.ogg" range="800" volume="0.6" loop="true" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" ObstructVision="true" PropulsionSpeedMultiplier="0.9" setvalue="true" disabledeltatime="true">
@@ -399,7 +401,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.3" damagesound="" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="stun" damagemultiplier="0.3" damagesound="LimbArmor"/>
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.5" damagesound="LimbArmor"/>
-      <StatValue stattype="FlowResistance" value="0.1" />
+      <StatValue stattype="FlowResistance" value="1" />
     </Wearable>
     <aitarget maxsightrange="1500" />
   </Item>
@@ -454,7 +456,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.4" damagesound="" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.5" damagesound="LimbArmor"/>
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="stun" damagemultiplier="0.2" damagesound="LimbArmor"/>
-      <StatValue stattype="FlowResistance" value="0.1" />
+      <StatValue stattype="FlowResistance" value="1" />
     </Wearable>
     <aitarget maxsightrange="1500" />
   </Item>
@@ -700,7 +702,7 @@
       <QualityStat stattype="Condition" value="0.2" />
     </Quality>
   </Item>
-  <Item name="方盾" identifier="tsm_blastshield_big" subcategory="tsmmissions" category="Equipment" scale="0.25" tags="weapon,mediumitem" hideinmenus="true" impactsoundtag="impact_metal_light" health="800" damagedbyprojectiles="true" damagedbyexplosions="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" explosiondamagemultiplier="0.2">
+  <Item name="方盾" identifier="tsm_blastshield_big" subcategory="tsmmissions" category="Equipment" scale="0.25" tags="weapon,mediumitem" hideinmenus="true" impactsoundtag="impact_metal_light" health="1000" damagedbyprojectiles="true" damagedbyexplosions="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" explosiondamagemultiplier="0.2">
     <Deconstruct time="10">
       <Item identifier="ballisticfiber" mincondition="0.7" copycondition="true" />
       <Item identifier="plastic" mincondition="0.7" copycondition="true" />
@@ -743,7 +745,7 @@
     <Projectile characterusable="false" hitscan="true" removeonhit="true" maxtargetstohit="1">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="1" targetforce="2" itemdamage="9" penetration="0.3" severlimbsprobability="0.5">
-        <Affliction identifier="gunshotwound" strength="20" />
+        <Affliction identifier="gunshotwound" strength="22" />
         <Affliction identifier="gunshotwound" strength="2" probability="0.15" />
         <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
         <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
@@ -776,7 +778,7 @@
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="0.6" targetforce="2" itemdamage="7" penetration="0.25" severlimbsprobability="0.5">
-        <Affliction identifier="gunshotwound" strength="16" />
+        <Affliction identifier="gunshotwound" strength="18" />
         <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
         <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
         <Affliction identifier="gunshotwound" strength="3" probability="0.1" />
@@ -808,7 +810,7 @@
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,175,115,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="1.5" targetforce="5" itemdamage="14" penetration="0.25" severlimbsprobability="0.3">
-        <Affliction identifier="gunshotwound" strength="20" />
+        <Affliction identifier="gunshotwound" strength="22" />
         <Affliction identifier="gunshotwound" strength="10" probability="0.3" />
         <Affliction identifier="bleeding" strength="25" />
         <Affliction identifier="bleeding" strength="15" probability="0.15" />
@@ -839,7 +841,7 @@
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,175,115,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="1" targetforce="3" itemdamage="9" penetration="0.3" severlimbsprobability="0.3">
-        <Affliction identifier="gunshotwound" strength="17" />
+        <Affliction identifier="gunshotwound" strength="20" />
         <Affliction identifier="gunshotwound" strength="10" probability="0.15" />
         <Affliction identifier="bleeding" strength="15" />
         <Affliction identifier="bleeding" strength="10" probability="0.15" />
@@ -870,7 +872,7 @@
     <Projectile characterusable="false" hitscan="true" removeonhit="true" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,175,115,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="2.5" targetforce="8" itemdamage="15" penetration="0.3" severlimbsprobability="0.8">
-        <Affliction identifier="gunshotwound" strength="45" />
+        <Affliction identifier="gunshotwound" strength="50" />
         <Affliction identifier="gunshotwound" strength="20" probability="0.5" />
         <Affliction identifier="tsmmission_armorbreak_50" strength="20" />
         <Affliction identifier="bleeding" strength="30" />
@@ -901,7 +903,7 @@
     <Projectile characterusable="false" hitscan="true" launchimpulse="30.0" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,150,150,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="0.2" targetforce="2" itemdamage="7" penetration="0.3" severlimbsprobability="0.2">
-        <Affliction identifier="gunshotwound" strength="16" />
+        <Affliction identifier="gunshotwound" strength="18" />
         <Affliction identifier="gunshotwound" strength="1" probability="0.15" />
         <Affliction identifier="gunshotwound" strength="1" probability="0.35" />
         <Affliction identifier="gunshotwound" strength="2" probability="0.3" />
@@ -936,7 +938,7 @@
     <Projectile characterusable="false" hitscan="true" launchimpulse="30.0" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,150,150,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="0.2" targetforce="2" itemdamage="7" penetration="0.35" severlimbsprobability="0.2">
-        <Affliction identifier="gunshotwound" strength="15" />
+        <Affliction identifier="gunshotwound" strength="17" />
         <Affliction identifier="gunshotwound" strength="3" probability="0.15" />
         <Affliction identifier="gunshotwound" strength="1" probability="0.35" />
         <Affliction identifier="gunshotwound" strength="3" probability="0.3" />
@@ -974,7 +976,7 @@
       <Attack structuredamage="0.3" targetforce="1" itemdamage="1" penetration="0.3" severlimbsprobability="0.1">
         <Affliction identifier="bleeding" strength="10" />
         <Affliction identifier="bleeding" strength="3" probability="0.3" />
-        <Affliction identifier="gunshotwound" strength="16" />
+        <Affliction identifier="gunshotwound" strength="18" />
         <Affliction identifier="tsmmission_armorbreak_50" strength="1" />
         <Affliction identifier="gunshotwound" strength="4" probability="0.3" />
         <Affliction identifier="stun" strength="0.1" probability="0.1" />
@@ -992,7 +994,7 @@
       </StatusEffect>
     </Projectile>
   </Item>
-  <Item identifier="tsm_12_ammo" category="Weapon" subcategory="tsmmissions" interactthroughwalls="true" tags="smallitem,shotgunammo,magazine" Scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="12ammo" identifier="tsm_12_ammo" category="Weapon" subcategory="tsmmissions" interactthroughwalls="true" tags="smallitem,shotgunammo,magazine" Scale="0.5" hideinmenus="true" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="189,299,23,11" depth="0.55" origin="0.5,0.5" />
     <Body width="37" height="15" density="40" />
@@ -1002,7 +1004,7 @@
       <Attack structuredamage="0" targetforce="4" itemdamage="15" penetration="0.15" severlimbsprobability="0.5">
         <Affliction identifier="gunshotwound" strength="9" />
         <Affliction identifier="bleeding" strength="10" />
-        <Affliction identifier="stun" strength="0.07" />
+        <Affliction identifier="stun" strength="0.07" probability="0.3"/>
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -1028,7 +1030,7 @@
       <Attack structuredamage="6" targetforce="7.5" itemdamage="6" severlimbsprobability="0.2" penetration="0.3">
         <Affliction identifier="gunshotwound" strength="25" />
         <Affliction identifier="bleeding" strength="15" />
-        <Affliction identifier="stun" strength="0.25" />
+        <Affliction identifier="stun" strength="0.25" probability="0.2"/>
         <Affliction identifier="stun" strength="0.5" probability="0.2" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -1049,9 +1051,9 @@
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
       <Attack structuredamage="4" targetforce="7.5" itemdamage="4" severlimbsprobability="0.1" penetration="0.4">
-        <Affliction identifier="gunshotwound" strength="14" />
+        <Affliction identifier="gunshotwound" strength="16" />
         <Affliction identifier="bleeding" strength="10" />
-        <Affliction identifier="stun" strength="0.1" />
+        <Affliction identifier="stun" strength="0.1" probability="0.2"/>
         <Affliction identifier="stun" strength="0.5" probability="0.01" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -1764,9 +1766,6 @@
       <RequiredItems items="tsm_762_39_mag" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="0" />
     </RangedWeapon>
-    <Propulsion force="-30" usablein="both" ApplyToHands="false">
-      <RequiredItems items="tsm_762_39_mag" type="Contained" />
-    </Propulsion>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <Containable items="tsm_762_39_mag" hide="false" itempos="-10,-10" depth="0.56" />
     </ItemContainer>
@@ -2444,8 +2443,8 @@
     </Projectile>
   </Item>
   <Item name="奇迹之海友军识别码" identifier="tsm_identifier" description="" subcategory="tsmmissions" category="Equipment" scale="0.25" tags="smallitem" impactsoundtag="impact_metal_light">
-    <PreferredContainer secondary="tsm_items" minamount="1" maxamount="1" spawnprobability="0.15" />
-    <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.15" />
+    <PreferredContainer secondary="tsm_items" minamount="1" maxamount="1" spawnprobability="0.1" />
+    <PreferredContainer secondary="wreckarmcab,wrecksecarmcab,wrecksupplycab,abandonedarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" />
     <Deconstruct time="10">
       <Item identifier="fpgacircuit" />
     </Deconstruct>
@@ -2541,8 +2540,8 @@
     </Projectile>
   </Item>
   <Item name="物资投放舱" identifier="tsm_land_wz_cl" translationidentifier="tsmrushshell" subcategory="tsmmissions" category="Misc" scale="0.28" sonarsize="6" hideinmenus="true">
-    <Sprite texture="%ModDir%/Character/war/wztfc.png" sourcerect="0,55,1330,1297" depth="0.55" />
-    <Body width="1300" height="1100" density="20" />
+    <Sprite texture="%ModDir%/Character/war/wztfc.png" sourcerect="0,16,830,920" depth="0.55" />
+    <Body width="800" height="900" density="20" />
     <Projectile characterusable="false" launchimpulse="50" maxtargetstohit="3" sticktocharacters="false" sticktoitems="false" sticktostructures="false" friendlyfire="false" damagedoors="true">
       <Attack structuredamage="20" itemdamage="10" severlimbsprobability="2.0" penetration="0.3">
         <Affliction identifier="lacerations" strength="1" />
@@ -2576,8 +2575,8 @@
     </Projectile>
   </Item>
   <Item name="医疗投放舱" identifier="tsm_land_wz_yl" translationidentifier="tsmrushshell" subcategory="tsmmissions" category="Misc" scale="0.28" sonarsize="6" hideinmenus="true">
-    <Sprite texture="%ModDir%/Character/war/wztfc.png" sourcerect="1419,55,1330,1297" depth="0.55" />
-    <Body width="1300" height="1100" density="20" />
+    <Sprite texture="%ModDir%/Character/war/wztfc.png" sourcerect="888,26,829,921" depth="0.55" />
+    <Body width="800" height="900" density="20" />
     <Projectile characterusable="false" launchimpulse="50" maxtargetstohit="3" sticktocharacters="false" sticktoitems="false" sticktostructures="false" friendlyfire="false" damagedoors="true">
       <Attack structuredamage="20" itemdamage="10" severlimbsprobability="2.0" penetration="0.3">
         <Affliction identifier="lacerations" strength="1" />
