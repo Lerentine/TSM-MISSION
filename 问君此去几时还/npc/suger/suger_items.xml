@@ -1,99 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <!--suger-->
-  <Item name="阿糖幻化器继承" identifier="tsm_headset_suger" subcategory="tsmmissions" scale="0.5" category="Equipment,Medical" hideinmenus="true" tags="smallitem,mobileradio" allowasextracargo="true" description="" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="113,264,58,45" origin="0.5,0.5" />
-    <Sprite name="Headset" texture="Content/Items/JobGear/TalentGear.png" depth="0.6" sourcerect="255,305,72,60" origin="0.35,0.5" />
-    <Body radius="20" height="20" density="15" />
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredItem identifier="tsm_suger" />
-    </Fabricate>
-    <Deconstruct time="10">
-      <Item identifier="copper" />
-      <Item identifier="plastic" />
-      <Item identifier="fpgacgircuit" />
-    </Deconstruct>
-    <WifiComponent range="55000.0" LinkToChat="true" MinChatMessageInterval="0.0" />
-    <ItemContainer capacity="1" maxstacksize="1" autoinject="true">
-      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
-      <Containable items="chem,syringe" />
-    </ItemContainer>
-    <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
-      <sprite name="Headset Wearable" texture="Content/Items/JobGear/TalentGear.png" sourcerect="255,305,72,58" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" origin="0.5,0.5" />
-      <StatusEffect type="OnWearing" target="Character,Contained" noninteractable="true" condition="-10" targetslot="0">
-        <ReduceAffliction type="bloodloss" amount="2.5" />
-        <RequiredItem items="antibloodloss1" type="Contained" targetslot="0" />
-        <Conditional bloodloss="gt 5.0" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character,Contained" condition="-5" targetslot="0">
-        <ReduceAffliction type="bloodloss" amount="6" />
-        <RequiredItem items="antibloodloss2" type="Contained" targetslot="0" />
-        <Conditional bloodloss="gt 5.0" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character,Contained" condition="-5" targetslot="0">
-        <Affliction identifier="psychosis" amount="2.25" />
-        <ReduceAffliction type="bloodloss" amount="6" />
-        <RequiredItem items="alienblood" type="Contained" targetslot="0" />
-        <Conditional bloodloss="gt 5.0" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character,Contained" comparison="or" condition="-10" targetslot="1">
-        <ReduceAffliction type="damage" amount="5" />
-        <ReduceAffliction type="burn" amount="0.1" />
-        <Affliction identifier="oxygenlow" amount="2" />
-        <Affliction identifier="opiateaddiction" amount="0.5" />
-        <Affliction identifier="opiateoverdose" amount="1.0" />
-        <ReduceAffliction identifier="opiatewithdrawal" amount="3.0" />
-        <RequiredItem items="antidama1" type="Contained" targetslot="1" />
-        <Conditional internaldamage="gt 0.0" />
-        <Conditional blunttrauma="gt 0.0" />
-        <Conditional lacerations="gt 0.0" />
-        <Conditional bitewounds="gt 0.0" />
-        <Conditional gunshotwound="gt 0.0" />
-        <Conditional organdamage="gt 0.0" />
-        <Conditional explosiondamage="gt 0.0" />
-        <Conditional concussion="gt 0.0" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character,Contained" comparison="or" condition="-20" targetslot="1">
-        <ReduceAffliction type="damage" amount="15" />
-        <ReduceAffliction type="burn" amount="1" />
-        <Affliction identifier="oxygenlow" amount="6" />
-        <Affliction identifier="opiateaddiction" amount="1.5" />
-        <Affliction identifier="opiateoverdose" amount="4.5" />
-        <ReduceAffliction identifier="opiatewithdrawal" amount="20" />
-        <RequiredItem items="antidama2" type="Contained" targetslot="1" />
-        <Conditional internaldamage="gt 0.0" />
-        <Conditional blunttrauma="gt 0.0" />
-        <Conditional lacerations="gt 0.0" />
-        <Conditional bitewounds="gt 0.0" />
-        <Conditional gunshotwound="gt 0.0" />
-        <Conditional organdamage="gt 0.0" />
-        <Conditional explosiondamage="gt 0.0" />
-        <Conditional concussion="gt 0.0" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character,Contained" comparison="or" condition="-5" targetslot="1">
-        <Affliction identifier="burn" amount="0.02" />
-        <ReduceAffliction type="damage" amount="3" />
-        <ReduceAffliction identifier="oxygenlow" amount="3" />
-        <ReduceAffliction identifier="bloodloss" amount="2" />
-        <RequiredItem items="deusizine" type="Contained" targetslot="1" />
-        <Conditional internaldamage="gt 0.0" />
-        <Conditional blunttrauma="gt 0.0" />
-        <Conditional lacerations="gt 0.0" />
-        <Conditional bitewounds="gt 0.0" />
-        <Conditional gunshotwound="gt 0.0" />
-        <Conditional organdamage="gt 0.0" />
-        <Conditional explosiondamage="gt 0.0" />
-        <Conditional concussion="gt 0.0" />
-        <Conditional bloodloss="gt 5.0" />
-        <Conditional oxygenlow="gt 50.0" />
-      </StatusEffect>
-    </Wearable>
-  </Item>
-  <Item name="阿糖幻化器" subcategory="tsmmissions" identifier="tsm_suger" hideinmenus="true" tags="smallitem,mobileradio,sonar" description="阿糖的耳机，可以幻化成阿糖" variantof="tsm_headset_suger">
+  <Item name="阿糖幻化器" subcategory="tsmmissions" identifier="tsm_suger" scale="0.25" category="Equipment" tags="smallitem,mobileradio" description="" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/npc/suger/suger_head.png" sourcerect="488,283,84,133" origin="0.5,0.5" />
     <Sprite name="Headset" texture="%ModDir%/npc/suger/suger_head.png" sourcerect="488,283,84,133" origin="0.5,0.5" />
-    <WifiComponent range="50000.0" LinkToChat="true" MinChatMessageInterval="0.0">
-      <StatusEffect type="OnActive" target="This">
+    <Body radius="110" height="205" density="6" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="silicon" />
+      <Item identifier="zinc" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredItem identifier="tsm_suger" amount="1" />
+    </Fabricate>
+    <WifiComponent range="55000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
         <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
         <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
       </StatusEffect>
@@ -103,25 +24,6 @@
         <RequiredItems items="" />
       </WifiComponent>
     </Upgrade>
-    <ItemContainer capacity="0" maxstacksize="0" autoinject="false" containedstateindicatorstyle="syringe">
-      <Containable items="none" />
-      <SlotIcon slotindex="0" texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,448,64,64" origin="0.5,0.45" />
-      <SlotIcon slotindex="1" texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,448,64,64" origin="0.5,0.45" />
-      <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="antibloodloss1,antibloodloss2,alienblood" />
-      </SubContainer>
-      <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="antidama1,antidama2,deusizine" />
-      </SubContainer>
-    </ItemContainer>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredItem identifier="tsm_suger" />
-    </Fabricate>
-    <Deconstruct time="10">
-      <Item identifier="copper" />
-      <Item identifier="plastic" />
-      <Item identifier="fpgacgircuit" />
-    </Deconstruct>
     <Wearable slots="Any,Headset" displaycontainedstatus="false" msg="ItemMsgPickUpSelect">
       <sprite name="AT Head" texture="%ModDir%/npc/suger/suger_head.png" limb="Head" sourcerect="0,0,160,160" inheritsourcerect="false" alphaclipotherwearables="false" hidelimb="true" hidewearablesoftype="moustache,beard,hair,faceattachment,husk,herpes" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="false" Scale="1" hideotherwearables="false" inheritorigin="false" origin="0.47048324,0.48" />
       <sprite name="AT Torso" texture="%ModDir%/npc/suger/suger_body.png" limb="Torso" sourcerect="144,0,112,160" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.49,0.545" />
@@ -140,10 +42,6 @@
       <sprite name="AT Left Shoe" texture="%ModDir%/npc/suger/suger_body.png" limb="LeftFoot" sourcerect="320,208,64,48" inheritsourcerect="false" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.45,0.475" />
       <sprite name="AT Boobs" texture="%ModDir%/npc/suger/suger_body.png" limb="Tail" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
       <sprite name="AT Boobs" texture="%ModDir%/npc/suger/suger_body.png" limb="Jaw" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
-      <!--StatusEffect type="OnWearing" target="Character" SoundRange="55000" setvalue="true">
-        <AiTarget soundrange="55000" />
-        <Affliction identifier="radio" strength="150" />
-        </StatusEffect-->
       <StatusEffect type="OnWearing" target="Character,Contained" noninteractable="true" condition="-10" targetslot="0">
         <ReduceAffliction type="bloodloss" amount="2.5" />
         <RequiredItem items="antibloodloss1" type="Contained" targetslot="0" />
@@ -218,7 +116,19 @@
         <Affliction identifier="Suger_Tail_Spawn" strength="10" />
       </StatusEffect>
     </Wearable>
+    <ItemContainer capacity="0" maxstacksize="0" autoinject="false" containedstateindicatorstyle="syringe">
+      <Containable items="none" />
+      <SlotIcon slotindex="0" texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,448,64,64" origin="0.5,0.45" />
+      <SlotIcon slotindex="1" texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,448,64,64" origin="0.5,0.45" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="antibloodloss1,antibloodloss2,alienblood" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="antidama1,antidama2,deusizine" />
+      </SubContainer>
+    </ItemContainer>
   </Item>
+
   <Item name="阿糖作战服站点" identifier="tsm_suger_uniform" subcategory="tsmmissions" aliases="securityuniform" category="Equipment" tags="smallitem,clothing,vest" hideinmenus="true" fireproof="true" description="站点防穿模" scale="0.5" noninteractable="True" impactsoundtag="impact_soft">
     <InventoryIcon name="pgc uniform Icon" texture="%ModDir%/npc/suger/suger_head.png" sourcerect="296,151,54,99" origin="0.5,0.5" />
     <Sprite name="pgc uniform" texture="%ModDir%/npc/suger/suger_head.png" sourcerect="263,22,133,63" depth="0.55" origin="0.5,0.5" />

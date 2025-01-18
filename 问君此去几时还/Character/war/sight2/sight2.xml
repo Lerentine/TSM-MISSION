@@ -25,9 +25,6 @@
   <bloodemitter Particle="blackblood" AngleMin="1" AngleMax="2" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
   <bloodemitter Particle="blackwaterblood" AngleMin="1" AngleMax="2" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="1" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
   <gibemitter Particle="blackgib" AngleMin="0" AngleMax="360" ScaleMin="1" ScaleMax="2" VelocityMin="200" VelocityMax="1500" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="30" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
-  <StatusEffect type="OnActive" target="This" delay="40" Interval="1">
-    <Affliction identifier="explosiondamage" strength="500" />
-  </StatusEffect>
   <StatusEffect type="OnDeath" target="This" targetlimb="Waist">
     <Explosion range="500" structuredamage="250" force="500" smoke="false" sparks="false" shockwave="true" underwaterbubble="true" severlimbsprobability="1.0" camerashake="50" camerashakerange="10000" flashrange="1000" flashduration="2.0">
       <Affliction identifier="explosiondamage" strength="50" />

@@ -43,7 +43,7 @@
     <target Tag="Ship2" State="Avoid" Priority="1" ReactDistance="1000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
     <target Tag="Ship3" State="Avoid" Priority="1" ReactDistance="1000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
   </ai>
-  <StatusEffect type="OnActive" target="This" stackable="false" delay="25">
+  <StatusEffect type="OnActive" target="This" stackable="false" interval="25">
     <SpawnCharacter speciesname="sight" count="1" spread="100" />
     <Sound file="%ModDir:2852411866%/Character/war/ogg/登陆舱/瞄准器发射6.ogg" range="6000" dontmuffle="true" selectionmode="Random" />
     <Sound file="%ModDir:2852411866%/Character/war/ogg/登陆舱/瞄准器发射5.ogg" range="6000" dontmuffle="true" selectionmode="Random" />
@@ -55,7 +55,7 @@
   <StatusEffect type="OnDeath" target="This" stackable="false">
     <Sound file="%ModDir:2852411866%/Character/war/ogg/红松石/坠毁.ogg" range="6000" dontmuffle="true" />
   </StatusEffect>
-  <StatusEffect type="OnDeath" target="This" delay="11">
+  <StatusEffect type="OnDeath" target="This" interval="11">
     <Explosion range="1000" structuredamage="250" force="500" smoke="false" sparks="false" shockwave="true" underwaterbubble="true" severlimbsprobability="1.0" camerashake="50" camerashakerange="10000" flashrange="1000" flashduration="2.0">
       <Affliction identifier="explosiondamage" strength="200" />
       <Affliction identifier="burn" strength="80" />

@@ -15,7 +15,7 @@
     </Effect>
     <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="533,0,126,126" color="255,255,255,255" origin="0,0" />
   </Affliction>
-  <Affliction name="死海" identifier="tsm_ondeath" targets="human" description="" type="tsm_ondeath" limbspecific="false" indicatorlimb="Torso" activationthreshold="0" showinhealthscannerthreshold="1" showiconthreshold="1" showicontoothersthreshold="1" maxstrength="1">
+  <Affliction name="死海" identifier="tsm_ondeath" targets="human" type="tsm_ondeath" limbspecific="false" indicatorlimb="Torso" activationthreshold="0" showinhealthscannerthreshold="1" showiconthreshold="1" showicontoothersthreshold="1" maxstrength="1">
     <Effect minstrength="0.1" maxstrength="1" minvitalitydecrease="0" maxvitalitydecrease="2" multiplybymaxvitality="true" strengthchange="0.1">
       <StatusEffect target="Character" comparison="and">
         <Conditional speciesname="human" />
@@ -26,31 +26,63 @@
     </Effect>
     <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="316,278,126,126" color="195,136,60,255" origin="0,0" />
   </Affliction>
-  <Affliction name="沸腾之海" identifier="tsm_fire_water" type="contamination" IsBuff="true" activationthreshold="0" showinhealthscannerthreshold="1" showiconthreshold="1" showicontoothersthreshold="1" maxstrength="10" limbspecific="false" indicatorlimb="Head">
+  <Affliction name="沸腾之海" identifier="tsm_fire_water" type="tsm_mission_affliction" IsBuff="true" activationthreshold="0" showinhealthscannerthreshold="0" showiconthreshold="0" showicontoothersthreshold="0" maxstrength="10" limbspecific="false" indicatorlimb="Head">
     <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
       <StatValue stattype="MaximumHealthMultiplier" value="-0.3" />
-      <StatusEffect type="InWater" target="Limb" disabledeltatime="false">
-        <!--Conditional pressureprotection="lt 3000"/-->
+      <StatusEffect target="Character" interval="1" comparison="And">
+        <Conditional InWater="true"/>
+        <Conditional pressureprotection="lt 4000"/>
         <Affliction identifier="burn" amount="0.8" />
       </StatusEffect>
-      <StatusEffect type="InWater" target="Limb" disabledeltatime="false">
-        <!--Conditional pressureprotection="lt 4000"/-->
+      <StatusEffect target="Character" interval="1" comparison="And">
+        <Conditional InWater="true"/>
+        <Conditional pressureprotection="gte 4000"/>
+        <Conditional pressureprotection="lt 5000"/>
         <Affliction identifier="burn" amount="0.7" />
       </StatusEffect>
-      <StatusEffect type="InWater" target="Limb" disabledeltatime="false">
-        <!--Conditional pressureprotection="lt 5000"/-->
+      <StatusEffect target="Character" interval="1" comparison="And">
+        <Conditional InWater="true"/>
+        <Conditional pressureprotection="gte 5000"/>
+        <Conditional pressureprotection="lt 6000"/>
         <Affliction identifier="burn" amount="0.6" />
       </StatusEffect>
-      <StatusEffect type="InWater" target="Limb" disabledeltatime="false">
-        <!--Conditional pressureprotection="lt 6000"/-->
+      <StatusEffect target="Character" interval="1" comparison="And">
+        <Conditional InWater="true"/>
+        <Conditional pressureprotection="gte 6000"/>
         <Affliction identifier="burn" amount="0.5" />
       </StatusEffect>
-      <StatusEffect type="InWater" target="Limb" disabledeltatime="false">
-        <!--Conditional pressureprotection="lt 7000"/-->
-        <Affliction identifier="burn" amount="0.4" />
-      </StatusEffect>
     </Effect>
-    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="492,278,126,126" color="0,0,0,255" origin="0,0" />
+    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="649,278,126,125" color="0,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="热" identifier="tsm_fire_water_jm" type="tsm_mission_affliction" IsBuff="true" activationthreshold="0" showinhealthscannerthreshold="100" showiconthreshold="100" showicontoothersthreshold="100" maxstrength="10" limbspecific="false" indicatorlimb="Head">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0" MaxAfflictionOverlayAlphaMultiplier="0.1"/>
+    <Effect minstrength="1" maxstrength="2" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.1" MaxAfflictionOverlayAlphaMultiplier="0.2"/>
+    <Effect minstrength="2" maxstrength="3" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.2" MaxAfflictionOverlayAlphaMultiplier="0.3"/>
+    <Effect minstrength="3" maxstrength="4" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.3" MaxAfflictionOverlayAlphaMultiplier="0.4"/>
+    <Effect minstrength="4" maxstrength="5" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.4" MaxAfflictionOverlayAlphaMultiplier="0.5"/>
+    <Effect minstrength="5" maxstrength="6" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.5" MaxAfflictionOverlayAlphaMultiplier="0.6"/>
+    <Effect minstrength="6" maxstrength="7" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.6" MaxAfflictionOverlayAlphaMultiplier="0.7"/>
+    <Effect minstrength="7" maxstrength="8" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.7" MaxAfflictionOverlayAlphaMultiplier="0.8"/>
+    <Effect minstrength="8" maxstrength="9" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.8" MaxAfflictionOverlayAlphaMultiplier="0.9"/>
+    <Effect minstrength="9" maxstrength="10" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.9" MaxAfflictionOverlayAlphaMultiplier="1"/>
+    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="649,278,126,125" color="0,0,0,255" origin="0,0" />
+    <AfflictionOverlay texture="%ModDir%/Afflictions/fire_water.png" sourcerect="0,0,1920,1080" color="255,255,255,255" />
+  </Affliction>
+  <tsm_zs name="照射" identifier="tsm_zs" type="tsm_mission_affliction" limbspecific="true" maxstrength="100" >
+    <Effect minstrength="0" maxstrength="100" strengthchange="-2" MinAfflictionOverlayAlphaMultiplier="0" MaxAfflictionOverlayAlphaMultiplier="1.0" limbspecific="false" indicatorlimb="Head">
+    <StatusEffect target="Character" interval="1">
+      <Affliction identifier="burn" amount="0.6" />
+    </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="492,278,126,126" color="195,104,60,255" origin="0,0"/>
+    <AfflictionOverlay texture="Content/Lights/light_fluorescent_L2.png" sourcerect="0,0,1024,1024" color="150,0,0,180" />
+  </tsm_zs>
+  <!--生物防打-->
+  <Affliction identifier="tsmmission_silencers_buff" isbuff="true" type="barrel" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false" >
+    <Effect minstrength="0" maxstrength="1" strengthchange="0">
+      <StatValue stattype="SoundRangeMultiplier" value="-1" />
+      <StatValue stattype="SightRangeMultiplier" value="-1" />
+    </Effect>
   </Affliction>
   <!--防炫！炫你🐎-->
   <Affliction name="防炫标识" identifier="tsmbosswudifangxuan" description="" type="genericaffliction" limbspecific="false" indicatorlimb="Torso" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="1">

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="T.S.M MISSIONS-问君此去几时还" modversion="1.1.215" corepackage="False" steamworkshopid="2852411866" gameversion="1.7.7.0">
+<contentpackage name="T.S.M MISSIONS-问君此去几时还" modversion="1.1.225" corepackage="False" steamworkshopid="2852411866" gameversion="1.7.7.0">
   <Character file="%ModDir%/Character/实验体/T044Y/T044Y.xml" />
   <Character file="%ModDir%/Character/实验体/大地鬼哭/embi_t044y.xml" />
   <Character file="%ModDir%/Character/实验体/噩梦迅猛龙/embi_003.xml" />
@@ -59,6 +59,7 @@
   <Character file="%ModDir%/Character/war/联盟/QuickReactionForce_male/QuickReactionForce.xml" />
   <Character file="%ModDir%/Character/war/联盟/QuickReactionForce_female/QuickReactionForce1.xml" />
   <Character file="%ModDir%/Character/eyi/eyivariant/eyivariant.xml" />
+  <Character file="%ModDir%/Character/eyi/eyinovariant/eyinovariant.xml" />
   <Character file="%ModDir%/character/eyi/boneeater/boneeater.xml" />
   <Character file="%ModDir%/character/eyi/humaneyi/humaneyi.xml" />
   <Character file="%ModDir%/character/eyi/eyibug/eyibug.xml" />
@@ -66,12 +67,12 @@
   <Character file="%ModDir%/character/eyi/skinbreaker/skinbreaker.xml" />
   <Character file="%ModDir%/Character/human/HumanTail.xml" />
   <Character file="%ModDir%/Character/CorruptionMachinery/CorruptionMachinery.xml" />
-  <Character file="%ModDir%/Character/Bike/Bike.xml" />
   <Jobs file="%ModDir%/Other/Jobs.xml" />
   <TalentTrees file="%ModDir%/Other/TalentTrees.xml" />
   <NPCSets file="%ModDir%/npc/mission_npcs.xml" />
   <NPCSets file="%ModDir%/npc/special_npcs.xml" />
   <RandomEvents file="%ModDir%/mission/OutpostEvents.xml" />
+  <RandomEvents file="%ModDir%/mission/MissionEvents.xml" />
   <RandomEvents file="%ModDir%/npc/OutpostEvents_tsm.xml" />
   <Missions file="%ModDir%/mission/Missions.xml" />
   <Missions file="%ModDir%/mission/Missions_origin.xml" />
@@ -83,7 +84,6 @@
   <Item file="%ModDir%/soundplayer/soundplayer.xml" />
   <Item file="%ModDir%/Character/war/waritem.xml" />
   <Item file="%ModDir%/item/containers/containers.xml" />
-  <Item file="%ModDir%/item/bike/bike.xml" />
   <Item file="%ModDir%/suit/suit.xml" />
   <Item file="%ModDir%/item/smoking/item.xml" />
   <Item file="%ModDir%/item/eyi/item.xml" />
@@ -94,6 +94,7 @@
   <Item file="%ModDir%/npc/hxl/hxl_items.xml" />
   <Item file="%ModDir%/npc/youmu/youmu_items.xml" />
   <Item file="%ModDir%/npc/items.xml" />
+  <Item file="%ModDir%/npc/pifu/pifu.xml" />
   <Structure file="%ModDir%/map/OutpostStructurePrefabs.xml" />
   <Structure file="%ModDir%/Map/blood.xml" />
   <Afflictions file="%ModDir%/Afflictions/Afflictions.xml" />
@@ -113,21 +114,13 @@
   <OutpostModule file="%ModDir%/module/tsm_entrances.sub" />
   <OutpostModule file="%ModDir%/module/tsm_hubmodule.sub" />
   <OutpostModule file="%ModDir%/module/tem_EngineeringModule_other_1.sub" />
-  <OutpostModule file="%ModDir%/module/tsm_cave_1.sub" />
-  <OutpostModule file="%ModDir%/module/tsm_cave_2.sub" />
   <OutpostModule file="%ModDir%/module/tsm_ResearchModule_other_1.sub" />
   <OutpostModule file="%ModDir%/module/tsm_ResearchModule_other_2.sub" />
   <OutpostModule file="%ModDir%/module/tsm_manufacturing_train_1.sub" />
   <OutpostModule file="%ModDir%/module/tsm_manufacturing_day.sub" />
   <OutpostModule file="%ModDir%/module/tsm_manufacturing_notrain.sub" />
-  <OutpostModule file="%ModDir%/module/tsm_EngineeringModule_other_2.sub" />
-  <Wreck file="%ModDir%/sub/IndulgencePirate.sub" />
-  <OutpostModule file="%ModDir%/module/tsm_residentialmodule_1.sub" />
-  <OutpostModule file="%ModDir%/module/tsm_residentialmodule_2.sub" />
   <OutpostModule file="%ModDir%/module/tsm_engineeringmodule_2.sub" />
-  <OutpostModule file="%ModDir%/module/tsm_securitymodule_1.sub" />
   <OutpostModule file="%ModDir%/module/tsm_securitymodule_2.sub" />
-  <OutpostModule file="%ModDir%/module/tsm_engineeringmodule_3.sub" />
   <OutpostModule file="%ModDir%/module/tsm_ArmoryModule_other_1.sub" />
   <OutpostModule file="%ModDir%/module/tsm_CrewModule_1.sub" />
   <OutpostModule file="%ModDir%/module/tsm_CrewModule_other_2.sub" />
@@ -145,20 +138,30 @@
   <OutpostModule file="%ModDir%/module/tsm_AdminModule_other_1.sub" />
   <OutpostModule file="%ModDir%/module/tsm_medicalmodule_1.sub" />
   <OutpostModule file="%ModDir%/module/tsm_medicalmodule_2.sub" />
-  <OutpostModule file="%ModDir%/module/tsm_engineeringmodule_1.sub" />
-  <BeaconStation file="%ModDir%/sub/编号65332的求救.sub" />
-  <Wreck file="%ModDir%/sub/GaosiMKIIPirateWreck.sub" />
-  <OutpostModule file="%ModDir%/module/tsm_residentialmodule_3.sub" />
-  <Wreck file="%ModDir%/sub/杀戮矿坑.sub" />
-  <Wreck file="%ModDir%/sub/血色残骸.sub" />
-  <Wreck file="%ModDir%/sub/日暮山-落幕小队.sub" />
-  <OutpostModule file="%ModDir%/module/tsm_docking_1.sub" />
   <OutpostModule file="%ModDir%/module/tsm_docking_2.sub" />
   <OutpostModule file="%ModDir%/module/tsm_military_dock.sub" />
-  <OutpostModule file="%ModDir%/module/tsm_military_dock_1.sub" />
   <OutpostModule file="%ModDir%/module/tsm_mine_dock_1.sub" />
-  <OutpostModule file="%ModDir%/module/tsm_mine_dock_2.sub" />
   <OutpostModule file="%ModDir%/module/tsm_adminmodule_1.sub" />
+  <OutpostModule file="%ModDir%/module/tsm_mine_dock_2.sub" />
+  <OutpostModule file="%ModDir%/module/tsm_military_dock_1.sub" />
+  <BeaconStation file="%ModDir%/sub/编号65332的求救.sub" />
+  <Wreck file="%ModDir%/sub/IndulgencePirate.sub" />
+  <Wreck file="%ModDir%/sub/GaosiMKIIPirateWreck.sub" />
+  <Wreck file="%ModDir%/sub/血色残骸.sub" />
+  <Wreck file="%ModDir%/sub/日暮山-落幕小队.sub" />
+  <Wreck file="%ModDir%/sub/铁骨沉沙.sub" />
+  <OutpostModule file="%ModDir%/module/tsm_docking_1.sub" />
   <OutpostModule file="%ModDir%/module/tsm_adminmodule_2.sub" />
+  <Wreck file="%ModDir%/sub/杀戮矿坑.sub" />
+  <OutpostModule file="%ModDir%/module/tsm_EngineeringModule_other_2.sub" />
+  <OutpostModule file="%ModDir%/module/tsm_engineeringmodule_1.sub" />
+  <OutpostModule file="%ModDir%/module/tsm_cave_1.sub" />
+  <OutpostModule file="%ModDir%/module/tsm_cave_2.sub" />
+  <OutpostModule file="%ModDir%/module/tsm_engineeringmodule_3.sub" />
+  <OutpostModule file="%ModDir%/module/tsm_residentialmodule_1.sub" />
+  <OutpostModule file="%ModDir%/module/tsm_securitymodule_1.sub" />
+  <OutpostModule file="%ModDir%/module/tsm_residentialmodule_2.sub" />
+  <OutpostModule file="%ModDir%/module/tsm_residentialmodule_3.sub" />
+  <BeaconStation file="%ModDir%/sub/T.S.M 炮基信标站.sub" />
   <Wreck file="%ModDir%/sub/杀戮矿坑_迷雾.sub" />
 </contentpackage>

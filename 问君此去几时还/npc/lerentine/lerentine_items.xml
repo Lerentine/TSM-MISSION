@@ -1,24 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="莱伦汀幻化器继承" identifier="tsm_headset_lerentine" subcategory="tsmmissions" scale="0.5" hideinmenus="true" category="Equipment,Medical" tags="smallitem,mobileradio" allowasextracargo="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="113,264,58,45" origin="0.5,0.5" />
-    <Sprite name="Headset" texture="Content/Items/JobGear/TalentGear.png" depth="0.6" sourcerect="255,305,72,60" origin="0.35,0.5" />
-    <Body radius="20" height="20" density="15" />
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredItem identifier="tsm_lerentine" />
+  <Item name="莱伦汀幻化器" subcategory="tsmmissions" identifier="tsm_lerentine" scale="0.25" category="Equipment" tags="smallitem,mobileradio" description="" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/npc/lerentine/Lerentine_heads.png" sourcerect="444,17,84,133" origin="0.5,0.5" />
+    <Sprite name="lerentine_OAS" texture="%ModDir%/npc/lerentine/Lerentine_heads.png" sourcerect="444,17,84,133" depth="0.55" />
+    <Body radius="50" height="70" density="6" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="silicon" />
+      <Item identifier="zinc" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredItem identifier="tsm_lerentine" amount="1" />
     </Fabricate>
+    <WifiComponent range="55000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <Upgrade gameversion="0.18.0.0">
+      <WifiComponent>
+        <RequiredItems items="" />
+      </WifiComponent>
+    </Upgrade>
     <Deconstruct time="10">
       <Item identifier="copper" />
       <Item identifier="plastic" />
       <Item identifier="fpgacgircuit" />
     </Deconstruct>
-    <WifiComponent range="55000.0" LinkToChat="true" MinChatMessageInterval="0.0" />
-    <ItemContainer capacity="1" maxstacksize="1" autoinject="true">
-      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
-      <Containable items="chem,syringe" />
-    </ItemContainer>
-    <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
-      <sprite name="Headset Wearable" texture="Content/Items/JobGear/TalentGear.png" sourcerect="255,305,72,58" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" origin="0.5,0.5" />
+    <Wearable slots="Any,Headset" displaycontainedstatus="false" msg="ItemMsgPickUpSelect">
+      <sprite name="Lerentin Head" texture="%ModDir%/npc/lerentine/Lerentine_heads.png" limb="Head" inheritsourcerect="false" sourcerect="0,5,121,120" canbehiddenbyotherwearables="true" hidelimb="true" origin="0.55,0.55" inheritorigin="false" inheritscale="false" Scale="0.25" hideotherwearables="false"/>
+      <sprite name="Lerentine Torso" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="Torso" inheritsourcerect="true" hidelimb="true" inherittexturescale="false" Scale="0.45" inheritlimbdepth="true" inheritorigin="true" origin="0.11,0.37"/>
+      <sprite name="Lerentine Right Hand" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="RightHand" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Left Hand" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="LeftHand" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Left Lower Arm" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="LeftForearm" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Right Lower Arm" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="RightForearm" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Left Upper Arm" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="LeftArm" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Right Upper Arm" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="RightArm" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Waist" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="Waist" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Right Thigh" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="RightThigh" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Left Thigh" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="LeftThigh" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Right Leg" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="RightLeg" inheritsourcerect="true" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Left Leg" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="LeftLeg" inheritsourcerect="true" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Right Shoe" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="RightFoot" inheritsourcerect="true" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Left Shoe" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="LeftFoot" inheritsourcerect="true" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Boobs" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="Tail" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
+      <sprite name="Lerentine Boobs" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="Jaw" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
       <StatusEffect type="OnWearing" target="Character,Contained" noninteractable="true" condition="-10" targetslot="0">
         <ReduceAffliction type="bloodloss" amount="2.5" />
         <RequiredItem items="antibloodloss1" type="Contained" targetslot="0" />
@@ -87,21 +114,6 @@
         <Conditional oxygenlow="gt 50.0" />
       </StatusEffect>
     </Wearable>
-  </Item>
-  <Item name="莱伦汀幻化器" subcategory="tsmmissions" identifier="tsm_lerentine" cargocontaineridentifier="tsm_metalcrate" hideinmenus="true" tags="smallitem,mobileradio,sonar" description="lerentine的耳机，可以幻化成lerentine" variantof="tsm_headset_lerentine">
-    <InventoryIcon texture="%ModDir%/npc/lerentine/Lerentine_heads.png" sourcerect="444,17,84,133" origin="0.5,0.5" />
-    <Sprite name="lerentine_OAS" texture="%ModDir%/npc/lerentine/Lerentine_heads.png" sourcerect="444,17,84,133" depth="0.55" />
-    <WifiComponent range="50000.0" LinkToChat="true" MinChatMessageInterval="0.0">
-      <StatusEffect type="OnActive" target="This">
-        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
-        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
-      </StatusEffect>
-    </WifiComponent>
-    <Upgrade gameversion="0.18.0.0">
-      <WifiComponent>
-        <RequiredItems items="" />
-      </WifiComponent>
-    </Upgrade>
     <ItemContainer capacity="0" maxstacksize="0" autoinject="false" containedstateindicatorstyle="syringe">
       <Containable items="none" />
       <SlotIcon slotindex="0" texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,448,64,64" origin="0.5,0.45" />
@@ -113,104 +125,6 @@
         <Containable items="antidama1,antidama2,deusizine" />
       </SubContainer>
     </ItemContainer>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredItem identifier="tsm_lerentine" />
-    </Fabricate>
-    <Deconstruct time="10">
-      <Item identifier="copper" />
-      <Item identifier="plastic" />
-      <Item identifier="fpgacgircuit" />
-    </Deconstruct>
-    <Wearable slots="Any,Headset" displaycontainedstatus="false" msg="ItemMsgPickUpSelect">
-      <sprite name="Lerentin Head" texture="%ModDir%/npc/lerentine/Lerentine_heads.png" limb="Head" sourcerect="0,0,144,144" inheritsourcerect="false" canbehiddenbyotherwearables="true" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="false" Scale="1" hideotherwearables="false" inheritorigin="false" origin="0.49,0.505"></sprite>
-      <sprite name="Lerentine Torso" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="Torso" sourcerect="144,0,112,160" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.48,0.56" />
-      <sprite name="Lerentine Right Hand" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="RightHand" sourcerect="256,151,64,57" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.38,0.43" />
-      <sprite name="Lerentine Left Hand" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="LeftHand" sourcerect="320,151,64,57" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.38,0.39" />
-      <sprite name="Lerentine Left Lower Arm" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="LeftForearm" sourcerect="320,80,64,72" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.39,0.55" />
-      <sprite name="Lerentine Right Lower Arm" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="RightForearm" sourcerect="256,80,64,72" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.42,0.55" />
-      <sprite name="Lerentine Left Upper Arm" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="LeftArm" sourcerect="320,0,64,80" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.46,0.43" />
-      <sprite name="Lerentine Right Upper Arm" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="RightArm" sourcerect="256,0,64,80" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.46,0.43" />
-      <sprite name="Lerentine Waist" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="Waist" sourcerect="144,160,112,96" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.47,0.63" />
-      <sprite name="Lerentine Right Thigh" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="RightThigh" sourcerect="0,0,64,112" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.40,0.51" />
-      <sprite name="Lerentine Left Thigh" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="LeftThigh" sourcerect="64,0,80,112" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.47,0.51" />
-      <sprite name="Lerentine Right Leg" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="RightLeg" sourcerect="0,112,64,144" inheritsourcerect="false" inheritdepth="false" depth="0.121" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.37,0.42" />
-      <sprite name="Lerentine Left Leg" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="LeftLeg" sourcerect="64,112,80,144" inheritsourcerect="false" inheritdepth="false" depth="0.131" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.41,0.43" />
-      <sprite name="Lerentine Right Shoe" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="RightFoot" sourcerect="256,208,64,48" inheritsourcerect="false" inheritdepth="false" depth="0.122" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.5,0.465" />
-      <sprite name="Lerentine Left Shoe" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="LeftFoot" sourcerect="320,208,64,48" inheritsourcerect="false" inheritdepth="false" depth="0.132" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.45,0.465" />
-      <sprite name="Lerentine Boobs" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="Tail" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
-      <sprite name="Lerentine Boobs" texture="%ModDir%/npc/lerentine/lerentine_body_bd.png" limb="Jaw" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
-      <!--StatusEffect type="OnWearing" target="Character" SoundRange="55000" setvalue="true">
-          <AiTarget soundrange="55000" />
-          <Affliction identifier="radio" strength="150" />
-        </StatusEffect-->
-      <StatusEffect type="OnWearing" target="Character,Contained" noninteractable="true" condition="-10" targetslot="0">
-        <ReduceAffliction type="bloodloss" amount="2.5" />
-        <RequiredItem items="antibloodloss1" type="Contained" targetslot="0" />
-        <Conditional bloodloss="gt 5.0" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character,Contained" condition="-5" targetslot="0">
-        <ReduceAffliction type="bloodloss" amount="6" />
-        <RequiredItem items="antibloodloss2" type="Contained" targetslot="0" />
-        <Conditional bloodloss="gt 5.0" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character,Contained" condition="-5" targetslot="0">
-        <Affliction identifier="psychosis" amount="2.25" />
-        <ReduceAffliction type="bloodloss" amount="6" />
-        <RequiredItem items="alienblood" type="Contained" targetslot="0" />
-        <Conditional bloodloss="gt 5.0" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character,Contained" comparison="or" condition="-10" targetslot="1">
-        <ReduceAffliction type="damage" amount="5" />
-        <ReduceAffliction type="burn" amount="0.1" />
-        <Affliction identifier="oxygenlow" amount="2" />
-        <Affliction identifier="opiateaddiction" amount="0.5" />
-        <Affliction identifier="opiateoverdose" amount="1.0" />
-        <ReduceAffliction identifier="opiatewithdrawal" amount="3.0" />
-        <RequiredItem items="antidama1" type="Contained" targetslot="1" />
-        <Conditional internaldamage="gt 0.0" />
-        <Conditional blunttrauma="gt 0.0" />
-        <Conditional lacerations="gt 0.0" />
-        <Conditional bitewounds="gt 0.0" />
-        <Conditional gunshotwound="gt 0.0" />
-        <Conditional organdamage="gt 0.0" />
-        <Conditional explosiondamage="gt 0.0" />
-        <Conditional concussion="gt 0.0" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character,Contained" comparison="or" condition="-20" targetslot="1">
-        <ReduceAffliction type="damage" amount="15" />
-        <ReduceAffliction type="burn" amount="1" />
-        <Affliction identifier="oxygenlow" amount="6" />
-        <Affliction identifier="opiateaddiction" amount="1.5" />
-        <Affliction identifier="opiateoverdose" amount="4.5" />
-        <ReduceAffliction identifier="opiatewithdrawal" amount="20" />
-        <RequiredItem items="antidama2" type="Contained" targetslot="1" />
-        <Conditional internaldamage="gt 0.0" />
-        <Conditional blunttrauma="gt 0.0" />
-        <Conditional lacerations="gt 0.0" />
-        <Conditional bitewounds="gt 0.0" />
-        <Conditional gunshotwound="gt 0.0" />
-        <Conditional organdamage="gt 0.0" />
-        <Conditional explosiondamage="gt 0.0" />
-        <Conditional concussion="gt 0.0" />
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character,Contained" comparison="or" condition="-5" targetslot="1">
-        <Affliction identifier="burn" amount="0.02" />
-        <ReduceAffliction type="damage" amount="3" />
-        <ReduceAffliction identifier="oxygenlow" amount="3" />
-        <ReduceAffliction identifier="bloodloss" amount="2" />
-        <RequiredItem items="deusizine" type="Contained" targetslot="1" />
-        <Conditional internaldamage="gt 0.0" />
-        <Conditional blunttrauma="gt 0.0" />
-        <Conditional lacerations="gt 0.0" />
-        <Conditional bitewounds="gt 0.0" />
-        <Conditional gunshotwound="gt 0.0" />
-        <Conditional organdamage="gt 0.0" />
-        <Conditional explosiondamage="gt 0.0" />
-        <Conditional concussion="gt 0.0" />
-        <Conditional bloodloss="gt 5.0" />
-        <Conditional oxygenlow="gt 50.0" />
-      </StatusEffect>
-    </Wearable>
   </Item>
   <Item name="常服·衬衣" identifier="tsm_common_uniform" subcategory="tsmmissions" category="Equipment" hideinmenus="true" tags="smallitem,clothing,vest" fireproof="false" cargocontaineridentifier="tsm_metalcrate" description="九州配发的常服，但是女款" scale="0.5" impactsoundtag="impact_soft">
     <Deconstruct time="10">
@@ -220,20 +134,20 @@
     <Sprite name="Lerentin uniform" texture="%ModDir%/npc/lerentine/Lerentine_heads.png" sourcerect="468,183,89,38" depth="0.55" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Lerentin Torso" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="Torso" depthlimb="Jaw" sourcerect="144,0,112,192" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.48,0.47" />
-      <sprite name="Lerentin Right Hand" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="RightHand" sourcerect="256,151,64,41" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.40308343,0.60" />
-      <sprite name="Lerentin Left Hand" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="LeftHand" sourcerect="320,151,64,41" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.40853827,0.52" />
-      <sprite name="Lerentin Left Lower Arm" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="LeftForearm" sourcerect="320,80,64,72" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.408,0.57" />
-      <sprite name="Lerentin Right Lower Arm" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="RightForearm" sourcerect="256,80,64,72" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.43,0.615" />
-      <sprite name="Lerentin Left Upper Arm" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="LeftArm" sourcerect="320,0,64,80" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.46,0.41" />
-      <sprite name="Lerentin Right Upper Arm" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="RightArm" sourcerect="256,0,64,80" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.46,0.44" />
-      <sprite name="Lerentin Waist" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="Waist" sourcerect="144,240,112,16" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.47,0.625" />
-      <sprite name="Lerentin Right Thigh" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="RightThigh" sourcerect="0,0,64,112" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.37,0.50" />
-      <sprite name="Lerentin Left Thigh" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="LeftThigh" sourcerect="64,0,80,112" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.48,0.50" />
-      <sprite name="Lerentin Right Leg" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="RightLeg" sourcerect="0,112,64,144" inheritsourcerect="false" inheritdepth="false" depth="0.121" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.38,0.435" />
-      <sprite name="Lerentin Left Leg" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="LeftLeg" sourcerect="64,112,80,144" inheritsourcerect="false" inheritdepth="false" depth="0.131" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.43,0.435" />
-      <sprite name="Lerentin Right Shoe" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="RightFoot" sourcerect="256,208,64,48" inheritsourcerect="false" inheritdepth="false" depth="0.122" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.48,0.46" />
-      <sprite name="Lerentin Left Shoe" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="LeftFoot" sourcerect="320,208,64,48" inheritsourcerect="false" inheritdepth="false" depth="0.132" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.49,0.46" />
+      <sprite name="Lerentin Torso" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="Torso" depthlimb="Jaw" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentin Right Hand" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="RightHand" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentin Left Hand" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="LeftHand" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentin Left Lower Arm" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="LeftForearm" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentin Right Lower Arm" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="RightForearm" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentin Left Upper Arm" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="LeftArm" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true"  />
+      <sprite name="Lerentin Right Upper Arm" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="RightArm" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentin Waist" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="Waist" sourcerect="0,0,1,1" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true"/>
+      <sprite name="Lerentin Right Thigh" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="RightThigh" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentin Left Thigh" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="LeftThigh" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentin Right Leg" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="RightLeg" inheritsourcerect="true" inheritdepth="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentin Left Leg" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="LeftLeg" inheritsourcerect="true" inheritdepth="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentin Right Shoe" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="RightFoot" inheritsourcerect="true" inheritdepth="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentin Left Shoe" texture="%ModDir%/npc/lerentine/lerentine_regularclothing.png" limb="LeftFoot" inheritsourcerect="true" inheritdepth="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true"  />
       <sprite name="Lerentin Boobs" texture="%ModDir%/npc/lerentine/Lerentine_heads.png" limb="Tail" hidelimb="true" inherittexturescale="false" sourcerect="0,0,1,1" inheritorigin="true" />
       <sprite name="Lerentin Boobs" texture="%ModDir%/npc/lerentine/Lerentine_heads.png" limb="Jaw" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
       <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.8" />
@@ -249,7 +163,7 @@
       <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest" />
     </ItemContainer>
   </Item>
-  <Item name="灰瞳" identifier="tsm_grey_pupils" description="" category="Weapon" subcategory="tsmmissions" tags="smallitem,weapon,gun,pistolitem,gunsmith,gunsmith,mountableweapon" hideinmenus="true" scale="0.23" impactsoundtag="weaponheavydrop">
+  <Item name="灰瞳" identifier="tsm_grey_pupils" description="" category="Weapon" subcategory="tsmmissions" tags="smallitem,weapon,gun,tsm_gun,pistolitem,gunsmith,gunsmith,mountableweapon" hideinmenus="true" scale="0.23" impactsoundtag="weaponheavydrop">
     <InventoryIcon texture="%ModDir%/npc/lerentine/greypupils.png" sourcerect="310,63,67,74" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/npc/lerentine/greypupils.png" sourcerect="8,0,241,117" depth="0.55" origin="0.5,0.5" />
     <Body width="241" height="110" density="50" />

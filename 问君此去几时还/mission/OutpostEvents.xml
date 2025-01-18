@@ -475,7 +475,7 @@
     <NPCWaitAction npctag="tsm_coalition_spy" wait="true" />
     <TriggerAction target1tag="tsm_coalition_spy" target2tag="player" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
     <ConversationAction targettag="triggerer_player" text="tsm.outpost_invasions.1" >
-      <Option text="“tsm.outpost_invasions.1.1">
+      <Option text="tsm.outpost_invasions.1.1">
         <ConversationAction targettag="triggerer_player" text="tsm.outpost_invasions.1.2">
           <Option text="tsm.outpost_invasions.1.2" endconversation="true">
             <ReputationAction targettype="Faction" identifier="coalition" increase="4" />

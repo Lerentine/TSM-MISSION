@@ -41,27 +41,11 @@
     <RequiredAffliction type="damage,burn" minstrength="1" />
     <Conditional isdead="false" />
     <SpawnItem identifier="acidemitter" spawnposition="This" count="4" spread="500" />
-    <Sound file="%ModDir%/Monster/Singer/Singer_burst1.ogg" range="5000" selectionmode="Random" />
-    <Sound file="%ModDir%/Monster/Singer/Singer_burst2.ogg" range="5000" />
-    <Sound file="%ModDir%/Monster/Singer/Singer_burst3.ogg" range="5000" />
-    <Sound file="%ModDir%/Monster/Singer/Singer_burst4.ogg" range="5000" />
-    <Sound file="%ModDir%/Monster/Singer/Singer_burst5.ogg" range="5000" />
-    <Sound file="%ModDir%/Monster/Singer/Singer_burst6.ogg" range="5000" />
-    <Sound file="%ModDir%/Monster/Singer/Singer_burst7.ogg" range="5000" />
-    <Sound file="%ModDir%/Monster/Singer/Singer_burst8.ogg" range="5000" />
   </StatusEffect>
   <StatusEffect type="OnDamaged" target="This" checkconditionalways="true" comparison="and" delay="1.0" stackable="false">
     <RequiredAffliction type="damage,burn" minstrength="1" />
     <Conditional isdead="false" />
     <SpawnItem identifier="acidemitter" spawnposition="This" count="2" spread="200" />
-    <Sound file="%ModDir%/Monster/Singer/Singer_burst1.ogg" range="5000" selectionmode="Random" />
-    <Sound file="%ModDir%/Monster/Singer/Singer_burst2.ogg" range="5000" />
-    <Sound file="%ModDir%/Monster/Singer/Singer_burst3.ogg" range="5000" />
-    <Sound file="%ModDir%/Monster/Singer/Singer_burst4.ogg" range="5000" />
-    <Sound file="%ModDir%/Monster/Singer/Singer_burst5.ogg" range="5000" />
-    <Sound file="%ModDir%/Monster/Singer/Singer_burst6.ogg" range="5000" />
-    <Sound file="%ModDir%/Monster/Singer/Singer_burst7.ogg" range="5000" />
-    <Sound file="%ModDir%/Monster/Singer/Singer_burst8.ogg" range="5000" />
   </StatusEffect>
   <StatusEffect type="OnActive" target="this">
     <Sound file="Content/Sounds/MONSTER_farLayer.ogg" loop="true" range="25000" dontmuffle="true" volume="0.5" />

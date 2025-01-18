@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Randomevents>
+  <EventPrefabs>
+    <!--运输任务保险-->
+    <ScriptedEvent Identifier="tsm_wz_insurance">
+      <SetDataAction Value="false" Identifier="tsmmission_mcrate_replenishment" />
+      <TagAction Criteria="player" Tag="player" IgnoreIncapacitatedCharacters="false" />
+      <TagAction Criteria="itemtag:tsm_mcrate_replenishment1" Tag="cargocontainer" SubmarineType="Player" />
+      <TagAction Criteria="itemtag:tsm_mcrate_replenishment2" Tag="cargocontainer" SubmarineType="Player" />
+      <MissionStateAction MissionIdentifier="tsmmission_origin17" State="1" />
+      <MissionStateAction MissionIdentifier="tsmmission_origin17" State="-1" />
+      <OnRoundEndAction>
+        <CountTargetsAction TargetTag="tsmmission_origin17" MinAmount="10">
+          <Conditional InPlayerSubmarine="true" />
+          <Success>
+            <SetDataAction Value="true" Identifier="tsmmission_mcrate_replenishment_complete" />
+          </Success>
+          <Failure>
+            <ReputationAction Increase="-6" Identifier="tsm" TargetType="Faction" />
+            <EventLogAction Id="failure" Text="eventtext.tsmmission.mcrate_replenishment" TargetTag="player" />
+            <EventLogAction Id="reward" TargetTag="player">
+              <Text Tag="[reputation]: [reputationname] ([reputationvalue])">
+                <Replace Tag="[reputation]" Value="reputation" />
+                <Replace Tag="[reputationname]" Value="faction.tsm" color="gui.red" />
+                <Replace Tag="[reputationvalue]" Value="-6" />
+              </Text>
+            </EventLogAction>
+          </Failure>
+        </CountTargetsAction>
+      </OnRoundEndAction>
+    </ScriptedEvent>
+    <ScriptedEvent Identifier="tsm_yl_insurance">
+      <SetDataAction Value="false" Identifier="tsmmission_mcrate_replenishment" />
+      <TagAction Criteria="player" Tag="player" IgnoreIncapacitatedCharacters="false" />
+      <TagAction Criteria="itemtag:tsm_mcrate_replenishment_med" Tag="cargocontainer" SubmarineType="Player" />
+      <MissionStateAction MissionIdentifier="tsmmission_origin18" State="1" />
+      <MissionStateAction MissionIdentifier="tsmmission_origin18" State="-1" />
+      <OnRoundEndAction>
+        <CountTargetsAction TargetTag="tsmmission_origin18" MinAmount="10">
+          <Conditional InPlayerSubmarine="true" />
+          <Success>
+            <SetDataAction Value="true" Identifier="tsmmission_yl_replenishment_complete" />
+          </Success>
+          <Failure>
+            <ReputationAction Increase="-10" Identifier="tsm" TargetType="Faction" />
+            <EventLogAction Id="failure" Text="eventtext.tsmmission.yl_replenishment" TargetTag="player" />
+            <EventLogAction Id="reward" TargetTag="player">
+              <Text Tag="[reputation]: [reputationname] ([reputationvalue])">
+                <Replace Tag="[reputation]" Value="reputation" />
+                <Replace Tag="[reputationname]" Value="faction.tsm" color="gui.red" />
+                <Replace Tag="[reputationvalue]" Value="-10" />
+              </Text>
+            </EventLogAction>
+          </Failure>
+        </CountTargetsAction>
+      </OnRoundEndAction>
+    </ScriptedEvent>
+    <!--运输任务锁装备-->
+    <ScriptedEvent identifier="tsm_lockgear_mission">
+      <TagAction criteria="itemidentifier:securitypatrolclothes" tag="locked" continueifnotargetsfound="true" />
+      <TagAction criteria="itemidentifier:bodyarmor" tag="locked" continueifnotargetsfound="true" />
+      <TagAction criteria="itemidentifier:ballistichelmet1" tag="locked" continueifnotargetsfound="true" />
+      <TagAction criteria="itemidentifier:assaultrifle" tag="locked" continueifnotargetsfound="true" />
+      <TagAction criteria="itemidentifier:hmg" tag="locked" continueifnotargetsfound="true" />
+      <TagAction criteria="itemidentifier:autoshotgun" tag="locked" continueifnotargetsfound="true" />
+      <StatusEffectAction targettag="locked">
+        <!--StatusEffect target="This" nonplayerteaminteractable="true">
+          <Conditional targetcontainer="true" teamid="FriendlyNPC" />
+        </StatusEffect-->
+        <StatusEffectAction targettag="This">
+          <StatusEffect target="This" UseHealthWindow="false" />
+        </StatusEffectAction>
+      </StatusEffectAction>
+    </ScriptedEvent>
+    <!--沸腾之海-->
+    <ScriptedEvent identifier="tsm_mission_fire_water">
+      <TagAction criteria="crew" tag="crew" continueifnotargetsfound="true"/>
+      <TagAction criteria="bot" tag="bot" continueifnotargetsfound="true"/>
+      <TagAction criteria="player" tag="player" continueifnotargetsfound="true"/>
+      <Label name="waitforspotting" />
+      <WaitAction time="1" />
+      <CheckVisibilityAction entitytag="bot" excludedentitytag="crew" targettag="crew"/>
+      <WaitAction time="3" />
+      <ConversationAction text="tsm_fire_water_1" dialogtype="Small" />
+      <StatusEffectAction targettag="player" >
+        <StatusEffect target="This">
+          <Affliction identifier="tsm_fire_water" strength="50" />
+          <Affliction identifier="tsm_fire_water_jm" strength="500" />
+        </StatusEffect>
+      </StatusEffectAction>
+      <OnRoundEndAction>
+        <StatusEffectAction targettag="player" >
+        <StatusEffect target="This">
+          <ReduceAffliction identifier="tsm_fire_water" strength="100" />
+        </StatusEffect>
+        </StatusEffectAction>
+      </OnRoundEndAction>
+    </ScriptedEvent>
+  </EventPrefabs>
+</Randomevents>

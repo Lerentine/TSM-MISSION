@@ -141,7 +141,7 @@
       <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true"/>
       <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true"/>
       <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="60.0">
-        <ReduceAffliction identifier="tsm_virusstage" amount="1.5" />
+        <ReduceAffliction identifier="tsm_virusstage" amount="1" />
         <ReduceAffliction identifier="tsm_stress" amount="1" />
         <ReduceAffliction identifier="eyibugspawnner" amount="1" />
       </StatusEffect>
@@ -152,7 +152,7 @@
         <Affliction identifier="tsm_virusstage_inhibitory" amount="600" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="60.0">
-        <ReduceAffliction identifier="tsm_virusstage" amount="1.0" />
+        <ReduceAffliction identifier="tsm_virusstage" amount="0.7" />
         <ReduceAffliction identifier="tsm_stress" amount="0.7" />
         <ReduceAffliction identifier="eyibugspawnner" amount="0.7" />
       </StatusEffect>
@@ -326,7 +326,7 @@
     <Sprite texture="%ModDir%/item/eyi/eyi_item.png" sourcerect="399,216,75,75" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="45" density="10.5" />
   </Item>
-  <Item name="遗传物质" identifier="tsm_eyi_glandular" subcategory="tsmmissions" category="Material" maxstacksize="4" cargocontaineridentifier="chemicalcrate" Tags="smallitem" hideinmenus="true" useinhealthinterface="true" scale="0.3" RequireAimToUse="True">
+  <Item name="遗传骸骨" identifier="tsm_eyi_glandular" subcategory="tsmmissions" category="Material" maxstacksize="4" cargocontaineridentifier="chemicalcrate" Tags="smallitem" hideinmenus="true" useinhealthinterface="true" scale="0.3" RequireAimToUse="True">
     <InventoryIcon texture="%ModDir%/item/eyi/eyi_item.png" sourcerect="19,487,68,52" /> 
     <Sprite texture="%ModDir%/item/eyi/eyi_item.png" sourcerect="19,487,68,52" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="45" density="10" />

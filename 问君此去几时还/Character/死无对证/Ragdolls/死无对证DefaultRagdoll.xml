@@ -5,7 +5,7 @@
     <damagemodifier DamageSound="LimbSlash" DamageParticle="" DamageMultiplier="0" ProbabilityMultiplier="1" ArmorSector="90,210" DeflectProjectiles="False" AfflictionIdentifiers="" AfflictionTypes="damage,bleeding" />
     <damagemodifier DamageSound="LimbArmor" DamageParticle="brownchunks" DamageMultiplier="0" ProbabilityMultiplier="1" ArmorSector="-90,90" DeflectProjectiles="True" AfflictionIdentifiers="" AfflictionTypes="damage" />
     <damagemodifier DamageSound="LimbArmor" DamageParticle="" DamageMultiplier="0" ProbabilityMultiplier="1" ArmorSector="-90,90" DeflectProjectiles="True" AfflictionIdentifiers="" AfflictionTypes="bleeding" />
-    <StatusEffect type="OnDamaged" onlyplayertriggered="true" requiredafflictions="damage,burn">
+    <StatusEffect type="OnDamaged" target="this" onlyplayertriggered="true" requiredafflictions="damage,burn">
       <Conditional isdead="False" />
       <!-- Note, the order matters: only the first valid trigger is launched. But multiple triggers can be triggered from different limbs. -->
       <!-- Railgun hit in the mouth -->
@@ -36,13 +36,13 @@
       <Affliction Strength="150" Identifier="bitewounds" Probability="1" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
       <Affliction Strength="100" Identifier="bleeding" Probability="1" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
       <Affliction Strength="2" Identifier="stun" Probability="1" DivideByLimbCount="True" MultiplyByMaxVitality="False" />
-      <StatusEffect type="OnUse">
+      <StatusEffect type="OnUse" target="this">
         <sound file="Content/Characters/Carrier/CARRIER_attack1.ogg" range="30000" volume="1" dontmuffle="True" selectionmode="random" />
         <sound file="Content/Characters/Carrier/CARRIER_attack2.ogg" range="30000" volume="1" dontmuffle="True" />
         <sound file="Content/Characters/Carrier/CARRIER_attack3.ogg" range="30000" volume="1" dontmuffle="True" />
       </StatusEffect>
     </attack>
-    <StatusEffect type="OnDamaged" onlyplayertriggered="true" requiredafflictions="damage,burn">
+    <StatusEffect type="OnDamaged" target="this" onlyplayertriggered="true" requiredafflictions="damage,burn">
       <Conditional isdead="False" />
       <!-- Note, the order matters: only the first valid trigger is launched. But multiple triggers can be triggered from different limbs. -->
       <!-- Railgun hit in the mouth -->

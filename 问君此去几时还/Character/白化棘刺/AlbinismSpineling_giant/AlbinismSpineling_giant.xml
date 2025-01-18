@@ -17,20 +17,8 @@
     <target tag="sonar" state="Attack" priority="5" attackpattern="Sweep" sweepdistance="1500" sweepstrength="5"/>
     <SwarmBehavior mindistfromclosest="400" maxdistfromcenter="2000" cohesion="0.25" />
   </ai>
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_idle1.ogg" state="Idle" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_idle2.ogg" state="Idle" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_idle3.ogg" state="Idle" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_idle4.ogg" state="Idle" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_damage1.ogg" state="Damage" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_damage2.ogg" state="Damage" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_damage3.ogg" state="Damage" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_damage4.ogg" state="Damage" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_damage5.ogg" state="Damage" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_damage6.ogg" state="Damage" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_dead1.ogg" state="Die" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_dead2.ogg" state="Die" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_dead3.ogg" state="Die" range="6000" volume="1" gender="None" />
-  <sound file="Content/Characters/Spineling_giant/SPINELINGGIANT_dead4.ogg" state="Die" range="6000" volume="1" gender="None" />
+  <sound file="%ModDir%/Character/AlbinismMoloch/mlk1.ogg" state="Idle" range="4000" volume="1" gender="None" />
+  <sound file="%ModDir%/Character/AlbinismMoloch/mlk2.ogg" state="Idle" range="4000" volume="1" gender="None" />
   <Inventory slots="Any, Any, Any, Any, Any" accessiblewhenalive="False" commonness="1">
     <Item identifier="alienblood" amount="3 "/>
     <Item identifier="swimbladder" />

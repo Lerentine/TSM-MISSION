@@ -8,9 +8,6 @@
     <VitalityMultiplier type="lacerations" multiplier="0.5" />
     <VitalityMultiplier type="bitewounds" multiplier="0.5" />
   </Limb>
-  <StatusEffect type="OnActive" target="this">
-    <Affliction identifier="tsmbosswudifangxuan" strength="1" />
-  </StatusEffect>
   <sound gender="None" dontmuffle="True" File="%ModDir%/Character/分形/破坏者/FRACTALDESTROYER_idle1.ogg" State="Attack" Range="5000" Volume="2" Tags="" />
   <StatusEffect type="OnActive" target="this">
     <Sound file="%ModDir%/Character/分形/破坏者/Fractalspawn.ogg" loop="false" range="40000" dontmuffle="true" />
@@ -108,7 +105,7 @@
   <StatusEffect type="OnDeath" delay="40" target="This" targetlimb="Head">
     <sound file="%ModDir%/Sounds/自毁警报.ogg" range="60000" volume="8" selectionmode="All" />
     <ParticleEmitter particle="underwaterexplosion" drawontop="True" particleamount="1" scalemin="30" scalemax="30" velocitymin="0" velocitymax="20" anglemin="0" anglemax="360" />
-    <Explosion range="6000.0" ignoreCover="true" structuredamage="1250" itemdamage="1000" ballastfloradamage="1000" force="100.0" severlimbsprobability="2" decal="explosion" decalsize="12.0" camerashake="1000" camerashakerange="50000" flashrange="20000" flashduration="5" screencolor="255,200,200,255" screencolorrange="20000" screencolorduration="7" penetration="1">
+    <Explosion range="7000.0" ignoreCover="true" structuredamage="1250" itemdamage="1000" ballastfloradamage="1000" force="100.0" severlimbsprobability="2" decal="explosion" decalsize="12.0" camerashake="1000" camerashakerange="50000" flashrange="20000" flashduration="5" screencolor="255,200,200,255" screencolorrange="20000" screencolorduration="7" penetration="1">
       <Affliction identifier="explosiondamage" strength="750" />
       <Affliction identifier="burn" strength="500" />
       <Affliction identifier="radiationsickness" strength="70" />

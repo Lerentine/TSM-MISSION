@@ -1699,7 +1699,7 @@
       <Containable items="tsm_58_42_sj_mag" setactive="true" />
     </ItemContainer>
   </Item>
-  <Item name="191" identifier="tsmmission_191_m" subcategory="tsmmissions" category="weapon" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun" scale="0.25" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="True">
+  <Item name="191" identifier="tsmmission_191_m" subcategory="tsmmissions" category="weapon" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.25" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="True">
     <InventoryIcon texture="%ModDir%/Character/war/weapons.png" sourcerect="1568,940,432,146" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Character/war/weapons.png" sourcerect="1568,940,432,146" depth="0.55" origin="0.5,0.5" />
     <Body width="475" height="121" density="52" />
@@ -1735,7 +1735,7 @@
     </ItemContainer>
     <aitarget sightrange="2500" soundrange="4500" fadeouttime="6" />
   </Item>
-  <Item name="201" identifier="tsmmission_201_m" subcategory="tsmmissions" category="Weapon" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun" Scale="0.23" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="True">
+  <Item name="201" identifier="tsmmission_201_m" subcategory="tsmmissions" category="Weapon" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.23" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="True">
     <InventoryIcon texture="%ModDir%/Character/war/weapons.png" sourcerect="1402,704,590,166" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Character/war/weapons.png" sourcerect="1402,704,590,166" depth="0.55" origin="0.5,0.5" />
     <Body width="590" height="147" density="52" />
@@ -2040,7 +2040,7 @@
       <QualityStat stattype="StrikingPowerMultiplier" value="0.2" />
     </Quality>
   </Item>
-  <Item name="M32" identifier="tsmmission_m32_m" category="Weapon" subcategory="other" tags="mediumitem,weapon,gun,tsm_gun,gunsmith,mountableweapon" Scale="0.35" impactsoundtag="impact_metal_light" nonplayerteaminteractable="True">
+  <Item name="M32" identifier="tsmmission_m32_m" category="Weapon" subcategory="other" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.35" impactsoundtag="impact_metal_light" nonplayerteaminteractable="True">
     <InventoryIcon texture="%ModDir%/Character/war/weapons.png" sourcerect="900,169,331,98" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Character/war/weapons.png" sourcerect="900,169,331,98" depth="0.55" origin="0.5,0.5" />
     <Body width="331" height="98" density="25" />
@@ -2075,7 +2075,7 @@
       <Containable items="tsm_40mmgrenade_mag" />
     </ItemContainer>
   </Item>
-  <Item name="M32" identifier="tsmmission_m32" category="Weapon" subcategory="other" tags="mediumitem,weapon,gun,tsm_gun,gunsmith,mountableweapon" Scale="0.35" impactsoundtag="impact_metal_light" nonplayerteaminteractable="True">
+  <Item name="M32" identifier="tsmmission_m32" category="Weapon" subcategory="other" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.35" impactsoundtag="impact_metal_light" nonplayerteaminteractable="True">
     <InventoryIcon texture="%ModDir%/Character/war/weapons.png" sourcerect="900,169,331,98" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Character/war/weapons.png" sourcerect="900,169,331,98" depth="0.55" origin="0.5,0.5" />
     <Body width="331" height="98" density="25" />
@@ -2277,7 +2277,7 @@
       </sprite>
       </Wearable>
    </Item>
-   <Item name="设施安保头盔" identifier="tsm_facility_security_helmet_y" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" impactsoundtag="impact_metal_heavy" scale="0.5" hideinmenus="true" >
+  <Item name="设施安保头盔" identifier="tsm_facility_security_helmet_y" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" impactsoundtag="impact_metal_heavy" scale="0.5" hideinmenus="true" >
     <Deconstruct time="10">
       <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="titaniumaluminiumalloy" />

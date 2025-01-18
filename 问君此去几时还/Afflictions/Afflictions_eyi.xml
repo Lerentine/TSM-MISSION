@@ -214,27 +214,23 @@ iconcolors="186,153,242,255;140,77,245,255;105,20,245,255">
     <ParticleEmitter particle="tsm_redwaterblood" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
   </StatusEffect>
   <StatusEffect target="Character" comparison="and">
-    <Conditional isdead="false" />
+    <Conditional isdead="true" setvalue="true"/>
     <Conditional eyiinfection="eq 100.0" />
     <Affliction identifier="internaldamage" amount="17" />
-    <ReduceAffliction identifier="stun" strength="0.5" />
+    <ReduceAffliction identifier="stun" strength="2" />
     <ParticleEmitter particle="bloodsplash" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
     <ParticleEmitter particle="blackblood" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
     <ParticleEmitter particle="waterblood" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
     <ParticleEmitter particle="tsm_redwaterblood" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
   </StatusEffect>
-  
 </Effect>
 <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="0,137,122,119" color="255,0,0,255"
   origin="0,0" />
 </AfflictionHusk>
 <Affliction name="精神压力"
 identifier="tsm_stress"
-description=""
 type="stress"
 targets="human"
-causeofdeathdescription=""
-selfcauseofdeathdescription=""
 limbspecific="false"
 indicatorlimb="Torso"
 activationthreshold="0"
@@ -378,7 +374,7 @@ maxstrength="200"/-->
     affectmachines="false">
     <Effect minstrength="0" maxstrength="100" strengthchange="-2">
       <StatusEffect target="Character">
-        <Affliction identifier="lacerations" amount="0.5" />
+        <Affliction identifier="lacerations" amount="0.8" />
         <ReduceAffliction identifier="oxygenlow" amount="2" />
       </StatusEffect>
       </Effect>
@@ -420,7 +416,28 @@ maxstrength="200"/-->
     </StatusEffect>
 </Effect>
 </Affliction>
-<!--猎物-->
+<Affliction identifier="eyi_zb_eyivariant" type="tsm_eyi_zb" IsBuff="true" showiconthreshold="0" showinhealthscannerthreshold="0" maxstrength="20" indicatorlimb="Torso" limbspecific="false" >
+    <Effect minstrength="0" maxstrength="10" strengthchange="0.3" >
+      <StatusEffect target="Character" disabledeltatime="true" >
+      </StatusEffect>
+    </Effect>
+  <Effect minstrength="10" maxstrength="12" strengthchange="0" >
+    <StatusEffect target="Character" disabledeltatime="true" >
+    </StatusEffect>
+  </Effect>
+  <Effect minstrength="12" maxstrength="19" strengthchange="0.5" >
+    <StatusEffect target="Character" disabledeltatime="true" >
+    </StatusEffect>
+  </Effect>
+    <Effect minstrength="19" maxstrength="20" strengthchange="0.5" >
+      <StatusEffect target="Character" disabledeltatime="true" interval="1">
+        <RemoveCharacter />
+        <SpawnCharacter SpeciesName="eyivariant" count="1" spawnposition="This" />
+      </StatusEffect>
+    </Effect>
+    <!--icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="18,10,145,145" color="255,255,255,255" origin="0.5,0.5" /--><!--记得替换图标-->
+  </Affliction>
+  <!--猎物-->
   <Affliction
     identifier="tsm_eyi_provocative"
     type="buff"
@@ -557,7 +574,7 @@ maxstrength="200"/-->
     minresistance="0.00" maxresistance="1" minspeedmultiplier="1.0" maxspeedmultiplier="1.0">
     </Effect>
     <Effect minstrength="8" maxstrength="16" strengthchange="0">
-      <StatusEffect target="Character" PressureProtection="4000.0" usehulloxygen="false" setvalue="true">
+      <StatusEffect target="Character" PressureProtection="6213.0" usehulloxygen="false" setvalue="true">
         <ReduceAffliction identifier="oxygenlow" strength="0.5"/>
       </StatusEffect>
     </Effect>
@@ -711,6 +728,4 @@ maxstrength="200"/-->
     
     
   </Affliction>
-  
-  
 </Afflictions>

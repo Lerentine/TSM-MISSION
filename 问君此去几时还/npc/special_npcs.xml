@@ -13,16 +13,14 @@
         </job>
       </Character>
       <ItemSet commonness="1">
+        <Item identifier="tsm_hxl" equip="true" />
         <Item identifier="idcard" equip="true" />
         <Item identifier="tsm_hxl_unform_ai" equip="true" />
-        <Item identifier="tsmmissions_px18_pistols"/>
-        <Item identifier="tsm_9_mag" amount="4" />
         <Item identifier="tsm_eyi_instability">
         <Item identifier="hxl_knife" />
         </Item>
-        <Item identifier="tsmmissions_hx870" equip="true">
-        <Item identifier="shotgunslugexplosive" amount="9"/>
-        <Item identifier="shotgunshell" amount="9"/>
+        <Item identifier="tsmmissions_hxl_ju" equip="true">
+        <Item identifier="shotgunslugexplosive" amount="24"/>
         </Item>
       </ItemSet>
     </npc>

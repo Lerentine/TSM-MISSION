@@ -4,7 +4,7 @@
   <Item name="TTI2011" identifier="tsmmissions_TTI2011" category="Weapon" subcategory="tsmmissions" hideinmenus="true" description="妖梦父亲留下的唯一物品" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,tsm_gun,pistolitem,gunsmith,mountableweapon" Scale="0.3" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/npc/youmu/weapon.png" sourcerect="15,108,80,121" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/npc/youmu/weapon.png" sourcerect="15,8,108,72" depth="0.55" origin="0.5,0.5" />
-    <Body width="80" height="110" density="25" />
+    <Body width="108" height="68" density="12" />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="85,3" handle1="-45,-4" msg="ItemMsgPickUpSelect" />
     <RangedWeapon barrelpos="29,11" spread="10" unskilledspread="15" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" reload="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />

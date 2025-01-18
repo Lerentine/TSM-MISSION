@@ -34,7 +34,7 @@
     <message header="" text="" />
   </MonsterMission>
   <MonsterMission name="猎杀巨型棘刺群" identifier="tsmmission_origin5" tags="tsm_origin,tsm_origin1" type="Monster"  
-    commonness="100" reward="6500" sonarlabel="" 
+    commonness="100" reward="5500" sonarlabel=""
     maxsonarmarkerdistance="10000" successmessage="" difficulty="3">
     <monster character="spineling_giant" min="6" max="8" />
     <Reputation identifier="location" amount="3" />
@@ -42,7 +42,7 @@
     <message header="" text="" />
   </MonsterMission>
   <MonsterMission name="猎杀毒蟒群" identifier="tsmmission_origin6" tags="tsm_origin,tsm_origin1" type="Monster"  
-    commonness="100" reward="5500" sonarlabel="" 
+    commonness="100" reward="4500" sonarlabel=""
     maxsonarmarkerdistance="10000" successmessage="" difficulty="3">
     <monster character="spineling_morbusine" min="7" max="10" />
     <Reputation identifier="location" amount="3" />
@@ -50,7 +50,7 @@
     <message header="" text="" />
   </MonsterMission>
   <MonsterMission name="迅猛龙阻击战" identifier="tsmmission_origin7" tags="tsm_origin,tsm_origin1" type="Monster"  
-    commonness="100" reward="6000" sonarlabel="" 
+    commonness="100" reward="5500" sonarlabel=""
     maxsonarmarkerdistance="10000" successmessage="" difficulty="3">
     <monster character="mudraptor" min="5" max="7" />
     <monster character="Mudraptor_veteran" min="3" max="4" />
@@ -70,7 +70,7 @@
     <message header="" text="" />
   </MonsterMission>
   <MonsterMission name="脱粒机族群剿灭战" identifier="tsmmission_origin9" tags="tsm_origin,tsm_origin1" type="Monster"  
-    commonness="100" reward="7000" sonarlabel="" 
+    commonness="100" reward="6000" sonarlabel=""
     maxsonarmarkerdistance="10000" successmessage="" difficulty="3">
     <monster character="bonethresher" min="3" max="4" />
     <monster character="tigerthresher" min="5" max="7" />
@@ -90,7 +90,7 @@
     <message header="" text="" />
   </MonsterMission>
   <NestMission name="洞穴里的野蛮人" identifier="tsmmission_origin11" tags="tsm_origin" type="Nest" 
-  spawntype="cave" reward="9000" itemspawnradius="800" approachitemsradius="800" monsterspawnradius="4000" nestobjectradius="1500" 
+  spawntype="cave" reward="6000" itemspawnradius="800" approachitemsradius="800" monsterspawnradius="4000" nestobjectradius="1500"
   nestobjectamount="0" difficulty="3" commonness="100">
   <Items>
     <Item identifier="tsm_mission_husk_box" />
@@ -114,7 +114,7 @@
   <CargoMission name="运送衰变物质" identifier="tsmmission_origin13" tags="tsm_origin,tsm_origin1" type="Cargo"  
   commonness="100" >
     <Items>
-      <Item identifier="tsm_mcrate_time1" reward="250" maxcount="8" />
+      <Item identifier="tsm_mcrate_time1" reward="300" maxcount="8" />
     </Items>
     <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="277,257,235,235" color="255,255,255" />
     <Reputation identifier="tsm" amount="2" />
@@ -122,7 +122,7 @@
   <CargoMission name="运送皮革类物品" identifier="tsmmission_origin14" tags="tsm_origin,tsm_origin1" type="Cargo"  
   commonness="100" >
     <Items>
-      <Item identifier="tsm_mcrate_water1" reward="300" maxcount="10" />
+      <Item identifier="tsm_mcrate_water1" reward="260" maxcount="10" />
     </Items>
     <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,257,234,234" color="255,255,255" />
     <Reputation identifier="tsm" amount="2" />
@@ -145,7 +145,7 @@
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,256,256,256" color="243,146,55"/>
     <Reputation identifier="tsm" amount="1" />
   </CargoMission>
-  <CargoMission name="运送材料" identifier="tsmmission_origin17" tags="tsm_origin,tsm_origin1" type="Cargo"  
+  <CargoMission name="运送材料" identifier="tsmmission_origin17" tags="tsm_origin,tsm_origin1" type="Cargo"
   commonness="100" >
     <Items>
       <Item identifier="tsm_mcrate_replenishment1" reward="200" maxcount="5" />
@@ -153,6 +153,9 @@
     </Items>
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,256,256,256" color="243,146,55"/>
     <Reputation identifier="tsm" amount="2" />
+    <!--TriggerEvent state="0" delay="60" eventidentifier="tsm_wz_insurance"/>
+    <CompleteCheckDataAction identifier="tsmmission_mcrate_replenishment_complete" condition="eq true"/>
+    <Metadata identifier="tsmmission_mcrate_replenishment_complete" value="true"/-->
   </CargoMission>
   <CargoMission name="运送医疗物资" identifier="tsmmission_origin18" tags="tsm_origin,tsm_origin1" type="Cargo"  
   commonness="100" >
@@ -160,23 +163,24 @@
       <Item identifier="tsm_mcrate_replenishment_med" reward="200" maxcount="10" />
     </Items>
     <Icon texture="Content/UI/MissionIcons2.png" sourcerect="0,256,256,256" color="243,146,55"/>
-    <Reputation identifier="tsm" amount="2" />
+    <!--TriggerEvent state="0" delay="60" eventidentifier="tsm_yl_insurance"/>
+    <CompleteCheckDataAction identifier="tsmmission_yl_replenishment_complete" condition="eq true"/>
+    <Metadata identifier="tsmmission_yl_replenishment_complete" value="true"/-->
+    <Reputation identifier="tsm" amount="3" />
   </CargoMission>
   <EscortMission name="运送奇迹之海士兵" identifier="tsmmission_origin19" tags="tsm_origin,tsm_origin1" type="Escort"  commonness="100" reward="1500">
-    <message header="" text="" />
     <Characters>
-      <Item from="tsm_mission_npcs" identifier="tsm_outpost_combat_npc_mission" color="255,165,0" />
-      <Item from="tsm_mission_npcs" identifier="tsm_outpost_combat_npc_mission" color="255,165,0" />
       <Item from="tsm_mission_npcs" identifier="tsm_outpost_combat_npc_mission" color="255,165,0" />
       <Item from="tsm_mission_npcs" identifier="tsm_outpost_combat_npc_mission" color="255,165,0" />
       <Item from="tsm_mission_npcs" identifier="tsm_outpost_combat_npc_mission" color="255,165,0" />
       <Item from="tsm_mission_npcs" identifier="tsm_outpost_combat_npc_mission" color="255,165,0" />
     </Characters>
     <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="243,146,55" />
-    <Reputation identifier="tsm" amount="4" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_lockgear_mission"/>
+    <Reputation identifier="tsm" amount="2" />
   </EscortMission>
   <MonsterMission name="爬行者歼灭战" identifier="tsmmission_origin20" tags="tsm_origin,tsm_origin1" type="Monster"  
-    commonness="100" reward="5000" sonarlabel="" 
+    commonness="100" reward="4000" sonarlabel=""
     maxsonarmarkerdistance="10000" successmessage="" difficulty="3">
     <monster character="crawler" min="5" max="8" />
     <monster character="watcher" min="1" max="1" />
@@ -186,7 +190,7 @@
     <message header="" text="" />
   </MonsterMission>
   <MonsterMission name="猎杀毁灭蠕虫" identifier="tsmmission_origin21" tags="tsm_origin" type="Monster"  
-    commonness="100" reward="10000" sonarlabel="" 
+    commonness="100" reward="9000" sonarlabel=""
     maxsonarmarkerdistance="10000" successmessage="" spawntype="Abyss" difficulty="3">
     <monster character="doomworm" min="1" max="1" />
     <Reputation identifier="location" amount="3" />

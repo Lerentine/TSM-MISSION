@@ -2,8 +2,8 @@
 <Items>
   <!--紧急货物-->
   <Item identifier="tsm_mcrate_time1" tags="crate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" hideinmenus="true" impacttolerance="2.9">
-    <Sprite texture="%ModDir%/mission/tsm_mission_item.png" depth="0.54" sourcerect="0,0,222,105" origin="0.5,0.5" />
-    <Body width="150" height="85" density="50" />
+    <Sprite texture="%ModDir%/mission/tsm_mission_item.png" depth="0.54" sourcerect="10,499,150,80" origin="0.5,0.5" />
+    <Body width="140" height="70" density="20" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect">
       <StatusEffect type="Always" target="This" disabledeltatime="true" stackable="false" delay="1" condition="-0.185" />
       <StatusEffect type="OnImpact" target="This" disabledeltatime="true" Condition="-5.0" />
@@ -133,8 +133,8 @@
   </Item>
   <!--材料补给-->
   <Item identifier="tsm_mcrate_replenishment1" tags="crate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" hideinmenus="true" impacttolerance="2.9">
-    <Sprite texture="%ModDir%/mission/tsm_mission_item.png" depth="0.54" sourcerect="0,478,275,105" origin="0.5,0.5" />
-    <Body width="150" height="85" density="50" />
+    <Sprite texture="%ModDir%/mission/tsm_mission_item.png" depth="0.54" sourcerect="10,671,150,80" origin="0.5,0.5" />
+    <Body width="150" height="75" density="50" />
     <Holdable slots="RightHand,LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect"/>
     <Deconstruct time="8" chooserandom="true" amount="5">
       <Item identifier="titanite" commonness="0.1" />
@@ -168,8 +168,8 @@
     </Deconstruct>
   </Item>
   <Item identifier="tsm_mcrate_replenishment2" tags="crate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" hideinmenus="true" impacttolerance="2.9">
-    <Sprite texture="%ModDir%/mission/tsm_mission_item.png" depth="0.54" sourcerect="0,478,275,105" origin="0.5,0.5" />
-    <Body width="150" height="85" density="50" />
+    <Sprite texture="%ModDir%/mission/tsm_mission_item.png" depth="0.54" sourcerect="10,671,150,80" origin="0.5,0.5" />
+    <Body width="150" height="75" density="50" />
     <Holdable slots="RightHand,LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect"/>
     <Deconstruct time="8" chooserandom="true" amount="5">
       <Item identifier="slimebacteria" commonness="0.1" />
@@ -187,8 +187,8 @@
     </Deconstruct>
   </Item>
   <Item identifier="tsm_mcrate_replenishment_med" tags="crate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" hideinmenus="true" impacttolerance="2.9">
-    <Sprite texture="%ModDir%/mission/tsm_mission_item.png" depth="0.54" sourcerect="0,630,275,105" origin="0.5,0.5" />
-    <Body width="150" height="85" density="50" />
+    <Sprite texture="%ModDir%/mission/tsm_mission_item.png" depth="0.54" sourcerect="10,585,150,80" origin="0.5,0.5" />
+    <Body width="150" height="70" density="40" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect"/>
     <Deconstruct time="8" amount="3">
       <Item identifier="antibleeding2" amount="8"/>

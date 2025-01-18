@@ -149,6 +149,26 @@
   <missionheader0.tsmmission38>破晓白光</missionheader0.tsmmission38>
   <missionmessage0.tsmmission38>一场'雨'过后，血液海水互换了身份，抬头是满天划过的流星，足下尸山血海</missionmessage0.tsmmission38>
   <missionsonarlabel.tsmmission38>白化棘刺</missionsonarlabel.tsmmission38>
+  <!-- tsmmission39 -->
+  <missionname.tsmmission39>那段漫漫136万里的归途</missionname.tsmmission39>
+  <missiondescription.tsmmission39>曾经充满希望的开拓计划，在地球失联后，逐渐沦为了恐惧的代名词。殖民地中的居民不得不面对越来越频繁的‘深海危机’，海底设备被未知生物摧毁，潜航器在探测任务中无故失联。人类最初试图掌控木卫二的野心，正在被这片黑暗而无垠的海洋无情吞噬。</missiondescription.tsmmission39>
+  <missionsuccess.tsmmission39>太阳的来客</missionsuccess.tsmmission39>
+  <missionfailure.tsmmission39>沸腾之湖</missionfailure.tsmmission39>
+  <missionheader0.tsmmission39>来自人类的挣扎</missionheader0.tsmmission39>
+  <missionmessage0.tsmmission39>“你知道吗，木卫二的地下海洋蕴藏着无尽的未知，而它的冰层足足有几十公里厚，像是为深海秘密加上的最后一道锁。”
+    “最初，人类耗费数十年的时间，打造了一系列深潜殖民站，并通过名为‘欧罗巴开拓号’的先驱探测器，完成了冰层钻探和殖民地基建的初步计划,殖民站不仅自给自足，还建立了供资源运输的深海隧道网络，连接起一座座漂浮在无尽海洋上的钢铁孤岛。”
+    “然而，人类对木卫二的改造并不顺利。就在殖民地逐渐扩展时，意想不到的问题开始出现。殖民站逐渐遭遇了所谓的‘生态异常’——大量原住民、生物实验中诞生的未知物种、又或者是潜藏在深渊中的秘密，它们突然开始在深海中繁殖，它们似乎是某种复杂的进化产物，兼具寄生和掠夺性。更糟糕的是，探测器和采矿设备排放的化学物质污染了地下海洋，而这一污染被证明唤醒了某些古老的、不可名状的生命体。”
+    “后来地球的失联，人们的自相残杀，深海的怪物的侵袭，曾经充满希望的开拓计划，逐渐沦为了恐惧的代名词。殖民地中的居民不得不面对越来越频繁的‘深海危机’，海底设备被未知生物摧毁，潜航器在探测任务中无故失联...”
+    “如今，人类的殖民活动变得谨小慎微，殖民站之间的联系依赖着脆弱的潜艇通道，而任何一次下潜都可能是一场生死考验。木卫二不再是一个单纯的探索目标，而成了一个充满危险的未知世界。它既是人类未来的希望，也是人类愚昧与贪婪的象征。据说，在木卫二的最深处，还有更多未被触及的秘密——一个真正的异界生态圈，甚至是潜伏着无法想象的存在。”</missionmessage0.tsmmission39>
+  <missionsonarlabel.tsmmission39>日令</missionsonarlabel.tsmmission39>
+  <!-- tsmmission40 -->
+  <missionname.tsmmission40>无尽掠夺</missionname.tsmmission40>
+  <missiondescription.tsmmission40>之前我们在这个航道回收了一个不知道存在了多久的恶疫体，在清理被感染的生物时，有几个摩洛克冲破防线跑了出去，几日后，有人目击航道内有几个从未见过的摩洛克变种，所以需要你去探查一下，是不是之前逃脱的摩洛克</missiondescription.tsmmission40>
+  <missionsuccess.tsmmission40>无名诅咒</missionsuccess.tsmmission40>
+  <missionfailure.tsmmission40>恶疫吞噬了船员</missionfailure.tsmmission40>
+  <missionheader0.tsmmission40>恶疫的蔓延</missionheader0.tsmmission40>
+  <missionmessage0.tsmmission40>看起来，恶疫并不只是会感染人类，还会感染其他的生物，这些怪物被感染后，呈现更强的侵略性，看起来要对这片海域进行清洗了</missionmessage0.tsmmission40>
+  <missionsonarlabel.tsmmission40>未知</missionsonarlabel.tsmmission40>
   <!--移植-->
   <!-- tsmmission41 -->
   <missionname.tsmmission41>地震</missionname.tsmmission41>
@@ -210,7 +230,7 @@
   <missionsonarlabel.tsmmission51>未知生命体</missionsonarlabel.tsmmission51>
   <!-- tsmmission52 -->
   <missionname.tsmmission52>悲剧之城</missionname.tsmmission52>
-  <missiondescription.tsmmission52>零号疫病体因为一个特殊的密令，被一支护送队从研究所带往一个未知的坐标。途径[location1]的时候他们短暂停留了一段时间，在等零号疫病体离开后不久，[location1]便失去了联系。我们的先遣部队在前往探寻发现，整个城都被恶疫感染，并且至少出现了2种不同程度的变异。所以这次任务目标是调查这支护送队在[location]站点到底做了什么事情，同时处理站内所有生物并摧毁反应堆</missiondescription.tsmmission52>
+  <missiondescription.tsmmission52>零号疫病体因为一个特殊的密令，被一支护送队从研究所带往一个未知的坐标。途径[location1]的时候他们短暂停留了一段时间，在等零号疫病体离开后不久，[location1]便失去了联系。我们的先遣部队在前往探寻发现，整个城都被恶疫感染，并且至少出现了2种不同程度的变异。所以这次任务目标是调查这支护送队在[location1]站点到底做了什么事情，同时处理站内所有生物并摧毁反应堆</missiondescription.tsmmission52>
   <missionsuccess.tsmmission52>任务完成</missionsuccess.tsmmission52>
   <missionheader0.tsmmission52>血肉之城</missionheader0.tsmmission52>
   <missionmessage0.tsmmission52>从队员们清理完的血肉之城里找到的线索很有限，不过可以确定的是这份特殊密令的密钥并不是来自奇迹之海上层，我们得把数据拿回本部验证，这段时间希望船长能够多多打听这支护送队的信息</missionmessage0.tsmmission52>
@@ -336,22 +356,25 @@
   <missionmessage0.tsmmission_origin16>诚信至上</missionmessage0.tsmmission_origin16>
 
   <missionname.tsmmission_origin17>运送材料</missionname.tsmmission_origin17>
-  <missiondescription.tsmmission_origin17>奇迹之海委托我们运输一批矿石原矿</missiondescription.tsmmission_origin17>
+  <missiondescription.tsmmission_origin17>奇迹之海委托我们运输一批矿石原矿。注意点要是私吞被奇迹之海发现了可是会被罚款的</missiondescription.tsmmission_origin17>
   <missionsuccess.tsmmission_origin17>诚信至上</missionsuccess.tsmmission_origin17>
   <missionheader0.tsmmission_origin17>任务完成</missionheader0.tsmmission_origin17>
   <missionmessage0.tsmmission_origin17>诚信至上</missionmessage0.tsmmission_origin17>
+  <eventtext.tsmmission.mcrate_replenishment>矿石物资箱的数量跟清单上数量不一致，你的话语不可信任</eventtext.tsmmission.mcrate_replenishment>
+
 
   <missionname.tsmmission_origin18>运送医疗物资</missionname.tsmmission_origin18>
   <missiondescription.tsmmission_origin18>[location2]医疗物资紧缺，他们从奇迹之海订购了一批医疗物资，急需运送</missiondescription.tsmmission_origin18>
   <missionsuccess.tsmmission_origin18>诚信至上</missionsuccess.tsmmission_origin18>
   <missionheader0.tsmmission_origin18>任务完成</missionheader0.tsmmission_origin18>
   <missionmessage0.tsmmission_origin18>诚信至上</missionmessage0.tsmmission_origin18>
+  <eventtext.tsmmission.yl_replenishment>你私吞医疗物资，导致前线的战士无法的得到及时的治疗</eventtext.tsmmission.yl_replenishment>
 
   <missionname.tsmmission_origin19>运送奇迹之海士兵</missionname.tsmmission_origin19>
   <missiondescription.tsmmission_origin19>奇迹之海有一个小队的人，希望可以乘坐你们的船前往下个站点</missiondescription.tsmmission_origin19>
   <missionsuccess.tsmmission_origin19>安全抵达</missionsuccess.tsmmission_origin19>
-  <missionheader0.tsmmission_origin19>任务完成</missionheader0.tsmmission_origin19>
-  <missionmessage0.tsmmission_origin19>安全抵达</missionmessage0.tsmmission_origin19>
+  <missionheader0.tsmmission_origin19></missionheader0.tsmmission_origin19>
+  <missionfailure.tsmmission_origin19>谋杀罪</missionfailure.tsmmission_origin19>
 
   <missionname.tsmmission_origin20>赏金任务：爬行者歼灭战</missionname.tsmmission_origin20>
   <missiondescription.tsmmission_origin20>在航道内有一大群爬行者，我们多次驱赶，但效果甚微。他们连站点安保力量都不怕，这已经不是一般的爬行者了，必须要出重拳</missiondescription.tsmmission_origin20>
@@ -406,6 +429,8 @@
   <character.skinbreaker>破皮者</character.skinbreaker>
   <character.eyibug>血虫</character.eyibug>
   <character.Eyi_hugger>抱身者</character.Eyi_hugger>
+  <character.AlbinismMoloch>血肉运载体</character.AlbinismMoloch>
+  <character.eyinovariant>掠夺体</character.eyinovariant>
 
  <!--奇迹之海-->
  <character.corrode>锈蚀</character.corrode>

@@ -2,7 +2,7 @@
 <npcsets>
   <!--站点安保-->
   <npcset identifier="tsm_outpost_combat_npcs">
-    <npc identifier="tsm_outpost_combat_npc" tags="securitynpc" job="tsm_outpostsecurityofficer" spawnpointtags="security" behavior="Patrol" healthmultiplier="1.5" healthmultiplierinmultiplayer="1.5" aimspeed="30" aimaccuracy="1" reportrange="10000" skillmultiplier="5"> 
+    <npc identifier="tsm_outpost_combat_npc" tags="securitynpc" job="securityofficer" spawnpointtags="security" behavior="Patrol" healthmultiplier="1.5" healthmultiplierinmultiplayer="1.5" aimspeed="30" aimaccuracy="1" reportrange="10000" skillmultiplier="5">
       <ItemSet commonness="1">
         <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
         <Item identifier="securitypatrolclothes" equip="true"/>
@@ -149,7 +149,7 @@
       </ItemSet>
     </npc>
     <!--vip服务-->
-    <npc identifier="tsm_vip_bodyguard_1" tags="securitynpc" job="tsm_outpostsecurityofficer" behavior="Active" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.2" aimspeed="30" aimaccuracy="1" reportrange="10000">
+    <npc identifier="tsm_vip_bodyguard_1" tags="securitynpc" job="securityofficer" behavior="Active" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.2" aimspeed="30" aimaccuracy="1" reportrange="10000">
       <Character speciesname="human" gender="female" hairindex="12">
         <job name="tsm_outpostsecurityofficer" identifier="tsm_outpostsecurityofficer">
           <skill identifier="electrical" level="80" />
@@ -161,6 +161,7 @@
       </Character>
       <ItemSet commonness="1">
         <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
+        <Item identifier="tsm_pifu" equip="true"/>
         <Item identifier="securitypatrolclothes" equip="true"/>
         <Item identifier="bodyarmor" equip="true"/>
         <Item identifier="ballistichelmet1" equip="true"/>

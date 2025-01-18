@@ -5,7 +5,7 @@
   <Sprite identifier="Lerentine" texture="%ModDir%/Texture/Lerentine.png" sourcerect="113,77,529,315" origin="0.5,0.5"/>
   <Sprite identifier="kuiteman" texture="%ModDir%/Texture/kuiteman.png" sourcerect="0,0,0,0" origin="0.5,0.5"/>
   <Sprite identifier="youmu" texture="%ModDir%/Texture/youmu.png" sourcerect="0,0,0,0" origin="0.5,0.5"/>
-  <Sprite identifier="hxl" texture="%ModDir%/Texture/hxl.png" sourcerect="0,0,0,0" origin="0.5,0.5"/>
+  <Sprite identifier="hxl" texture="%ModDir%/Texture/hxl1.png" sourcerect="0,0,0,0" origin="0.5,0.5"/>
   </EventSprites>
   <EventPrefabs>
     <ScriptedEvent identifier="tsm_missionevent_TSM1" commonness="100">
@@ -45,7 +45,7 @@
       <NPCWaitAction npctag="tsmnpc_4" wait="false" />
       <TriggerAction target1tag="tsmnpc_4" target2tag="player" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
       <ConversationAction targettag="triggerer_player" text="tsm.a4" eventsprite="suger">
-        <Option text="sm.dh">
+        <Option text="tsm.dh">
             <ConversationAction targettag="triggerer_player" text="tsm.dh.xh2" eventsprite="suger">
               <Option text="tsm.dh.suger.hhq">
                   <CheckMoneyAction amount="400">
@@ -143,11 +143,11 @@
                   </Failure>
                 </CheckMoneyAction>
               </Option>
-              <Option text="tsm.dh.suger.handgunammo">
+              <Option text="tsm.dh.handgunammo">
                 <CheckMoneyAction amount="1000">
                   <Success>
                     <MoneyAction amount="-1000" />
-                    <ConversationAction targettag="triggerer_player" text="6发子弹，足够干掉12个人了" />
+                    <ConversationAction targettag="triggerer_player" text="tsm.dh.handgunammo.xh" />
                     <SpawnAction itemidentifier="handcannonround" amount="6" targetinventory="triggerer_player" />
                     <ClearTagAction tag="triggerer_player"/>
                     <GoTo name="beginningofthejourney" />
@@ -179,7 +179,7 @@
       <NPCWaitAction npctag="tsmnpc_5" wait="false" />
       <TriggerAction target1tag="tsmnpc_5" target2tag="player" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
       <ConversationAction targettag="triggerer_player" text="tsm.a5" eventsprite="Lerentine">
-        <Option text="sm.dh">
+        <Option text="tsm.dh">
           <ConversationAction targettag="triggerer_player" text="tsm.dh.lerentine.xh" eventsprite="Lerentine">
             <Option text="tsm.dh.lerentine.hhq">
                   <CheckMoneyAction amount="400">

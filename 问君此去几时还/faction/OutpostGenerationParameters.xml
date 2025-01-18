@@ -2,10 +2,10 @@
 <OutpostGenerationParameters>
   <OutpostConfig
     identifier="Tsm_city"
-    totalmodulecount="8"
+    totalmodulecount="7"
     replaceinradiation="abandonedoutpost"
     appendtoreachtotalmodulecount="false"
-    minhallwaylength="1000"
+    minhallwaylength="0"
     allowedlocationtypes="Tsm_city">
     <modulecount flag="Tsm_Airlock" count="1"/>
     <modulecount flag="Tsm_EngineeringModule" count="1"/>
@@ -16,7 +16,7 @@
     <modulecount flag="Tsm_MoonpoolModule" count="1"/>
     <!--modulecount flag="Tsm_EntrancesModule" count="1"/-->
     <!--modulecount flag="Tsm_SpecialModule" count="1"/-->
-    <modulecount flag="Tsm_HubModule" count="1"/>
+    <!--modulecount flag="Tsm_HubModule" count="1"/-->
 
     <npcs>
       <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
@@ -49,9 +49,9 @@
   <OutpostConfig
     identifier="tsm_miningoutpost"
     replaceinradiation="abandonedoutpost"
-    totalmodulecount="9"
+    totalmodulecount="8"
     appendtoreachtotalmodulecount="false"
-    minhallwaylength="1000"
+    minhallwaylength="0"
     allowedlocationtypes="tsm_mine">
     <modulecount flag="tsm_Airlock_mine" count="1"/>
     <modulecount flag="tsm_EngineeringModule_military" count="1"/>
@@ -87,9 +87,9 @@
   <OutpostConfig
     identifier="tsm_militaryoutpost"
     replaceinradiation="abandonedoutpost"
-    totalmodulecount="8" 
+    totalmodulecount="7"
     appendtoreachtotalmodulecount="false"
-    minhallwaylength="1000"
+    minhallwaylength="0"
     allowedlocationtypes="tsm_military">
     <modulecount flag="tsm_Airlock_military" count="1"/>
     <modulecount flag="tsm_EngineeringModule_military" count="1"/>
@@ -98,10 +98,13 @@
     <modulecount flag="Tsm_SecurityModule_other" count="1"/>
     <modulecount flag="tsm_MedicalModule_other" count="1"/>
     <modulecount flag="tsm_ArmoryModule" count="1"/>
-    <modulecount flag="tsm_ResearchModule" count="1"/>
 
     <npcs>
       <npc from="tsm_outpost_combat_npcs" identifier="tsm_gendarmerie" faction="tsm"/>
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
       <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
       <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
       <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
@@ -117,13 +120,6 @@
       <npc from="outpostnpcs1" identifier="merchantmedical"/>
       <npc from="outpostnpcs1" identifier="outpostdoctor"/>
       <npc from="outpostnpcs1" identifier="commoner"/>
-
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc_a" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc_j" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc_a" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc_j" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc_a" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc_j" faction="tsm"/>
 
     </npcs>
   </OutpostConfig>

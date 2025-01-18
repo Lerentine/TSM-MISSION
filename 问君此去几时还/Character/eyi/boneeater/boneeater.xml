@@ -27,12 +27,15 @@
   <sound gender="None" File="%ModDir%/Character/eyi/boneeater/boneeaterDie.ogg" State="Die" Range="1500" Volume="1" Tags="" />
   <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="True" Commonness="1" >
     <Item identifier="tsm_eyi_embryo" />
+    <Item identifier="idcard" slot="Card" />
   </inventory>
   <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="True" Commonness="0.5" >
     <Item identifier="tsm_eyi_embryo" />
     <Item identifier="tsm_eyi_embryo" />
+    <Item identifier="idcard" slot="Card" />
   </inventory>
   <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="True" Commonness="0.1" >
     <Item identifier="tsm_eyi_glandular" />
+    <Item identifier="idcard" slot="Card" />
   </inventory>
 </Character>

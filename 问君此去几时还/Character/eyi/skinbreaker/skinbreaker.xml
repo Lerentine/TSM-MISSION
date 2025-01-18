@@ -31,10 +31,12 @@
   <StatusEffect type="OnDeath" target="This" disabledeltatime="true" stackable="false" delay="300" onlyoutside="true">
     <RemoveCharacter />
   </StatusEffect>
-  <inventory Slots="Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
+  <inventory Slots="Card, Any, Any, Any" AccessibleWhenAlive="False" Commonness="1">
     <item Identifier="tsm_eyi_embryo" />
+    <Item identifier="idcard" slot="Card" />
   </inventory>
-  <inventory Slots="Any, Any, Any" AccessibleWhenAlive="False" Commonness="0.02">
+  <inventory Slots="Card, Any, Any, Any" AccessibleWhenAlive="False" Commonness="0.05">
     <item Identifier="tsm_eyi_glandular" />
+    <Item identifier="idcard" slot="Card" />
   </inventory>
 </Character>

@@ -116,6 +116,8 @@
   <tsm.outpost_invasions.1.1>你在干什么？”你一边说话,一边把手搭在他肩上</tsm.outpost_invasions.1.1>
   <tsm.outpost_invasions.1.2>“别跑！”你刚追没两步，站点就开始响起了警报声</tsm.outpost_invasions.1.2>
   <tsm.outpost_invasions.1.3>奇迹之海：\n检测到未知势力入侵，现已启动T-71防御协议，全站点进入封锁状态。请各位市民保持冷静，立即前往最近的安全避难所。日暮山作战部门将全面展开对入侵者的清理行动，请勿擅自行动，耐心等待局势恢复。</tsm.outpost_invasions.1.3>
+  <!--test:mission-->
+  <tsm_fire_water_1>你感觉到潜艇外格外的酷热，不一会儿就大汗淋漓，伸手摸了摸外壳却被烫的缩回了手，貌似外面有什么东西让海水沸腾了？\n我想我得赶紧穿上潜水服</tsm_fire_water_1>
   <!--test:charactor-->
   <npctitle.TSMnpc_1>狼隼小队队长</npctitle.TSMnpc_1>
   <charactername.TSMnpc_1>幻下琅</charactername.TSMnpc_1>
@@ -151,30 +153,44 @@
   <entitydescription.tsm_lighter>你想抽一支烟？</entitydescription.tsm_lighter>
 
   <entityname.tsm_marlboro_cigar>万宝路香烟</entityname.tsm_marlboro_cigar>
-  <entitydescription.tsm_marlboro_cigar>Man always remember love because of romantic only\n可缓慢治疗精神压力、精神病以及谵妄中毒</entitydescription.tsm_marlboro_cigar>
+  <entitydescription.tsm_marlboro_cigar>Man always remember love because of romantic only</entitydescription.tsm_marlboro_cigar>
 
   <entityname.tsm_marlboro_box>盒装万宝路</entityname.tsm_marlboro_box>
-  <entitydescription.tsm_marlboro_box>抽万宝路更有男人味\n内含8根万宝路香烟</entitydescription.tsm_marlboro_box>
+  <entitydescription.tsm_marlboro_box>抽万宝路更有男人味\n内含8根万宝路香烟\n可缓慢治疗精神压力、精神病以及谵妄中毒</entitydescription.tsm_marlboro_box>
 
   <entityname.tsm_Chinese_cigar>华子</entityname.tsm_Chinese_cigar>
-  <entitydescription.tsm_Chinese_cigar>每一口中华尽显尊贵品质\n可快速治疗精神压力和精神病，并且给予精神压力抗性</entitydescription.tsm_Chinese_cigar>
+  <entitydescription.tsm_Chinese_cigar>每一口中华尽显尊贵品质</entitydescription.tsm_Chinese_cigar>
 
   <entityname.tsm_Chinesecigar_box>盒装中华</entityname.tsm_Chinesecigar_box>
-  <entitydescription.tsm_Chinesecigar_box>鲜明个性,典雅风范,中华之美\n内含6根中华</entitydescription.tsm_Chinesecigar_box>
+  <entitydescription.tsm_Chinesecigar_box>鲜明个性,典雅风范,中华之美\n内含6根中华\n可快速治疗精神压力和精神病，并且给予精神压力抗性</entitydescription.tsm_Chinesecigar_box>
 
   <entityname.tsm_universe_cigar>宇宙牌香烟</entityname.tsm_universe_cigar>
-  <entitydescription.tsm_universe_cigar>木卫二超人的第一选择\n可快速治疗精神压力和谵妄中毒</entitydescription.tsm_universe_cigar>
+  <entitydescription.tsm_universe_cigar>木卫二超人的第一选择</entitydescription.tsm_universe_cigar>
 
   <entityname.tsm_universe_box>盒装宇宙</entityname.tsm_universe_box>
-  <entitydescription.tsm_universe_box>抽宇宙牌，做木卫二人\n内含6根宇宙牌香烟</entitydescription.tsm_universe_box>
+  <entitydescription.tsm_universe_box>抽宇宙牌，做木卫二人\n内含6根宇宙牌香烟\n可快速治疗精神压力和谵妄中毒</entitydescription.tsm_universe_box>
 
   <entityname.tsm_eyi_relics>恶疫体</entityname.tsm_eyi_relics>
   <entitydescription.tsm_eyi_relics>本不属于这个世界的产物,或许需要异常事务收容箱来收容</entitydescription.tsm_eyi_relics>
+
+ <entityname.tsm_eyi_glandular>遗传骸骨</entityname.tsm_eyi_glandular>
+ <entitydescription.tsm_eyi_glandular>用于制作恶疫药剂</entitydescription.tsm_eyi_glandular>
+ <entityname.tsm_eyi_embryo>胚胎果实</entityname.tsm_eyi_embryo>
+ <entitydescription.tsm_eyi_embryo>感染物身上掉落的感染源</entitydescription.tsm_eyi_embryo>
+
+ <entityname.tsm_needletube_empty>空针管</entityname.tsm_needletube_empty>
+ <entitydescription.tsm_needletube_empty></entitydescription.tsm_needletube_empty>
+
+ <entityname.tsm_eyi_helmet>恶疫防护头盔</entityname.tsm_eyi_helmet>
+ <entitydescription.tsm_eyi_helmet>可插入氧气罐进行自循环，研究人员专用的防护头盔。可大大降低感染风险，强化玻璃面罩，拥有一定防护能力同时获得更大的视野</entitydescription.tsm_eyi_helmet>
+
+ <entityname.tsm_eyi_suit>恶疫防护服</entityname.tsm_eyi_suit>
+ <entitydescription.tsm_eyi_suit>研究人员专用的防护服，可以抵御一定水压，可以防止接触恶疫体时的感染</entitydescription.tsm_eyi_suit>
  
-  <entityname.tsm_virusstage_inhibitory>疫病Ⅲ型抑制剂</entityname.tsm_virusstage_inhibitory>
+  <entityname.tsm_virusstage_inhibitory>血肉Ⅲ型抑制剂</entityname.tsm_virusstage_inhibitory>
   <entitydescription.tsm_virusstage_inhibitory>用于抑制血肉胚胎的生长防止进入下一阶段，但是并不能完全根治</entitydescription.tsm_virusstage_inhibitory>
 
-  <entityname.tsm_virusstage_clear>疫病强效清除剂</entityname.tsm_virusstage_clear>
+  <entityname.tsm_virusstage_clear>血肉强效清除剂</entityname.tsm_virusstage_clear>
   <entitydescription.tsm_virusstage_clear>能够直接清除身体内的血肉胚胎，但是会对身体造成伤害。</entitydescription.tsm_virusstage_clear>
 
   <entityname.tsm_virusstage_deep_inhibitory>恶疫强效清除剂</entityname.tsm_virusstage_deep_inhibitory>
@@ -217,10 +233,28 @@
   <entitydescription.AlbinismSpineling>可以用来做炮弹，或者分解成钢筋</entitydescription.AlbinismSpineling>
   <entityname.AlbinismSpineling_shell>白化棘刺霰弹炮弹</entityname.AlbinismSpineling_shell>
   <entitydescription.AlbinismSpineling_shell>可以用轨道炮霰弹弹丸装填，拥有更多的弹丸量</entitydescription.AlbinismSpineling_shell>
-  <entityname.tsm_soundplayer>来时莫徘徊</entityname.tsm_soundplayer>
+  <entityname.tsm_soundplayer>来时莫徘徊（音频播放器）</entityname.tsm_soundplayer>
   <entitydescription.tsm_soundplayer>音频播放器，可以播放从BOSS身上获得到的音频磁带，又或者是站点购买的。</entitydescription.tsm_soundplayer>
   <entityname.tsm_walkman>今宵别梦寒</entityname.tsm_walkman>
   <entitydescription.tsm_walkman>随身听，可以播放从BOSS身上获得到的音频磁带，又或者是站点购买的。</entitydescription.tsm_walkman>
+
+ <entityname.猜疑链>猜疑链</entityname.猜疑链>
+ <entitydescription.猜疑链></entitydescription.猜疑链>
+ <entityname.降神典仪>降神典仪</entityname.降神典仪>
+ <entitydescription.降神典仪></entitydescription.降神典仪>
+ <entityname.腐败机械>腐败机械</entityname.腐败机械>
+ <entitydescription.腐败机械></entitydescription.腐败机械>
+ <entityname.zszg>真实之棺</entityname.zszg>
+ <entitydescription.zszg></entitydescription.zszg>
+ <entityname.bjzc>悲剧之城艾罗雷诺</entityname.bjzc>
+ <entitydescription.bjzc></entitydescription.bjzc>
+ <entityname.kl1>卡戎一</entityname.kl1>
+ <entitydescription.kl1></entitydescription.kl1>
+ <entityname.kl2>卡戎二</entityname.kl2>
+ <entitydescription.kl2></entitydescription.kl2>
+ <entityname.kl2>卡戎二</entityname.kl2>
+ <entitydescription.kl2></entitydescription.kl2>
+
 
   <entityname.tsm_shipammo_shell>科技弹</entityname.tsm_shipammo_shell>
   <entitydescription.tsm_shipammo_shell>轨道炮弹药&#xD;&#xA;这种弹药主要针对结构使用，在爆炸后会产生酸液腐蚀船壳</entitydescription.tsm_shipammo_shell>
@@ -243,6 +277,7 @@
   <tsm.dh.suger.colthes>250MK兑换阿糖连帽衫</tsm.dh.suger.colthes>
   <tsm.dh.suger.aex>450MK兑换阿糖的战斧</tsm.dh.suger.aex>
   <tsm.dh.suger.handgun>2300MK兑换伊卡洛斯手炮</tsm.dh.suger.handgun>
+  <tsm.dh.suger.hat>150MK兑换海军大幅帽</tsm.dh.suger.hat>
   <tsm.dh.handgunammo>1000MK兑换6发手炮子弹</tsm.dh.handgunammo>
   <tsm.dh.handgunammo.xh>每次开枪前，请好好思考</tsm.dh.handgunammo.xh>
   <!--莱伦汀-->
@@ -270,10 +305,14 @@
   <entitydescription.tsmmissions_px18_pistols>使用‖color:150,0,0,255‖9mm‖color:end‖手枪弹匣</entitydescription.tsmmissions_px18_pistols>
   <entityname.hxl_knife>‖color:150,0,0,255‖幻象‖color:end‖</entityname.hxl_knife>
   <entitydescription.hxl_knife>‖color:150,0,0,255‖真实的假象‖color:end‖</entitydescription.hxl_knife>
+  <entityname.tsm_hxl>幻下琅幻化器</entityname.tsm_hxl>
+  <entitydescription.tsm_hxl>琅\n幻影下的实体</entitydescription.tsm_hxl>
   <entityname.tsm_hxl_unform>幻下琅的衣服</entityname.tsm_hxl_unform>
   <entitydescription.tsm_hxl_unform>琅\n幻影下的实体</entitydescription.tsm_hxl_unform>
-  <entityname.tsm_hxl_unform>幻下琅的衣服</entityname.tsm_hxl_unform>
-  <entitydescription.tsm_hxl_unform>琅\n幻影下的实体</entitydescription.tsm_hxl_unform>
+ <entityname.tsmmissions_hx870>幻灭870</entityname.tsmmissions_hx870>
+ <entitydescription.tsmmissions_hx870>要多笑</entitydescription.tsmmissions_hx870>
+ <entityname.tsmmissions_hxl_ju>懅</entityname.tsmmissions_hxl_ju>
+ <entitydescription.tsmmissions_hxl_ju>不要悲伤</entitydescription.tsmmissions_hxl_ju>
   <tsm.hxl1>你好，我是奇迹之海武装部负责人雨琅，我应指示在这里给路过的船长发放奇迹之海的悬赏任务。</tsm.hxl1>
   <tsm.hxl.a1>你是……幻下琅？</tsm.hxl.a1>
   <tsm.hxl2>啊，对，那是我的昵称。你也可以这样叫我。</tsm.hxl2>
@@ -420,11 +459,15 @@
 
   <talentname.tsm_eyi_instability>不稳定恶疫异常态</talentname.tsm_eyi_instability>
   <talentdescription.tsm_eyi_instability></talentdescription.tsm_eyi_instability>
+
   <!--afflictions-->
   <afflictionname.tsm_ondeath>死海</afflictionname.tsm_ondeath>
   <afflictiondescription.tsm_ondeath>你在追寻何物</afflictiondescription.tsm_ondeath>
   <afflictioncauseofdeath.tsm_ondeath>你在追寻何物</afflictioncauseofdeath.tsm_ondeath>
   <afflictioncauseofdeathself.tsm_ondeath>你在追寻何物</afflictioncauseofdeathself.tsm_ondeath>
+
+ <afflictionname.tsm_fire_water>沸腾之海</afflictionname.tsm_fire_water>
+ <afflictiondescription.tsm_fire_water>热！热！这个航道热的不行，在舱室内感觉都要被蒸熟了，外面的海水像是沸腾了一般\n此巡回内，玩家最大生命值-30%\n接触水会有持续烧伤，不同深度潜水服受到的烧伤不同</afflictiondescription.tsm_fire_water>
 
   <afflictionname.tsm_eyi_attack>战斗恶疫常态</afflictionname.tsm_eyi_attack>
   <afflictiondescription.tsm_eyi_attack>你体内的恶疫为稳定状态，他会持续为你的战斗提供加成</afflictiondescription.tsm_eyi_attack>
@@ -443,6 +486,9 @@
 
   <afflictionname.tsm_virusstage>血肉胚胎</afflictionname.tsm_virusstage>
   <afflictiondescription.tsm_virusstage>恶疫病毒正在把你的身体当作培养场，宿主的基因被强行改造来与破皮者相匹配</afflictiondescription.tsm_virusstage>
+
+ <afflictionname.tsm_virusstage_inhibitory>基因同源</afflictionname.tsm_virusstage_inhibitory>
+ <afflictiondescription.tsm_virusstage_inhibitory></afflictiondescription.tsm_virusstage_inhibitory>
 
   <afflictionname.tsm_virusstage_deep>恶疫</afflictionname.tsm_virusstage_deep>
   <afflictiondescription.tsm_virusstage_deep>宿主的基因已经被改造，这种情况基本上不可逆转，他的身体正在发生变化</afflictiondescription.tsm_virusstage_deep>
@@ -486,6 +532,13 @@
   <afflictiondescription.tsmmission_eyi_85_90>在此阶段，你将获得25%物理伤害和烧伤抗性，获得25%攻击力加成</afflictiondescription.tsmmission_eyi_85_90>
   <afflictiondescription.tsmmission_eyi_90_95>在此阶段，所有对你的治疗效果将增加100%</afflictiondescription.tsmmission_eyi_90_95>
   <afflictiondescription.tsmmission_eyi_95_100>在此阶段，你的身体部分dna序列发生改变，开始排斥外来寄生</afflictiondescription.tsmmission_eyi_95_100>
+
+ <afflictionname.tsm_zs>照射</afflictionname.tsm_zs>
+ <afflictiondescription.tsm_zs>被某种射线持续照射，你的皮肤开始燃烧</afflictiondescription.tsm_zs>
+ <afflictioncauseofdeath.tsm_zs>照射致死</afflictioncauseofdeath.tsm_zs>
+ <afflictioncauseofdeathself.tsm_zs>照射致死</afflictioncauseofdeathself.tsm_zs>
+
+ <afflictionname.eyi_zb_eyivariant>转化侵袭</afflictionname.eyi_zb_eyivariant>
   
   
   <!--站点-->

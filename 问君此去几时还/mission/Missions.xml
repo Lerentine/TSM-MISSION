@@ -174,7 +174,7 @@
     <message header="再添马下魂" text="这个航道总算能安宁一阵子了" />
   </MonsterMission>
   <MonsterMission name="微观战争" identifier="tsmmission34" tags="tsm_hunt_monster" type="Monster" description="嘿嘿，你猜怎么着。我们使用微缩武器缩小了一些捕勾兽，由于他们体型变的太小了，所以他们全逃走了，所以船长趁还没有引起大骚乱之前解决掉他们！" 
-  commonness="100" reward="10000" sonarlabel="微观捕勾" maxsonarmarkerdistance="10000" successmessage="有趣的实验" difficulty="5">
+  commonness="100" reward="9000" sonarlabel="微观捕勾" maxsonarmarkerdistance="10000" successmessage="有趣的实验" difficulty="5">
     <monster character="微观捕勾兽" min="4" max="6" />
     <monster character="微观捕勾兽" min="2" max="4" multiplayeronly="true" />
     <Reputation identifier="location" amount="2" />
@@ -226,15 +226,24 @@
     <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
     <message header="破晓白光" text="一场'雨'过后，血液海水互换了身份，抬头是满天划过的流星，足下尸山血海" />
   </MonsterMission>
-  <!--MonsterMission name="机械迷乱" identifier="tsmmission38" type="Monster" tags="tsm3,DifficultHuntingAbyssEND" description="G11.K38地区检测到'暴风雨燕'事件中相同的脉冲波形，早先的机械降神虽然被击毁，但是当时行动完成后，有些战士似乎精神出了点状况，在接收治疗后，从他们口中得到一句话：月令常换日令却始终不变，月令虽是主宰却不能持久，日令力量总在次位却能恒长" commonness="100" reward="13000" sonarlabel="机械降神-日令" maxsonarmarkerdistance="30000" successmessage="机械降神" difficulty="5">
-    <monster character="腐败机械" min="1" max="1" />
+  <MonsterMission name="那段漫漫136万里的归途" identifier="tsmmission39" type="Monster" tags="tsm_hunt_monster" description=""
+  commonness="100" reward="12000" sonarlabel="" maxsonarmarkerdistance="30000" successmessage="" difficulty="5">
     <monster character="CorruptionMachinery" min="2" />
     <monster character="CorruptionMachinery" min="1" max="2" multiplayeronly="true" />
-    <Reputation identifier="coalition" amount="2" />
-    <Reputation identifier="location" amount="4" />
+    <Reputation identifier="location" amount="2" />
     <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
-    <message header="腐败机械" text="关于这些机械神明的来源始终是个谜，没人知道是从哪里来，也没人知道是怎么来，蠕虫状降神一经击败就不停分解，最后什么都没有剩下，仿佛就是一场梦，反而战士们的精神多少都会出现偏差，就像是脑海中突然被植入了一些记忆？又或者是窥视到了一些未知？因此我们从中获得到了一点线索，强脉冲区事件的造成者不止是蠕虫机械，还有不停增长的机械，原先可观测到的几种机械互相制衡，有人为见过的两种机械体取名月令和日令。月令被解决后，日令就在不断的增长，但是这种增长不可控，慢慢的机械载体承受不了这种无限制的能量获取，就开始腐败。我始终感觉这还不是终点。" />
-  </MonsterMission-->
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_mission_fire_water" campaignonly="true" />
+    <message header="" text="关于这些机械神明的来源始终是个谜，没人知道是从哪里来，也没人知道是怎么来，蠕虫状降神一经击败就不停分解，最后什么都没有剩下，仿佛就是一场梦，反而战士们的精神多少都会出现偏差，就像是脑海中突然被植入了一些记忆？又或者是窥视到了一些未知？因此我们从中获得到了一点线索，强脉冲区事件的造成者不止是蠕虫机械，还有不停增长的机械，原先可观测到的几种机械互相制衡，有人为见过的两种机械体取名月令和日令。月令被解决后，日令就在不断的增长，但是这种增长不可控，慢慢的机械载体承受不了这种无限制的能量获取，就开始腐败。我始终感觉这还不是终点。" />
+  </MonsterMission>
+  <MonsterMission name="血肉运输" identifier="tsmmission40" type="Monster" tags="tsm_hunt_monster" description=""
+  ommonness="100" reward="12000" sonarlabel="" maxsonarmarkerdistance="30000" successmessage="" difficulty="5">
+    <monster character="AlbinismMoloch" min="3" />
+    <monster character="AlbinismMoloch" min="1" max="2" multiplayeronly="true" />
+    <Reputation identifier="tsm" amount="2" />
+    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_mission_fire_water" campaignonly="true" />
+    <message header="" text="" />
+  </MonsterMission>
   <!--移植-->
   <MonsterMission name="地震" identifier="tsmmission41" tags="tsm_abyss" type="Monster" description="该地区检测到巨型脉冲干扰，并且在航道内感受到，剧烈的震动，还请过往的船长远离这条航道，待奇迹之海解决后再通过。" commonness="100" reward="15000" sonarlabel="震源之中" maxsonarmarkerdistance="10000" successmessage="关于翻天覆地的变动已经临头了。" spawntype="Abyss" difficulty="6">
     <monster character="欧罗巴之心" min="1" max="1" />
@@ -390,8 +399,9 @@
       <Character identifier="boneeater" min="2" max="3" asfaraspossible="true" requirekill="true"  />
       <Character identifier="humaneyi" min="2" max="3" />
       <Character identifier="Eyi_hugger" min="2" max="3"/>
-      <Character identifier="boneeater" min="1" max="2" asfaraspossible="true" requirekill="true" multiplayeronly="true" />
+      <Character identifier="boneeater" min="3" max="4" asfaraspossible="true" requirekill="true" multiplayeronly="true" />
       <Character identifier="humaneyi" min="1" max="2" />
+      <Character identifier="humaneyi" min="3" max="5" multiplayeronly="true"/>
       <Character identifier="Eyi_hugger" min="4" max="6" multiplayeronly="true" />
     </Characters>
     <TriggerEvent state="0" delay="5" eventidentifier="tsmmission_indestructible_wall" campaignonly="true" />
