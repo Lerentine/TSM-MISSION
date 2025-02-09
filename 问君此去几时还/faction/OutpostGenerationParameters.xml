@@ -1,126 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <OutpostGenerationParameters>
-  <OutpostConfig
-    identifier="Tsm_city"
-    totalmodulecount="7"
-    replaceinradiation="abandonedoutpost"
-    appendtoreachtotalmodulecount="false"
-    minhallwaylength="0"
-    allowedlocationtypes="Tsm_city">
-    <modulecount flag="Tsm_Airlock" count="1"/>
-    <modulecount flag="Tsm_EngineeringModule" count="1"/>
-    <modulecount flag="Tsm_AdminModule" count="1"/>
-    <modulecount flag="Tsm_MedicalModule" count="1"/>
-    <modulecount flag="Tsm_ResidentialModule" count="1"/>
-    <modulecount flag="Tsm_SecurityModule" count="1"/>
-    <modulecount flag="Tsm_MoonpoolModule" count="1"/>
+  <OutpostConfig identifier="Tsm_city" totalmodulecount="7" replaceinradiation="abandonedoutpost" appendtoreachtotalmodulecount="false" minhallwaylength="0" allowedlocationtypes="Tsm_city">
+    <modulecount flag="Tsm_Airlock" count="1" />
+    <modulecount flag="Tsm_EngineeringModule" count="1" />
+    <modulecount flag="Tsm_AdminModule" count="1" />
+    <modulecount flag="Tsm_MedicalModule" count="1" />
+    <modulecount flag="Tsm_ResidentialModule" count="1" />
+    <modulecount flag="Tsm_SecurityModule" count="1" />
+    <modulecount flag="Tsm_MoonpoolModule" count="1" />
     <!--modulecount flag="Tsm_EntrancesModule" count="1"/-->
     <!--modulecount flag="Tsm_SpecialModule" count="1"/-->
     <!--modulecount flag="Tsm_HubModule" count="1"/-->
-
     <npcs>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_gendarmerie" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc_a" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc_j" faction="tsm"/>
-      
-      <npc from="outpostnpcs1" identifier="hrmanager"/>
-      <npc from="outpostnpcs1" identifier="subupgradenpc"/>
-      <npc from="outpostnpcs1" identifier="subsalesnpc"/>
-      <npc from="outpostnpcs1" identifier="reactoroperator"/>
-      <npc from="outpostnpcs1" identifier="merchantcity"/>
-      <npc from="outpostnpcs1" identifier="merchantarmory"/>
-      <npc from="outpostnpcs1" identifier="merchantmedical"/>
-      <npc from="outpostnpcs1" identifier="merchantengineering"/>
-      <npc from="outpostnpcs1" identifier="outpostdoctor"/>
-      <npc from="outpostnpcs1" identifier="commoner"/>
-      <npc from="outpostnpcs1" identifier="commoner"/>
-      <npc from="outpostnpcs1" identifier="researcher"/>
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_gendarmerie" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc_a" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc_j" faction="tsm" />
+      <npc from="outpostnpcs1" identifier="hrmanager" />
+      <npc from="outpostnpcs1" identifier="subupgradenpc" />
+      <npc from="outpostnpcs1" identifier="subsalesnpc" />
+      <npc from="outpostnpcs1" identifier="reactoroperator" />
+      <npc from="outpostnpcs1" identifier="merchantcity" />
+      <npc from="outpostnpcs1" identifier="merchantarmory" />
+      <npc from="outpostnpcs1" identifier="merchantmedical" />
+      <npc from="outpostnpcs1" identifier="merchantengineering" />
+      <npc from="outpostnpcs1" identifier="outpostdoctor" />
+      <npc from="outpostnpcs1" identifier="commoner" />
+      <npc from="outpostnpcs1" identifier="commoner" />
+      <npc from="outpostnpcs1" identifier="researcher" />
     </npcs>
   </OutpostConfig>
-  <OutpostConfig
-    identifier="tsm_miningoutpost"
-    replaceinradiation="abandonedoutpost"
-    totalmodulecount="8"
-    appendtoreachtotalmodulecount="false"
-    minhallwaylength="0"
-    allowedlocationtypes="tsm_mine">
-    <modulecount flag="tsm_Airlock_mine" count="1"/>
-    <modulecount flag="tsm_EngineeringModule_military" count="1"/>
-    <modulecount flag="tsm_AdminModule_other" count="1"/>
-    <modulecount flag="tsm_CrewModule" count="1"/>
-    <modulecount flag="tsm_ResidentialModuleMain" count="1"/>
-    <modulecount flag="tsm_MineModule" count="1"/>
-    <modulecount flag="tsm_MedicalModule_other" count="1"/>
-    <modulecount flag="tsm_cavemodule" count="1"/>
+  <OutpostConfig identifier="tsm_miningoutpost" replaceinradiation="abandonedoutpost" totalmodulecount="8" appendtoreachtotalmodulecount="false" minhallwaylength="0" allowedlocationtypes="tsm_mine">
+    <modulecount flag="tsm_Airlock_mine" count="1" />
+    <modulecount flag="tsm_EngineeringModule_military" count="1" />
+    <modulecount flag="tsm_AdminModule_other" count="1" />
+    <modulecount flag="tsm_CrewModule" count="1" />
+    <modulecount flag="tsm_ResidentialModuleMain" count="1" />
+    <modulecount flag="tsm_MineModule" count="1" />
+    <modulecount flag="tsm_MedicalModule_other" count="1" />
+    <modulecount flag="tsm_cavemodule" count="1" />
     <npcs>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      
-      <npc from="outpostnpcs1" identifier="hrmanager"/>
-      <npc from="outpostnpcs1" identifier="subupgradenpc"/>
-      <npc from="outpostnpcs1" identifier="subsalesnpc"/>
-      <npc from="outpostnpcs1" identifier="reactoroperator"/>
-      <npc from="outpostnpcs1" identifier="merchantmine"/>
-      <npc from="outpostnpcs1" identifier="merchantmedical"/>
-      <npc from="outpostnpcs1" identifier="merchantengineering"/>
-      <npc from="outpostnpcs1" identifier="outpostdoctor"/>
-      <npc from="outpostnpcs1" identifier="miner"/>
-      <npc from="outpostnpcs1" identifier="miner"/>
-      <npc from="outpostnpcs1" identifier="miner"/>
-
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm" />
+      <npc from="outpostnpcs1" identifier="hrmanager" />
+      <npc from="outpostnpcs1" identifier="subupgradenpc" />
+      <npc from="outpostnpcs1" identifier="subsalesnpc" />
+      <npc from="outpostnpcs1" identifier="reactoroperator" />
+      <npc from="outpostnpcs1" identifier="merchantmine" />
+      <npc from="outpostnpcs1" identifier="merchantmedical" />
+      <npc from="outpostnpcs1" identifier="merchantengineering" />
+      <npc from="outpostnpcs1" identifier="outpostdoctor" />
+      <npc from="outpostnpcs1" identifier="miner" />
+      <npc from="outpostnpcs1" identifier="miner" />
+      <npc from="outpostnpcs1" identifier="miner" />
     </npcs>
   </OutpostConfig>
-  <OutpostConfig
-    identifier="tsm_militaryoutpost"
-    replaceinradiation="abandonedoutpost"
-    totalmodulecount="7"
-    appendtoreachtotalmodulecount="false"
-    minhallwaylength="0"
-    allowedlocationtypes="tsm_military">
-    <modulecount flag="tsm_Airlock_military" count="1"/>
-    <modulecount flag="tsm_EngineeringModule_military" count="1"/>
-    <modulecount flag="tsm_AdminModule_other" count="1"/>
-    <modulecount flag="tsm_SecCrewModule_other" count="1"/>
-    <modulecount flag="Tsm_SecurityModule_other" count="1"/>
-    <modulecount flag="tsm_MedicalModule_other" count="1"/>
-    <modulecount flag="tsm_ArmoryModule" count="1"/>
-
+  <OutpostConfig identifier="tsm_militaryoutpost" replaceinradiation="abandonedoutpost" totalmodulecount="7" appendtoreachtotalmodulecount="false" minhallwaylength="0" allowedlocationtypes="tsm_military">
+    <modulecount flag="tsm_Airlock_military" count="1" />
+    <modulecount flag="tsm_EngineeringModule_military" count="1" />
+    <modulecount flag="tsm_AdminModule_other" count="1" />
+    <modulecount flag="tsm_SecCrewModule_other" count="1" />
+    <modulecount flag="Tsm_SecurityModule_other" count="1" />
+    <modulecount flag="tsm_MedicalModule_other" count="1" />
+    <modulecount flag="tsm_ArmoryModule" count="1" />
     <npcs>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_gendarmerie" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm"/>
-      
-      <npc from="outpostnpcs1" identifier="hrmanager"/>
-      <npc from="outpostnpcs1" identifier="subupgradenpc"/>
-      <npc from="outpostnpcs1" identifier="subsalesnpc"/>
-      <npc from="outpostnpcs1" identifier="reactoroperator"/>
-      <npc from="outpostnpcs1" identifier="merchantmilitary"/>
-      <npc from="outpostnpcs1" identifier="merchantengineering"/>
-      <npc from="outpostnpcs1" identifier="merchantarmory"/>
-      <npc from="outpostnpcs1" identifier="merchantmedical"/>
-      <npc from="outpostnpcs1" identifier="outpostdoctor"/>
-      <npc from="outpostnpcs1" identifier="commoner"/>
-
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_gendarmerie" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm" />
+      <npc from="tsm_outpost_combat_npcs" identifier="tsm_outpost_combat_npc" faction="tsm" />
+      <npc from="outpostnpcs1" identifier="hrmanager" />
+      <npc from="outpostnpcs1" identifier="subupgradenpc" />
+      <npc from="outpostnpcs1" identifier="subsalesnpc" />
+      <npc from="outpostnpcs1" identifier="reactoroperator" />
+      <npc from="outpostnpcs1" identifier="merchantmilitary" />
+      <npc from="outpostnpcs1" identifier="merchantengineering" />
+      <npc from="outpostnpcs1" identifier="merchantarmory" />
+      <npc from="outpostnpcs1" identifier="merchantmedical" />
+      <npc from="outpostnpcs1" identifier="outpostdoctor" />
+      <npc from="outpostnpcs1" identifier="commoner" />
     </npcs>
   </OutpostConfig>
 </OutpostGenerationParameters>

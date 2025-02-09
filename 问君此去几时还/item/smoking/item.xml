@@ -25,7 +25,7 @@
       <RequiredItem identifier="weldingfueltank" mincondition="0.5" usecondition="true" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/item/smoking/smoke.png" sourcerect="309,183,152,166" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/item/smoking/smoke.png" sourcerect="0,183,196,148" depth="0.55" origin="0.65,0.3"/>
+    <Sprite texture="%ModDir%/item/smoking/smoke.png" sourcerect="0,183,196,148" depth="0.55" origin="0.65,0.3" />
     <BrokenSprite texture="%ModDir%/item/smoking/smoke.png" sourcerect="16,378,196,148" origin="0.3,0.3" depth="0.55" maxcondition="99" fadein="false" />
     <Body width="27" height="38" density="12.7" />
     <GreaterComponent canbepicked="false" canbeselected="false" allowingameediting="false" timeframe="0" />

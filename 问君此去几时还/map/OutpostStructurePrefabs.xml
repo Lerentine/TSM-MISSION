@@ -2,7 +2,6 @@
 <prefabs>
   <!-- Everything is categorized as 'Structure' unless explicitly categorized otherwise -->
   <!-- OUTPOST BACKGROUND WALLS -->
-  
   <OpDeco name="" identifier="tsm_slogan1" subcategory="tsmmissions" nameidentifier="tsm_slogan" width="789" height="1123" scale="0.5" noninteractable="true" category="Decorative">
     <sprite texture="%ModDir%/map/slogan1.png" sourcerect="0,0,789,1123" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </OpDeco>
@@ -66,5 +65,4 @@
   <OpDeco name="恶疫雕像" identifier="tsm_eyi_statues_1" subcategory="tsmmissions" nameidentifier="tsm_eyi_statues" width="161" height="145" scale="0.5" noninteractable="true" category="Decorative">
     <sprite texture="%ModDir%/item/eyi/eyi_item.png" sourcerect="0,171,161,145" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </OpDeco>
-
 </prefabs>

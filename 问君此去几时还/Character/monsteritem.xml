@@ -62,21 +62,21 @@
     <Body width="170" height="10" density="20" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true" damagedoors="true" penetration="0.5">
-      <ParticleEmitter particle="tracerpulselaser" particleamount="1" velocitymin="0" velocitymax="0"/>
-      <ParticleEmitter particle="FlareBubbles" emitacrossrayinterval="50"/>
+      <ParticleEmitter particle="tracerpulselaser" particleamount="1" velocitymin="0" velocitymax="0" />
+      <ParticleEmitter particle="FlareBubbles" emitacrossrayinterval="50" />
       <Attack structuredamage="5" targetforce="100" itemdamage="25" severlimbsprobability="1.0" penetration="0.4">
         <Affliction identifier="burn" strength="10.7" />
         <Affliction identifier="lacerations" strength="10.7" />
-        <Affliction identifier="stun" strength="0.25" probability="0.5"/>
+        <Affliction identifier="stun" strength="0.25" probability="0.5" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <ParticleEmitter particle="muzzleflashpulselaser" anglemin="0" anglemax="360" particleamount="10" velocitymin="0" scalemin="0.5" scalemax="0.8" />
         <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,225,180" />
-        <ParticleEmitter particle="FlareBubbles" particleamount="3" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50"/>
+        <ParticleEmitter particle="FlareBubbles" particleamount="3" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
-        <Conditional entitytype="eq Structure"/>
-        <Conditional hastag="eq door"/>
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This">
@@ -198,7 +198,7 @@
         <Explosion range="200.0" structuredamage="20" force="15.0" itemdamage="250" severlimbsprobability="0.5" decal="explosion" decalsize="0.5">
           <Affliction identifier="explosiondamage" strength="25" />
           <Affliction identifier="bleeding" strength="20" />
-          <Affliction identifier="bleeding" strength="15" probability="0.1" dividebylimbcount="false"/>
+          <Affliction identifier="bleeding" strength="15" probability="0.1" dividebylimbcount="false" />
           <Affliction identifier="stun" strength="2" />
         </Explosion>
         <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="1" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
@@ -212,7 +212,7 @@
         <Explosion range="350.0" structuredamage="25" force="15.0" itemdamage="250" camerashake="10.0" camerashakerange="1000" severlimbsprobability="0.2" decal="explosion" decalsize="0.5">
           <Affliction identifier="explosiondamage" strength="25" />
           <Affliction identifier="bleeding" strength="20" />
-          <Affliction identifier="bleeding" strength="15" probability="0.1" dividebylimbcount="false"/>
+          <Affliction identifier="bleeding" strength="15" probability="0.1" dividebylimbcount="false" />
           <Affliction identifier="stun" strength="1.5" />
         </Explosion>
         <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="2" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
@@ -627,7 +627,7 @@
       <Attack structuredamage="150" targetforce="9" itemdamage="50" severlimbsprobability="0.35" penetration="0.35">
         <Affliction identifier="burn" strength="50" />
         <Affliction identifier="internaldamage" strength="10" />
-        <Affliction identifier="radiationsickness" strength="10"/>
+        <Affliction identifier="radiationsickness" strength="10" />
         <Affliction identifier="stun" strength="3" />
         <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
           <Conditional radiationsickness="lte 45" />
@@ -785,12 +785,12 @@
       <!-- reduce condition to give the bolt a 5 second lifetime -->
       <StatusEffect type="OnNotContained" target="This" condition="-5" />
       <StatusEffect type="OnImpact" target="This" condition="-100" setvalue="true">
-        <Spawnitem identifier="acidemitter" spawnposition="This" count="5" spread="30"/>
+        <Spawnitem identifier="acidemitter" spawnposition="This" count="5" spread="30" />
         <ParticleEmitter particle="cyborgammotracer" anglemax="360" distancemax="200" scalemultiplier="3,3" particleamount="40" />
         <Explosion range="500.0" ballastfloradamage="100" structuredamage="350" itemdamage="200" force="10.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.3" penetration="0.5">
           <Affliction identifier="explosiondamage" strength="250" />
           <Affliction identifier="stun" strength="7" />
-          <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="2000"/>
+          <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="2000" />
         </Explosion>
       </StatusEffect>
       <!-- Remove the item after exploding -->
@@ -804,7 +804,7 @@
     <Sprite texture="%ModDir%/Character/AlbinismMoloch/Moloch.png" sourcerect="1591,328,469,472" depth="0.55" />
     <Body width="469" height="470" density="20" />
     <Projectile characterusable="false" launchimpulse="50" maxtargetstohit="3" sticktocharacters="false" sticktoitems="false" sticktostructures="false" friendlyfire="false" damagedoors="true">
-      <Attack structuredamage="150" >
+      <Attack structuredamage="150">
         <Affliction identifier="lacerations" strength="1" />
         <Affliction identifier="bleeding" strength="1" />
         <Affliction identifier="stun" strength="1" />

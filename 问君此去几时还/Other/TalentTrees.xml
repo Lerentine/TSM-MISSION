@@ -3,67 +3,67 @@
   <TalentTree jobidentifier="tsm_outpostsecurityofficer">
     <SubTree identifier="tsm_outpostsecurityofficer_primary" nameidentifier="talenttree.security_primary" type="primary">
       <TalentOptions requiredtalents="2" maxchosentalents="6">
-        <TalentOption identifier="protectandserve"/>
-        <TalentOption identifier="warstories"/>
-        <TalentOption identifier="firstaidtraining"/>
-        <TalentOption identifier="physicalconditioning"/>
-        <TalentOption identifier="swole"/>
-        <TalentOption identifier="buff"/>
+        <TalentOption identifier="protectandserve" />
+        <TalentOption identifier="warstories" />
+        <TalentOption identifier="firstaidtraining" />
+        <TalentOption identifier="physicalconditioning" />
+        <TalentOption identifier="swole" />
+        <TalentOption identifier="buff" />
       </TalentOptions>
       <TalentOptions requiredtalents="2" maxchosentalents="5">
-        <TalentOption identifier="weaponsmith"/>
-        <TalentOption identifier="bythebook"/>
-        <TalentOption identifier="dontpushit"/>
-        <TalentOption identifier="bootcamp"/>
-        <TalentOption identifier="munitionsexpertise"/>
+        <TalentOption identifier="weaponsmith" />
+        <TalentOption identifier="bythebook" />
+        <TalentOption identifier="dontpushit" />
+        <TalentOption identifier="bootcamp" />
+        <TalentOption identifier="munitionsexpertise" />
       </TalentOptions>
     </SubTree>
     <SubTree identifier="tsm_outpostsecurityofficer_frogman" type="specialization" requires="tsm_outpostsecurityofficer_primary" blocks="tsm_enforcer,tsm_gunner">
       <TalentOptions>
-        <TalentOption identifier="boardingparty"/>
+        <TalentOption identifier="boardingparty" />
       </TalentOptions>
       <TalentOptions>
-        <TalentOption identifier="scavenger"/>
-        <TalentOption identifier="slayer"/>
+        <TalentOption identifier="scavenger" />
+        <TalentOption identifier="slayer" />
       </TalentOptions>
       <TalentOptions>
-        <TalentOption identifier="easyturtle"/>
-        <TalentOption identifier="daringdolphin"/>
+        <TalentOption identifier="easyturtle" />
+        <TalentOption identifier="daringdolphin" />
       </TalentOptions>
       <TalentOptions>
-        <TalentOption identifier="specops"/>
+        <TalentOption identifier="specops" />
       </TalentOptions>
     </SubTree>
     <SubTree identifier="tsm_outpostsecurityofficer_enforcer" type="specialization" requires="tsm_outpostsecurityofficer_primary" blocks="tsm_frogman,tsm_gunner">
       <TalentOptions>
-        <TalentOption identifier="pacificationkit"/>
+        <TalentOption identifier="pacificationkit" />
       </TalentOptions>
       <TalentOptions>
-        <TalentOption identifier="beatcop"/>
-        <TalentOption identifier="stonewall"/>
+        <TalentOption identifier="beatcop" />
+        <TalentOption identifier="stonewall" />
       </TalentOptions>
       <TalentOptions>
-        <TalentOption identifier="crustyseaman"/>
-        <TalentOption identifier="inordinateexsanguination"/>
+        <TalentOption identifier="crustyseaman" />
+        <TalentOption identifier="inordinateexsanguination" />
       </TalentOptions>
       <TalentOptions>
-        <TalentOption identifier="implacable"/>
+        <TalentOption identifier="implacable" />
       </TalentOptions>
     </SubTree>
     <SubTree identifier="tsm_outpostsecurityofficer_gunner" type="specialization" requires="tsm_outpostsecurityofficer_primary" blocks="tsm_frogman,tsm_enforcer">
       <TalentOptions>
-        <TalentOption identifier="rifleman"/>
+        <TalentOption identifier="rifleman" />
       </TalentOptions>
       <TalentOptions>
-        <TalentOption identifier="tandemfire"/>
-        <TalentOption identifier="commando"/>
+        <TalentOption identifier="tandemfire" />
+        <TalentOption identifier="commando" />
       </TalentOptions>
       <TalentOptions>
-        <TalentOption identifier="gunrunner"/>
-        <TalentOption identifier="extrapowder"/>
+        <TalentOption identifier="gunrunner" />
+        <TalentOption identifier="extrapowder" />
       </TalentOptions>
       <TalentOptions>
-        <TalentOption identifier="warlord"/>
+        <TalentOption identifier="warlord" />
       </TalentOptions>
     </SubTree>
   </TalentTree>

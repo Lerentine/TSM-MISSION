@@ -102,7 +102,7 @@
     </ItemComponent>
   </Item>
   <Item name="at'aek ON βαD" identifier="at'aek ON βαD" subcategory="tsmmissions" category="Misc" Tags="smallitem,tsm_audio" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" scale="0.2">
-  <Price baseprice="37">
+    <Price baseprice="37">
       <Price storeidentifier="merchantoutpost" minavailable="1" />
       <Price storeidentifier="merchantcity" minavailable="1" />
       <Price storeidentifier="merchantresearch" multiplier="1" />
@@ -186,7 +186,7 @@
     </ItemComponent>
   </Item>
   <Item name="Leshphon" identifier="Leshphon" subcategory="tsmmissions" category="Misc" Tags="smallitem,tsm_audio" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" scale="0.2">
-  <Price baseprice="37">
+    <Price baseprice="37">
       <Price storeidentifier="merchantoutpost" minavailable="1" />
       <Price storeidentifier="merchantcity" minavailable="1" />
       <Price storeidentifier="merchantresearch" multiplier="1" />
@@ -204,7 +204,7 @@
     </ItemComponent>
   </Item>
   <Item name="sand dream+砂塵の彼方へ…" identifier="sz" subcategory="tsmmissions" category="Misc" Tags="smallitem,tsm_audio" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" scale="0.2">
-  <Price baseprice="37">
+    <Price baseprice="37">
       <Price storeidentifier="merchantoutpost" minavailable="1" />
       <Price storeidentifier="merchantcity" minavailable="1" />
       <Price storeidentifier="merchantresearch" multiplier="1" />

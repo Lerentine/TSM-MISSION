@@ -61,5 +61,4 @@
   <decal name="飞溅的油漆4" Aliases="" identifier="tsm_paint_4" scale="0.7" category="Decorative" tags="tsm">
     <sprite texture="%ModDir%/Map/blood.png" sourcerect="384,384,128,128" depth="0.85" origin="0.5,0.5" />
   </decal>
- 
 </prefabs>

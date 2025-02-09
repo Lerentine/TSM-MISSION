@@ -1,4 +1,5 @@
-﻿<Character SpeciesName="Corruptionmachinery" Tags="" SpeciesTranslationOverride="" DisplayName="" Group="watcher" Humanoid="False" HasInfo="False" CanInteract="False" CanClimb="True" ForceSlowClimbing="False" Husk="False" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="True" Noise="80000" Visibility="3000" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="False" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="True" HideInThermalGoggles="True" SonarDisruption="200" DistantSonarRange="5000" DisableDistance="80000" SoundInterval="40" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Character SpeciesName="Corruptionmachinery" Tags="" SpeciesTranslationOverride="" DisplayName="日令" Group="watcher" Humanoid="False" HasInfo="False" CanInteract="False" CanClimb="True" ForceSlowClimbing="False" Husk="False" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="True" Noise="80000" Visibility="3000" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="False" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="True" HideInThermalGoggles="True" SonarDisruption="200" DistantSonarRange="5000" DisableDistance="80000" SoundInterval="40" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="">
   <ragdolls folder="default" />
   <animations folder="default" />
   <damageemitter drawontop="True" Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="0.5" ScaleMax="1" VelocityMin="200" VelocityMax="300" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="2" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
@@ -6,7 +7,7 @@
   <gibemitter Particle="waterblood" AngleMin="0" AngleMax="360" ScaleMin="7" ScaleMax="15" VelocityMin="0" VelocityMax="100" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="2" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
   <gibemitter drawontop="True" Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="0.5" ScaleMax="1" VelocityMin="200" VelocityMax="700" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="20" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
   <gibemitter Particle="heavygib" AngleMin="0" AngleMax="360" ScaleMin="2" ScaleMax="4" VelocityMin="50" VelocityMax="1000" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="20" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
-  <health Vitality="7000" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0" ConstantHealthRegeneration="0" HealthRegenerationWhenEating="0" StunImmunity="True" PoisonImmunity="True" PoisonVulnerability="1" EmpVulnerability="0" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities=""></health>
+  <health Vitality="6000" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0" ConstantHealthRegeneration="0" HealthRegenerationWhenEating="0" StunImmunity="True" PoisonImmunity="True" PoisonVulnerability="1" EmpVulnerability="0" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities=""></health>
   <Inventory Slots="Any, Any,Any" AccessibleWhenAlive="False" Commonness="100">
     <Item Identifier="腐败机械" />
   </Inventory>
@@ -17,20 +18,11 @@
     <target Tag="room" State="Attack" Priority="80" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="2" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="2" CircleMaxRandomOffset="10" />
     <target Tag="sonar" State="Attack" Priority="10" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="10000" IgnoreTargetSize="False" CircleRotationSpeed="2" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="2" CircleMaxRandomOffset="10" />
   </ai>
-  <StatusEffect type="OnActive" target="NearbyCharacters" range="100000000" oneshot="true">
-    <sound gender="None" dontmuffle="True" File="%ModDir%/Character/CorruptionMachinery/cm_light.ogg" State="Attack" Range="5000" Volume="2" Tags="" />
-  </StatusEffect>
-  <StatusEffect type="OnActive" target="This">
+  <StatusEffect type="OnActive" target="This" oneshot="true">
     <Affliction identifier="tsmmission_silencers_buff" strength="1" />
   </StatusEffect>
-  <StatusEffect type="OnActive" target="NearbyCharacters" range="2000">
-    <Sound file="%ModDir%/Character/CorruptionMachinery/heartbeat.ogg" loop="true" range="6000" dontmuffle="true" volume="2" />
-  </StatusEffect>
-  <StatusEffect type="OnActive" target="NearbyCharacters" range="1000">
-    <Sound file="%ModDir%/Character/CorruptionMachinery/heavy_breathing.ogg" loop="true" range="3000" dontmuffle="true" volume="1" />
-  </StatusEffect>
   <StatusEffect type="OnActive" interval="20" target="Character">
-    <Explosion range="2600" force="1" camerashake="1" screencolor="155,0,0,150" flash="true" sparks="false" underwaterbubble="false" screencolorrange="2000" screencolorduration="2.0" ignoreCover="true">
+    <Explosion range="4000" force="1" camerashake="1" screencolor="155,0,0,150" flash="true" sparks="false" underwaterbubble="false" screencolorrange="2000" screencolorduration="2.0" ignoreCover="true">
       <Affliction identifier="tsm_zs" strength="100" />
     </Explosion>
   </StatusEffect>

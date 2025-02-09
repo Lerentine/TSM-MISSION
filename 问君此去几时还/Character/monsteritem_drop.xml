@@ -49,12 +49,11 @@
       <RequiredItem identifier="AlbinismSpineling_shell" mincondition="0.0" maxcondition="1.0" usecondition="false" />
     </Fabricate>
     <Sprite texture="%ModDir%/Character/monsteritem.png" sourcerect="860,25,141,26" depth="0.55" origin="0.5,0.5" />
-    <BrokenSprite texture="%ModDir%/Character/monsteritem.png" sourcerect="861,49,74,26" depth="0.55" origin="0.5,0.5" maxcondition="0"/>
+    <BrokenSprite texture="%ModDir%/Character/monsteritem.png" sourcerect="861,49,74,26" depth="0.55" origin="0.5,0.5" maxcondition="0" />
     <InventoryIcon texture="%ModDir%/Character/monsteritem.png" sourcerect="709,0,109,109" origin="0.5,0.5" />
     <Body width="215" height="30" density="35" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
-    <ItemContainer hideitems="true" capacity="11" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet"
-      spawnwithid="railguncanistershellpellet,railguncanistershellpellet,railguncanistershellpellet,railguncanistershellpellet,railguncanistershellpellet,railguncanistershellpellet,railguncanistershellpellet,railguncanistershellpellet,railguncanistershellpellet,railguncanistershellpellet,railguncanistershellpellet,railguncanistershellpellet,railguncanistershellpellet">
+    <ItemContainer hideitems="true" capacity="11" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet" spawnwithid="railguncanistershellpellet,railguncanistershellpellet,railguncanistershellpellet,railguncanistershellpellet,railguncanistershellpellet,railguncanistershellpellet,railguncanistershellpellet,railguncanistershellpellet,railguncanistershellpellet,railguncanistershellpellet,railguncanistershellpellet,railguncanistershellpellet,railguncanistershellpellet">
       <StatusEffect type="OnUse" target="This" condition="-100" disabledeltatime="true">
         <RequiredItem items="railguncanistershellpellet" type="Contained" />
       </StatusEffect>
@@ -75,13 +74,13 @@
         <ParticleEmitter particle="cyborgammotracer" anglemax="360" distancemax="0" particlespersecond="300" scalemultiplier="1.5,1.5" />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="This" condition="-100" setvalue="true">
-        <Spawnitem identifier="acidemitter" spawnposition="This" count="5" spread="15"/>
+        <Spawnitem identifier="acidemitter" spawnposition="This" count="5" spread="15" />
         <ParticleEmitter particle="cyborgammotracer" anglemax="360" distancemax="200" scalemultiplier="3,3" particleamount="40" />
         <Explosion range="500.0" ballastfloradamage="100" structuredamage="350" itemdamage="200" force="10.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.3" penetration="0.5">
           <Affliction identifier="explosiondamage" strength="200" />
           <Affliction identifier="burn" strength="50" />
           <Affliction identifier="stun" strength="7" />
-          <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="2000"/>
+          <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="2000" />
         </Explosion>
       </StatusEffect>
       <Holdable canbecombined="false" slots="Any,LeftHand,RightHand" holdpos="0,-15" handle1="-30,-5" holdangle="170" aimable="false" msg="ItemMsgPickUpSelect">

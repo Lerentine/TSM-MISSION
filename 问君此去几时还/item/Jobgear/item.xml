@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <!--衣服-->
-  <Item name="西服" identifier="tsm_suit_O5" category="Equipment" subcategory="tsmmissions" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true" >
+  <Item name="西服" identifier="tsm_suit_O5" category="Equipment" subcategory="tsmmissions" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true">
     <PreferredContainer primary="crewcab" />
     <Deconstruct time="10">
       <Item identifier="organicfiber" />
@@ -10,11 +10,11 @@
     <Sprite name="Captain's Uniform 3" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="244,292,126,64" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Security Officer's Uniform 1 Torso" texture="suit_[gender].png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="true" origin="0.1,0.35"/>
-      <sprite name="Security Officer's Uniform 1 Right Hand" texture="suit_[gender].png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1"/>
-      <sprite name="Security Officer's Uniform 1 Left Hand" texture="suit_[gender].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1"/>
+      <sprite name="Security Officer's Uniform 1 Torso" texture="suit_[gender].png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="true" origin="0.1,0.35" />
+      <sprite name="Security Officer's Uniform 1 Right Hand" texture="suit_[gender].png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+      <sprite name="Security Officer's Uniform 1 Left Hand" texture="suit_[gender].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
       <sprite name="Security Officer's Uniform 1 Left Lower Arm" texture="suit_[gender].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="Security Officer's Uniform 1 Right Lower Arm" texture="suit_[gender].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+      <sprite name="Security Officer's Uniform 1 Right Lower Arm" texture="suit_[gender].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Security Officer's Uniform 1 Left Upper Arm" texture="suit_[gender].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Security Officer's Uniform 1 Right Upper Arm" texture="suit_[gender].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Security Officer's Uniform 1 Waist" texture="suit_[gender].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -29,10 +29,10 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bleeding" damagemultiplier="0.85" />
     </Wearable>
   </Item>
-  <Item name="奇迹之海宪兵纠察制服" identifier="tsm_gendarmerie_uniforms" subcategory="tsmmissions" category="Equipment" tags="smallitem,clothing" fireproof="true" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true" >
+  <Item name="奇迹之海宪兵纠察制服" identifier="tsm_gendarmerie_uniforms" subcategory="tsmmissions" category="Equipment" tags="smallitem,clothing" fireproof="true" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true">
     <Fabricate suitablefabricators="fabricator" requiredtime="20">
-	  <RequiredItem identifier="organicfiber" amount="4" />
-	  <RequiredItem identifier="ballisticfiber" amount="1" />
+      <RequiredItem identifier="organicfiber" amount="4" />
+      <RequiredItem identifier="ballisticfiber" amount="1" />
     </Fabricate>
     <Deconstruct time="10">
       <RequiredItem identifier="organicfiber" amount="3" />

@@ -90,7 +90,6 @@
   <missionheader0.tsmmission26>渊面的黑暗</missionheader0.tsmmission26>
   <missionmessage0.tsmmission26>木卫二，电闪雷鸣，巨械在咆哮，防线仍在。</missionmessage0.tsmmission26>
   <missionsonarlabel.tsmmission26>T037α</missionsonarlabel.tsmmission26>
-  
   <!--新生-->
   <!-- tsmmission31 -->
   <missionname.tsmmission31>猎杀实验体003</missionname.tsmmission31>
@@ -151,7 +150,7 @@
   <missionsonarlabel.tsmmission38>白化棘刺</missionsonarlabel.tsmmission38>
   <!-- tsmmission39 -->
   <missionname.tsmmission39>那段漫漫136万里的归途</missionname.tsmmission39>
-  <missiondescription.tsmmission39>曾经充满希望的开拓计划，在地球失联后，逐渐沦为了恐惧的代名词。殖民地中的居民不得不面对越来越频繁的‘深海危机’，海底设备被未知生物摧毁，潜航器在探测任务中无故失联。人类最初试图掌控木卫二的野心，正在被这片黑暗而无垠的海洋无情吞噬。</missiondescription.tsmmission39>
+  <missiondescription.tsmmission39>深海机械的躁动，沸腾的海水，巨大能量体启动的声响...这个航道疑点重重，还请船长前去探查一番</missiondescription.tsmmission39>
   <missionsuccess.tsmmission39>太阳的来客</missionsuccess.tsmmission39>
   <missionfailure.tsmmission39>沸腾之湖</missionfailure.tsmmission39>
   <missionheader0.tsmmission39>来自人类的挣扎</missionheader0.tsmmission39>
@@ -219,7 +218,6 @@
   <missionheader0.tsmmission47>血腥屠杀</missionheader0.tsmmission47>
   <missionmessage0.tsmmission47>船员拍了一张图，这张图记录了人类最卑劣的一面，这记载着犯罪者对一个种族的谋杀....</missionmessage0.tsmmission47>
   <missionsonarlabel.tsmmission47>穿云鲸</missionsonarlabel.tsmmission47>
-  
   <!--站点-->
   <!-- tsmmission51 -->
   <missionname.tsmmission51>活骸</missionname.tsmmission51>
@@ -241,15 +239,12 @@
   <missionheader0.tsmmission53>未知下恐惧</missionheader0.tsmmission53>
   <missionmessage0.tsmmission53>躯壳下已无灵魂，但歌声仍在，她还在不停的吟唱着.....</missionmessage0.tsmmission53>
   <missionsonarlabel.tsmmission53>歌唱家</missionsonarlabel.tsmmission53>
-
-
   <missionname.tsmmission60>人人秉持正义之名</missionname.tsmmission60>
   <missiondescription.tsmmission60>奇迹之海封锁了[location1]和[location2]之间的航道。而此刻你准备趟这趟浑水。</missiondescription.tsmmission60>
   <missionsuccess.tsmmission60>生命的消散，就如同水消失在水中。</missionsuccess.tsmmission60>
   <missionheader0.tsmmission60>不要温和的走入那个良夜</missionheader0.tsmmission60>
   <missionmessage0.tsmmission60>“我所见过的事物，你们人类绝对无法置信。我目睹了战舰再猎户座的段沿起火燃烧，我看着C射线闪耀在唐怀瑟之门的黑暗中。而所有的时刻终会消逝，随着时间...就像眼泪，消失在海中”</missionmessage0.tsmmission60>
   <missionsonarlabel.tsmmission60>HTC24—红松石</missionsonarlabel.tsmmission60>
-
   <missionname.tsmattack>暗夜截杀</missionname.tsmattack>
   <missionheader0.tsmattack>开始行动，交火规则：格杀勿论</missionheader0.tsmattack>
   <missionmessage0.tsmattack>这个世界不缺少死亡</missionmessage0.tsmattack>
@@ -260,138 +255,115 @@
   <missionheader0.tsmmission_origin1>猎杀结束</missionheader0.tsmmission_origin1>
   <missionmessage0.tsmmission_origin1>恭喜你完成任务，悬赏奖励会在你到达下个站点后发送到你账户</missionmessage0.tsmmission_origin1>
   <missionsonarlabel.tsmmission_origin1>悬赏目标</missionsonarlabel.tsmmission_origin1>
-
   <missionname.tsmmission_origin2>赏金任务：猎杀女妖</missionname.tsmmission_origin2>
   <missiondescription.tsmmission_origin2>有一只女妖把[location1]和[location2]之间航道内当家了，不断骚扰附近站点和来往船只，所以我们出价[reward]mk买下这个女妖的头</missiondescription.tsmmission_origin2>
   <missionsuccess.tsmmission_origin2>任务完成</missionsuccess.tsmmission_origin2>
   <missionheader0.tsmmission_origin2>猎杀结束</missionheader0.tsmmission_origin2>
   <missionmessage0.tsmmission_origin2>恭喜你完成任务，钱会在你到达下个站点后发送到你账户</missionmessage0.tsmmission_origin2>
   <missionsonarlabel.tsmmission_origin2>悬赏目标</missionsonarlabel.tsmmission_origin2>
-
   <missionname.tsmmission_origin3>赏金任务：猎杀捕勾兽</missionname.tsmmission_origin3>
   <missiondescription.tsmmission_origin3>有一只外来捕勾占领了这个航道的深渊，让我们深渊开采作业难以进行，所以我们承诺如果有谁击杀了这只捕勾兽，将获得[reward]mk奖励</missiondescription.tsmmission_origin3>
   <missionsuccess.tsmmission_origin3>任务完成</missionsuccess.tsmmission_origin3>
   <missionheader0.tsmmission_origin3>猎杀结束</missionheader0.tsmmission_origin3>
   <missionmessage0.tsmmission_origin3>恭喜你完成任务，[reward]mk会在你到达下个站点后发送到你账户</missionmessage0.tsmmission_origin3>
   <missionsonarlabel.tsmmission_origin3>悬赏目标</missionsonarlabel.tsmmission_origin3>
-
   <missionname.tsmmission_origin4>赏金任务：猎杀赛博蠕虫</missionname.tsmmission_origin4>
   <missiondescription.tsmmission_origin4>我们的深渊勘探队在作业时，检测到附近类似于赛博蠕虫的声纳波形，所以他们发出悬赏，出价[reward]mk击杀这只赛博蠕虫，以保证深渊勘探的安全性</missiondescription.tsmmission_origin4>
   <missionsuccess.tsmmission_origin4>任务完成</missionsuccess.tsmmission_origin4>
   <missionheader0.tsmmission_origin4>猎杀结束</missionheader0.tsmmission_origin4>
   <missionmessage0.tsmmission_origin4>恭喜你完成任务，[reward]mk会在你到达下个站点后发送到你账户，我们将继续在深渊进行勘探</missionmessage0.tsmmission_origin4>
   <missionsonarlabel.tsmmission_origin4>悬赏目标</missionsonarlabel.tsmmission_origin4>
-
   <missionname.tsmmission_origin5>赏金任务：猎杀巨型脊刺群</missionname.tsmmission_origin5>
   <missiondescription.tsmmission_origin5>航道内的船只频繁失联，在查明原因后发现，原来是一群巨型棘刺从其他海域过来安家。这对我们航道安全产生了严重的危害，所以这次目标是这群棘刺</missiondescription.tsmmission_origin5>
   <missionsuccess.tsmmission_origin5>任务完成</missionsuccess.tsmmission_origin5>
   <missionheader0.tsmmission_origin5>猎杀结束</missionheader0.tsmmission_origin5>
   <missionmessage0.tsmmission_origin5>恭喜你完成任务，[reward]mk会在你到达下个站点后发送到你账户，航道内再次进入平静的状态</missionmessage0.tsmmission_origin5>
   <missionsonarlabel.tsmmission_origin5>悬赏目标</missionsonarlabel.tsmmission_origin5>
-
   <missionname.tsmmission_origin6>赏金任务：猎杀毒蟒群</missionname.tsmmission_origin6>
   <missiondescription.tsmmission_origin6>我们医院突然接到一批窒死中毒患者，根据抢救过来的船员回答，是在航行途中遭遇了毒蟒的攻击，为了大家安全，这群毒蟒必须死</missiondescription.tsmmission_origin6>
   <missionsuccess.tsmmission_origin6>任务完成</missionsuccess.tsmmission_origin6>
   <missionheader0.tsmmission_origin6>猎杀结束</missionheader0.tsmmission_origin6>
   <missionmessage0.tsmmission_origin6>恭喜你完成任务，[reward]mk会在你到达下个站点后发送到你账户，我们不会再中窒死毒了</missionmessage0.tsmmission_origin6>
   <missionsonarlabel.tsmmission_origin6>悬赏目标</missionsonarlabel.tsmmission_origin6>
-
   <missionname.tsmmission_origin7>赏金任务：迅猛龙阻击战</missionname.tsmmission_origin7>
   <missiondescription.tsmmission_origin7>大量迅猛龙霸占了原本安全的航道，并且威胁了周围站点安全，所以我们出价[reward]mk招募可以阻击这群迅猛龙的船队</missiondescription.tsmmission_origin7>
   <missionsuccess.tsmmission_origin7>任务完成</missionsuccess.tsmmission_origin7>
   <missionheader0.tsmmission_origin7>猎杀结束</missionheader0.tsmmission_origin7>
   <missionmessage0.tsmmission_origin7>恭喜你完成任务，[reward]mk会在你到达下个站点后发送到你账户，阻击战完美完成</missionmessage0.tsmmission_origin7>
   <missionsonarlabel.tsmmission_origin7>悬赏目标</missionsonarlabel.tsmmission_origin7>
-
   <missionname.tsmmission_origin8>赏金任务：黑色摩洛克歼灭战</missionname.tsmmission_origin8>
   <missiondescription.tsmmission_origin8>有群不长眼的船员在路过[location1]和[location2]的航道时，杀了几只摩洛克宝宝。这下一群黑色摩洛克占领了航道，没有办法只能征召勇士来帮忙解围</missiondescription.tsmmission_origin8>
   <missionsuccess.tsmmission_origin8>任务完成</missionsuccess.tsmmission_origin8>
   <missionheader0.tsmmission_origin8>猎杀结束</missionheader0.tsmmission_origin8>
   <missionmessage0.tsmmission_origin8>恭喜你完成任务，[reward]mk会在你到达下个站点后发送到你账户，黑色摩洛克全部歼灭</missionmessage0.tsmmission_origin8>
   <missionsonarlabel.tsmmission_origin8>悬赏目标</missionsonarlabel.tsmmission_origin8>
-
   <missionname.tsmmission_origin9>赏金任务：脱粒机族群剿灭战</missionname.tsmmission_origin9>
   <missiondescription.tsmmission_origin9>兹有一群虎尾煞盘踞在航道内，他们袭击过往附近站点，摧毁过往船只。之前有数名勇士前往讨伐，然皆未归。所以成功剿灭这群虎尾煞并安全返航的船队，可前往下个站点领取奖励</missiondescription.tsmmission_origin9>
   <missionsuccess.tsmmission_origin9>任务完成</missionsuccess.tsmmission_origin9>
   <missionheader0.tsmmission_origin9>猎杀结束</missionheader0.tsmmission_origin9>
   <missionmessage0.tsmmission_origin9>恭喜你完成任务，[reward]mk会在你到达下个站点后发送到你账户，虎尾煞族群没有逃过剿灭</missionmessage0.tsmmission_origin9>
   <missionsonarlabel.tsmmission_origin9>悬赏目标</missionsonarlabel.tsmmission_origin9>
-
   <missionname.tsmmission_origin10>赏金任务：异星人的宴请</missionname.tsmmission_origin10>
   <missiondescription.tsmmission_origin10>一支遗迹勘探队在勘探一座遗迹的时候，不小心放出几只守卫，这些守卫造成了严重的安全事故，所以我们需要有人去善后</missiondescription.tsmmission_origin10>
   <missionsuccess.tsmmission_origin10>任务完成</missionsuccess.tsmmission_origin10>
   <missionheader0.tsmmission_origin10>猎杀结束</missionheader0.tsmmission_origin10>
   <missionmessage0.tsmmission_origin10>恭喜你完成任务，[reward]mk会在你到达下个站点后发送到你账户，但严格来说我们才是异星人</missionmessage0.tsmmission_origin10>
   <missionsonarlabel.tsmmission_origin10>悬赏目标</missionsonarlabel.tsmmission_origin10>
-
   <missionname.tsmmission_origin11>赏金任务：洞穴里的野蛮人</missionname.tsmmission_origin11>
   <missiondescription.tsmmission_origin11>这次是画皮教派的发放的悬赏，他们有一些激进的成员在服用特制画皮卵后，抢劫了教派的画皮箱，并且逃到了一个洞穴内。所以教派希望有人去帮忙清理门户，并且摧毁那几个画皮箱</missiondescription.tsmmission_origin11>
   <missionsuccess.tsmmission_origin11>任务完成</missionsuccess.tsmmission_origin11>
   <missionheader0.tsmmission_origin11>猎杀结束</missionheader0.tsmmission_origin11>
   <missionmessage0.tsmmission_origin11>恭喜你完成任务，[reward]mk会在你到达下个站点后发送到你账户，这强壮的体魄，低下的智力，到底是飞升成功还是失败了</missionmessage0.tsmmission_origin11>
   <missionsonarlabel.tsmmission_origin11>悬赏目标</missionsonarlabel.tsmmission_origin11>
-
   <missionname.tsmmission_origin13>运送衰变物质</missionname.tsmmission_origin13>
   <missiondescription.tsmmission_origin13>有几箱正在衰变的急需运往[location2]，注意！你只有十分钟的时间</missiondescription.tsmmission_origin13>
   <missionsuccess.tsmmission_origin13>顺风快递</missionsuccess.tsmmission_origin13>
   <missionheader0.tsmmission_origin13>顺风快递</missionheader0.tsmmission_origin13>
   <missionmessage0.tsmmission_origin13>与死神赛跑</missionmessage0.tsmmission_origin13>
-
   <missionname.tsmmission_origin14>运送皮革原料</missionname.tsmmission_origin14>
   <missiondescription.tsmmission_origin14>[location2]中的一个富豪预定了一些高等皮革，这些皮革很珍贵，并且不能碰到水，碰到水就会坏，所以千万要小心运输</missiondescription.tsmmission_origin14>
   <missionsuccess.tsmmission_origin14>保质保量完成任务</missionsuccess.tsmmission_origin14>
   <missionheader0.tsmmission_origin14>最好的快递服务</missionheader0.tsmmission_origin14>
   <missionmessage0.tsmmission_origin14>保质保量完成任务</missionmessage0.tsmmission_origin14>
-
   <missionname.tsmmission_origin15>运送被抓捕的降临派成员</missionname.tsmmission_origin15>
   <missiondescription.tsmmission_origin15>奇迹之海逮捕了几名降临派的成员，现在需要把他们运到下个站点进行审问</missiondescription.tsmmission_origin15>
   <missionsuccess.tsmmission_origin15>成员一个都没少</missionsuccess.tsmmission_origin15>
   <missionheader0.tsmmission_origin15>任务完成</missionheader0.tsmmission_origin15>
   <missionmessage0.tsmmission_origin15>成员一个都没少</missionmessage0.tsmmission_origin15>
-
   <missionname.tsmmission_origin16>希洛克的宝藏</missionname.tsmmission_origin16>
   <missiondescription.tsmmission_origin16>一位神秘人委托我们运输一个包裹给另一个神秘人，并且他还透露这个包裹就是希洛克的宝藏（据说希洛克的宝藏，什么都有可能分解出来，不过全凭运气）</missiondescription.tsmmission_origin16>
   <missionsuccess.tsmmission_origin16>诚信至上</missionsuccess.tsmmission_origin16>
   <missionheader0.tsmmission_origin16>任务完成</missionheader0.tsmmission_origin16>
   <missionmessage0.tsmmission_origin16>诚信至上</missionmessage0.tsmmission_origin16>
-
   <missionname.tsmmission_origin17>运送材料</missionname.tsmmission_origin17>
   <missiondescription.tsmmission_origin17>奇迹之海委托我们运输一批矿石原矿。注意点要是私吞被奇迹之海发现了可是会被罚款的</missiondescription.tsmmission_origin17>
   <missionsuccess.tsmmission_origin17>诚信至上</missionsuccess.tsmmission_origin17>
   <missionheader0.tsmmission_origin17>任务完成</missionheader0.tsmmission_origin17>
   <missionmessage0.tsmmission_origin17>诚信至上</missionmessage0.tsmmission_origin17>
   <eventtext.tsmmission.mcrate_replenishment>矿石物资箱的数量跟清单上数量不一致，你的话语不可信任</eventtext.tsmmission.mcrate_replenishment>
-
-
   <missionname.tsmmission_origin18>运送医疗物资</missionname.tsmmission_origin18>
   <missiondescription.tsmmission_origin18>[location2]医疗物资紧缺，他们从奇迹之海订购了一批医疗物资，急需运送</missiondescription.tsmmission_origin18>
   <missionsuccess.tsmmission_origin18>诚信至上</missionsuccess.tsmmission_origin18>
   <missionheader0.tsmmission_origin18>任务完成</missionheader0.tsmmission_origin18>
   <missionmessage0.tsmmission_origin18>诚信至上</missionmessage0.tsmmission_origin18>
   <eventtext.tsmmission.yl_replenishment>你私吞医疗物资，导致前线的战士无法的得到及时的治疗</eventtext.tsmmission.yl_replenishment>
-
   <missionname.tsmmission_origin19>运送奇迹之海士兵</missionname.tsmmission_origin19>
   <missiondescription.tsmmission_origin19>奇迹之海有一个小队的人，希望可以乘坐你们的船前往下个站点</missiondescription.tsmmission_origin19>
   <missionsuccess.tsmmission_origin19>安全抵达</missionsuccess.tsmmission_origin19>
   <missionheader0.tsmmission_origin19></missionheader0.tsmmission_origin19>
   <missionfailure.tsmmission_origin19>谋杀罪</missionfailure.tsmmission_origin19>
-
   <missionname.tsmmission_origin20>赏金任务：爬行者歼灭战</missionname.tsmmission_origin20>
   <missiondescription.tsmmission_origin20>在航道内有一大群爬行者，我们多次驱赶，但效果甚微。他们连站点安保力量都不怕，这已经不是一般的爬行者了，必须要出重拳</missiondescription.tsmmission_origin20>
   <missionsuccess.tsmmission_origin20>爬行者督促潜艇驾驶，训练船员的射击技巧，真是煞费苦心</missionsuccess.tsmmission_origin20>
   <missionheader0.tsmmission_origin20>任务完成</missionheader0.tsmmission_origin20>
   <missionmessage0.tsmmission_origin20>爬行者督促潜艇驾驶，训练船员的射击技巧，真是煞费苦心</missionmessage0.tsmmission_origin20>
   <missionsonarlabel.tsmmission_origin20>悬赏目标</missionsonarlabel.tsmmission_origin20>
-
   <missionname.tsmmission_origin21>赏金任务：再见毁灭蠕虫</missionname.tsmmission_origin21>
   <missiondescription.tsmmission_origin21>沉寂在深渊的毁灭蠕虫再次活跃起来，周围站点都发布了紧急状态通知，搞得大家人心惶惶，所以有人出[reward]mk悬赏毁灭蠕虫</missiondescription.tsmmission_origin21>
   <missionsuccess.tsmmission_origin21>希望不要再醒来了</missionsuccess.tsmmission_origin21>
   <missionheader0.tsmmission_origin21>任务完成</missionheader0.tsmmission_origin21>
   <missionmessage0.tsmmission_origin21>再次沉睡</missionmessage0.tsmmission_origin21>
   <missionsonarlabel.tsmmission_origin21>悬赏目标</missionsonarlabel.tsmmission_origin21>
-
-
-
   <!--名字-->
   <character.Experiment_T044Y>大地鬼哭</character.Experiment_T044Y>
   <character.embi_009>荒疫</character.embi_009>
@@ -405,7 +377,6 @@
   <character.巨型女妖>巨妖</character.巨型女妖>
   <character.微观捕勾兽>微观捕勾兽</character.微观捕勾兽>
   <character.微观捕勾兽模板>微观捕勾兽</character.微观捕勾兽模板>
-  
   <character.FractalTwin_Destruction>分型双子-毁灭</character.FractalTwin_Destruction>
   <character.FractalTwin_Sabotage>分型双子-破坏</character.FractalTwin_Sabotage>
   <character.Shadowreave>掠影者</character.Shadowreave>
@@ -420,7 +391,6 @@
   <character.tsm_portalguardian_cave>洞穴清理者</character.tsm_portalguardian_cave>
   <character.tsm_Guardianrepairbot>修复者</character.tsm_Guardianrepairbot>
   <character.tsm_portalguardian>精英守卫者</character.tsm_portalguardian>
-  
   <!--恶疫-->
   <character.boneeater>吃骨者</character.boneeater>
   <character.humaneyi>疫病体</character.humaneyi>
@@ -431,40 +401,40 @@
   <character.Eyi_hugger>抱身者</character.Eyi_hugger>
   <character.AlbinismMoloch>血肉运载体</character.AlbinismMoloch>
   <character.eyinovariant>掠夺体</character.eyinovariant>
-
- <!--奇迹之海-->
- <character.corrode>锈蚀</character.corrode>
- <character.MobileTaskForce>先进作战机动先遣队</character.MobileTaskForce>
- <character.RiotSquad>先进作战机动防暴队</character.RiotSquad>
- <character.sundownm>日暮山小队</character.sundownm>
- <character.Ship>HTC24—红松石</character.Ship>
- <character.Ship1>HTC24—红松石</character.Ship1>
- <character.Ship2>HTC24—红松石</character.Ship2>
- <character.Ship3>HTC24—红松石</character.Ship3>
- <character.sight>逐霄登陆舱</character.sight>
- <character.sight1>逐霄登陆舱</character.sight1>
- <character.sight2>逐霄登陆舱</character.sight2>
- <character.sight3>逐霄登陆舱</character.sight3>
- <character.pgc>奇迹之海重装护卫</character.pgc>
- <!--联盟-->
- <character.QuickReactionForce>联盟快速反应部队</character.QuickReactionForce>
- <character.QuickReactionForce1>联盟快速反应部队</character.QuickReactionForce1>
- <!--降临派-->
- <character.adventists_heavy>降临派重装头目</character.adventists_heavy>
- <character.adventists>降临派武装士兵</character.adventists>
- <!--scp-->
- <character.Facility_security>设施安保</character.Facility_security>
- <character.Facility_security_heavy>设施重装安保</character.Facility_security_heavy>
- <character.Facility_security_outside>设施外围安保</character.Facility_security_outside>
- <!--ai-->
- <charactername.tsm_outpost_combat_npc_mission>奇迹之海士兵</charactername.tsm_outpost_combat_npc_mission>
- <charactername.tsm_adventists_prisoner>降临派被俘虏的成员</charactername.tsm_adventists_prisoner>
- <!--物品-->
- <entityname.tsm_mcrate_time1>衰变物质</entityname.tsm_mcrate_time1>
- <entitydescription.tsm_mcrate_time1>一箱衰变物资，保质期只有十分钟</entitydescription.tsm_mcrate_time1>
- <entityname.tsm_mcrate_water1>箱装皮革</entityname.tsm_mcrate_water1>
- <entitydescription.tsm_mcrate_water1>一整箱的高质量皮革，如果进水了，就会导致损坏，小心点，这东西普通人可赔不起</entitydescription.tsm_mcrate_water1>
- <entityname.tsm_mcrate_shillok>希洛克的宝藏</entityname.tsm_mcrate_shillok>
- <entitydescription.tsm_mcrate_shillok>据说这个口袋里面什么都可能有，不妨分解出来看看，你能得到什么？</entitydescription.tsm_mcrate_shillok>
- 
+  <character.eyichimeras>嵌合兽</character.eyichimeras>
+  <character.eyirunner>裂体</character.eyirunner>
+  <!--奇迹之海-->
+  <character.corrode>锈蚀</character.corrode>
+  <character.MobileTaskForce>先进作战机动先遣队</character.MobileTaskForce>
+  <character.RiotSquad>先进作战机动防暴队</character.RiotSquad>
+  <character.sundownm>日暮山小队</character.sundownm>
+  <character.Ship>HTC24—红松石</character.Ship>
+  <character.Ship1>HTC24—红松石</character.Ship1>
+  <character.Ship2>HTC24—红松石</character.Ship2>
+  <character.Ship3>HTC24—红松石</character.Ship3>
+  <character.sight>逐霄登陆舱</character.sight>
+  <character.sight1>逐霄登陆舱</character.sight1>
+  <character.sight2>逐霄登陆舱</character.sight2>
+  <character.sight3>逐霄登陆舱</character.sight3>
+  <character.pgc>奇迹之海重装护卫</character.pgc>
+  <!--联盟-->
+  <character.QuickReactionForce>联盟快速反应部队</character.QuickReactionForce>
+  <character.QuickReactionForce1>联盟快速反应部队</character.QuickReactionForce1>
+  <!--降临派-->
+  <character.adventists_heavy>降临派重装头目</character.adventists_heavy>
+  <character.adventists>降临派武装士兵</character.adventists>
+  <!--scp-->
+  <character.Facility_security>设施安保</character.Facility_security>
+  <character.Facility_security_heavy>设施重装安保</character.Facility_security_heavy>
+  <character.Facility_security_outside>设施外围安保</character.Facility_security_outside>
+  <!--ai-->
+  <charactername.tsm_outpost_combat_npc_mission>奇迹之海士兵</charactername.tsm_outpost_combat_npc_mission>
+  <charactername.tsm_adventists_prisoner>降临派被俘虏的成员</charactername.tsm_adventists_prisoner>
+  <!--物品-->
+  <entityname.tsm_mcrate_time1>衰变物质</entityname.tsm_mcrate_time1>
+  <entitydescription.tsm_mcrate_time1>一箱衰变物资，保质期只有十分钟</entitydescription.tsm_mcrate_time1>
+  <entityname.tsm_mcrate_water1>箱装皮革</entityname.tsm_mcrate_water1>
+  <entitydescription.tsm_mcrate_water1>一整箱的高质量皮革，如果进水了，就会导致损坏，小心点，这东西普通人可赔不起</entitydescription.tsm_mcrate_water1>
+  <entityname.tsm_mcrate_shillok>希洛克的宝藏</entityname.tsm_mcrate_shillok>
+  <entitydescription.tsm_mcrate_shillok>据说这个口袋里面什么都可能有，不妨分解出来看看，你能得到什么？</entitydescription.tsm_mcrate_shillok>
 </infotexts>

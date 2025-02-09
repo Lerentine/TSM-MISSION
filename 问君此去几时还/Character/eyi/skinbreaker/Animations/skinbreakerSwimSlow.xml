@@ -1,23 +1,2 @@
-﻿<beastSwimSlow
-  footrotatestrength="25"
-  LegMoveAmount="1.1041081"
-  LegCycleLength="20"
-  FootAngle="0"
-  HandMoveAmount="1.4630843,2.104558"
-  HandCycleSpeed="5.8523374"
-  HandMoveOffset="0,0"
-  ArmMoveStrength="1"
-  HandMoveStrength="0.10000002"
-  FixedHeadAngle="True"
-  SteerTorque="25"
-  LegTorque="25"
-  AnimationType="SwimSlow"
-  MovementSpeed="1.2015755"
-  CycleSpeed="0.50157535"
-  HeadAngle="NaN"
-  TorsoAngle="NaN"
-  HeadTorque="50"
-  TorsoTorque="50"
-  FootTorque="25"
-  ArmIKStrength="1"
-  HandIKStrength="1" />
+﻿<?xml version="1.0" encoding="utf-8"?>
+<beastSwimSlow footrotatestrength="25" LegMoveAmount="1.1041081" LegCycleLength="20" FootAngle="0" HandMoveAmount="1.4630843,2.104558" HandCycleSpeed="5.8523374" HandMoveOffset="0,0" ArmMoveStrength="1" HandMoveStrength="0.10000002" FixedHeadAngle="True" SteerTorque="25" LegTorque="25" AnimationType="SwimSlow" MovementSpeed="1.2015755" CycleSpeed="0.50157535" HeadAngle="NaN" TorsoAngle="NaN" HeadTorque="50" TorsoTorque="50" FootTorque="25" ArmIKStrength="1" HandIKStrength="1" />

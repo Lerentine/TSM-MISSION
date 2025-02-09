@@ -191,7 +191,7 @@
     <aitarget maxsightrange="1500" />
   </Item>
   <Item name="重型铅铸潜水服" description="这件防护服在战斗中损坏了，很多功能都失效了" identifier="tsm_hdlcsuits" subcategory="tsmmissions" tags="diving,deepdiving,divinggear_wearableindoors" hideinmenus="true" allowasextracargo="false" scale="0.5" fireproof="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="0" cargocontaineridentifier="" inventoryiconcolor="136,142,166,255" spritecolor="136,142,166">
-   <Deconstruct time="25">
+    <Deconstruct time="25">
       <Item identifier="lead" amount="4" />
       <Item identifier="steel" />
     </Deconstruct>
@@ -201,7 +201,7 @@
     <ContainedSprite name="Heavy duty lead cast suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/Character/war/icon.png" sourcerect="202,590,77,206" depth="0.55" origin="-0.12,-0.13" />
     <ContainedSprite name="Heavy duty lead cast suit In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/Character/war/Heavydutyleadcastdivingsuits_item.png" sourcerect="0,193,230,63" depth="0.55" origin="0.6,0.5" />
     <Body radius="45" width="34" density="20" />
-     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
+    <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
       <sprite name="Heavy duty lead cast suit Helmet Wearable" texture="%ModDir%/Character/war/icon.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="true" hideotherwearables="true" sourcerect="158,19,126,110" origin="0.5,0.5">
         <LightComponent range="200.0" lightcolor="250,50,50,255" powerconsumption="10" IsOn="true">
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="0.1" setvalue="true">
@@ -225,9 +225,9 @@
       <sprite name="Heavy duty lead cast suit Left Shoe" texture="%ModDir%/Character/war/Heavydutyleadcastdivingsuits.png" limb="LeftFoot" sound="%ModDir%/ogg/tsm_footstep_heavy.ogg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Heavy duty lead cast suit Right Shoe" texture="%ModDir%/Character/war/Heavydutyleadcastdivingsuits.png" limb="RightFoot" sound="%ModDir%/ogg/tsm_footstep_heavy.ogg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Hide Boobs" texture="%ModDir%/Character/war/1.png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" >
-      <StatValue stattype="FlowResistance" value="1" />
-      <Sound file="%ModDir%/Character/war/BreathSuitLoop.ogg" range="800" volume="0.6" loop="true" />
+      <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false">
+        <StatValue stattype="FlowResistance" value="1" />
+        <Sound file="%ModDir%/Character/war/BreathSuitLoop.ogg" range="800" volume="0.6" loop="true" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" ObstructVision="true" PropulsionSpeedMultiplier="0.9" setvalue="true" disabledeltatime="true">
         <TriggerAnimation Type="Walk" path="Content/Characters/Human/Animations/HumanWalkDivingSuit.xml" />
@@ -279,7 +279,7 @@
     <ContainedSprite name="orangeconstant Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/Character/war/icon.png" sourcerect="306,589,82,209" depth="0.55" origin="-0.12,-0.14" />
     <ContainedSprite name="orangeconstant In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/Character/war/orangeconstant_item.png" sourcerect="0,182,252,74" depth="0.55" origin="0.6,0.5" />
     <Body radius="45" width="34" density="20" />
-     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
+    <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
       <sprite name="orangeconstant Helmet Wearable" texture="%ModDir%/Character/war/icon.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="false" scale="0.95" hideotherwearables="true" hidelimb="true" sourcerect="527,151,110,106" origin="0.5,0.65">
         <LightComponent range="200.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="0.1" setvalue="true">
@@ -361,7 +361,7 @@
     <Sprite name="rz Exosuit Item" texture="%ModDir%/Character/war/rz_beta2.png" sourcerect="7,12,237,414" depth="0.55" origin="0.5,0.48" />
     <Body width="189" height="400" density="15" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select" allowusewhenworn="true">
-      <sprite name="rz Exosuit Helmet Wearable" texture="%ModDir%/Character/war/rz_pirent.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hideotherwearables="true" hidewearablesoftype="" sourcerect="0,0,1,1" origin="0.5,0.5"/>
+      <sprite name="rz Exosuit Helmet Wearable" texture="%ModDir%/Character/war/rz_pirent.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hideotherwearables="true" hidewearablesoftype="" sourcerect="0,0,1,1" origin="0.5,0.5" />
       <sprite name="rz Exosuit Torso" texture="%ModDir%/Character/war/rz_pirent.png" limb="Torso" hidelimb="true" scale="0.6" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.7" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="22,13,169,200">
         <LightComponent LightColor="150,150,150,255" range="1000" powerconsumption="10" IsOn="true" pulsefrequency="0.1" pulseamount="0.5">
           <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="2.0,4.0" />
@@ -372,7 +372,7 @@
       <sprite name="rz Exosuit Right Upper Arm" texture="%ModDir%/Character/war/rz_pirent.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.7" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="326,1,80,108" />
       <sprite name="rz Exosuit Left Upper Arm" texture="%ModDir%/Character/war/rz_pirent.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.7" inheritsourcerect="false" SourceRect="436,1,76,104" />
       <sprite name="rz Exosuit Right Forearm" texture="%ModDir%/Character/war/rz_pirent.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.44,0.4" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="333,119,71,127" />
-      <sprite name="rz Exosuit Left Forearm" texture="%ModDir%/Character/war/rz_pirent.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.65" inheritsourcerect="false" SourceRect="443,119,69,87"  />
+      <sprite name="rz Exosuit Left Forearm" texture="%ModDir%/Character/war/rz_pirent.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.65" inheritsourcerect="false" SourceRect="443,119,69,87" />
       <sprite name="rz Exosuit Waist" texture="%ModDir%/Character/war/rz_pirent.png" limb="Waist" hidelimb="true" scale="1.2" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.52,0.9" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="168,271,142,65" />
       <sprite name="rz Exosuit Right Thigh" texture="%ModDir%/Character/war/rz_pirent.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.75" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="4,234,111,130" />
       <sprite name="rz Exosuit Left Thigh" texture="%ModDir%/Character/war/rz_pirent.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.75" inheritsourcerect="false" sourcerect="4,234,111,130" />
@@ -382,11 +382,11 @@
       <sprite name="rz Exosuit Right Shoe" texture="%ModDir%/Character/war/rz_pirent.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="false" inheritorigin="false" origin="0.5,0.63" inheritsourcerect="false" scale="0.7" sourcerect="373,332,108,43" />
       <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
       <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="10000.0" SpeedMultiplier="0.7" PropulsionSpeedMultiplier="0.6" setvalue="true" disabledeltatime="true">
-        <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="500" loop="true"/>
-        <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="500" loop="true"/>
+        <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="500" loop="true" />
+        <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="500" loop="true" />
         <TriggerAnimation Type="Walk" FileName="HumanWalkExosuit" priority="1" ExpectedSpecies="Human" />
         <TriggerAnimation Type="Run" FileName="HumanRunExosuit" priority="1" ExpectedSpecies="Human" />
-      </StatusEffect> 
+      </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" OxygenAvailable="1000.0" Condition="-0.15" comparison="and">
         <Conditional IsDead="false" />
         <Conditional IsHuman="true" />
@@ -399,8 +399,8 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.3" damagesound="" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="stun" damagemultiplier="0.3" damagesound="LimbArmor"/>
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.5" damagesound="LimbArmor"/>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="stun" damagemultiplier="0.3" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.5" damagesound="LimbArmor" />
       <StatValue stattype="FlowResistance" value="1" />
     </Wearable>
     <aitarget maxsightrange="1500" />
@@ -416,7 +416,7 @@
     <Sprite name="rz Exosuit Item" texture="%ModDir%/Character/war/rz_beta2.png" sourcerect="277,25,213,405" depth="0.55" origin="0.5,0.48" />
     <Body width="189" height="400" density="15" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select" allowusewhenworn="true">
-      <sprite name="rz Exosuit Helmet Wearable" texture="%ModDir%/Character/war/rz_2b.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hideotherwearables="true" hidewearablesoftype="" sourcerect="0,0,1,1" origin="0.5,0.5"/>
+      <sprite name="rz Exosuit Helmet Wearable" texture="%ModDir%/Character/war/rz_2b.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hideotherwearables="true" hidewearablesoftype="" sourcerect="0,0,1,1" origin="0.5,0.5" />
       <sprite name="rz Exosuit Torso" texture="%ModDir%/Character/war/rz_2b.png" limb="Torso" hidelimb="true" scale="0.6" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.7" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="22,13,169,200">
         <LightComponent LightColor="150,150,150,255" range="1000" powerconsumption="10" IsOn="true" pulsefrequency="0.1" pulseamount="0.5">
           <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="2.0,4.0" />
@@ -427,7 +427,7 @@
       <sprite name="rz Exosuit Right Upper Arm" texture="%ModDir%/Character/war/rz_2b.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.7" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="326,1,80,108" />
       <sprite name="rz Exosuit Left Upper Arm" texture="%ModDir%/Character/war/rz_2b.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.7" inheritsourcerect="false" SourceRect="436,1,76,104" />
       <sprite name="rz Exosuit Right Forearm" texture="%ModDir%/Character/war/rz_2b.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.44,0.4" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="333,119,71,127" />
-      <sprite name="rz Exosuit Left Forearm" texture="%ModDir%/Character/war/rz_2b.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.65" inheritsourcerect="false" SourceRect="443,119,69,87"  />
+      <sprite name="rz Exosuit Left Forearm" texture="%ModDir%/Character/war/rz_2b.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.46,0.65" inheritsourcerect="false" SourceRect="443,119,69,87" />
       <sprite name="rz Exosuit Waist" texture="%ModDir%/Character/war/rz_2b.png" limb="Waist" hidelimb="true" scale="1.2" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.52,0.9" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="168,271,142,65" />
       <sprite name="rz Exosuit Right Thigh" texture="%ModDir%/Character/war/rz_2b.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.75" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="4,234,111,130" />
       <sprite name="rz Exosuit Left Thigh" texture="%ModDir%/Character/war/rz_2b.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.75" inheritsourcerect="false" sourcerect="4,234,111,130" />
@@ -437,11 +437,11 @@
       <sprite name="rz Exosuit Right Shoe" texture="%ModDir%/Character/war/rz_2b.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="false" inheritorigin="false" origin="0.5,0.63" inheritsourcerect="false" scale="0.7" sourcerect="373,332,108,43" />
       <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
       <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="10000.0" SpeedMultiplier="0.6" PropulsionSpeedMultiplier="0.7" setvalue="true" disabledeltatime="true">
-        <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="500" loop="true"/>
-        <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="500" loop="true"/>
+        <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="500" loop="true" />
+        <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="500" loop="true" />
         <TriggerAnimation Type="Walk" FileName="HumanWalkExosuit" priority="1" ExpectedSpecies="Human" />
         <TriggerAnimation Type="Run" FileName="HumanRunExosuit" priority="1" ExpectedSpecies="Human" />
-      </StatusEffect> 
+      </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" OxygenAvailable="1000.0" Condition="-0.15" comparison="and">
         <Conditional IsDead="false" />
         <Conditional IsHuman="true" />
@@ -454,8 +454,8 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.4" damagesound="" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.5" damagesound="LimbArmor"/>
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="stun" damagemultiplier="0.2" damagesound="LimbArmor"/>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.5" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="stun" damagemultiplier="0.2" damagesound="LimbArmor" />
       <StatValue stattype="FlowResistance" value="1" />
     </Wearable>
     <aitarget maxsightrange="1500" />
@@ -479,7 +479,7 @@
       <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
       <sprite name="advanced combat Helmet" texture="%ModDir%/Character/war/icon.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="False" hidewearablesoftype="Hair" sourcerect="520,18,127,117" origin="0.44,0.61"></sprite>
     </Wearable>
- </Item>
+  </Item>
   <Item name="先进作战头盔" identifier="tsm_advancedcombat_helmet_mask" subcategory="tsmmissions" hideinmenus="true" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing" description="" impactsoundtag="impact_metal_heavy" scale="0.26">
     <Deconstruct time="10">
       <Item identifier="ballisticfiber" />
@@ -512,7 +512,7 @@
       <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.7" deflectprojectiles="true"/>
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.7" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
       <sprite name="rapidreaction Helmet" texture="%ModDir%/Character/war/icon.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.68" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="668,171,90,86" origin="0.5,0.62">
         <LightComponent LightColor="150,255,150,100" range="1600" castshadows="false" powerconsumption="infinity" IsOn="true" flicker="0.1" flickerspeed="0.3" pulsefrequency="0.1" pulseamount="0.1" />
@@ -534,15 +534,15 @@
       <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.6" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" probabilitymultiplier="0.70" damagesound="LimbArmor" />
       <sprite name="rapidreaction Torso" texture="%ModDir%/Character/war/vest.png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="false" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" sourcerect="182,17,85,133" scale="0.45" origin="0.44,0.6" />
-      <sprite name="rapidreaction Right Leg" texture="%ModDir%/Character/war/vest.png" limb="RightLeg" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="437,229,43,111" origin="0.3,0.5" scale="0.4"/>
-      <sprite name="rapidreaction Left Leg" texture="%ModDir%/Character/war/vest.png" limb="LeftLeg" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="437,229,43,111" origin="0.3,0.5" scale="0.4"/>
+      <sprite name="rapidreaction Right Leg" texture="%ModDir%/Character/war/vest.png" limb="RightLeg" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="437,229,43,111" origin="0.3,0.5" scale="0.4" />
+      <sprite name="rapidreaction Left Leg" texture="%ModDir%/Character/war/vest.png" limb="LeftLeg" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="437,229,43,111" origin="0.3,0.5" scale="0.4" />
     </Wearable>
     <Deconstruct time="20">
-    <Item identifier="ballisticfiber" amount="3"/>
-  </Deconstruct>
+      <Item identifier="ballisticfiber" amount="3" />
+    </Deconstruct>
     <ItemContainer capacity="3">
-    <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
-  </ItemContainer>
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
+    </ItemContainer>
   </Item>
   <Item name="联盟快速反应作战服" identifier="lm_rapidreaction_uniform" hideinmenus="true" subcategory="tsmmissions" aliases="securityuniform" category="Equipment" tags="smallitem,clothing,vest" fireproof="true" description="" scale="0.5" impactsoundtag="impact_soft">
     <Deconstruct time="10">
@@ -638,7 +638,7 @@
   </Item>
   <Item name="降临派防风安全外套" identifier="adventists_Wind_proof" hideinmenus="true" aliases="adventistsuniform" subcategory="the_adventists" category="Equipment" tags="smallitem,clothing" fireproof="true" description="" scale="0.5" impactsoundtag="impact_soft">
     <Deconstruct time="10">
-    <RequiredItem identifier="organicfiber" amount="1" />
+      <RequiredItem identifier="organicfiber" amount="1" />
     </Deconstruct>
     <InventoryIcon name="the_adventists_combat Icon" texture="%ModDir%/Character/war/the_adventists_combat.png" sourcerect="423,8,89,49" origin="0.5,0.5" />
     <Sprite name="the_adventists_combat" texture="%ModDir%/Character/war/the_adventists_combat.png" sourcerect="423,8,89,49" depth="0.6" origin="0.5,0.5" />
@@ -663,7 +663,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bleeding" damagemultiplier="0.90" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="burn" damagemultiplier="0.80" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidburn" damagemultiplier="0.90" />
-      <SkillModifier skillidentifier="mechanical" skillvalue="5" />  	  
+      <SkillModifier skillidentifier="mechanical" skillvalue="5" />
     </Wearable>
   </Item>
   <!--武器-->
@@ -820,8 +820,7 @@
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
         <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,175,115,175" />
       </StatusEffect>
-      <Explosion range="10.0" strength="10" force="3.0">
-      </Explosion>
+      <Explosion range="10.0" strength="10" force="3.0"></Explosion>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Conditional entitytype="eq Structure" />
         <Conditional hastag="eq door" />
@@ -851,8 +850,7 @@
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
         <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="600" velocitymax="800" scalemin="0.75" scalemax="1" drawontop="true" colormultiplier="255,175,115,175" />
       </StatusEffect>
-      <Explosion range="10.0" strength="10" force="3.0">
-      </Explosion>
+      <Explosion range="10.0" strength="10" force="3.0"></Explosion>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Conditional entitytype="eq Structure" />
         <Conditional hastag="eq door" />
@@ -998,20 +996,20 @@
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="189,299,23,11" depth="0.55" origin="0.5,0.5" />
     <Body width="37" height="15" density="40" />
-    <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" hitscancount="8" removeonhit="true" spread="10">
-      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="252,218,94,100" scalemultiplier="1,0.5"/>
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="252,218,94,100" scalemultiplier="1,0.5" />
       <Attack structuredamage="0" targetforce="4" itemdamage="15" penetration="0.15" severlimbsprobability="0.5">
         <Affliction identifier="gunshotwound" strength="9" />
         <Affliction identifier="bleeding" strength="10" />
-        <Affliction identifier="stun" strength="0.07" probability="0.3"/>
+        <Affliction identifier="stun" strength="0.07" probability="0.3" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
-        <Conditional entitytype="eq Structure"/>
-        <Conditional hastag="eq door"/>
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
@@ -1030,7 +1028,7 @@
       <Attack structuredamage="6" targetforce="7.5" itemdamage="6" severlimbsprobability="0.2" penetration="0.3">
         <Affliction identifier="gunshotwound" strength="25" />
         <Affliction identifier="bleeding" strength="15" />
-        <Affliction identifier="stun" strength="0.25" probability="0.2"/>
+        <Affliction identifier="stun" strength="0.25" probability="0.2" />
         <Affliction identifier="stun" strength="0.5" probability="0.2" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -1053,7 +1051,7 @@
       <Attack structuredamage="4" targetforce="7.5" itemdamage="4" severlimbsprobability="0.1" penetration="0.4">
         <Affliction identifier="gunshotwound" strength="16" />
         <Affliction identifier="bleeding" strength="10" />
-        <Affliction identifier="stun" strength="0.1" probability="0.2"/>
+        <Affliction identifier="stun" strength="0.1" probability="0.2" />
         <Affliction identifier="stun" strength="0.5" probability="0.01" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -1075,7 +1073,7 @@
     <Sprite texture="%ModDir%/Character/war/weapons.png" sourcerect="0,0,1,1" />
     <ItemContainer SpawnWithId="tsm_minigun_ammo">
       <Containable items="tsm_minigun_ammo" />
-      <StatusEffect type="OnUse" target="This" condition="-0.0" disabledeltatime="true" >
+      <StatusEffect type="OnUse" target="This" condition="-0.0" disabledeltatime="true">
         <SpawnItem identifiers="tsm_minigun_ammo" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
@@ -1244,8 +1242,7 @@
     <Body width="210" height="70" density="52" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="70,-44" aimpos="70,-35" handle1="-335,30" handle2="35,-5" holdangle="-13" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
-      <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.85" setvalue="true">
-      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.85" setvalue="true"></StatusEffect>
     </Holdable>
     <RepairTool firedamage="0.0" structurefixamount="0.0" range="0" barrelpos="62,0" combatpriority="10" spread="0" unskilledspread="0">
       <sound file="%ModDir%/Character/war/ogg/minigun_fire.ogg" type="OnUse" range="1500.0" volume="1.5" loop="true" />
@@ -1634,14 +1631,14 @@
       <Containable items="tsm_58_42_sj_mag" setactive="true" />
     </ItemContainer>
   </Item>
-  <Item name="战车" identifier="tsmmission_zc_m" subcategory="tsmmissions" category="weapon"  tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.24" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="True">
+  <Item name="战车" identifier="tsmmission_zc_m" subcategory="tsmmissions" category="weapon" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.24" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="True">
     <InventoryIcon texture="%ModDir%/Character/war/weapons.png" sourcerect="217,822,444,128" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Character/war/weapons.png" sourcerect="217,822,444,128" depth="0.55" origin="0.5,0.5" />
     <Body width="446" height="126" density="52" />
     <Holdable slots="RightHand,LeftHand" controlpose="true" holdpos="52,-3" aimpos="52,-3" handle1="-90,-30" handle2="80,8" holdangle="-30" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.85" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.75" setvalue="true" />
-      <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.45" setvalue="true"/>
+      <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.45" setvalue="true" />
     </Holdable>
     <RangedWeapon reload="0.12" weapondamagemodifier="1.25" holdtrigger="true" barrelpos="240,25" spread="7" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.25">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -1674,7 +1671,7 @@
     <Body width="457" height="128" density="52" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="55,-3" aimpos="55,-3" handle1="-85,-30" handle2="80,8" holdangle="-30" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.75" setvalue="true" />
-      <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.5" setvalue="true"/>
+      <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.5" setvalue="true" />
     </Holdable>
     <RangedWeapon reload="0.2" weapondamagemodifier="1.6" penetration="0.1" holdtrigger="true" barrelpos="170,25" spread="5" unskilledspread="50" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.3">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -1770,7 +1767,7 @@
       <Containable items="tsm_762_39_mag" hide="false" itempos="-10,-10" depth="0.56" />
     </ItemContainer>
     <aitarget sightrange="2300" soundrange="4000" fadeouttime="5" />
-   </Item>
+  </Item>
   <Item name="P90" identifier="tsmmission_p90_m" subcategory="tsmmissions" category="weapon" tags="smallitem,weapon,gun,gunsmith,mountableweapon" scale="0.255" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="True">
     <InventoryIcon texture="%ModDir%/Character/war/weapons.png" sourcerect="242,447,313,114" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Character/war/weapons.png" sourcerect="242,447,313,114" depth="0.55" origin="0.5,0.5" />
@@ -1833,7 +1830,7 @@
       </StatusEffect>
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0" containedspritedepth="0.56">
-      <Containable items="tsm_handcannon_mag" hide="true"/>
+      <Containable items="tsm_handcannon_mag" hide="true" />
     </ItemContainer>
   </Item>
   <Item name="传承" identifier="tsmmission_handgun_o" subcategory="tsmmissions" category="Weapon" tags="smallitem,weapon,gun,pistolitem,mountableweapon,provocativetohumanai" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="True">
@@ -1864,10 +1861,10 @@
       </StatusEffect>
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0" containedspritedepth="0.56">
-      <Containable items="tsm_handcannon_mag" hide="true"/>
+      <Containable items="tsm_handcannon_mag" hide="true" />
     </ItemContainer>
   </Item>
-  <Item name="突击步枪" identifier="tsmmission_assaultrifle_m" subcategory="tsmmissions" category="Weapon"  tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="True">
+  <Item name="突击步枪" identifier="tsmmission_assaultrifle_m" subcategory="tsmmissions" category="Weapon" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="True">
     <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="276,63,233,62" origin="0.5,0.5" />
     <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="276,63,233,62" depth="0.55" origin="0.5,0.5" />
     <Body width="220" height="50" density="25" />
@@ -1900,7 +1897,7 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
       <Containable items="tsm_68_51_mag" itempos="4,-12" />
-    </ItemContainer> 
+    </ItemContainer>
   </Item>
   <Item name="重机枪" identifier="tsmmission_hmg_m" subcategory="tsmmissions" category="Weapon" tags="mediumitem,weapon,gun,gunsmith,provocativetohumanai,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="True">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="262,436,230,72" depth="0.55" origin="0.5,0.5" />
@@ -2111,7 +2108,7 @@
     </ItemContainer>
   </Item>
   <!--scp-->
-  <Item name="设施医生制服" identifier="tsm_facility_med_uniform" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true" >
+  <Item name="设施医生制服" identifier="tsm_facility_med_uniform" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true">
     <PreferredContainer primary="crewcab" />
     <Deconstruct time="10">
       <Item identifier="organicfiber" />
@@ -2140,7 +2137,7 @@
       <SkillModifier skillidentifier="medical" skillvalue="10" />
     </Wearable>
   </Item>
-  <Item name="设施安保制服" identifier="tsm_facility_security_uniform_b" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true" >
+  <Item name="设施安保制服" identifier="tsm_facility_security_uniform_b" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true">
     <PreferredContainer primary="crewcab" />
     <Deconstruct time="10">
       <Item identifier="organicfiber" />
@@ -2149,7 +2146,7 @@
     <Sprite name="Security Officer's Uniform 1" texture="scp_vest.png" sourcerect="188,273,153,46" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Security Officer's Uniform 1 Torso" texture="security1.png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="true" origin="0.11,0.37"/>
+      <sprite name="Security Officer's Uniform 1 Torso" texture="security1.png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="true" origin="0.11,0.37" />
       <sprite name="Security Officer's Uniform 1 Right Hand" texture="security1.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Security Officer's Uniform 1 Left Hand" texture="security1.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Security Officer's Uniform 1 Left Lower Arm" texture="security1.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -2168,7 +2165,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bleeding" damagemultiplier="0.8" />
     </Wearable>
   </Item>
-  <Item name="设施安保制服" identifier="tsm_facility_security_uniform_w" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true" >
+  <Item name="设施安保制服" identifier="tsm_facility_security_uniform_w" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true">
     <PreferredContainer primary="crewcab" />
     <Deconstruct time="10">
       <Item identifier="organicfiber" />
@@ -2177,7 +2174,7 @@
     <Sprite name="Security Officer's Uniform 1" texture="scp_vest.png" sourcerect="366,203,156,46" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="Security Officer's Uniform 1 Torso" texture="security.png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="true" origin="0.11,0.37"/>
+      <sprite name="Security Officer's Uniform 1 Torso" texture="security.png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="true" origin="0.11,0.37" />
       <sprite name="Security Officer's Uniform 1 Right Hand" texture="security.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Security Officer's Uniform 1 Left Hand" texture="security.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Security Officer's Uniform 1 Left Lower Arm" texture="security.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -2196,7 +2193,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bleeding" damagemultiplier="0.8" />
     </Wearable>
   </Item>
-  <Item name="设施安保防弹衣" identifier="tsm_facility_security_vest" category="Equipment" tags="smallitem,clothing" scale="0.35" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" hideinmenus="true" >
+  <Item name="设施安保防弹衣" identifier="tsm_facility_security_vest" category="Equipment" tags="smallitem,clothing" scale="0.35" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" hideinmenus="true">
     <Upgrade gameversion="0.9.3.0" scale="0.35" />
     <PreferredContainer primary="secarmcab" />
     <Deconstruct time="40">
@@ -2226,7 +2223,7 @@
       <sprite name="Security Officer's Uniform 1 Left Shoe" texture="facility_security_armor.png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
     </Wearable>
   </Item>
-  <Item name="设施安保重型防弹衣" identifier="tsm_facility_security_vest_heavy" category="Equipment" tags="smallitem,clothing" scale="0.35" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" hideinmenus="true" >
+  <Item name="设施安保重型防弹衣" identifier="tsm_facility_security_vest_heavy" category="Equipment" tags="smallitem,clothing" scale="0.35" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" hideinmenus="true">
     <Upgrade gameversion="0.9.3.0" scale="0.35" />
     <PreferredContainer primary="secarmcab" />
     <Deconstruct time="40">
@@ -2240,7 +2237,7 @@
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds,explosiondamage,bleeding" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.05" damagesound="LimbArmor" deflectprojectiles="true" />
-      <sprite name="Security Officer's Uniform 1 Torso" texture="heavyarmor1.png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="false" scale="0.5" inheritorigin="false" inheritsourcerect="true" origin="0.1,0.33"/>
+      <sprite name="Security Officer's Uniform 1 Torso" texture="heavyarmor1.png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="false" scale="0.5" inheritorigin="false" inheritsourcerect="true" origin="0.1,0.33" />
       <sprite name="Security Officer's Uniform 1 Right Hand" texture="heavyarmor1.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Security Officer's Uniform 1 Left Hand" texture="heavyarmor1.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Security Officer's Uniform 1 Left Lower Arm" texture="heavyarmor1.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
@@ -2256,7 +2253,7 @@
       <sprite name="Security Officer's Uniform 1 Left Shoe" texture="heavyarmor1.png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
     </Wearable>
   </Item>
-  <Item name="设施安保头盔" identifier="tsm_facility_security_helmet_w" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" impactsoundtag="impact_metal_heavy" scale="0.5" hideinmenus="true" >
+  <Item name="设施安保头盔" identifier="tsm_facility_security_helmet_w" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" impactsoundtag="impact_metal_heavy" scale="0.5" hideinmenus="true">
     <Deconstruct time="10">
       <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="titaniumaluminiumalloy" />
@@ -2272,12 +2269,11 @@
       <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="radiationsickness" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
       <sprite name="respirator Helmet" texture="scp_vest.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.70" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="473,4,75,90" origin="0.5,0.48">
-      <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true">
-      </StatusEffect>
+        <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"></StatusEffect>
       </sprite>
-      </Wearable>
-   </Item>
-  <Item name="设施安保头盔" identifier="tsm_facility_security_helmet_y" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" impactsoundtag="impact_metal_heavy" scale="0.5" hideinmenus="true" >
+    </Wearable>
+  </Item>
+  <Item name="设施安保头盔" identifier="tsm_facility_security_helmet_y" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" impactsoundtag="impact_metal_heavy" scale="0.5" hideinmenus="true">
     <Deconstruct time="10">
       <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="titaniumaluminiumalloy" />
@@ -2293,12 +2289,11 @@
       <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="radiationsickness" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
       <sprite name="respirator Helmet" texture="scp_vest.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.70" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="364,4,78,91" origin="0.5,0.48">
-      <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true">
-      </StatusEffect>
+        <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"></StatusEffect>
       </sprite>
-      </Wearable>
-   </Item>
-  <Item name="设施外围安保制服" identifier="tsm_peripheral_security_uniform" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true" >
+    </Wearable>
+  </Item>
+  <Item name="设施外围安保制服" identifier="tsm_peripheral_security_uniform" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true">
     <PreferredContainer primary="crewcab" />
     <Deconstruct time="10">
       <Item identifier="organicfiber" />
@@ -2352,7 +2347,7 @@
       <sprite name="Security Left Leg" texture="heavyarmor.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
     </Wearable>
   </Item>
-  <Item name="设施外围安保头盔" identifier="tsm_peripheral_security_helmet" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" impactsoundtag="impact_metal_heavy" scale="0.5" hideinmenus="true" >
+  <Item name="设施外围安保头盔" identifier="tsm_peripheral_security_helmet" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" impactsoundtag="impact_metal_heavy" scale="0.5" hideinmenus="true">
     <Deconstruct time="10">
       <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="titaniumaluminiumalloy" />
@@ -2368,12 +2363,10 @@
       <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="radiationsickness" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
       <sprite name="respirator Helmet" texture="scp_vest.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.37" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="267,4,78,81" origin="0.48,0.48">
-      <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true">
-      </StatusEffect>
+        <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"></StatusEffect>
       </sprite>
-      </Wearable>
+    </Wearable>
   </Item>
-
   <!--呼风唤雨-->
   <Item name="下雪" identifier="tsmmissions_snow" subcategory="tsmmissions" category="Equipment" hideinmenus="true" Tags="alien,smallitem,smallalienartifact" scale="0.5" impactsoundtag="impact_metal_heavy">
     <Sprite texture="%ModDir:2852411866%/Texture/MissionIcons.png" sourcerect="0,0,234,234" origin="0.5,0.5" />
@@ -2399,8 +2392,8 @@
       </StatusEffect>
     </Holdable>
   </Item>
- <!--护卫协议-->
- <Item name="护卫登陆舱指示器" identifier="tsm_pgcflare" description="'记住求助的感觉，呼叫九州护卫'使用方式：右键左键扔出去，耐心等待即可。尽量在船上使用(只存在一巡回)" subcategory="tsmmissions" category="Misc" scale="0.5" sonarsize="6" tags="smallitem" hideinmenus="false">
+  <!--护卫协议-->
+  <Item name="护卫登陆舱指示器" identifier="tsm_pgcflare" description="'记住求助的感觉，呼叫九州护卫'使用方式：右键左键扔出去，耐心等待即可。尽量在船上使用(只存在一巡回)" subcategory="tsmmissions" category="Misc" scale="0.5" sonarsize="6" tags="smallitem" hideinmenus="false">
     <Fabricate suitablefabricators="fabricator" requiredtime="1" requiresrecipe="false">
       <RequiredItem identifier="tsm_identifier" />
       <RequiredItem identifier="sonarbeacon" />
@@ -2408,7 +2401,7 @@
     </Fabricate>
     <InventoryIcon texture="%ModDir%/Character/war/icon.png" sourcerect="899,965,36,35" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Character/war/icon.png" sourcerect="955,985,37,15" depth="0.55" origin="0.5,0.7" />
-    <Body width="35" height="35" density="0"/>
+    <Body width="35" height="35" density="0" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" holdangle="90" throwforce="2.0" aimpos="35,-10" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" launchimpulse="50" maxtargetstohit="3" sticktocharacters="false" sticktoitems="false" sticktostructures="false" friendlyfire="false" damagedoors="true">
       <Attack structuredamage="1" itemdamage="1" severlimbsprobability="2.0" penetration="0.3">
@@ -2421,7 +2414,7 @@
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This">
         <ParticleEmitter particle="flare" emitinterval="2.1" particleamount="10" particlespersecond="60" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" />
-        <ParticleEmitter particle="FlareBubbles"  particlespersecond="40" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" scalemin="0.8" scalemax="1.2" />
+        <ParticleEmitter particle="FlareBubbles" particlespersecond="40" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" scalemin="0.8" scalemax="1.2" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This" condition="-20" />
       <StatusEffect type="OnBroken" target="This">
@@ -2452,8 +2445,7 @@
     <Sprite texture="%ModDir%/Character/war/icon.png" sourcerect="899,900,57,36" origin="0.5,0.5" depth="0.55" />
     <LightComponent AllowInGameEditing="false" lightcolor="100,0,0,255" canbeselected="false" range="30.0" IsOn="true" castshadows="false" />
     <Body width="57" height="36" density="0" />
-    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
-     </Holdable>
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect"></Holdable>
   </Item>
   <Item name="物资投放舱指示器" identifier="tsm_wz_cl_flare" subcategory="tsmmissions" category="Misc" scale="0.5" sonarsize="6" tags="smallitem" hideinmenus="false">
     <Fabricate suitablefabricators="fabricator" requiredtime="1" requiresrecipe="false">
@@ -2463,7 +2455,7 @@
     </Fabricate>
     <InventoryIcon texture="%ModDir%/Character/war/icon.png" sourcerect="899,965,36,35" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Character/war/icon.png" sourcerect="955,985,37,15" depth="0.55" origin="0.5,0.7" />
-    <Body width="35" height="35" density="0"/>
+    <Body width="35" height="35" density="0" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" holdangle="90" throwforce="2.0" aimpos="35,-10" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" launchimpulse="50" maxtargetstohit="3" sticktocharacters="false" sticktoitems="false" sticktostructures="false" friendlyfire="false" damagedoors="true">
       <Attack structuredamage="1" itemdamage="1" severlimbsprobability="2.0" penetration="0.3">
@@ -2476,7 +2468,7 @@
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This">
         <ParticleEmitter particle="flare" emitinterval="2.1" particleamount="10" particlespersecond="60" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" />
-        <ParticleEmitter particle="FlareBubbles"  particlespersecond="40" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" scalemin="0.8" scalemax="1.2" />
+        <ParticleEmitter particle="FlareBubbles" particlespersecond="40" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" scalemin="0.8" scalemax="1.2" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This" condition="-20" />
       <StatusEffect type="OnBroken" target="This">
@@ -2505,7 +2497,7 @@
     </Fabricate>
     <InventoryIcon texture="%ModDir%/Character/war/icon.png" sourcerect="899,965,36,35" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Character/war/icon.png" sourcerect="955,985,37,15" depth="0.55" origin="0.5,0.7" />
-    <Body width="35" height="35" density="0"/>
+    <Body width="35" height="35" density="0" />
     <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" holdangle="90" throwforce="2.0" aimpos="35,-10" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" launchimpulse="50" maxtargetstohit="3" sticktocharacters="false" sticktoitems="false" sticktostructures="false" friendlyfire="false" damagedoors="true">
       <Attack structuredamage="1" itemdamage="1" severlimbsprobability="2.0" penetration="0.3">
@@ -2518,7 +2510,7 @@
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This">
         <ParticleEmitter particle="flare" emitinterval="2.1" particleamount="10" particlespersecond="60" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" />
-        <ParticleEmitter particle="FlareBubbles"  particlespersecond="40" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" scalemin="0.8" scalemax="1.2" />
+        <ParticleEmitter particle="FlareBubbles" particlespersecond="40" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" scalemin="0.8" scalemax="1.2" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This" condition="-20" />
       <StatusEffect type="OnBroken" target="This">
@@ -2608,5 +2600,4 @@
       </StatusEffect>
     </Projectile>
   </Item>
-
 </Items>

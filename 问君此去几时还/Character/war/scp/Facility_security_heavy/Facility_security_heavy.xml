@@ -13,19 +13,19 @@
     <Limb name="Torso" />
     <Limb name="LeftArm">
       <VitalityMultiplier type="damage" multiplier="0.6" />
-        <VitalityMultiplier type="burn" multiplier="0.6" />
+      <VitalityMultiplier type="burn" multiplier="0.6" />
     </Limb>
     <Limb name="RightArm">
       <VitalityMultiplier type="damage" multiplier="0.6" />
-        <VitalityMultiplier type="burn" multiplier="0.6" />
+      <VitalityMultiplier type="burn" multiplier="0.6" />
     </Limb>
     <Limb name="LeftLeg">
       <VitalityMultiplier type="damage" multiplier="0.6" />
-        <VitalityMultiplier type="burn" multiplier="0.6" />
+      <VitalityMultiplier type="burn" multiplier="0.6" />
     </Limb>
     <Limb name="RightLeg">
       <VitalityMultiplier type="damage" multiplier="0.6" />
-        <VitalityMultiplier type="burn" multiplier="0.6" />
+      <VitalityMultiplier type="burn" multiplier="0.6" />
     </Limb>
   </health>
   <ai combatstrength="600" sight="2" hearing="3" aggressiveboarding="True" attackwhenprovoked="True" UsePathFindingToGetInside="True" aggressiongreed="5" aggressionhurt="150" canopendoors="True" targetouterwalls="False" fleehealththreshold="0" avoidgunfire="True" avoidtime="3" minfleetime="20" enforceaggressivebehaviorformissions="True" randomattack="True" avoidabyss="True" stayinabyss="True" startaggression="0" maxaggression="100" aggressioncumulation="0" walltargetingmethod="Target" keepdoorsclosed="False" patrolflooded="False" patroldry="False">

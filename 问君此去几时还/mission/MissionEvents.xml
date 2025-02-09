@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Randomevents>
   <EventPrefabs>
     <!--运输任务保险-->
@@ -74,27 +74,31 @@
     </ScriptedEvent>
     <!--沸腾之海-->
     <ScriptedEvent identifier="tsm_mission_fire_water">
-      <TagAction criteria="crew" tag="crew" continueifnotargetsfound="true"/>
-      <TagAction criteria="bot" tag="bot" continueifnotargetsfound="true"/>
-      <TagAction criteria="player" tag="player" continueifnotargetsfound="true"/>
-      <Label name="waitforspotting" />
-      <WaitAction time="1" />
-      <CheckVisibilityAction entitytag="bot" excludedentitytag="crew" targettag="crew"/>
+      <TagAction criteria="player" tag="player" continueifnotargetsfound="true" />
       <WaitAction time="3" />
       <ConversationAction text="tsm_fire_water_1" dialogtype="Small" />
-      <StatusEffectAction targettag="player" >
+      <StatusEffectAction targettag="player">
         <StatusEffect target="This">
           <Affliction identifier="tsm_fire_water" strength="50" />
           <Affliction identifier="tsm_fire_water_jm" strength="500" />
+          <Sound file="%ModDir%/Character/CorruptionMachinery/cm_light.ogg" range="100000" />
         </StatusEffect>
       </StatusEffectAction>
       <OnRoundEndAction>
-        <StatusEffectAction targettag="player" >
-        <StatusEffect target="This">
-          <ReduceAffliction identifier="tsm_fire_water" strength="100" />
-        </StatusEffect>
+        <StatusEffectAction targettag="player">
+          <StatusEffect target="This">
+            <ReduceAffliction identifier="tsm_fire_water" strength="100" />
+          </StatusEffect>
         </StatusEffectAction>
       </OnRoundEndAction>
+    </ScriptedEvent>
+    <!--红松石警告-->
+    <ScriptedEvent identifier="tsm_combat_ship_event">
+      <TagAction criteria="player" tag="player" continueifnotargetsfound="true" />
+      <WaitAction time="1" />
+      <ConversationAction text="tsm.warming1.1" dialogtype="Small" />
+      <WaitAction time="15" />
+      <ConversationAction text="tsm.warming1.2" dialogtype="Small" />
     </ScriptedEvent>
   </EventPrefabs>
 </Randomevents>

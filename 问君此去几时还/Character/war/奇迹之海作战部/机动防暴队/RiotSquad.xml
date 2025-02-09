@@ -13,22 +13,22 @@
     <Limb name="Torso" />
     <Limb name="LeftArm">
       <VitalityMultiplier type="damage" multiplier="0.6" />
-        <VitalityMultiplier type="burn" multiplier="0.6" />
+      <VitalityMultiplier type="burn" multiplier="0.6" />
     </Limb>
     <Limb name="RightArm">
       <VitalityMultiplier type="damage" multiplier="0.6" />
-        <VitalityMultiplier type="burn" multiplier="0.6" />
+      <VitalityMultiplier type="burn" multiplier="0.6" />
     </Limb>
     <Limb name="LeftLeg">
       <VitalityMultiplier type="damage" multiplier="0.6" />
-        <VitalityMultiplier type="burn" multiplier="0.6" />
+      <VitalityMultiplier type="burn" multiplier="0.6" />
     </Limb>
     <Limb name="RightLeg">
       <VitalityMultiplier type="damage" multiplier="0.6" />
-        <VitalityMultiplier type="burn" multiplier="0.6" />
+      <VitalityMultiplier type="burn" multiplier="0.6" />
     </Limb>
   </health>
-   <sound file="%ModDir%/Character/war/ogg/重甲/重甲游荡1.ogg" state="Idle" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Character/war/ogg/重甲/重甲游荡1.ogg" state="Idle" range="1000" volume="4" gender="None" />
   <sound file="%ModDir%/Character/war/ogg/重甲/重甲游荡2.ogg" state="Idle" range="1000" volume="4" gender="None" />
   <sound file="%ModDir%/Character/war/ogg/重甲/重甲游荡3.ogg" state="Idle" range="1000" volume="4" gender="None" />
   <sound file="%ModDir%/Character/war/ogg/重甲/重甲出场1.ogg" state="Idle" range="1000" volume="4" gender="None" />

@@ -1,4 +1,5 @@
-﻿<Character speciesname="AlbinismSpineling_giant" humanoid="False" husk="False" needsair="False" needswater="True" canspeak="False" noise="100" visibility="100" blooddecal="blackblood" group="spineling" eatingspeed="20" displayname="" hasinfo="False" usehuskappendage="False" bleedparticleair="blackblooddrop" bleedparticlewater="blackwaterblood" pathfinderpriority="1" hideinsonar="False" speciestranslationoverride="" sonardisruption="0" caneat="False" caninteract="False" usebosshealthbar="False" bleedparticlemultiplier="1" usepathfinding="True" hideinthermalgoggles="False" distantsonarrange="0" disabledistance="25000" soundinterval="10">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Character speciesname="AlbinismSpineling_giant" humanoid="False" husk="False" needsair="False" needswater="True" canspeak="False" noise="100" visibility="100" blooddecal="blackblood" group="spineling" eatingspeed="20" displayname="" hasinfo="False" usehuskappendage="False" bleedparticleair="blackblooddrop" bleedparticlewater="blackwaterblood" pathfinderpriority="1" hideinsonar="False" speciestranslationoverride="" sonardisruption="0" caneat="False" caninteract="False" usebosshealthbar="False" bleedparticlemultiplier="1" usepathfinding="True" hideinthermalgoggles="False" distantsonarrange="0" disabledistance="25000" soundinterval="10">
   <ragdolls folder="%ModDir%/Character/白化棘刺/AlbinismSpineling_giant/Ragdolls/" />
   <animations folder="%ModDir%/Character/白化棘刺/AlbinismSpineling_giant/Animations/" />
   <health vitality="500" doesbleed="True" crushdepth="Infinity" usehealthwindow="False" bleedingreduction="0" burnreduction="0" constanthealthregeneration="0" healthregenerationwheneating="0" stunimmunity="True" applyafflictioncolors="False" poisonvulnerability="0.5" />
@@ -14,18 +15,18 @@
     <target tag="human" state="Aggressive" priority="20" reactdistance="1500" attackdistance="0" timer="0" ignorecontained="False" attackpattern="Sweep" sweepdistance="1500" sweepstrength="10" sweepspeed="0.5" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="True" ignoreincapacitated="False" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" />
     <target tag="weaker" state="Aggressive" priority="20" reactdistance="1500" attackdistance="0" timer="0" ignorecontained="False" attackpattern="Sweep" sweepdistance="1500" sweepstrength="10" sweepspeed="0.5" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="True" ignoreincapacitated="False" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" />
     <target tag="wall" state="Attack" priority="10" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" attackpattern="Sweep" sweepdistance="1500" sweepstrength="5" sweepspeed="1" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" />
-    <target tag="sonar" state="Attack" priority="5" attackpattern="Sweep" sweepdistance="1500" sweepstrength="5"/>
+    <target tag="sonar" state="Attack" priority="5" attackpattern="Sweep" sweepdistance="1500" sweepstrength="5" />
     <SwarmBehavior mindistfromclosest="400" maxdistfromcenter="2000" cohesion="0.25" />
   </ai>
   <sound file="%ModDir%/Character/AlbinismMoloch/mlk1.ogg" state="Idle" range="4000" volume="1" gender="None" />
   <sound file="%ModDir%/Character/AlbinismMoloch/mlk2.ogg" state="Idle" range="4000" volume="1" gender="None" />
   <Inventory slots="Any, Any, Any, Any, Any" accessiblewhenalive="False" commonness="1">
-    <Item identifier="alienblood" amount="3 "/>
+    <Item identifier="alienblood" amount="3 " />
     <Item identifier="swimbladder" />
     <Item identifier="carbon" amount="3" />
   </Inventory>
   <Inventory slots="Any, Any, Any, Any, Any" accessiblewhenalive="False" commonness="1">
-    <Item identifier="alienblood" amount="3 "/>
+    <Item identifier="alienblood" amount="3 " />
     <Item identifier="swimbladder" />
     <Item identifier="AlbinismSpineling" amount="2" />
   </Inventory>

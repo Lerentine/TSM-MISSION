@@ -1,188 +1,184 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-  <Talents>
-    <!--ai用-->
-    <Talent identifier="tsm_eyi_instability">
-    <Icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="161,426,115,123"/>
-    <AbilityGroupInterval>
-    <Abilities>
-        <CharacterAbilityApplyStatusEffects>
-          <StatusEffects>
-            <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true" disabledeltatime="true" compaison="And">
-              <Conditional tsm_eyi_instability="lte 57"/>
-              <Affliction identifier="tsm_eyi_instability" amount="1"/>
-            </StatusEffect>
-          </StatusEffects>
-        </CharacterAbilityApplyStatusEffects>
-      </Abilities>
-      </AbilityGroupInterval>
-    </Talent>
-    <Talent identifier="tsm_ai_outpost">
-      <Icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="0,0,119,120" origin="0,0"/>
-      <Description tag="talentdescription.tsm_ai_outpost" />
-      <AbilityGroupInterval>
-      <Abilities>
-          <CharacterAbilityApplyStatusEffects>
-            <StatusEffects>
-              <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true" disabledeltatime="true" compaison="And">
-                <Affliction identifier="tsmmission_ai_asphyxiating_pressure" amount="1"/>
-                <Affliction identifier="tsmmission_ai_mod_resistancefor" amount="1"/>
-                <Affliction identifier="tsmmission_ai_mod_necroinfection" amount="1"/>
-                <Affliction identifier="tsm_nt_protect" amount="1"/>
-              </StatusEffect>
-            </StatusEffects>
-          </CharacterAbilityApplyStatusEffects>
-        </Abilities>
-        </AbilityGroupInterval>
-    </Talent>
-    <Talent identifier="tsm_warlord">
-      <Description tag="talentdescription.warlord">
-        <Replace tag="[amount]" value="10" color="gui.green"/>
-        <Replace tag="[maxamount]" value="50" color="gui.green"/>
-      </Description>
-      <Description tag="talentdescription.unlockrecipe">
-        <Replace tag="[itemname]" value="entityname.hmg,entityname.hmgmagazine" color="gui.orange"/>
-      </Description>
-      <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,4" sheetelementsize="128,128"/>
-      <AddedRecipe itemidentifier="hmg"/>
-      <AddedRecipe itemidentifier="hmgmagazine"/>
-      <AbilityGroupEffect abilityeffecttype="OnAttack">
-        <Conditions>
-          <AbilityConditionAttackData weapontype="handheldranged" />
-          <AbilityConditionNearbyCharacterCount distance="500" targettypes="Enemy" count="1"/>
-        </Conditions>
-        <Abilities>
-          <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" />
-        </Abilities>
-      </AbilityGroupEffect>
-  
-      <AbilityGroupEffect abilityeffecttype="OnAttack">
-        <Conditions>
-          <AbilityConditionAttackData weapontype="handheldranged" />
-          <AbilityConditionNearbyCharacterCount distance="500" targettypes="Enemy" count="2"/>
-        </Conditions>
-        <Abilities>
-          <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" />
-        </Abilities>
-      </AbilityGroupEffect>
-  
-      <AbilityGroupEffect abilityeffecttype="OnAttack">
-        <Conditions>
-          <AbilityConditionAttackData weapontype="handheldranged" />
-          <AbilityConditionNearbyCharacterCount distance="500" targettypes="Enemy" count="3"/>
-        </Conditions>
-        <Abilities>
-          <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" />
-        </Abilities>
-      </AbilityGroupEffect>
-  
-      <AbilityGroupEffect abilityeffecttype="OnAttack">
-        <Conditions>
-          <AbilityConditionAttackData weapontype="handheldranged" />
-          <AbilityConditionNearbyCharacterCount distance="500" targettypes="Enemy" count="4"/>
-        </Conditions>
-        <Abilities>
-          <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" />
-        </Abilities>
-      </AbilityGroupEffect>
-  
-      <AbilityGroupEffect abilityeffecttype="OnAttack">
-        <Conditions>
-          <AbilityConditionAttackData weapontype="handheldranged" />
-          <AbilityConditionNearbyCharacterCount distance="500" targettypes="Enemy" count="5"/>
-        </Conditions>
-        <Abilities>
-          <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" />
-        </Abilities>
-      </AbilityGroupEffect>
-    </Talent>
-    <Talent identifier="tsm_specops">
-      <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="5,0" sheetelementsize="128,128"/>
-      <Description tag="talentdescription.unlockrecipe">
-        <Replace tag="[itemname]" value="entityname.thermalgoggles" color="gui.orange"/>
-      </Description>
-      <Description tag="talentdescription.specops" />
-      <AddedRecipe itemidentifier="thermalgoggles"/>
-      <AbilityGroupEffect abilityeffecttype="OnAttack">
-        <Conditions>
-          <AbilityConditionAttackData weapontype="Turret" invert="true"/>
-          <AbilityConditionCharacter targettype="Enemy">
-            <Conditional WasFullHealth="true"/>
-          </AbilityConditionCharacter>
-        </Conditions>
-        <Abilities>
-          <CharacterAbilityModifyAttackData addeddamagemultiplier="1" />
-        </Abilities>
-      </AbilityGroupEffect>
-    </Talent>
-    <Talent identifier="tsm_beatcop">
-      <Description tag="talentdescription.extrastunonenemies">
-        <Replace tag="[amount]" value="25" color="gui.green"/>
-      </Description>
-      <Description tag="talentdescription.beatcop"/>
-      <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,2" sheetelementsize="128,128"/>
-      <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
-        <Conditions>
-          <AbilityConditionCharacter targettypes="Enemy,InFriendlySubmarine"/>
-        </Conditions>
-        <Abilities>
-          <CharacterAbilityModifyAffliction afflictionidentifiers="stun,incrementalstun,progressivestun" addedmultiplier="0.5" />
-        </Abilities>
-        <FallbackAbilities>
-          <CharacterAbilityModifyAffliction afflictionidentifiers="stun,incrementalstun,progressivestun" addedmultiplier="0.25" />
-        </FallbackAbilities>
-      </AbilityGroupEffect>
-    </Talent>
-    <Talent identifier="tsm_bleeding_outpost_sundown">
-      <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="5,3" sheetelementsize="128,128"/>
-      <Description tag="talentdescription.crustyseaman"/>
-      <AbilityGroupInterval>
-        <Abilities>
-          <CharacterAbilityApplyStatusEffects>
-            <StatusEffects>
-              <StatusEffect type="OnAbility" target="Character" interval="5" duration="5">
-                <ReduceAffliction identifier="bleeding" strength="10"/>
-                <ReduceAffliction identifier="bleedingnonstop" strength="10"/>
-              </StatusEffect>
-            </StatusEffects>
-          </CharacterAbilityApplyStatusEffects>
-        </Abilities>
-      </AbilityGroupInterval>
-    </Talent>
-    <Talent identifier="tsm_vip_bodyguard">
-    <Icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="255,133,122,123"/>
-    <Description tag="talentdescription.tsm_vip_bodyguard"/>
+<Talents>
+  <!--ai用-->
+  <Talent identifier="tsm_eyi_instability">
+    <Icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="161,426,115,123" />
     <AbilityGroupInterval>
       <Abilities>
         <CharacterAbilityApplyStatusEffects>
           <StatusEffects>
-            <StatusEffect type="OnAbility" target="Character" interval="5" duration="5">
-              <ReduceAffliction identifier="bleeding" strength="3"/>
-              <ReduceAffliction identifier="bleedingnonstop" strength="3"/>
-            </StatusEffect>
             <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true" disabledeltatime="true" compaison="And">
-              <Affliction identifier="tsmmission_bodyguard_resistancefor" amount="1"/>
+              <Conditional tsm_eyi_instability="lte 57" />
+              <Affliction identifier="tsm_eyi_instability" amount="1" />
             </StatusEffect>
           </StatusEffects>
         </CharacterAbilityApplyStatusEffects>
       </Abilities>
     </AbilityGroupInterval>
   </Talent>
-    <Talent identifier="suger_tail_handle">
-      <Icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="161,290,115,123" />
-      <Description tag="talentdescription.suger_tail_handle" />
-      <AbilityGroupInterval>
-        <Abilities>
-          <CharacterAbilityApplyStatusEffects>
-            <StatusEffects>
-              <StatusEffect type="OnAbility" target="Character">
-                <ReduceAffliction identifier="Suger_Tail_Spawn" amount="100" />
-              </StatusEffect>
-            </StatusEffects>
-          </CharacterAbilityApplyStatusEffects>
-        </Abilities>
-      </AbilityGroupInterval>
-    </Talent>
-    <Talent identifier="tsm_olympian">
+  <Talent identifier="tsm_ai_outpost">
+    <Icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="0,0,119,120" origin="0,0" />
+    <Description tag="talentdescription.tsm_ai_outpost" />
+    <AbilityGroupInterval>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true" disabledeltatime="true" compaison="And">
+              <Affliction identifier="tsmmission_ai_asphyxiating_pressure" amount="1" />
+              <Affliction identifier="tsmmission_ai_mod_resistancefor" amount="1" />
+              <Affliction identifier="tsmmission_ai_mod_necroinfection" amount="1" />
+              <Affliction identifier="tsm_nt_protect" amount="1" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+  <Talent identifier="tsm_warlord">
+    <Description tag="talentdescription.warlord">
+      <Replace tag="[amount]" value="10" color="gui.green" />
+      <Replace tag="[maxamount]" value="50" color="gui.green" />
+    </Description>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.hmg,entityname.hmgmagazine" color="gui.orange" />
+    </Description>
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,4" sheetelementsize="128,128" />
+    <AddedRecipe itemidentifier="hmg" />
+    <AddedRecipe itemidentifier="hmgmagazine" />
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionAttackData weapontype="handheldranged" />
+        <AbilityConditionNearbyCharacterCount distance="500" targettypes="Enemy" count="1" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionAttackData weapontype="handheldranged" />
+        <AbilityConditionNearbyCharacterCount distance="500" targettypes="Enemy" count="2" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionAttackData weapontype="handheldranged" />
+        <AbilityConditionNearbyCharacterCount distance="500" targettypes="Enemy" count="3" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionAttackData weapontype="handheldranged" />
+        <AbilityConditionNearbyCharacterCount distance="500" targettypes="Enemy" count="4" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" />
+      </Abilities>
+    </AbilityGroupEffect>
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionAttackData weapontype="handheldranged" />
+        <AbilityConditionNearbyCharacterCount distance="500" targettypes="Enemy" count="5" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" />
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+  <Talent identifier="tsm_specops">
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="5,0" sheetelementsize="128,128" />
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.thermalgoggles" color="gui.orange" />
+    </Description>
+    <Description tag="talentdescription.specops" />
+    <AddedRecipe itemidentifier="thermalgoggles" />
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionAttackData weapontype="Turret" invert="true" />
+        <AbilityConditionCharacter targettype="Enemy">
+          <Conditional WasFullHealth="true" />
+        </AbilityConditionCharacter>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="1" />
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+  <Talent identifier="tsm_beatcop">
+    <Description tag="talentdescription.extrastunonenemies">
+      <Replace tag="[amount]" value="25" color="gui.green" />
+    </Description>
+    <Description tag="talentdescription.beatcop" />
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,2" sheetelementsize="128,128" />
+    <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
+      <Conditions>
+        <AbilityConditionCharacter targettypes="Enemy,InFriendlySubmarine" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAffliction afflictionidentifiers="stun,incrementalstun,progressivestun" addedmultiplier="0.5" />
+      </Abilities>
+      <FallbackAbilities>
+        <CharacterAbilityModifyAffliction afflictionidentifiers="stun,incrementalstun,progressivestun" addedmultiplier="0.25" />
+      </FallbackAbilities>
+    </AbilityGroupEffect>
+  </Talent>
+  <Talent identifier="tsm_bleeding_outpost_sundown">
+    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="5,3" sheetelementsize="128,128" />
+    <Description tag="talentdescription.crustyseaman" />
+    <AbilityGroupInterval>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character" interval="5" duration="5">
+              <ReduceAffliction identifier="bleeding" strength="10" />
+              <ReduceAffliction identifier="bleedingnonstop" strength="10" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+  <Talent identifier="tsm_vip_bodyguard">
+    <Icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="255,133,122,123" />
+    <Description tag="talentdescription.tsm_vip_bodyguard" />
+    <AbilityGroupInterval>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character" interval="5" duration="5">
+              <ReduceAffliction identifier="bleeding" strength="3" />
+              <ReduceAffliction identifier="bleedingnonstop" strength="3" />
+            </StatusEffect>
+            <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true" disabledeltatime="true" compaison="And">
+              <Affliction identifier="tsmmission_bodyguard_resistancefor" amount="1" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+  <Talent identifier="suger_tail_handle">
+    <Icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="161,290,115,123" />
+    <Description tag="talentdescription.suger_tail_handle" />
+    <AbilityGroupInterval>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character">
+              <ReduceAffliction identifier="Suger_Tail_Spawn" amount="100" />
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+  <Talent identifier="tsm_olympian">
     <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,4" sheetelementsize="128,128" />
     <Description tag="talentdescription.tsm_olympian" />
     <AbilityGroupEffect abilityeffecttype="None">
@@ -191,5 +187,4 @@
       </Abilities>
     </AbilityGroupEffect>
   </Talent>
-
-  </Talents>
+</Talents>

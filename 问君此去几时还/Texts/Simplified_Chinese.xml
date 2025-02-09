@@ -1,55 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <infotexts language="Simplified Chinese" nowhitespace="true" translatedname="中文(简体)">
- <!--整活-->
- <!--faction.separatists>野火反抗军</faction.separatists>
+  <!--整活-->
+  <!--faction.separatists>野火反抗军</faction.separatists>
  <faction.separatists.description>维多利亚培德兰将军满脸笑容，看起来他已经获得了野火反抗军在各地起义的消息了。\n\n“将军，你看到了吗？木卫二人民运动是屹立不倒的，他们会像野火一般。我们终有一天会将联盟燃烧殆尽的！终有一天！”</faction.separatists.description>
  <faction.separatists.shortdescription>将军，你看到了吗？木卫二人民运动是屹立不倒的，他们会像野火一般。我们终有一天会将联盟燃烧殆尽！</faction.separatists.shortdescription-->
-
- <faction.tsm>奇迹之海</faction.tsm>
- <faction.tsm.description>奇迹之海公司逐渐演变为一个重要的阵营势力。凭借其广泛的影响力和资源，公司的角色不仅限于商业运营，还扩展到深海世界中的政治和军事领域，形成了一个强大的阵营，对深海探险和区域安全产生了深远的影响。</faction.tsm.description>
- <faction.tsm.shortdescription>奇迹之海是一家杰出的多领域企业。公司以其卓越的护航服务闻名，提供无与伦比的安全保障，确保深海探险者和商船的安全。</faction.tsm.shortdescription>
- <randomnews35>同舟共寄团队，正在清空航道内的威胁，联盟给予了正面的回复，并希望更多的团队加入其中，让航道可以更加安全。</randomnews35>
- <randomnews36>奇迹之海为你保驾护航</randomnews36>
- <locationchange.tsm_city.changeto.abandoned>无法与[previousname]取得联系。</locationchange.tsm_city.changeto.abandoned>
- <locationchange.tsm_city.changeto.abandoned>奇迹之海堡垒都市[previousname]被攻陷。</locationchange.tsm_city.changeto.abandoned>
- <locationchange.tsm_city.changeto.none>奇迹之海堡垒都市[previousname]已经迁往其他更适宜居住的地方</locationchange.tsm_city.changeto.none>
- <locationchange.none.changeto.tsm_city>奇迹之海发现了生态区[previousname]，并建立了一座堡垒都市</locationchange.none.changeto.tsm_city>
- <locationchange.abandoned.changeto.tsm_city>奇迹之海清扫了[previousname]的内部威胁，并以此为基础建立了一座都市</locationchange.abandoned.changeto.tsm_city>
-
+  <faction.tsm>奇迹之海</faction.tsm>
+  <faction.tsm.description>奇迹之海公司逐渐演变为一个重要的阵营势力。凭借其广泛的影响力和资源，公司的角色不仅限于商业运营，还扩展到深海世界中的政治和军事领域，形成了一个强大的阵营，对深海探险和区域安全产生了深远的影响。</faction.tsm.description>
+  <faction.tsm.shortdescription>奇迹之海是一家杰出的多领域企业。公司以其卓越的护航服务闻名，提供无与伦比的安全保障，确保深海探险者和商船的安全。</faction.tsm.shortdescription>
+  <randomnews35>同舟共寄团队，正在清空航道内的威胁，联盟给予了正面的回复，并希望更多的团队加入其中，让航道可以更加安全。</randomnews35>
+  <randomnews36>奇迹之海为你保驾护航</randomnews36>
+  <locationchange.tsm_city.changeto.abandoned>无法与[previousname]取得联系。</locationchange.tsm_city.changeto.abandoned>
+  <locationchange.tsm_city.changeto.abandoned>奇迹之海堡垒都市[previousname]被攻陷。</locationchange.tsm_city.changeto.abandoned>
+  <locationchange.tsm_city.changeto.none>奇迹之海堡垒都市[previousname]已经迁往其他更适宜居住的地方</locationchange.tsm_city.changeto.none>
+  <locationchange.none.changeto.tsm_city>奇迹之海发现了生态区[previousname]，并建立了一座堡垒都市</locationchange.none.changeto.tsm_city>
+  <locationchange.abandoned.changeto.tsm_city>奇迹之海清扫了[previousname]的内部威胁，并以此为基础建立了一座都市</locationchange.abandoned.changeto.tsm_city>
   <!--过关文书-->
   <eventtext.unlockpathgeneric.nomoney.tsm>“既然实力不行，也不打算缴纳保证金，那就不要打扰我宝贵的休息时间”</eventtext.unlockpathgeneric.nomoney.tsm>
   <eventtext.unlockpath.refusebribe.tsm>想想还是算了</eventtext.unlockpath.refusebribe.tsm>
   <lockedpathtooltiptsmreputation>这条通道已经被奇迹之海封锁了，若想继续前进，你在‖color:faction.tsm‖奇迹之海的声望必须超过 [requiredreputation]，还需征得管理员的许可。你可以在在信息界面查看你当前的声望。\n\n当前声望: [currentreputation]</lockedpathtooltiptsmreputation>
-
-
   <eventtext.unlockpathcoldcaverns.tsmc1>“你们想通过这片关卡？”\n管理员抬起头，眼神透过控制台的光幕打量了一番船队，随后熟练地操作终端，\n“稍等，我先核对一下你们船队的记录。”\n几秒钟后\n“欢迎你，船长。经过核查，你们的声望足够，已授予你们前往木卫二海脊的通行权限，权限已同步到你们的终端。”\n他停顿片刻，眼中掠过一丝严肃\n“不过，木卫二海脊远比之前的航线更加凶险，深海暗涌、未知生物和残破的沉船都可能随时威胁你们的安全。船长，请务必保持冷静与谨慎。”</eventtext.unlockpathcoldcaverns.tsmc1>
   <eventtext.unlockpathcoldcaverns.tsmc2>“想要潜入更深的区域？”\n管理员微微一笑，手指轻触终端，“稍等片刻，我需要调取你们的记录。”\n几秒钟后，屏幕上的数据让管理员皱了皱眉，“抱歉，从现有的记录来看，你们尚未达到通过封锁的要求。”\n“不过...”停顿了一下，视线从终端移向你们，语气带着些许玩味“这里可是奇迹之海，在这片海域，总有例外。如果你们执意要前往更深处，我们可以破例放行——前提是，缴纳2000mk的保证金。”\n管理员靠在椅背上，目光中带着几分等待与考量，“现在，决定权在你们手上。你们的选择是什么？”</eventtext.unlockpathcoldcaverns.tsmc2>
   <eventtext.unlockpathcoldcaverns.tsmo1>2000MK,成交！</eventtext.unlockpathcoldcaverns.tsmo1>
   <eventtext.unlockpathcoldcaverns.tsmo1.tsmc1>“很痛快嘛，我就喜欢这种性格的人，封锁线那边的人我会打好招呼，你们只管通过就好了。”</eventtext.unlockpathcoldcaverns.tsmo1.tsmc1>
   <eventtext.unlockpathcoldcaverns.tsmo1.nomoney>“没钱？唉，那我就没办法了，你们船队的记录并不让人称心如意，没钱的话考虑去悬赏那里赚一笔？</eventtext.unlockpathcoldcaverns.tsmo1.nomoney>
   <eventtext.unlockpathcoldcaverns.tsmo2.tsmc1>“既然实力不行，也不打算缴纳保证金，那就不要打扰我宝贵的休息时间”</eventtext.unlockpathcoldcaverns.tsmo2.tsmc1>
-  
   <eventtext.unlockpatheuropanridge.tsmc1>“你们想前往无光海原？”\n“请稍等一下”管理员指尖在终端上飞速划过.\n片刻后,管理员露出满意的笑容：：“看来你们一直在为我们开拓冰脊，做出了不少贡献。那么，我很高兴地宣布——无光海原的大门已向你们敞开。”\n“愿你们在那片黑暗深海中一帆风顺，祝旅途平安，船长。”</eventtext.unlockpatheuropanridge.tsmc1>
   <eventtext.unlockpatheuropanridge.tsmc2>“你们想进入海原？”\n管理员眯起眼，手指轻敲着终端，片刻后轻笑一声，“根据记录来看，这可不太好说啊……”</eventtext.unlockpatheuropanridge.tsmc2>
   <eventtext.unlockpatheuropanridge.tsmo1>“我懂，我懂4500mk的保证金够吗？”</eventtext.unlockpatheuropanridge.tsmo1>
   <eventtext.unlockpatheuropanridge.tsmo1.tsmc1>“你们的记录不算差，但是否真的做好了准备，这片危险的海域可不会轻易接纳任何人。”</eventtext.unlockpatheuropanridge.tsmo1.tsmc1>
   <eventtext.unlockpatheuropanridge.tsmo1.nomoney>“钱不够呀，这样吧，我们最近也发布了几个赏金任务，要不试试看？”</eventtext.unlockpatheuropanridge.tsmo1.nomoney>
   <eventtext.unlockpatheuropanridge.tsmo2.tsmc1>“去与不去，都是不是我们决定的，而是你们，毕竟木卫二海脊很适合居住，不是吗？”</eventtext.unlockpatheuropanridge.tsmo2.tsmc1>
-  
   <eventtext.unlockpathaphoticplateau.tsmc1>“啊，是你们啊！你们现在可是明星船队呢，木卫二到处都在传出你们的事迹呢”\“当然，当然，这意味着你们已获得通过无光海原的资格，现在可以动身前往浩瀚汪洋了。如今这种局势，能穿越到那里的船队屈指可数。”\n管理员站起身和你握手，“我会立刻通知前方的关卡，允许你们进入渊洋。愿你们在那片深不可测的海域中顺利前行。”</eventtext.unlockpathaphoticplateau.tsmc1>
   <eventtext.unlockpathaphoticplateau.tsmc2>“很抱歉”\n管理员叹了口气，神情中透出一丝无奈:“我知道你们一路走到这里并不容易，经历了不少艰难险阻。但我们不能冒险放任一艘未达标的船队进入浩瀚汪洋。”\n他抬起头，语气变得柔和了些许:“这是为了保护你们。希望你能理解，不是所有人都能承受那里潜藏的危险。”</eventtext.unlockpathaphoticplateau.tsmc2>
   <eventtext.unlockpathaphoticplateau.tsmo1>“那如果我们缴纳9K保证金呢？”</eventtext.unlockpathaphoticplateau.tsmo1>
   <eventtext.unlockpathaphoticplateau.tsmo1.tsmc1>“按我们的规定，确实是可以放行的，”他缓缓说道，语气中带着一丝慎重\n“不过，我还是得劝你们三思。浩瀚汪洋可不是人人都能轻易踏足的地方。”他凝视着你们，声音低沉却意味深长\n“那片海域隐藏着无尽的未知与危险，不是所有人都能从中归来。请务必慎重考虑。”</eventtext.unlockpathaphoticplateau.tsmo1.tsmc1>
   <eventtext.unlockpathaphoticplateau.tsmo1.nomoney>“钱不够就不要逞能，更何况钱也不是万能的，先保住命再说吧“</eventtext.unlockpathaphoticplateau.tsmo1.nomoney>
   <eventtext.unlockpathaphoticplateau.tsmo2.tsmc1>“我就是说嘛，又不一定非要过去，无光海原多好，宜居，奇迹之海的总部就在无光海原，不如买一套公寓，退休养老吧”</eventtext.unlockpathaphoticplateau.tsmo2.tsmc1>
-  
   <eventtext.unlockpathgreatsea.tsmc1>管理员老远看见你过来，他站了起来握住你手说到：“你看看，这谁来了，这不是无人不知道无人不晓的大明星船队嘛，这次来是有什么要求吗？”\n在听到你们想要前往热液废土的请求后，管理员的表情微微一僵。他沉默了片刻，随即语气沉缓地说道：“下个区域的生物数量异常丰富，加上地热活动引发的水流变化，航行将会变得更加危险。”他注视着你们，仿佛在确认你们的决心。“你们真的想好了吗？”\n他站直了身体，郑重地向你们敬了个礼。“那么，请务必小心，大意不得。”</eventtext.unlockpathgreatsea.tsmc1>
   <eventtext.unlockpathgreatsea.tsmc2>“所以你想进入热流废土？想过去的船队不少，失联的也不少，这是奇迹之海的保证金制度，如果你们执意要去的话，看看吧”</eventtext.unlockpathgreatsea.tsmc2>
   <eventtext.unlockpathgreatsea.tsmo1>“17000马克？这好说，我等下就把钱转过去”</eventtext.unlockpathgreatsea.tsmo1>
   <eventtext.unlockpathgreatsea.tsmo1.tsmc1>“不要着急啊，可以再考虑考虑。唉，这年头有人用命赚钱，有人用钱换命，我还是第一次见花钱送死的。”</eventtext.unlockpathgreatsea.tsmo1.tsmc1>
   <eventtext.unlockpathgreatsea.tsmo1.nomoney>“那就别去了，有钱有命才能花，有命总会有钱的”</eventtext.unlockpathgreatsea.tsmo1.nomoney>
   <eventtext.unlockpathgreatsea.tsmo2.tsmc1>“好多人本来会跟你一样，可以站在这里，拥有一往无前的勇气”</eventtext.unlockpathgreatsea.tsmo2.tsmc1>
-
   <tsm.a1>你好，我是奇迹之海狼隼小队队长。事务太多，我们实在是无力顾及所有，所以还是希望有人可以来帮忙解决一些事情，当然我们会出钱的！</tsm.a1>
   <tsm.a2>这里是墨染小队，现在奇迹之海情况不是很好，我们正要前往九州武库，但是这里又发布了委托，没办法，我们目前只能出钱消灾了。</tsm.a2>
   <tsm.a3>你好，我是EMBI公司的联络员，我们公司发布了几个委托，你有兴趣看一看吗？</tsm.a3>
@@ -77,7 +69,6 @@
   <tsm.a8c>随着主教的喊声越来越大，周围的人越来越多，把这里围的水泄不通。很快突然出现了一群全副武装的降临派成员。主教看见后，却很慌张，想要逃离</tsm.a8c>
   <tsm.a8d>你感到不妙，放开了主教准备战斗，结果发现那些武装成员抓住主教在交谈了几句后，便把枪口对准了主教，然后开火，一下子全乱完了，人们四散奔逃。</tsm.a8d>
   <tsm.b8>无视他，并且走开。</tsm.b8>
-
   <tsm.lq>领取任务</tsm.lq>
   <tsm.dh>兑换物品</tsm.dh>
   <tsm.see>兑换物品</tsm.see>
@@ -107,12 +98,12 @@
   <tsm.dh.yl>兑换医疗补给</tsm.dh.yl>
   <tsm.dh.dy>兑换弹药补给</tsm.dh.dy>
   <tsm.dh.hw>兑换护卫服务</tsm.dh.hw>
-
   <!--test:航道封锁-->
   <tsm.warming1.1>这条航道已经被奇迹之海封锁，请立即返航，否则我们将采取武力驱逐！</tsm.warming1.1>
   <tsm.warming1.2>最后一次警告！请立即返航！</tsm.warming1.2>
   <!--test:站点入侵-->
   <tsm.outpost_invasions.1>你看见一个男子鬼鬼祟祟的，于是你上前去看看他要干什么</tsm.outpost_invasions.1>
+  <tsm.outpost_invasions.cancel>无视他，并且走开。</tsm.outpost_invasions.cancel>
   <tsm.outpost_invasions.1.1>你在干什么？”你一边说话,一边把手搭在他肩上</tsm.outpost_invasions.1.1>
   <tsm.outpost_invasions.1.2>“别跑！”你刚追没两步，站点就开始响起了警报声</tsm.outpost_invasions.1.2>
   <tsm.outpost_invasions.1.3>奇迹之海：\n检测到未知势力入侵，现已启动T-71防御协议，全站点进入封锁状态。请各位市民保持冷静，立即前往最近的安全避难所。日暮山作战部门将全面展开对入侵者的清理行动，请勿擅自行动，耐心等待局势恢复。</tsm.outpost_invasions.1.3>
@@ -132,78 +123,54 @@
   <npctitle.TSMnpc_7>降临派的主教</npctitle.TSMnpc_7>
   <charactername.TSMnpc_7>裴拉文</charactername.TSMnpc_7>
   <charactername.TSMnpc_8>Alice</charactername.TSMnpc_8>
-
   <npctitle.tsm_vip_bodyguard_1>奇迹之海VIP安保</npctitle.tsm_vip_bodyguard_1>
   <charactername.tsm_vip_bodyguard_1>蚍蜉</charactername.tsm_vip_bodyguard_1>
-
   <npctitle.tsm_outpost_combat_npc>奇迹之海日暮山作战部</npctitle.tsm_outpost_combat_npc>
   <npctitle.tsm_outpostmanager>管制官</npctitle.tsm_outpostmanager>
-
   <npctitle.tsm_wz_ff>军需官</npctitle.tsm_wz_ff>
-
   <npctitle.tsm_caretakers>航道管理员</npctitle.tsm_caretakers>
-
   <npctitle.tsm_wz_ff_xbz>信标站管理员</npctitle.tsm_wz_ff_xbz>
-
   <npctitle.tsm_bountyhunter>奇迹之海赏金任务派发员</npctitle.tsm_bountyhunter>
-
   <npctitle.tsm_gendarmerie>奇迹之海宪兵</npctitle.tsm_gendarmerie>
   <!--物品-->
   <entityname.tsm_lighter>老牌打火机</entityname.tsm_lighter>
   <entitydescription.tsm_lighter>你想抽一支烟？</entitydescription.tsm_lighter>
-
   <entityname.tsm_marlboro_cigar>万宝路香烟</entityname.tsm_marlboro_cigar>
   <entitydescription.tsm_marlboro_cigar>Man always remember love because of romantic only</entitydescription.tsm_marlboro_cigar>
-
   <entityname.tsm_marlboro_box>盒装万宝路</entityname.tsm_marlboro_box>
   <entitydescription.tsm_marlboro_box>抽万宝路更有男人味\n内含8根万宝路香烟\n可缓慢治疗精神压力、精神病以及谵妄中毒</entitydescription.tsm_marlboro_box>
-
   <entityname.tsm_Chinese_cigar>华子</entityname.tsm_Chinese_cigar>
   <entitydescription.tsm_Chinese_cigar>每一口中华尽显尊贵品质</entitydescription.tsm_Chinese_cigar>
-
   <entityname.tsm_Chinesecigar_box>盒装中华</entityname.tsm_Chinesecigar_box>
   <entitydescription.tsm_Chinesecigar_box>鲜明个性,典雅风范,中华之美\n内含6根中华\n可快速治疗精神压力和精神病，并且给予精神压力抗性</entitydescription.tsm_Chinesecigar_box>
-
   <entityname.tsm_universe_cigar>宇宙牌香烟</entityname.tsm_universe_cigar>
   <entitydescription.tsm_universe_cigar>木卫二超人的第一选择</entitydescription.tsm_universe_cigar>
-
   <entityname.tsm_universe_box>盒装宇宙</entityname.tsm_universe_box>
   <entitydescription.tsm_universe_box>抽宇宙牌，做木卫二人\n内含6根宇宙牌香烟\n可快速治疗精神压力和谵妄中毒</entitydescription.tsm_universe_box>
-
   <entityname.tsm_eyi_relics>恶疫体</entityname.tsm_eyi_relics>
   <entitydescription.tsm_eyi_relics>本不属于这个世界的产物,或许需要异常事务收容箱来收容</entitydescription.tsm_eyi_relics>
-
- <entityname.tsm_eyi_glandular>遗传骸骨</entityname.tsm_eyi_glandular>
- <entitydescription.tsm_eyi_glandular>用于制作恶疫药剂</entitydescription.tsm_eyi_glandular>
- <entityname.tsm_eyi_embryo>胚胎果实</entityname.tsm_eyi_embryo>
- <entitydescription.tsm_eyi_embryo>感染物身上掉落的感染源</entitydescription.tsm_eyi_embryo>
-
- <entityname.tsm_needletube_empty>空针管</entityname.tsm_needletube_empty>
- <entitydescription.tsm_needletube_empty></entitydescription.tsm_needletube_empty>
-
- <entityname.tsm_eyi_helmet>恶疫防护头盔</entityname.tsm_eyi_helmet>
- <entitydescription.tsm_eyi_helmet>可插入氧气罐进行自循环，研究人员专用的防护头盔。可大大降低感染风险，强化玻璃面罩，拥有一定防护能力同时获得更大的视野</entitydescription.tsm_eyi_helmet>
-
- <entityname.tsm_eyi_suit>恶疫防护服</entityname.tsm_eyi_suit>
- <entitydescription.tsm_eyi_suit>研究人员专用的防护服，可以抵御一定水压，可以防止接触恶疫体时的感染</entitydescription.tsm_eyi_suit>
- 
+  <entityname.tsm_eyi_glandular>遗传骸骨</entityname.tsm_eyi_glandular>
+  <entitydescription.tsm_eyi_glandular>用于制作恶疫药剂</entitydescription.tsm_eyi_glandular>
+  <entityname.tsm_eyi_embryo>胚胎果实</entityname.tsm_eyi_embryo>
+  <entitydescription.tsm_eyi_embryo>感染物身上掉落的感染源</entitydescription.tsm_eyi_embryo>
+  <entityname.tsm_needletube_empty>空针管</entityname.tsm_needletube_empty>
+  <entitydescription.tsm_needletube_empty></entitydescription.tsm_needletube_empty>
+  <entityname.tsm_eyi_helmet>恶疫防护头盔</entityname.tsm_eyi_helmet>
+  <entitydescription.tsm_eyi_helmet>可插入氧气罐进行自循环，研究人员专用的防护头盔。可大大降低感染风险，强化玻璃面罩，拥有一定防护能力同时获得更大的视野</entitydescription.tsm_eyi_helmet>
+  <entityname.tsm_eyi_suit>恶疫防护服</entityname.tsm_eyi_suit>
+  <entitydescription.tsm_eyi_suit>研究人员专用的防护服，可以抵御一定水压，可以防止接触恶疫体时的感染</entitydescription.tsm_eyi_suit>
   <entityname.tsm_virusstage_inhibitory>血肉Ⅲ型抑制剂</entityname.tsm_virusstage_inhibitory>
   <entitydescription.tsm_virusstage_inhibitory>用于抑制血肉胚胎的生长防止进入下一阶段，但是并不能完全根治</entitydescription.tsm_virusstage_inhibitory>
-
   <entityname.tsm_virusstage_clear>血肉强效清除剂</entityname.tsm_virusstage_clear>
   <entitydescription.tsm_virusstage_clear>能够直接清除身体内的血肉胚胎，但是会对身体造成伤害。</entitydescription.tsm_virusstage_clear>
-
   <entityname.tsm_virusstage_deep_inhibitory>恶疫强效清除剂</entityname.tsm_virusstage_deep_inhibitory>
   <entitydescription.tsm_virusstage_deep_inhibitory>用于强效清除恶疫（血肉胚胎二阶段），代价是会对身体造成大量伤害。</entitydescription.tsm_virusstage_deep_inhibitory>
-
   <entityname.tsm_eyi_stabilise_reagent>恶疫常态</entityname.tsm_eyi_stabilise_reagent>
   <entitydescription.tsm_eyi_stabilise_reagent>稳定态：在你体内沉睡，如果体内被注入活体恶疫则会加速转化过程\n奇迹之海研发针对人体增强的常态，不同阶段会有不同的效果</entitydescription.tsm_eyi_stabilise_reagent>
-
   <entityname.tsm_eyi_stabilise_reagent_1>恶疫稳定辅助剂</entityname.tsm_eyi_stabilise_reagent_1>
   <entitydescription.tsm_eyi_stabilise_reagent_1>不知道何处来的辅助剂，也不能确定他是作为增加还是减少恶疫常态来使用的</entitydescription.tsm_eyi_stabilise_reagent_1>
   <entityname.tsm_eyi_stabilise_reagent_2>恶疫稳定辅助剂</entityname.tsm_eyi_stabilise_reagent_2>
   <entitydescription.tsm_eyi_stabilise_reagent_2>不知道何处来的辅助剂，也不能确定他是作为增加还是减少恶疫常态来使用的</entitydescription.tsm_eyi_stabilise_reagent_2>
-
   <entityname.tsm_eyi_stabilise_add_1>恶疫补强辅助剂I</entityname.tsm_eyi_stabilise_add_1>
   <entitydescription.tsm_eyi_stabilise_add_1>稳定辅助剂，每次使用会‖color:255,110,0,255‖增加1‖color:end‖的稳定恶疫常态</entitydescription.tsm_eyi_stabilise_add_1>
   <entityname.tsm_eyi_stabilise_add_2>恶疫补强辅助剂II</entityname.tsm_eyi_stabilise_add_2>
@@ -237,27 +204,25 @@
   <entitydescription.tsm_soundplayer>音频播放器，可以播放从BOSS身上获得到的音频磁带，又或者是站点购买的。</entitydescription.tsm_soundplayer>
   <entityname.tsm_walkman>今宵别梦寒</entityname.tsm_walkman>
   <entitydescription.tsm_walkman>随身听，可以播放从BOSS身上获得到的音频磁带，又或者是站点购买的。</entitydescription.tsm_walkman>
-
- <entityname.猜疑链>猜疑链</entityname.猜疑链>
- <entitydescription.猜疑链></entitydescription.猜疑链>
- <entityname.降神典仪>降神典仪</entityname.降神典仪>
- <entitydescription.降神典仪></entitydescription.降神典仪>
- <entityname.腐败机械>腐败机械</entityname.腐败机械>
- <entitydescription.腐败机械></entitydescription.腐败机械>
- <entityname.zszg>真实之棺</entityname.zszg>
- <entitydescription.zszg></entitydescription.zszg>
- <entityname.bjzc>悲剧之城艾罗雷诺</entityname.bjzc>
- <entitydescription.bjzc></entitydescription.bjzc>
- <entityname.kl1>卡戎一</entityname.kl1>
- <entitydescription.kl1></entitydescription.kl1>
- <entityname.kl2>卡戎二</entityname.kl2>
- <entitydescription.kl2></entitydescription.kl2>
- <entityname.kl2>卡戎二</entityname.kl2>
- <entitydescription.kl2></entitydescription.kl2>
-
-
+  <entityname.猜疑链>猜疑链</entityname.猜疑链>
+  <entitydescription.猜疑链></entitydescription.猜疑链>
+  <entityname.降神典仪>降神典仪</entityname.降神典仪>
+  <entitydescription.降神典仪></entitydescription.降神典仪>
+  <entityname.腐败机械>腐败机械</entityname.腐败机械>
+  <entitydescription.腐败机械></entitydescription.腐败机械>
+  <entityname.zszg>真实之棺</entityname.zszg>
+  <entitydescription.zszg></entitydescription.zszg>
+  <entityname.bjzc>悲剧之城艾罗雷诺</entityname.bjzc>
+  <entitydescription.bjzc></entitydescription.bjzc>
+  <entityname.kl1>卡戎一</entityname.kl1>
+  <entitydescription.kl1></entitydescription.kl1>
+  <entityname.kl2>卡戎二</entityname.kl2>
+  <entitydescription.kl2></entitydescription.kl2>
+  <entityname.kl2>卡戎二</entityname.kl2>
+  <entitydescription.kl2></entitydescription.kl2>
   <entityname.tsm_shipammo_shell>科技弹</entityname.tsm_shipammo_shell>
-  <entitydescription.tsm_shipammo_shell>轨道炮弹药&#xD;&#xA;这种弹药主要针对结构使用，在爆炸后会产生酸液腐蚀船壳</entitydescription.tsm_shipammo_shell>
+  <entitydescription.tsm_shipammo_shell>轨道炮弹药
+这种弹药主要针对结构使用，在爆炸后会产生酸液腐蚀船壳</entitydescription.tsm_shipammo_shell>
   <!--阿糖-->
   <entityname.tsm_suger>阿糖的幻化器</entityname.tsm_suger>
   <entitydescription.tsm_suger>阿糖的幻化器，可以变化成阿糖的模样</entitydescription.tsm_suger>
@@ -309,10 +274,10 @@
   <entitydescription.tsm_hxl>琅\n幻影下的实体</entitydescription.tsm_hxl>
   <entityname.tsm_hxl_unform>幻下琅的衣服</entityname.tsm_hxl_unform>
   <entitydescription.tsm_hxl_unform>琅\n幻影下的实体</entitydescription.tsm_hxl_unform>
- <entityname.tsmmissions_hx870>幻灭870</entityname.tsmmissions_hx870>
- <entitydescription.tsmmissions_hx870>要多笑</entitydescription.tsmmissions_hx870>
- <entityname.tsmmissions_hxl_ju>懅</entityname.tsmmissions_hxl_ju>
- <entitydescription.tsmmissions_hxl_ju>不要悲伤</entitydescription.tsmmissions_hxl_ju>
+  <entityname.tsmmissions_hx870>幻灭870</entityname.tsmmissions_hx870>
+  <entitydescription.tsmmissions_hx870>要多笑</entitydescription.tsmmissions_hx870>
+  <entityname.tsmmissions_hxl_ju>懅</entityname.tsmmissions_hxl_ju>
+  <entitydescription.tsmmissions_hxl_ju>不要悲伤</entitydescription.tsmmissions_hxl_ju>
   <tsm.hxl1>你好，我是奇迹之海武装部负责人雨琅，我应指示在这里给路过的船长发放奇迹之海的悬赏任务。</tsm.hxl1>
   <tsm.hxl.a1>你是……幻下琅？</tsm.hxl.a1>
   <tsm.hxl2>啊，对，那是我的昵称。你也可以这样叫我。</tsm.hxl2>
@@ -323,87 +288,59 @@
   <tsm.hxl.a4>这样啊，好吧好吧，那现在你这里现在有什么任务吗？</tsm.hxl.a4>
   <tsm.hxl.1>你好，我是奇迹之海武装部负责人雨琅，我还在寻找找我失踪的队员</tsm.hxl.1>
   <tsm.hxl.a1>抱歉打扰了</tsm.hxl.a1>
-
   <!--妖梦-->
   <entityname.tsmmissions_TTI2011>‖color:200,0,0,255‖TTI2011‖color:end‖</entityname.tsmmissions_TTI2011>
   <entitydescription.tsmmissions_TTI2011>妖梦父亲留给妖梦的唯一遗物，使用‖color:100,0,0,255‖9mm‖color:end‖手枪弹匣</entitydescription.tsmmissions_TTI2011>
-
   <entityname.tsm_9_mag>手枪弹匣（9mm）</entityname.tsm_9_mag>
   <entitydescription.tsm_9_mag>装填18发9mm子弹</entitydescription.tsm_9_mag>
-
   <!--其他-->
   <entityname.tsm_identifier>奇迹之海友军识别码</entityname.tsm_identifier>
   <entitydescription.tsm_identifier>奇迹之海内部常见的识别码，可以要求奇迹之海后勤部门为你提供各种服务</entitydescription.tsm_identifier>
-
   <entityname.tsm_pgcflare>护卫登陆舱指示器</entityname.tsm_pgcflare>
   <entitydescription.tsm_pgcflare>'记住求助的感觉，呼叫奇迹之海'\n\n使用方式：扔出去，耐心等待即可。(只存在一巡回)</entitydescription.tsm_pgcflare>
-
   <entityname.tsm_wz_cl_flare>矿物物资投放舱指示器</entityname.tsm_wz_cl_flare>
   <entitydescription.tsm_wz_cl_flare>扔出后，奇迹之海会受到信号，并根据坐标投放物资补给舱</entitydescription.tsm_wz_cl_flare>
-
   <entityname.tsm_wz_yl_flare>医疗物资投放舱指示器</entityname.tsm_wz_yl_flare>
   <entitydescription.tsm_wz_yl_flare>扔出后，奇迹之海会受到信号，并根据坐标投放医疗补给舱</entitydescription.tsm_wz_yl_flare>
-
   <entityname.tsm_mcrate_replenishment1>奇迹之海矿物补给箱</entityname.tsm_mcrate_replenishment1>
   <entitydescription.tsm_mcrate_replenishment1>奇迹之海常见的物资补给箱，分解后会随机获得各种常见的矿物\n这些可都是才从矿井内打包发出来的，你嫌少我还嫌少呢</entitydescription.tsm_mcrate_replenishment1>
-
   <entityname.tsm_mcrate_replenishment2>奇迹之海矿物补给箱</entityname.tsm_mcrate_replenishment2>
   <entitydescription.tsm_mcrate_replenishment2>奇迹之海常见的物资补给箱，分解后会随机获得各种常见的矿物\n这些可都是才从矿井内打包发出来的，你嫌少我还嫌少呢</entitydescription.tsm_mcrate_replenishment2>
-
   <entityname.tsm_mcrate_replenishment_med>奇迹之海医疗补给箱</entityname.tsm_mcrate_replenishment_med>
   <entitydescription.tsm_mcrate_replenishment_med>奇迹之海常见的医疗补给箱，分解后会随机获得各种医疗物资\n加急！加急！前线兄弟们还等着救命！</entitydescription.tsm_mcrate_replenishment_med>
-
   <entityname.tsm_suit_O5>西服</entityname.tsm_suit_O5>
   <entitydescription.tsm_suit_O5>你的第二层皮肤，包裹着力量与自信</entitydescription.tsm_suit_O5>
-
   <entityname.tsm_gendarmerie_uniforms>奇迹之海宪兵制服</entityname.tsm_gendarmerie_uniforms>
   <entitydescription.tsm_gendarmerie_uniforms>奇迹之海的宪兵制服，主要维持部队纪律，保障部队命令的执行</entitydescription.tsm_gendarmerie_uniforms>
-
   <entityname.tsm_gendarmerie_hat>奇迹之海宪兵帽</entityname.tsm_gendarmerie_hat>
   <entitydescription.tsm_gendarmerie_hat>违规违纪，严惩不贷</entitydescription.tsm_gendarmerie_hat>
-
   <!--跳帮人员武器&服装-->
   <entityname.tsm_advancedcombatsuit>损坏的军用先进防护服</entityname.tsm_advancedcombatsuit>
   <entitydescription.tsm_advancedcombatsuit>大部分外部装甲受到了破坏，只能抗住5000米的水压了。</entitydescription.tsm_advancedcombatsuit>
-
   <entityname.tsm_hdlcsuits>损坏的重型铅铸潜水服</entityname.tsm_hdlcsuits>
   <entitydescription.tsm_hdlcsuits>装甲有部分受损，但是还是可以勉强潜入6500米。</entitydescription.tsm_hdlcsuits>
-
   <entityname.tsm_orangeconstant>损坏的橙无常防护服</entityname.tsm_orangeconstant>
   <entitydescription.tsm_orangeconstant>这件防护服在战斗中损坏了，很多功能都失效了，耐压抗性只有5000米</entitydescription.tsm_orangeconstant>
-
   <entityname.tsm_rz_2a>戎装2号A型</entityname.tsm_rz_2a>
   <entitydescription.tsm_rz_2a>与2号B型不同的是，他并没有自带武器，仅仅只是作为一个全覆式外骨骼使用</entitydescription.tsm_rz_2a>
-
   <entityname.tsm_advancedcombat_helmet_thermalgoggles>老式作战头盔I型</entityname.tsm_advancedcombat_helmet_thermalgoggles>
   <entitydescription.tsm_advancedcombat_helmet_thermalgoggles>老式作战头盔</entitydescription.tsm_advancedcombat_helmet_thermalgoggles>
-
   <entityname.tsm_advancedcombat_helmet_mask>老式作战头盔II型</entityname.tsm_advancedcombat_helmet_mask>
   <entitydescription.tsm_advancedcombat_helmet_mask>老式作战头盔</entitydescription.tsm_advancedcombat_helmet_mask>
-
   <entityname.lm_rapidreaction_helmet>联盟快速反应部队头盔</entityname.lm_rapidreaction_helmet>
   <entitydescription.lm_rapidreaction_helmet>联盟快反部队制式头盔</entitydescription.lm_rapidreaction_helmet>
-
   <entityname.lm_rapidreaction_vest>联盟快速反应部队防弹衣</entityname.lm_rapidreaction_vest>
   <entitydescription.lm_rapidreaction_vest>联盟快反部队制式防弹衣</entitydescription.lm_rapidreaction_vest>
-
   <entityname.lm_rapidreaction_uniform>联盟快速反应部队战斗服</entityname.lm_rapidreaction_uniform>
   <entitydescription.lm_rapidreaction_uniform>联盟快反部队制式作战服</entitydescription.lm_rapidreaction_uniform>
-
   <entityname.tsm_old_uniform>老式作战服</entityname.tsm_old_uniform>
   <entitydescription.tsm_old_uniform>老式作训服</entitydescription.tsm_old_uniform>
-
   <entityname.adventists_uniform>降临派首领教袍</entityname.adventists_uniform>
   <entitydescription.adventists_uniform></entitydescription.adventists_uniform>
-
   <entityname.adventists_Wind_proof>降临派防风安全外套</entityname.adventists_Wind_proof>
   <entitydescription.adventists_Wind_proof></entitydescription.adventists_Wind_proof>
-
   <entityname.tsm_rz_pirent_m>戎装盗窃者型</entityname.tsm_rz_pirent_m>
   <entitydescription.tsm_rz_pirent_m>盗窃者们，在袭击奇迹之海货运船后得到戎装2号A型，并按照自己的想法改装</entitydescription.tsm_rz_pirent_m>
-
-  
-
   <!-- 子分类 -->
   <subcategory.tsmmissions>T.S.M MISSIONS-问君此去几时还</subcategory.tsmmissions>
   <!-- 未使用 -->
@@ -436,7 +373,6 @@
   <talentname.tsm_specops>特种部队</talentname.tsm_specops>
   <talentname.tsm_beatcop>巡检警察</talentname.tsm_beatcop>
   <talentname.tsm_bleeding_outpost_sundown>凝血剂</talentname.tsm_bleeding_outpost_sundown>
-
   <talenttree.tsm_gunner>炮手</talenttree.tsm_gunner>
   <talenttree.tsm_frogman>蛙人</talenttree.tsm_frogman>
   <talenttree.tsm_enforcer>执法者</talenttree.tsm_enforcer>
@@ -444,69 +380,50 @@
   <talenttree.tsm_outpostsecurityofficer_frogman>蛙人</talenttree.tsm_outpostsecurityofficer_frogman>
   <talenttree.tsm_outpostsecurityofficer_enforcer>执法者</talenttree.tsm_outpostsecurityofficer_enforcer>
   <talenttree.tsm_outpostsecurityofficer_primary>初始</talenttree.tsm_outpostsecurityofficer_primary>
-
   <talentname.suger_tail_handle>阿糖拟态</talentname.suger_tail_handle>
   <talentdescription.suger_tail_handle>当你身着幻化器时，你将长出猫耳猫尾。</talentdescription.suger_tail_handle>
-
   <talentname.tsm_olympian>奥林匹斯</talentname.tsm_olympian>
   <talentdescription.tsm_olympian>你的技能点最高可增加到200</talentdescription.tsm_olympian>
-
   <talentname.tsm_vip_bodyguard>奇迹之海VIP安保增强</talentname.tsm_vip_bodyguard>
   <talentdescription.tsm_vip_bodyguard>为了更好的保护VIP用户，随行安保会获得更多增益</talentdescription.tsm_vip_bodyguard>
-
   <talentname.tsm_ai_outpost>奇迹之海稳定恶疫常态</talentname.tsm_ai_outpost>
   <talentdescription.tsm_ai_outpost>改变部分dna序列，让身体排斥外来寄生。</talentdescription.tsm_ai_outpost>
-
   <talentname.tsm_eyi_instability>不稳定恶疫异常态</talentname.tsm_eyi_instability>
   <talentdescription.tsm_eyi_instability></talentdescription.tsm_eyi_instability>
-
   <!--afflictions-->
   <afflictionname.tsm_ondeath>死海</afflictionname.tsm_ondeath>
   <afflictiondescription.tsm_ondeath>你在追寻何物</afflictiondescription.tsm_ondeath>
   <afflictioncauseofdeath.tsm_ondeath>你在追寻何物</afflictioncauseofdeath.tsm_ondeath>
   <afflictioncauseofdeathself.tsm_ondeath>你在追寻何物</afflictioncauseofdeathself.tsm_ondeath>
-
- <afflictionname.tsm_fire_water>沸腾之海</afflictionname.tsm_fire_water>
- <afflictiondescription.tsm_fire_water>热！热！这个航道热的不行，在舱室内感觉都要被蒸熟了，外面的海水像是沸腾了一般\n此巡回内，玩家最大生命值-30%\n接触水会有持续烧伤，不同深度潜水服受到的烧伤不同</afflictiondescription.tsm_fire_water>
-
+  <afflictionname.tsm_fire_water>沸腾之海</afflictionname.tsm_fire_water>
+  <afflictiondescription.tsm_fire_water>热！热！这个航道热的不行，在舱室内感觉都要被蒸熟了，外面的海水像是沸腾了一般\n此巡回内，玩家最大生命值-30%\n接触水会有持续烧伤，不同深度潜水服受到的烧伤不同</afflictiondescription.tsm_fire_water>
   <afflictionname.tsm_eyi_attack>战斗恶疫常态</afflictionname.tsm_eyi_attack>
   <afflictiondescription.tsm_eyi_attack>你体内的恶疫为稳定状态，他会持续为你的战斗提供加成</afflictiondescription.tsm_eyi_attack>
-
   <afflictionname.tsm_stress_resistance>意志坚定</afflictionname.tsm_stress_resistance>
   <afflictiondescription.tsm_stress_resistance>你的意志此时非常坚定，可以抗住其他东西对你的精神的摧残</afflictiondescription.tsm_stress_resistance>
-
   <afflictionname.tsm_stress>精神压力</afflictionname.tsm_stress>
   <afflictiondescription.tsm_stress>你的精神极度不稳定</afflictiondescription.tsm_stress>
   <afflictiondescription.tsm_stress>你现在感觉很紧张，很痛苦</afflictiondescription.tsm_stress>
   <afflictioncauseofdeath.tsm_stress>他自杀了</afflictioncauseofdeath.tsm_stress>
   <afflictioncauseofdeathself.tsm_stress>你自杀了</afflictioncauseofdeathself.tsm_stress>
-
   <afflictionname.tsm_eyi_provocative>血肉信息素</afflictionname.tsm_eyi_provocative>
   <afflictiondescription.tsm_eyi_provocative>你被腐烂的躯体咬过，现在你受到的撕裂伤和咬伤会增加，并且敌人会更容易以你为目标</afflictiondescription.tsm_eyi_provocative>
-
   <afflictionname.tsm_virusstage>血肉胚胎</afflictionname.tsm_virusstage>
   <afflictiondescription.tsm_virusstage>恶疫病毒正在把你的身体当作培养场，宿主的基因被强行改造来与破皮者相匹配</afflictiondescription.tsm_virusstage>
-
- <afflictionname.tsm_virusstage_inhibitory>基因同源</afflictionname.tsm_virusstage_inhibitory>
- <afflictiondescription.tsm_virusstage_inhibitory></afflictiondescription.tsm_virusstage_inhibitory>
-
+  <afflictionname.tsm_virusstage_inhibitory>基因同源</afflictionname.tsm_virusstage_inhibitory>
+  <afflictiondescription.tsm_virusstage_inhibitory></afflictiondescription.tsm_virusstage_inhibitory>
   <afflictionname.tsm_virusstage_deep>恶疫</afflictionname.tsm_virusstage_deep>
   <afflictiondescription.tsm_virusstage_deep>宿主的基因已经被改造，这种情况基本上不可逆转，他的身体正在发生变化</afflictiondescription.tsm_virusstage_deep>
   <afflictioncauseofdeath.tsm_virusstage_deep>我逆流而上，你宛在水中央</afflictioncauseofdeath.tsm_virusstage_deep>
   <afflictioncauseofdeathself.tsm_virusstage_deep>我逆流而上，你宛在水中央</afflictioncauseofdeathself.tsm_virusstage_deep>
-
   <afflictionname.tsmmission_eyi_bite>虫叮</afflictionname.tsmmission_eyi_bite>
   <afflictiondescription.tsmmission_eyi_bite>你被恶疫血虫咬了</afflictiondescription.tsmmission_eyi_bite>
-
   <afflictionname.tsmmission_monster_50>断骨</afflictionname.tsmmission_monster_50>
   <afflictiondescription.tsmmission_monster_50>你感觉身上的骨头断了\n此时你受到的撕裂和咬伤都将增加</afflictiondescription.tsmmission_monster_50>
-
   <afflictionname.tsmmission_ai_mod_resistancefor>奇迹之海日暮山稳定恶疫常态</afflictionname.tsmmission_ai_mod_resistancefor>
   <afflictiondescription.tsmmission_ai_mod_resistancefor>改变部分dna序列，让身体排斥外来寄生。</afflictiondescription.tsmmission_ai_mod_resistancefor>
-
   <afflictionname.tsmmission_bodyguard_resistancefor>奇迹之海安保稳定恶疫常态</afflictionname.tsmmission_bodyguard_resistancefor>
   <afflictiondescription.tsmmission_bodyguard_resistancefor>VIP随行安保使用的稳定常态，目的在于免疫画皮感染，避免感染后让VIP安全受到威胁</afflictiondescription.tsmmission_bodyguard_resistancefor>
-
   <afflictionname.tsm_eyi_stable_state>稳定恶疫常态</afflictionname.tsm_eyi_stable_state>
   <afflictiondescription.tsmmission_eyi_0_1>在此阶段，你将会免疫水压，不需要氧气，最大生命值提高30%，并且不再会药物成瘾，烧伤迅速恢复，会迅速治疗血肉胚胎以及画皮</afflictiondescription.tsmmission_eyi_0_1>
   <afflictiondescription.tsmmission_eyi_1_4>在此阶段，你将不会需要氧气，并且获得30%游泳速度</afflictiondescription.tsmmission_eyi_1_4>
@@ -532,35 +449,27 @@
   <afflictiondescription.tsmmission_eyi_85_90>在此阶段，你将获得25%物理伤害和烧伤抗性，获得25%攻击力加成</afflictiondescription.tsmmission_eyi_85_90>
   <afflictiondescription.tsmmission_eyi_90_95>在此阶段，所有对你的治疗效果将增加100%</afflictiondescription.tsmmission_eyi_90_95>
   <afflictiondescription.tsmmission_eyi_95_100>在此阶段，你的身体部分dna序列发生改变，开始排斥外来寄生</afflictiondescription.tsmmission_eyi_95_100>
-
- <afflictionname.tsm_zs>照射</afflictionname.tsm_zs>
- <afflictiondescription.tsm_zs>被某种射线持续照射，你的皮肤开始燃烧</afflictiondescription.tsm_zs>
- <afflictioncauseofdeath.tsm_zs>照射致死</afflictioncauseofdeath.tsm_zs>
- <afflictioncauseofdeathself.tsm_zs>照射致死</afflictioncauseofdeathself.tsm_zs>
-
- <afflictionname.eyi_zb_eyivariant>转化侵袭</afflictionname.eyi_zb_eyivariant>
-  
-  
+  <afflictionname.tsm_zs>照射</afflictionname.tsm_zs>
+  <afflictiondescription.tsm_zs>被某种射线持续照射，你的皮肤开始燃烧</afflictiondescription.tsm_zs>
+  <afflictioncauseofdeath.tsm_zs>照射致死</afflictioncauseofdeath.tsm_zs>
+  <afflictioncauseofdeathself.tsm_zs>照射致死</afflictioncauseofdeathself.tsm_zs>
+  <afflictionname.eyi_zb_eyivariant>转化侵袭</afflictionname.eyi_zb_eyivariant>
   <!--站点-->
   <locationdescription.tsm_city>奇迹之海旗下最大的都市，人来人往，比较全面的设施以及服务。</locationdescription.tsm_city>
-
   <locationname.tsm_city>奇迹之海堡垒都市</locationname.tsm_city>
   <locationnameformat.tsm_city>[name]</locationnameformat.tsm_city>
   <locationnameformat.tsm_city>[name]城</locationnameformat.tsm_city>
   <locationnameformat.tsm_city>[name]站</locationnameformat.tsm_city>
-
   <locationname.tsm_mine>奇迹之海矿坑站点</locationname.tsm_mine>
   <locationdescription.tsm_mine>奇迹之海旗下矿物开采地，可以深入到矿洞里采矿</locationdescription.tsm_mine>
   <locationnameformat.tsm_mine>[name]</locationnameformat.tsm_mine>
   <locationnameformat.tsm_mine>[name]城</locationnameformat.tsm_mine>
   <locationnameformat.tsm_mine>[name]站</locationnameformat.tsm_mine>
-
   <locationname.tsm_military>奇迹之海武装部</locationname.tsm_military>
   <locationdescription.tsm_military>奇迹之海旗下的军事瓮城</locationdescription.tsm_military>
   <locationnameformat.tsm_military>[name]</locationnameformat.tsm_military>
   <locationnameformat.tsm_military>[name]城</locationnameformat.tsm_military>
   <locationnameformat.tsm_military>[name]站</locationnameformat.tsm_military>
-
   <locationname.tsm_city.0>曦歌</locationname.tsm_city.0>
   <locationname.tsm_city.1>三神丘</locationname.tsm_city.1>
   <locationname.tsm_city.2>怀朔</locationname.tsm_city.2>

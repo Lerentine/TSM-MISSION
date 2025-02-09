@@ -1,4 +1,5 @@
-﻿<Character SpeciesName="Eclipticshadow" SpeciesTranslationOverride="" DisplayName="黄道掠影" Group="tsm" Humanoid="False" HasInfo="False" CanInteract="False" Husk="False" UseHuskAppendage="False" NeedsAir="False" NeedsWater="True" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="100" Visibility="100" BloodDecal="blackblood" BleedParticleAir="blackblooddrop" BleedParticleWater="blackwaterblood" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="8" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Character SpeciesName="Eclipticshadow" SpeciesTranslationOverride="" DisplayName="黄道掠影" Group="tsm" Humanoid="False" HasInfo="False" CanInteract="False" Husk="False" UseHuskAppendage="False" NeedsAir="False" NeedsWater="True" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="100" Visibility="100" BloodDecal="blackblood" BleedParticleAir="blackblooddrop" BleedParticleWater="blackwaterblood" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="8" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="">
   <ragdolls folder="default" />
   <animations folder="default" />
   <health Vitality="800" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0.5" ConstantHealthRegeneration="0.1" HealthRegenerationWhenEating="5" StunImmunity="False" PoisonImmunity="False" PoisonVulnerability="1" EmpVulnerability="0" ApplyAfflictionColors="False" />
@@ -55,20 +56,20 @@
     <ParticleEmitter scalemax="2" scalemin="1" anglemax="360" anglemin="0" velocitymax="300" velocitymin="100" particleamount="200" particle="gib" />
     <SpawnCharacter speciesname="Shadowreave" spread="100" count="5" />
   </StatusEffect>
-  <sound File="%ModDir%\Character\Eclipticshadow\schaden.OGG" State="Attack" Range="2000" Volume="1" Tags="" />
-  <sound File="%ModDir%\Character\Eclipticshadow\Hiss 2.OGG" State="Damage" Range="2000" Volume="1" Tags="" />
-  <sound File="%ModDir%\Character\Eclipticshadow\knurren-2.OGG" State="Idle" Range="2000" Volume="1" Tags="" />
-  <sound File="%ModDir%\Character\Eclipticshadow\Gore.OGG" State="Die" Range="2000" Volume="2" Tags="" />
-  <sound File="%ModDir%\Character\Eclipticshadow\schaden 2.OGG" State="Attack" Range="2000" Volume="1" Tags="" />
-  <sound File="%ModDir%\Character\Eclipticshadow\Hiss 6.OGG" State="Damage" Range="2000" Volume="1" Tags="" />
-  <sound File="%ModDir%\Character\Eclipticshadow\schaden 5.OGG" State="Attack" Range="2000" Volume="1" Tags="" />
-  <sound File="%ModDir%\Character\Eclipticshadow\Hiss 4.OGG" State="Damage" Range="2000" Volume="1" Tags="" />
-  <sound File="%ModDir%\Character\Eclipticshadow\Hiss 3.OGG" State="Idle" Range="5000" Volume="1" Tags="" />
-  <sound File="%ModDir%\Character\Eclipticshadow\Hiss 5.OGG" State="Damage" Range="2000" Volume="1" Tags="" />
-  <sound File="%ModDir%\Character\Eclipticshadow\schaden 3.OGG" State="Damage" Range="2000" Volume="1" Tags="" />
-  <sound File="%ModDir%\Character\Eclipticshadow\schaden 4.OGG" State="Damage" Range="2000" Volume="1" Tags="" />
-  <sound File="%ModDir%\Character\Eclipticshadow\schaden 6.OGG" State="Damage" Range="2000" Volume="1" Tags="" />
-  <sound File="%ModDir%\Character\Eclipticshadow\Blubb1.OGG" State="Idle" Range="10000" Volume="1" Tags="" />
-  <sound File="%ModDir%\Character\Eclipticshadow\Blubb2.OGG" State="Idle" Range="10000" Volume="1" Tags="" />
-  <sound File="%ModDir%\Character\Eclipticshadow\Blubb3.OGG" State="Idle" Range="10000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Character/Eclipticshadow/schaden.OGG" State="Attack" Range="2000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Character/Eclipticshadow/Hiss 2.OGG" State="Damage" Range="2000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Character/Eclipticshadow/knurren-2.OGG" State="Idle" Range="2000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Character/Eclipticshadow/Gore.OGG" State="Die" Range="2000" Volume="2" Tags="" />
+  <sound File="%ModDir%/Character/Eclipticshadow/schaden 2.OGG" State="Attack" Range="2000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Character/Eclipticshadow/Hiss 6.OGG" State="Damage" Range="2000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Character/Eclipticshadow/schaden 5.OGG" State="Attack" Range="2000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Character/Eclipticshadow/Hiss 4.OGG" State="Damage" Range="2000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Character/Eclipticshadow/Hiss 3.OGG" State="Idle" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Character/Eclipticshadow/Hiss 5.OGG" State="Damage" Range="2000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Character/Eclipticshadow/schaden 3.OGG" State="Damage" Range="2000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Character/Eclipticshadow/schaden 4.OGG" State="Damage" Range="2000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Character/Eclipticshadow/schaden 6.OGG" State="Damage" Range="2000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Character/Eclipticshadow/Blubb1.OGG" State="Idle" Range="10000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Character/Eclipticshadow/Blubb2.OGG" State="Idle" Range="10000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Character/Eclipticshadow/Blubb3.OGG" State="Idle" Range="10000" Volume="1" Tags="" />
 </Character>

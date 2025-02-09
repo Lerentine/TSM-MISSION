@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="T.S.M MISSIONS-问君此去几时还" modversion="1.1.225" corepackage="False" steamworkshopid="2852411866" gameversion="1.7.7.0">
+<contentpackage name="T.S.M MISSIONS-问君此去几时还" modversion="1.1.229" corepackage="False" steamworkshopid="2852411866" gameversion="1.7.7.0">
   <Character file="%ModDir%/Character/实验体/T044Y/T044Y.xml" />
   <Character file="%ModDir%/Character/实验体/大地鬼哭/embi_t044y.xml" />
   <Character file="%ModDir%/Character/实验体/噩梦迅猛龙/embi_003.xml" />
@@ -65,8 +65,11 @@
   <Character file="%ModDir%/character/eyi/eyibug/eyibug.xml" />
   <Character file="%ModDir%/character/eyi/hugger/Eyi_hugger.xml" />
   <Character file="%ModDir%/character/eyi/skinbreaker/skinbreaker.xml" />
+  <Character file="%ModDir%/character/eyi/eyichimeras/eyichimeras.xml" />
+  <Character file="%ModDir%/character/eyi/eyirunner/eyirunner.xml" />
   <Character file="%ModDir%/Character/human/HumanTail.xml" />
   <Character file="%ModDir%/Character/CorruptionMachinery/CorruptionMachinery.xml" />
+  <Character file="%ModDir%/Character/CorruptionMachinery/CorruptionMachinery_buff.xml" />
   <Jobs file="%ModDir%/Other/Jobs.xml" />
   <TalentTrees file="%ModDir%/Other/TalentTrees.xml" />
   <NPCSets file="%ModDir%/npc/mission_npcs.xml" />
@@ -119,7 +122,6 @@
   <OutpostModule file="%ModDir%/module/tsm_manufacturing_train_1.sub" />
   <OutpostModule file="%ModDir%/module/tsm_manufacturing_day.sub" />
   <OutpostModule file="%ModDir%/module/tsm_manufacturing_notrain.sub" />
-  <OutpostModule file="%ModDir%/module/tsm_engineeringmodule_2.sub" />
   <OutpostModule file="%ModDir%/module/tsm_securitymodule_2.sub" />
   <OutpostModule file="%ModDir%/module/tsm_ArmoryModule_other_1.sub" />
   <OutpostModule file="%ModDir%/module/tsm_CrewModule_1.sub" />
@@ -155,13 +157,13 @@
   <Wreck file="%ModDir%/sub/杀戮矿坑.sub" />
   <OutpostModule file="%ModDir%/module/tsm_EngineeringModule_other_2.sub" />
   <OutpostModule file="%ModDir%/module/tsm_engineeringmodule_1.sub" />
-  <OutpostModule file="%ModDir%/module/tsm_cave_1.sub" />
-  <OutpostModule file="%ModDir%/module/tsm_cave_2.sub" />
   <OutpostModule file="%ModDir%/module/tsm_engineeringmodule_3.sub" />
   <OutpostModule file="%ModDir%/module/tsm_residentialmodule_1.sub" />
   <OutpostModule file="%ModDir%/module/tsm_securitymodule_1.sub" />
   <OutpostModule file="%ModDir%/module/tsm_residentialmodule_2.sub" />
   <OutpostModule file="%ModDir%/module/tsm_residentialmodule_3.sub" />
-  <BeaconStation file="%ModDir%/sub/T.S.M 炮基信标站.sub" />
   <Wreck file="%ModDir%/sub/杀戮矿坑_迷雾.sub" />
+  <OutpostModule file="%ModDir%/module/tsm_cave_1.sub" />
+  <OutpostModule file="%ModDir%/module/tsm_cave_2.sub" />
+  <OutpostModule file="%ModDir%/module/tsm_engineeringmodule_2.sub" />
 </contentpackage>

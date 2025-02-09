@@ -19,7 +19,7 @@
     <InventoryIcon texture="%ModDir%/item/containers/containers.png" sourcerect="15,18,147,144" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/item/containers/containers.png" sourcerect="15,18,147,144" origin="0.5,0.5" depth="0.6" />
     <Body width="140" height="135" density="0" />
-    <MeleeWeapon slots="Any,RightHand,LeftHand" controlpose="true" aimpos="45,15" handle1="0,30" holdangle="90" reload="1" range="50" combatpriority="6" msg="ItemMsgPickUpSelect">   
+    <MeleeWeapon slots="Any,RightHand,LeftHand" controlpose="true" aimpos="45,15" handle1="0,30" holdangle="90" reload="1" range="50" combatpriority="6" msg="ItemMsgPickUpSelect">
       <Attack structuredamage="10" itemdamage="5" targetimpulse="2">
         <Affliction identifier="blunttrauma" strength="2" />
         <Affliction identifier="stun" strength="0.6" />
@@ -27,12 +27,12 @@
       </Attack>
     </MeleeWeapon>
     <ItemContainer capacity="1" hideitems="true" ContainedStateIndicatorSlot="1">
-      <Containable items="tsm_danger_item,tsm_danger_bloack,alienartifact,traitormissionitem"/>
+      <Containable items="tsm_danger_item,tsm_danger_bloack,alienartifact,traitormissionitem" />
       <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
-      <SubContainer capacity="1"  maxstacksize="1">
+      <SubContainer capacity="1" maxstacksize="1">
         <Containable items="mobilebattery">
-          <StatusEffect type="OnContaining" target="Contained" Condition="-0.5" >
-            <RequiredItem items="tsm_danger_item,tsm_danger_bloack,alienartifact,traitormissionitem" type="Contained"/>
+          <StatusEffect type="OnContaining" target="Contained" Condition="-0.5">
+            <RequiredItem items="tsm_danger_item,tsm_danger_bloack,alienartifact,traitormissionitem" type="Contained" />
           </StatusEffect>
           <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true" />
         </Containable>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Afflictions>
   <Affliction name="Distress Beacon" identifier="carrierbeacon1" description="" type="gaze" limbspecific="false" indicatorlimb="Head" causeofdeathdescription="" selfcauseofdeathdescription="" activationthreshold="0" showinhealthscannerthreshold="1000" showiconthreshold="1000" showicontoothersthreshold="1000" maxstrength="10">
     <Effect minstrength="1" maxstrength="10" strengthchange="-9">
@@ -21,8 +21,7 @@
         <Conditional speciesname="human" />
         <Affliction identifier="bleedingnonstop" strength="100" />
       </StatusEffect>
-      <StatusEffect type="OnDeath" target="Character">
-      </StatusEffect>
+      <StatusEffect type="OnDeath" target="Character"></StatusEffect>
     </Effect>
     <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="316,278,126,126" color="195,136,60,255" origin="0,0" />
   </Affliction>
@@ -30,55 +29,56 @@
     <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
       <StatValue stattype="MaximumHealthMultiplier" value="-0.3" />
       <StatusEffect target="Character" interval="1" comparison="And">
-        <Conditional InWater="true"/>
-        <Conditional pressureprotection="lt 4000"/>
+        <Conditional InWater="true" />
+        <Conditional pressureprotection="lt 4000" />
         <Affliction identifier="burn" amount="0.8" />
       </StatusEffect>
       <StatusEffect target="Character" interval="1" comparison="And">
-        <Conditional InWater="true"/>
-        <Conditional pressureprotection="gte 4000"/>
-        <Conditional pressureprotection="lt 5000"/>
+        <Conditional InWater="true" />
+        <Conditional pressureprotection="gte 4000" />
+        <Conditional pressureprotection="lt 5000" />
         <Affliction identifier="burn" amount="0.7" />
       </StatusEffect>
       <StatusEffect target="Character" interval="1" comparison="And">
-        <Conditional InWater="true"/>
-        <Conditional pressureprotection="gte 5000"/>
-        <Conditional pressureprotection="lt 6000"/>
+        <Conditional InWater="true" />
+        <Conditional pressureprotection="gte 5000" />
+        <Conditional pressureprotection="lt 6000" />
         <Affliction identifier="burn" amount="0.6" />
       </StatusEffect>
       <StatusEffect target="Character" interval="1" comparison="And">
-        <Conditional InWater="true"/>
-        <Conditional pressureprotection="gte 6000"/>
+        <Conditional InWater="true" />
+        <Conditional pressureprotection="gte 6000" />
         <Affliction identifier="burn" amount="0.5" />
       </StatusEffect>
     </Effect>
     <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="649,278,126,125" color="0,0,0,255" origin="0,0" />
   </Affliction>
   <Affliction name="热" identifier="tsm_fire_water_jm" type="tsm_mission_affliction" IsBuff="true" activationthreshold="0" showinhealthscannerthreshold="100" showiconthreshold="100" showicontoothersthreshold="100" maxstrength="10" limbspecific="false" indicatorlimb="Head">
-    <Effect minstrength="0" maxstrength="1" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0" MaxAfflictionOverlayAlphaMultiplier="0.1"/>
-    <Effect minstrength="1" maxstrength="2" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.1" MaxAfflictionOverlayAlphaMultiplier="0.2"/>
-    <Effect minstrength="2" maxstrength="3" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.2" MaxAfflictionOverlayAlphaMultiplier="0.3"/>
-    <Effect minstrength="3" maxstrength="4" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.3" MaxAfflictionOverlayAlphaMultiplier="0.4"/>
-    <Effect minstrength="4" maxstrength="5" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.4" MaxAfflictionOverlayAlphaMultiplier="0.5"/>
-    <Effect minstrength="5" maxstrength="6" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.5" MaxAfflictionOverlayAlphaMultiplier="0.6"/>
-    <Effect minstrength="6" maxstrength="7" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.6" MaxAfflictionOverlayAlphaMultiplier="0.7"/>
-    <Effect minstrength="7" maxstrength="8" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.7" MaxAfflictionOverlayAlphaMultiplier="0.8"/>
-    <Effect minstrength="8" maxstrength="9" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.8" MaxAfflictionOverlayAlphaMultiplier="0.9"/>
-    <Effect minstrength="9" maxstrength="10" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.9" MaxAfflictionOverlayAlphaMultiplier="1"/>
+    <Effect minstrength="0" maxstrength="1" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0" MaxAfflictionOverlayAlphaMultiplier="0.1" />
+    <Effect minstrength="1" maxstrength="2" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.1" MaxAfflictionOverlayAlphaMultiplier="0.2" />
+    <Effect minstrength="2" maxstrength="3" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.2" MaxAfflictionOverlayAlphaMultiplier="0.3" />
+    <Effect minstrength="3" maxstrength="4" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.3" MaxAfflictionOverlayAlphaMultiplier="0.4" />
+    <Effect minstrength="4" maxstrength="5" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.4" MaxAfflictionOverlayAlphaMultiplier="0.5" />
+    <Effect minstrength="5" maxstrength="6" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.5" MaxAfflictionOverlayAlphaMultiplier="0.6" />
+    <Effect minstrength="6" maxstrength="7" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.6" MaxAfflictionOverlayAlphaMultiplier="0.7" />
+    <Effect minstrength="7" maxstrength="8" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.7" MaxAfflictionOverlayAlphaMultiplier="0.8" />
+    <Effect minstrength="8" maxstrength="9" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.8" MaxAfflictionOverlayAlphaMultiplier="0.9" />
+    <Effect minstrength="9" maxstrength="10" strengthchange="-0.5" MinAfflictionOverlayAlphaMultiplier="0.9" MaxAfflictionOverlayAlphaMultiplier="1" />
     <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="649,278,126,125" color="0,0,0,255" origin="0,0" />
     <AfflictionOverlay texture="%ModDir%/Afflictions/fire_water.png" sourcerect="0,0,1920,1080" color="255,255,255,255" />
   </Affliction>
-  <tsm_zs name="照射" identifier="tsm_zs" type="tsm_mission_affliction" limbspecific="true" maxstrength="100" >
-    <Effect minstrength="0" maxstrength="100" strengthchange="-2" MinAfflictionOverlayAlphaMultiplier="0" MaxAfflictionOverlayAlphaMultiplier="1.0" limbspecific="false" indicatorlimb="Head">
-    <StatusEffect target="Character" interval="1">
-      <Affliction identifier="burn" amount="0.6" />
-    </StatusEffect>
+  <tsm_zs name="照射" identifier="tsm_zs" type="tsm_mission_affliction" limbspecific="true" maxstrength="100">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-2" MinAfflictionOverlayAlphaMultiplier="0" MaxAfflictionOverlayAlphaMultiplier="0.5" limbspecific="false" indicatorlimb="Head">
+      <StatusEffect target="Character" interval="1" comparison="and">
+        <Conditional speciesname="human" />
+        <Affliction identifier="burn" amount="1.5" />nausea
+        <Affliction identifier="radiationsickness" amount="0.4" /><Affliction identifier="nausea" amount="0.6" /></StatusEffect>
     </Effect>
-    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="492,278,126,126" color="195,104,60,255" origin="0,0"/>
+    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="492,278,126,126" color="195,104,60,255" origin="0,0" />
     <AfflictionOverlay texture="Content/Lights/light_fluorescent_L2.png" sourcerect="0,0,1024,1024" color="150,0,0,180" />
   </tsm_zs>
   <!--生物防打-->
-  <Affliction identifier="tsmmission_silencers_buff" isbuff="true" type="barrel" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false" >
+  <Affliction identifier="tsmmission_silencers_buff" isbuff="true" type="barrel" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
     <Effect minstrength="0" maxstrength="1" strengthchange="0">
       <StatValue stattype="SoundRangeMultiplier" value="-1" />
       <StatValue stattype="SightRangeMultiplier" value="-1" />
@@ -90,9 +90,9 @@
   </Affliction>
   <Affliction name="invisible" identifier="invisible" showiconthreshold="infinity" maxstrength="3">
     <Effect minstrength="2" maxstrength="3" strengthchange="-0.1">
-      <StatusEffect target="Character" SpeedMultiplier="3.0" stackable="false" indetectable="true" invisibletimer="0.1" setvalue="true"/>
+      <StatusEffect target="Character" SpeedMultiplier="3.0" stackable="false" indetectable="true" invisibletimer="0.1" setvalue="true" />
     </Effect>
-   </Affliction>
+  </Affliction>
   <Affliction name="tsm_slow" description="" identifier="tsm_ey_slow" type="slow" limbspecific="false" maxstrength="50" showiconthreshold="1000" treatmentthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000">
     <Effect minstrength="0" maxstrength="15" strengthchange="-3">
       <StatusEffect target="Character" SpeedMultiplier="0.3" setvalue="true" comparison="and">
@@ -140,49 +140,15 @@
     <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,768,128,128" color="143,111,160,255" origin="0,0" />
   </Affliction>
   <!--ai怪物用减抗-->
-  <Affliction
-    identifier="tsmmission_armorbreak_50"
-    type="debuff"
-    limbspecific="false"
-    maxstrength="100"
-    showiconthreshold="1000" 
-    showicontoothersthreshold="1000" 
-    showinhealthscannerthreshold="1000"
-    affectmachines="false">
-    <Effect minstrength="0" maxstrength="100"
-      strengthchange="-2"
-      resistancefor="damage" 
-      minresistance="0"
-      maxresistance="-0.5"/>
+  <Affliction identifier="tsmmission_armorbreak_50" type="debuff" limbspecific="false" maxstrength="100" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" affectmachines="false">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-2" resistancefor="damage" minresistance="0" maxresistance="-0.5" />
   </Affliction>
-  <Affliction
-    identifier="tsmmission_monster_35"
-    type="debuff"
-    limbspecific="false"
-    maxstrength="40"
-    showiconthreshold="1000" 
-    showicontoothersthreshold="1000" 
-    showinhealthscannerthreshold="1000"
-    affectmachines="false">
-    <Effect minstrength="0" maxstrength="40"
-      strengthchange="-1.5"
-      resistancefor="bitewounds,lacerations" 
-      minresistance="0"
-      maxresistance="-0.4"/>
+  <Affliction identifier="tsmmission_monster_35" type="debuff" limbspecific="false" maxstrength="40" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" affectmachines="false">
+    <Effect minstrength="0" maxstrength="40" strengthchange="-1.5" resistancefor="bitewounds,lacerations" minresistance="0" maxresistance="-0.4" />
   </Affliction>
-  <Affliction
-    identifier="tsmmission_monster_50"
-    description=""
-    type="debuff"
-    limbspecific="false"
-    maxstrength="60"
-    affectmachines="false">
-    <Effect minstrength="0" maxstrength="60"
-      strengthchange="-1"
-      resistancefor="lacerations,bitewounds"
-      minresistance="0"
-      maxresistance="-0.5"/>
-    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="671,0,126,126" color="255,255,255,255" origin="0,0"/>
+  <Affliction identifier="tsmmission_monster_50" description="" type="debuff" limbspecific="false" maxstrength="60" affectmachines="false">
+    <Effect minstrength="0" maxstrength="60" strengthchange="-1" resistancefor="lacerations,bitewounds" minresistance="0" maxresistance="-0.5" />
+    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="671,0,126,126" color="255,255,255,255" origin="0,0" />
   </Affliction>
   <!--任务用-->
   <Affliction identifier="tsm_clear" type="none" limbspecific="false" showiconthreshold="1000" showinhealthscannerthreshold="1000" maxstrength="100">
@@ -195,10 +161,7 @@
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,640,128,128" color="195,104,60,255" origin="0,0" />
   </Affliction>
   <!--suger的尾巴和耳朵-->
-  <AfflictionHusk name="suger" identifier="Suger_Tail_Spawn" type="Suger_Tail_Spawn" 
-  limbspecific="false" targets="human" huskedspeciesname="[speciesname]Tail" indicatorlimb="Waist" 
-  showiconthreshold="100" showinhealthscannerthreshold="100" needsair="true" causespeechimpediment="false" treatmentthreshold="1000" dormantthreshold="0" activethreshold="0" 
-  transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" maxstrength="10">
+  <AfflictionHusk name="suger" identifier="Suger_Tail_Spawn" type="Suger_Tail_Spawn" limbspecific="false" targets="human" huskedspeciesname="[speciesname]Tail" indicatorlimb="Waist" showiconthreshold="100" showinhealthscannerthreshold="100" needsair="true" causespeechimpediment="false" treatmentthreshold="1000" dormantthreshold="0" activethreshold="0" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" maxstrength="10">
     <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
     <Effect minstrength="0" maxstrength="10" />
   </AfflictionHusk>
@@ -211,7 +174,7 @@
     </Effect>
   </Affliction>
   <Affliction name="恢复" identifier="tsmmission_eyi_rev" description="" isbuff="true" type="ai_buff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
-    <Effect minstrength="0" maxstrength="1" >
+    <Effect minstrength="0" maxstrength="1">
       <StatusEffect target="Character" interval="3" disabledeltatime="true">
         <ReduceAffliction type="bleeding" amount="8" />
         <ReduceAffliction type="burn" amount="0.7" />
@@ -222,10 +185,10 @@
   </Affliction>
   <Affliction name="伤害抗性" identifier="tsmmission_eyi_defend" description="" isbuff="true" type="ai_buff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
     <Effect minstrength="0" maxstrength="15" strengthchange="0" resistancefor="damage,bleeding,burn,acidburn,stun" minresistance="0.00" maxresistance="0.5" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
-    <StatValue stattype="MovementSpeed" value="0.25" />
+      <StatValue stattype="MovementSpeed" value="0.25" />
     </Effect>
-    </Affliction>
+  </Affliction>
   <Affliction name="防骨折脱臼" identifier="tsmmission_eyi_nt" description="" isbuff="true" type="ai_buff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
-    <Effect minstrength="0" maxstrength="1" strengthchange="0" resistancefor="blunttrauma,ra_fracture,la_fracture,rl_fracture,ll_fracture,t_fracture,h_fracture,n_fracture,dislocation1,dislocation2,dislocation3,dislocation4" minresistance="1" maxresistance="1" minspeedmultiplier="1.0" maxspeedmultiplier="1"/>
+    <Effect minstrength="0" maxstrength="1" strengthchange="0" resistancefor="blunttrauma,ra_fracture,la_fracture,rl_fracture,ll_fracture,t_fracture,h_fracture,n_fracture,dislocation1,dislocation2,dislocation3,dislocation4" minresistance="1" maxresistance="1" minspeedmultiplier="1.0" maxspeedmultiplier="1" />
   </Affliction>
 </Afflictions>

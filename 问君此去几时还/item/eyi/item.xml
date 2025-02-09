@@ -4,8 +4,8 @@
   <Item name="恶疫体" identifier="tsm_eyi_relics" subcategory="tsmmissions" category="Misc" Itemcargocontaineridentifier="metalcrate" tags="alien,tsm_eyi_relics,alienartifact,tsm_danger_bloack" dangerousitem="true" scale="0.35" impactsoundtag="impact_metal_light" hideinmenus="false">
     <PreferredContainer secondary="ruinstoragelarge" amount="1" spawnprobability="0.01" />
     <Deconstruct time="10">
-      <Item identifier="tsm_eyi_glandular"/>
-      <Item identifier="tsm_eyi_glandular"/>
+      <Item identifier="tsm_eyi_glandular" />
+      <Item identifier="tsm_eyi_glandular" />
     </Deconstruct>
     <InventoryIcon texture="%ModDir%/item/eyi/eyi_item.png" sourcerect="213,175,134,141" />
     <Sprite texture="%ModDir%/item/eyi/eyi_item.png" depth="0.54" sourcerect="213,175,134,141" origin="0.5,0.5" />
@@ -46,8 +46,7 @@
       </StatusEffect>
     </Holdable>
     <MotionSensor rangex="20" rangey="10" detectoffset="0,5" target="Human,Monster,Pet" minimumvelocity="1.0" detectownmotion="false">
-      <StatusEffect type="OnSpawn" target="This">
-      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="This"></StatusEffect>
     </MotionSensor>
     <ItemContainer allowaccess="false" drawinventory="false" capacity="1" maxstacksize="1" hideitems="true" spawnwithid="tsm_eyi_trap_hurt">
       <Containable identifier="tsm_eyi_trap_hurt" />
@@ -118,28 +117,28 @@
   <virusstage name="血肉Ⅲ型抑制剂" identifier="tsm_virusstage_inhibitory" subcategory="tsmmissions" category="Medical" maxstacksize="8" maxstacksizecharacterinventory="4" Tags="smallitem,chem,medical,syringe" description="" cargocontaineridentifier="mediccrate" scale="0.5" useinhealthinterface="true" RequireAimToUse="True">
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <PreferredContainer secondary="abandonedmedcab,piratemedcab,wreckmedcab" minamount="1" maxamount="4" spawnprobability="0.05" />
-    <PreferredContainer primary="medfabcab" secondary="medcontainer"/>
+    <PreferredContainer primary="medfabcab" secondary="medcontainer" />
     <Price baseprice="63">
       <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="3" />
     </Price>
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="10" amount="2">
       <RequiredSkill identifier="medical" level="50" />
-      <RequiredItem identifier="antibiotics" amount="1"/>
+      <RequiredItem identifier="antibiotics" amount="1" />
       <RequiredItem identifier="opium" amount="1" />
-      <RequiredItem identifier="stabilozine"  amount="1"/>
+      <RequiredItem identifier="stabilozine" amount="1" />
       <RequiredItem identifier="sulphuricacid" amount="1" />
       <RequiredItem identifier="tsm_needletube_empty" amount="1" />
     </Fabricate>
-    <Deconstruct time="2"/>
-    <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="68" fabricationlimitmin="3" fabricationlimitmax="5"/>
+    <Deconstruct time="2" />
+    <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="68" fabricationlimitmin="3" fabricationlimitmax="5" />
     <InventoryIcon texture="%ModDir%/item/eyi/eyi_item.png" sourcerect="225,660,69,62" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/item/eyi/eyi_item.png" sourcerect="376,341,89,15" depth="0.6" origin="0.5,0.5" />
     <SuitableTreatment identifier="tsm_virusstage" suitability="30" />
-    <Body width="35" height="65" density="10.2" waterdragcoefficient="1"/>
+    <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="30" />
-      <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true"/>
-      <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true"/>
+      <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true" />
+      <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true" />
       <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="60.0">
         <ReduceAffliction identifier="tsm_virusstage" amount="1" />
         <ReduceAffliction identifier="tsm_stress" amount="1" />
@@ -163,11 +162,11 @@
         <Affliction identifier="tsm_virusstage_inhibitory" amount="300" />
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
@@ -180,27 +179,27 @@
   <virusstage_clear name="virusstage强效清除剂" identifier="tsm_virusstage_clear" subcategory="tsmmissions" category="Medical" maxstacksize="8" maxstacksizecharacterinventory="4" Tags="smallitem,chem,medical,syringe" description="" cargocontaineridentifier="mediccrate" scale="0.5" useinhealthinterface="true" RequireAimToUse="True">
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <PreferredContainer secondary="abandonedmedcab,piratemedcab,wreckmedcab" minamount="1" maxamount="2" spawnprobability="0.01" />
-    <PreferredContainer primary="medfabcab" secondary="medcontainer"/>
+    <PreferredContainer primary="medfabcab" secondary="medcontainer" />
     <Price baseprice="130">
       <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="3" />
     </Price>
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="10" amount="1">
       <RequiredSkill identifier="medical" level="50" />
-      <RequiredItem identifier="tsm_eyi_embryo" mincondition="0.5"/>
+      <RequiredItem identifier="tsm_eyi_embryo" mincondition="0.5" />
       <RequiredItem identifier="opium" amount="1" />
-      <RequiredItem identifier="stabilozine"  amount="1"/>
+      <RequiredItem identifier="stabilozine" amount="1" />
       <RequiredItem identifier="tsm_needletube_empty" amount="1" />
     </Fabricate>
-    <Deconstruct time="2"/>
-    <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="82" fabricationlimitmin="2" fabricationlimitmax="5"/>
+    <Deconstruct time="2" />
+    <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="82" fabricationlimitmin="2" fabricationlimitmax="5" />
     <InventoryIcon texture="%ModDir%/item/eyi/eyi_item.png" sourcerect="149,660,69,62" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/item/eyi/eyi_item.png" sourcerect="375,361,89,15" depth="0.6" origin="0.5,0.5" />
     <SuitableTreatment identifier="tsm_virusstage" suitability="60" />
-    <Body width="35" height="65" density="10.2" waterdragcoefficient="1"/>
+    <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="50" />
-      <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true"/>
-      <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true"/>
+      <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true" />
+      <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true" />
       <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="5.0">
         <ReduceAffliction identifier="tsm_virusstage" amount="25.0" />
       </StatusEffect>
@@ -214,11 +213,11 @@
         <Affliction identifier="lacerations" amount="3.5" />
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
@@ -231,27 +230,27 @@
   <virusstage_deep name="恶疫强效清除剂" identifier="tsm_virusstage_deep_inhibitory" subcategory="tsmmissions" category="Medical" maxstacksize="8" maxstacksizecharacterinventory="4" Tags="smallitem,chem,medical,syringe" description="" cargocontaineridentifier="mediccrate" scale="0.5" useinhealthinterface="true" RequireAimToUse="True">
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <PreferredContainer secondary="abandonedmedcab,piratemedcab,wreckmedcab" minamount="1" maxamount="2" spawnprobability="0.02" />
-    <PreferredContainer primary="medfabcab" secondary="medcontainer"/>
+    <PreferredContainer primary="medfabcab" secondary="medcontainer" />
     <Price baseprice="100">
       <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="3" />
     </Price>
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="10" amount="1">
       <RequiredSkill identifier="medical" level="50" />
-      <RequiredItem identifier="tsm_eyi_embryo" mincondition="0.5"/>
+      <RequiredItem identifier="tsm_eyi_embryo" mincondition="0.5" />
       <RequiredItem identifier="swimbladder" amount="1" />
-      <RequiredItem identifier="paralyxis"  amount="1"/>
+      <RequiredItem identifier="paralyxis" amount="1" />
       <RequiredItem identifier="tsm_needletube_empty" amount="1" />
     </Fabricate>
-    <Deconstruct time="2"/>
-    <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="60" fabricationlimitmin="2" fabricationlimitmax="5"/>
+    <Deconstruct time="2" />
+    <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="60" fabricationlimitmin="2" fabricationlimitmax="5" />
     <InventoryIcon texture="%ModDir%/item/eyi/eyi_item.png" sourcerect="301,660,69,62" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/item/eyi/eyi_item.png" sourcerect="375,321,89,15" depth="0.6" origin="0.5,0.5" />
     <SuitableTreatment identifier="eyiinfection" suitability="80" />
-    <Body width="35" height="65" density="10.2" waterdragcoefficient="1"/>
+    <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="60" />
-      <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true"/>
-      <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true"/>
+      <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true" />
+      <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true" />
       <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="5.0">
         <ReduceAffliction identifier="eyiinfection" amount="25.0" />
         <ReduceAffliction identifier="eyiskinbreakerspawnner" amount="25.0" />
@@ -267,11 +266,11 @@
         <Affliction identifier="lacerations" amount="10" />
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
@@ -293,7 +292,7 @@
     <Deconstruct time="5">
       <Item identifier="plastic" copycondition="true" />
     </Deconstruct>
-    <InventoryIcon texture="%ModDir%/item/eyi/eyi_item.png" sourcerect="0,660,66,62" /> 
+    <InventoryIcon texture="%ModDir%/item/eyi/eyi_item.png" sourcerect="0,660,66,62" />
     <Sprite texture="%ModDir%/item/eyi/eyi_item.png" sourcerect="375,401,89,15" depth="0.55" origin="0.5,0.5" />
     <Body width="15" height="89" density="0" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
@@ -307,27 +306,27 @@
       <StatusEffect type="OnSecondaryUse" target="This" Condition="-25.0" />
       <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
         <Conditional Condition="lte 1" />
-        <Use/>
+        <Use />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true" />
       <StatusEffect type="OnUse" target="UseTarget" duration="60.0">
         <Conditional tsm_virusstage="lt 0.01" />
         <Affliction identifier="tsm_virusstage" amount="0.01" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="Content/Sounds/Damage/Gore6.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
         <Remove />
       </StatusEffect>
     </Holdable>
-    <InventoryIcon texture="%ModDir%/item/eyi/eyi_item.png" sourcerect="399,216,75,75" /> 
+    <InventoryIcon texture="%ModDir%/item/eyi/eyi_item.png" sourcerect="399,216,75,75" />
     <Sprite texture="%ModDir%/item/eyi/eyi_item.png" sourcerect="399,216,75,75" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="45" density="10.5" />
   </Item>
   <Item name="遗传骸骨" identifier="tsm_eyi_glandular" subcategory="tsmmissions" category="Material" maxstacksize="4" cargocontaineridentifier="chemicalcrate" Tags="smallitem" hideinmenus="true" useinhealthinterface="true" scale="0.3" RequireAimToUse="True">
-    <InventoryIcon texture="%ModDir%/item/eyi/eyi_item.png" sourcerect="19,487,68,52" /> 
+    <InventoryIcon texture="%ModDir%/item/eyi/eyi_item.png" sourcerect="19,487,68,52" />
     <Sprite texture="%ModDir%/item/eyi/eyi_item.png" sourcerect="19,487,68,52" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="45" density="10" />
     <Holdable slots="Any,RightHand,LeftHand" holdpos="0,-80" aimpos="40,5" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect">
@@ -386,24 +385,23 @@
       <StatusEffect type="Always" target="This" setvalue="true" Condition="120">
       <Conditional Condition="lte 2"/>
       </StatusEffect-->
-      <StatusEffect type="OnUse" tags="medical" Condition="-130.0" target="This" disabledeltatime="true">
-      </StatusEffect>
+      <StatusEffect type="OnUse" tags="medical" Condition="-130.0" target="This" disabledeltatime="true"></StatusEffect>
       <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="1">
-        <Conditional tsm_eyi_stable_state="gte 5"/>
+        <Conditional tsm_eyi_stable_state="gte 5" />
         <Affliction identifier="tsm_eyi_stable_state" amount="1" />
         <Affliction identifier="tsmmission_eyi_voice" amount="100" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="1">
-        <Conditional tsm_eyi_stable_state="gte 5"/>
+        <Conditional tsm_eyi_stable_state="gte 5" />
         <ReduceAffliction identifier="tsm_eyi_stable_state" amount="1" />
         <Affliction identifier="tsmmission_eyi_voice" amount="100" />
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="%ModDir%/item/eyi/eyi_zs_1.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="%ModDir%/item/eyi/eyi_zs_2.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
@@ -427,24 +425,23 @@
       <StatusEffect type="Always" target="This" setvalue="true" Condition="120">
       <Conditional Condition="lte 2"/>
       </StatusEffect-->
-      <StatusEffect type="OnUse" tags="medical" Condition="-130.0" target="This" disabledeltatime="true">
-      </StatusEffect>
+      <StatusEffect type="OnUse" tags="medical" Condition="-130.0" target="This" disabledeltatime="true"></StatusEffect>
       <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="1">
-        <Conditional tsm_eyi_stable_state="gte 5"/>
+        <Conditional tsm_eyi_stable_state="gte 5" />
         <Affliction identifier="tsm_eyi_stable_state" amount="2" />
         <Affliction identifier="tsmmission_eyi_voice" amount="100" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="1">
-        <Conditional tsm_eyi_stable_state="gte 5"/>
+        <Conditional tsm_eyi_stable_state="gte 5" />
         <ReduceAffliction identifier="tsm_eyi_stable_state" amount="2" />
         <Affliction identifier="tsmmission_eyi_voice" amount="100" />
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="%ModDir%/item/eyi/eyi_zs_1.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="%ModDir%/item/eyi/eyi_zs_2.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
@@ -464,24 +461,23 @@
     <Sprite texture="eyi_item.png" depth="0.56" sourcerect="401,463,26,76" origin="0.5,0.5" />
     <Body width="80" height="172" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
-      <StatusEffect type="OnUse" tags="medical" Condition="-130.0" target="This" disabledeltatime="true">
-      </StatusEffect>
+      <StatusEffect type="OnUse" tags="medical" Condition="-130.0" target="This" disabledeltatime="true"></StatusEffect>
       <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="1">
-        <Conditional tsm_eyi_stable_state="gte 1"/>
+        <Conditional tsm_eyi_stable_state="gte 1" />
         <Affliction identifier="tsm_eyi_stable_state" amount="1" />
         <Affliction identifier="tsmmission_eyi_voice" amount="100" />
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="%ModDir%/item/eyi/eyi_zs_1.ogg" range="500" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="1">
-        <Conditional tsm_eyi_stable_state="gte 1"/>
+        <Conditional tsm_eyi_stable_state="gte 1" />
         <Affliction identifier="tsm_eyi_stable_state" amount="1" />
         <Affliction identifier="tsmmission_eyi_voice" amount="100" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="%ModDir%/item/eyi/eyi_zs_1.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
@@ -501,24 +497,23 @@
     <Sprite texture="eyi_item.png" depth="0.56" sourcerect="401,463,26,76" origin="0.5,0.5" />
     <Body width="80" height="172" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
-      <StatusEffect type="OnUse" tags="medical" Condition="-130.0" target="This" disabledeltatime="true">
-      </StatusEffect>
+      <StatusEffect type="OnUse" tags="medical" Condition="-130.0" target="This" disabledeltatime="true"></StatusEffect>
       <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="1">
-        <Conditional tsm_eyi_stable_state="gte 1"/>
+        <Conditional tsm_eyi_stable_state="gte 1" />
         <Affliction identifier="tsm_eyi_stable_state" amount="2" />
         <Affliction identifier="tsmmission_eyi_voice" amount="100" />
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="%ModDir%/item/eyi/eyi_zs_1.ogg" range="500" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="1">
-        <Conditional tsm_eyi_stable_state="gte 1"/>
+        <Conditional tsm_eyi_stable_state="gte 1" />
         <Affliction identifier="tsm_eyi_stable_state" amount="2" />
         <Affliction identifier="tsmmission_eyi_voice" amount="100" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="%ModDir%/item/eyi/eyi_zs_1.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
@@ -538,24 +533,23 @@
     <Sprite texture="eyi_item.png" depth="0.56" sourcerect="401,463,26,76" origin="0.5,0.5" />
     <Body width="80" height="172" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
-      <StatusEffect type="OnUse" tags="medical" Condition="-130.0" target="This" disabledeltatime="true">
-      </StatusEffect>
+      <StatusEffect type="OnUse" tags="medical" Condition="-130.0" target="This" disabledeltatime="true"></StatusEffect>
       <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="1">
-        <Conditional tsm_eyi_stable_state="gte 1"/>
+        <Conditional tsm_eyi_stable_state="gte 1" />
         <Affliction identifier="tsm_eyi_stable_state" amount="3" />
         <Affliction identifier="tsmmission_eyi_voice" amount="100" />
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="%ModDir%/item/eyi/eyi_zs_1.ogg" range="500" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="1">
-        <Conditional tsm_eyi_stable_state="gte 1"/>
+        <Conditional tsm_eyi_stable_state="gte 1" />
         <Affliction identifier="tsm_eyi_stable_state" amount="3" />
         <Affliction identifier="tsmmission_eyi_voice" amount="100" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="%ModDir%/item/eyi/eyi_zs_1.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
@@ -575,24 +569,23 @@
     <Sprite texture="eyi_item.png" depth="0.56" sourcerect="401,463,26,76" origin="0.5,0.5" />
     <Body width="80" height="172" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
-      <StatusEffect type="OnUse" tags="medical" Condition="-130.0" target="This" disabledeltatime="true">
-      </StatusEffect>
+      <StatusEffect type="OnUse" tags="medical" Condition="-130.0" target="This" disabledeltatime="true"></StatusEffect>
       <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="1">
-        <Conditional tsm_eyi_stable_state="gte 1"/>
+        <Conditional tsm_eyi_stable_state="gte 1" />
         <Affliction identifier="tsm_eyi_stable_state" amount="4" />
         <Affliction identifier="tsmmission_eyi_voice" amount="100" />
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="%ModDir%/item/eyi/eyi_zs_1.ogg" range="500" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="1">
-        <Conditional tsm_eyi_stable_state="gte 1"/>
+        <Conditional tsm_eyi_stable_state="gte 1" />
         <Affliction identifier="tsm_eyi_stable_state" amount="4" />
         <Affliction identifier="tsmmission_eyi_voice" amount="100" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="%ModDir%/item/eyi/eyi_zs_1.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
@@ -612,24 +605,23 @@
     <Sprite texture="eyi_item.png" depth="0.56" sourcerect="448,547,26,76" origin="0.5,0.5" />
     <Body width="80" height="172" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
-      <StatusEffect type="OnUse" tags="medical" Condition="-130.0" target="This" disabledeltatime="true">
-      </StatusEffect>
+      <StatusEffect type="OnUse" tags="medical" Condition="-130.0" target="This" disabledeltatime="true"></StatusEffect>
       <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="1">
-        <Conditional tsm_eyi_stable_state="gte 1"/>
+        <Conditional tsm_eyi_stable_state="gte 1" />
         <ReduceAffliction identifier="tsm_eyi_stable_state" amount="1" />
         <Affliction identifier="tsmmission_eyi_voice" amount="100" />
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="%ModDir%/item/eyi/eyi_zs_2.ogg" range="500" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="1">
-        <Conditional tsm_eyi_stable_state="gte 1"/>
+        <Conditional tsm_eyi_stable_state="gte 1" />
         <ReduceAffliction identifier="tsm_eyi_stable_state" amount="1" />
         <Affliction identifier="tsmmission_eyi_voice" amount="100" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="%ModDir%/item/eyi/eyi_zs_2.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
@@ -649,24 +641,23 @@
     <Sprite texture="eyi_item.png" depth="0.56" sourcerect="448,547,26,76" origin="0.5,0.5" />
     <Body width="80" height="172" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
-      <StatusEffect type="OnUse" tags="medical" Condition="-130.0" target="This" disabledeltatime="true">
-      </StatusEffect>
+      <StatusEffect type="OnUse" tags="medical" Condition="-130.0" target="This" disabledeltatime="true"></StatusEffect>
       <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="1">
-        <Conditional tsm_eyi_stable_state="gte 1"/>
+        <Conditional tsm_eyi_stable_state="gte 1" />
         <ReduceAffliction identifier="tsm_eyi_stable_state" amount="2" />
         <Affliction identifier="tsmmission_eyi_voice" amount="100" />
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="%ModDir%/item/eyi/eyi_zs_2.ogg" range="500" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="1">
-        <Conditional tsm_eyi_stable_state="gte 1"/>
+        <Conditional tsm_eyi_stable_state="gte 1" />
         <ReduceAffliction identifier="tsm_eyi_stable_state" amount="2" />
         <Affliction identifier="tsmmission_eyi_voice" amount="100" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="%ModDir%/item/eyi/eyi_zs_2.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
@@ -686,24 +677,23 @@
     <Sprite texture="eyi_item.png" depth="0.56" sourcerect="448,547,26,76" origin="0.5,0.5" />
     <Body width="80" height="172" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
-      <StatusEffect type="OnUse" tags="medical" Condition="-130.0" target="This" disabledeltatime="true">
-      </StatusEffect>
+      <StatusEffect type="OnUse" tags="medical" Condition="-130.0" target="This" disabledeltatime="true"></StatusEffect>
       <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="1">
-        <Conditional tsm_eyi_stable_state="gte 1"/>
+        <Conditional tsm_eyi_stable_state="gte 1" />
         <ReduceAffliction identifier="tsm_eyi_stable_state" amount="3" />
         <Affliction identifier="tsmmission_eyi_voice" amount="100" />
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="%ModDir%/item/eyi/eyi_zs_2.ogg" range="500" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="1">
-        <Conditional tsm_eyi_stable_state="gte 1"/>
+        <Conditional tsm_eyi_stable_state="gte 1" />
         <ReduceAffliction identifier="tsm_eyi_stable_state" amount="3" />
         <Affliction identifier="tsmmission_eyi_voice" amount="100" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="%ModDir%/item/eyi/eyi_zs_2.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
@@ -723,24 +713,23 @@
     <Sprite texture="eyi_item.png" depth="0.56" sourcerect="448,547,26,76" origin="0.5,0.5" />
     <Body width="80" height="172" density="20" />
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
-      <StatusEffect type="OnUse" tags="medical" Condition="-130.0" target="This" disabledeltatime="true">
-      </StatusEffect>
+      <StatusEffect type="OnUse" tags="medical" Condition="-130.0" target="This" disabledeltatime="true"></StatusEffect>
       <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="1">
-        <Conditional tsm_eyi_stable_state="gte 1"/>
+        <Conditional tsm_eyi_stable_state="gte 1" />
         <ReduceAffliction identifier="tsm_eyi_stable_state" amount="4" />
         <Affliction identifier="tsmmission_eyi_voice" amount="100" />
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="%ModDir%/item/eyi/eyi_zs_2.ogg" range="500" />
       </StatusEffect>
       <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="1">
-        <Conditional tsm_eyi_stable_state="gte 1"/>
+        <Conditional tsm_eyi_stable_state="gte 1" />
         <ReduceAffliction identifier="tsm_eyi_stable_state" amount="4" />
         <Affliction identifier="tsmmission_eyi_voice" amount="100" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="UseTarget">
-        <Conditional entitytype="eq Character"/>
+        <Conditional entitytype="eq Character" />
         <Sound file="%ModDir%/item/eyi/eyi_zs_2.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">

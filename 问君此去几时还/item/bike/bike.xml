@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <Item name="摩托" identifier="tsm_seat" tags="" showcontentsintooltip="true" category="Weapon" sonarsize="5" scale="0.5" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="" AllowDeselectWhenIdling="false">
     <PreferredContainer primary="depthchargeloader" />

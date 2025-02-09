@@ -2,26 +2,26 @@
 <Jobs>
   <Job identifier="tsm_outpostsecurityofficer" onlyjobspecificdialog="true" vitalitymodifier="10" minnumber="0" maxnumber="0" initialcount="0" idlebehavior="Patrol" hiddenjob="true">
     <Jobicon>
-      <sprite texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="255,133,122,123" origin="0.5,0.5"/>
+      <sprite texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="255,133,122,123" origin="0.5,0.5" />
     </Jobicon>
     <JobiconSmall>
-      <sprite texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="255,133,122,123" origin="0.5,0.5"/>
+      <sprite texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="255,133,122,123" origin="0.5,0.5" />
     </JobiconSmall>
     <Skills>
-      <Skill identifier="weapons" level="100,100" primary="true"/>
-      <Skill identifier="medical" level="100,100"/>
-      <Skill identifier="mechanical" level="100,100"/>
-      <Skill identifier="electrical" level="100,100"/>
-      <Skill identifier="helm" level="100,100"/>
+      <Skill identifier="weapons" level="100,100" primary="true" />
+      <Skill identifier="medical" level="100,100" />
+      <Skill identifier="mechanical" level="100,100" />
+      <Skill identifier="electrical" level="100,100" />
+      <Skill identifier="helm" level="100,100" />
     </Skills>
     <AutonomousObjectives>
-      <Order identifier="fightintruders" prioritymodifier="1"/>
-      <Order identifier="findthieves" prioritymodifier="1" IgnoreAtNonOutpost="true"/>
-      <Order identifier="rescue" prioritymodifier="1"/>
+      <Order identifier="fightintruders" prioritymodifier="1" />
+      <Order identifier="findthieves" prioritymodifier="1" IgnoreAtNonOutpost="true" />
+      <Order identifier="rescue" prioritymodifier="1" />
       <Order identifier="inspectnoises" prioritymodifier="0.5" />
-      <Order identifier="extinguishfires" prioritymodifier ="0.75"/>
-      <Order identifier="operatereactor" option="powerup" prioritymodifier="0.2"/>
-      <Order identifier="fixleaks" prioritymodifier="0.1"/>
+      <Order identifier="extinguishfires" prioritymodifier="0.75" />
+      <Order identifier="operatereactor" option="powerup" prioritymodifier="0.2" />
+      <Order identifier="fixleaks" prioritymodifier="0.1" />
     </AutonomousObjectives>
   </Job>
 </Jobs>

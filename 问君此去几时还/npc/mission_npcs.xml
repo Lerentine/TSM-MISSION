@@ -2,149 +2,130 @@
 <npcsets>
   <!--站点安保-->
   <npcset identifier="tsm_outpost_combat_npcs">
-    <npc identifier="tsm_outpost_combat_npc" tags="securitynpc" job="securityofficer" spawnpointtags="security" behavior="Patrol" healthmultiplier="1.5" healthmultiplierinmultiplayer="1.5" aimspeed="30" aimaccuracy="1" reportrange="10000" skillmultiplier="5">
+    <npc identifier="tsm_outpost_combat_npc" tags="securitynpc" job="securityofficer" spawnpointtags="security" behavior="Patrol" healthmultiplier="2" healthmultiplierinmultiplayer="2" aimspeed="30" aimaccuracy="1" reportrange="10000" skillmultiplier="5">
       <ItemSet commonness="1">
-        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-        <Item identifier="securitypatrolclothes" equip="true"/>
-        <Item identifier="bodyarmor" equip="true"/>
-        <Item identifier="ballistichelmet1" equip="true"/>
-        <Item identifier="tsm_ai_eyi_outpost_sundown"/>
-        <Item identifier="tsm_ai_advancedgenesplicer" equip="true"/>
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
+        <Item identifier="securitypatrolclothes" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="ballistichelmet1" equip="true" />
         <Item identifier="stunbaton">
-        <Item identifier="batterycell"/>
+          <Item identifier="batterycell" />
         </Item>
         <Item identifier="assaultrifle" equip="true">
-        <Item identifier="assaultriflemagazine" amount="8"/>
+          <Item identifier="assaultriflemagazine" amount="8" />
         </Item>
       </ItemSet>
       <ItemSet commonness="1">
-        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-        <Item identifier="securitypatrolclothes" equip="true"/>
-        <Item identifier="bodyarmor" equip="true"/>
-        <Item identifier="ballistichelmet1" equip="true"/>
-        <Item identifier="tsm_ai_eyi_outpost_sundown"/>
-        <Item identifier="tsm_ai_advancedgenesplicer" equip="true"/>
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
+        <Item identifier="securitypatrolclothes" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="ballistichelmet1" equip="true" />
         <Item identifier="stunbaton">
-        <Item identifier="batterycell"/>
+          <Item identifier="batterycell" />
         </Item>
         <Item identifier="hmg" equip="true">
-        <Item identifier="hmgmagazine" amount="6"/>
+          <Item identifier="hmgmagazine" amount="6" />
         </Item>
       </ItemSet>
       <ItemSet commonness="0.5">
-        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-        <Item identifier="securitypatrolclothes" equip="true"/>
-        <Item identifier="bodyarmor" equip="true"/>
-        <Item identifier="ballistichelmet1" equip="true"/>
-        <Item identifier="tsm_ai_eyi_outpost_sundown"/>
-        <Item identifier="tsm_ai_advancedgenesplicer" equip="true"/>
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
+        <Item identifier="securitypatrolclothes" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="ballistichelmet1" equip="true" />
         <Item identifier="stunbaton">
-        <Item identifier="batterycell"/>
+          <Item identifier="batterycell" />
         </Item>
         <Item identifier="autoshotgun" equip="true">
-        <Item identifier="shotgunshell" amount="24"/>
+          <Item identifier="shotgunshell" amount="24" />
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="tsm_outpost_combat_npc_a" tags="securitynpc" job="tsm_outpostsecurityofficer" spawnpointtags="admin" behavior="Active" healthmultiplier="2" healthmultiplierinmultiplayer="2" aimspeed="30" aimaccuracy="1" reportrange="10000" skillmultiplier="5"> 
+    <npc identifier="tsm_outpost_combat_npc_a" tags="securitynpc" job="tsm_outpostsecurityofficer" spawnpointtags="admin" behavior="Active" healthmultiplier="2" healthmultiplierinmultiplayer="2" aimspeed="30" aimaccuracy="1" reportrange="10000" skillmultiplier="5">
       <ItemSet commonness="1">
-        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-        <Item identifier="securitypatrolclothes" equip="true"/>
-        <Item identifier="bodyarmor" equip="true"/>
-        <Item identifier="ballistichelmet1" equip="true"/>
-        <Item identifier="tsm_ai_eyi_outpost_sundown"/>
-        <Item identifier="tsm_ai_advancedgenesplicer" equip="true"/>
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
+        <Item identifier="securitypatrolclothes" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="ballistichelmet1" equip="true" />
         <Item identifier="stunbaton">
-        <Item identifier="batterycell"/>
+          <Item identifier="batterycell" />
         </Item>
         <Item identifier="assaultrifle" equip="true">
-        <Item identifier="assaultriflemagazine" amount="8"/>
+          <Item identifier="assaultriflemagazine" amount="8" />
         </Item>
       </ItemSet>
       <ItemSet commonness="1">
-        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-        <Item identifier="securitypatrolclothes" equip="true"/>
-        <Item identifier="bodyarmor" equip="true"/>
-        <Item identifier="ballistichelmet1" equip="true"/>
-        <Item identifier="tsm_ai_advancedgenesplicer" equip="true"/>
-        <Item identifier="tsm_ai_eyi_outpost_sundown"/>
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
+        <Item identifier="securitypatrolclothes" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="ballistichelmet1" equip="true" />
         <Item identifier="stunbaton">
-        <Item identifier="batterycell"/>
+          <Item identifier="batterycell" />
         </Item>
         <Item identifier="hmg" equip="true">
-        <Item identifier="hmgmagazine" amount="6"/>
+          <Item identifier="hmgmagazine" amount="6" />
         </Item>
       </ItemSet>
       <ItemSet commonness="0.5">
-        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-        <Item identifier="securitypatrolclothes" equip="true"/>
-        <Item identifier="bodyarmor" equip="true"/>
-        <Item identifier="ballistichelmet1" equip="true"/>
-        <Item identifier="tsm_ai_eyi_outpost_sundown"/>
-        <Item identifier="tsm_ai_advancedgenesplicer" equip="true"/>
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
+        <Item identifier="securitypatrolclothes" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="ballistichelmet1" equip="true" />
         <Item identifier="stunbaton">
-        <Item identifier="batterycell"/>
+          <Item identifier="batterycell" />
         </Item>
         <Item identifier="autoshotgun" equip="true">
-        <Item identifier="shotgunshell" amount="24"/>
+          <Item identifier="shotgunshell" amount="24" />
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="tsm_outpost_combat_npc_j" tags="securitynpc" job="tsm_outpostsecurityofficer" spawnpointtags="admin" behavior="Active" healthmultiplier="2" healthmultiplierinmultiplayer="2" aimspeed="30" aimaccuracy="1" reportrange="10000" skillmultiplier="5"> 
+    <npc identifier="tsm_outpost_combat_npc_j" tags="securitynpc" job="tsm_outpostsecurityofficer" spawnpointtags="admin" behavior="Active" healthmultiplier="2" healthmultiplierinmultiplayer="2" aimspeed="30" aimaccuracy="1" reportrange="10000" skillmultiplier="5">
       <ItemSet commonness="1">
-        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-        <Item identifier="securitypatrolclothes" equip="true"/>
-        <Item identifier="bodyarmor" equip="true"/>
-        <Item identifier="ballistichelmet1" equip="true"/>
-        <Item identifier="tsm_ai_eyi_outpost_sundown"/>
-        <Item identifier="tsm_ai_advancedgenesplicer" equip="true"/>
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
+        <Item identifier="securitypatrolclothes" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="ballistichelmet1" equip="true" />
         <Item identifier="stunbaton">
-        <Item identifier="batterycell"/>
+          <Item identifier="batterycell" />
         </Item>
         <Item identifier="assaultrifle" equip="true">
-        <Item identifier="assaultriflemagazine" amount="8"/>
+          <Item identifier="assaultriflemagazine" amount="8" />
         </Item>
       </ItemSet>
       <ItemSet commonness="1">
-        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-        <Item identifier="securitypatrolclothes" equip="true"/>
-        <Item identifier="bodyarmor" equip="true"/>
-        <Item identifier="ballistichelmet1" equip="true"/>
-        <Item identifier="tsm_ai_eyi_outpost_sundown"/>
-        <Item identifier="tsm_ai_advancedgenesplicer" equip="true"/>
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
+        <Item identifier="securitypatrolclothes" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="ballistichelmet1" equip="true" />
         <Item identifier="stunbaton">
-        <Item identifier="batterycell"/>
+          <Item identifier="batterycell" />
         </Item>
         <Item identifier="hmg" equip="true">
-        <Item identifier="hmgmagazine" amount="6"/>
+          <Item identifier="hmgmagazine" amount="6" />
         </Item>
       </ItemSet>
       <ItemSet commonness="0.5">
-        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-        <Item identifier="securitypatrolclothes" equip="true"/>
-        <Item identifier="bodyarmor" equip="true"/>
-        <Item identifier="ballistichelmet1" equip="true"/>
-        <Item identifier="tsm_ai_eyi_outpost_sundown"/>
-        <Item identifier="tsm_ai_advancedgenesplicer" equip="true"/>
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
+        <Item identifier="securitypatrolclothes" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="ballistichelmet1" equip="true" />
         <Item identifier="stunbaton">
-        <Item identifier="batterycell"/>
+          <Item identifier="batterycell" />
         </Item>
         <Item identifier="autoshotgun" equip="true">
-        <Item identifier="shotgunshell" amount="24"/>
+          <Item identifier="shotgunshell" amount="24" />
         </Item>
       </ItemSet>
     </npc>
-    <npc identifier="tsm_gendarmerie" tags="securitynpc" job="tsm_outpostsecurityofficer" spawnpointtags="admin" behavior="Active" healthmultiplier="2" healthmultiplierinmultiplayer="2" aimspeed="30" aimaccuracy="1" reportrange="10000" skillmultiplier="5"> 
+    <npc identifier="tsm_gendarmerie" tags="securitynpc" job="tsm_outpostsecurityofficer" spawnpointtags="admin" behavior="Active" healthmultiplier="2" healthmultiplierinmultiplayer="2" aimspeed="30" aimaccuracy="1" reportrange="10000" skillmultiplier="5">
       <ItemSet commonness="1">
-        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-        <Item identifier="tsm_gendarmerie_uniforms" equip="true"/>
-        <Item identifier="tsm_gendarmerie_hat" equip="true"/>
-        <Item identifier="tsm_ai_eyi_outpost_sundown"/>
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
+        <Item identifier="tsm_gendarmerie_uniforms" equip="true" />
+        <Item identifier="tsm_gendarmerie_hat" equip="true" />
         <Item identifier="stunbaton">
-        <Item identifier="batterycell"/>
+          <Item identifier="batterycell" />
         </Item>
         <Item identifier="assaultrifle" equip="true">
-        <Item identifier="assaultriflemagazine" amount="8"/>
+          <Item identifier="assaultriflemagazine" amount="8" />
         </Item>
       </ItemSet>
     </npc>
@@ -160,262 +141,261 @@
         </job>
       </Character>
       <ItemSet commonness="1">
-        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-        <Item identifier="tsm_pifu" equip="true"/>
-        <Item identifier="securitypatrolclothes" equip="true"/>
-        <Item identifier="bodyarmor" equip="true"/>
-        <Item identifier="ballistichelmet1" equip="true"/>
-        <Item identifier="tsm_vip_bodyguard"/>
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
+        <Item identifier="tsm_pifu" equip="true" />
+        <Item identifier="securitypatrolclothes" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="ballistichelmet1" equip="true" />
+        <Item identifier="tsm_vip_bodyguard" />
         <Item identifier="stunbaton">
-          <Item identifier="batterycell"/>
+          <Item identifier="batterycell" />
         </Item>
         <Item identifier="assaultrifle" equip="true">
-          <Item identifier="assaultriflemagazine" amount="5"/>
+          <Item identifier="assaultriflemagazine" amount="5" />
         </Item>
       </ItemSet>
     </npc>
   </npcset>
   <!--站点管理员-->
   <npcset identifier="tsm_city_npcs">
-  <npc identifier="tsm_outpostmanager" job="outpostmanager" tags="tsm_outpostmanger" spawnpointtags="admin" behavior="Passive" preferredoutpostmoduletypes="Tsm_AdminModule" skillmultiplier="5">
-    <ItemSet commmonness="1">
-      <Item identifier="tsm_suit_O5" equip="true"/>
-      <Item identifier="Extra_hat_male_tsm" equip="true"/>
-      <Item identifier="idcard" equip="true"/>
-      <Item identifier="divingmask">
-      <Item identifier="oxygentank" />
-    </Item>
-      <Item identifier="handcannon" equip="true">
-      <Item identifier="handcannonround" amount="12"/>
-    </Item>
-    </ItemSet>
-  </npc>
-  <npc identifier="tsm_caretakers" job="outpostmanager" tags="unlockpathnpc" spawnpointtags="admin" behavior="Passive" preferredoutpostmoduletypes="Tsm_AdminModule" skillmultiplier="5">
-    <ItemSet commmonness="1">
-      <Item identifier="tsm_suit_O5" equip="true"/>
-      <Item identifier="tsm_hat_officer" equip="true"/>
-      <Item identifier="idcard" equip="true"/>
-      <Item identifier="divingmask">
-      <Item identifier="oxygentank" />
-    </Item>
-      <Item identifier="handcannon" equip="true">
-      <Item identifier="handcannonround" amount="12"/>
-    </Item>
-    </ItemSet>
-  </npc>
-  <npc identifier="tsm_wz_ff" job="outpostmanager" tags="tsm_wz_ff" spawnpointtags="admin" behavior="Passive" preferredoutpostmoduletypes="Tsm_AdminModule" skillmultiplier="5">
-    <ItemSet commmonness="1">
-      <Item identifier="captainsuniform3" equip="true"/>
-      <Item identifier="captainscap3" equip="true"/>
-      <Item identifier="idcard" equip="true"/>
-      <Item identifier="divingmask">
-      <Item identifier="oxygentank" />
-    </Item>
-      <Item identifier="handcannon" equip="true">
-      <Item identifier="handcannonround" amount="12"/>
-    </Item>
-    </ItemSet>
-  </npc>
-  <npc identifier="tsm_wz_ff_xbz" job="outpostmanager" tags="tsm_wz_ff" spawnpointtags="admin" behavior="Passive" preferredoutpostmoduletypes="Tsm_AdminModule" skillmultiplier="5">
-    <ItemSet commmonness="1">
-      <Item identifier="captainsuniform3" equip="true"/>
-      <Item identifier="captainscap3" equip="true"/>
-      <Item identifier="idcard" equip="true"/>
-      <Item identifier="tsm_ai_eyi_outpost_sundown"/>
-      <Item identifier="divingmask">
-      <Item identifier="oxygentank" />
-    </Item>
-      <Item identifier="handcannon" equip="true">
-      <Item identifier="handcannonround" amount="12"/>
-    </Item>
-    </ItemSet>
-  </npc>
-  <npc identifier="tsm_bountyhunter" job="outpostmanager" tags="tsm_bountyhunter" spawnpointtags="bountyhunter" behavior="Passive" preferredoutpostmoduletypes="Tsm_ResidentialModule" skillmultiplier="5">
-    <ItemSet commmonness="1">
-      <Item identifier="captainscap1" equip="true"/>
-      <Item identifier="captainsuniform1" equip="true"/>
-      <Item identifier="idcard" equip="true"/>
-      <Item identifier="divingmask">
-      <Item identifier="oxygentank" />
-    </Item>
-      <Item identifier="handcannon" equip="true">
-      <Item identifier="handcannonround" amount="12"/>
-    </Item>
-    </ItemSet>
-    <ItemSet commmonness="1">
-      <Item identifier="tsm_hat_officer" equip="true"/>
-      <Item identifier="vipclothes1" equip="true"/>
-      <Item identifier="idcard" equip="true"/>
-      <Item identifier="divingmask">
-      <Item identifier="oxygentank" />
-    </Item>
-      <Item identifier="handcannon" equip="true">
-      <Item identifier="handcannonround" amount="12"/>
-    </Item>
-    </ItemSet>
-    <ItemSet commmonness="1">
-      <Item identifier="tsm_hat_officer" equip="true"/>
-      <Item identifier="vipclothes2" equip="true"/>
-      <Item identifier="idcard" equip="true"/>
-      <Item identifier="divingmask">
-      <Item identifier="oxygentank" />
-    </Item>
-      <Item identifier="handcannon" equip="true">
-      <Item identifier="handcannonround" amount="12"/>
-    </Item>
-    </ItemSet>
-    <ItemSet commmonness="1">
-      <Item identifier="tsm_hat_officer" equip="true"/>
-      <Item identifier="vipclothes3" equip="true"/>
-      <Item identifier="idcard" equip="true"/>
-      <Item identifier="divingmask">
-      <Item identifier="oxygentank" />
-    </Item>
-      <Item identifier="handcannon" equip="true">
-      <Item identifier="handcannonround" amount="12"/>
-    </Item>
-    </ItemSet>
-  </npc>
-  <!--站点招募人员-->
-  <npc identifier="hireabletsmsecurityofficer" job="securityofficer" tags="securitynpc" skillmultiplier="1.5" experiencepoints="2000">
-    <ItemSet>
-      <Item identifier="securitypatrolclothes" equip="true"/>
-      <Item identifier="headset" equip="true" />
-      <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-      <Item identifier="stunbaton">
+    <npc identifier="tsm_outpostmanager" job="outpostmanager" tags="tsm_outpostmanger" spawnpointtags="admin" behavior="Passive" preferredoutpostmoduletypes="Tsm_AdminModule" skillmultiplier="5">
+      <ItemSet commmonness="1">
+        <Item identifier="tsm_suit_O5" equip="true" />
+        <Item identifier="Extra_hat_male_tsm" equip="true" />
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="handcannon" equip="true">
+          <Item identifier="handcannonround" amount="12" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="tsm_caretakers" job="outpostmanager" tags="unlockpathnpc" spawnpointtags="admin" behavior="Passive" preferredoutpostmoduletypes="Tsm_AdminModule" skillmultiplier="5">
+      <ItemSet commmonness="1">
+        <Item identifier="tsm_suit_O5" equip="true" />
+        <Item identifier="tsm_hat_officer" equip="true" />
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="handcannon" equip="true">
+          <Item identifier="handcannonround" amount="12" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="tsm_wz_ff" job="outpostmanager" tags="tsm_wz_ff" spawnpointtags="admin" behavior="Passive" preferredoutpostmoduletypes="Tsm_AdminModule" skillmultiplier="5">
+      <ItemSet commmonness="1">
+        <Item identifier="captainsuniform3" equip="true" />
+        <Item identifier="captainscap3" equip="true" />
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="handcannon" equip="true">
+          <Item identifier="handcannonround" amount="12" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="tsm_wz_ff_xbz" job="outpostmanager" tags="tsm_wz_ff" spawnpointtags="admin" behavior="Passive" preferredoutpostmoduletypes="Tsm_AdminModule" skillmultiplier="5">
+      <ItemSet commmonness="1">
+        <Item identifier="captainsuniform3" equip="true" />
+        <Item identifier="captainscap3" equip="true" />
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="handcannon" equip="true">
+          <Item identifier="handcannonround" amount="12" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="tsm_bountyhunter" job="outpostmanager" tags="tsm_bountyhunter" spawnpointtags="bountyhunter" behavior="Passive" preferredoutpostmoduletypes="Tsm_ResidentialModule" skillmultiplier="5">
+      <ItemSet commmonness="1">
+        <Item identifier="captainscap1" equip="true" />
+        <Item identifier="captainsuniform1" equip="true" />
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="handcannon" equip="true">
+          <Item identifier="handcannonround" amount="12" />
+        </Item>
+      </ItemSet>
+      <ItemSet commmonness="1">
+        <Item identifier="tsm_hat_officer" equip="true" />
+        <Item identifier="vipclothes1" equip="true" />
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="handcannon" equip="true">
+          <Item identifier="handcannonround" amount="12" />
+        </Item>
+      </ItemSet>
+      <ItemSet commmonness="1">
+        <Item identifier="tsm_hat_officer" equip="true" />
+        <Item identifier="vipclothes2" equip="true" />
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="handcannon" equip="true">
+          <Item identifier="handcannonround" amount="12" />
+        </Item>
+      </ItemSet>
+      <ItemSet commmonness="1">
+        <Item identifier="tsm_hat_officer" equip="true" />
+        <Item identifier="vipclothes3" equip="true" />
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="divingmask">
+          <Item identifier="oxygentank" />
+        </Item>
+        <Item identifier="handcannon" equip="true">
+          <Item identifier="handcannonround" amount="12" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--站点招募人员-->
+    <npc identifier="hireabletsmsecurityofficer" job="securityofficer" tags="securitynpc" skillmultiplier="1.5" experiencepoints="2000">
+      <ItemSet>
+        <Item identifier="securitypatrolclothes" equip="true" />
+        <Item identifier="headset" equip="true" />
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
+        <Item identifier="stunbaton">
+          <Item identifier="batterycell" />
+        </Item>
         <Item identifier="batterycell" />
-      </Item>
-      <Item identifier="batterycell" />
-      <Item identifier="handcuffs"/>
-      <Item identifier="revolver" equip="false">
-        <Item identifier="revolverround" amount="6"/>
-      </Item>
-      <Item identifier="divingknife" />
-      <Item identifier="antibleeding1"/>
-      <Item identifier="bodyarmor" equip="true"/>
-      <Item identifier="ballistichelmet2" equip="true"/>
-    </ItemSet>
-  </npc>
-  <npc identifier="hireabletsmsecurityofficerveteran" job="securityofficer" tags="securitynpc" skillmultiplier="2.0" experiencepoints="6000">
-    <ItemSet>
-      <Item identifier="securitypatrolclothes" equip="true"/>
-      <Item identifier="headset" equip="true" />
-      <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-      <Item identifier="stunbaton">
+        <Item identifier="handcuffs" />
+        <Item identifier="revolver" equip="false">
+          <Item identifier="revolverround" amount="6" />
+        </Item>
+        <Item identifier="divingknife" />
+        <Item identifier="antibleeding1" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="ballistichelmet2" equip="true" />
+      </ItemSet>
+    </npc>
+    <npc identifier="hireabletsmsecurityofficerveteran" job="securityofficer" tags="securitynpc" skillmultiplier="2.0" experiencepoints="6000">
+      <ItemSet>
+        <Item identifier="securitypatrolclothes" equip="true" />
+        <Item identifier="headset" equip="true" />
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
+        <Item identifier="stunbaton">
+          <Item identifier="batterycell" />
+        </Item>
         <Item identifier="batterycell" />
-      </Item>
-      <Item identifier="batterycell" />
-      <Item identifier="handcuffs"/>
-      <Item identifier="assaultrifle" equip="false">
-        <Item identifier="assaultriflemagazine"/>
-        <Item identifier="revolverround"/>
-      </Item>
-      <Item identifier="divingknife" />
-      <Item identifier="antibleeding1"/>
-      <Item identifier="bandolier" equip="true"/>
-      <Item identifier="ballistichelmet2" equip="true"/>
-    </ItemSet>
-  </npc>
-  <npc identifier="hireabletsmengineer" job="engineer" skillmultiplier="1.5" experiencepoints="2000">
-    <ItemSet>
-      <Item identifier="orangejumpsuit2" equip="true" />
-      <Item identifier="idcard" equip="true" />
-      <Item identifier="headset" equip="true" showpreview="false"/>
-      <Item identifier="wrench" equip="true" />
-      <Item identifier="screwdriver" equip="true" />
-      <Item identifier="crowbar" equip="true" />
-      <Item identifier="toolbelt" equip="true"/>
-      <Item identifier="weldingtool">
-        <Item identifier="weldingfueltank" />
-      </Item>
-    </ItemSet>
-  </npc>
-  <npc identifier="hireabletsmengineerveteran" job="engineer" skillmultiplier="2.0" experiencepoints="6000">
-    <ItemSet>
-      <Item identifier="orangejumpsuit2" equip="true" />
-      <Item identifier="idcard" equip="true" />
-      <Item identifier="headset" equip="true" showpreview="false"/>
-      <Item identifier="wrench" equip="true" />
-      <Item identifier="screwdriver" equip="true" />
-      <Item identifier="crowbar" equip="true" />
-      <Item identifier="toolbelt" equip="true"/>
-      <Item identifier="weldingtool">
-        <Item identifier="weldingfueltank" />
-      </Item>
-    </ItemSet>
-  </npc>
-  <npc identifier="hireabletsmmechanic" job="mechanic"  skillmultiplier="1.5" experiencepoints="2000">
-    <ItemSet>
-      <Item identifier="bluejumpsuit2" equip="true" />
-      <Item identifier="headset" equip="true" showpreview="false"/>
-      <Item identifier="baseballcap" equip="true" />
-      <Item identifier="idcard" equip="true" />
-      <Item identifier="wrench" equip="true" />
-      <Item identifier="screwdriver" equip="true" />
-      <Item identifier="toolbelt" equip="true"/>
-      <Item identifier="weldingtool">
-        <Item identifier="weldingfueltank" />
-      </Item>
-    </ItemSet>
-  </npc>
-  <npc identifier="hireabletsmmechanicveteran" job="mechanic"  skillmultiplier="2.0" experiencepoints="6000">
-    <ItemSet>
-      <Item identifier="bluejumpsuit2" equip="true" />
-      <Item identifier="headset" equip="true" showpreview="false"/>
-      <Item identifier="baseballcap" equip="true" />
-      <Item identifier="idcard" equip="true" />
-      <Item identifier="wrench" equip="true" />
-      <Item identifier="screwdriver" equip="true" />
-      <Item identifier="toolbelt" equip="true"/>
-      <Item identifier="weldingtool">
-        <Item identifier="weldingfueltank" />
-      </Item>
-    </ItemSet>
-  </npc>
-  <npc identifier="hireabletsmmedic" job="medicaldoctor" skillmultiplier="1.5" experiencepoints="2000">
-    <ItemSet>
-      <Item identifier="idcard" equip="true"/>
-      <Item identifier="doctorsuniform1" equip="true"/>
-      <Item identifier="healthscanner"/>
-      <Item identifier="headset" equip="true"/>
-      <Item identifier="syringegun"/>
-      <Item identifier="antibleeding1"/>
-      <Item identifier="antidama1"/>
-    </ItemSet>
-  </npc>
-  <npc identifier="hireabletsmmedicveteran" job="medicaldoctor" skillmultiplier="2.0" experiencepoints="6000">
-    <ItemSet>
-      <Item identifier="idcard" equip="true"/>
-      <Item identifier="doctorsuniform2" equip="true"/>
-      <Item identifier="healthscanner"/>
-      <Item identifier="autoinjectorheadset" equip="true"/>
-      <Item identifier="syringegun"/>
-      <Item identifier="antibleeding1"/>
-      <Item identifier="antidama1"/>
-      <Item identifier="pressurestabilizer"/>
-      <Item identifier="genesplicer"/>
-    </ItemSet>
-  </npc>
-  <npc identifier="hireabletsmsecurityofficerveteran" job="securityofficer" tags="securitynpc" skillmultiplier="2.0" experiencepoints="6000">
-    <ItemSet>
-      <Item identifier="securitypatrolclothes" equip="true"/>
-      <Item identifier="headset" equip="true" />
-      <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-      <Item identifier="stunbaton">
+        <Item identifier="handcuffs" />
+        <Item identifier="assaultrifle" equip="false">
+          <Item identifier="assaultriflemagazine" />
+          <Item identifier="revolverround" />
+        </Item>
+        <Item identifier="divingknife" />
+        <Item identifier="antibleeding1" />
+        <Item identifier="bandolier" equip="true" />
+        <Item identifier="ballistichelmet2" equip="true" />
+      </ItemSet>
+    </npc>
+    <npc identifier="hireabletsmengineer" job="engineer" skillmultiplier="1.5" experiencepoints="2000">
+      <ItemSet>
+        <Item identifier="orangejumpsuit2" equip="true" />
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="headset" equip="true" showpreview="false" />
+        <Item identifier="wrench" equip="true" />
+        <Item identifier="screwdriver" equip="true" />
+        <Item identifier="crowbar" equip="true" />
+        <Item identifier="toolbelt" equip="true" />
+        <Item identifier="weldingtool">
+          <Item identifier="weldingfueltank" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="hireabletsmengineerveteran" job="engineer" skillmultiplier="2.0" experiencepoints="6000">
+      <ItemSet>
+        <Item identifier="orangejumpsuit2" equip="true" />
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="headset" equip="true" showpreview="false" />
+        <Item identifier="wrench" equip="true" />
+        <Item identifier="screwdriver" equip="true" />
+        <Item identifier="crowbar" equip="true" />
+        <Item identifier="toolbelt" equip="true" />
+        <Item identifier="weldingtool">
+          <Item identifier="weldingfueltank" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="hireabletsmmechanic" job="mechanic" skillmultiplier="1.5" experiencepoints="2000">
+      <ItemSet>
+        <Item identifier="bluejumpsuit2" equip="true" />
+        <Item identifier="headset" equip="true" showpreview="false" />
+        <Item identifier="baseballcap" equip="true" />
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="wrench" equip="true" />
+        <Item identifier="screwdriver" equip="true" />
+        <Item identifier="toolbelt" equip="true" />
+        <Item identifier="weldingtool">
+          <Item identifier="weldingfueltank" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="hireabletsmmechanicveteran" job="mechanic" skillmultiplier="2.0" experiencepoints="6000">
+      <ItemSet>
+        <Item identifier="bluejumpsuit2" equip="true" />
+        <Item identifier="headset" equip="true" showpreview="false" />
+        <Item identifier="baseballcap" equip="true" />
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="wrench" equip="true" />
+        <Item identifier="screwdriver" equip="true" />
+        <Item identifier="toolbelt" equip="true" />
+        <Item identifier="weldingtool">
+          <Item identifier="weldingfueltank" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <npc identifier="hireabletsmmedic" job="medicaldoctor" skillmultiplier="1.5" experiencepoints="2000">
+      <ItemSet>
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="doctorsuniform1" equip="true" />
+        <Item identifier="healthscanner" />
+        <Item identifier="headset" equip="true" />
+        <Item identifier="syringegun" />
+        <Item identifier="antibleeding1" />
+        <Item identifier="antidama1" />
+      </ItemSet>
+    </npc>
+    <npc identifier="hireabletsmmedicveteran" job="medicaldoctor" skillmultiplier="2.0" experiencepoints="6000">
+      <ItemSet>
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="doctorsuniform2" equip="true" />
+        <Item identifier="healthscanner" />
+        <Item identifier="autoinjectorheadset" equip="true" />
+        <Item identifier="syringegun" />
+        <Item identifier="antibleeding1" />
+        <Item identifier="antidama1" />
+        <Item identifier="pressurestabilizer" />
+        <Item identifier="genesplicer" />
+      </ItemSet>
+    </npc>
+    <npc identifier="hireabletsmsecurityofficerveteran" job="securityofficer" tags="securitynpc" skillmultiplier="2.0" experiencepoints="6000">
+      <ItemSet>
+        <Item identifier="securitypatrolclothes" equip="true" />
+        <Item identifier="headset" equip="true" />
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
+        <Item identifier="stunbaton">
+          <Item identifier="batterycell" />
+        </Item>
         <Item identifier="batterycell" />
-      </Item>
-      <Item identifier="batterycell" />
-      <Item identifier="handcuffs"/>
-      <Item identifier="assaultrifle" equip="false">
-        <Item identifier="assaultriflemagazine"/>
-        <Item identifier="revolverround"/>
-      </Item>
-      <Item identifier="divingknife" />
-      <Item identifier="antibleeding1"/>
-      <Item identifier="bandolier" equip="true"/>
-      <Item identifier="ballistichelmet2" equip="true"/>
-    </ItemSet>
-  </npc>
+        <Item identifier="handcuffs" />
+        <Item identifier="assaultrifle" equip="false">
+          <Item identifier="assaultriflemagazine" />
+          <Item identifier="revolverround" />
+        </Item>
+        <Item identifier="divingknife" />
+        <Item identifier="antibleeding1" />
+        <Item identifier="bandolier" equip="true" />
+        <Item identifier="ballistichelmet2" equip="true" />
+      </ItemSet>
+    </npc>
   </npcset>
   <!--任务npc-->
   <npcset identifier="tsm_mission_npcs">
@@ -429,52 +409,49 @@
     <npc identifier="tsm_coalition_spy" job="securityofficer" commonness="1" healthmultiplier="1" behavior="Active">
       <ItemSet commonness="1">
         <Item identifier="idcard" equip="true" />
-        <Item identifier="captainsuniform1" equip="true" >
-        <Item identifier="revolverround" amount="6"/>
+        <Item identifier="captainsuniform1" equip="true">
+          <Item identifier="revolverround" amount="6" />
         </Item>
         <Item identifier="revolver" equip="true">
-        <Item identifier="revolverround" amount="12"/>
-         </Item>
+          <Item identifier="revolverround" amount="12" />
+        </Item>
       </ItemSet>
     </npc>
-    <npc identifier="tsm_outpost_combat_npc_mission" tags="securitynpc" job="tsm_outpostsecurityofficer" spawnpointtags="security" behavior="Patrol" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.5" aimspeed="30" aimaccuracy="1" reportrange="10000" skillmultiplier="5"> 
+    <npc identifier="tsm_outpost_combat_npc_mission" tags="securitynpc" job="tsm_outpostsecurityofficer" spawnpointtags="security" behavior="Patrol" healthmultiplier="1.1" healthmultiplierinmultiplayer="1.5" aimspeed="30" aimaccuracy="1" reportrange="10000" skillmultiplier="5">
       <ItemSet commonness="1">
-        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-        <Item identifier="securitypatrolclothes" equip="true"/>
-        <Item identifier="bodyarmor" equip="true"/>
-        <Item identifier="ballistichelmet1" equip="true"/>
-        <Item identifier="tsm_ai_eyi_outpost_sundown"/>
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
+        <Item identifier="securitypatrolclothes" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="ballistichelmet1" equip="true" />
         <Item identifier="stunbaton">
-        <Item identifier="batterycell"/>
+          <Item identifier="batterycell" />
         </Item>
         <Item identifier="assaultrifle" equip="true">
-        <Item identifier="assaultriflemagazine" amount="8"/>
+          <Item identifier="assaultriflemagazine" amount="8" />
         </Item>
       </ItemSet>
       <ItemSet commonness="1">
-        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-        <Item identifier="securitypatrolclothes" equip="true"/>
-        <Item identifier="bodyarmor" equip="true"/>
-        <Item identifier="ballistichelmet1" equip="true"/>
-        <Item identifier="tsm_ai_eyi_outpost_sundown"/>
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
+        <Item identifier="securitypatrolclothes" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="ballistichelmet1" equip="true" />
         <Item identifier="stunbaton">
-        <Item identifier="batterycell"/>
+          <Item identifier="batterycell" />
         </Item>
         <Item identifier="hmg" equip="true">
-        <Item identifier="hmgmagazine" amount="6"/>
+          <Item identifier="hmgmagazine" amount="6" />
         </Item>
       </ItemSet>
       <ItemSet commonness="0.5">
-        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-        <Item identifier="securitypatrolclothes" equip="true"/>
-        <Item identifier="bodyarmor" equip="true"/>
-        <Item identifier="ballistichelmet1" equip="true"/>
-        <Item identifier="tsm_ai_eyi_outpost_sundown"/>
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
+        <Item identifier="securitypatrolclothes" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="ballistichelmet1" equip="true" />
         <Item identifier="stunbaton">
-        <Item identifier="batterycell"/>
+          <Item identifier="batterycell" />
         </Item>
         <Item identifier="autoshotgun" equip="true">
-        <Item identifier="shotgunshell" amount="24"/>
+          <Item identifier="shotgunshell" amount="24" />
         </Item>
       </ItemSet>
     </npc>
@@ -483,45 +460,39 @@
   <npcset identifier="tsm_combat_npcs">
     <npc identifier="tsm_outpost_combat_1" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule,banditleader" job="tsm_outpostsecurityofficer" behavior="Active" healthmultiplier="1.5" aimspeed="30" aimaccuracy="1" reportrange="5000" skillmultiplier="4">
       <ItemSet commonness="1">
-        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-        <Item identifier="securitypatrolclothes" equip="true"/>
-        <Item identifier="bodyarmor" equip="true"/>
-        <Item identifier="ballistichelmet1" equip="true"/>
-        <Item identifier="tsm_ai_eyi_outpost_sundown"/>
-        <Item identifier="tsm_ai_advancedgenesplicer" equip="true"/>
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
+        <Item identifier="securitypatrolclothes" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="ballistichelmet1" equip="true" />
         <Item identifier="stunbaton">
-        <Item identifier="batterycell"/>
+          <Item identifier="batterycell" />
         </Item>
         <Item identifier="assaultrifle" equip="true">
-        <Item identifier="assaultriflemagazine" amount="8"/>
+          <Item identifier="assaultriflemagazine" amount="8" />
         </Item>
       </ItemSet>
       <ItemSet commonness="1">
-        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-        <Item identifier="securitypatrolclothes" equip="true"/>
-        <Item identifier="bodyarmor" equip="true"/>
-        <Item identifier="ballistichelmet1" equip="true"/>
-        <Item identifier="tsm_ai_eyi_outpost_sundown"/>
-        <Item identifier="tsm_ai_advancedgenesplicer" equip="true"/>
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
+        <Item identifier="securitypatrolclothes" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="ballistichelmet1" equip="true" />
         <Item identifier="stunbaton">
-        <Item identifier="batterycell"/>
+          <Item identifier="batterycell" />
         </Item>
         <Item identifier="hmg" equip="true">
-        <Item identifier="hmgmagazine" amount="6"/>
+          <Item identifier="hmgmagazine" amount="6" />
         </Item>
       </ItemSet>
       <ItemSet commonness="0.5">
-        <Item identifier="idcard" equip="true" tags="id_outpostsecurity"/>
-        <Item identifier="securitypatrolclothes" equip="true"/>
-        <Item identifier="bodyarmor" equip="true"/>
-        <Item identifier="ballistichelmet1" equip="true"/>
-        <Item identifier="tsm_ai_eyi_outpost_sundown"/>
-        <Item identifier="tsm_ai_advancedgenesplicer" equip="true"/>
+        <Item identifier="idcard" equip="true" tags="id_outpostsecurity" />
+        <Item identifier="securitypatrolclothes" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="ballistichelmet1" equip="true" />
         <Item identifier="stunbaton">
-        <Item identifier="batterycell"/>
+          <Item identifier="batterycell" />
         </Item>
         <Item identifier="autoshotgun" equip="true">
-        <Item identifier="shotgunshell" amount="24"/>
+          <Item identifier="shotgunshell" amount="24" />
         </Item>
       </ItemSet>
     </npc>

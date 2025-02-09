@@ -1,4 +1,5 @@
-﻿<Character SpeciesName="AlbinismMoloch" SpeciesTranslationOverride="" DisplayName="" Group="moloch" Humanoid="False" HasInfo="False" CanInteract="False" Husk="False" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="100" Visibility="100" BloodDecal="blackblood" BleedParticleAir="blooddrop" BleedParticleWater="blackwaterblood" BleedParticleMultiplier="1" CanEat="False" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="30000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Character SpeciesName="AlbinismMoloch" SpeciesTranslationOverride="" DisplayName="" Group="moloch" Humanoid="False" HasInfo="False" CanInteract="False" Husk="False" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="100" Visibility="100" BloodDecal="blackblood" BleedParticleAir="blooddrop" BleedParticleWater="blackwaterblood" BleedParticleMultiplier="1" CanEat="False" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="30000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="">
   <ragdolls folder="default" />
   <animations folder="default" />
   <damageemitter drawontop="True" Particle="blackgib" AngleMin="0" AngleMax="360" ScaleMin="0.3" ScaleMax="0.5" VelocityMin="200" VelocityMax="300" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
@@ -31,7 +32,7 @@
     <target Tag="room" State="Attack" Priority="120" ReactDistance="4000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
     <target Tag="wall" State="Attack" Priority="110" ReactDistance="4000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
     <target Tag="sonar" State="Attack" Priority="50" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
-     </ai>
+  </ai>
   <StatusEffect type="OnDamaged" target="This" checkconditionalways="true" comparison="and" delay="0.4" stackable="false">
     <RequiredAffliction type="damage,burn" minstrength="1" />
     <Conditional isdead="false" />
@@ -58,11 +59,11 @@
     <Sound file="Content/Characters/Watcher/WATCHER_burst7.ogg" range="5000" />
     <Sound file="Content/Characters/Watcher/WATCHER_burst8.ogg" range="5000" />
   </StatusEffect>
-  <StatusEffect type="OnDamaged" target="This" checkconditionalways="true" comparison="and" delay="0.8" stackable="false" >
-    <RequiredAffliction type="damage,burn" minstrength="1"/>
+  <StatusEffect type="OnDamaged" target="This" checkconditionalways="true" comparison="and" delay="0.8" stackable="false">
+    <RequiredAffliction type="damage,burn" minstrength="1" />
     <Conditional isdead="false" />
     <SpawnItem identifier="acidemitter" spawnposition="This" count="3" spread="400" />
-    <Sound file="Content/Characters/Watcher/WATCHER_burst1.ogg" range="5000" selectionmode="Random"/>
+    <Sound file="Content/Characters/Watcher/WATCHER_burst1.ogg" range="5000" selectionmode="Random" />
     <Sound file="Content/Characters/Watcher/WATCHER_burst2.ogg" range="5000" />
     <Sound file="Content/Characters/Watcher/WATCHER_burst3.ogg" range="5000" />
     <Sound file="Content/Characters/Watcher/WATCHER_burst4.ogg" range="5000" />
