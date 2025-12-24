@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!--钨矿-->
+  <Item name="钨矿石" identifier="tsm_tungstenore" category="Material" subcategory="TSM" Tags="smallitem,ore" maxstacksize="32" maxstacksizecharacterinventory="8" canbepicked="true" description="黑乎乎的" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="mineralcab" secondary="storagecab" />
+    <Price baseprice="113" sold="true">
+      <Price storeidentifier="merchantoutpost" multiplier="1.1" maxavailable="8"/>
+      <Price storeidentifier="merchantcity" multiplier="1.25" maxavailable="10"/>
+      <Price storeidentifier="merchantresearch" maxavailable="8"/>
+      <Price storeidentifier="merchantmilitary" maxavailable="8"/>
+      <Price storeidentifier="merchantmine" multiplier="0.75" maxavailable="15"/>
+    </Price>
+    <!--分解-->
+    <Deconstruct time="5">
+      <Item identifier="tsm_tungsten" amount="3" />
+    </Deconstruct>
+    <!--发光好找-->
+    <LightComponent lightcolor="160,175,187,225" range="100" powerconsumption="0" flicker="0.0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" ison="true" drawbehindsubs="true">
+      <LightTexture texture="Content/Lights/pointlight_rays.png" origin="0.5,0.5" />
+    </LightComponent>
+    <!--贴图-->
+    <Sprite texture="%ModDir%/items/minerals/minerals.png" depth="0.3" sourcerect="512,419,103,88" origin="0.5,0.5" />
+    <ContainedSprite texture="%ModDir%/items/minerals/minerals.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible" depth="0.55" sourcerect="512,419,103,88" origin="0.5,0.5" />
+    <!--随机组合贴图-->
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.49" sourcerect="70,405,81,102" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.51" sourcerect="164,406,89,106" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.491" sourcerect="255,408,94,104" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.48" sourcerect="70,405,81,102" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.52" sourcerect="164,406,89,106" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.53" sourcerect="261,156,75,103" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <!--尺寸-->
+    <Body radius="60" width="65" density="50" />
+    <!--生成-->
+    <LevelResource deattachduration="4" randomoffsetfromwall="80">
+      <Commonness commonness="0.35" />
+      <Commonness commonness="0.45" cavecommonness="0.55" abysscommonness="0.35" leveltype="europanridge" />
+      <Commonness commonness="0.55" cavecommonness="0.55" abysscommonness="0.65" leveltype="theaphoticplateau" />
+      <Commonness commonness="0.35" cavecommonness="0.35" abysscommonness="0.55" leveltype="thegreatsea" />
+      <Commonness commonness="0.35" cavecommonness="0.65" abysscommonness="0.25" leveltype="hydrothermalwastes" />
+      <!--采集工具-->
+      <RequiredItem items="cuttingequipment" type="Equipped" />
+    </LevelResource>
+    <!--握持-->
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false" />
+  </Item>
+  <Item name="钨" identifier="tsm_tungsten" category="Material" subcategory="TSM" maxstacksize="32" maxstacksizecharacterinventory="8" Tags="smallitem,advmunition_tip" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="storagecab" />
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" minamount="1" maxamount="2" spawnprobability="0.2" />
+    <Price baseprice="33" sold="true">
+      <Price storeidentifier="merchantoutpost" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.1" />
+      <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" maxavailable="10" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/items/minerals/minerals.png" sourcerect="365,459,67,43" />
+    <Sprite texture="%ModDir%/items/minerals/minerals.png" sourcerect="365,459,67,43" depth="0.55" origin="0.5,0.5" />
+    <Body width="67" height="43" density="25" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <AiTarget sightrange="1000" static="true" />
+  </Item>
+  <!--硫磺-->
+  <Item name="硫磺矿" identifier="tsm_sulphurore" category="Material" subcategory="TSM" Tags="smallitem,ore" maxstacksize="32" maxstacksizecharacterinventory="8" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="mineralcab" secondary="storagecab" />
+    <Price baseprice="58" sold="true">
+      <Price storeidentifier="merchantoutpost" multiplier="1.1" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" />
+      <Price storeidentifier="merchantmilitary" />
+      <Price storeidentifier="merchantmine" multiplier="0.75" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="tsm_sulphur" amount="1" />
+      <Item identifier="magnesium" amount="1" />
+    </Deconstruct>
+    <!--发光好找-->
+    <LightComponent lightcolor="160,175,187,225" range="100" powerconsumption="0" flicker="0.0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" ison="true" drawbehindsubs="true">
+      <LightTexture texture="Content/Lights/pointlight_rays.png" origin="0.5,0.5" />
+    </LightComponent>
+    <!--贴图-->
+    <Sprite texture="%ModDir%/items/minerals/minerals.png" depth="0.3" sourcerect="656,426,89,81" origin="0.5,0.5" />
+    <ContainedSprite texture="%ModDir%/items/minerals/minerals.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible" depth="0.55" sourcerect="656,426,89,81" origin="0.5,0.5" />
+    <!--随机组合贴图-->
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.49" sourcerect="62,274,89,107" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.51" sourcerect="153,274,90,107" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.491" sourcerect="275,275,81,104" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.48" sourcerect="62,274,89,107" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.52" sourcerect="153,274,90,107" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.53" sourcerect="275,275,81,104" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <!--尺寸-->
+    <Body radius="60" width="65" density="50" />
+    <!--生成-->
+    <LevelResource deattachduration="4" randomoffsetfromwall="80">
+      <Commonness commonness="0.3" />
+      <Commonness commonness="0.4" cavecommonness="0.3" abysscommonness="0.1" leveltype="europanridge" />
+      <Commonness commonness="0.2" cavecommonness="0.3" abysscommonness="0.1" leveltype="theaphoticplateau" />
+      <Commonness commonness="0.5" cavecommonness="0.5" abysscommonness="0.1" leveltype="thegreatsea" />
+      <Commonness commonness="0.5" cavecommonness="0.5" abysscommonness="0.1" leveltype="hydrothermalwastes" />
+      <RequiredItem items="cuttingequipment" type="Equipped" />
+      <!--采集工具-->
+    </LevelResource>
+    <!--握持-->
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false" />
+  </Item>
+  <Item name="硫磺" identifier="tsm_sulphur" category="Material" subcategory="TSM" maxstacksize="32" maxstacksizecharacterinventory="8" Tags="smallitem,munition_propulsion" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="storagecab" />
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" minamount="1" maxamount="2" spawnprobability="0.3" />
+    <Price baseprice="27" sold="true">
+      <Price storeidentifier="merchantoutpost" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.1" />
+      <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" maxavailable="10" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/items/minerals/minerals.png" sourcerect="367,310,57,60" />
+    <Sprite texture="%ModDir%/items/minerals/minerals.png" sourcerect="367,310,57,60" depth="0.55" origin="0.5,0.5" />
+    <Body width="65" height="70" density="25" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <AiTarget sightrange="1000" static="true" />
+  </Item>
+  <!--异星矿-->
+  <Item name="异星矿蔟" identifier="tsm_kore" category="Material" subcategory="TSM" Tags="smallitem,ore" maxstacksize="32" maxstacksizecharacterinventory="8" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="mineralcab" secondary="storagecab" />
+    <Deconstruct time="5" chooserandom="true" amount="4">
+      <Item identifier="carbon" commonness="0.2" />
+      <Item identifier="plastic" commonness="0.2" />
+      <Item identifier="zinc" commonness="0.2" />
+      <Item identifier="tin" commonness="0.2" />
+      <Item identifier="lead" commonness="0.15" />
+      <Item identifier="copper" commonness="0.1" />
+      <Item identifier="aluminium" commonness="0.2"/>
+      <Item identifier="iron" commonness="0.2" />
+    </Deconstruct>
+    <!--发光好找-->
+    <LightComponent lightcolor="160,175,187,225" range="100" powerconsumption="0" flicker="0.0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" ison="true" drawbehindsubs="true">
+      <LightTexture texture="Content/Lights/pointlight_rays.png" origin="0.5,0.5" />
+    </LightComponent>
+    <!--贴图-->
+    <Sprite texture="%ModDir%/items/minerals/minerals.png" depth="0.3" sourcerect="778,409,105,103" origin="0.5,0.5" />
+    <ContainedSprite texture="%ModDir%/items/minerals/minerals.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible" depth="0.55" sourcerect="778,409,105,103" origin="0.5,0.5" />
+    <!--随机组合贴图-->
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.49" sourcerect="70,136,91,111" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.51" sourcerect="164,136,89,111" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.491" sourcerect="255,140,90,107" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.48" sourcerect="70,136,91,111" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.52" sourcerect="164,136,89,111" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.53" sourcerect="255,140,90,107" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <!--尺寸-->
+    <Body radius="60" width="65" density="50" />
+    <!--生成-->
+    <LevelResource deattachduration="4" randomoffsetfromwall="80">
+      <Commonness commonness="0.2" />
+      <Commonness commonness="0.2" cavecommonness="0.2" abysscommonness="0.1" leveltype="europanridge" />
+      <Commonness commonness="0.1" cavecommonness="0.2" abysscommonness="0.1" leveltype="theaphoticplateau" />
+      <Commonness commonness="0.3" cavecommonness="0.2" abysscommonness="0.1" leveltype="thegreatsea" />
+      <Commonness commonness="0.4" cavecommonness="0.2" abysscommonness="0.1" leveltype="hydrothermalwastes" />
+      <RequiredItem items="cuttingequipment" type="Equipped" />
+      <!--采集工具-->
+    </LevelResource>
+    <!--握持-->
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false" />
+  </Item>
+  <!--Item name="异星块" identifier="tsm_k" category="Material" subcategory="TSM" maxstacksize="8" Tags="smallitem,munition_core,munition_jacket,advmunition_jacket" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="storagecab"/>
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" minamount="1" maxamount="2" spawnprobability="0.2"/>
+    <Price baseprice="34" sold="true">
+      <Price storeidentifier="merchantoutpost" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.1" />
+      <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" minavailable="10" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/items/minerals/minerals.png" sourcerect="356,170,66,71" />
+    <Sprite texture="%ModDir%/items/minerals/minerals.png" sourcerect="356,170,66,71" depth="0.55" origin="0.5,0.5" />
+    <Body width="65" height="70" density="25" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <AiTarget sightrange="1000" static="true" />
+  </Item-->
+  <!--油页岩-->
+  <Item name="油页岩矿蔟" identifier="tsm_oilshaleore" category="Material" subcategory="TSM" Tags="smallitem,ore" maxstacksize="32" maxstacksizecharacterinventory="8" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="mineralcab" secondary="storagecab" />
+    <Price baseprice="188" sold="true">
+      <Price storeidentifier="merchantoutpost" multiplier="1.1" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" />
+      <Price storeidentifier="merchantmilitary" />
+      <Price storeidentifier="merchantmine" multiplier="0.75" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="tsm_oilshale" amount="3" />
+    </Deconstruct>
+    <!--发光好找-->
+    <LightComponent lightcolor="160,175,187,225" range="100" powerconsumption="0" flicker="0.0" flickerspeed="0.5" pulsefrequency="0.4" pulseamount="0" ison="true" drawbehindsubs="true">
+      <LightTexture texture="Content/Lights/pointlight_rays.png" origin="0.5,0.5" />
+    </LightComponent>
+    <!--贴图-->
+    <Sprite texture="%ModDir%/items/minerals/minerals.png" depth="0.3" sourcerect="896,405,128,102" origin="0.5,0.5" />
+    <ContainedSprite texture="%ModDir%/items/minerals/minerals.png" usewhenattached="true" decorativespritebehavior="HideWhenNotVisible" depth="0.55" sourcerect="896,405,128,102" origin="0.5,0.5" />
+    <!--随机组合贴图-->
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.49" sourcerect="71,1,91,120" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.51" sourcerect="165,1,89,120" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.491" sourcerect="256,2,90,119" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.48" sourcerect="71,1,91,120" offset="20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="1" />
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.52" sourcerect="165,1,89,120" offset="-20,0" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,30" origin="0.5,0.5" randomgroupid="2" />
+    <DecorativeSprite texture="%ModDir%/items/minerals/minerals.png" depth="0.53" sourcerect="256,2,90,119" offset="0,-30" randomrotation="-20,20" randomscale="0.8,1.5" randomoffset="30,10" origin="0.5,0.5" randomgroupid="3" />
+    <!--尺寸-->
+    <Body radius="60" width="65" density="50" />
+    <!--生成-->
+    <LevelResource deattachduration="4" randomoffsetfromwall="80">
+      <Commonness commonness="0.35" cavecommonness="0.13" abysscommonness="25" />
+      <Commonness commonness="0.4" cavecommonness="0.3" abysscommonness="10" leveltype="europanridge" />
+      <Commonness commonness="0.2" cavecommonness="0.4" abysscommonness="1" leveltype="theaphoticplateau" />
+      <Commonness commonness="0.15" cavecommonness="0.3" abysscommonness="2" leveltype="thegreatsea" />
+      <Commonness commonness="0.1" cavecommonness="0.2" abysscommonness="2" leveltype="hydrothermalwastes" />
+      <RequiredItem items="cuttingequipment" type="Equipped" />
+    </LevelResource>
+    <!--握持-->
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false" />
+  </Item>
+  <Item name="油页岩" identifier="tsm_oilshale" category="Material" subcategory="TSM" maxstacksize="32" maxstacksizecharacterinventory="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="storagecab" />
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" minamount="1" maxamount="2" spawnprobability="0.05" />
+    <Price baseprice="55" sold="true">
+      <Price storeidentifier="merchantoutpost" multiplier="1.3" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.1" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.1" />
+      <Price storeidentifier="merchantmine" sold="true" multiplier="0.8" maxavailable="5" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/items/minerals/minerals.png" sourcerect="351,42,68,74" />
+    <Sprite texture="%ModDir%/items/minerals/minerals.png" sourcerect="351,42,68,74" depth="0.55" origin="0.5,0.5" />
+    <Body width="65" height="70" density="25" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <AiTarget sightrange="1000" static="true" />
+  </Item>
+  <!--亚希晶体-->
+  <Item name="亚希晶体" identifier="tsm_yx_crystallography" category="Material" subcategory="TSM" maxstacksize="16" maxstacksizecharacterinventory="4" Tags="smallitem,lm_item" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer secondary="ruinstorage,ruinstoragesmall,ruinstoragelarge,ruintreasure" minamount="0" maxamount="1" spawnprobability="0.01" />
+    <Price baseprice="1866" sold="true" minleveldifficulty="36">
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="0" maxavailable="2" />
+      <Price storeidentifier="merchantresearch" multiplier="1.1" minavailable="1" maxavailable="2" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.3" maxavailable="2"/>
+      <Price storeidentifier="merchantmine" sold="true" multiplier="1" minavailable="1" maxavailable="2" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/items/minerals/minerals.png" sourcerect="590,109,65,65" />
+    <Sprite texture="%ModDir%/items/minerals/minerals.png" sourcerect="463,23,100,153" depth="0.55" origin="0.5,0.5" />
+    <Body width="100" height="153" density="25" />
+    <Holdable canBeCombined="true" holdpos="40,15" handle1="0,-45" removeOnCombined="true" slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="This">
+        <Conditional hastag="neq artifactcontainer" targetcontainer="true" />
+        <Conditional Voltage="0.0" targetcontainer="true" />
+        <ParticleEmitter particle="faradayfx" scalemultiplier="2,2" anglemax="360" emitinterval="1.1" particleamount="1" particlespersecond="1" />
+        <ParticleEmitter particle="nasonovsparkles" scalemultiplier="2,2" anglemax="360" particlespersecond="1" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <AiTarget sightrange="1000" static="true" />
+  </Item>
+  <!--恒伯利之星-->
+  <Item name="恒伯利之星" identifier="tsm_hengberley_star" category="Material" subcategory="TSM" maxstacksize="8" maxstacksizecharacterinventory="2" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer secondary="ruinstorage,ruinstoragelarge,ruintreasure" minamount="0" maxamount="1" spawnprobability="0.008" />
+    <Price baseprice="3022" sold="true" minleveldifficulty="40">
+      <Price storeidentifier="merchantcity" multiplier="1" maxavailable="1" />
+      <Price storeidentifier="merchantresearch" multiplier="1" maxavailable="1" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/items/minerals/minerals.png" sourcerect="823,115,65,61" />
+    <Sprite texture="%ModDir%/items/minerals/minerals.png" sourcerect="687,24,100,152" depth="0.55" origin="0.5,0.5" />
+    <Body width="100" height="152" density="25" />
+    <Holdable canBeCombined="true" holdpos="40,15" handle1="0,-45" removeOnCombined="true" slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="This">
+        <Conditional hastag="neq artifactcontainer" targetcontainer="true" />
+        <Conditional Voltage="0.0" targetcontainer="true" />
+        <ParticleEmitter particle="psychosisfx" scalemultiplier="2,2" anglemax="360" emitinterval="1.1" particleamount="1" particlespersecond="1" />
+        <ParticleEmitter particle="skyholderfx" scalemultiplier="2,2" anglemax="360" particlespersecond="1" />
+        <ParticleEmitter particle="skyholderfx2" scalemultiplier="2,2" anglemax="360" particlespersecond="1" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <AiTarget sightrange="1000" static="true" />
+  </Item>
+</Items>

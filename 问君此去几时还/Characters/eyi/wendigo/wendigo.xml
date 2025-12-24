@@ -1,0 +1,54 @@
+﻿<Character SpeciesName="wendigo" Tags="highpriority" SpeciesTranslationOverride="" DisplayName="" Group="eyi" Humanoid="True" HasInfo="False" CanInteract="True" CanClimb="True" ForceSlowClimbing="False" Husk="False" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="300" Visibility="300" BloodDecal="blackblood" BleedParticleAir="blackblooddrop" BleedParticleWater="blackwaterblood" BleedParticleMultiplier="1" CanEat="False" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="" MusicType="monster" MusicCommonness="1" MusicRangeMultiplier="1" UnlockKillAchievementForWholeCrew="False">
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <damageemitter drawontop="True" Particle="blackgib" AngleMin="0" AngleMax="360" ScaleMin="0.1" ScaleMax="0.3" VelocityMin="50" VelocityMax="300" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="5" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <bloodemitter Particle="blackblood" AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="5" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <bloodemitter Particle="blackwaterblood" AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="1" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <gibemitter Particle="blackgib" AngleMin="0" AngleMax="360" ScaleMin="0.3" ScaleMax="0.6" VelocityMin="200" VelocityMax="500" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <health Vitality="1300" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0.8" BurnReduction="0" ConstantHealthRegeneration="0.5" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="False" PoisonVulnerability="1" EmpVulnerability="0" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="">
+    <Limb name="Head">
+      <VitalityMultiplier type="damage" multiplier="0.5" />
+    </Limb>
+    <Limb name="Torso" />
+    <Limb name="LeftArm">
+      <VitalityMultiplier type="damage" multiplier="0.6" />
+      <VitalityMultiplier type="burn" multiplier="0.6" />
+    </Limb>
+    <Limb name="RightArm">
+      <VitalityMultiplier type="damage" multiplier="0.6" />
+      <VitalityMultiplier type="burn" multiplier="0.6" />
+    </Limb>
+    <Limb name="LeftLeg">
+      <VitalityMultiplier type="damage" multiplier="0.6" />
+      <VitalityMultiplier type="burn" multiplier="0.6" />
+    </Limb>
+    <Limb name="RightLeg">
+      <VitalityMultiplier type="damage" multiplier="0.6" />
+      <VitalityMultiplier type="burn" multiplier="0.6" />
+    </Limb>
+  </health>
+  <sound gender="None" File="%ModDir%/Characters/eyi/wendigo/idle.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
+  <!--sound file="%ModDir%/Characters/eyi/wendigo/damage1.ogg" state="Damage" range="1000" volume="1" gender="None" /-->
+  <ai CombatStrength="600" Sight="2" Hearing="3" MaxPerceptionDistance="-1" AggressionHurt="150" AggressionGreed="5" FleeHealthThreshold="0" AttackWhenProvoked="True" AvoidGunfire="True" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="True" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="False" RandomAttack="True" CanOpenDoors="True" UsePathFindingToGetInside="True" KeepDoorsClosed="False" AvoidAbyss="True" StayInAbyss="True" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Target" PlayDeadProbability="0">
+    <target damagethreshold="0" Tag="weapon" State="Attack" Priority="130" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target damagethreshold="0" Tag="monster" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="True" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target damagethreshold="0" Tag="human" State="Attack" Priority="120" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="True" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target damagethreshold="0" Tag="nasonov" State="Attack" Priority="70" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target damagethreshold="0" Tag="sonar" State="Attack" Priority="30" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target damagethreshold="0" Tag="room" State="Attack" Priority="10" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target damagethreshold="0" Tag="turret" State="Attack" Priority="1" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+  </ai>
+  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1"></inventory>
+  <StatusEffect type="OnDamaged" target="This" requiredafflictions="damage" comparison="and" duration="5">
+    <Conditional isdead="False" />
+    <Conditional healthpercentage="lte 80" />
+    <Conditional burn="lt 5" />
+    <ReduceAffliction type="damage" strength="20" />
+  </StatusEffect>
+  <StatusEffect type="OnDamaged" target="This" requiredafflictions="burn" comparison="and" duration="5">
+    <Conditional isdead="False" />
+    <Conditional healthpercentage="lte 80" />
+    <Conditional burn="gt 5" />
+    <ReduceAffliction type="burn" strength="1" />
+  </StatusEffect>
+</Character>

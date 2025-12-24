@@ -1,0 +1,610 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="奇迹之海异常事物收容箱" identifier="tsm_danger_box" subcategory="TSM" category="Equipment" tags="mediumitem,mobilecontainer,artifactcontainer,poweredcontainer,tsm_danger_box" cargocontaineridentifier="tsm_metalcrate" showcontentsintooltip="true" Scale="0.23" fireproof="true" waterproof="true" mpactsoundtag="impact_metal_heavy" RequireAimToUse="True">
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="15">
+      <RequiredSkill identifier="mechanical" level="20" />
+      <Item identifier="steel" amount="2" />
+      <Item identifier="iron" amount="2" />
+      <Item identifier="dementonite" amount="1" />
+      <Item identifier="lead" amount="2" />
+    </Fabricate>
+    <Price baseprice="377">
+      <Price locationtype="city" multiplier="1.2" maxavailable="1" />
+      <Price locationtype="research" multiplier="0.8" maxavailable="1" />
+      <Price locationtype="military" multiplier="1" maxavailable="1" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/items/containers/containers.png" sourcerect="27,1107,233,226" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/containers/containers.png" sourcerect="27,1107,233,226" origin="0.5,0.5" depth="0.6" />
+    <Body width="233" height="226" density="10" />
+    <MeleeWeapon slots="Any,RightHand,LeftHand" controlpose="true" aimpos="45,15" handle1="0,30" holdangle="90" reload="1" range="50" combatpriority="6" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Affliction identifier="stun" strength="0.6" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="1" hideitems="true" ContainedStateIndicatorSlot="1">
+      <Containable items="tsm_danger_item,tsm_danger_bloack,alienartifact,traitormissionitem" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="mobilebattery">
+          <StatusEffect type="OnContaining" target="Contained" Condition="-0.5">
+            <RequiredItem items="tsm_danger_item,tsm_danger_bloack,alienartifact,traitormissionitem" type="Contained" />
+          </StatusEffect>
+          <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true" />
+        </Containable>
+      </SubContainer>
+    </ItemContainer>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="奇迹之海货运箱" identifier="tsm_metalcrate" subcategory="tsm_bags" category="Equipment" tags="crate,allowcleanup,securecrate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" fireproof="true" waterproof="true">
+    <Price baseprice="150">
+      <Price storeidentifier="merchantoutpost" multiplier="1" minavailable="2" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.25" minavailable="2" />
+      <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Sprite texture="%ModDir%/items/containers/containers.png" depth="0.54" sourcerect="1324,1486,276,105" origin="0.5,0.5" />
+    <Body width="250" height="100" density="50" />
+    <Holdable slots="LeftHand" controlpose="true" holdpos="2,25" handle1="48,28" handle2="48,28" aimable="false" holdangle="-15" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.7" setvalue="true" />
+    </Holdable>
+    <ItemContainer capacity="30" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true" showcontainedstateindicator="true">
+      <Containable items="smallitem,mediumitem,diving" />
+    </ItemContainer>
+    <ItemComponent>
+      <StatusEffect type="OnContained" target="This" tags="locker" setvalue="true">
+        <Conditional targetcontainer="true" HasTag="eq deconstructor" />
+        <Conditional targetcontainer="true" HasTag="eq fabricator" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" tags="" setvalue="true">
+        <Conditional targetcontainer="true" HasTag="neq deconstructor,fabricator" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="奇迹之海手提箱" identifier="tsm_toolbox" subcategory="tsm_bags" category="Equipment" tags="mobilecontainer,toolbox,tsm_box,securecrate" cargocontaineridentifier="tsm_metalcrate" showcontentsintooltip="true" Scale="0.23" fireproof="true" waterproof="true" description="" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="20" />
+      <Item identifier="steel" amount="2" />
+      <Item identifier="iron" amount="3" />
+      <Item identifier="dementonite" amount="1" />
+    </Fabricate>
+    <Price baseprice="418">
+      <Price locationtype="outpost" multiplier="1" minavailable="1" />
+      <Price locationtype="city" multiplier="0.9" minavailable="2" />
+      <Price locationtype="research" multiplier="1.25" minavailable="1" />
+      <Price locationtype="military" multiplier="1.25" minavailable="1" />
+      <Price locationtype="mine" multiplier="1.25" minavailable="2" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/items/containers/containers.png" sourcerect="817,1384,210,216" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/containers/containers.png" sourcerect="817,1384,210,216" origin="0.5,0.5" depth="0.6" />
+    <Body width="200" height="200" density="20" />
+    <MeleeWeapon slots="Any,RightHand,LeftHand" controlpose="true" aimpos="45,15" handle1="0,20" holdangle="90" reload="1" range="50" combatpriority="6" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Affliction identifier="stun" strength="0.6" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,mobilecontainer,vest,backpack" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="武器箱" identifier="tsm_weaponbackpack" subcategory="tsm_bags" category="Equipment" tags="mobilecontainer,toolbox,tsm_weapons_box,securecrate,tsm_weaponbackpack" cargocontaineridentifier="tsm_metalcrate" showcontentsintooltip="true" Scale="0.23" fireproof="true" waterproof="true" description="" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
+    <PreferredContainer primary="engcab" />
+    <PreferredContainer secondary="wreckstoragecab" spawnprobability="0.05" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.5" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="20" />
+      <Item identifier="steel" amount="3" />
+      <Item identifier="iron" amount="2" />
+      <Item identifier="rubber" amount="2" />
+    </Fabricate>
+    <Price baseprice="184">
+      <Price locationtype="outpost" multiplier="1" minavailable="4" />
+      <Price locationtype="city" multiplier="0.9" minavailable="6" />
+      <Price locationtype="research" multiplier="1.25" minavailable="1" />
+      <Price locationtype="military" multiplier="1.25" minavailable="1" />
+      <Price locationtype="mine" multiplier="1.25" minavailable="8" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/items/containers/containers.png" sourcerect="0,1382,758,218" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/containers/containers.png" sourcerect="0,1382,758,218" origin="0.5,0.5" depth="0.6" />
+    <!--<Sprite texture="Content/Items/Containers/crates.png" depth="0.54" sourcerect="1,0,68,39"/>-->
+    <Body width="700" height="200" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,15" handle1="0,20" holdangle="90" reload="1" range="50" combatpriority="6" msg="ItemMsgPickUpSelect"></MeleeWeapon>
+    <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
+      <sprite name="Backpack Wearable" texture="%ModDir%/items/containers/containers.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" canbehiddenbyotherwearables="false" hideotherwearables="false" sourcerect="1107,1343,123,257" origin="0.7,0.5" scale="0.36" />
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.9" setvalue="true" disabledeltatime="true" />
+    </Wearable>
+    <!-- 物品栏 -->
+    <ItemContainer capacity="9" slotsperrow="3" maxstacksize="12" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true" showcontainedstateindicator="false">
+      <Containable items="tsm_gun,deepdiving,diving,ammobox,coilgunammo,railgunammo,depthchargeammo,harpoonammo,alienartifact,gunsmith,mountableweapon,tsm_magazine,harpoonammo,revolverammo,pistolammoitem,smgammo,demolitionsexpert,mobilebattery,grenade,shotgunammo,tsm_explosive,stungunammo,reactorfuel,assaultrifleammo,explosive,demolitionsexpert,nitroglycerin,ehaammo,rifleammo,magazine,tsm_mag,tsm_1143_mag,tsm_127_mag,lm_magazine,fkj_mag" excludeditems="backpack,wrench,deepdivinglarge" />
+    </ItemContainer>
+    <ItemComponent>
+      <StatusEffect type="OnContained" target="This" tags="locker" setvalue="true">
+        <Conditional targetcontainer="true" HasTag="eq deconstructor" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" tags="" setvalue="true">
+        <Conditional targetcontainer="true" HasTag="neq deconstructor" />
+      </StatusEffect>
+    </ItemComponent>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.07,0.1" anchor="BottomCenter" absoluteoffset="-165,0" />
+      <TickBox text="Close">
+        <StatusEffect type="OnUse" target="This" setvalue="true" KeepOpenWhenEquipped="false" />
+        <StatusEffect type="OnSecondaryUse" target="This" setvalue="true" KeepOpenWhenEquipped="true" />
+      </TickBox>
+    </CustomInterface>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="背包" identifier="tsm_bag_small" subcategory="tsm_bags" description="" scale="0.35" category="Equipment" tags="mediumitem,toolbelt,toolbox,mobilecontainer,securecrate,backpack" fireproof="true" waterproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <Deconstruct time="5">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="aluminium" amount="2" />
+      <RequiredItem identifier="organicfiber" amount="4" />
+      <RequiredItem identifier="rubber" amount="3" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/items/containers/containers.png" sourcerect="325,742,183,208" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/containers/containers.png" depth="0.6" sourcerect="325,742,183,208" origin="0.5,0.6" />
+    <Body width="150" height="150" density="15" />
+    <ItemContainer capacity="8" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="smallitem,ammo,explosive" excludeditems="tsm_bag,toolbelt,bandolier,toolbelt,toolbox,mobilecontainer,rucksack,backpack,vest" />
+    </ItemContainer>
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Select" allowswappingwhenpicked="false" />
+    <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
+      <sprite name="Backpack Wearable" texture="%ModDir%/items/containers/containers.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" canbehiddenbyotherwearables="false" hideotherwearables="false" sourcerect="325,742,183,208" origin="0.7,0.55" scale="0.35" />
+    </Wearable>
+  </Item>
+  <Item name="协奏型战术背包" identifier="tsm_bag_medium" subcategory="tsm_bags" description="" scale="0.36" category="Equipment" tags="mediumitem,backpack,mobilecontainer,securecrate" waterproof="true" fireproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <Deconstruct time="5">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_bag_small" amount="1" />
+      <RequiredItem identifier="organicfiber" amount="4" />
+      <RequiredItem identifier="rubber" amount="3" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/items/containers/containers.png" sourcerect="547,750,224,208" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/containers/containers.png" depth="0.6" sourcerect="547,750,224,208" origin="0.5,0.6" />
+    <Body width="150" height="150" density="15" />
+    <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="smallitem,ammo,explosive" excludeditems="tsm_bag,toolbelt,bandolier,toolbelt,toolbox,mobilecontainer,rucksack,backpack,vest" />
+    </ItemContainer>
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Select" allowswappingwhenpicked="false" />
+    <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
+      <sprite name="Backpack Wearable" texture="%ModDir%/items/containers/containers.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" canbehiddenbyotherwearables="false" hideotherwearables="false" sourcerect="547,750,224,208" origin="0.75,0.54" scale="0.3" />
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.95" setvalue="true" disabledeltatime="true" />
+    </Wearable>
+  </Item>
+  <Item name="战术背包" identifier="tsm_bag_big" subcategory="tsm_bags" description="" scale="0.36" category="Equipment" tags="mediumitem,backpack,mobilecontainer,securecrate" fireproof="true" waterproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <Deconstruct time="5">
+      <Item identifier="organicfiber" amount="2" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_bag_medium" amount="1" />
+      <RequiredItem identifier="organicfiber" amount="5" />
+      <RequiredItem identifier="ballisticfiber" amount="3" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/items/containers/containers.png" sourcerect="798,744,194,214" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/containers/containers.png" depth="0.6" sourcerect="798,744,194,214" origin="0.5,0.6" />
+    <Body width="150" height="150" density="15" />
+    <ItemContainer capacity="15" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="smallitem,ammo,explosive" excludeditems="tsm_bag,toolbelt,bandolier,toolbelt,toolbox,mobilecontainer,rucksack,backpack,vest" />
+      <SlotIcon slotindex="15" texture="%ModDir%/items/weapons/ui.png" sourcerect="12,13,111,111" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
+        <Containable items="weapon,gun,gunsmith,mountableweapon" />
+      </SubContainer>
+    </ItemContainer>
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Select" allowswappingwhenpicked="false" />
+    <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
+      <sprite name="Backpack Wearable" texture="%ModDir%/items/containers/containers.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" canbehiddenbyotherwearables="false" hideotherwearables="false" sourcerect="798,744,194,214" origin="0.7,0.55" scale="0.34" />
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.9" setvalue="true" disabledeltatime="true" />
+    </Wearable>
+  </Item>
+  <Item name="大载物背包" identifier="tsm_bag_heavy" subcategory="tsm_bags" description="" scale="0.34" category="Equipment" tags="mediumitem,backpack,mobilecontainer,securecrate" fireproof="true" waterproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <Deconstruct time="5">
+      <Item identifier="organicfiber" amount="3" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_bag_big" amount="1" />
+      <RequiredItem identifier="organicfiber" amount="5" />
+      <RequiredItem identifier="ballisticfiber" amount="3" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="3" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/items/containers/containers.png" sourcerect="24,9,171,272" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/containers/containers.png" depth="0.6" sourcerect="24,9,171,272" origin="0.5,0.6" />
+    <Body width="150" height="200" density="15" />
+    <ItemContainer capacity="25" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="smallitem,ammo,explosive" excludeditems="tsm_bag,toolbelt,bandolier,toolbelt,toolbox,mobilecontainer,rucksack,backpack,vest" />
+      <SlotIcon slotindex="25" texture="%ModDir%/items/weapons/ui.png" sourcerect="12,13,111,111" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
+        <Containable items="weapon,gun,gunsmith,mountableweapon,biggun" />
+      </SubContainer>
+      <SlotIcon slotindex="26" texture="%ModDir%/items/weapons/ui.png" sourcerect="186,166,191,188" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
+        <Containable items="toolbox,toolbelt" excludeditems="tsm_bag_heavy_big,tsm_bag_diving_special,tsm_bag_diving,tsm_bag_diving_big,tsm_bag_heavy,tsm_bag_big" />
+      </SubContainer>
+    </ItemContainer>
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Select" allowswappingwhenpicked="false" />
+    <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
+      <sprite name="Backpack Wearable" texture="%ModDir%/items/containers/containers.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" canbehiddenbyotherwearables="false" hideotherwearables="false" sourcerect="222,14,223,274" origin="0.7,0.55" scale="0.32" />
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" disabledeltatime="true" />
+      <SkillModifier skillidentifier="weapons" skillvalue="-5" />
+      <SkillModifier skillidentifier="helm" skillvalue="-5" />
+    </Wearable>
+  </Item>
+  <Item name="大型运输背包" identifier="tsm_bag_heavy_big" subcategory="tsm_bags" description="" scale="0.35" category="Equipment" tags="mediumitem,backpack,mobilecontainer,securecrate" fireproof="true" waterproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <Deconstruct time="5">
+      <Item identifier="organicfiber" amount="3" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_bag_heavy" amount="1" />
+      <RequiredItem identifier="organicfiber" amount="2" />
+      <RequiredItem identifier="ballisticfiber" amount="4" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+      <RequiredItem identifier="tsm_hengberley_star" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/items/containers/containers.png" sourcerect="19,379,170,273" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/containers/containers.png" depth="0.6" sourcerect="19,379,170,273" origin="0.5,0.6" />
+    <Body width="150" height="200" density="15" />
+    <ItemContainer capacity="30" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="smallitem,ammo,explosive" excludeditems="tsm_bag,toolbelt,bandolier,toolbelt,toolbox,mobilecontainer,rucksack,backpack,vest" />
+      <SlotIcon slotindex="30" texture="%ModDir%/items/weapons/ui.png" sourcerect="12,13,111,111" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
+        <Containable items="weapon,gun,gunsmith,mountableweapon,biggun" />
+      </SubContainer>
+      <SlotIcon slotindex="31" texture="%ModDir%/items/weapons/ui.png" sourcerect="12,13,111,111" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
+        <Containable items="weapon,gun,gunsmith,mountableweapon,biggun" />
+      </SubContainer>
+      <SlotIcon slotindex="32" texture="%ModDir%/items/weapons/ui.png" sourcerect="186,166,191,188" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
+        <Containable items="toolbox,toolbelt" excludeditems="tsm_bag_heavy_big,tsm_bag_diving_special,tsm_bag_diving,tsm_bag_diving_big,tsm_bag_heavy,tsm_bag_big" />
+      </SubContainer>
+      <SlotIcon slotindex="33" texture="%ModDir%/items/weapons/ui.png" sourcerect="186,166,191,188" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
+        <Containable items="toolbox,toolbelt" excludeditems="tsm_bag_heavy_big,tsm_bag_diving_special,tsm_bag_diving,tsm_bag_diving_big,tsm_bag_heavy,tsm_bag_big" />
+      </SubContainer>
+    </ItemContainer>
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Select" allowswappingwhenpicked="false" />
+    <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
+      <sprite name="Backpack Wearable" texture="%ModDir%/items/containers/containers.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" canbehiddenbyotherwearables="false" hideotherwearables="false" sourcerect="228,336,242,296" origin="0.7,0.55" scale="0.35" />
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.8" setvalue="true" disabledeltatime="true" />
+      <SkillModifier skillidentifier="weapons" skillvalue="-15" />
+      <SkillModifier skillidentifier="helm" skillvalue="-10" />
+    </Wearable>
+  </Item>
+  <Item name="联盟特别行动背包" identifier="tsm_bag_diving_special" subcategory="tsm_bags" description="" scale="0.33" category="Equipment" tags="mediumitem,backpack,mobilecontainer,securecrate" fireproof="true" waterproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <Deconstruct time="5">
+      <Item identifier="organicfiber" amount="4" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/items/containers/containers.png" sourcerect="504,34,225,266" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/containers/containers.png" depth="0.6" sourcerect="504,34,225,266" origin="0.5,0.6" />
+    <Body width="150" height="150" density="15" />
+    <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="smallitem,ammo,explosive" excludeditems="tsm_bag,toolbelt,bandolier,toolbelt,toolbox,mobilecontainer,rucksack,backpack,vest" />
+      <SlotIcon slotindex="12" texture="%ModDir%/items/weapons/ui.png" sourcerect="1230,42,60,53" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
+        <Containable items="deepdiving,diving" excludeditems="deepdivinglarge" />
+      </SubContainer>
+      <SlotIcon slotindex="13" texture="%ModDir%/items/weapons/ui.png" sourcerect="1230,42,60,53" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
+        <Containable items="deepdiving,diving" excludeditems="deepdivinglarge" />
+      </SubContainer>
+      <SlotIcon slotindex="14" texture="%ModDir%/items/weapons/ui.png" sourcerect="12,13,111,111" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
+        <Containable items="weapon,gun,gunsmith,mountableweapon,biggun" />
+      </SubContainer>
+    </ItemContainer>
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Select" allowswappingwhenpicked="false" />
+    <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
+      <sprite name="Backpack Wearable" texture="%ModDir%/items/containers/containers.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" canbehiddenbyotherwearables="false" hideotherwearables="false" sourcerect="742,35,173,259" origin="1,0.5" scale="0.33" />
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.8" setvalue="true" disabledeltatime="true" />
+      <SkillModifier skillidentifier="weapons" skillvalue="-10" />
+    </Wearable>
+  </Item>
+  <Item name="特种作业背包" identifier="tsm_bag_diving" subcategory="tsm_bags" description="" scale="0.3" category="Equipment" tags="mediumitem,backpack,mobilecontainer,securecrate" fireproof="true" waterproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <Deconstruct time="5">
+      <Item identifier="organicfiber" amount="3" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_bag_big" amount="1" />
+      <RequiredItem identifier="organicfiber" amount="2" />
+      <RequiredItem identifier="ballisticfiber" amount="3" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
+      <RequiredItem identifier="divingsuit" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/items/containers/containers.png" sourcerect="1023,31,237,291" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/containers/containers.png" depth="0.6" sourcerect="1023,31,237,291" origin="0.5,0.6" />
+    <Body width="150" height="200" density="15" />
+    <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="smallitem,ammo,explosive" excludeditems="tsm_bag,toolbelt,bandolier,toolbelt,toolbox,mobilecontainer,rucksack,backpack,vest" />
+      <SlotIcon slotindex="12" texture="%ModDir%/items/weapons/ui.png" sourcerect="1230,42,60,53" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
+        <Containable items="deepdiving,diving" excludeditems="deepdivinglarge" />
+      </SubContainer>
+    </ItemContainer>
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Select" allowswappingwhenpicked="false" />
+    <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
+      <sprite name="Backpack Wearable" texture="%ModDir%/items/containers/containers.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" canbehiddenbyotherwearables="false" hideotherwearables="false" sourcerect="1338,42,180,270" origin="1,0.5" scale="0.33" />
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.8" setvalue="true" disabledeltatime="true" />
+      <SkillModifier skillidentifier="weapons" skillvalue="-10" />
+    </Wearable>
+  </Item>
+  <Item name="大型特种作业背包" identifier="tsm_bag_diving_big" subcategory="tsm_bags" description="" scale="0.33" category="Equipment" tags="mediumitem,backpack,mobilecontainer,securecrate" fireproof="true" waterproof="true" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <Deconstruct time="5">
+      <Item identifier="organicfiber" amount="5" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_bag_diving" amount="1" />
+      <RequiredItem identifier="organicfiber" amount="2" />
+      <RequiredItem identifier="ballisticfiber" amount="2" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
+      <RequiredItem identifier="tsm_yx_crystallography" amount="2" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/items/containers/containers.png" sourcerect="513,373,194,283" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/containers/containers.png" depth="0.6" sourcerect="513,373,194,283" origin="0.5,0.6" />
+    <Body width="150" height="180" density="15" />
+    <ItemContainer capacity="16" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="smallitem,ammo,explosive" excludeditems="tsm_bag,toolbelt,bandolier,toolbelt,toolbox,mobilecontainer,rucksack,backpack,vest" />
+      <SlotIcon slotindex="16" texture="%ModDir%/items/weapons/ui.png" sourcerect="1230,42,60,53" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1" containedspritedepth="0.5">
+        <Containable items="deepdiving,diving" excludeditems="deepdivinglarge" />
+      </SubContainer>
+    </ItemContainer>
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Select" allowswappingwhenpicked="false" />
+    <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
+      <sprite name="Backpack Wearable" texture="%ModDir%/items/containers/containers.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" canbehiddenbyotherwearables="false" hideotherwearables="false" sourcerect="743,377,172,279" origin="1.1,0.5" scale="0.31" />
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.75" setvalue="true" disabledeltatime="true" />
+      <SkillModifier skillidentifier="weapons" skillvalue="-15" />
+      <SkillModifier skillidentifier="electrical" skillvalue="-10" />
+      <SkillModifier skillidentifier="mechanical" skillvalue="-10" />
+    </Wearable>
+  </Item>
+  <Item name="联盟武器盲盒" identifier="tsm_lm_lockbox" subcategory="tsm_bags" tags="crate,securecrate,bigitem" category="Equipment" fireproof="true" scale="0.2" impactsoundtag="impact_metal_heavy">
+    <InventoryIcon texture="%ModDir%/items/containers/blindbox.png" sourcerect="0,299,775,242" />
+    <Sprite texture="%ModDir%/items/containers/blindbox.png" depth="0.55" sourcerect="0,299,775,242" origin="0.5,0.5" />
+    <Price baseprice="2500" displaynonempty="true">
+      <Price storeidentifier="merchantarmory" minamount="1" maxamount="2" />
+      <Price storeidentifier="merchantcity" minamount="1" maxamount="2" />
+      <Price storeidentifier="merchantresearch" minamount="1" maxamount="2" />
+      <Reputation faction="coalition" min="0" />
+    </Price>
+    <Body width="750" height="220" density="30" />
+    <Holdable slots="LeftHand" controlpose="true" holdpos="2,25" handle1="48,28" handle2="48,28" aimable="false" holdangle="-15" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.2" setvalue="true" />
+      <StatusEffect type="OnUse" target="This" EventUserTag="itemusingplayer" condition="-15" oneshot="true" disabledeltatime="true">
+        <Conditional Condition="lte 1" />
+        <TriggerEvent identifier="tsm_openblindbox_lm" />
+        <particleemitter particle="tsm_confettifall" particleamount="20" emitinterval="1000" velocitymin="0" velocitymax="50" anglemin="0" anglemax="180" scalemin="2" scalemax="3" />
+        <particleemitter particle="tsm_confettifall" particleamount="20" emitinterval="1000" velocitymin="0" velocitymax="50" anglemin="0" anglemax="180" scalemin="2" scalemax="3" />
+        <Explosion range="500.0" force="5" shockwave="false" smoke="false" flames="false" flash="false" sparks="true" underwaterbubble="true" camerashake="50" />
+        <Sound file="%ModDir%/items/containers/Box_drop_lv1.ogg" range="5000" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <RangedWeapon />
+    <ItemContainer capacity="1" canbeselected="false" hideitems="true" keepopenwhenequipped="false" movableframe="false" showcontainedstateindicator="false">
+      <!--容器图标-->
+      <SlotIcon texture="%ModDir%/items/weapons/ui.png" sourcerect="1169,335,57,36" />
+      <!--权限卡解锁-->
+      <Containable items="tsm_mh_licences" excludeditems="none">
+        <StatusEffect type="OnContaining" targettype="This" condition="-15" drawinventory="false">
+          <Conditional Condition="gt 1" />
+          <Sound file="%ModDir%/items/containers/Box_Rollx.ogg" range="5000" loop="false" />
+          <Explosion range="200.0" force="0.3" shockwave="false" smoke="false" flames="false" flash="false" sparks="true" underwaterbubble="true" camerashake="5" />
+        </StatusEffect>
+      </Containable>
+    </ItemContainer>
+  </Item>
+  <Item name="反抗军武器盲盒" identifier="tsm_fkj_lockbox" subcategory="tsm_bags" tags="crate,securecrate,bigitem" category="Equipment" fireproof="true" scale="0.2" impactsoundtag="impact_metal_heavy">
+    <InventoryIcon texture="%ModDir%/items/containers/blindbox.png" sourcerect="0,598,775,242" />
+    <Sprite texture="%ModDir%/items/containers/blindbox.png" depth="0.55" sourcerect="0,598,775,242" origin="0.5,0.5" />
+    <Price baseprice="2500" displaynonempty="true">
+      <Price storeidentifier="merchantarmory" minamount="1" maxamount="2" />
+      <Price storeidentifier="merchantcity" minamount="1" maxamount="2" />
+      <Price storeidentifier="merchantresearch" minamount="1" maxamount="2" />
+      <Reputation faction="separatists" min="0" />
+    </Price>
+    <Body width="750" height="220" density="30" />
+    <Holdable slots="LeftHand" controlpose="true" holdpos="2,25" handle1="48,28" handle2="48,28" aimable="false" holdangle="-15" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.2" setvalue="true" />
+      <StatusEffect type="OnUse" target="This" EventUserTag="itemusingplayer" condition="-15" oneshot="true" disabledeltatime="true">
+        <Conditional Condition="lte 1" />
+        <TriggerEvent identifier="tsm_openblindbox_fkj" />
+        <particleemitter particle="tsm_confettifall" particleamount="20" emitinterval="1000" velocitymin="0" velocitymax="50" anglemin="0" anglemax="180" scalemin="2" scalemax="3" />
+        <particleemitter particle="tsm_confettifall" particleamount="20" emitinterval="1000" velocitymin="0" velocitymax="50" anglemin="0" anglemax="180" scalemin="2" scalemax="3" />
+        <Explosion range="500.0" force="5" shockwave="false" smoke="false" flames="false" flash="false" sparks="true" underwaterbubble="true" camerashake="50" />
+        <Sound file="%ModDir%/items/containers/Box_drop_lv1.ogg" range="5000" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <RangedWeapon />
+    <ItemContainer capacity="1" canbeselected="false" hideitems="true" keepopenwhenequipped="false" movableframe="false" showcontainedstateindicator="false">
+      <!--容器图标-->
+      <SlotIcon texture="%ModDir%/items/weapons/ui.png" sourcerect="1169,335,57,36" />
+      <!--权限卡解锁-->
+      <Containable items="tsm_mh_licences" excludeditems="none">
+        <StatusEffect type="OnContaining" targettype="This" condition="-15" drawinventory="false">
+          <Conditional Condition="gt 1" />
+          <Sound file="%ModDir%/items/containers/Box_Rollx.ogg" range="5000" loop="false" />
+          <Explosion range="200.0" force="0.3" shockwave="false" smoke="false" flames="false" flash="false" sparks="true" underwaterbubble="true" camerashake="5" />
+        </StatusEffect>
+      </Containable>
+    </ItemContainer>
+  </Item>
+  <Item name="奇迹之海武器盲盒" identifier="tsm_tsm_lockbox" subcategory="tsm_bags" tags="crate,securecrate,bigitem" category="Equipment" fireproof="true" scale="0.2" impactsoundtag="impact_metal_heavy">
+    <InventoryIcon texture="%ModDir%/items/containers/blindbox.png" sourcerect="0,0,775,242" />
+    <Sprite texture="%ModDir%/items/containers/blindbox.png" depth="0.55" sourcerect="0,0,775,242" origin="0.5,0.5" />
+    <Price baseprice="2500" displaynonempty="true">
+      <Price storeidentifier="merchantarmory" minamount="1" maxamount="2" />
+      <Price storeidentifier="merchantcity" minamount="1" maxamount="2" />
+      <Price storeidentifier="merchantresearch" minamount="1" maxamount="2" />
+      <Reputation faction="tsm" min="0" />
+    </Price>
+    <Body width="750" height="220" density="30" />
+    <Holdable slots="LeftHand" controlpose="true" holdpos="2,25" handle1="48,28" handle2="48,28" aimable="false" holdangle="-15" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.2" setvalue="true" />
+      <StatusEffect type="OnUse" target="This" EventUserTag="itemusingplayer" condition="-15" oneshot="true" disabledeltatime="true">
+        <Conditional Condition="lte 1" />
+        <TriggerEvent identifier="tsm_openblindbox_tsm" />
+        <particleemitter particle="tsm_confettifall" particleamount="20" emitinterval="1000" velocitymin="0" velocitymax="50" anglemin="0" anglemax="180" scalemin="2" scalemax="3" />
+        <particleemitter particle="tsm_confettifall" particleamount="20" emitinterval="1000" velocitymin="0" velocitymax="50" anglemin="0" anglemax="180" scalemin="2" scalemax="3" />
+        <Explosion range="500.0" force="5" shockwave="false" smoke="false" flames="false" flash="false" sparks="true" underwaterbubble="true" camerashake="50" />
+        <Sound file="%ModDir%/items/containers/Box_drop_lv1.ogg" range="5000" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+    <RangedWeapon />
+    <ItemContainer capacity="1" canbeselected="false" hideitems="true" keepopenwhenequipped="false" movableframe="false" showcontainedstateindicator="false">
+      <!--容器图标-->
+      <SlotIcon texture="%ModDir%/items/weapons/ui.png" sourcerect="1169,335,57,36" />
+      <!--权限卡解锁-->
+      <Containable items="tsm_mh_licences" excludeditems="none">
+        <StatusEffect type="OnContaining" targettype="This" condition="-15" drawinventory="false">
+          <Conditional Condition="gt 1" />
+          <Sound file="%ModDir%/items/containers/Box_Rollx.ogg" range="5000" loop="false" />
+          <Explosion range="200.0" force="0.3" shockwave="false" smoke="false" flames="false" flash="false" sparks="true" underwaterbubble="true" camerashake="5" />
+        </StatusEffect>
+      </Containable>
+    </ItemContainer>
+  </Item>
+  <Item name="购物车" identifier="tsm_trolley" tags="container" allowattachitems="false" texturescale="1.0,1.0" scale="0.4" category="Equipment" canflipy="false">
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="25" />
+      <RequiredItem identifier="steel" amount="2" />
+      <RequiredItem identifier="rubber" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/items/containers/trolley.png" sourcerect="789,113,382,351" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/containers/trolley.png" sourcerect="789,113,382,351" depth="0.5" origin="0.5,0.5" />
+    <ContainedSprite name="trolley" allowedcontainertags="depthchargeammosource" texture="%ModDir%/items/containers/trolley.png" sourcerect="504,113,331,351" depth="0.50" origin="0.5,0.5" />
+    <Body width="382" height="351" density="25" />
+    <Holdable slots="RightHand+LeftHand" selectkey="Select" pickkey="Select" PickingTime="1.0" attachable="true" holdpos="100,-65" handle1="-130,110" handle2="-130,110" aimable="false" holdangle="3" msg="ItemMsgPickUpSelect">
+      <!-- slow down the character when holding the item -->
+      <StatValue stattype="MovementSpeed" value="-0.3" />
+    </Holdable>
+    <Controller UserPos="0,90" direction="Right" canbeselected="true" AllowSelectingWhenSelectedByBot="false" AllowSelectingWhenSelectedByOther="false" selectkey="Use" drawuserbehind="true" forceusertostayattached="true" msg="itemmsggoinside">
+      <limbposition limb="Head" position="120,30" />
+      <limbposition limb="Torso" position="130,-100" />
+      <limbposition limb="Waist" position="100,-120" />
+      <limbposition limb="RightLeg" position="300,-155" />
+      <limbposition limb="LeftLeg" position="300,-155" />
+      <limbposition limb="RightFoot" position="330,-100" />
+      <limbposition limb="LeftFoot" position="330,-100" />
+      <limbposition limb="RightHand" position="155,-120" />
+      <limbposition limb="LeftHand" position="155,-120" />
+    </Controller>
+    <ItemContainer capacity="1" selectkey="ToggleInventory" canbeselected="true" hideitems="false" itempos="30,-50" iteminterval="0,60" itemsperrow="4" slotsperrow="2" scale="0.2" keepopenwhenequipped="true" showcontainedstateindicator="true" containedspritedepths="0.81,0.82,0.83,0.84,0.85,0.86">
+      <SlotIcon slotindex="0" texture="%ModDir%/items/weapons/ui.png" sourcerect="1344,1129,102,57" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="%ModDir%/items/weapons/ui.png" sourcerect="1221,1137,73,41" origin="0.5,0.5" />
+      <SlotIcon slotindex="2" texture="%ModDir%/items/weapons/ui.png" sourcerect="1344,1129,102,57" origin="0.5,0.5" />
+      <SlotIcon slotindex="3" texture="%ModDir%/items/weapons/ui.png" sourcerect="1221,1137,73,41" origin="0.5,0.5" />
+      <SlotIcon slotindex="4" texture="%ModDir%/items/weapons/ui.png" sourcerect="1344,1129,102,57" origin="0.5,0.5" />
+      <SlotIcon slotindex="5" texture="%ModDir%/items/weapons/ui.png" sourcerect="1221,1137,73,41" origin="0.5,0.5" />
+      <SlotIcon slotindex="6" texture="%ModDir%/items/weapons/ui.png" sourcerect="1344,1129,102,57" origin="0.5,0.5" />
+      <SlotIcon slotindex="7" texture="%ModDir%/items/weapons/ui.png" sourcerect="765,733,43,44" origin="0.5,0.5" />
+      <Containable items="duffelbag,ammobox" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="securecrate,mobilecontainer,crate,ammobox" hide="false" excludeditems="duffelbag"/>
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="duffelbag,ammobox" hide="false" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="securecrate,mobilecontainer,crate,ammobox" hide="false" excludeditems="duffelbag"/>
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="duffelbag,ammobox" hide="false" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="securecrate,mobilecontainer,crate,ammobox" hide="false" excludeditems="duffelbag">
+        </Containable>
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="duffelbag,ammobox" hide="false" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="light" hide="false" />
+      </SubContainer>
+    </ItemContainer>
+  </Item>
+  <Item name="垃圾桶" identifier="tsm_trashcan" tags="trashcan" texturescale="1.0,1.0" scale="0.3" category="Decorative" AllowStealingContainedItems="true">
+    <Price baseprice="111">
+      <Price storeidentifier="merchantoutpost" minavailable="2" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantresearch" minavailable="2" />
+      <Price storeidentifier="merchantmilitary" minavailable="2" />
+      <Price storeidentifier="merchantmine" minavailable="2" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="5">
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <sprite texture="%ModDir%/items/containers/trashcan.png" sourcerect="379,195,209,229" depth="0.85" premultiplyalpha="false" origin="0.5,0.5" />
+    <DecorativeSprite texture="%ModDir%/items/containers/trashcan.png" sourcerect="379,195,209,229" depth="0.845" origin="0.5,0.5">
+      <Conditional HasStatusTag="neq opened" />
+    </DecorativeSprite>
+    <DecorativeSprite texture="%ModDir%/items/containers/trashcan.png" sourcerect="85,96,203,328" depth="0.84" origin="0.5,0.65">
+      <Conditional HasStatusTag="opened" />
+    </DecorativeSprite>
+    <Controller canbeselected="true" selectkey="Select" hidehud="false" drawuserbehind="false" noninteractablewhenflippedy="false" allowingameediting="false" drawhudwhenequipped="false" comparison="And">
+      <StatusEffect type="OnActive" target="This" tags="opened" duration="0.1" />
+      <StatusEffect type="OnActive" target="This" targetitemcomponent="ItemComponent" IsActive="true" setvalue="true" />
+      <StatusEffect type="OnActive" target="This" targetitemcomponent="Controller" allowingameediting="false" setvalue="true" oneshot="true" />
+    </Controller>
+    <Body height="209" width="250" density="23" />
+    <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="itemmsgforceopencrowbar" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem tag="crowbaritem" type="Equipped" />
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.8" setvalue="true" />
+      <StatusEffect type="Always" target="This" disabledeltatime="true" stackable="false" setvalue="true" condition="100" allowwhenbroken="true">
+        <Conditional attached="false" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This">
+        <DropContainedItems />
+      </StatusEffect>
+    </Holdable>
+    <ItemContainer capacity="20" slotsperrow="5" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.5,0.5" anchor="Center" style="ItemUI" />
+    </ItemContainer>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.15,0.1" anchor="CenterLeft" absoluteoffset="20,20" style="ItemUI" />
+      <Button text="滚出去">
+        <StatusEffect type="OnUse" targettype="Contained" disabledeltatime="true">
+          <Sound file="%ModDir%/items/containers/trashcan.ogg" type="OnUse" range="500" />
+          <Remove />
+        </StatusEffect>
+      </Button>
+    </CustomInterface>
+  </Item>
+</Items>

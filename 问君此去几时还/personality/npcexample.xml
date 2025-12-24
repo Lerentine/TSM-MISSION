@@ -1,0 +1,20 @@
+<npcsets>
+  <npcset identifier="tsm_personality_npcset">
+    <npc identifier="tsm_example_npc" job="assistant" moduleflags="none" behavior="Passive">
+      <Character speciesname="human" gender="male" headspriteid="3" hairindex="2" beardindex="0" moustacheindex="0" faceattachmentindex="0" skincolor="255,255,255,255" haircolor="255,255,255,255" facialhaircolor="255,255,255,255" personality="tsm_npc"> <!-- 只需要改personality，这里抄的阿蒂模板 -->
+        <job name="Assistant" identifier="assistant">
+          <skill identifier="electrical" level="5" />
+          <skill identifier="mechanical" level="5" />
+          <skill identifier="weapons" level="5" />
+          <skill identifier="medical" level="5" />
+          <skill identifier="helm" level="5" />
+        </job>
+      </Character>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true"/>
+        <Item identifier="headset" equip="true" showpreview="false"/>
+        <Item identifier="commonerclothes3" equip="true"/>
+      </ItemSet>
+    </npc>
+  </npcset>
+</npcsets>

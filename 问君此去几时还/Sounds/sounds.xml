@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+  <sounds>
+    <!--<startupsound file="Content/Sounds/StartDrone.ogg"/>-->
+    <!--
+  <music file="Content/Sounds/Music/Simplex.ogg" type="default"/>
+  <music file="Content/Sounds/Music/Tenebrous Brothers Carnival - Prelude.ogg" type="default"/>
+  Adèsso e Fortuna
+  -->
+    <!--奇迹之海站点-->
+    <music file="%ModDir%/soundplayer/悲剧之城艾罗雷诺.ogg" type="menu" continuefromprevioustime="true" />
+    <music file="%ModDir%/Sounds/2049.ogg" type="tsm_city" />
+    <music file="%ModDir%/Sounds/memory.ogg" type="tsm_city" />
+    <music file="%ModDir%/Sounds/That's Why We Believe.ogg" type="tsm_city" />
+    <music file="%ModDir%/Sounds/Sapper's Tree.ogg" type="tsm_mine" />
+    <music file="%ModDir%/Sounds/Someone Lived This.ogg" type="tsm_mine" />
+    <music file="%ModDir%/Sounds/Rain.ogg" type="tsm_military" />
+    <music file="%ModDir%/Sounds/Wallace.ogg" type="tsm_military" />
+    <!--脚步-->
+    <wendigostep file="%ModDir%/Characters/eyi/wendigo/wendigo_step.ogg" range="800" />
+    <suit_setp1 file="%ModDir%/Sounds/suit_step1.ogg" range="400" />
+    <footstep_armor_heavy file="Content/Sounds/Footsteps/Armor/FootstepArmorHeavy1.ogg" range="400" volume="0.4"/>
+    <footstep_armor_heavy file="Content/Sounds/Footsteps/Armor/FootstepArmorHeavy2.ogg" range="400" volume="0.4"/>
+    <footstep_armor_heavy file="Content/Sounds/Footsteps/Armor/FootstepArmorHeavy3.ogg" range="400" volume="0.4"/>
+    <footstep_armor_heavy file="Content/Sounds/Footsteps/Armor/FootstepArmorHeavy4.ogg" range="400" volume="0.4"/>
+  </sounds>
+</Override>

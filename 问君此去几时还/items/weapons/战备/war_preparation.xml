@@ -1,0 +1,871 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!--自杀式袭击-->
+  <Item name="自杀式背心" identifier="tsm_suecide_vest" subcategory="war preparation" Health="100" category="Weapon" tags="smallitem,clothing,vest" scale="0.5" cargocontaineridentifier="tsm_metalcrate" HideConditionBar="true" impactsoundtag="impact_soft">
+    <Deconstruct time="20">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredItem identifier="c4block" amount="1" />
+      <RequiredItem identifier="organicfiber" amount="1" />
+      <RequiredItem identifier="railgunshell" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/war_preparation.png" sourcerect="155,182,149,123" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/war_preparation.png" sourcerect="155,182,149,123" depth="0.51" origin="0.5,0.5" />
+    <Body width="140" height="100" density="25" />
+    <Wearable slots="Any,OuterClothes+RightHand" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.6" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.5" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.6" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.7" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.4" />
+      <sprite name="general Torso" texture="%ModDir%/items/weapons/战备/war_preparation.png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="155,182,149,123" origin="0.5,0.5" />
+      <sprite name="general Boobs" texture="%ModDir%/items/weapons/战备/war_preparation.png" limb="Tail" sourcerect="0,0,1,1" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" />
+      <StatusEffect type="OnWearing" target="Character,This" disabledeltatime="true" checkconditionalalways="true" comparison="And" Condition="-100" setvalue="true">
+        <Conditional IsUnconscious="eq true" TargetContainer="true" TargetGrandParent="true" />
+      </StatusEffect>
+    </Wearable>
+    <ItemComponent characterusable="false">
+      <StatusEffect type="OnBroken" target="This">
+        <Explosion range="100.0" force="30" ignoreCover="true" severlimbsprobability="8" penetration="1">
+          <Affliction identifier="explosiondamage" strength="5000" dividebylimbcount="false" />
+          <Affliction identifier="burn" strength="5000" dividebylimbcount="false" />
+        </Explosion>
+        <Explosion range="500.0" force="10" ignoreCover="true" debris="true" decal="explosion" decalsize="0.75" penetration="0.8">
+          <Affliction identifier="explosiondamage" strength="200" dividebylimbcount="false" />
+          <Affliction identifier="bleeding" strength="100" />
+          <Affliction identifier="burn" strength="80" />
+          <Affliction identifier="stun" strength="3" />
+        </Explosion>
+        <Explosion range="800.0" force="10" ignoreCover="false" debris="true" decal="explosion" decalsize="0.75" penetration="0.8">
+          <Affliction identifier="explosiondamage" strength="100" />
+          <Affliction identifier="bleeding" strength="60" />
+          <Affliction identifier="burn" strength="50" probability="0.8" />
+          <Affliction identifier="stun" strength="1" />
+        </Explosion>
+      </StatusEffect>
+    </ItemComponent>
+    <LightComponent LightColor="255,0,0,0" range="60" powerconsumption="0.0" IsOn="false" canbeselected="false" AllowInGameEditing="false">
+      <StatusEffect type="Always" target="This" condition="-10" checkconditionalalways="true" comparison="And">
+        <Conditional IsOn="true" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" OneShot="true" checkconditionalalways="true" comparison="And">
+        <Conditional IsOn="true" />
+        <Sound file="%ModDir%/items/weapons/战备/IEDtone1.ogg" range="800" selectionmode="Random" />
+        <Sound file="%ModDir%/items/weapons/战备/IEDtone2.ogg" range="800" />
+        <Sound file="%ModDir%/items/weapons/战备/IEDtone3.ogg" range="800" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true" delay="1">
+        <Remove />
+      </StatusEffect>
+    </LightComponent>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="false" ElementStates="8, false">
+      <GuiFrame relativesize="0.15,0.15" anchor="CenterLeft" pivot="TopLeft" relativeoffset="0.006,0.006" style="ItemUI" />
+      <Button text="tsm_boom">
+        <StatusEffect type="OnUse" target="This" IsOn="true" />
+      </Button>
+    </CustomInterface>
+  </Item>
+  <!--破片雷-->
+  <Item name="破片雷" identifier="tsm_fragmentation_grenade" subcategory="war preparation" category="Weapon" tags="smallitem,weapon,explosive" maxstacksize="12" maxstacksizecharacterinventory="6" scale="0.35" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="0.05" notcampaign="true" />
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab" minamount="1" maxamount="2" spawnprobability="0.04" />
+    <PreferredContainer secondary="armcab" />
+    <Price baseprice="235">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.35" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Deconstruct time="15">
+      <Item identifier="iron" />
+      <Item identifier="sodium" amount="2" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="25">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="iron" />
+      <RequiredItem identifier="iron" />
+      <RequiredItem identifier="uex" />
+      <RequiredItem identifier="sodium" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/items/weapons/bullet.png" sourcerect="453,33,41,46" />
+    <Sprite texture="%ModDir%/items/weapons/bullet.png" depth="0.55" sourcerect="222,398,54,93" origin="0.5,0.5" />
+    <BrokenSprite texture="%ModDir%/items/weapons/bullet.png" sourcerect="304,402,54,93" depth="0.55" origin="0.5,0.5" maxcondition="99.9" />
+    <BrokenSprite texture="%ModDir%/items/weapons/bullet.png" sourcerect="370,412,54,93" depth="0.55" origin="0.5,0.4" maxcondition="99.8" />
+    <Body width="54" height="93" density="30" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="OnUse" target="This" condition="0" setvalue="true" />
+      <StatusEffect type="OnBroken" target="This">
+        <Sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="5000" frequency="2.0" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ExplosionMedium2.ogg" range="5000" frequency="2.0" />
+        <Sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="5000" frequency="2.0" />
+        <ParticleEmitter particle="shrapnel" anglemin="0" anglemax="360" distancemax="500" particleamount="270" velocitymin="1500" velocitymax="2000" scalemin="0.7" scalemax="1.2" />
+        <Explosion range="300.0" ballastfloradamage="100" structuredamage="20" levelwalldamage="140" itemdamage="350" force="5" debris="false" decal="explosion" decalsize="0.5" penetration="0.8">
+          <Affliction identifier="explosiondamage" strength="80" />
+          <Affliction identifier="stun" strength="4.0" />
+        </Explosion>
+        <Explosion range="500.0" itemdamage="50" force="3" severlimbsprobability="0.5" sparks="false" shockwave="false" flames="false" underwaterbubble="false" smoke="false" playtinnitus="false" flash="false" camerashake="5" penetration="0.3">
+          <Affliction identifier="explosiondamage" strength="80" dividebylimbcount="false" />
+          <Affliction identifier="bleedingnonstop" probability="0.5" strength="10" dividebylimbcount="false" />
+          <Affliction identifier="stun" strength="0.5" />
+        </Explosion>
+        <Explosion range="600.0" itemdamage="50" force="3" severlimbsprobability="0.5" sparks="false" shockwave="false" flames="false" underwaterbubble="false" smoke="false" playtinnitus="false" flash="false" camerashake="4" penetration="0.1">
+          <Affliction identifier="gunshotwound" probability="0.8" strength="30"  />
+          <Affliction identifier="bleedingnonstop" probability="0.5" strength="15"  />
+          <Affliction identifier="stun" strength="0.5" />
+        </Explosion>
+        <Explosion range="800.0" itemdamage="50" force="3" severlimbsprobability="0.5" sparks="false" shockwave="false" flames="false" underwaterbubble="false" smoke="false" playtinnitus="false" flash="false" camerashake="3">
+          <Affliction identifier="gunshotwound" probability="0.3" strength="20"  />
+          <Affliction identifier="bleedingnonstop" probability="0.3" strength="20"  />
+          <Affliction identifier="stun" strength="0.5" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+    <Powered powerconsumption="infinity" minvoltage="0.00" isactive="true">
+      <StatusEffect type="OnActive" target="This" targetitemcomponent="Powered" voltage="0.15" setvalue="true" />
+      <StatusEffect type="OnActive" target="This" targetitemcomponent="Powered" voltage="0.00" setvalue="true">
+        <Conditional isfullcondition="true" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" targetitemcomponent="Throwable" condition="-20">
+        <Conditional condition="lte 99.80" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" targetitemcomponent="Throwable" condition="99.90" setvalue="true">
+        <Conditional condition="99.95" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" targetitemcomponent="Throwable" condition="99.80" setvalue="true">
+        <Conditional condition="99.85" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" targetitemcomponent="Throwable" condition="99.80" setvalue="true" comparison="And">
+        <Conditional condition="99.90" />
+        <Conditional hasstatustag="holderknockeddown" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" targetitemcomponent="Throwable" condition="99.80" setvalue="true" comparison="And">
+        <Conditional condition="99.90" />
+        <Conditional hasstatustag="! onholding" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="Contained" targetslot="0" condition="0" setvalue="true">
+        <Conditional targetcontainer="true" condition="lte 99.90" />
+        <RequiredItems identifier="tsm_Pullsafetypin" type="Contained" targetslot="0" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="Contained" targetslot="1" condition="0" setvalue="true">
+        <Conditional targetcontainer="true" condition="lte 99.80" />
+        <RequiredItems identifier="tsm_fraggrenadespoon" type="Contained" targetslot="1" />
+      </StatusEffect>
+    </Powered>
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.5" msg="ItemMsgPickUpSelect">
+      <!-- 4SE Technical quirk: SetUser -->
+      <StatusEffect type="OnUse" target="This" isdangerous="true"/>
+      <StatusEffect type="OnSecondaryUse" target="This" condition="-0.005" disabledeltatime="true" />
+      <StatusEffect type="OnSecondaryUse" target="This" condition="+0.005" disabledeltatime="true" />
+      <StatusEffect type="OnUse" target="This" condition="-0.005" disabledeltatime="true" comparison="And">
+        <Conditional targetitemcomponent="Throwable" hasstatustag="! disallowuse" />
+        <RequiredItems identifier="tsm_fraggrenadespoon" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="+0.005" disabledeltatime="true" comparison="And">
+        <Conditional targetitemcomponent="Throwable" hasstatustag="! disallowuse" />
+        <RequiredItems identifier="tsm_fraggrenadespoon" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="99.95" voltage="0.15" setvalue="true" comparison="And">
+        <Conditional isfullcondition="true" />
+        <Conditional targetitemcomponent="Throwable" hasstatustag="! disallowuse" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="99.85" voltage="0.15" setvalue="true" comparison="And">
+        <Conditional condition="99.90" />
+        <Conditional targetitemcomponent="Throwable" hasstatustag="! disallowuse" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" targetitemcomponent="Throwable" tags="disallowuse" duration="0.03" stackable="false" />
+      <StatusEffect type="OnActive" target="This,Character" targetitemcomponent="Throwable" tags="onholding" duration="0.03" stackable="false" />
+      <StatusEffect type="OnActive" target="This,Character" targetitemcomponent="Throwable" tags="holderknockeddown" duration="0.03" stackable="false">
+        <Conditional isknockeddown="true" />
+      </StatusEffect>
+    </Throwable>
+    <ItemContainer canbeselected="false" drawinventory="false" allowaccess="false" capacity="1" maxstacksize="1" hideitems="true" showcontainedstateindicator="false" removecontaineditemsondeconstruct="true" spawnwithid="tsm_Pullsafetypin,tsm_fraggrenadespoon">
+      <Containable identifier="tsm_Pullsafetypin" itempos="0,8" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable identifier="tsm_fraggrenadespoon" itempos="0,8" />
+      </SubContainer>
+    </ItemContainer>
+    <Quality>
+      <QualityStat stattype="ExplosionDamage" value="0.1" />
+    </Quality>
+  </Item>
+  <Item identifier="tsm_Pullsafetypin" subcategory="war preparation" noninteractable="true" hiddeningame="true" hideinmenus="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="OnBroken" target="This">
+        <Sound file="%ModDir%/items/weapons/战备/grenade_pinpull1.ogg" range="500" selectionmode="Random" />
+        <Sound file="%ModDir%/items/weapons/战备/grenade_pinpull2.ogg" range="500" />
+        <ParticleEmitter particle="tsm_grenade_drop_1" particleamount="1" copyentityangle="true" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item identifier="tsm_fraggrenadespoon" subcategory="war preparation" noninteractable="true" hiddeningame="true" hideinmenus="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="OnBroken" target="This">
+        <Sound file="%ModDir%/items/weapons/战备/grenade_strikerlever1.ogg" range="500" selectionmode="Random" />
+        <Sound file="%ModDir%/items/weapons/战备/grenade_strikerlever2.ogg" range="500" />
+        <ParticleEmitter particle="tsm_grenade_drop_2" particleamount="1" copyentityangle="true" anglemin="-60" anglemax="-30" velocitymin="100" velocitymax="200" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.3">
+        <Sound file="%ModDir%/items/weapons/战备/grenade_strikerimpact1.ogg" volume="0.65" range="800" />
+        <ParticleEmitter particle="weldspark" particleamount="15" anglemin="0" anglemax="360" velocitymin="1000" velocitymax="1500" maxdistance="100" scalemin="0.5" scalemax="1.0" colormultiplier="100,75,200,255" />
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="3.0,3.0" colormultiplier="255,200,200,200" />
+        <ParticleEmitter particle="steamspray" particleamount="1" velocitymin="0" velocitymax="0" scalemin="1.5" scalemax="2.5" anglemin="0" anglemax="360" colormultiplier="15,15,15,255" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="震撼手雷" identifier="tsm_ai_grenade" subcategory="war preparation" category="Weapon" cargocontaineridentifier="metalcrate" maxstacksize="12" maxstacksizecharacterinventory="6" HideConditionBar="true" tags="smallitem,weapon,explosive,gun,gunsmith,provocativetohumanai,mountableweapon" Scale="0.35" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/bullet.png" sourcerect="453,33,41,46" />
+    <Sprite texture="%ModDir%/items/weapons/bullet.png" depth="0.55" sourcerect="453,33,41,46" origin="0.5,0.5" />
+    <Body radius="41" height="46" density="18" />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="false" aimpos="27,25" />
+    <RangedWeapon barrelpos="50,50" reload="0.1" spread="0" unskilledspread="0" combatPriority="100" drawhudwhenequipped="true" crosshairscale="0.4">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,1,1" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,1,1" />
+      <ParticleEmitter particle="grenadepin" emitinterval="10" particleamount="1" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+      <ParticleEmitter particle="grenadelever" emitinterval="10" particleamount="1" anglemin="120" anglemax="210" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+      <Sound file="%ModDir%/items/weapons/战备/lh.ogg" type="OnUse" range="1000" />
+      <RequiredItems items="grenade" type="Contained" msg="ItemMsgAmmoRequired" />
+      <StatusEffect type="OnUse" target="This" Condition="-200" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+        <Remove />
+      </StatusEffect>
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" SpawnWithId="tsm_ai_grenade_ammo" drawinventory="false" hideitems="true">
+      <Containable items="tsm_ai_grenade_ammo" hide="true" />
+    </ItemContainer>
+    <aitarget sightrange="3000" soundrange="3500" fadeouttime="7" />
+  </Item>
+  <Item name="震撼手雷" identifier="tsm_ai_grenade_ammo" hideinmenus="true" subcategory="war preparation" category="Weapon" interactthroughwalls="true" HideConditionBar="true" cargocontaineridentifier="metalcrate" tags="smallitem,grenade" Scale="0.35" impactsoundtag="impact_metal_heavy">
+    <InventoryIcon texture="%ModDir%/items/weapons/bullet.png" sourcerect="453,33,41,46" />
+    <Sprite texture="%ModDir%/items/weapons/bullet.png" depth="0.55" sourcerect="222,398,54,93" origin="0.5,0.5" />
+    <Body width="45" height="80" density="18" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="13.7" sticktocharacters="false">
+      <StatusEffect type="OnImpact" target="This" Condition="-200.0" delay="3.5" disabledeltatime="true">
+          <sound file="%ModDir%/items/weapons/战备/zhl_boom.ogg" range="2500" selectionmode="All" />
+        <Explosion range="300.0" ballastfloradamage="100" structuredamage="20" levelwalldamage="140" itemdamage="500" force="5" severlimbsprobability="0.5" decal="explosion" decalsize="0.5" penetration="0.8">
+          <Affliction identifier="explosiondamage" strength="50" />
+          <Affliction identifier="tsm_ai_grenade" strength="10" />
+          <Affliction identifier="tsm_ai_grenade_1" strength="100" />
+          <Affliction identifier="bleeding" strength="30" />
+          <Affliction identifier="concussion" strength="5" probability="0.8" />
+          <Affliction identifier="stun" strength="4" />
+        </Explosion>
+          <Explosion range="700.0" ballastfloradamage="100" structuredamage="20" levelwalldamage="140" itemdamage="500" force="5" severlimbsprobability="0.5" decal="explosion" decalsize="0.5" penetration="0.4">
+            <Affliction identifier="explosiondamage" strength="70" />
+            <Affliction identifier="tsm_ai_grenade" strength="5" />
+            <Affliction identifier="tsm_ai_grenade_1" strength="50" />
+            <Affliction identifier="bleeding" strength="30" />
+            <Affliction identifier="concussion" strength="5" probability="0.5" />
+            <Affliction identifier="stun" strength="4" />
+          </Explosion>
+          <Remove />
+        </StatusEffect>
+    </Projectile>
+    <LightComponent AllowInGameEditing="false" lightcolor="255,0,0,255" canbeselected="false" range="30.0" IsOn="true" castshadows="false" />
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.5" msg="ItemMsgPickUpSelect">
+    <StatusEffect type="OnNotContained" target="This" isdangerous="true" />
+    </Throwable>
+  </Item>
+  <Item name="黏性手雷" identifier="tsm_sticky_grenade" subcategory="war preparation" category="Weapon" cargocontaineridentifier="metalcrate" maxstacksize="8" maxstacksizecharacterinventory="4" HideConditionBar="true" tags="smallitem,weapon,explosive,gun,gunsmith,provocativetohumanai,mountableweapon" Scale="0.1" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" minamount="1" maxamount="1" spawnprobability="0.5" notcampaign="true" notpvp="true" />
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="1" spawnprobability="0.2" />
+    <PreferredContainer secondary="armcab" />
+    <Upgrade gameversion="0.9.3.0" scale="0.5" />
+    <Price baseprice="200">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.35" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="iron" />
+      <Item identifier="sodium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="iron" />
+      <RequiredItem identifier="iron" />
+      <RequiredItem identifier="uex" />
+      <RequiredItem identifier="sodium" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/grenade.png" sourcerect="417,26,173,382" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/grenade.png" sourcerect="417,26,173,382" depth="0.55" origin="0.5,0.5" />
+    <Body radius="173" height="382" density="20" />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="false" aimpos="27,25" />
+    <RangedWeapon barrelpos="50,50" reload="0.1" spread="0" unskilledspread="0" combatPriority="100" drawhudwhenequipped="true" crosshairscale="0.4">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,1,1" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,1,1" />
+      <ParticleEmitter particle="grenadepin" emitinterval="10" particleamount="1" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+      <ParticleEmitter particle="grenadelever" emitinterval="10" particleamount="1" anglemin="120" anglemax="210" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
+      <Sound file="Content/Items/Weapons/pinpull.ogg" type="OnUse" range="720" />
+      <RequiredItems items="grenade" type="Contained" msg="ItemMsgAmmoRequired" />
+      <StatusEffect type="OnUse" target="This" Condition="-200" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+        <Remove />
+      </StatusEffect>
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" SpawnWithId="tsm_sticky_grenade_ammo" drawinventory="false" hideitems="true">
+      <Containable items="tsm_sticky_grenade_ammo" hide="true" />
+    </ItemContainer>
+    <Quality>
+      <QualityStat stattype="ExplosionRadius" value="0.1" />
+      <QualityStat stattype="ExplosionDamage" value="0.1" />
+    </Quality>
+    <aitarget sightrange="3000" soundrange="3500" fadeouttime="7" />
+  </Item>
+  <Item name="黏性手雷" identifier="tsm_sticky_grenade_ammo" hideinmenus="true" subcategory="war preparation" category="Weapon" interactthroughwalls="true" HideConditionBar="true" cargocontaineridentifier="metalcrate" tags="smallitem,grenade" Scale="0.1" impactsoundtag="impact_metal_heavy">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/grenade.png" sourcerect="417,26,173,382" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/grenade.png" sourcerect="417,26,173,382" depth="0.55" origin="0.5,0.5" />
+    <Body width="165" height="375" density="20" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="15" sticktocharacters="true" sticktoitems="true" sticktostructures="true" sticktodoors="true">
+      <StatusEffect type="OnImpact" target="This" Condition="-200.0" delay="3" disabledeltatime="true">
+        <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="10000" selectionmode="All" />
+        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" range="10000" />
+        <Explosion range="300.0" ballastfloradamage="100" structuredamage="20" levelwalldamage="140" itemdamage="350" force="5" debris="false" decal="explosion" decalsize="0.5" penetration="0.8">
+          <Affliction identifier="explosiondamage" strength="100" />
+          <Affliction identifier="stun" strength="4.0" />
+        </Explosion>
+        <Explosion range="500.0" itemdamage="50" force="3" severlimbsprobability="0.5" sparks="false" shockwave="false" flames="false" underwaterbubble="false" smoke="false" playtinnitus="false" flash="false" camerashake="5" penetration="0.5">
+          <Affliction identifier="explosiondamage" strength="80" dividebylimbcount="false" />
+          <Affliction identifier="bleedingnonstop" probability="0.5" strength="10" dividebylimbcount="false" />
+          <Affliction identifier="stun" strength="0.5" />
+        </Explosion>
+        <Explosion range="700.0" itemdamage="50" force="3" severlimbsprobability="0.5" sparks="false" shockwave="false" flames="false" underwaterbubble="false" smoke="false" playtinnitus="false" flash="false" camerashake="4" penetration="0.3">
+          <Affliction identifier="gunshotwound" probability="0.8" strength="30" dividebylimbcount="false" />
+          <Affliction identifier="bleedingnonstop" probability="0.5" strength="15" dividebylimbcount="false" />
+          <Affliction identifier="stun" strength="0.5" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <LightComponent AllowInGameEditing="false" lightcolor="255,0,0,255" canbeselected="false" range="30.0" IsOn="true" castshadows="false" />
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnNotContained" target="This" isdangerous="true" />
+    </Throwable>
+  </Item>
+  <!--C4-->
+  <Item identifier="tsm_jz_c4" category="Weapon" subcategory="war preparation" tags="smallitem,weapon,remotedetonatable,explosive,provocativetohumanai" maxstacksize="8" maxstacksizecharacterinventory="4" scale="0.6" cargocontaineridentifier="explosivecrate">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/war_preparation.png" sourcerect="299,427,81,35" />
+    <Sprite texture="%ModDir%/items/weapons/战备/war_preparation.png" depth="0.55" sourcerect="299,427,81,35" origin="0.5,0.5" />
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" amount="1" spawnprobability="0.1" />
+    <Body width="80" height="20" density="15" />
+    <Deconstruct time="15">
+      <Item identifier="organicfiber" amount="1" />
+      <Item identifier="c4block" amount="1" />
+      <Item identifier="wificomponent" amount="1" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator,tsm_fabricator" amount="2" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="wificomponent" amount="2" />
+      <RequiredItem tag="wire" amount="2" />
+      <RequiredItem identifier="c4block" amount="3" />
+      <RequiredItem identifier="organicfiber" amount="3" />
+    </Fabricate>
+    <RangedWeapon reload="1" weapondamagemodifier="1.0" holdtrigger="false" barrelpos="50,0" />
+    <Projectile characterusable="true" DoesStick="true" LaunchImpulse="7">
+      <StatusEffect type="OnBroken" target="This">
+        <Explosion range="300.0" ballastfloradamage="400" structuredamage="800" itemdamage="5000" force="20" severlimbsprobability="2" debris="true" decal="explosion" decalsize="0.75" penetration="0.7">
+          <Affliction identifier="explosiondamage" strength="200" />
+          <Affliction identifier="lacerations" strength="60" dividebylimbcount="false" />
+          <Affliction identifier="bleeding" strength="40" />
+          <Affliction identifier="burn" strength="20" dividebylimbcount="false" />
+          <Affliction identifier="stun" strength="10" />
+        </Explosion>
+        <Explosion range="400.0" ballastfloradamage="300" structuredamage="400" itemdamage="2500" force="10" debris="true" penetration="0.5">
+          <Affliction identifier="explosiondamage" strength="60" dividebylimbcount="false" />
+          <Affliction identifier="bleeding" strength="20" />
+          <Affliction identifier="burn" strength="10" probability="0.8" dividebylimbcount="false" />
+          <Affliction identifier="stun" strength="3" />
+        </Explosion>
+        <Explosion range="500.0" force="5" debris="true" penetration="0.3">
+          <Affliction identifier="lacerations" strength="40" />
+          <Affliction identifier="bleeding" strength="15" />
+          <Affliction identifier="burn" strength="5" probability="0.3" />
+          <Affliction identifier="stun" strength="1" />
+        </Explosion>
+        <Explosion range="600.0" force="3" debris="true" penetration="0.1">
+          <Affliction identifier="lacerations" strength="15" />
+          <Affliction identifier="bleeding" strength="10" />
+          <Affliction identifier="burn" strength="2" probability="0.1" />
+          <Affliction identifier="stun" strength="0.2" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionDebris5.ogg" range="1000" />
+      </StatusEffect>
+    </Projectile>
+    <LightComponent range="50.0" lightcolor="255,100,0,255" powerconsumption="0" IsOn="false" characterusable="false">
+      <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
+      <StatusEffect type="Always" target="This" Voltage="1.0" Interval="1" setvalue="true" />
+    </LightComponent>
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="0,-45" aimpos="45,0" handle1="0,0" handle2="0,0" holdangle="90" aimangle="70" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" isdangerous="true" />
+      <StatusEffect type="OnUse" target="Character">
+        <LuaHook name="tsm_jz_c4_onuse" />
+      </StatusEffect>
+      <StatusEffect type="OnPicked" target="This" isdangerous="false" />
+      <StatusEffect type="OnPicked" target="Character">
+        <LuaHook name="tsm_jz_c4_onpicked" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item identifier="tsm_jz_m57detonator" subcategory="war preparation" category="Weapon" maxstacksize="4" maxstacksizecharacterinventory="1" cargocontaineridentifier="explosivecrate" tags="smallitem,remotedetonator" Scale="0.3" impactsoundtag="impact_metal_light">
+    <Upgrade gameversion="0.9.2.0" scale="0.5" />
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/war_preparation.png" sourcerect="112,390,40,82" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/war_preparation.png" sourcerect="112,390,40,82" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="75" density="5" />
+    <Deconstruct time="15">
+      <Item identifier="wificomponent" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator,tsm_fabricator" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="wificomponent" amount="1" />
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem tag="wire" amount="2" />
+    </Fabricate>
+    <RangedWeapon />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="false" holdpos="40,10" handle1="-7,-20" handle2="-7,-20" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="Character">
+        <LuaHook name="tsm_jz_m57detonator_onuse" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="This" condition="-100" delay="0.01" disabledeltatime="true">
+        <sound file="%ModDir%/items/weapons/战备/minus.ogg" type="OnUse" range="250.0" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" targettype="This" condition="100" delay="1" setvalue="true" />
+    </Holdable>
+  </Item>
+  <!--C2-->
+  <Item identifier="tsm_c2" health="30" subcategory="war preparation" category="Weapon" maxstacksize="6" Tags="smallitem,detonator" DamagedByContainedItemExplosions="true" explosiondamagemultiplier="0.3" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_light" isshootable="true">
+    <!--PreferredContainer primary="secarmcab" amount="1" spawnprobability="0.1" notcampaign="true" notpvp="true" /-->
+    <PreferredContainer secondary="armcab" />
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/war_preparation.png" sourcerect="189,378,79,89" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/war_preparation.png" sourcerect="189,378,79,89" depth="0.55" origin="0.5,0.5" />
+    <Fabricate suitablefabricators="fabricator,tsm_fabricator" requiredtime="5" amount="3">
+      <RequiredSkill identifier="electrical" level="10" />
+      <RequiredItem identifier="detonator" />
+      <RequiredItem identifier="uex" />
+      <RequiredItem tag="wire" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="copper" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Body width="70" height="75" density="20" />
+    <Holdable selectkey="Action" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" aimpos="35,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect target="This" type="Always">
+        <Conditional attached="false" targetitemcomponentname="Holdable" />
+        <Use />
+      </StatusEffect>
+    </Holdable>
+    <ItemComponent characterusable="false">
+      <StatusEffect type="OnBroken" target="This">
+        <Explosion range="250.0" force="10" ignoreCover="true" severlimbsprobability="8" penetration="1" ballastfloradamage="1000" structuredamage="4230" itemdamage="3000" debris="true">
+          <Affliction identifier="explosiondamage" strength="20" />
+          <Affliction identifier="bleeding" strength="5" />
+          <Affliction identifier="burn" strength="5" />
+          <Affliction identifier="stun" strength="5" />
+        </Explosion>
+      </StatusEffect>
+    </ItemComponent>
+    <PowerContainer capacity="60" Charge="8" canbeselected="false"></PowerContainer>
+    <LightComponent LightColor="248,81,81,80" range="20" powerconsumption="0" IsOn="false" blinkfrequency="1.0" offset="13,0" castshadows="false" allowingameediting="false">
+      <sprite texture="Content/Items/Weapons/weapons_new.png" depth="0.55" sourcerect="239,243,14,18" origin="-0.24,0.5" alpha="1.0" />
+      <StatusEffect type="OnActive" target="This" targetitemcomponent="PowerContainer" Charge="-1.0" interval="1" disabledeltatime="true" />
+      <StatusEffect type="OnActive" target="This" interval="1" disabledeltatime="true">
+        <sound file="Content/Items/WarningBeepSlow.ogg" range="750" frequencymultiplier="2.0" volume="0.3" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" interval="1" disabledeltatime="true" checkconditionalalways="true" delay="0.5" blinkfrequency="2.0" setvalue="true">
+        <Conditional Charge="lt 3" targetitemcomponentname="PowerContainer" />
+        <sound file="Content/Items/WarningBeepSlow.ogg" range="750" frequencymultiplier="2.0" volume="0.3" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This,Contained" IsOn="false" checkconditionalalways="true" blinkfrequency="1.0" condition="-100" setvalue="true">
+        <Conditional Charge="lte 0.0" targetitemcomponentname="PowerContainer" />
+        <sound file="Content/Items/Button/Switch1.ogg" range="500.0" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </LightComponent>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="false" ElementStates="8, false">
+      <GuiFrame relativesize="0.2,0.15" anchor="CenterLeft" pivot="TopLeft" relativeoffset="0.006,0.006" style="ItemUI" />
+      <IntegerInput text="bomb.timer" targetitemcomponent="PowerContainer" propertyname="Charge" min="0" max="60" step="1" GetValueInterval="1" />
+      <TickBox text="bomb.armed" connection="signal_out1" targetitemcomponent="LightComponent" propertyname="IsOn" ContinuousSignal="false" GetValueInterval="1" />
+    </CustomInterface>
+  </Item>
+  <!--支援背包+望远镜-->
+  <Item identifier="tsm_zy_backpack" subcategory="war preparation" category="Weapon" Tags="smallitem" maxstacksize="1" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/war_preparation.png" sourcerect="362,76,77,211" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/war_preparation.png" sourcerect="362,76,77,211" depth="0.55" origin="0.5,0.5" />
+    <Body width="60" height="200" density="33" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Select" allowswappingwhenpicked="false" />
+    <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
+      <sprite name="Backpack Wearable" texture="%ModDir%/items/weapons/战备/war_preparation.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" canbehiddenbyotherwearables="false" hideotherwearables="false" sourcerect="362,76,77,211" origin="1.2,0.8" scale="0.5" />
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.9" setvalue="true" disabledeltatime="true" >
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" interval="1">
+        <Affliction identifier="tsm_zy_buff" strength="3" />
+      </StatusEffect>
+    </Wearable>
+    <Deconstruct time="15">
+      <Item identifier="organicfiber" amount="1" />
+      <Item identifier="wire" amount="1" />
+      <Item identifier="wificomponent" amount="1" />
+      <Item identifier="aluminium" amount="1" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator,tsm_fabricator" amount="1" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="wificomponent" amount="4" />
+      <RequiredItem tag="wire" amount="2" />
+      <RequiredItem identifier="aluminium" amount="3" />
+      <RequiredItem identifier="organicfiber" amount="3" />
+    </Fabricate>
+    <WifiComponent range="80000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <Upgrade gameversion="0.18.0.0">
+      <WifiComponent>
+        <RequiredItems items="" />
+      </WifiComponent>
+    </Upgrade>
+    <ItemContainer capacity="6">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
+    </ItemContainer>
+  </Item>
+  <Item identifier="tsm_telescope" subcategory="war preparation" category="Weapon" Tags="smallitem,firesupportrequest" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_soft">
+    <Sprite texture="%ModDir%/items/weapons/战备/war_preparation.png" depth="0.55" sourcerect="65,312,98,47" origin="0.5,0.5" />
+    <Body width="85" height="30" density="20" />
+    <Price baseprice="712" buyingpricemultiplier="1" minleveldifficulty="0">
+      <Price locationtype="outpost" minavailable="0" maxavailable="1" />
+      <Price locationtype="city" minavailable="0" maxavailable="1" />
+      <Price locationtype="military" minavailable="0" maxavailable="1" />
+    </Price>
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="30,25" handle1="-20,-7" msg="ItemMsgPickUpSelect" >
+      <StatusEffect type="OnSecondaryUse" target="This,Character" cameraaimoffset="800" setvalue="true" interval="1" multiplyafflictionsbymaxvitality="true">
+        <Conditional tsm_zy_buff="gt 0" />
+        <Affliction identifier="tsm_burneyes_buff" amount="5" />
+      </StatusEffect>
+    <StatusEffect type="OnSecondaryUse" target="This,Character" cameraaimoffset="400" setvalue="true" interval="1">
+      <Conditional tsm_zy_buff="eq 0" />
+    </StatusEffect>
+  </Holdable>
+  </Item>
+  <!--阔剑-->
+  <Item name="感应地雷" Tags="smallitem,explosive,tsm_claymore" subcategory="war preparation" identifier="tsm_claymore_mine" category="Weapon" maxstacksize="4" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light" isshootable="true">
+    <Sprite texture="%ModDir%/items/weapons/战备/war_preparation.png" depth="0.8" sourcerect="174,21,119,82" origin="0.5,0.5" />
+    <Body width="110" height="80" density="16" />
+    <!--部署-->
+    <Throwable slots="Any,RightHand,LeftHand" aimpos="-15,-35" handle1="0,0" holdangle="90" throwforce="0.3" msg="ItemMsgPickUpSelect">
+      <!--倒计时部署-->
+      <StatusEffect type="OnSecondaryUse" target="This" delay="0.5" disabledeltatime="true">
+        <!--生成阔剑-->
+        <SpawnItem identifier="tsm_claymore_mine_active" spawnposition="This" />
+        <Remove />
+      </StatusEffect>
+    </Throwable>
+    <PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.01" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" />
+    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" />
+    <PreferredContainer primary="armcab" secondary="locker" />
+    <Price baseprice="333" buyingpricemultiplier="2" canbespecial="true" minleveldifficulty="0" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="1" />
+      <Price locationtype="city" multiplier="1.35" minavailable="0" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" minavailable="0" maxavailable="1" />
+      <Price locationtype="military" multiplier="1.10" minavailable="1" maxavailable="4" />
+      <Price locationtype="mine" multiplier="1.25" minavailable="0" maxavailable="3" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator,tsm_fabricator" amount="4" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="wificomponent" amount="2" />
+      <RequiredItem tag="wire" amount="2" />
+      <RequiredItem identifier="c4block" amount="2" />
+      <RequiredItem identifier="organicfiber" amount="2" />
+    </Fabricate>
+    <Deconstruct time="15"/>
+  </Item>
+  <Item name="地雷" Tags="smallitem,explosive,tsm_claymore" subcategory="war preparation" identifier="tsm_claymore_mine_active" category="Weapon" scale="0.35" impactsoundtag="impact_metal_light" isshootable="true" hideinmenus="true">
+    <Sprite texture="%ModDir%/items/weapons/战备/war_preparation.png" depth="0.55" sourcerect="314,5,63,27" origin="0.5,0.5" />
+    <Body width="60" height="25" density="16" />
+    <!--运动传感器-->
+    <MotionSensor canbeselected="true" target="Any" ignoredead="True" rangex="20" rangey="60" detectoffset="0,60" updateinterval="0.1" maxoutputlength="200" output="" falseoutput="" minimumvelocity="2" pickingtime="0" canbepicked="False" allowingameediting="True" msg="" />
+    <!--物品组件-->
+    <ItemComponent characterusable="false">
+      <!--感应引爆-->
+      <StatusEffect type="OnNotContained" target="This" Condition="-100.0" disabledeltatime="true" comparison="And">
+        <Conditional MotionDetected="true" targetitemcomponent="MotionSensor" />
+        <Conditional HasTag="eq tsm_claymore_on" />
+      </StatusEffect>
+      <!--引爆-->
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" type="OnUse" range="10000" selectionmode="All" />
+        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" type="OnUse" range="10000" />
+        <Explosion range="250" structuredamage="40" ballastfloradamage="200" itemdamage="500" force="10" severlimbsprobability="5" decal="explosion" decalsize="0.7" screencolor="0,0,0,255" screencolorrange="500" screencolorduration="10" penetration="0.7">
+          <Affliction identifier="explosiondamage" strength="160" />
+          <Affliction identifier="burn" strength="80" />
+          <Affliction identifier="bleeding" strength="100" />
+          <Affliction identifier="internaldamage" strength="50" />
+          <Affliction identifier="stun" strength="2" />
+          <Affliction identifier="concussion" strength="6" />
+        </Explosion>
+        <ParticleEmitter particle="shrapnel" particleamount="300" copyentityangle="true" anglemin="0" anglemax="360" velocitymin="500" velocitymax="1000" scalemin="1" scalemax="0.55" distancemin="150" distancemax="500" drawontop="true" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+    <lightsource castshadows="false" Color="255,255,255,0" Range="0" Scale="0.35" Offset="0,0" Rotation="0" Directional="False" Flicker="0" FlickerSpeed="1" PulseFrequency="0" PulseAmount="0" BlinkFrequency="0">
+      <Sprite texture="%ModDir%/items/weapons/战备/war_preparation.png" SourceRect="418,299,121,279" Origin="0.5,0.5" alpha="0.3" />
+    </lightsource>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.1,0.1" anchor="BottomCenter" absoluteoffset="30,100" style="ItemUI" />
+      <TickBox text="tos">
+        <!--延迟3秒关闭运动传感器-->
+        <StatusEffect type="OnUse" target="This" Tags="tsm_claymore_off" setvalue="true" />
+        <StatusEffect type="OnSecondaryUse" target="This" Tags="tsm_claymore_on" setvalue="true" delay="3" />
+      </TickBox>
+      <Button text="dm">
+        <StatusEffect type="OnUse" target="This">
+          <Remove />
+          <SpawnItem identifier="tsm_claymore_mine" spawnposition="This" />
+        </StatusEffect>
+      </Button>
+    </CustomInterface>
+  </Item>
+  <!--插板-->
+  <Item name="TSM科技-全防护插板" subcategory="TSM" Tags="smallitem,,tsm_armor" identifier="tsm_armor_allbuff" category="Equipment" Scale="0.2" health="1000" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <Sprite texture="%ModDir%/items/weapons/战备/war_preparation.png" depth="0.55" sourcerect="0,152,79,85" origin="0.5,0.5" />
+    <Body width="54" height="65" density="60" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <!--Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="physicorium" amount="3" />
+      <RequiredItem identifier="ballisticfiber" amount="2" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
+      <RequiredItem identifier="dementonite" amount="1" />
+      <RequiredItem identifier="incendium" amount="1" />
+    </Fabricate>
+    <Price baseprice="2500" buyingpricemultiplier="5" soldeverywhere="false" canbespecial="true">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.35" sold="false" />
+      <Price locationtype="research" multiplier="1.0" minavailable="0" maxavailable="1" />
+      <Price locationtype="military" multiplier="1.10" minavailable="1" maxavailable="2" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price-->
+  </Item>
+  <Item name="TSM科技-流血防护插板" subcategory="TSM" Tags="smallitem,tsm_armor" identifier="tsm_armor_bleeding" category="Equipment" Scale="0.2" health="1000" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <Sprite texture="%ModDir%/items/weapons/战备/war_preparation.png" depth="0.55" sourcerect="0,152,79,85" origin="0.5,0.5" />
+    <Body width="157" height="65" density="60" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="physicorium" amount="2" />
+      <RequiredItem identifier="tsm_yx_crystallography" amount="1" />
+      <RequiredItem identifier="ballisticfiber" amount="2" />
+      <RequiredItem identifier="alienblood" amount="8" />
+    </Fabricate>
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Price baseprice="1800" buyingpricemultiplier="3" soldeverywhere="false" canbespecial="true">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.35" sold="false" />
+      <Price locationtype="research" multiplier="1.0" minavailable="0" maxavailable="1" />
+      <Price locationtype="military" multiplier="1.10" minavailable="1" maxavailable="2" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+  </Item>
+  <Item name="TSM科技-烧伤防护插板" subcategory="TSM" Tags="smallitem,tsm_armor" identifier="tsm_armor_burn" category="Equipment" Scale="0.2" health="1000" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <Sprite texture="%ModDir%/items/weapons/战备/war_preparation.png" depth="0.55" sourcerect="0,152,79,85" origin="0.5,0.5" />
+    <Body width="157" height="65" density="60" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="incendium" amount="2" />
+      <RequiredItem identifier="tsm_yx_crystallography" amount="2" />
+      <RequiredItem identifier="ballisticfiber" amount="2" />
+    </Fabricate>
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Price baseprice="1800" buyingpricemultiplier="3" soldeverywhere="false" canbespecial="true">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.35" sold="false" />
+      <Price locationtype="research" multiplier="1.0" minavailable="0" maxavailable="1" />
+      <Price locationtype="military" multiplier="1.10" minavailable="1" maxavailable="2" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+  </Item>
+  <Item name="TSM科技-撕裂防护插板" subcategory="TSM" Tags="smallitem,tsm_armor" identifier="tsm_armor_lacerations" category="Equipment" Scale="0.2" health="1000" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <Sprite texture="%ModDir%/items/weapons/战备/war_preparation.png" depth="0.55" sourcerect="0,152,79,85" origin="0.5,0.5" />
+    <Body width="157" height="65" density="60" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="physicorium" amount="2" />
+      <RequiredItem identifier="ballisticfiber" amount="4" />
+    </Fabricate>
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Price baseprice="1500" buyingpricemultiplier="5" soldeverywhere="false" canbespecial="true">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.35" sold="false" />
+      <Price locationtype="research" multiplier="1.0" minavailable="0" maxavailable="1" />
+      <Price locationtype="military" multiplier="1.10" minavailable="1" maxavailable="2" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+  </Item>
+  <Item name="TSM科技-眩晕防护插板" subcategory="TSM" Tags="smallitem,tsm_armor" identifier="tsm_armor_stun" category="Equipment" Scale="0.2" health="1000" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <Sprite texture="%ModDir%/items/weapons/战备/war_preparation.png" depth="0.55" sourcerect="0,152,79,85" origin="0.5,0.5" />
+    <Body width="157" height="65" density="60" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="dementonite" amount="2.5" />
+      <RequiredItem identifier="ballisticfiber" amount="1.5" />
+      <RequiredItem identifier="organicfiber" amount="3" />
+    </Fabricate>
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Price baseprice="2000" buyingpricemultiplier="5" soldeverywhere="false" canbespecial="true">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.35" sold="false" />
+      <Price locationtype="research" multiplier="1.0" minavailable="0" maxavailable="1" />
+      <Price locationtype="military" multiplier="1.10" minavailable="1" maxavailable="2" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+  </Item>
+  <Item name="TSM科技-钝器防护插板" subcategory="TSM" Tags="smallitem,tsm_armor" identifier="tsm_armor_blunttrauma" category="Equipment" Scale="0.2" health="1000" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <Sprite texture="%ModDir%/items/weapons/战备/war_preparation.png" depth="0.55" sourcerect="0,152,79,85" origin="0.5,0.5" />
+    <Body width="157" height="65" density="60" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="physicorium" amount="1.5" />
+      <RequiredItem identifier="ballisticfiber" amount="2" />
+      <RequiredItem identifier="organicfiber" amount="2" />
+    </Fabricate>
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Price baseprice="1000" buyingpricemultiplier="5" soldeverywhere="false" canbespecial="true">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.35" sold="false" />
+      <Price locationtype="research" multiplier="1.0" minavailable="0" maxavailable="1" />
+      <Price locationtype="military" multiplier="1.10" minavailable="1" maxavailable="2" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+  </Item>
+  <Item name="TSM科技-画皮防护插板" subcategory="TSM" Tags="smallitem,tsm_armor" identifier="tsm_armor_huskinfection" category="Equipment" Scale="0.2" health="1000" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <Sprite texture="%ModDir%/items/weapons/战备/war_preparation.png" depth="0.55" sourcerect="0,152,79,85" origin="0.5,0.5" />
+    <Body width="157" height="65" density="60" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="3" />
+      <RequiredItem identifier="calyxanide" amount="2" />
+      <RequiredItem identifier="organicfiber" amount="2.5" />
+    </Fabricate>
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Price baseprice="1500" buyingpricemultiplier="5" soldeverywhere="false" canbespecial="true">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.35" sold="false" />
+      <Price locationtype="research" multiplier="1.0" minavailable="0" maxavailable="1" />
+      <Price locationtype="military" multiplier="1.10" minavailable="1" maxavailable="2" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+  </Item>
+  <Item name="TSM科技-麻痹防护插板" subcategory="TSM" Tags="smallitem,tsm_armor" identifier="tsm_armor_paralysis" category="Equipment" Scale="0.2" health="1000" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <Sprite texture="%ModDir%/items/weapons/战备/war_preparation.png" depth="0.55" sourcerect="0,152,79,85" origin="0.5,0.5" />
+    <Body width="157" height="65" density="60" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="1" />
+      <RequiredItem identifier="antiparalysis" amount="2" />
+      <RequiredItem identifier="organicfiber" amount="3" />
+    </Fabricate>
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Price baseprice="1500" buyingpricemultiplier="5" soldeverywhere="false" canbespecial="true">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.35" sold="false" />
+      <Price locationtype="research" multiplier="1.0" minavailable="0" maxavailable="1" />
+      <Price locationtype="military" multiplier="1.10" minavailable="1" maxavailable="2" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+  </Item>
+  <Item name="TSM科技-变革防护插板" subcategory="TSM" Tags="smallitem,tsm_armor" identifier="tsm_armor_triton" category="Equipment" Scale="0.2" health="1000" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <Sprite texture="%ModDir%/items/weapons/战备/war_preparation.png" depth="0.55" sourcerect="0,152,79,85" origin="0.5,0.5" />
+    <Body width="157" height="65" density="60" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="1.5" />
+      <RequiredItem identifier="dementonite" amount="2.5" />
+      <RequiredItem identifier="ballisticfiber" amount="2" />
+    </Fabricate>
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Price baseprice="2000" buyingpricemultiplier="5" soldeverywhere="false" canbespecial="true">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.35" sold="false" />
+      <Price locationtype="research" multiplier="1.0" minavailable="0" maxavailable="1" />
+      <Price locationtype="military" multiplier="1.10" minavailable="1" maxavailable="2" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+  </Item>
+  <Item name="TSM科技-咬伤防护插板" subcategory="TSM" Tags="smallitem,tsm_armor" identifier="tsm_armor_bitewounds" category="Equipment" Scale="0.2" health="1000" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <Sprite texture="%ModDir%/items/weapons/战备/war_preparation.png" depth="0.55" sourcerect="0,152,79,85" origin="0.5,0.5" />
+    <Body width="157" height="65" density="60" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="2.5" />
+      <RequiredItem identifier="physicorium" amount="1" />
+      <RequiredItem identifier="organicfiber" amount="2" />
+    </Fabricate>
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Price baseprice="1000" buyingpricemultiplier="5" soldeverywhere="false" canbespecial="true">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.35" sold="false" />
+      <Price locationtype="research" multiplier="1.0" minavailable="0" maxavailable="1" />
+      <Price locationtype="military" multiplier="1.10" minavailable="1" maxavailable="2" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+  </Item>
+  <Item name="TSM科技-爆炸防护插板" subcategory="TSM" Tags="smallitem,tsm_armor" identifier="tsm_armor_explosiondamage" category="Equipment" Scale="0.2" health="1000" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <Sprite texture="%ModDir%/items/weapons/战备/war_preparation.png" depth="0.55" sourcerect="0,152,79,85" origin="0.5,0.5" />
+    <Body width="157" height="65" density="60" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="incendium" amount="2" />
+      <RequiredItem identifier="physicorium" amount="2" />
+      <RequiredItem identifier="ballisticfiber" amount="3" />
+    </Fabricate>
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Price baseprice="2000" buyingpricemultiplier="5" soldeverywhere="false" canbespecial="true">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.35" sold="false" />
+      <Price locationtype="research" multiplier="1.0" minavailable="0" maxavailable="1" />
+      <Price locationtype="military" multiplier="1.10" minavailable="1" maxavailable="2" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+  </Item>
+  <Item name="TSM科技-枪伤防护插板" subcategory="TSM" Tags="smallitem,tsm_armor" identifier="tsm_armor_gunshotwound" category="Equipment" Scale="0.2" health="1000" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <Sprite texture="%ModDir%/items/weapons/战备/war_preparation.png" depth="0.55" sourcerect="0,152,79,85" origin="0.5,0.5" />
+    <Body width="157" height="65" density="60" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="physicorium" amount="2" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="3" />
+      <RequiredItem identifier="diamond" amount="1" />
+    </Fabricate>
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Price baseprice="1500" buyingpricemultiplier="5" soldeverywhere="false" canbespecial="true">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.35" sold="false" />
+      <Price locationtype="research" multiplier="1.0" minavailable="0" maxavailable="1" />
+      <Price locationtype="military" multiplier="1.10" minavailable="1" maxavailable="2" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+  </Item>
+  <Item name="TSM科技-有毒物质防护插板" subcategory="TSM" Tags="smallitem,tsm_armor" identifier="tsm_armor_poisons" category="Equipment" Scale="0.2" health="1000" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <Sprite texture="%ModDir%/items/weapons/战备/war_preparation.png" depth="0.55" sourcerect="0,152,79,85" origin="0.5,0.5" />
+    <Body width="157" height="65" density="60" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="physicorium" amount="2" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="3" />
+      <RequiredItem identifier="diamond" amount="1" />
+    </Fabricate>
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Price baseprice="1500" buyingpricemultiplier="5" soldeverywhere="false" canbespecial="true">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.35" sold="false" />
+      <Price locationtype="research" multiplier="1.0" minavailable="0" maxavailable="1" />
+      <Price locationtype="military" multiplier="1.10" minavailable="1" maxavailable="2" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+  </Item>
+
+</Items>

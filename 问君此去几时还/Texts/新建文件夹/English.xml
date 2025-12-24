@@ -1,0 +1,881 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+
+  <character.Experiment_T044Y>The Inferno</character.Experiment_T044Y>
+  <character.荒疫>The Plague</character.荒疫>
+  <character.雷龙>The Thunder</character.雷龙>
+  <character.T037α>Subject T-037-α</character.T037α>
+  <character.T044Y>Subject T-044-γ</character.T044Y>
+  <character.Experiment009>Subject 009</character.Experiment009>
+  <character.巨型女妖>Giant Charybdis</character.巨型女妖>
+  <character.微观捕勾兽>Microscopic Latcher</character.微观捕勾兽>
+  <character.微观捕勾兽模板>Microscopic Latcher</character.微观捕勾兽模板>
+  <character.NightmareMudraptor>Nightmare Mudraptor</character.NightmareMudraptor>
+  <character.FractalTwin_Destruction>Fractal Twin-Destruction</character.FractalTwin_Destruction>
+  <character.FractalTwin_Sabotage>Fractal Twin-Sabotage</character.FractalTwin_Sabotage>
+  <character.Shadowreave>Shadow Reave</character.Shadowreave>
+  <character.Eclipticshadow>Ecliptic Shadow</character.Eclipticshadow>
+  <character.Skypiercingdolphin>Skypiercing Dolphin</character.Skypiercingdolphin>
+  <character.Shadowcharm>Shadowcharm</character.Shadowcharm>
+  <character.AlbinismSpineling_giant>Albino Spineling</character.AlbinismSpineling_giant>
+  <character.AlbinismSpineling>Albino Spineling</character.AlbinismSpineling>
+  <character.corruptionMachinery>Corrupt Machinery</character.corruptionMachinery>
+  <character.OceanEnchantress>Ocean Enchantress</character.OceanEnchantress>
+  <character.zhaoge>Zhaoge</character.zhaoge>
+  <character.corrode>Corrosion</character.corrode>
+  <character.MobileTaskForce>TSM Mobile Task Force</character.MobileTaskForce>
+  <character.MobileTaskForce1>TSM Mobile Task Force</character.MobileTaskForce1>
+  <character.RiotSquad>TSM Mobile Riot Squad</character.RiotSquad>
+  <character.Sunsetm>Sunset Forces</character.Sunsetm>
+  <character.Ship>HTC24 Turquoise</character.Ship>
+  <character.Ship1>HTC24 Turquoise</character.Ship1>
+  <character.Ship2>HTC24 Turquoise</character.Ship2>
+  <character.Ship3>HTC24 Turquoise</character.Ship3>
+  <character.sight>"Heaven Pursuer" Landing Craft</character.sight>
+  <character.sight1>"Heaven Pursuer" Landing Craft</character.sight1>
+  <character.sight2>"Heaven Pursuer" Landing Craft</character.sight2>
+  <character.sight3>"Heaven Pursuer" Landing Craft</character.sight3>
+  <character.UnionRiotRaiders>Coalition Riot Commando</character.UnionRiotRaiders>
+  <character.UnionRiotAttacker>Coalition Riot Attacker</character.UnionRiotAttacker>
+  <character.QuickReactionForce>Coalition Riot Quick Reaction Force</character.QuickReactionForce>
+  <character.QuickReactionForce1>Coalition Riot Quick Reaction Force</character.QuickReactionForce1>
+  <!--ai-->
+  <charactername.tsm_outpost_combat_npc_mission>T.S.M Soldier</charactername.tsm_outpost_combat_npc_mission>
+  <charactername.tsm_adventists_prisoner>Adventist Prisoner</charactername.tsm_adventists_prisoner>
+  <tsm.a1>Hello, I am the captain of Peregrine Falcon Squad, TerraSynergy Matrix. We're overwhelmed with tasks and can't handle everything, so we're hoping for some assistance with certain matters, and of course, we'll pay for it!</tsm.a1>
+  <tsm.a2>The situation in TerraSynergy Matrix is not great. We were about to head to Kyushu Armory, but then commissions came up here. What's your opinion about finishing them for us? </tsm.a2>
+  <tsm.a3>Hello, I am the liaison officer from EMBI. We have posted a few commissions; are you interested in any of them?</tsm.a3>
+  <tsm.a4>Europa is vast, we love it in its immensity; time is long, we love it in its brevity; our lives are eager and fiery, deserving of living slowly, and also deserving of sudden death. This is a world where departure is common, but sadly, we're not good at goodbyes. Thus, before setting sail, the most important thing is to first be brave, then honest, and finally, believe in the existence of miracles! And, never forget each other...</tsm.a4>
+  <tsm.a4>I still have precious memories of Earth in my mind. The azure sky with gleaming stars, how beautiful the world was...</tsm.a4>
+  <tsm.a4>What is more important than wealth and glory in Europa is trust. Sailor, can I trust you?</tsm.a4>
+  <tsm.a4>Hi sailor, have you seen captain Eagle recently? No, I'm just asking. I think I left a toy duck in his locker before I realized it was stuffed with UEX...</tsm.a4>
+  <tsm.a4>Human beings are distinguished from animals because they have not only animal instincts but also free will and absolute spirituality. Do you want to live like a human or an animal, sailor?</tsm.a4>
+  <tsm.a5>What? You say you want to buy some slaves for your ship? Sorry, this is no longer a slave market. Slavery has been banned, so now we call it a talent market.</tsm.a5>
+  <tsm.a5>The 'summer' I spent with them was cruel indeed, so many people I'll never see again...</tsm.a5>
+  <tsm.a5>What paranormal event? Don't give me that nonsense about ghosts and goblins; the engine's tail flame can melt all ignorance and superstition.</tsm.a5>
+  <tsm.a5>We are now walking the path our predecessors have trodden. For them in another dimension, these are history, but for us, they are experiences.</tsm.a5>
+  <tsm.a6>Don't negate all the meetings and companionships just because everything ends in death and departure.</tsm.a6>
+  <tsm.a7>Hello I Kuiteman, I've sent the recent commissions to your terminal, thanks for your cooperation.</tsm.a7>
+  <tsm.a71>I guess you are kuiteman pig!</tsm.a71>
+  <tsm.a72>O.o</tsm.a72>
+  <tsm.a8>Hey, dude, welcome to our outpost. We've been having some trouble lately, can I ask you a favor?</tsm.a8>
+  <tsm.a81>Though he wears a clown mask, his flamboyant attire allows you to instantly recognize him as a bishop wanted by both the Coalition and TSM. Looking around, you decided to listen to what kind of favor he's going to ask.</tsm.a81>
+  <tsm.a82>I was heading to the next outpost, but the channel is blocked by TerraSynergy Matrix right now. I have something very important to do there, if... I mean, if you could help deal with them...</tsm.a82>
+  <tsm.a83>It would depend on how sincere you'd like to be.</tsm.a83>
+  <tsm.a84>Oh! My friend, I can be as sincere as you want me to be.</tsm.a84>
+  <tsm.a8a>You recognize him as a wanted man and handcuff him.</tsm.a8a>
+  <tsm.a8b>"You asshole, do you know where you are! This is not the territory of your The Seditionists of Mendacity! Somebody, somebody!" The bishop yells over, and everyone around you leans toward you with all kinds of weapons.</tsm.a8b>
+  <tsm.a8c>You have a bad feeling and are about to flee when an explosion goes off and the Coalition Riot Suppression Force invades from all over the place.</tsm.a8c>
+  <tsm.a8d>While you're still in a daze, you hear from a walkie-talkie, "Empty the room, leave no one alive!"</tsm.a8d>
+  <tsm.b8>Ignore him and leave.</tsm.b8>
+  <tsm.lq>Getting the job done</tsm.lq>
+  <tsm.dh>redemption item</tsm.dh>
+  <tsm.see>I'd better take another look.</tsm.see>
+  <tsm.wait>Come back later.</tsm.wait>
+  <tsm.wait1>Let me wait a little longer.</tsm.wait1>
+  <tsm.next>Welcome to the next one.</tsm.next>
+  <tsm.next1>Sorry about that, the price is still a bit high for you, come back next time.</tsm.next1>
+  <tsm.next2>You don't have enough money, should you take on some tasks to earn money?</tsm.next2>
+  <tsm.no.id>You don't have T.S.M Allied Identification Code on you. Please don't waste my time.</tsm.no.id>
+  <tsm.no.faction>You don't have enough reputation. Please don't waste my time.</tsm.no.faction>
+  <tsm.dh.faction.25>You have to have at least 25 reputation to be able to exchange supplies.给</tsm.dh.faction.25>
+  <tsm.jxg.help>Hello, I'm the Quartermaster of T.SM. How can I help you?</tsm.jxg.help>
+  <tsm.dh.yjsbm>Redeeming items with T.S.M Allied Identification Code</tsm.dh.yjsbm>
+  <tsm.dh.faction>Redeem items with T.S.M reputation</tsm.dh.faction>
+  <tsm.dh.vip>VIP service</tsm.dh.vip>
+  <tsm.dh.vip.js>When your reputation reaches a certain level, we will assign professional bodyguards to provide you with a full range of personal security protection services.</tsm.dh.vip.js>
+  <tsm.dh.vip.60.success>Greetings to our valued customers! You have become our valued VIP customer, we will provide special security protection for you, PiFu will follow you, for your safety and rights and interests.</tsm.dh.vip.60.success>
+  <tsm.dh.vip.60.failure> channel has been blocked by TerraSynergy Matrix. Please return immediately or we will expel you by force!m.dh.vip.60.failure&gt;Dear Customer, Hello! After checking your reputation value, it has not yet reached 60, failing to meet the standard of VIP service. We deeply regret this and thank you for your understanding and support!</tsm.dh.vip.60.failure>
+  <tsm.dh.vip.success>Respectfully, PiFu are already on your crew list</tsm.dh.vip.success>
+  <tsm.dh.vip.rd.success>PiFu:Hello, sir. It's an honor to serve you!</tsm.dh.vip.rd.success>
+  <tsm.over>Please put your belongings away.</tsm.over>
+  <tsm.dh.xh1>Because of the current chaos of war between various forces, the situation is very unpromising, so for the time being, we can only exchange these</tsm.dh.xh1>
+  <tsm.dh.xh2>Fair price, fair and square</tsm.dh.xh2>
+  <tsm.dh.xbz>Welcome to T.S.M Supply Beacon Station. How may I help you?</tsm.dh.xbz>
+  <tsm.dh.kw>Redemption of mineral supplies</tsm.dh.kw>
+  <tsm.dh.yl>Redemption of medical supplies</tsm.dh.yl>
+  <tsm.dh.dy>Redemption of ammunition supplies</tsm.dh.dy>
+  <tsm.dh.hw>Redemption of escort services</tsm.dh.hw>
+  <!--test:航道封锁-->
+  <tsm.warming1.1>This channel has been blocked by T.S.M. Please return immediately or we will expel you by force!</tsm.warming1.1>
+  <tsm.warming1.2>Last warning! Please return to your flight immediately!</tsm.warming1.2>
+  <!--test:站点入侵-->
+  <tsm.outpost_invasions.1>You see a man sneaking around, so you go up to see what he's up to.</tsm.outpost_invasions.1>
+  <tsm.outpost_invasions.cancel>Ignore him and walk away.</tsm.outpost_invasions.cancel>
+  <tsm.outpost_invasions.1.1>What are you doing?” You're putting your hand on his shoulder as you talk.</tsm.outpost_invasions.1.1>
+  <tsm.outpost_invasions.1.2>“Don't run!” You hadn't taken two steps in pursuit when the station began to sound an alarm</tsm.outpost_invasions.1.2>
+  <tsm.outpost_invasions.1.3>T.S.M:\n has detected an invasion by unknown forces and has now activated the T-71 defense protocols, with the entire site in lockdown. All citizens are requested to remain calm and proceed immediately to the nearest safe haven. The Sunset Combat Department will be launching a full-scale cleanup operation against the invaders, so please refrain from acting without authorization and wait patiently for the situation to recover.</tsm.outpost_invasions.1.3>
+  <!--test:mission-->
+  <tsm_fire_water_1>You feel extraordinarily hot outside the submarine, and before long you're sweating profusely, reaching out to touch the outer shell only to be scalded and retract your hand...looks like there's something out there that's making the water boil? \n I guess I'll have to put on my wetsuit soon</tsm_fire_water_1>
+  <charactername.TSMnpc_1>Lang</charactername.TSMnpc_1>
+  <charactername.TSMnpc_2>Youmu</charactername.TSMnpc_2>
+  <charactername.TSMnpc_3>EMBI Liaison Officer</charactername.TSMnpc_3>
+  <charactername.TSMnpc_4>Tom Suger</charactername.TSMnpc_4>
+  <charactername.TSMnpc_5>Lerentine</charactername.TSMnpc_5>
+  <charactername.TSMnpc_6>Qijiang</charactername.TSMnpc_6>
+  <charactername.TSMnpc_7>Kuiteman</charactername.TSMnpc_7>
+  <charactername.TSMnpc_8>The Bishop</charactername.TSMnpc_8>
+  <charactername.tsmnpc_lin>Lin He Yin</charactername.tsmnpc_lin>
+  <entityname.mvdxe>Witch's Jaw</entityname.mvdxe>
+  <entitydescription.mvdxe>A proof of your victory over her.</entitydescription.mvdxe>
+  <entityname.lldyj>T037's Eye</entityname.lldyj>
+  <entitydescription.lldyj>A proof of your victory over her.</entitydescription.lldyj>
+  <entityname.hyddx>009's Poison Gland</entityname.hyddx>
+  <entitydescription.hyddx>A proof of your victory over her.</entitydescription.hyddx>
+  <entityname.ddbm>T044's Organ</entityname.ddbm>
+  <entitydescription.ddbm>A proof of your victory over her.</entitydescription.ddbm>
+  <entityname.AlbinismSpineling>Albino Spineling's Spike</entityname.AlbinismSpineling>
+  <entitydescription.AlbinismSpineling>Can be used to construct railgun shells or deconstructed into steel.</entitydescription.AlbinismSpineling>
+  <entityname.tsm_soundplayer>Music Player</entityname.tsm_soundplayer>
+  <entitydescription.tsm_soundplayer>Plays audio tapes obtained from creatures or purchased at outposts.</entitydescription.tsm_soundplayer>
+  <entityname.AlbinismSpineling_shell>Albino Spineling Canister Shell</entityname.AlbinismSpineling_shell>
+  <entitydescription.AlbinismSpineling_shell>Can be reloaded.</entitydescription.AlbinismSpineling_shell>
+  <entityname.tsmmissions_flashlight>Tactical Flashlight</entityname.tsmmissions_flashlight>
+  <entitydescription.tsmmissions_flashlight>Flashlight, but better.</entitydescription.tsmmissions_flashlight>
+  <entityname.tsmmissions_laser>Laser Pointer</entityname.tsmmissions_laser>
+  <entitydescription.tsmmissions_laser />
+  <entityname.tsm_advancedcomsuit>Military Advanced Protective Suit</entityname.tsm_advancedcomsuit>
+  <entitydescription.tsm_advancedcomsuit>Low-oxygen alarm was damaged in combat.</entitydescription.tsm_advancedcomsuit>
+  <entityname.tsm_riotcontrolsuit>Riot Control Suit</entityname.tsm_riotcontrolsuit>
+  <entitydescription.tsm_riotcontrolsuit>Low-oxygen alarm was damaged in combat.</entitydescription.tsm_riotcontrolsuit>
+  <entityname.tsm_hdlcsuits>Heavy-Duty Cast Lead Diving Suit</entityname.tsm_hdlcsuits>
+  <entitydescription.tsm_hdlcsuits>Low-oxygen alarm was damaged in combat.</entitydescription.tsm_hdlcsuits>
+  <entityname.tsm_advancedcombat_helmet_thermalgoggles>Advanced Combat Helmet (Thermal Imaging)</entityname.tsm_advancedcombat_helmet_thermalgoggles>
+  <entitydescription.tsm_advancedcombat_helmet_thermalgoggles />
+  <entityname.tsm_advancedcombat_helmet_mask>Advanced Combat Helmet (Riot Mask)</entityname.tsm_advancedcombat_helmet_mask>
+  <entitydescription.tsm_advancedcombat_helmet_mask />
+  <entityname.tsm_Coalitioncontingents_helmet>Coalition Contingent Helmet</entityname.tsm_Coalitioncontingents_helmet>
+  <entitydescription.tsm_Coalitioncontingents_helmet />
+  <entityname.tsm_Coalitioncontingents_vest>Coalition Contingent Body Armor</entityname.tsm_Coalitioncontingents_vest>
+  <entitydescription.tsm_Coalitioncontingents_vest />
+  <entityname.tsm_Coalitioncontingents_uniform>Coalition Contingent Combat Uniform</entityname.tsm_Coalitioncontingents_uniform>
+  <entitydescription.tsm_Coalitioncontingents_uniform />
+  <entityname.tsm_old>Old Combat Uniform</entityname.tsm_old>
+  <entitydescription.tsm_old />
+  <entityname.tsm_orangeconstant_o1>Damaged Orange-Volatile Suit</entityname.tsm_orangeconstant_o1>
+  <entitydescription.tsm_orangeconstant_o1>This suit was damaged in combat, with many functions disabled.</entitydescription.tsm_orangeconstant_o1>
+  <entityname.tsm_orangeconstant_o2>Damaged Orange-Volatile Suit</entityname.tsm_orangeconstant_o2>
+  <entitydescription.tsm_orangeconstant_o1>This suit was damaged in combat, with many functions disabled.</entitydescription.tsm_orangeconstant_o1>
+  <entityname.tsm_orangeconstant_o3>Damaged Orange-Volatile Suit</entityname.tsm_orangeconstant_o3>
+  <entitydescription.tsm_orangeconstant_o3>This suit was damaged in combat, with many functions disabled.</entitydescription.tsm_orangeconstant_o3>
+  <subcategory.tsmmissions>T.S.M. MISSIONS - TerraSynergy Matrix</subcategory.tsmmissions>
+  <missionname.tsmmission1>The Watch of T.S.M</missionname.tsmmission1>
+  <missiondescription.tsmmission1>T.S.M is fighting against the Beast at frontline position in Area 73 of The Aphotic Plateau and currently has no time left to protect the area, but the Beast is approaching and T.S.M promises a [reward] mk to anyone who kills the beast.</missiondescription.tsmmission1>
+  <missionsuccess.tsmmission1>Target confirmed and terminated.</missionsuccess.tsmmission1>
+  <missionheader0.tsmmission1>People expect good news from you</missionheader0.tsmmission1>
+  <missionmessage0.tsmmission1>T.S.M is looking forward to collaborating with you next time.</missionmessage0.tsmmission1>
+  <missionsonarlabel.tsmmission1>target</missionsonarlabel.tsmmission1>
+  <missionname.tsmmission2>Eclipse</missionname.tsmmission2>
+  <missiondescription.tsmmission2>T.S.M is fighting in frontline Area 73 and has no time to worry about the safety of this area, but T.S.M guarantees a [reward] mk to the captain who kills these beasts.</missiondescription.tsmmission2>
+  <missionsuccess.tsmmission2>Congratulations, you made it!</missionsuccess.tsmmission2>
+  <missionheader0.tsmmission2>Third Contact of Eclipse</missionheader0.tsmmission2>
+  <missionmessage0.tsmmission2>What a bright performance!</missionmessage0.tsmmission2>
+  <missionsonarlabel.tsmmission2>target</missionsonarlabel.tsmmission2>
+  <missionname.tsmmission3>The Deepest Nightmares</missionname.tsmmission3>
+  <missiondescription.tsmmission3>!!! Emergency !!! T.S.M frontline observatory found some giant beasts quickly approaching this area, but the Sunset special-op assault squad is out on a mission, they cannot rush back in time. T.S.M is calling for heroic captains to stop disaster from happening and promising that the captain who can return alive will be rewarded with [reward] mk.</missiondescription.tsmmission3>
+  <missionsuccess.tsmmission3>We've brought down the gods.</missionsuccess.tsmmission3>
+  <missionheader0.tsmmission3>The Deepest Nightmares</missionheader0.tsmmission3>
+  <missionmessage0.tsmmission3>It's incredible, you really made it, worthy of a legendary captain!</missionmessage0.tsmmission3>
+  <missionsonarlabel.tsmmission3>Nightmares</missionsonarlabel.tsmmission3>
+  <missionname.tsmmission4>Here comes Latcher~</missionname.tsmmission4>
+  <missiondescription.tsmmission4>T.S.M observed a group of Latchers coming towards this area, and we promised a reward of [reward] mk to the captain who repelled them.</missiondescription.tsmmission4>
+  <missionsuccess.tsmmission4>We break the latch.</missionsuccess.tsmmission4>
+  <missionheader0.tsmmission4>Shocks that did not occur</missionheader0.tsmmission4>
+  <missionmessage0.tsmmission4>Well done, you have defended the area once again, captain.</missionmessage0.tsmmission4>
+  <missionsonarlabel.tsmmission4>Latcher</missionsonarlabel.tsmmission4>
+  <missionname.tsmmission5>EMBI Experimental Biology Body</missionname.tsmmission5>
+  <missiondescription.tsmmission5>Europa Magic Biotechnology Inc.(EMBI) donated a batch of modified mystical creatures to East Asia-Heavy Industry (EA-HI) , but EA-HI failed to contain them during testing, we had previously sent Sunset special-op assault squad over to suppress them, but lost the message after contact with the experiments, please be advised Captain, this is not ordinary bunch of giant spinelings! Please be very careful!</missiondescription.tsmmission5>
+  <missionsuccess.tsmmission5>This mission must be kept secret or the EA-HI will face a hefty fine.</missionsuccess.tsmmission5>
+  <missionheader0.tsmmission5>Containment Breach</missionheader0.tsmmission5>
+  <missionmessage0.tsmmission5>Shh! Silence, please!</missionmessage0.tsmmission5>
+  <missionsonarlabel.tsmmission5>Experiment.1</missionsonarlabel.tsmmission5>
+  <missionname.tsmmission6>Moloch Wave</missionname.tsmmission6>
+  <missiondescription.tsmmission6>We have heard a swarm of Moloch attacking traveling ships between [location1] and [location2]. This area is not under the jurisdiction of T.S.M, but for humanitarian reasons we promise to give [reward]mk to the captain that clears this bunch of creatures.</missiondescription.tsmmission6>
+  <missionsuccess.tsmmission6>The Moloch swarm has been eradicated.</missionsuccess.tsmmission6>
+  <missionheader0.tsmmission6>Great purge completed.</missionheader0.tsmmission6>
+  <missionmessage0.tsmmission6>All monsters have been eliminated,navigate back now.</missionmessage0.tsmmission6>
+  <missionsonarlabel.tsmmission6>Moloch</missionsonarlabel.tsmmission6>
+  <missionname.tsmmission7>Storms converge, lift me to the clouds</missionname.tsmmission7>
+  <missiondescription.tsmmission7>A large bunch of Hammerheads have threatened the safety of the passage between [location1] and [location2]. This Hammerhead sharknado has swept through many stations, and some people in the area have already been worshipping them as gods. So please, Captain, fire out and destroy them!</missiondescription.tsmmission7>
+  <missionsuccess.tsmmission7>Their altars are erased by me.</missionsuccess.tsmmission7>
+  <missionheader0.tsmmission7>cannot withstand a single blow</missionheader0.tsmmission7>
+  <missionmessage0.tsmmission7>The fall of the old gods, the rise of the new ones.</missionmessage0.tsmmission7>
+  <missionsonarlabel.tsmmission7>Storms</missionsonarlabel.tsmmission7>
+  <missionname.tsmmission8>Worm‘s World Party</missionname.tsmmission8>
+  <missiondescription.tsmmission8>We have detected several large worms approaching the area and expecting to reach this station in 5 hours, Captain please repel them or we will all be buried in the cold currents.</missiondescription.tsmmission8>
+  <missionsuccess.tsmmission8>Target down, please return to the station ASAP.</missionsuccess.tsmmission8>
+  <missionheader0.tsmmission8>Worm Terminator</missionheader0.tsmmission8>
+  <missionmessage0.tsmmission8>We are no longer afraid of the worms!</missionmessage0.tsmmission8>
+  <missionsonarlabel.tsmmission8>Worms</missionsonarlabel.tsmmission8>
+  <missionname.tsmmission9>Endwhale Wave</missionname.tsmmission9>
+  <missiondescription.tsmmission9>Did you know that there is a profession called 'whaler' back on Earth, and there is also such a profession in Europa, but the whale is absolutely different. Well sailor, head to the target area and eradicate all cetacean creatures.</missiondescription.tsmmission9>
+  <missionsuccess.tsmmission9>The End for Endwhale.</missionsuccess.tsmmission9>
+  <missionheader0.tsmmission9>Whaler</missionheader0.tsmmission9>
+  <missionmessage0.tsmmission9>Congratulations, you have become a certified whaler!</missionmessage0.tsmmission9>
+  <missionsonarlabel.tsmmission9>Endwhale</missionsonarlabel.tsmmission9>
+  <missionname.tsmmission10>Dreadnought Fleet</missionname.tsmmission10>
+  <missiondescription.tsmmission10>Not long ago, a Coalition dreadnought fleet fell in the region, but according to the information gathered, they are still 'alive', now the task is to ensure that they are really dead. Please note that it better be a ultra-mobile operation.</missiondescription.tsmmission10>
+  <missionsuccess.tsmmission10>Now that's called ultra-mobile operation.</missionsuccess.tsmmission10>
+  <missionheader0.tsmmission10>Dreadnought? Deadnought!</missionheader0.tsmmission10>
+  <missionmessage0.tsmmission10>The real dreadnought fleet should sink in the ship cemetry.</missionmessage0.tsmmission10>
+  <missionsonarlabel.tsmmission10>Dreadnought</missionsonarlabel.tsmmission10>
+  <missionname.tsmmission18>The Living Dead</missionname.tsmmission18>
+  <missiondescription.tsmmission18>This station suddenly lost contact some time ago. Before that there had been a special shipment to this station, investigation shows it was some special eggs, so your task is to clean up this station of all living things and clean up all the eggs.</missiondescription.tsmmission18>
+  <missionsuccess.tsmmission18>The station has been cleared, leave the follow-up to T.S.M.</missionsuccess.tsmmission18>
+  <missionheader0.tsmmission18>Tartarus</missionheader0.tsmmission18>
+  <missionmessage0.tsmmission18>T.S.M found the information of this shipment, but please give us some time to decrypt the data and we will find the person behind this.</missionmessage0.tsmmission18>
+  <missionsonarlabel.tsmmission18>Unknown Life Form</missionsonarlabel.tsmmission18>
+  <missionname.tsmmission19>Raging Waves</missionname.tsmmission19>
+  <missiondescription.tsmmission19>We drove away the hammerheads some time ago, but the area has not been peaceful for long, soon a new group of natives continue to dominate this channel, so this time we can not just drive them away, but to make them an example for others. I have to remind you may need to prepare some more anaparalyzant and calyxanide. Destroy this group of natives! We will give you a generous reward.</missiondescription.tsmmission19>
+  <missionsuccess.tsmmission19>Blood on our hands is not yet cold.</missionsuccess.tsmmission19>
+  <missionheader0.tsmmission19>Another soul perished because of us.</missionheader0.tsmmission19>
+  <missionmessage0.tsmmission19>This channel will finally be peaceful for a while.</missionmessage0.tsmmission19>
+  <missionsonarlabel.tsmmission19>Swordhead Shark Swarm</missionsonarlabel.tsmmission19>
+  <missionname.tsmmission20>EMBI Experiments 1</missionname.tsmmission20>
+  <missiondescription.tsmmission20>Europa Magic Biotechnology Inc.(EMBI) has issued a challenge, their new experimental subject is ready for use and they are recruiting brave crew members to test the strength of the new subject, then they will record the data during the battle. If someone survived to come back, they will provide a generous bonus.</missiondescription.tsmmission20>
+  <missionsuccess.tsmmission20>"Gods are mourning! Let me hear... Who is crying----"</missionsuccess.tsmmission20>
+  <missionheader0.tsmmission20>Death knell</missionheader0.tsmmission20>
+  <missionmessage0.tsmmission20>The death knell had been rung, it's a salute to the opening door to another world.</missionmessage0.tsmmission20>
+  <missionsonarlabel.tsmmission20>New Experimental Subjects</missionsonarlabel.tsmmission20>
+  <missionname.tsmmission22>Micro Warfare</missionname.tsmmission22>
+  <missiondescription.tsmmission22>Hey, hey, guess what. We used a micro weapon to shrink some latcher, and since they got too small, they all got away, so the captain has to get to them quickly!</missiondescription.tsmmission22>
+  <missionsuccess.tsmmission22>Interesting experiments</missionsuccess.tsmmission22>
+  <missionheader0.tsmmission22>No turning back</missionheader0.tsmmission22>
+  <missionmessage0.tsmmission22>Will we tire of slaying endless beasts that hunt them</missionmessage0.tsmmission22>
+  <missionsonarlabel.tsmmission22>Small latcher</missionsonarlabel.tsmmission22>
+  <laser>Laser Pointer</laser>
+  <character.embi_009>Experiment 009: Plague</character.embi_009>
+  <character.embi_t037a>T-037A: Thunder Dragon</character.embi_t037a>
+  <character.embi_001>Experiment 001</character.embi_001>
+  <character.embi_003>Experiment 003</character.embi_003>
+  <character.Experiment009_bug>Toxic Exploder</character.Experiment009_bug>
+  <character.tsm_husk_pucs>Living Cadaver</character.tsm_husk_pucs>
+  <character.tsm_husk_arm>Living Cadaver</character.tsm_husk_arm>
+  <character.tsm_beast>Behemoth</character.tsm_beast>
+  <character.tsm_portalguardian_cave>Cave Cleaner</character.tsm_portalguardian_cave>
+  <character.tsm_Guardianrepairbot>Repairer</character.tsm_Guardianrepairbot>
+  <character.tsm_portalguardian>Elite Guradian</character.tsm_portalguardian>
+  <character.boneeater>Bone Eater</character.boneeater>
+  <character.humaneyi>Plague Body</character.humaneyi>
+  <character.eyivariant>Mutant</character.eyivariant>
+  <character.tsm_tyrant>Tyrant</character.tsm_tyrant>
+  <character.skinbreaker>Skin Breaker</character.skinbreaker>
+  <character.eyibug>Bloodworm</character.eyibug>
+  <character.eyihugger>Embracer</character.eyihugger>
+  <character.AlbinismMoloch>Flesh Carrier</character.AlbinismMoloch>
+  <character.eyinovariant>Predator</character.eyinovariant>
+  <character.eyichimeras>Eyi Chimeras</character.eyichimeras>
+  <character.eyirunner>Schizoid</character.eyirunner>
+  <character.pgc>Sea of Miracles Heavy Guard</character.pgc>
+  <character.adventists_heavy>Adventist Heavy Leader</character.adventists_heavy>
+  <character.adventists>Adventist Armed Soldier</character.adventists>
+  <character.Facility_security>Facility Security</character.Facility_security>
+  <character.Facility_security_heavy>Facility Heavy Security</character.Facility_security_heavy>
+  <character.Facility_security_outside>Facility Outer Security</character.Facility_security_outside>
+  <charactername.tsm_outpost_combat_npc_mission>Sea of Miracles Soldier</charactername.tsm_outpost_combat_npc_mission>
+  <charactername.tsm_adventists_prisoner>Captured Adventist Member</charactername.tsm_adventists_prisoner>
+  <entityname.tsm_mcrate_time1>Decaying Material</entityname.tsm_mcrate_time1>
+  <entitydescription.tsm_mcrate_time1>A box of decaying material with only ten minutes of shelf life.</entitydescription.tsm_mcrate_time1>
+  <entityname.tsm_mcrate_water1>Boxed Leather</entityname.tsm_mcrate_water1>
+  <entitydescription.tsm_mcrate_water1>A full box of high-quality leather. If it gets wet, it will be damaged. Be careful, most people can't afford to pay for this.</entitydescription.tsm_mcrate_water1>
+  <entityname.tsm_mcrate_shillok>Shirok's Treasure</entityname.tsm_mcrate_shillok>
+  <entitydescription.tsm_mcrate_shillok>It's said that this pouch could contain anything. Why not break it down and see what you get?</entitydescription.tsm_mcrate_shillok>
+  <faction.tsm>TerraSynergy Matrix</faction.tsm>
+  <faction.tsm.description>TerraSynergy Matrix Company has gradually evolved into a significant faction. With its wide-reaching influence and resources, the company's role has expanded beyond mere commercial operations, extending into the political and military realms of the deep-sea world, forming a powerful faction with a profound impact on deep-sea exploration and regional security.</faction.tsm.description>
+  <faction.tsm.shortdescription>Sea of Miracles is an outstanding multi-field enterprise. The company is renowned for its exceptional escort services, providing unparalleled safety guarantees, ensuring the safety of deep-sea explorers and merchant vessels.</faction.tsm.shortdescription>
+  <randomnews35>A new submarine is clearing threats from the waters of Europa. The Coalition has responded positively and hopes more teams will join in to make the channels safer.</randomnews35>
+  <randomnews36>Sea of Miracles has your back</randomnews36>
+  <locationchange.tsm_city.changeto.abandoned>Sea of Miracles's fortress city [previousname] has fallen.</locationchange.tsm_city.changeto.abandoned>
+  <locationchange.tsm_city.changeto.none>Sea of Miracles's fortress city [previousname] has relocated to a more suitable location.</locationchange.tsm_city.changeto.none>
+  <locationchange.none.changeto.tsm_city>Sea of Miracles discovered the ecological zone [previousname] and established a fortress city there.</locationchange.none.changeto.tsm_city>
+  <locationchange.abandoned.changeto.tsm_city>Sea of Miracles cleared the internal threats of [previousname] and established a city on this foundation.</locationchange.abandoned.changeto.tsm_city>
+  <eventtext.unlockpathgeneric.nomoney.tsm>“If you're not capable and not planning to pay the deposit, don't waste my precious nap time.”</eventtext.unlockpathgeneric.nomoney.tsm>
+  <eventtext.unlockpath.refusebribe.tsm>Thought better of it</eventtext.unlockpath.refusebribe.tsm>
+  <lockedpathtooltiptsmreputation>This passage has been sealed off by Sea of Miracles. If you want to continue, your reputation with ‖color:faction.tsm‖ Sea of Miracles must exceed [requiredreputation], and you must obtain the administrator's permission. You can view your current reputation in the info interface.\n\nCurrent Reputation: [currentreputation]</lockedpathtooltiptsmreputation>
+  <eventtext.unlockpathcoldcaverns.tsmc1>“You want to pass this checkpoint?”\nThe administrator looked up, his gaze sweeping through the fleet via the control panel's light screen, then skillfully operating the terminal,\n“Wait a moment, I need to verify your fleet's records.”\nA few seconds later\n“Welcome, Captain. After review, your reputation is sufficient. Permission to travel to the Europan Ridge has been granted. The authorization has been synced to your terminal.”\nHe paused, a hint of seriousness flashing in his eyes\n“But, the Europan Ridge is far more perilous than previous routes. Deep-sea currents, unknown creatures, and wrecked ships may threaten your safety at any moment. Captain, please stay calm and cautious.”</eventtext.unlockpathcoldcaverns.tsmc1>
+  <eventtext.unlockpathcoldcaverns.tsmc2>“You want to dive into deeper waters?”\nThe administrator smiled faintly, lightly touching the terminal, “Hold on a moment, I need to pull up your records.”\nA few seconds later, the data on the screen made the administrator frown, “Sorry, according to the current records, you haven't met the requirements to pass the blockade.”\n“But...” he paused, glancing from the terminal to you, with a slightly playful tone, “This is TerraSynergy Matrix, after all. In these waters, there are always exceptions. If you insist on heading deeper, we can make an exception—provided you pay a 2000mk deposit.”\nThe administrator leaned back in his chair, his gaze filled with a mix of anticipation and calculation, “Now, the decision is yours. What will you choose?”</eventtext.unlockpathcoldcaverns.tsmc2>
+  <eventtext.unlockpathcoldcaverns.tsmo1>2000MK, deal!</eventtext.unlockpathcoldcaverns.tsmo1>
+  <eventtext.unlockpathcoldcaverns.tsmo1.tsmc1>“Great! I like people with this kind of attitude. I'll let the folks at the blockade know; you just go ahead.”</eventtext.unlockpathcoldcaverns.tsmo1.tsmc1>
+  <eventtext.unlockpathcoldcaverns.tsmo1.nomoney>“No money? Well, then I can't help you. Your fleet's records don't look too promising. If you're broke, consider earning some cash through bounties.”</eventtext.unlockpathcoldcaverns.tsmo1.nomoney>
+  <eventtext.unlockpathcoldcaverns.tsmo2.tsmc1>“If you're not capable and not planning to pay the deposit, don't waste my precious rest time.”</eventtext.unlockpathcoldcaverns.tsmo2.tsmc1>
+  <eventtext.unlockpatheuropanridge.tsmc1>“You want to head to the Aphotic Plateau?”\n“Please hold on a second,” the administrator's fingers swiftly glided over the terminal.\nA moment later, the administrator smiled in satisfaction, “It seems you've been contributing a lot to the Ice Ridge. I'm pleased to announce—you now have access to the Aphotic Plateau.”\n“May you sail smoothly in those dark depths. Safe travels, Captain.”</eventtext.unlockpatheuropanridge.tsmc1>
+  <eventtext.unlockpatheuropanridge.tsmc2>“You want to enter the Aphotic Plateau?”\nThe administrator squinted, lightly tapping the terminal, and chuckled softly after a moment, “Judging by the records, this doesn't look too promising…”</eventtext.unlockpatheuropanridge.tsmc2>
+  <eventtext.unlockpatheuropanridge.tsmo1>“I understand, I understand, is 4500mk enough?”</eventtext.unlockpatheuropanridge.tsmo1>
+  <eventtext.unlockpatheuropanridge.tsmo1.tsmc1>“Your records aren't bad, but are you truly ready? This dangerous sea won't accept just anyone.”</eventtext.unlockpatheuropanridge.tsmo1.tsmc1>
+  <eventtext.unlockpatheuropanridge.tsmo1.nomoney>“Not enough money, huh? Well, we've recently posted some bounty missions, why not give them a shot?”</eventtext.unlockpatheuropanridge.tsmo1.nomoney>
+  <eventtext.unlockpatheuropanridge.tsmo2.tsmc1>“Whether you go or not, that's not for us to decide, it's up to you. After all, the Europa Ridge is a great place to live, isn't it?”</eventtext.unlockpatheuropanridge.tsmo2.tsmc1>
+  <eventtext.unlockpathaphoticplateau.tsmc1>“Ah, it's you! You're the star fleet everyone's been talking about, right? Your tales are all over Europa.”\n“Of course, of course, this means you've earned the right to traverse the Aphotic Plateau. You may now set sail for the Great Sea. Not many fleets have managed to make it there under the current circumstances.”\nThe administrator stood up and shook your hand, “I'll notify the checkpoint ahead to allow your passage into the Abyss. May you proceed safely through those unfathomable waters.”</eventtext.unlockpathaphoticplateau.tsmc1>
+  <eventtext.unlockpathaphoticplateau.tsmc2>“My apologies,”\nThe administrator sighed, a hint of helplessness in his expression, “I know it hasn't been easy for you to make it this far, you've overcome many obstacles. But we cannot risk letting an unqualified fleet venture into the Great Sea.”\nHe looked up, his tone softening slightly, “This is for your protection. I hope you understand, not everyone can handle the dangers lurking there.”</eventtext.unlockpathaphoticplateau.tsmc2>
+  <eventtext.unlockpathaphoticplateau.tsmo1>“What if we pay a 9K deposit?”</eventtext.unlockpathaphoticplateau.tsmo1>
+  <eventtext.unlockpathaphoticplateau.tsmo1.tsmc1>“According to our regulations, you can indeed pass,” he said slowly, his tone solemn.\n“But I must advise you to think carefully. The Great Sea is not a place to tread lightly.” He gazed at you, his voice low and full of meaning.\n“That sea holds endless unknowns and dangers, and not everyone returns from it. Please consider carefully.”</eventtext.unlockpathaphoticplateau.tsmo1.tsmc1>
+  <eventtext.unlockpathaphoticplateau.tsmo1.nomoney>“If you don't have enough money, don't push it. Besides, money isn't everything—stay alive first, then talk.”</eventtext.unlockpathaphoticplateau.tsmo1.nomoney>
+  <eventtext.unlockpathaphoticplateau.tsmo2.tsmc1>“As I said, there's no need to go overboard. The Aphotic Plateau are great, livable, and Sea of Miracles's headquarters are there. Why not buy an apartment and retire?”</eventtext.unlockpathaphoticplateau.tsmo2.tsmc1>
+  <eventtext.unlockpathgreatsea.tsmc1>The administrator saw you from afar and stood up, shaking your hand. “Look who it is! The famous star fleet! What can I do for you this time?”\nUpon hearing your request to travel to the Hydrothermal Wastes, the administrator's expression stiffened slightly. He was silent for a moment, then spoke in a slow, deliberate tone: “The number of creatures in the next area is abnormally high, and the currents stirred by geothermal activity will make navigation even more dangerous.” He looked at you, as if gauging your resolve. “Are you truly prepared?”\nHe straightened up and saluted you. “Then, please be careful—do not be careless.”</eventtext.unlockpathgreatsea.tsmc1>
+  <eventtext.unlockpathgreatsea.tsmc2>“So you want to enter the Hydrothermal Wasteland? Many fleets have tried, and many have gone missing. This is TerraSynergy Matrix's deposit system. If you're determined to go, take a look.”</eventtext.unlockpathgreatsea.tsmc2>
+  <eventtext.unlockpathgreatsea.tsmo1>“17000mk? No problem, I'll transfer the money shortly.”</eventtext.unlockpathgreatsea.tsmo1>
+  <eventtext.unlockpathgreatsea.tsmo1.tsmc1>“Don't rush. You can always reconsider. It's rare to see someone who's both earning money with their life and buying their way into danger. First time I've seen someone paying to die.”</eventtext.unlockpathgreatsea.tsmo1.tsmc1>
+  <eventtext.unlockpathgreatsea.tsmo1.nomoney>“Then don't go. You need both money and life to enjoy it. As long as you're alive, you'll always have money.”</eventtext.unlockpathgreatsea.tsmo1.nomoney>
+  <eventtext.unlockpathgreatsea.tsmo2.tsmc1>“Many could've stood where you are now, with the courage to press forward.”</eventtext.unlockpathgreatsea.tsmo2.tsmc1>
+  <npctitle.TSMnpc_1>Captain of Wolf Falcon Squad</npctitle.TSMnpc_1>
+  <npctitle.TSMnpc_2>Captain of Shadow-Stained Squad</npctitle.TSMnpc_2>
+  <npctitle.TSMnpc_4>Chief Instructor of Sea of Miracles</npctitle.TSMnpc_4>
+  <npctitle.TSMnpc_5>Acting Minister of Kyushu Operations Department</npctitle.TSMnpc_5>
+  <npctitle.TSMnpc_7>Bishop of the Adventist</npctitle.TSMnpc_7>
+  <npctitle.tsm_outpost_combat_npc>Sea of Miracles Sunset Operations Department</npctitle.tsm_outpost_combat_npc>
+  <npctitle.tsm_outpostmanager>Controller</npctitle.tsm_outpostmanager>
+  <npctitle.tsm_wz_ff>Quartermaster</npctitle.tsm_wz_ff>
+  <npctitle.tsm_caretakers>Route Manager</npctitle.tsm_caretakers>
+  <npctitle.tsm_wz_ff_xbz>Beacon Station Manager</npctitle.tsm_wz_ff_xbz>
+  <npctitle.tsm_bountyhunter>Sea of Miracles Bounty Task Distributor</npctitle.tsm_bountyhunter>
+  <npctitle.tsm_gendarmerie>Sea of Miracles Military Police</npctitle.tsm_gendarmerie>
+  <entityname.tsm_lighter>Old Lighter</entityname.tsm_lighter>
+  <entitydescription.tsm_lighter>Want to smoke a cigarette?</entitydescription.tsm_lighter>
+  <entityname.tsm_marlboro_cigar>Marlboro Cigarette</entityname.tsm_marlboro_cigar>
+  <entitydescription.tsm_marlboro_cigar>Man always remember love because of romantic only\nSlowly reduces mental stress, psychosis, and delirium poisoning</entitydescription.tsm_marlboro_cigar>
+  <entityname.tsm_marlboro_box>Pack of Marlboro</entityname.tsm_marlboro_box>
+  <entitydescription.tsm_marlboro_box>Smoking Marlboro gives you more masculinity\nContains 8 Marlboro cigarettes</entitydescription.tsm_marlboro_box>
+  <entityname.tsm_Chinese_cigar>Huazi Cigarette</entityname.tsm_Chinese_cigar>
+  <entitydescription.tsm_Chinese_cigar>Every puff of Huazi shows noble quality\nQuickly relieves mental stress and psychosis, and provides resistance to mental stress</entitydescription.tsm_Chinese_cigar>
+  <entityname.tsm_Chinesecigar_box>Pack of Huazi</entityname.tsm_Chinesecigar_box>
+  <entitydescription.tsm_Chinesecigar_box>Distinct character, elegant style, beauty of Huazi\nContains 6 Huazi cigarettes</entitydescription.tsm_Chinesecigar_box>
+  <entityname.tsm_universe_cigar>Cosmos Cigarette</entityname.tsm_universe_cigar>
+  <entitydescription.tsm_universe_cigar>The top choice for superhumans on Europa\nQuickly relieves mental stress and delirium poisoning</entitydescription.tsm_universe_cigar>
+  <entityname.tsm_universe_box>Pack of Cosmos</entityname.tsm_universe_box>
+  <entitydescription.tsm_universe_box>Smoke Cosmos, become a Europa person\nContains 6 Cosmos cigarettes</entitydescription.tsm_universe_box>
+  <entityname.tsm_eyi_relics>Plague Organism</entityname.tsm_eyi_relics>
+  <entitydescription.tsm_eyi_relics>A product not belonging to this world, might need an abnormal affairs containment box</entitydescription.tsm_eyi_relics>
+  <entityname.tsm_virusstage_inhibitory>Plague Type III Suppressant</entityname.tsm_virusstage_inhibitory>
+  <entitydescription.tsm_virusstage_inhibitory>Used to suppress the growth of flesh embryos and prevent them from entering the next stage, but it cannot fully cure</entitydescription.tsm_virusstage_inhibitory>
+  <entityname.tsm_virusstage_clear>Plague Potent Eliminator</entityname.tsm_virusstage_clear>
+  <entitydescription.tsm_virusstage_clear>Directly removes flesh embryos from the body, but causes physical harm.</entitydescription.tsm_virusstage_clear>
+  <entityname.tsm_virusstage_deep_inhibitory>Potent Plague Eliminator</entityname.tsm_virusstage_deep_inhibitory>
+  <entitydescription.tsm_virusstage_deep_inhibitory>Used for potent elimination of the plague (Flesh Embryo Stage 2), at the cost of significant bodily harm.</entitydescription.tsm_virusstage_deep_inhibitory>
+  <entityname.tsm_eyi_stabilise_reagent>Plague Norm</entityname.tsm_eyi_stabilise_reagent>
+  <entitydescription.tsm_eyi_stabilise_reagent>Stable state: Dormant inside your body, will accelerate transformation if injected with living plague\nA norm developed by Sea of Miracles to enhance the human body, with different effects at various stages</entitydescription.tsm_eyi_stabilise_reagent>
+  <entityname.tsm_eyi_stabilise_reagent_1>Plague Stability Enhancer</entityname.tsm_eyi_stabilise_reagent_1>
+  <entitydescription.tsm_eyi_stabilise_reagent_1>An enhancer from an unknown origin, its purpose to increase or decrease plague norm stability is unclear</entitydescription.tsm_eyi_stabilise_reagent_1>
+  <entityname.tsm_eyi_stabilise_reagent_2>Plague Stability Enhancer</entityname.tsm_eyi_stabilise_reagent_2>
+  <entitydescription.tsm_eyi_stabilise_reagent_2>An enhancer from an unknown origin, its purpose to increase or decrease plague norm stability is unclear</entitydescription.tsm_eyi_stabilise_reagent_2>
+  <entityname.tsm_eyi_stabilise_add_1>Plague Reinforcement Enhancer I</entityname.tsm_eyi_stabilise_add_1>
+  <entitydescription.tsm_eyi_stabilise_add_1>Stability enhancer, each use will‖color:255,110,0,255‖increase stability by 1‖color:end‖</entitydescription.tsm_eyi_stabilise_add_1>
+  <entityname.tsm_eyi_stabilise_add_2>Plague Reinforcement Enhancer II</entityname.tsm_eyi_stabilise_add_2>
+  <entitydescription.tsm_eyi_stabilise_add_2>Stability enhancer, each use will‖color:255,110,0,255‖increase stability by 2‖color:end‖</entitydescription.tsm_eyi_stabilise_add_2>
+  <entityname.tsm_eyi_stabilise_add_3>Plague Reinforcement Enhancer III</entityname.tsm_eyi_stabilise_add_3>
+  <entitydescription.tsm_eyi_stabilise_add_3>Stability enhancer, each use will‖color:255,110,0,255‖increase stability by 3‖color:end‖</entitydescription.tsm_eyi_stabilise_add_3>
+  <entityname.tsm_eyi_stabilise_add_4>Plague Reinforcement Enhancer IV</entityname.tsm_eyi_stabilise_add_4>
+  <entitydescription.tsm_eyi_stabilise_add_4>Stability enhancer, each use will‖color:255,110,0,255‖increase stability by 4‖color:end‖</entitydescription.tsm_eyi_stabilise_add_4>
+  <entityname.tsm_eyi_stabilise_diminish_1>Plague Weakening Enhancer I</entityname.tsm_eyi_stabilise_diminish_1>
+  <entitydescription.tsm_eyi_stabilise_diminish_1>Stability enhancer, each use will‖color:0,255,110,255‖decrease stability by 1‖color:end‖</entitydescription.tsm_eyi_stabilise_diminish_1>
+  <entityname.tsm_eyi_stabilise_diminish_2>Plague Weakening Enhancer II</entityname.tsm_eyi_stabilise_diminish_2>
+  <entitydescription.tsm_eyi_stabilise_diminish_2>Stability enhancer, each use will‖color:0,255,110,255‖decrease stability by 2‖color:end‖</entitydescription.tsm_eyi_stabilise_diminish_2>
+  <entityname.tsm_eyi_stabilise_diminish_3>Plague Weakening Enhancer III</entityname.tsm_eyi_stabilise_diminish_3>
+  <entitydescription.tsm_eyi_stabilise_diminish_3>Stability enhancer, each use will‖color:0,255,110,255‖decrease stability by 3‖color:end‖</entitydescription.tsm_eyi_stabilise_diminish_3>
+  <entityname.tsm_eyi_stabilise_diminish_4>Plague Weakening Enhancer IV</entityname.tsm_eyi_stabilise_diminish_4>
+  <entitydescription.tsm_eyi_stabilise_diminish_4>Stability enhancer, each use will‖color:0,255,110,255‖decrease stability by 4‖color:end‖</entitydescription.tsm_eyi_stabilise_diminish_4>
+  <entityname.tsm_walkman>This Night, No Dreams of Parting</entityname.tsm_walkman>
+  <entitydescription.tsm_walkman>A portable player, can play audio tapes obtained from bosses or purchased from the station.</entitydescription.tsm_walkman>
+  <entityname.tsm_suger>Sugar's Transmogrifier</entityname.tsm_suger>
+  <entitydescription.tsm_suger>Sugar's transmogrifier, can transform into Sugar's appearance</entitydescription.tsm_suger>
+  <entityname.suger_combat_uniform>Sugar's Combat Suit</entityname.suger_combat_uniform>
+  <entitydescription.suger_combat_uniform>Uses a durable bulletproof synthetic fiber to protect vulnerable areas, but heavily tailored for flexibility. Strangely, the outfit includes an old captain's jacket that looks oversized and worn, which, according to Sugar, symbolizes "responsibility and duty."</entitydescription.suger_combat_uniform>
+  <entityname.suger_clothes>Sugar's Hoodie</entityname.suger_clothes>
+  <entitydescription.suger_clothes>A hoodie that Sugar often wears while resting, light and comfortable</entitydescription.suger_clothes>
+  <entityname.Extra_hat_male_tsm>Chief Officer's Hat</entityname.Extra_hat_male_tsm>
+  <entitydescription.Extra_hat_male_tsm>The last piece of conscience, the last balance of order</entitydescription.Extra_hat_male_tsm>
+  <entityname.suger_boardingaxe>‖color:159,207,217,255‖'Suger's Battle Axe'‖color:end‖</entityname.suger_boardingaxe>
+  <entitydescription.suger_boardingaxe>‖color:159,207,217,255‖Swing towards the enemy, and also towards one's former self.‖color:end‖</entitydescription.suger_boardingaxe>
+  <entityname.tsmmissions_Icarus>‖color:159,207,217,255‖Hand Cannon Icarus‖color:end‖</entityname.tsmmissions_Icarus>
+  <entitydescription.tsmmissions_Icarus>‖color:159,207,217,255‖Suger's sidearm, a rotary pistol with integrated flashlight and grenade launcher, fires regular handcannon rounds. It was gifted by Commander Lerentine when Suger joined TSM, and has remained reliable through battles large and small. No one knows how a man of Suger's stature can single-handedly operate a pistol of this horrendously large caliber.\n\n“In mid-air, the wax of hypocrisy melted under the sun, and Icarus crashed into the sea”‖color:end‖</entitydescription.tsmmissions_Icarus>
+  <tsm.suger1>Hey, these are items you only see once per lifetime, although they are fakes...I mean, copies, but I really need mks to fix my drone Nancy, or I wouldn't think of selling it to you</tsm.suger1>
+  <tsm.dh.suger.hhq>400MK for Sugar's Transmogrifier</tsm.dh.suger.hhq>
+  <tsm.dh.suger.combatuniform>300MK for Sugar's Combat Suit</tsm.dh.suger.combatuniform>
+  <tsm.dh.suger.colthes>250MK for Sugar's Hoodie</tsm.dh.suger.colthes>
+  <tsm.dh.suger.aex>450MK for Sugar's Battle Axe</tsm.dh.suger.aex>
+  <tsm.dh.suger.handgun>2300MK for Handcannon Icarus</tsm.dh.suger.handgun>
+  <tsm.dh.suger.hat>150MK for Chief Officer's Hat</tsm.dh.suger.hat>
+  <tsm.dh.handgunammo>1000MK for 5 Handcannon Rounds</tsm.dh.handgunammo>
+  <tsm.dh.handgunammo.xh>Think before you shoot</tsm.dh.handgunammo.xh>
+  <entityname.tsm_grey_pupils>‖color:221,106,29,255‖Gray Eyes‖color:end‖</entityname.tsm_grey_pupils>
+  <entitydescription.tsm_grey_pupils>‖color:221,106,29,255‖Lerentine's sidearm, uses hand cannon rounds\nIt is said to be her squad leader's gun from when she was part of the Advanced Operations Department. During an ambush, the leader was shot and killed while saving her. She then took the gun, donned the leader's helmet, and gave the orders.\nShe became known as the "Child of Doom," Sea of Miracles's child, and your last savior when death looms over you.‖color:end‖</entitydescription.tsm_grey_pupils>
+  <entityname.tsm_common_uniform>Standard Uniform·Shirt</entityname.tsm_common_uniform>
+  <entitydescription.tsm_common_uniform>Standard issue uniform from Kyushu Operations Department, but the female version</entitydescription.tsm_common_uniform>
+  <entityname.tsm_lerentine>Lerentine's Transmogrifier</entityname.tsm_lerentine>
+  <entitydescription.tsm_lerentine>Lerentine's transmogrifier, can transform into Lerentine's appearance</entitydescription.tsm_lerentine>
+  <entityname.tsm_hat_officer>Officer's Cap</entityname.tsm_hat_officer>
+  <entitydescription.tsm_hat_officer>Hi officer</entitydescription.tsm_hat_officer>
+  <tsm.dh.lerentine.xh>Not many things, what do you need</tsm.dh.lerentine.xh>
+  <tsm.dh.lerentine.hhq>400MK for Lerentine's Transmogrifier</tsm.dh.lerentine.hhq>
+  <tsm.dh.lerentine.hhq.xh>Don't do bad things with it!</tsm.dh.lerentine.hhq.xh>
+  <tsm.dh.lerentine.colthes>300MK for Standard Uniform·Shirt</tsm.dh.lerentine.colthes>
+  <tsm.dh.lerentine.colthes.xh>Nine state standard uniform</tsm.dh.lerentine.colthes.xh>
+  <tsm.dh.lerentine.handgun>2600MK for Grey Eyes</tsm.dh.lerentine.handgun>
+  <tsm.dh.lerentine.handgun.xh>This gun has served me well for a long time, if you dare, take it with you</tsm.dh.lerentine.handgun.xh>
+  <tsm.dh.lerentine.hat>200MK for Officer's Cap</tsm.dh.lerentine.hat>
+  <tsm.dh.lerentine.hat.xh>Symbol of power</tsm.dh.lerentine.hat.xh>
+  <tsm.dh.lerentine.suit>350MK for Suit</tsm.dh.lerentine.suit>
+  <tsm.dh.lerentine.suit.xh>Looks great</tsm.dh.lerentine.suit.xh>
+  <entityname.tsmmissions_px18_pistols>‖color:150,0,0,255‖PX-18‖color:end‖</entityname.tsmmissions_px18_pistols>
+  <entitydescription.tsmmissions_px18_pistols>Uses a‖color:150,0,0,255‖9mm‖color:end‖pistol magazine</entitydescription.tsmmissions_px18_pistols>
+  <entityname.hxl_knife>‖color:150,0,0,255‖Illusion‖color:end‖</entityname.hxl_knife>
+  <entitydescription.hxl_knife>‖color:150,0,0,255‖A False Reality‖color:end‖</entitydescription.hxl_knife>
+  <entityname.tsm_hxl_unform>Clothes of Phantom Lang</entityname.tsm_hxl_unform>
+  <entitydescription.tsm_hxl_unform>Lang\nEntity under the Phantom</entitydescription.tsm_hxl_unform>
+  <entityname.tsm_headset_hxl>Lang Transmogrifier Device</entityname.tsm_headset_hxl>
+  <entityname.tsm_hxl>Lang Transmogrifier Device</entityname.tsm_hxl>
+  <entitydescription.tsm_hxl>Lang's Headphones, Can Morph Into Lang</entitydescription.tsm_hxl>
+  <entityname.tsmmissions_hx870>Disillusion 870</entityname.tsmmissions_hx870>
+  <entityname.tsm_hxl_unform_ai>Lang Uniform</entityname.tsm_hxl_unform_ai>
+  <tsm.hxl1>Hi, I am the arms department leader of T.S.M, Yu Lang, I should be giving bounties for passing captains.</tsm.hxl1>
+  <tsm.hxl.a1>You're......Phantom Lang?</tsm.hxl.a1>
+  <tsm.hxl2>Ah, yes, that is my nickname. You can call me by that.</tsm.hxl2>
+  <tsm.hxl.a2>No, I mean: I've seen people called "Phantom Lang"......</tsm.hxl.a2>
+  <tsm.hxl3>Oh, I know, those are my people, and they are issuing commands for me, but many have lost contact, as if they were missing...... if you see any of them, please let me know.</tsm.hxl3>
+  <tsm.hxl.a3>Oh, ok, what mission do you have?</tsm.hxl.a3>
+  <tsm.hxl4>Em...... the missions are on your display, please proceed with caution.\nAnd please, survive.</tsm.hxl4>
+  <tsm.hxl.a4>Oh, ok, what mission do you have?</tsm.hxl.a4>
+  <tsm.hxl.1>Hi, I am the arms department leader of T.S.M, Yu Lang, I am still trying to find my mission squad members</tsm.hxl.1>
+  <tsm.hxl.a1>Sorry for interrupting</tsm.hxl.a1>
+  <entityname.tsm_lin>Lin Heiyin Transmogrifier</entityname.tsm_lin>
+  <entitydescription.tsm_lin></entitydescription.tsm_lin>
+  <entityname.tsm_pucs_light>Lightweight Piezoelectric PUCS Exosuit</entityname.tsm_pucs_light>
+  <entitydescription.tsm_pucs_light>A PUCS diving suit modified by Lin Heiyin, replacing the alloy armor sections with lighter advanced composites. The weight reduction allows the wearer far greater agility without reducing protection, withstanding pressures down to 7,500 m. A Lin HeYin designed electro-shock active-defense system is built into the back and helmet, insert a battery to activate the piezoelectric defenses.</entitydescription.tsm_pucs_light>
+  <entityname.tsm_insulated_suit>Insulated Inner Suit</entityname.tsm_insulated_suit>
+  <entitydescription.tsm_insulated_suit>A one-piece skin-tight suit made of insulating rubber with grounding wires—Heiyin’s everyday essential for live-electrical work. Originally white, it was switched to black after Yan told her black is slimming. Lately, Heiyin’s appetite has been a bit way more excellent, so the faux muscle texture printed on the belly now looks really hilarious. Stare at her tummy and she’ll definitely come at you with a wrench.</entitydescription.tsm_insulated_suit>
+  <entityname.tsm_insulated_suit_ai>Insulated Inner Suit</entityname.tsm_insulated_suit_ai>
+  <entitydescription.tsm_insulated_suit_ai>A one-piece skin-tight suit made of insulating rubber with grounding wires—Heiyin’s everyday essential for live-electrical work. Originally white, it was switched to black after Yan told her black is slimming. Lately, Heiyin’s appetite has been a bit way more excellent, so the faux muscle texture printed on the belly now looks really hilarious. Stare at her tummy and she’ll definitely come at you with a wrench.</entitydescription.tsm_insulated_suit_ai>
+  <entityname.tsm_lin_tool>Piezoelectric Launcher</entityname.tsm_lin_tool>
+  <entitydescription.tsm_lin_tool>A multi-function tool Lin Heiyin poured tons of effort into. It welds, cuts, and also incorporates a prototype steam cannon and a fission sniper mode. Requires fuel rods and a battery to operate.（no ai use）</entitydescription.tsm_lin_tool>
+  <tsm_lin_t1>An anxious looking engineer stopped you./nHey！Was the submarine that just docked yours?？</tsm_lin_t1>
+  <tsm_lin_t2>I detected that T034 is active in the nearby waters. By coincidence, my submarine is under maintenance and can't move. Could you possibly help me out...</tsm_lin_t2>
+  <tsm_lin_t4>Please let me explain... After the 034 experimental accident, T037 has regained its sanity and is still in a weakened state. It still has some kind of device left by Dr. Lin Han on its body. If we can investigate it further, I think humanity will soon be able to conquer it... I know sailors don't like these empty promises, but I've already prepared the reward, and I'll provide you with insulating diving suits. Plzzzz.</tsm_lin_t4>
+  <tsm_lin_t5>That's right... He devoted his entire life to T037, tormenting himself in the process, and in the end, he was destroyed by it—both in life and in reputation. I just want to finish the journey he never completed.</tsm_lin_t5>
+  <tsm_lin_t6>I will send the insulating tech diving suits to the submarine's cargo hold before you set off. Remember to throw some flares or other luminous objects to distract it. Although it is in a weakened state now, do not let your guard down. Defeat T034, remove the suspicious device from it, and I will be waiting for your good news at the next station. I salute you.</tsm_lin_t6>
+  <tsm_lin_p1>Yes,what?</tsm_lin_p1>
+  <tsm_lin_p2>You mean T037?! No way, that thing almost wiped out all of humanity on Europa before. There's no way we're going to commit suicide for you!</tsm_lin_p2>
+  <tsm_lin_p3>Dr. Lin Han? Let me guess, you're his daughter, Lin Heyin?</tsm_lin_p3>
+  <tsm_lin_p4>Alright... You scientists, though always making mistakes, are the ones we have to rely on to lead human civilization forward. What should I do?</tsm_lin_p4>
+  <tsm_lin_t11>Congratulations! Did you manage to retrieve the suspicious device from T034?</tsm_lin_t11>
+  <tsm_lin_t12>It's a pity... But as long as you're safe, that's what matters. Well done, everyone.</tsm_lin_t12>
+  <tsm_lin_t13>He was just trying to communicate with T034 using a brain - computer interface, but an accident happened... Now there's an incredible hypothesis: Dr. Lin Han might still be alive. He accidentally uploaded part of his consciousness into T034's brain, but it's extremely unstable... How could a human possibly adapt to a giant beast's body? So both he and T034 are in great pain now.</tsm_lin_t13>
+  <tsm_lin_t14>This is just a hypothesis I deduced using a theoretical model. If this brain - computer interface port system can still be repaired and the operational logs inside can be retrieved, all the problems will be solved effortlessly... You've done me a great favor, and I can also lend a hand to your submarine. Leave the electrical work to me!</tsm_lin_t14>
+  <tsm_lin_t15>This is... the brain - computer interface port system, and it's actually been preserved!</tsm_lin_t15>
+  <tsm_lin_p11>It lost consciousness and sank into the abyss, and it was too deep. Our submarine hasn't regained its power yet. I'm sorry we didn't retrieve the device you needed.</tsm_lin_p11>
+  <tsm_lin_p12>Brain - computer interface? So the rumors are true? Dr. Lin Han connected his consciousness to T037 using a brain - computer interface, which caused T037 to go berserk and almost made the people of Europa regress to Crawlers.</tsm_lin_p12>
+  <tsm_lin_p13>This is madness! You should report this to the Coalition and the TerraSynergy Matrix. If it goes berserk again, many more people will die!</tsm_lin_p13>
+  <tsm_lin_p14>I got it!</tsm_lin_p14>
+  <tsm_lin_p15>You don't have it with you? Then I'll wait here for you. Please go and get it.</tsm_lin_p15>
+  <entityname.tsmmissions_TTI2011>‖color:100,0,0,255‖TTI2011‖color:end‖</entityname.tsmmissions_TTI2011>
+  <entitydescription.tsmmissions_TTI2011>The only heirloom left by her Father, uses‖color:100,0,0,255‖9mm‖color:end‖ pistol magazines.</entitydescription.tsmmissions_TTI2011>
+  <entityname.tsm_9_mag>Pistol Magazine (9mm)</entityname.tsm_9_mag>
+  <entitydescription.tsm_9_mag>Holds 18 rounds of 9mm ammunition</entitydescription.tsm_9_mag>
+  <entityname.tsm_identifier>T.S.M Allied Identification Code</entityname.tsm_identifier>
+  <entitydescription.tsm_identifier>A common identification code within TerraSynergy Matrix, which you can request various services from TerraSynergy Matrix logistics department</entitydescription.tsm_identifier>
+  <entityname.tsm_pgcflare>Guardian Landing Pod Indicator</entityname.tsm_pgcflare>
+  <entitydescription.tsm_pgcflare>'Remember the feeling of distress, call TerraSynergy Matrix'\n\nUsage: Throw it out and wait patiently. (Exists only in one round)</entitydescription.tsm_pgcflare>
+  <entityname.tsm_wz_cl_flare>Mineral Supply Drop Indicator</entityname.tsm_wz_cl_flare>
+  <entitydescription.tsm_wz_cl_flare>After being thrown, TerraSynergy Matrix will receive a signal and drop a supply pod based on the coordinates</entitydescription.tsm_wz_cl_flare>
+  <entityname.tsm_wz_yl_flare>Medical Supply Drop Indicator</entityname.tsm_wz_yl_flare>
+  <entitydescription.tsm_wz_yl_flare>After being thrown, TerraSynergy Matrix will receive a signal and drop a medical supply pod based on the coordinates</entitydescription.tsm_wz_yl_flare>
+  <entityname.tsm_mcrate_replenishment1>T.S.M Mineral Supply Box</entityname.tsm_mcrate_replenishment1>
+  <entitydescription.tsm_mcrate_replenishment1>A common supply box in TerraSynergy Matrix, which randomly yields various common minerals when dismantled\nThese have just been packed and sent from the mines; if you think it's little, I think it's little too</entitydescription.tsm_mcrate_replenishment1>
+  <entityname.tsm_mcrate_replenishment2>T.S.M Mineral Supply Box</entityname.tsm_mcrate_replenishment2>
+  <entitydescription.tsm_mcrate_replenishment2>A common supply box in TerraSynergy Matrix, which randomly yields various common minerals when dismantled\nThese have just been packed and sent from the mines; if you think it's little, I think it's little too</entitydescription.tsm_mcrate_replenishment2>
+  <entityname.tsm_mcrate_replenishment_med>T.S.M Medical Supply Box</entityname.tsm_mcrate_replenishment_med>
+  <entitydescription.tsm_mcrate_replenishment_med>A common medical supply box in TerraSynergy Matrix, which randomly yields various medical supplies when dismantled\nUrgent! Urgent! The brothers on the front line are still waiting for rescue!</entitydescription.tsm_mcrate_replenishment_med>
+  <entityname.tsm_suit_O5>Suit</entityname.tsm_suit_O5>
+  <entitydescription.tsm_suit_O5>Your second layer of skin, enveloping power and confidence</entitydescription.tsm_suit_O5>
+  <entityname.tsm_gendarmerie_uniforms>T.S.M Gendarmerie Uniform</entityname.tsm_gendarmerie_uniforms>
+  <entitydescription.tsm_gendarmerie_uniforms>The gendarmerie uniform of TerraSynergy Matrix, mainly maintains troop discipline and ensures the execution of orders</entitydescription.tsm_gendarmerie_uniforms>
+  <entityname.tsm_gendarmerie_hat>T.S.M Gendarmerie Hat</entityname.tsm_gendarmerie_hat>
+  <entitydescription.tsm_gendarmerie_hat />
+  <entityname.tsm_advancedcombatsuit>Damaged Military Advanced Protective Suit</entityname.tsm_advancedcombatsuit>
+  <entitydescription.tsm_advancedcombatsuit>Most of the external armor has been damaged, can only withstand water pressure of 5000 meters.</entitydescription.tsm_advancedcombatsuit>
+  <entityname.tsm_orangeconstant>Damaged Orange Wuchang Protective Suit</entityname.tsm_orangeconstant>
+  <entitydescription.tsm_orangeconstant>This protective suit was damaged in combat, many functions are disabled, and the pressure resistance is only 5000 meters</entitydescription.tsm_orangeconstant>
+  <entityname.tsm_rz_2a>Combat Outfit Type 2A</entityname.tsm_rz_2a>
+  <entitydescription.tsm_rz_2a>Unlike Type 2B, it does not come with a weapon, merely used as a full-body exoskeleton</entitydescription.tsm_rz_2a>
+  <entityname.lm_rapidreaction_helmet>Coalition Rapid Reaction Force Helmet</entityname.lm_rapidreaction_helmet>
+  <entitydescription.lm_rapidreaction_helmet />
+  <entityname.lm_rapidreaction_vest>Coalition Rapid Reaction Force Bulletproof Vest</entityname.lm_rapidreaction_vest>
+  <entitydescription.lm_rapidreaction_vest />
+  <entityname.lm_rapidreaction_uniform>Coalition Rapid Reaction Force Combat Suit</entityname.lm_rapidreaction_uniform>
+  <entitydescription.lm_rapidreaction_uniform />
+  <entityname.tsm_old_uniform>Old-fashioned Combat Suit</entityname.tsm_old_uniform>
+  <entitydescription.tsm_old_uniform />
+  <entityname.adventists_uniform>Leader's Robe of the Descending Faction</entityname.adventists_uniform>
+  <entitydescription.adventists_uniform />
+  <entityname.adventists_Wind_proof>Descending Faction Windbreaker Safety Jacket</entityname.adventists_Wind_proof>
+  <entitydescription.adventists_Wind_proof />
+  <entityname.tsm_rz_pirent_m>Combat Outfit Thief Type</entityname.tsm_rz_pirent_m>
+  <entitydescription.tsm_rz_pirent_m>Thieves, after attacking TerraSynergy Matrix cargo ship, acquired Combat Outfit Type 2A and modified it according to their own ideas</entitydescription.tsm_rz_pirent_m>
+  <entityname.tsm_fog>Fog</entityname.tsm_fog>
+  <entityname.tsm_slogan>Slogan of the T.S.M</entityname.tsm_slogan>
+  <entityname.tsm_mech>T.S.M Mecha Decoration</entityname.tsm_mech>
+  <entityname.tsm_bossitem>T.S.M Boss Drop Decoration</entityname.tsm_bossitem>
+  <entityname.tsm_eyi_ornamental>Evil Plague Flesh Decoration</entityname.tsm_eyi_ornamental>
+  <entityname.tsm_hf>Propaganda Banner</entityname.tsm_hf>
+  <talentname.tsm_ei_talent_test>Experimental Evil Plague Normal State</talentname.tsm_ei_talent_test>
+  <talentname.tsm_ei_talent_stabilise>Stable Evil Plague Normal State</talentname.tsm_ei_talent_stabilise>
+  <talentname.tsm_ei>Masterpiece</talentname.tsm_ei>
+  <talentname.tsm_all_ru>Pure Evil Plague State</talentname.tsm_all_ru>
+  <talentname.tsm_warlord>Warlord</talentname.tsm_warlord>
+  <talentname.tsm_specops>Spec Ops</talentname.tsm_specops>
+  <talentname.tsm_beatcop>Beat Cop</talentname.tsm_beatcop>
+  <talentname.tsm_bleeding_outpost_Sunset>Coagulant</talentname.tsm_bleeding_outpost_Sunset>
+  <talentname.suger_tail_handle>Sugar-tail Transmogrifier</talentname.suger_tail_handle>
+  <talentdescription.suger_tail_handle>When you wear the device, you will grow cat ears and a cat tail.</talentdescription.suger_tail_handle>
+  <talentname.tsm_ai_outpost>Stable Evil Plague Normal State of TerraSynergy Matrix</talentname.tsm_ai_outpost>
+  <talentdescription.tsm_ai_outpost>Alter part of the DNA sequence to make the body reject foreign parasites.</talentdescription.tsm_ai_outpost>
+  <talentname.tsm_eyi_instability>Unstable Evil Plague Anomaly State</talentname.tsm_eyi_instability>
+  <talentdescription.tsm_eyi_instability />
+  <afflictionname.tsm_ondeath>Dead Sea</afflictionname.tsm_ondeath>
+  <afflictiondescription.tsm_ondeath>What are you seeking?</afflictiondescription.tsm_ondeath>
+  <afflictioncauseofdeath.tsm_ondeath>What are you seeking?</afflictioncauseofdeath.tsm_ondeath>
+  <afflictioncauseofdeathself.tsm_ondeath>What are you seeking?</afflictioncauseofdeathself.tsm_ondeath>
+  <afflictionname.tsm_fire_water>Boiling Sea</afflictionname.tsm_fire_water>
+  <afflictiondescription.tsm_fire_water>Hot! Hot! This waterway is extremely hot, it almost feels like an oven inside the submarine, the water outside is boiling\nDuring this round, players' maximum health is reduced by 30%\nContacting water will cause continuous burns, different diving suit depths take different burn damage</afflictiondescription.tsm_fire_water>
+  <afflictionname.tsm_eyi_attack>Combat Evil Plague Normal State</afflictionname.tsm_eyi_attack>
+  <afflictiondescription.tsm_eyi_attack>The Evil Plague within you is in a stable state, continuously providing bonuses in combat.</afflictiondescription.tsm_eyi_attack>
+  <afflictionname.tsm_stress_resistance>Strong Will</afflictionname.tsm_stress_resistance>
+  <afflictiondescription.tsm_stress_resistance>Your will is very firm at this moment, able to withstand the torment of other things on your mind.</afflictiondescription.tsm_stress_resistance>
+  <afflictionname.tsm_stress>Mental Stress</afflictionname.tsm_stress>
+  <afflictiondescription.tsm_stress>You are currently feeling very tense and in pain.</afflictiondescription.tsm_stress>
+  <afflictioncauseofdeath.tsm_stress>Committed suicide.</afflictioncauseofdeath.tsm_stress>
+  <afflictioncauseofdeathself.tsm_stress>You committed suicide.</afflictioncauseofdeathself.tsm_stress>
+  <afflictionname.tsm_eyi_provocative>Flesh Information Pheromone</afflictionname.tsm_eyi_provocative>
+  <afflictiondescription.tsm_eyi_provocative>You have been bitten by a rotting corpse; now the lacerations and bite wounds you receive will increase, and enemies will be more likely to target you.</afflictiondescription.tsm_eyi_provocative>
+  <afflictionname.tsm_virusstage>Flesh Embryo</afflictionname.tsm_virusstage>
+  <afflictiondescription.tsm_virusstage>The Evil Plague virus is using your body as a breeding ground, forcibly altering the host's genes to match the Skin Breaker.</afflictiondescription.tsm_virusstage>
+  <afflictionname.tsm_virusstage_deep>Evil Plague</afflictionname.tsm_virusstage_deep>
+  <afflictiondescription.tsm_virusstage_deep>The host's genes have been altered; this situation is basically irreversible, and the body is undergoing changes.</afflictiondescription.tsm_virusstage_deep>
+  <afflictioncauseofdeath.tsm_virusstage_deep>I swim upstream, you are like in the center of the water.</afflictioncauseofdeath.tsm_virusstage_deep>
+  <afflictioncauseofdeathself.tsm_virusstage_deep>I swim upstream, you are like in the center of the water.</afflictioncauseofdeathself.tsm_virusstage_deep>
+  <afflictionname.tsmmission_eyi_bite>Insect Bite</afflictionname.tsmmission_eyi_bite>
+  <afflictiondescription.tsmmission_eyi_bite>You have been bitten by an Evil Plague bloodworm.</afflictiondescription.tsmmission_eyi_bite>
+  <afflictionname.tsmmission_monster_50>Broken Bones</afflictionname.tsmmission_monster_50>
+  <afflictiondescription.tsmmission_monster_50>You feel as if your bones have broken/n At this moment, the tearing and biting damage you suffer will increase.</afflictiondescription.tsmmission_monster_50>
+  <afflictionname.tsmmission_ai_mod_resistancefor>T.S.M Sunset Stable Evil Plague State</afflictionname.tsmmission_ai_mod_resistancefor>
+  <afflictiondescription.tsmmission_ai_mod_resistancefor>Alters part of the DNA sequence to make the body reject foreign parasites.</afflictiondescription.tsmmission_ai_mod_resistancefor>
+  <afflictionname.tsm_eyi_stable_state>Stable Evil Plague Normal State</afflictionname.tsm_eyi_stable_state>
+  <afflictiondescription.tsmmission_eyi_0_1>At this stage, you will be immune to water pressure, require no oxygen, increase maximum health by 30%, and will no longer become addicted to drugs. Burns will recover quickly, and you will rapidly heal from Flesh Embryos and Husk Infection.</afflictiondescription.tsmmission_eyi_0_1>
+  <afflictiondescription.tsmmission_eyi_1_4>At this stage, you will not need oxygen and will gain 30% swimming speed.</afflictiondescription.tsmmission_eyi_1_4>
+  <afflictiondescription.tsmmission_eyi_4_8>At this stage, you will gain immunity to all toxins.</afflictiondescription.tsmmission_eyi_4_8>
+  <afflictiondescription.tsmmission_eyi_8_16>At this stage, you will be immune to water pressure of 6213 meters and slowly heal from hypoxia.</afflictiondescription.tsmmission_eyi_8_16>
+  <afflictiondescription.tsmmission_eyi_16_22>At this stage, you will quickly heal from bleeding and blood loss.</afflictiondescription.tsmmission_eyi_16_22>
+  <afflictiondescription.tsmmission_eyi_22_28>At this stage, you will gain 30% physical damage resistance.</afflictiondescription.tsmmission_eyi_22_28>
+  <afflictiondescription.tsmmission_eyi_28_33>At this stage, you will gain a 10% attack speed increase for ranged weapons and reduce spread by 20%.</afflictiondescription.tsmmission_eyi_28_33>
+  <afflictiondescription.tsmmission_eyi_33_37>At this stage, you will gain 50% resistance to stuns and burns.</afflictiondescription.tsmmission_eyi_33_37>
+  <afflictiondescription.tsmmission_eyi_37_39>At this stage, you will slowly heal physical damage and burns.</afflictiondescription.tsmmission_eyi_37_39>
+  <afflictiondescription.tsmmission_eyi_39_42>At this stage, you will gain 50% resistance to Opioid poisoning, Withdrawal, Addiction, Alcohol poisoning, Psychosis, Husk Infection, as well as Acid Burns which will heal slowly.</afflictiondescription.tsmmission_eyi_39_42>
+  <afflictiondescription.tsmmission_eyi_42_44>At this stage, you will gain 25% attack power, 50% melee strike force, and 10% turret attack speed.</afflictiondescription.tsmmission_eyi_42_44>
+  <afflictiondescription.tsmmission_eyi_44_48>At this stage, you will have 55% bleeding resistance.</afflictiondescription.tsmmission_eyi_44_48>
+  <afflictiondescription.tsmmission_eyi_48_55>At this stage, you will be immune to water pressure of 5112 meters.</afflictiondescription.tsmmission_eyi_48_55>
+  <afflictiondescription.tsmmission_eyi_55_59>At this stage, all your skill levels will increase by 18, and repair speed will increase by 44%.</afflictiondescription.tsmmission_eyi_55_59>
+  <afflictiondescription.tsmmission_eyi_59_63>At this stage, you will gain 30% melee attack speed, 20% movement speed, and 40% stun resistance.</afflictiondescription.tsmmission_eyi_59_63>
+  <afflictiondescription.tsmmission_eyi_63_65>At this stage, you will gain 30% damage resistance and 30% maximum health.</afflictiondescription.tsmmission_eyi_63_65>
+  <afflictiondescription.tsmmission_eyi_65_69>At this stage, you will gain the ability to slowly heal from all toxins.</afflictiondescription.tsmmission_eyi_65_69>
+  <afflictiondescription.tsmmission_eyi_69_72>At this stage, you can recover from stun faster, increase attack power by 30% and ranged attack speed by 5%.</afflictiondescription.tsmmission_eyi_69_72>
+  <afflictiondescription.tsmmission_eyi_72_76>At this stage, you will never die.</afflictiondescription.tsmmission_eyi_72_76>
+  <afflictiondescription.tsmmission_eyi_76_83>At this stage, your item crafting speed will increase by 150%, and crafting level will increase by 2.</afflictiondescription.tsmmission_eyi_76_83>
+  <afflictiondescription.tsmmission_eyi_83_85>At this stage, you will be immune to water pressure of 6177 meters and will not need oxygen.</afflictiondescription.tsmmission_eyi_83_85>
+  <afflictiondescription.tsmmission_eyi_85_90>At this stage, you will gain 25% resistance to physical damage and burns, and gain 25% attack power.</afflictiondescription.tsmmission_eyi_85_90>
+  <afflictiondescription.tsmmission_eyi_90_95>At this stage, all healing effects on you will increase by 100%.</afflictiondescription.tsmmission_eyi_90_95>
+  <afflictiondescription.tsmmission_eyi_95_100>At this stage, part of your body's DNA sequence will change, beginning to reject foreign parasites.</afflictiondescription.tsmmission_eyi_95_100>
+  <afflictionname.tsm_zs>irradiate</afflictionname.tsm_zs>
+  <afflictiondescription.tsm_zs>You've been exposed to some kind of radiation for so long, your skin starts to burn.</afflictiondescription.tsm_zs>
+  <afflictioncauseofdeath.tsm_zs>lethal exposure</afflictioncauseofdeath.tsm_zs>
+  <afflictioncauseofdeathself.tsm_zs>lethal exposure</afflictioncauseofdeathself.tsm_zs>
+  <locationdescription.tsm_city>The largest city under TerraSynergy Matrix, bustling with people, with comprehensive facilities and services.</locationdescription.tsm_city>
+  <locationname.tsm_city>Sea of Miracles Fortress City</locationname.tsm_city>
+  <locationnameformat.tsm_city>[name] Station</locationnameformat.tsm_city>
+  <locationname.tsm_mine>Sea of Miracles Mining Station</locationname.tsm_mine>
+  <locationdescription.tsm_mine>A mineral mining site under TerraSynergy Matrix, where you can go deep into the mines to mine.</locationdescription.tsm_mine>
+  <locationnameformat.tsm_mine>[name] Station</locationnameformat.tsm_mine>
+  <locationname.tsm_military>Sea of Miracles Armed Division</locationname.tsm_military>
+  <locationdescription.tsm_military>A military stronghold under TerraSynergy Matrix.</locationdescription.tsm_military>
+  <locationnameformat.tsm_military>[name] Station</locationnameformat.tsm_military>
+  <locationname.tsm_city.0>Xige</locationname.tsm_city.0>
+  <locationname.tsm_city.1>Three Gods Hill</locationname.tsm_city.1>
+  <locationname.tsm_city.2>Huai Shuo</locationname.tsm_city.2>
+  <locationname.tsm_city.3>Yongan</locationname.tsm_city.3>
+  <locationname.tsm_city.4>Chang'an</locationname.tsm_city.4>
+  <locationname.tsm_city.5>Fu Ming</locationname.tsm_city.5>
+  <locationname.tsm_city.6>Huo Lu</locationname.tsm_city.6>
+  <loadingscreentip>Go try the Touhou Deep Sea Operation Team!</loadingscreentip>
+  <entityname.tsm_touhou>Linked Content - Touhou Deep Sea Operation Team</entityname.tsm_touhou>
+  <!-- OutpostEvents.xml -->
+  <tsm.tl1>Hello, I am the quartermaster of TerraSynergy Matrix. How may I assist you?</tsm.tl1>
+  <tsm.tl2>Exchange items with friendly identification codes.</tsm.tl2>
+  <tsm.tl3>Due to the current chaotic situation with the factions, the outlook is not good. For now, we can only offer these exchanges.</tsm.tl3>
+  <tsm.tl4>Exchange for mineral supplies.</tsm.tl4>
+  <tsm.tl5>Please take your items.</tsm.tl5>
+  <tsm.tl6>You don't have any friendly identification codes. Please don't waste my time.</tsm.tl6>
+  <tsm.tl7>Exchange for medical supplies.</tsm.tl7>
+  <tsm.tl8>Please take your items.</tsm.tl8>
+  <tsm.tl9>You don't have any friendly identification codes. Please don't waste my time.</tsm.tl9>
+  <tsm.tl10>Exchange for escort services.</tsm.tl10>
+  <tsm.tl11>Please take your items.</tsm.tl11>
+  <tsm.tl12>You don't have any friendly identification codes. Please don't waste my time.</tsm.tl12>
+  <tsm.tl13>I'll come back later.</tsm.tl13>
+  <tsm.tl14>I'll be waiting for your visit anytime.</tsm.tl14>
+  <tsm.tl15>Exchange items with Sea of Miracles reputation points.</tsm.tl15>
+  <tsm.tl16>You need to have over 25 reputation points to exchange for supplies.</tsm.tl16>
+  <tsm.tl17>Exchange for mineral supplies.</tsm.tl17>
+  <tsm.tl18>Please take your items.</tsm.tl18>
+  <tsm.tl19>You don't have enough reputation points. Please don't waste my time.</tsm.tl19>
+  <tsm.tl20>Exchange for medical supplies.</tsm.tl20>
+  <tsm.tl21>Please take your items.</tsm.tl21>
+  <tsm.tl22>You don't have enough reputation points. Please don't waste my time.</tsm.tl22>
+  <tsm.tl23>Exchange for escort services.</tsm.tl23>
+  <tsm.tl24>Please take your items.</tsm.tl24>
+  <tsm.tl25>You don't have enough reputation points. Please don't waste my time.</tsm.tl25>
+  <tsm.tl26>I'll come back later.</tsm.tl26>
+  <tsm.tl27>I'll be waiting for your visit anytime.</tsm.tl27>
+  <tsm.tl28>I'll come back later.</tsm.tl28>
+  <tsm.tl29>I'll be waiting for your visit anytime.</tsm.tl29>
+  <tsm.tl30>Welcome to TerraSynergy Matrix Supply Beacon Station. How may I assist you?</tsm.tl30>
+  <tsm.tl31>Exchange items with friendly identification codes.</tsm.tl31>
+  <tsm.tl32>Due to the current chaotic situation with the factions, the outlook is not good. For now, we can only offer these exchanges.</tsm.tl32>
+  <tsm.tl33>Exchange for mineral supplies.</tsm.tl33>
+  <tsm.tl34>Please take your items.</tsm.tl34>
+  <tsm.tl35>You don't have any friendly identification codes. Please don't waste my time.</tsm.tl35>
+  <tsm.tl36>Exchange for medical supplies.</tsm.tl36>
+  <tsm.tl37>Please take your items.</tsm.tl37>
+  <tsm.tl38>You don't have any friendly identification codes. Please don't waste my time.</tsm.tl38>
+  <tsm.tl39>Exchange for escort services.</tsm.tl39>
+  <tsm.tl40>Please take your items.</tsm.tl40>
+  <tsm.tl41>You don't have any friendly identification codes. Please don't waste my time.</tsm.tl41>
+  <tsm.tl42>I'll come back later.</tsm.tl42>
+  <tsm.tl43>I'll be waiting for your visit anytime.</tsm.tl43>
+  <tsm.tl44>Exchange items with TerraSynergy Matrix reputation points.</tsm.tl44>
+  <tsm.tl45>You need to have over 25 reputation points to exchange for supplies.</tsm.tl45>
+  <tsm.tl46>Exchange for mineral supplies.</tsm.tl46>
+  <tsm.tl47>Please take your items.</tsm.tl47>
+  <tsm.tl48>You don't have enough reputation points. Please don't waste my time.</tsm.tl48>
+  <tsm.tl49>Exchange for medical supplies.</tsm.tl49>
+  <tsm.tl50>Please take your items.</tsm.tl50>
+  <tsm.tl51>You don't have enough reputation points. Please don't waste my time.</tsm.tl51>
+  <tsm.tl52>Exchange for escort services.</tsm.tl52>
+  <tsm.tl53>Please take your items.</tsm.tl53>
+  <tsm.tl54>You don't have enough reputation points. Please don't waste my time.</tsm.tl54>
+  <tsm.tl55>I'll come back later.</tsm.tl55>
+  <tsm.tl56>I'll be waiting for your visit anytime.</tsm.tl56>
+  <tsm.tl57>I'll come back later.</tsm.tl57>
+  <tsm.tl58>I'll be waiting for your visit anytime.</tsm.tl58>
+  <tsm.tl59>Hello, I am Phantom Lang, the head of TerraSynergy Matrix Armory. I'm here to issue bounties from TerraSynergy Matrix to passing captains.</tsm.tl59>
+  <tsm.tl60>You are... Phantom Lang?</tsm.tl60>
+  <tsm.tl61>Ah, yes, that's my nickname. You can call me that too.</tsm.tl61>
+  <tsm.tl62>No, I mean: I've met someone called "Phantom Lang" before...</tsm.tl62>
+  <tsm.tl63>Oh, I know what you mean. Those were my people. They were issuing commands on my behalf, but many of them are now missing...gone without a trace. If you see them, please let me know.</tsm.tl63>
+  <tsm.tl64>Oh, I see. Alright, alright. So, what tasks do you have now?</tsm.tl64>
+  <tsm.tl65>Hmm... I've already sent the tasks to your panel. Please proceed with caution.\nAnd... try to stay alive.</tsm.tl65>
+  <tsm.tl66>This route is now under a blockade by TerraSynergy Matrix. Turn back immediately, or we will resort to forceful expulsion!</tsm.tl66>
+  <tsm.tl67>This is your final warning! Turn back now!</tsm.tl67>
+  <tsm.tl68>You see a man acting suspiciously, so you approach him to see what he's up to.</tsm.tl68>
+  <tsm.tl69>"What are you doing?" you say while putting a hand on his shoulder.</tsm.tl69>
+  <tsm.tl70>The man is clearly startled. After glancing at the device in his hand, he stares at you blankly. As soon as you realize what he's holding, he takes off running.</tsm.tl70>
+  <tsm.tl71>"Don't run!" Just as you start to chase after him, alarms begin blaring throughout the station.</tsm.tl71>
+  <tsm.tl72>T.S.M: \nUnknown hostile forces have been detected, T-71 defense protocol has been activated.\nThe entire station is now under lockdown. All civilians are urged to remain calm and proceed to the nearest safety shelter. The Sunset Operations Department will begin clearing out the intruders. Please refrain from taking any unauthorized actions and wait for the situation to stabilize.</tsm.tl72>
+  <!-- OutpostEvents_tsm.xml -->
+  <tsm.tl_p_1>Hello, I am Phantom Lang, the head of the Armed Forces of TerraSynergy Matrix. I am still searching for my missing team members.</tsm.tl_p_1>
+  <tsm.tl_p_2>Sorry to bother you.</tsm.tl_p_2>
+  <tsm.tl_p_3>I'm handling business, don't disturb me.</tsm.tl_p_3>
+  <tsm.tl_p_4>Exchange items</tsm.tl_p_4>
+  <tsm.tl_p_5>Fair prices, honest trade.</tsm.tl_p_5>
+  <tsm.tl_p_6>400 MK to exchange for Sugar's Transmogrifier</tsm.tl_p_6>
+  <tsm.tl_p_7>Hey, these are rare treasures, though they're all knock-offs... replicas. But I'm raising MK to repair my drone Nancy, otherwise, I wouldn't be willing to sell them to you.</tsm.tl_p_7>
+  <tsm.tl_p_8>300 MK to exchange for Sugar's Combat Suit</tsm.tl_p_8>
+  <tsm.tl_p_9>250 MK to exchange for Sugar's Hoodie</tsm.tl_p_9>
+  <tsm.tl_p_10>450 MK to exchange for Sugar's's Battle Axe</tsm.tl_p_10>
+  <tsm.tl_p_11>150 MK to exchange for Navy Officer's Large Hat</tsm.tl_p_11>
+  <tsm.tl_p_12>2300 MK to exchange for Icarus Hand Cannon</tsm.tl_p_12>
+  <tsm.tl_p_13>1000 MK to exchange for 6 Hand Cannon Bullets</tsm.tl_p_13>
+  <tsm.tl_p_14>Six bullets, enough to take down twelve people.</tsm.tl_p_14>
+  <tsm.tl_p_15>1800 MK to exchange for Medical Supplies</tsm.tl_p_15>
+  <tsm.tl_p_16>Special supplies from TerraSynergy Matrix.</tsm.tl_p_16>
+  <tsm.tl_p_17>Not much left, see what you need.</tsm.tl_p_17>
+  <tsm.tl_p_18>400 MK to exchange for Lerentine Transmogrifier</tsm.tl_p_18>
+  <tsm.tl_p_19>Don't use it for bad things!</tsm.tl_p_19>
+  <tsm.tl_p_20>300 MK to exchange for Women's Uniform</tsm.tl_p_20>
+  <tsm.tl_p_21>This is a women's uniform from Kyushu.</tsm.tl_p_21>
+  <tsm.tl_p_22>2600 MK to exchange for Grey Eye</tsm.tl_p_22>
+  <tsm.tl_p_23>This gun has been with me for a long time. If you're worthy, take it.</tsm.tl_p_23>
+  <tsm.tl_p_24>200 MK to exchange for Officer's Hat</tsm.tl_p_24>
+  <tsm.tl_p_25>A symbol of power.</tsm.tl_p_25>
+  <tsm.tl_p_26>350 MK to exchange for Suit</tsm.tl_p_26>
+  <tsm.tl_p_27>Looks nice.</tsm.tl_p_27>
+  <tsm.tl_p_28>Think carefully before pulling the trigger.</tsm.tl_p_28>
+  <tsm.tl_p_29>1500 MK to exchange for Supplies</tsm.tl_p_29>
+  <afflictionname.tsmmission_ai_stun>Stun Recovery</afflictionname.tsmmission_ai_stun>
+  <afflictionname.tsmmission_eyi_rev>Recovery</afflictionname.tsmmission_eyi_rev>
+  <afflictionname.tsmmission_eyi_defend>Damage Resistance</afflictionname.tsmmission_eyi_defend>
+  <afflictionname.tsm_eyi_instability>Unstable Plague Abnormal State</afflictionname.tsm_eyi_instability>
+  <entityname.tsm_blastshield_small>Round Shield</entityname.tsm_blastshield_small>
+  <entityname.tsm_blastshield_big>Square Shield</entityname.tsm_blastshield_big>
+  <entityname.tsmmission_handgun_b>Legacy</entityname.tsmmission_handgun_b>
+  <entityname.tsmmission_handgun_o>Legacy</entityname.tsmmission_handgun_o>
+  <entityname.tsmmission_assaultrifle_m>Assault Rifle</entityname.tsmmission_assaultrifle_m>
+  <entityname.tsmmission_hmg_m>Heavy Machine Gun</entityname.tsmmission_hmg_m>
+  <entityname.tsmmission_stunbaton_m>Special Electric Baton</entityname.tsmmission_stunbaton_m>
+  <entityname.tsmmissions_pqc_m>Wall Breaching Hammer</entityname.tsmmissions_pqc_m>
+  <entityname.tsmmissions_pmf_m>Door Breaching Axe</entityname.tsmmissions_pmf_m>
+  <entityname.tsm_facility_med_uniform>Facility Doctor Uniform</entityname.tsm_facility_med_uniform>
+  <entityname.tsm_facility_security_uniform_b>Facility Security Uniform</entityname.tsm_facility_security_uniform_b>
+  <entityname.tsm_facility_security_uniform_w>Facility Security Uniform</entityname.tsm_facility_security_uniform_w>
+  <entityname.tsm_facility_security_vest>Facility Security Bulletproof Vest</entityname.tsm_facility_security_vest>
+  <entityname.tsm_facility_security_vest_heavy>Facility Security Heavy Bulletproof Vest</entityname.tsm_facility_security_vest_heavy>
+  <entityname.tsm_facility_security_helmet_w>Facility Security Helmet</entityname.tsm_facility_security_helmet_w>
+  <entityname.tsm_facility_security_helmet_y>Facility Security Helmet</entityname.tsm_facility_security_helmet_y>
+  <entityname.tsm_peripheral_security_uniform>Facility Perimeter Security Uniform</entityname.tsm_peripheral_security_uniform>
+  <entityname.tsm_peripheral_security_vest>Facility Perimeter Security Bulletproof Vest</entityname.tsm_peripheral_security_vest>
+  <entityname.tsm_peripheral_security_helmet>Facility Perimeter Security Helmet</entityname.tsm_peripheral_security_helmet>
+  <entityname.tsmmissions_snow>Snowing</entityname.tsmmissions_snow>
+  <entityname.tsmmissions_rain>Raining</entityname.tsmmissions_rain>
+  <entityname.tsm_land_rs>Riot Squad Drop Pod</entityname.tsm_land_rs>
+  <entityname.tsm_land_mtf>Vanguard Unit Drop Pod</entityname.tsm_land_mtf>
+  <entityname.tsm_land_corrode>Corrosion Drop Pod</entityname.tsm_land_corrode>
+  <entityname.tsm_land_wz_cl>Supply Drop Pod</entityname.tsm_land_wz_cl>
+  <entityname.tsm_land_wz_yl>Medical Drop Pod</entityname.tsm_land_wz_yl>
+  <entityname.tsm_danger_box>Sea of Miracles Anomaly Containment Box</entityname.tsm_danger_box>
+  <entityname.tsm_eyi_trap>Rotting Body Clamp</entityname.tsm_eyi_trap>
+  <entityname.tsm_needletube_empty>Empty Syringe</entityname.tsm_needletube_empty>
+  <entityname.tsm_eyi_embryo>Flesh Embryo</entityname.tsm_eyi_embryo>
+  <entityname.tsm_eyi_glandular>Genetic Material</entityname.tsm_eyi_glandular>
+  <entityname.tsm_touhou_4>Hakurei Reimu</entityname.tsm_touhou_4>
+  <entityname.tsm_touhou_1>Touhou Flower Ornament</entityname.tsm_touhou_1>
+  <entityname.tsm_touhou_2>Touhou Flower Ornament</entityname.tsm_touhou_2>
+  <entityname.tsm_touhou_3>Touhou Flower Ornament</entityname.tsm_touhou_3>
+  <entityname.tsm_black_stain>Black Stain 1</entityname.tsm_black_stain>
+  <entityname.tsm_black_stain_1>Black Stain 2</entityname.tsm_black_stain_1>
+  <entityname.tsm_blood_big>Large Bloodstain</entityname.tsm_blood_big>
+  <entityname.tsm_stain_1>Stain 1</entityname.tsm_stain_1>
+  <entityname.tsm_stain_2>Stain 2</entityname.tsm_stain_2>
+  <entityname.tsm_blood_stain>Bloodstain</entityname.tsm_blood_stain>
+  <entityname.tsm_stain_sand>Sand Stain</entityname.tsm_stain_sand>
+  <entityname.tsm_blood_1>Blood Splatter 1</entityname.tsm_blood_1>
+  <entityname.tsm_blood_2>Blood Splatter 2</entityname.tsm_blood_2>
+  <entityname.tsm_blood_3>Blood Splatter 3</entityname.tsm_blood_3>
+  <entityname.tsm_blood_4>Blood Splatter 4</entityname.tsm_blood_4>
+  <entityname.tsm_paint_1>Paint Splatter 1</entityname.tsm_paint_1>
+  <entityname.tsm_paint_2>Paint Splatter 2</entityname.tsm_paint_2>
+  <entityname.tsm_paint_3>Paint Splatter 3</entityname.tsm_paint_3>
+  <entityname.tsm_paint_4>Paint Splatter 4</entityname.tsm_paint_4>
+  <entityname.tsm_rz1>Military Exosuit</entityname.tsm_rz1>
+  <entityname.tsm_rz2>Military Exosuit</entityname.tsm_rz2>
+  <entityname.tsm_rz3>Military Exosuit</entityname.tsm_rz3>
+  <entityname.tsm_mvdxe>Witch's Jaw</entityname.tsm_mvdxe>
+  <entityname.tsm_lldyj>Thunder Dragon's Eye</entityname.tsm_lldyj>
+  <entityname.tsm_hyddx>Plague Venom Gland</entityname.tsm_hyddx>
+  <entityname.tsm_ddbm>Wailing Earth</entityname.tsm_ddbm>
+  <entityname.tsm_eyi_ornamental1>Flesh Decoration</entityname.tsm_eyi_ornamental1>
+  <entityname.tsm_eyi_ornamental2>Flesh Decoration</entityname.tsm_eyi_ornamental2>
+  <entityname.tsm_eyi_ornamental3>Flesh Decoration</entityname.tsm_eyi_ornamental3>
+  <entityname.tsm_eyi_ornamental4>Flesh Decoration</entityname.tsm_eyi_ornamental4>
+  <entityname.tsm_eyi_ornamental5>Flesh Decoration</entityname.tsm_eyi_ornamental5>
+  <entityname.tsm_eyi_7229>Number</entityname.tsm_eyi_7229>
+  <entityname.tsm_eyi_deadbody1>Corpse</entityname.tsm_eyi_deadbody1>
+  <entityname.tsm_eyi_deadbody2>Corpse</entityname.tsm_eyi_deadbody2>
+  <entityname.tsm_hf_1>Banner</entityname.tsm_hf_1>
+  <entityname.tsm_hf_2>Banner</entityname.tsm_hf_2>
+  <entityname.tsm_eyi_statues_1>Plague Statue</entityname.tsm_eyi_statues_1>
+  <entityname.tsm_egg>Egg</entityname.tsm_egg>
+  <entityname.tsm_mission_egg>Beacon Base</entityname.tsm_mission_egg>
+  <entityname.tsm_mission_husk_box>Living Husk Box</entityname.tsm_mission_husk_box>
+  <entityname.tsm_ai_eyi_outpost_Sunset>Sea of Miracles Station Security Plague Injector</entityname.tsm_ai_eyi_outpost_Sunset>
+  <entityname.tsm_eyi_instability>Unstable Plague Abnormal Injector</entityname.tsm_eyi_instability>
+  <entityname.tsm_event_spawn_npc>Event Generator</entityname.tsm_event_spawn_npc>
+  <entityname.tsm_event_spawn_npc_tsm1>tsm1 Generator</entityname.tsm_event_spawn_npc_tsm1>
+  <entityname.tsm_event_spawn_npc_tsm2>tsm2 Generator</entityname.tsm_event_spawn_npc_tsm2>
+  <entityname.tsm_event_spawn_npc_tsm3>tsm3 Generator</entityname.tsm_event_spawn_npc_tsm3>
+  <entityname.tsm_event_spawn_npc_tsm4>tsm4 Generator</entityname.tsm_event_spawn_npc_tsm4>
+  <entityname.tsm_event_spawn_npc_tsm5>tsm5 Generator</entityname.tsm_event_spawn_npc_tsm5>
+  <entityname.tsm_event_spawn_npc_tsm6>tsm6 Generator</entityname.tsm_event_spawn_npc_tsm6>
+  <entityname.tsm_event_spawn_npc_quartermaster>Quartermaster Generator</entityname.tsm_event_spawn_npc_quartermaster>
+  <entityname.tsm_event_spawn_outpost_invasions_coalition>Station Invasion Generator</entityname.tsm_event_spawn_outpost_invasions_coalition>
+  <entityname.tsm_event_xbz_bg>Beacon Supply Generator</entityname.tsm_event_xbz_bg>
+  <entityname.tsm_event_outpost_enhance>Station Security Enhancement Generator</entityname.tsm_event_outpost_enhance>
+  <entityname.tsm_headset_lerentine>Lerentine Transmogrifier Device</entityname.tsm_headset_lerentine>
+  <entityname.tsm_lerentine_uniform>Lerentine Uniform</entityname.tsm_lerentine_uniform>
+  <entitydescription.tsm_lerentine_uniform></entitydescription.tsm_lerentine_uniform>
+  <entityname.tsm_headset_suger>Sugar Transmogrifier Device</entityname.tsm_headset_suger>
+  <entityname.tsm_suger_uniform>Sugar Combat Uniform</entityname.tsm_suger_uniform>
+  <entitydescription.tsm_suger_uniform></entitydescription.tsm_suger_uniform>
+  <entityname.猜疑链>Chain of Suspicion</entityname.猜疑链>
+  <entityname.降神典仪>Descent Ritual</entityname.降神典仪>
+  <entityname.腐败机械>Corrupt Machinery</entityname.腐败机械>
+  <entityname.sz>sand dream+砂塵の彼方へ…</entityname.sz>
+  <entityname.zszg>True Coffin</entityname.zszg>
+  <entityname.bjzc>Tragic City Eloreno</entityname.bjzc>
+  <entityname.kl1>Charon One</entityname.kl1>
+  <entityname.kl2>Charon Two</entityname.kl2>
+  <entityname.tsm_eyi_helmet>Plague Protection Helmet</entityname.tsm_eyi_helmet>
+  <entityname.tsm_eyi_suit>Plague Protection Suit</entityname.tsm_eyi_suit>
+  <afflictionname.tsm_virusstage_inhibitory>Virus Dormant Stage</afflictionname.tsm_virusstage_inhibitory>
+  <afflictionname.eyiinfection>Plague</afflictionname.eyiinfection>
+  <!--小提示-->
+  <loadingscreentip>Though the damage Test Subject 001 does is terrifying, but it is frail due to the nuclear mutations, try to use nukes for the upper hand! Kill them in one blow! ------suger security officer biology lecture-5</loadingscreentip>
+  <loadingscreentip>Careful! the torpedoes from Dreadnoughts take 30 seconds to self-destruct after the Dreadnought is eliminated------suger security officer biology lecture-6</loadingscreentip>
+  <loadingscreentip>After death, the Fractal Twins will relentlessly fire EMP attacks and eventually self-destruct! Reactors in the range could be detonated, keeping distance is a must.------suger security officer biology lecture-7</loadingscreentip>
+  <loadingscreentip>The Thunder and The Inferno could directly damage targets within submarines, challenging the EMBI proving grounds or the Triplet without preparation is suicide! Try to lead the targets away with flares, to buy time for repair or damage------suger security officer biology lecture-9</loadingscreentip>
+  <!-- trying to get monsters TL'd (doesnt work)-->
+  <character.巨型捕勾兽>Albino Latcher</character.巨型捕勾兽>
+  <character.剑头鲨>Swordhead Shark</character.剑头鲨>
+  <character.画皮剑头鲨>Swordhead Shark</character.画皮剑头鲨>
+  <character.极具摩洛克>Giant Moloch</character.极具摩洛克>
+  <character.魔女的下颚>The Witch</character.魔女的下颚>
+  <character.corruptionMachinery>Corrupt Machinery</character.corruptionMachinery>
+  <character.欧罗巴之心>Epicentrum</character.欧罗巴之心>
+  <character.末日巨鲸>Doomsday Whale</character.末日巨鲸>
+  <character.灭世巨鲸>Killer Whale</character.灭世巨鲸>
+  <character.死无对证>Undead Dreadnought</character.死无对证>
+  <character.埋骨>Gravekeeper</character.埋骨>
+  <character.祈鲸>Wailing Whale</character.祈鲸>
+  <character.结晶脊鲸>Crystal Whale</character.结晶脊鲸>
+  <character.毁灭>Sabotage</character.毁灭>
+  <character.破坏>Destruction</character.破坏>
+  <displayname.巨型捕勾兽>Albino Latcher</displayname.巨型捕勾兽>
+  <displayname.剑头鲨>Swordhead Shark</displayname.剑头鲨>
+  <displayname.画皮剑头鲨>Swordhead Shark</displayname.画皮剑头鲨>
+  <displayname.极具摩洛克>Giant Moloch</displayname.极具摩洛克>
+  <displayname.魔女的下颚>The Witch</displayname.魔女的下颚>
+  <displayname.CorruptionMachinery>Corrupt Machinery</displayname.CorruptionMachinery>
+  <displayname.欧罗巴之心>Epicentrum</displayname.欧罗巴之心>
+  <displayname.末日巨鲸>Doomsday Whale</displayname.末日巨鲸>
+  <displayname.灭世巨鲸>Killer Whale</displayname.灭世巨鲸>
+  <displayname.死无对证>Undead Dreadnought</displayname.死无对证>
+  <displayname.埋骨>Gravekeeper</displayname.埋骨>
+  <displayname.祈鲸>Wailing Whale</displayname.祈鲸>
+  <displayname.结晶脊鲸>Crystal Whale</displayname.结晶脊鲸>
+  <displayname.毁灭>Sabotage</displayname.毁灭>
+  <displayname.破坏>Destruction</displayname.破坏>
+  <!-- <character.Ship> 
+  <character.Ship1> 
+  <character.Ship2> 
+  <character.Ship> 
+  <character.Ship1> 
+  <character.Ship2> 
+  <character.Ship3>  -->
+  <!--奇迹之海堡垒都市-->
+  <locationname.tsm_city.0>怀朔</locationname.tsm_city.0>
+  <locationname.tsm_city.1>永安</locationname.tsm_city.1>
+  <locationname.tsm_city.2>抚冥</locationname.tsm_city.2>
+  <locationname.tsm_city.3>长安</locationname.tsm_city.3>
+  <locationname.tsm_city.4>英萃</locationname.tsm_city.4>
+  <locationname.tsm_city.5>普济</locationname.tsm_city.5>
+  <locationname.tsm_city.6>新上海</locationname.tsm_city.6>
+  <locationname.tsm_city.7>新成都</locationname.tsm_city.7>
+  <locationname.tsm_city.8>北极星</locationname.tsm_city.8>
+  <!--怪物掉落-->
+  <entityname.tsm_skypiercingdolphin_meat>Meat of Skypiercingdolphin</entityname.tsm_skypiercingdolphin_meat>
+  <entitydescription.tsm_skypiercingdolphin_meat>It tastes fresh and plump with a little cooking, leaving an unforgettable aftertaste. It can be called a delicacy like "golden minced meat and jade-like sliced fish", and can be sold at a good price at the outpost.</entitydescription.tsm_skypiercingdolphin_meat>
+  <entityname.tsm_skypiercingdolphin_headcone>Head Cone of Skypiercingdolphin</entityname.tsm_skypiercingdolphin_headcone>
+  <entitydescription.tsm_skypiercingdolphin_headcone>Skypiercingdolphin has evolved a rather hard head cone for self-defense, which is also very important for competing for habitats and attracting females. Its hardness is so high that no chef can handle it, and no one at the outpost wants it. But the security officer who first thought of installing it into the railgun loader is simply a genius.</entitydescription.tsm_skypiercingdolphin_headcone>
+  <entityname.tsm_skypiercingdolphin_sashimi>Skypiercingdolphin Sashimi</entityname.tsm_skypiercingdolphin_sashimi>
+  <entitydescription.tsm_skypiercingdolphin_sashimi>The refined meat marinated with yeastshroom is mouthwatering. It is best wrapped in waterproof oilcloth—even if the seawater temperature is very low, it will go bad if not eaten up, which is a waste of such a precious ingredient.</entitydescription.tsm_skypiercingdolphin_sashimi>
+  <entityname.tsm_eclipticshadow_blood>Azure Plasma</entityname.tsm_eclipticshadow_blood>
+  <entitydescription.tsm_eclipticshadow_blood>A precious plasma produced by Eclipticshadow, it emits faint fluorescence in the dark and is a valuable medicinal material that can be extracted using a medical processing table. Direct use is not recommended, as it may cause muscle paralysis.</entitydescription.tsm_eclipticshadow_blood>
+  <entityname.tsm_eclipticshadow_stabilozine>Azure Extracted Stabilozine</entityname.tsm_eclipticshadow_stabilozine>
+  <entitydescription.tsm_eclipticshadow_stabilozine>A concentrated component extracted from Eclipticshadow's blood, it has a very considerable detoxification effect, but improper use may cause paralysis.</entitydescription.tsm_eclipticshadow_stabilozine>
+  <entityname.tsm_eclipticshadow_water>Azure Mood Sparkling Water</entityname.tsm_eclipticshadow_water>
+  <entitydescription.tsm_eclipticshadow_water>"Let the dense bubbles bloom on the taste buds! Every sip is a spiritual yoga after sailing." The ingredient list later claims to contain 2% precious Eclipticshadow blood extract, but let's be real—everyone knows it's just all food additives and tricks.</entitydescription.tsm_eclipticshadow_water>
+</infotexts>

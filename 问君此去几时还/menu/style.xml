@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+  <style>
+    <MainMenuBackground color="255,255,255,255">
+      <Sprite texture="%ModDir%/menu/制裁行动.png" sourcerect="0,0,2160,1342" premultiplyalpha="false" />
+      <Sprite texture="%ModDir%/menu/冰面.png" sourcerect="0,0,2160,1427" premultiplyalpha="false" />
+      <Sprite texture="%ModDir%/menu/探寻.png" sourcerect="0,0,1920,1080" premultiplyalpha="false" />
+      <Sprite texture="%ModDir%/menu/恶疫.png" sourcerect="0,0,1920,1080" premultiplyalpha="false" />
+      <Sprite texture="%ModDir%/menu/三王登基.png" sourcerect="0,0,1972,1203" premultiplyalpha="false" />
+      <Sprite texture="%ModDir%/menu/堡垒都市.png" sourcerect="0,0,1920,1080" premultiplyalpha="false" />
+      <Sprite texture="%ModDir%/menu/地狱泅渡.png" sourcerect="0,0,1920,1080" premultiplyalpha="false" />
+      <Sprite texture="%ModDir%/menu/比眼泪更璀璨的瞬间.png" sourcerect="0,0,1920,1080" premultiplyalpha="false" />
+      <Sprite texture="%ModDir%/menu/破碎.png" sourcerect="0,0,2525,1603" premultiplyalpha="false" />
+      <Sprite texture="%ModDir%/menu/温迪戈.png" sourcerect="0,0,1920,1080" premultiplyalpha="false" />
+      <Sprite texture="%ModDir%/menu/你不是一个人在努力，林.png" sourcerect="0,0,1920,1080" premultiplyalpha="false" />
+      <!--Sprite texture="%ModDir%/menu/幻影里的假象.png" sourcerect="0,0,1976,1244" premultiplyalpha="false" /-->
+    </MainMenuBackground>
+    <MainMenuVignette color="255,255,255,255">
+      <Sprite name="MainMenuVignette" texture="%ModDir%/menu/MainMenuVignette.png" sourcerect="0,0,1752,2160" origin="0.5,0.5" />
+      <Sprite name="MainMenuVignette" texture="%ModDir%/menu/MainMenuVignette1.png" sourcerect="0,0,1752,2160" origin="0.5,0.5" />
+    </MainMenuVignette>
+    <TitleText color="255,255,255,255" hovercolor="255,255,255,255" selectedcolor="255,255,255,255" pressedcolor="255,255,255,255">
+      <Sprite texture="%ModDir%/menu/titleText.png" sourcerect="143,90,1011,422" tile="false" maintainaspectratio="true"></Sprite>
+    </TitleText>
+    <tsm_chris color="255,255,255,255" textcolor="0,0,0,255">
+      <Sprite name="tsm_chris" texture="%ModDir%/npc/chris/chris_jl.png" size="0.0, 0.0" sourcerect="0,0,1978,1088" origin="0.5,0.5" compress="false" tile="false" />
+    </tsm_chris>
+    <tsm_beowulf color="255,255,255,255" textcolor="0,0,0,255">
+      <Sprite name="tsm_beowulf" texture="%ModDir%/npc/chris/beowulf.png" size="0.0, 0.0" sourcerect="0,0,2028,1082" origin="0.5,0.5" compress="false" tile="false" />
+    </tsm_beowulf>
+    <tsm_chris_end color="255,255,255,255" textcolor="0,0,0,255">
+      <Sprite name="tsm_chris_end" texture="%ModDir%/npc/chris/chris_dead.png" size="0.0, 0.0" sourcerect="0,0,1941,1080" origin="0.5,0.5" compress="false" tile="false" />
+    </tsm_chris_end>
+    <tsm_yan_item1 color="255,255,255,255" textcolor="0,0,0,255">
+      <Sprite name="tsm_yan_item1" texture="%ModDir%/npc/yan/yan_item1.png" size="0.0, 0.0" sourcerect="110,15,799,664" origin="0.5,0.5" compress="false" tile="false" />
+    </tsm_yan_item1>
+    <tsm_yan_item2 color="255,255,255,255" textcolor="0,0,0,255">
+      <Sprite name="tsm_yan_item2" texture="%ModDir%/npc/yan/yan_item2.png" size="0.0, 0.0" sourcerect="110,15,799,664" origin="0.5,0.5" compress="false" tile="false" />
+    </tsm_yan_item2>
+    <tsm_yan_item4 color="255,255,255,255" textcolor="0,0,0,255">
+      <Sprite name="tsm_yan_item4" texture="%ModDir%/npc/yan/yan_item4.png" size="0.0, 0.0" sourcerect="110,15,799,664" origin="0.5,0.5" compress="false" tile="false" />
+    </tsm_yan_item4>
+    <tsm_yan_item3 color="255,255,255,255" textcolor="0,0,0,255">
+      <Sprite name="tsm_yan_item3" texture="%ModDir%/npc/yan/yan_item3.png" size="0.0, 0.0" sourcerect="195,27,1418,1191" origin="0.5,0.5" compress="false" tile="false" />
+    </tsm_yan_item3>
+    <tsm_yan_item5 color="255,255,255,255" textcolor="0,0,0,255">
+      <Sprite name="tsm_yan_item5" texture="%ModDir%/npc/yan/yan_item5.png" size="0.0, 0.0" sourcerect="195,27,1418,1191" origin="0.5,0.5" compress="false" tile="false" />
+    </tsm_yan_item5>
+    <tsm_yan_rz color="255,255,255,255" textcolor="0,0,0,255">
+      <Sprite name="tsm_yan_rz" texture="%ModDir%/npc/yan/yan_jl.png" size="0.0, 0.0" sourcerect="14,0,1565,889" origin="0.5,0.5" compress="false" tile="false" />
+    </tsm_yan_rz>
+    <tsm_yan_end color="255,255,255,255" textcolor="0,0,0,255">
+      <Sprite name="tsm_yan_end" texture="%ModDir%/npc/yan/yan_end.png" size="0.0, 0.0" sourcerect="45,1,1534,751" origin="0.5,0.5" compress="false" tile="false" />
+    </tsm_yan_end>
+    <tsm_yan_story color="255,255,255,255" textcolor="0,0,0,255">
+      <Sprite name="tsm_yan_story" texture="%ModDir%/npc/yan/yan_story.png" size="0.0, 0.0" sourcerect="0,0,0,0" origin="0.5,0.5" compress="false" tile="false" />
+    </tsm_yan_story>
+  </style>
+</Override>

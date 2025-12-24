@@ -1,0 +1,9 @@
+<contentpackage name="tsm personality test">
+  <NPCPersonalityTraits file="%ModDir%/tsm_personalities.xml" />
+  <NPCConversations file="%ModDir%/tsm_npcconversations_en.xml" />
+  <NPCConversations file="%ModDir%/tsm_npcconversations_zhcn.xml" />
+  <Text file="%ModDir%/text_en.xml" />
+  <Text file="%ModDir%/text_zhcn.xml" />
+  <NPCSets file="%ModDir%/npcexample.xml" />
+  <RandomEvents file="%ModDir%/debugevent.xml" />
+</contentpackage>

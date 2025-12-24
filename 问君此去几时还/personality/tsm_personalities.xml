@@ -1,0 +1,4 @@
+<PersonalityTraits>
+  <!-- 如果有none，就可以进行所有人通用的对话；否则只会进行有对应tag的对话 (Text文件中紧急情况等的报告不属于对话) -->
+  <PersonalityTrait identifier="tsm_npc" alloweddialogtags="tsm_conversation,none" commonness="0" />
+</PersonalityTraits>

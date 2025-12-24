@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+  <!--敌军火力-->
+  <Affliction name="战斗恶疫常态" identifier="tsm_eyi_combat" description="" type="eyi" isbuff="true" limbspecific="false" indicatorlimb="Torso" showiconthreshold="0" activationthreshold="0" showinhealthscannerthreshold="50" showicontoothersthreshold="1000" maxstrength="100">
+    <Effect minstrength="0" maxstrength="100" strengthchange="0">
+      <StatValue stattype="RangedAttackSpeed" value="0.05" />
+      <StatValue stattype="RangedSpreadReduction" value="0.2" />
+      <StatValue stattype="MeleeAttackMultiplier" value="0.8" />
+      <StatValue stattype="AttackMultiplier" value="0.25" />
+      <StatValue stattype="MovementSpeed" value="0.1" />
+      <StatusEffect target="Character">
+        <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.3" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="快反眩晕抗性" hideiconafterdelay="true" identifier="tsm_qrf_stun" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="stun" minresistance="0.00" maxresistance="0.75" minspeedmultiplier="1.0" maxspeedmultiplier="1"></Effect>
+  </Affliction>
+  <!--快反-->
+  <Affliction name="快反队长加成" hideiconafterdelay="true" identifier="tsm_qrf_jia_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,acidburn,triton_7L,tsm_bl" minresistance="0.00" maxresistance="0.4" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatValue stattype="MeleeAttackMultiplier" value="0.4" />
+      <StatValue stattype="RangedSpreadReduction" value="0.3" />
+      <StatValue stattype="MeleeAttackSpeed" value="0.3" />
+      <StatValue stattype="AttackMultiplier" value="0.3" />
+      <StatusEffect target="Character">
+        <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.25" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="快反精英加成" hideiconafterdelay="true" identifier="tsm_qrf_yi_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,acidburn,triton_7L,tsm_bl" minresistance="0.00" maxresistance="0.3" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatValue stattype="MeleeAttackMultiplier" value="0.35" />
+      <StatValue stattype="RangedSpreadReduction" value="0.3" />
+      <StatValue stattype="AttackMultiplier" value="0.2" />
+    </Effect>
+  </Affliction>
+  <Affliction name="快反普通加成" hideiconafterdelay="true" identifier="tsm_qrf_bing_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,acidburn,triton_7L,tsm_bl" minresistance="0.00" maxresistance="0.2" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatValue stattype="MeleeAttackMultiplier" value="0.35" />
+      <StatValue stattype="RangedSpreadReduction" value="0.3" />
+      <StatValue stattype="AttackMultiplier" value="0.2" />
+    </Effect>
+  </Affliction>
+  <!--贝奥武夫-->
+  <Affliction name="贝奥武夫队长加成" hideiconafterdelay="true" identifier="tsm_beowulf_jia_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,stun,acidburn" minresistance="0.00" maxresistance="0.4" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatValue stattype="MeleeAttackMultiplier" value="0.7" />
+      <StatValue stattype="MeleeAttackSpeed" value="0.1" />
+      <StatValue stattype="RangedAttackSpeed" value="0.15" />
+      <StatusEffect target="Character">
+        <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.3" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="贝奥武夫精英加成" hideiconafterdelay="true" identifier="tsm_beowulf_yi_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,acidburn" minresistance="0.00" maxresistance="0.3" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatValue stattype="MeleeAttackMultiplier" value="0.35" />
+      <StatValue stattype="RangedAttackSpeed" value="0.1" />
+      <StatusEffect target="Character">
+        <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.1" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="贝奥武夫普通加成" hideiconafterdelay="true" identifier="tsm_beowulf_bing_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,acidburn" minresistance="0.00" maxresistance="0.2" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatValue stattype="MeleeAttackMultiplier" value="0.35" />
+      <StatValue stattype="RangedAttackSpeed" value="0.05" />
+    </Effect>
+  </Affliction>
+  <Affliction name="贝奥武夫bgm" identifier="beowulf_bgm" type="tsm_bgm" limbspecific="false" indicatorlimb="Head" maxstrength="10" duration="50" showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="true">
+    <Effect minstrength="0" maxstrength="10" >
+      <StatusEffect target="Character">
+        <Sound file="%ModDir%/mission/phonkghost.ogg" dontmuffle="true" range="2000" stream="true" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <!--占领军-->
+  <Affliction name="占领军队长加成" hideiconafterdelay="true" identifier="tsm_occupation_jia_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,stun,bleeding,acidburn" minresistance="0.00" maxresistance="0.5" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatValue stattype="RangedSpreadReduction" value="0.3" />
+      <StatValue stattype="MeleeAttackMultiplier" value="0.9" />
+      <StatValue stattype="MeleeAttackSpeed" value="0.25" />
+      <StatValue stattype="AttackMultiplier" value="0.3" />
+      <StatValue stattype="RangedAttackSpeed" value="0.1" />
+      <StatusEffect target="Character">
+        <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.35" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="占领军精英加成" hideiconafterdelay="true" identifier="tsm_occupation_yi_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,stun,acidburn" minresistance="0.00" maxresistance="0.4" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatValue stattype="RangedSpreadReduction" value="0.25" />
+      <StatValue stattype="MeleeAttackMultiplier" value="0.6" />
+      <StatValue stattype="MeleeAttackSpeed" value="0.15" />
+      <StatValue stattype="AttackMultiplier" value="0.3" />
+      <StatusEffect target="Character">
+        <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.2" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="占领军普通加成" hideiconafterdelay="true" identifier="tsm_occupation_bing_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,acidburn" minresistance="0.00" maxresistance="0.3" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatValue stattype="MeleeAttackMultiplier" value="0.35" />
+      <StatValue stattype="AttackMultiplier" value="0.2" />
+    </Effect>
+  </Affliction>
+  <Affliction name="占领军bgm" identifier="occupation_bgm" type="tsm_bgm" limbspecific="false" indicatorlimb="Head" maxstrength="10" duration="50" showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="true">
+    <Effect minstrength="0" maxstrength="10" >
+      <StatusEffect target="Character">
+        <Sound file="%ModDir%/mission/Blood for the Blood.ogg" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <!--串扰-->
+  <Affliction name="串扰队长加成" hideiconafterdelay="true" identifier="tsm_crosstalk_jia_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,stun,acidburn" minresistance="0.00" maxresistance="0.4" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatValue stattype="AttackMultiplier" value="0.3" />
+      <StatValue stattype="RangedAttackSpeed" value="0.1" />
+    </Effect>
+  </Affliction>
+  <!--野火-->
+  <Affliction name="野火队长加成" hideiconafterdelay="true" identifier="tsm_yehuo_jia_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,stun,bleeding,acidburn" minresistance="0.00" maxresistance="0.5" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatValue stattype="MovementSpeed" value="0.3" />
+      <StatValue stattype="AttackMultiplier" value="0.3" />
+      <StatValue stattype="MeleeAttackSpeed" value="0.1" />
+      <StatValue stattype="MeleeAttackMultiplier" value="1.0" />
+      <StatValue stattype="RangedAttackSpeed" value="0.1" />
+      <StatusEffect target="Character">
+        <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.25" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="野火精英加成" hideiconafterdelay="true" identifier="tsm_yehuo_yi_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,bleeding,acidburn" minresistance="0.00" maxresistance="0.3" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatValue stattype="MovementSpeed" value="0.2" />
+      <StatValue stattype="MeleeAttackMultiplier" value="0.7" />
+      <StatValue stattype="AttackMultiplier" value="0.3" />
+      <StatusEffect target="Character">
+        <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.2" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="野火普通加成" hideiconafterdelay="true" identifier="tsm_yehuo_bing_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,bleeding,acidburn" minresistance="0.00" maxresistance="0.3" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatValue stattype="MovementSpeed" value="0.15" />
+      <StatValue stattype="AttackMultiplier" value="0.25" />
+      <StatusEffect target="Character">
+        <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.1" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="野火bgm" identifier="yehuo_bgm1" type="tsm_bgm" limbspecific="false" indicatorlimb="Head" maxstrength="10" duration="50" showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="true">
+    <Effect minstrength="0" maxstrength="10" >
+      <StatusEffect target="Character">
+        <Sound file="%ModDir%/mission/Allied Combat Uprising.ogg" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="野火bgm" identifier="yehuo_bgm2" type="tsm_bgm" limbspecific="false" indicatorlimb="Head" maxstrength="10" duration="50" showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="true">
+    <Effect minstrength="0" maxstrength="10" >
+      <StatusEffect target="Character">
+        <Sound file="%ModDir%/mission/Battleground of the Bear.ogg" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <!--突袭者-->
+  <Affliction name="突袭者队长加成" hideiconafterdelay="true" identifier="tsm_anonymous_jia_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,bleeding,acidburn" minresistance="0.00" maxresistance="0.4" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatValue stattype="MovementSpeed" value="0.4" />
+      <StatValue stattype="RangedAttackSpeed" value="0.1" />
+      <StatusEffect target="Character">
+        <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.3" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="突袭者精英加成" hideiconafterdelay="true" identifier="tsm_anonymous_yi_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,bleeding,acidburn" minresistance="0.00" maxresistance="0.3" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatValue stattype="MovementSpeed" value="0.25" />
+      <StatValue stattype="RangedAttackSpeed" value="0.05" />
+    </Effect>
+  </Affliction>
+  <!--咏叹调-->
+  <Affliction name="九州作战部加成" hideiconafterdelay="true" identifier="tsm_jz_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,stun,acidburn" minresistance="0.00" maxresistance="0.4" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatValue stattype="RangedAttackSpeed" value="0.3" />
+      <StatValue stattype="RangedSpreadReduction" value="0.4" />
+      <StatusEffect target="Character">
+        <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.3" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="先进作战部加成" hideiconafterdelay="true" identifier="tsm_advanced_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,bleeding,acidburn" minresistance="0.00" maxresistance="0.4" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatValue stattype="AttackMultiplier" value="0.3" />
+      <StatValue stattype="RangedSpreadReduction" value="0.2" />
+      <StatusEffect target="Character">
+        <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.3" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="普通加成" hideiconafterdelay="true" identifier="tsm_pt_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,bleeding,acidburn" minresistance="0.00" maxresistance="0.2" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatValue stattype="AttackMultiplier" value="0.2" />
+      <StatValue stattype="RangedAttackSpeed" value="0.05" />
+      <StatusEffect target="Character">
+        <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.3" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <!--猫科顾问-->
+  <Affliction name="顾问加成" hideiconafterdelay="true" identifier="tsm_ma_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,stun,acidburn" minresistance="0.00" maxresistance="0.5" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatValue stattype="RangedAttackSpeed" value="0.2" />
+      <StatValue stattype="RangedSpreadReduction" value="0.35" />
+      <StatValue stattype="AttackMultiplier" value="0.3" />
+      <StatusEffect target="Character">
+        <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.3" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="随行安保加成" hideiconafterdelay="true" identifier="tsm_sec_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="damage,burn,bleeding" minresistance="0.00" maxresistance="0.2" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatValue stattype="AttackMultiplier" value="0.3" />
+      <StatValue stattype="RangedSpreadReduction" value="0.2" />
+      <StatValue stattype="MeleeAttackMultiplier" value="1.0" />
+      <StatValue stattype="MeleeAttackSpeed" value="0.25" />
+      <StatusEffect target="Character">
+        <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.1" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="猫科bgm" identifier="cat_bgm" type="tsm_bgm" limbspecific="false" indicatorlimb="Head" maxstrength="10" duration="50" showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="true">
+    <Effect minstrength="0" maxstrength="10" >
+      <StatusEffect target="Character">
+        <Sound file="%ModDir%/mission/四面楚歌.ogg" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <!--牛仔对决-->
+  <Affliction name="午时已到" hideiconafterdelay="true" identifier="tsm_nz_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="10" strengthchange="0" resistancefor="burn,stun,acidburn" minresistance="0.00" maxresistance="0.5" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <!--StatValue stattype="RangedAttackSpeed" value="0.1" /-->
+      <StatValue stattype="RangedSpreadReduction" value="0.35" />
+      <StatValue stattype="AttackMultiplier" value="0.3" />
+      <StatusEffect target="Character">
+        <statvalue stattype="MedicalItemEffectivenessMultiplier" value="0.5" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <!--其他-->
+  <Affliction name="伤害抗性" identifier="tsm_eyi_defend" description="" isbuff="true" type="ai_buff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="15" strengthchange="0" resistancefor="damage,bleeding,burn,acidburn" minresistance="0.00" maxresistance="0.5" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatValue stattype="MovementSpeed" value="0.2" />
+    </Effect>
+  </Affliction>
+  <Affliction name="恢复" identifier="tsm_eyi_rev" description="" isbuff="true" type="ai_buff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="1">
+      <StatusEffect target="Character" interval="4" duration="2">
+        <ReduceAffliction type="bleeding" amount="5" />
+        <ReduceAffliction type="burn" amount="0.5" />
+        <ReduceAffliction type="bloodloss" amount="0.5" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="出血恢复" identifier="tsm_ai_bleeding" description="" isbuff="true" type="ai_buff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="1" interval="6" duration="3">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="bleeding" amount="5" />
+        <ReduceAffliction type="bloodloss" amount="0.5" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="眩晕恢复" identifier="tsm_ai_stun" description="" isbuff="true" type="ai_buff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.00" maxresistance="0.4" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatusEffect target="Character" interval="5" duration="5">
+        <ReduceAffliction type="stun" amount="0.55" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="眩晕恢复" identifier="tsm_ai_stun_2" description="" isbuff="true" type="ai_buff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="1">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="stun" amount="0.2" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="眩晕恢复" identifier="tsm_ai_stun_5" description="" isbuff="true" type="ai_buff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="1">
+      <StatusEffect target="Character" interval="5" duration="5">
+        <ReduceAffliction type="stun" amount="2.5" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="眩晕恢复" identifier="tsm_ai_stun_3" description="" isbuff="true" type="ai_buff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="40" showinhealthscannerthreshold="20" karmachangeonapplied="0" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="1">
+      <StatusEffect target="Character">
+        <ReduceAffliction type="stun" amount="0.35" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="船内增强" identifier="tsm_ai_combat_ship" type="talentbuff" isbuff="true" limbspecific="false" hideiconafterdelay="true" maxstrength="1" duration="1" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+    <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.3" maxresistance="0.3">
+      <StatValue stattype="RangedAttackSpeed" value="0.05" />
+      <StatValue stattype="RangedSpreadReduction" value="0.2" />
+      <StatValue stattype="MeleeAttackMultiplier" value="1" />
+      <StatValue stattype="AttackMultiplier" value="0.1" />
+      <StatValue stattype="Maximumhealthmultiplier" value="0.1" />
+    </Effect>
+    <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,3" sheetelementsize="128,128" />
+  </Affliction>
+  <Affliction name="ai防水压防窒息" identifier="tsm_ai_asphyxiating_pressure" type="ai_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="100" maxstrength="1">
+    <Effect minstrength="0" maxstrength="1" resistancefor="huskinfection,oxygenlow,incrementalstun,tsm_ai_grenade,tsm_ai_grenade_1" minresistance="1" maxresistance="1">
+      <AbilityFlag flagtype="ImmuneToPressure" />
+      <StatValue stattype="TeamAttackMultiplier" value="-0.5" />
+      <StatusEffect target="Character" usehulloxygen="false" needsair="false" setvalue="true">
+        <ReduceAffliction identifier="huskinfection" amount="50" />
+        <ReduceAffliction identifier="oxygenlow" strength="100" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true">
+        <Conditional Vitality="lt 0" />
+        <Affliction identifier="tsm_ai_ddzs" amount="4" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="ai倒地受伤加倍" hideiconafterdelay="true" identifier="tsm_ai_ddzs" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="10">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1" resistancefor="damage,burn,acidburn" minresistance="-2" maxresistance="-2" minspeedmultiplier="1.0" maxspeedmultiplier="0.9"/>
+  </Affliction>
+  <Affliction name="ai防火" identifier="tsm_ai_fire" type="ai_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="100" maxstrength="1">
+    <Effect minstrength="0" maxstrength="1" resistancefor="burn" minresistance="0" maxresistance="0.4"></Effect>
+  </Affliction>
+  <Affliction identifier="tsm_ai_tk" isbuff="true" type="ai_debuff" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" karmachangeonapplied="0" maxstrength="10" affectmachines="false">
+    <Effect minstrength="0" maxstrength="1" strengthchange="0">
+      <StatValue stattype="TeamAttackMultiplier" value="-0.6" />
+    </Effect>
+  </Affliction>
+  <Affliction name="震撼效果" identifier="tsm_ai_grenade" limbspecific="false" showiconthreshold="100" maxstrength="10" resetbetweenrounds="true">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1" minafflictionoverlayalphamultiplier="0" maxafflictionoverlayalphamultiplier="0.9" />
+    <AfflictionOverlay texture="%ModDir%/Afflictions/blindoverlay.png" />
+  </Affliction>
+  <Affliction name="震撼" identifier="tsm_ai_grenade_1" limbspecific="false" showiconthreshold="100" maxstrength="10" resetbetweenrounds="true">
+    <Effect minstrength="0" maxstrength="10" strengthchange="-1">
+      <StatValue stattype="RangedSpreadReduction" value="-0.4" />
+      <StatValue stattype="RangedAttackSpeed" value="-0.1" />
+    </Effect>
+  </Affliction>
+  <!--废弃站点语音事件-->
+  <Affliction identifier="tsm_beowulf_bb" type="tsm_bb" showiconthreshold="999" showinhealthscannerthreshold="999" limbspecific="false" maxstrength="5" affectmachines="false">
+    <Effect minstrength="0" maxstrength="5" strengthchange="-5">
+      <StatusEffect target="Character">
+        <Conditional IsLocalPlayer="True" />
+        <Sound file="%ModDir%/Afflictions/beowulf.ogg" loop="false" stream="true"/>
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_cat_bb" type="tsm_bb" showiconthreshold="999" showinhealthscannerthreshold="999" limbspecific="false" maxstrength="5" affectmachines="false">
+    <Effect minstrength="0" maxstrength="5" strengthchange="-5">
+      <StatusEffect target="Character">
+        <Conditional IsLocalPlayer="True" />
+        <Sound file="%ModDir%/Afflictions/cat.ogg" loop="false" stream="true"/>
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <!--任务相关-->
+  <Affliction name="Dark Night" identifier="tsm_darknight" limbspecific="false" showiconthreshold="100" maxstrength="10" resetbetweenrounds="true">
+    <Effect minstrength="0" maxstrength="10" strengthchange="1" minafflictionoverlayalphamultiplier="0" maxafflictionoverlayalphamultiplier="0.9" />
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0" />
+    <AfflictionOverlay texture="%ModDir%/Afflictions/screenblack.png" />
+  </Affliction>
+  <Affliction name="Light Thunder" identifier="tsm_lightthunder" limbspecific="false" showiconthreshold="100" maxstrength="10" resetbetweenrounds="true">
+    <Effect minstrength="0" maxstrength="10" strengthchange="-20" resistancefor="tsm_darknight" minresistance="100" maxresistance="100">
+      <StatusEffect target="Character">
+        <Conditional IsLocalPlayer="True" />
+        <Sound file="%ModDir%/Afflictions/Piezo_Reallyclose.ogg" selectionmode="Random" />
+        <Sound file="%ModDir%/Afflictions/Piezo_Reallyclose2.ogg" />
+        <Sound file="%ModDir%/Afflictions/Piezo_Reallyclose3.ogg" />
+        <Sound file="%ModDir%/Afflictions/Piezo_Reallyclose4.ogg" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="运输npc增强" identifier="tsm_mission_npc" type="ai_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="100" maxstrength="1">
+    <Effect minstrength="0" maxstrength="1" resistancefor="huskinfection,incrementalstun,tsm_virusstage,eyiinfection" minresistance="2" maxresistance="2">
+      <StatValue stattype="AttackMultiplier" value="0.3" />
+      <StatusEffect target="Character" usehulloxygen="false" needsair="false" setvalue="true"/>
+    </Effect>
+  </Affliction>
+  <!--奇迹之海站点安全官增强-->
+  <Affliction name="站点警察增强" identifier="tsm_outpostenhanced_police" type="ai_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="100" maxstrength="1">
+    <Effect minstrength="0" maxstrength="1" resistancefor="huskinfection,incrementalstun,tsm_virusstage,eyiinfection" minresistance="2" maxresistance="2">
+      <StatValue stattype="AttackMultiplier" value="0.2" />
+      <StatValue stattype="TeamAttackMultiplier" value="-1" />
+    </Effect>
+  </Affliction>
+  <Affliction name="站点日暮山作战部" identifier="tsm_outpostenhanced_sunset" type="ai_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="100" maxstrength="1">
+    <Effect minstrength="0" maxstrength="1" resistancefor="huskinfection,incrementalstun,tsm_virusstage,eyiinfection,radiationsickness" minresistance="2" maxresistance="2">
+      <AbilityFlag flagtype="ImmuneToPressure" />
+      <StatValue stattype="TeamAttackMultiplier" value="-1" />
+      <StatValue stattype="AttackMultiplier" value="0.3" />
+      <StatusEffect target="Character" usehulloxygen="false" needsair="false" setvalue="true"/>
+    </Effect>
+  </Affliction>
+  <Affliction name="站点先进作战作战部" identifier="tsm_outpostenhanced_advanced" type="ai_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="100" maxstrength="1">
+    <Effect minstrength="0" maxstrength="1" resistancefor="huskinfection,incrementalstun,tsm_virusstage,eyiinfection,radiationsickness,sufforinpoisoning,cyanidepoisoning,drunk,opiateoverdose,morbusinepoisoning,deliriuminepoisoning" minresistance="2" maxresistance="2">
+      <AbilityFlag flagtype="ImmuneToPressure" />
+      <StatValue stattype="TeamAttackMultiplier" value="-1" />
+      <StatValue stattype="AttackMultiplier" value="0.3" />
+      <StatValue stattype="MeleeAttackMultiplier" value="0.8" />
+      <StatusEffect target="Character" usehulloxygen="false" needsair="false" setvalue="true"/>
+    </Effect>
+  </Affliction>
+  <Affliction name="站点突袭中队" identifier="tsm_outpostenhanced_nujiang" type="ai_buff" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="100" maxstrength="1">
+    <Effect minstrength="0" maxstrength="1" resistancefor="huskinfection,incrementalstun,tsm_virusstage,eyiinfection,radiationsickness,sufforinpoisoning,cyanidepoisoning,drunk,opiateoverdose,morbusinepoisoning,deliriuminepoisoning,burn" minresistance="2" maxresistance="2">
+      <AbilityFlag flagtype="ImmuneToPressure" />
+      <StatValue stattype="TeamAttackMultiplier" value="-1" />
+      <StatValue stattype="AttackMultiplier" value="0.3" />
+      <StatValue stattype="MeleeAttackMultiplier" value="1" />
+      <StatValue stattype="meleeattackspeed" value="0.4" />
+      <StatValue stattype="MovementSpeed" value="0.2" />
+      <StatusEffect target="Character" usehulloxygen="false" needsair="false" setvalue="true"/>
+    </Effect>
+  </Affliction>
+  <Affliction name="军需官防烧伤" identifier="tsm_npc_jxg" type="ai_buff" isbuff="true" limbspecific="false" indicatorlimb="Torso" showiconthreshold="100" activationthreshold="100" showinhealthscannerthreshold="100" showicontoothersthreshold="100" maxstrength="1">
+    <Effect minstrength="0" maxstrength="1" strengthchange="0" resistancefor="burn" minresistance="1" maxresistance="1">
+    </Effect>
+    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="127,133,121,123" color="255,255,255,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="vip安保恶疫" identifier="tsmmission_bodyguard_resistancefor" type="ai_buff" isbuff="true" limbspecific="false" showiconthreshold="1" showinhealthscannerthreshold="1" maxstrength="1">
+    <Effect minstrength="0" maxstrength="1" resistancefor="huskmutation,symbiotichusk,huskheadhijacking1,blacktoxin" minresistance="1" maxresistance="1">
+      <StatValue stattype="RangedSpreadReduction" value="0.25" />
+      <StatValue stattype="AttackMultiplier" value="0.25" />
+    </Effect>
+    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="127,133,121,123" color="255,100,100,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="tsm1dead" hideiconafterdelay="true" identifier="tsm_1_dead" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="2">
+    <Effect minstrength="0" maxstrength="2" strengthchange="0" >
+      <StatusEffect type="OnDeath" target="Character" disabledeltatime="true">
+        <TriggerEvent identifier="tsm_TSM1_dead" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="tsm2dead" hideiconafterdelay="true" identifier="tsm_2_dead" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="2">
+    <Effect minstrength="0" maxstrength="2" strengthchange="0" >
+      <StatusEffect type="OnDeath" target="Character" disabledeltatime="true">
+        <TriggerEvent identifier="tsm_TSM2_dead" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="tsm3dead" hideiconafterdelay="true" identifier="tsm_3_dead" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="2">
+    <Effect minstrength="0" maxstrength="2" strengthchange="0" >
+      <StatusEffect type="OnDeath" target="Character" disabledeltatime="true">
+        <TriggerEvent identifier="tsm_TSM3_dead" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="tsm4dead" hideiconafterdelay="true" identifier="tsm_4_dead" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="2">
+    <Effect minstrength="0" maxstrength="2" strengthchange="0" >
+      <StatusEffect type="OnDeath" target="Character" disabledeltatime="true">
+        <TriggerEvent identifier="tsm_TSM4_dead" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="tsm5dead" hideiconafterdelay="true" identifier="tsm_5_dead" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="2">
+    <Effect minstrength="0" maxstrength="2" strengthchange="0" >
+      <StatusEffect type="OnDeath" target="Character" disabledeltatime="true">
+        <TriggerEvent identifier="tsm_TSM5_dead" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction name="tsm6dead" hideiconafterdelay="true" identifier="tsm_6_dead" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="2">
+    <Effect minstrength="0" maxstrength="2" strengthchange="0" >
+      <StatusEffect type="OnDeath" target="Character" disabledeltatime="true">
+        <TriggerEvent identifier="tsm_TSM6_dead" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <!--克里斯-->
+  <Affliction name="chris" hideiconafterdelay="true" identifier="tsm_chris_ondead" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="2">
+    <Effect minstrength="0" maxstrength="2" strengthchange="0" resistancefor="damage,burn,stun,bleeding,acidburn" minresistance="0.2" maxresistance="0.2" minspeedmultiplier="1.0" maxspeedmultiplier="1.0">
+      <StatusEffect type="OnDeath" target="Character" disabledeltatime="true">
+        <SpawnItem identifier="tsm_rp" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <Affliction hideiconafterdelay="true" identifier="tsm_beowulf_complete" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="2">
+    <Effect minstrength="0" maxstrength="2" strengthchange="0" resistancefor="damage,burn,stun,bleeding,acidburn" minresistance="0.1" maxresistance="0.1" minspeedmultiplier="1.0" maxspeedmultiplier="1.0">
+      <StatusEffect type="OnDeath" target="Character" disabledeltatime="true">
+        <TriggerEvent identifier="tsm_beowulf_complete_2" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+  <!--燕-->
+  <Affliction name="yan" hideiconafterdelay="true" identifier="tsm_yan_ondead" isbuff="true" limbspecific="false" showiconthreshold="100" showinhealthscannerthreshold="500" maxstrength="2">
+    <Effect minstrength="0" maxstrength="2" strengthchange="0" >
+      <StatusEffect type="OnDeath" target="Character" disabledeltatime="true">
+        <SpawnItem identifier="tsm_yan_rp" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </Effect>
+  </Affliction>
+</Afflictions>

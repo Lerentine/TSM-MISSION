@@ -2,11 +2,14 @@
 <prefabs>
   <!-- Everything is categorized as 'Structure' unless explicitly categorized otherwise -->
   <!-- OUTPOST BACKGROUND WALLS -->
-  <OpDeco name="" identifier="tsm_slogan1" subcategory="tsmmissions" nameidentifier="tsm_slogan" width="789" height="1123" scale="0.5" noninteractable="true" category="Decorative">
+  <OpDeco name="标语" identifier="tsm_slogan1" subcategory="tsmmissions" nameidentifier="tsm_slogan" width="789" height="1123" scale="0.5" noninteractable="true" category="Decorative">
     <sprite texture="%ModDir%/map/slogan1.png" sourcerect="0,0,789,1123" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </OpDeco>
-  <OpDeco name="" identifier="tsm_signboard1" subcategory="tsmmissions" nameidentifier="tsm_slogan" width="1400" height="673" scale="0.5" noninteractable="true" category="Decorative">
+  <OpDeco name="亚希打折" identifier="tsm_signboard1" subcategory="tsmmissions" nameidentifier="tsm_slogan" width="1400" height="673" scale="0.5" noninteractable="true" category="Decorative">
     <sprite texture="%ModDir%/map/slogan1.png" sourcerect="7,1573,1400,673" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+  </OpDeco>
+  <OpDeco name="你不是一个人在努力" identifier="tsm_slogan2" subcategory="tsmmissions" nameidentifier="tsm_slogan" width="1127" height="761" scale="0.5" noninteractable="true" category="Decorative">
+    <sprite texture="%ModDir%/map/你不是一个人在努力.png" sourcerect="58,0,1127,761" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </OpDeco>
   <labelback nameidentifier="tsm_fog" subcategory="tsmmissions" identifier="tsm_fog" category="Decorative" allowattachitems="true" resizehorizontal="true" resizevertical="true" scale="1.0" noaitarget="true">
     <sprite texture="%ModDir%/map/fog.png" sourcerect="0,0,2000,1747" depth="0.999" premultiplyalpha="false" />
@@ -47,15 +50,6 @@
   <OpDeco name="血肉装饰" identifier="tsm_eyi_ornamental5" subcategory="tsmmissions" nameidentifier="tsm_eyi_ornamental" width="493" height="314" scale="0.5" noninteractable="true" category="Decorative">
     <sprite texture="%ModDir%/map/eyi_ornamental5.png" sourcerect="2,5,489,287" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </OpDeco>
-  <OpDeco name="数字" identifier="tsm_eyi_7229" subcategory="tsmmissions" nameidentifier="tsm_eyi_ornamental" width="106" height="58" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="%ModDir%/map/7229.png" sourcerect="2,2,102,54" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
-  </OpDeco>
-  <OpDeco name="尸体" identifier="tsm_eyi_deadbody1" subcategory="tsmmissions" nameidentifier="tsm_eyi_ornamental" width="173" height="44" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="%ModDir%/map/deadbody1.png" sourcerect="2,2,169,40" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
-  </OpDeco>
-  <OpDeco name="尸体" identifier="tsm_eyi_deadbody2" subcategory="tsmmissions" nameidentifier="tsm_eyi_ornamental" width="173" height="44" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="%ModDir%/map/deadbody2.png" sourcerect="2,2,169,40" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
-  </OpDeco>
   <OpDeco name="横幅" identifier="tsm_hf_1" subcategory="tsmmissions" nameidentifier="tsm_hf" width="908" height="114" scale="0.5" noninteractable="true" category="Decorative">
     <sprite texture="%ModDir%/map/横幅1.png" sourcerect="32,63,908,114" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </OpDeco>
@@ -63,6 +57,6 @@
     <sprite texture="%ModDir%/map/横幅2.png" sourcerect="32,63,908,114" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </OpDeco>
   <OpDeco name="恶疫雕像" identifier="tsm_eyi_statues_1" subcategory="tsmmissions" nameidentifier="tsm_eyi_statues" width="161" height="145" scale="0.5" noninteractable="true" category="Decorative">
-    <sprite texture="%ModDir%/item/eyi/eyi_item.png" sourcerect="0,171,161,145" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/items/eyi/eyi_item.png" sourcerect="0,171,161,145" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
   </OpDeco>
 </prefabs>

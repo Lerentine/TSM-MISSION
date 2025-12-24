@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+  <Items>
+    <!--近战-->
+    <Item name="月华" identifier="tsm_moonlight_sword" subcategory="tsm_melee" scale="0.34" category="weapon" tags="mediumitem,weapon,tsmweapon,moonlight,gunsmith,provocativetohumanai" description="" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <Fabricate suitablefabricators="tsm_fabricator" requiredtime="60">
+        <RequiredSkill identifier="weapons" level="60" />
+        <RequiredSkill identifier="helm" level="50" />
+        <RequiredItem identifier="tsm_hengberley_star" />
+        <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+        <RequiredItem identifier="physicorium" amount="2" />
+        <RequiredItem identifier="tsm_yx_crystallography" mincondition="2" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/items/weapons/其他/近战.png" sourcerect="555,911,84,78" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/items/weapons/其他/近战.png" sourcerect="17,509,354,22" depth="0.55" origin="0.5,0.5" />
+      <Body width="350" height="32" density="45" />
+      <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" handle1="-42,3" handle2="-54,6" holdpos="65,-60" aimpos="80,40" holdangle="28" aimangle="30" reload="1.1" range="50" combatPriority="35" msg="ItemMsgPickUpSelect">
+        <StatusEffect type="OnActive" lifetime="1" targettype="This">
+          <Conditional entitytype="eq Character" />
+          <sound file="%ModDir%/items/weapons/其他/yh.ogg" range="300" />
+        </StatusEffect>
+        <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+          <sprite name="moonlight" texture="%ModDir%/items/weapons/其他/近战.png" canbehiddenbyotherwearables="false" sourcerect="21,607,350,82" rotation="15" inheritlimbdepth="false" depth="0.55" limb="Torso" scale="0.35" origin="0.7,-0.5" />
+        </Wearable>
+        <Attack targetimpulse="3" severlimbsprobability="5" itemdamage="30" penetration="0.25">
+          <Affliction identifier="internaldamage" strength="5" />
+          <Affliction identifier="lacerations" strength="30" />
+          <Affliction identifier="bleedingnonstop" strength="15" />
+          <Affliction identifier="stun" strength="0.2" />
+          <Sound file="%ModDir%/items/weapons/其他/yh1.ogg" range="500" />
+        </Attack>
+        <!--降低移动速度-->
+        <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.9" setvalue="true" />
+        <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="1.1" setvalue="true">
+          <Affliction identifier="tsm_melee_defense_buff" amount="3" />
+          <!--招架3-->
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.3" setvalue="true">
+          <Affliction identifier="tsm_melee_defense_buff" amount="5" />
+          <!--5-->
+        </StatusEffect>
+        <!--剑技-->
+        <!--给予剑技标签-->
+        <StatusEffect type="OnSpawn" target="This" Tags="tsm_sword_1" setvalue="true" />
+        <!--攻击动作4:基础-->
+        <StatusEffect type="OnUse" target="This" Tags="tsm_sword_1" setvalue="true" reload="0.5" swingforce="3,-1" aimpos="10,15" holdangle="60">
+          <Conditional HasTag="eq tsm_sword_4" />
+        </StatusEffect>
+        <!--攻击动作3:高位攻击-->
+        <StatusEffect type="OnUse" target="This" Tags="tsm_sword_4" setvalue="true" reload="0.5" swingforce="9,-10" aimpos="30,45" holdangle="80">
+          <Conditional HasTag="eq tsm_sword_3" />
+        </StatusEffect>
+        <!--攻击动作2:连击-->
+        <StatusEffect type="OnUse" target="This" Tags="tsm_sword_3" setvalue="true" reload="0.5" swingforce="15,-1" aimpos="10,15" holdangle="70">
+          <Conditional HasTag="eq tsm_sword_2" />
+        </StatusEffect>
+        <!--攻击动作1:连击-->
+        <StatusEffect type="OnUse" target="This" Tags="tsm_sword_2" setvalue="true" reload="0.2" swingforce="6,3" aimpos="20,5" holdangle="45">
+          <Conditional HasTag="eq tsm_sword_1" />
+        </StatusEffect>
+        <!--下蹲后站立高位劈砍攻击-->
+        <StatusEffect type="OnSecondaryUse" target="This" setvalue="true" comparison="And" aimpos="10,15" holdangle="60" swingforce="15,-15">
+          <Conditional targetcontainer="true" CanRun="eq true" />
+          <Conditional HasTag="eq tsm_canrun" />
+        </StatusEffect>
+        <!--格挡-->
+        <!--后退,下蹲进行格挡-->
+        <StatusEffect type="OnSecondaryUse" target="This" Tags="tsm_sword_1,tsm_canrun" comparison="And" setvalue="true" reload="0.1" aimpos="35,-5" holdangle="-10" swingforce="6,-3">
+          <!--条件:如果不能奔跑,武器耐久大于40,生成格挡-->
+          <Conditional targetcontainer="true" CanRun="ne true" />
+          <!--不能奔跑-->
+          <Conditional Condition="gt 40" />
+          <!--武器耐久大于40-->
+          <SpawnItem identifier="collider_sword" spawnposition="This" />
+          <!--生成碰撞箱-->
+        </StatusEffect>
+        <!--攻击前摇、后摇时格挡-->
+        <StatusEffect type="OnActive" target="This" comparison="And">
+          <Conditional Hitting="eq true" />
+          <!--挥剑-->
+          <Conditional Condition="gt 40" />
+          <!--武器耐久大于40-->
+          <Affliction identifier="tsm_melee_defense_buff" amount="9" />
+          <!--招架9-->
+          <SpawnItem identifier="collider_sword" spawnposition="This" />
+          <!--生成碰撞箱-->
+        </StatusEffect>
+        <!--攻击前摇、后摇时格挡-->
+        <!--格挡消耗耐久,最低到20-->
+        <StatusEffect type="OnSecondaryUse" target="This" Condition="-50" comparison="And">
+          <Conditional targetcontainer="true" CanRun="ne true" />
+          <!--不能奔跑-->
+          <Conditional Condition="gt 20" />
+        </StatusEffect>
+        <StatusEffect type="OnActive" target="This" Condition="20" />
+        <!--格挡-->
+        <!--剑技-->
+        <!-- Attack -->
+      </MeleeWeapon>
+      <!--近战数据-->
+      <!--质量-->
+      <Quality>
+        <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
+      </Quality>
+      <!--作战范围,声音-->
+    </Item>
+    <!--碰撞检测器-->
+    <Item name="格挡" identifier="collider_sword" subcategory="tsm_melee" damagedbyprojectiles="true" hideinmenus="true">
+      <Sprite texture="%ModDir%/items/weapons/其他/近战.png" sourcerect="0,0,1,1" origin="0.5,0.5" />
+      <Body radius="60" bodytype="Static" />
+      <ItemComponent>
+        <StatusEffect type="OnSpawn" target="This" delay="0.02">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnDamaged" target="This">
+          <Explosion range="120.0" force="1" camerashake="6.0" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" />
+          <particleemitter particle="weldspark" particlespersecond="100" scalemin="0.45" scalemax="0.7" anglemin="-180" anglemax="180" velocitymin="200" velocitymax="1000" distancemin="1" distancemax="10" />
+          <Sound file="%ModDir%/items/weapons/其他/sword_impact.ogg" selectionmode="random" range="500" />
+          <Sound file="%ModDir%/items/weapons/其他/sword_impact_1.ogg" range="500" />
+          <Sound file="%ModDir%/items/weapons/其他/sword_impact_2.ogg" range="500" />
+          <Sound file="%ModDir%/items/weapons/其他/sword_impact_3.ogg" range="500" />
+          <Sound file="%ModDir%/items/weapons/其他/sword_impact_4.ogg" range="500" />
+          <Sound file="%ModDir%/items/weapons/其他/sword_impact_5.ogg" range="500" />
+        </StatusEffect>
+      </ItemComponent>
+      <Quality>
+        <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
+      </Quality>
+      <SkillRequirementHint identifier="weapons" level="65" />
+    </Item>
+    <Item name="破门斧" identifier="tsm_pmf_melee" subcategory="tsm_melee" scale="0.2" category="Weapon" tags="mediumitem,weapon,tsm_weapon,refillableoxygensource,provocativetohumanai" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <Deconstruct time="7">
+        <Item identifier="titaniumaluminiumalloy" amount="1" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="34">
+        <RequiredSkill identifier="weapons" level="60" />
+        <RequiredItem identifier="titaniumaluminiumalloy" amount="3" />
+        <RequiredItem identifier="steel" amount="2" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/items/weapons/其他/近战.png" sourcerect="899,896,91,85" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/items/weapons/其他/近战.png" sourcerect="2,9,733,213" depth="0.55" origin="0.5,0.5" />
+      <Body width="750" height="150" density="45" />
+      <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" holdpos="30,-50" aimpos="50,0" handle1="-30,5" handle2="15,3" holdangle="35" reload="1.2" range="100" combatPriority="35" AllowHitMultiple="true" msg="ItemMsgPickUpSelect">
+        <Attack targetimpulse="6" severlimbsprobability="4" ballastfloradamage="100" structuredamage="30" itemdamage="200" penetration="0.4">
+          <Affliction identifier="lacerations" strength="45" />
+          <Affliction identifier="bleedingnonstop" strength="30" />
+          <Affliction identifier="stun" strength="0.5" />
+          <Sound file="%ModDir%/items/weapons/其他/axe.ogg" selectionmode="random" range="500" />
+          <Sound file="%ModDir%/items/weapons/其他/axe.ogg" range="500" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+          <Explosion range="100.0" ballastfloradamage="100" damagedoors="true" levelwalldamage="120" itemdamage="100" force="5.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.1"></Explosion>
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="Character,Contained" disabledeltatime="true" comparison="and">
+          <Conditional skillrequirement="true" weapons="lt 60" />
+          <Conditional recoilstabilized="lte 0" />
+          <Affliction identifier="stun" strength="3" />
+          <Affliction identifier="lacerations" strength="10" />
+        </StatusEffect>
+      </MeleeWeapon>
+      <LightComponent AllowInGameEditing="false" lightcolor="0,0,0,0" canbeselected="false" range="10.0" IsOn="true" castshadows="false">
+        <StatusEffect type="OnImpact" target="This" disabledeltatime="false" targettype="This" IsOn="false">
+          <Conditional IsOn="eq True" targetitemcomponent="LightComponent" />
+          <Conditional hastag="eq door" />
+          <Explosion range="160.0" ballastfloradamage="15" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="0" applyFireEffects="false" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" disabledeltatime="false" targettype="This" IsOn="true" delay="1.3" stackable="false" checkconditionalalways="true">
+          <Conditional IsOn="eq False" targetitemcomponent="LightComponent" />
+        </StatusEffect>
+      </LightComponent>
+      <Quality>
+        <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
+      </Quality>
+      <SkillRequirementHint identifier="weapons" level="60" />
+    </Item>
+    <Item name="破墙锤" identifier="tsm_pqc_melee" subcategory="tsm_melee" scale="0.2" category="Weapon" tags="mediumitem,weapon,tsm_weapon,provocativetohumanai" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <Deconstruct time="7">
+        <Item identifier="titaniumaluminiumalloy" amount="1" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="34">
+        <RequiredSkill identifier="weapons" level="60" />
+        <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
+        <RequiredItem identifier="steel" amount="2" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/items/weapons/其他/近战.png" sourcerect="779,896,93,93" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/items/weapons/其他/近战.png" sourcerect="0,262,722,178" depth="0.55" origin="0.5,0.5" />
+      <Body width="722" height="178" density="28" />
+      <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" holdpos="16,-50" aimpos="50,0" handle1="-20,-3" handle2="15,3" holdangle="35" reload="1.3" range="100" combatPriority="35" msg="ItemMsgPickUpSelect">
+        <Attack targetimpulse="6" severlimbsprobability="0.2" ballastfloradamage="100" structuredamage="80" itemdamage="5" penetration="0.2">
+          <Affliction identifier="blunttrauma" strength="45" />
+          <Affliction identifier="internaldamage" strength="10" />
+          <Affliction identifier="stun" strength="0.5" />
+          <Sound file="%ModDir%/items/weapons/其他/hammer.ogg" selectionmode="random" range="500" />
+          <Sound file="%ModDir%/items/weapons/其他/hammer.ogg" range="500" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="This" Condition="-10.0" disabledeltatime="true">
+          <Explosion range="100.0" ballastfloradamage="100" levelwalldamage="120" itemdamage="100" force="5.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.1"></Explosion>
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+          <Conditional skillrequirement="true" weapons="lt 60" />
+          <Conditional recoilstabilized="lte 0" />
+          <Affliction identifier="stun" strength="3" />
+          <Affliction identifier="blunttrauma" strength="10" />
+        </StatusEffect>
+      </MeleeWeapon>
+      <LightComponent AllowInGameEditing="false" lightcolor="0,0,0,0" canbeselected="false" range="10.0" IsOn="true" castshadows="false">
+        <StatusEffect type="OnUse" target="This" disabledeltatime="false" targettype="This" IsOn="false">
+          <Conditional IsOn="eq True" targetitemcomponent="LightComponent" />
+          <Conditional hastag="eq door" />
+          <Explosion range="160.0" ballastfloradamage="15" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="0" applyFireEffects="false" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" disabledeltatime="false" targettype="This" IsOn="true" delay="1.3" stackable="false" checkconditionalalways="true">
+          <Conditional IsOn="eq False" targetitemcomponent="LightComponent" />
+        </StatusEffect>
+      </LightComponent>
+      <Quality>
+        <QualityStat stattype="StrikingPowerMultiplier" value="0.2" />
+      </Quality>
+      <SkillRequirementHint identifier="weapons" level="60" />
+    </Item>
+    <Item name="特种电棍" identifier="tsm_stunbaton_melee" subcategory="tsm_melee" category="Weapon" Tags="smallitem,weapon,stunner,gunsmith,mountableweapon,provocativetohumanai,tsm_stunbaton_melee" Scale="0.3" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+      <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.5" />
+      <PreferredContainer secondary="wreckarmcab,abandonedarmcab" amount="1" spawnprobability="0.1" />
+      <PreferredContainer primary="secarmcab" secondary="armcab" />
+      <Upgrade gameversion="0.9.2.0" scale="0.5" />
+      <Price baseprice="200">
+        <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.35" />
+        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" sold="false" />
+        <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="6" />
+        <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="6" />
+      </Price>
+      <Deconstruct time="10">
+        <Item identifier="plastic" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="15">
+        <RequiredSkill identifier="weapons" level="30" />
+        <RequiredItem identifier="steel" amount="2" />
+        <RequiredItem identifier="plastic" amount="2" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/items/weapons/其他/近战.png" sourcerect="666,913,76,76" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/items/weapons/其他/近战.png" sourcerect="21,737,338,39" depth="0.55" origin="0.4954025,0.7936202" />
+      <Body width="170" height="30" density="20" />
+      <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="60,0" handle1="-32,3" holdangle="20" reload="1" range="100" combatPriority="49" msg="ItemMsgPickUpSelect" preferredcontaineditems="mobilebattery">
+        <Attack targetimpulse="5" itemdamage="1">
+          <StatusEffect type="OnUse" target="UseTarget">
+            <Conditional entitytype="eq Character" />
+            <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500" />
+            <Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
+          </StatusEffect>
+          <Affliction identifier="blunttrauma" strength="4" />
+          <Affliction identifier="stun" strength="0.1" />
+        </Attack>
+        <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
+          <Affliction identifier="stun" strength="0.15" />
+          <Affliction identifier="incrementalstun" strength="40" />
+          <sound file="Content/Items/Weapons/StunBaton1.ogg" selectionmode="random" range="500" />
+          <sound file="Content/Items/Weapons/StunBaton2.ogg" range="500" />
+          <sound file="Content/Items/Weapons/StunBaton3.ogg" range="500" />
+          <sound file="Content/Items/Weapons/StunBaton4.ogg" range="500" />
+          <RequiredItem items="mobilebattery" type="Contained" msg="ItemMsgBatteryCellRequired" />
+          <Explosion range="100.0" force="0.1" shockwave="false" flames="false" smoke="false" underwaterbubble="false" camerashake="6.0" />
+          <Conditional IsDead="false" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="UseTarget,Character" limb="head" disabledeltatime="true">
+          <Affliction identifier="stun" strength="0.25" />
+          <Affliction identifier="incrementalstun" strength="25" />
+          <!--Affliction identifier="burn" strength="1" /-->
+          <RequiredItem items="fulguriumbatterycell" type="Contained" msg="ItemMsgBatteryCellRequired" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="Contained,UseTarget" Condition="-10.0" disabledeltatime="true">
+          <RequiredItem items="mobilebattery" type="Contained" msg="ItemMsgBatteryCellRequired" />
+          <Conditional IsDead="false" />
+        </StatusEffect>
+      </MeleeWeapon>
+      <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+        <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+        <Containable items="mobilebattery" />
+      </ItemContainer>
+      <aitarget sightrange="500" soundrange="500" fadeouttime="1" />
+      <Quality>
+        <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
+      </Quality>
+    </Item>
+    <Item name="小型圆盾" identifier="tsm_round_riotshields" subcategory="tsm_melee" category="Weapon" scale="0.25" tags="weapon,smallitem" impactsoundtag="impact_metal_light" health="900" damagedbyprojectiles="true" damagedbyexplosions="true" damagedbyrepairtools="true" damagedbymeleeweapons="false" explosiondamagemultiplier="0.2">
+      <Price baseprice="385" soldeverywhere="false">
+        <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="1" />
+        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" />
+        <Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
+        <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="2" />
+        <Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
+      </Price>
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <Deconstruct time="10">
+        <Item identifier="ballisticfiber" mincondition="0.5"  />
+        <Item identifier="titaniumaluminiumalloy" mincondition="0.5" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="tsm_fabricator" requiredtime="15">
+        <RequiredSkill identifier="mechanical" level="40" />
+        <RequiredSkill identifier="weapons" level="40" />
+        <RequiredItem identifier="ballisticfiber" amount="2" />
+        <RequiredItem identifier="tsm_plastic" amount="2" />
+        <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/items/weapons/其他/近战.png" sourcerect="756,116,115,329" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/items/weapons/其他/近战.png" sourcerect="756,116,115,329" origin="0.5,0.5" depth="0.55" />
+      <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+        <sprite name="square_riotshields" texture="%ModDir%/items/weapons/其他/近战.png" canbehiddenbyotherwearables="false" rotation="180" sourcerect="756,116,115,329" inheritlimbdepth="false" depth="0.58" limb="Torso" scale="0.25" origin="-0.2,0.5" />
+      </Wearable>
+      <Body width="115" height="329" density="10" />
+      <Holdable slots="Any,LeftHand,RightHand" canBeCombined="true" removeOnCombined="true" aimpos="45,-20" holdpos="45,-20" handle1="-30,5" handle2="-30,5" controlpose="true" blocksplayers="true" msg="ItemMsgPickUpSelect">
+        <StatusEffect type="OnDamaged" target="This">
+          <particleemitter particle="shrapnel" drawontop="true" particleamount="2" velocitymin="50" velocitymax="400" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="0.5" scalemax="1" highqualitycollisiondetection="False" />
+          <particleemitter particle="weldspark" drawontop="true" particleamount="5" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="0.1" scalemax="0.35" />
+          <Sound file="Content/Sounds/Damage/HitMetal1.ogg" range="800" selectionmode="Random" />
+          <Sound file="Content/Sounds/Damage/HitMetal2.ogg" range="800" />
+          <Sound file="Content/Sounds/Damage/HitMetal3.ogg" range="800" />
+          <Sound file="Content/Sounds/Damage/HitMetal4.ogg" range="800" />
+          <Sound file="Content/Sounds/Damage/HitMetal5.ogg" range="800" />
+          <Sound file="Content/Sounds/Damage/HitMetal6.ogg" range="800" />
+          <Explosion range="100.0" force="1" showeffects="false" camerashake="1.0" />
+        </StatusEffect>
+        <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+          <particleemitter particle="shrapnel" drawontop="true" particleamount="10" velocitymin="50" velocitymax="400" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="1" scalemax="2" highqualitycollisiondetection="False" />
+          <sound file="Content/Items/Door/DoorBreak1.ogg" range="800" selectionmode="Random" />
+          <sound file="Content/Items/Door/DoorBreak2.ogg" range="800" />
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <Quality>
+        <QualityStat stattype="Condition" value="0.15" />
+      </Quality>
+    </Item>
+    <Item name="大型方盾" identifier="tsm_square_riotshields" subcategory="tsm_melee" category="Weapon" scale="0.25" tags="weapon,mediumitem" impactsoundtag="impact_metal_light" health="950" damagedbyprojectiles="true" damagedbyexplosions="true" damagedbyrepairtools="true" damagedbymeleeweapons="true" explosiondamagemultiplier="0.2">
+      <Price baseprice="456" soldeverywhere="false">
+        <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="1" />
+        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" />
+        <Price storeidentifier="merchantresearch" multiplier="1.25" sold="false" />
+        <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="2" />
+        <Price storeidentifier="merchantmine" multiplier="1.25" sold="false" />
+      </Price>
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <Deconstruct time="10">
+        <Item identifier="ballisticfiber" mincondition="0.5" />
+        <Item identifier="plastic" mincondition="0.5" />
+        <Item identifier="titaniumaluminiumalloy" mincondition="0.5" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20">
+        <RequiredSkill identifier="mechanical" level="40" />
+        <RequiredSkill identifier="weapons" level="40" />
+        <RequiredItem identifier="ballisticfiber" amount="2" />
+        <RequiredItem identifier="steel" amount="3" />
+        <RequiredItem identifier="titaniumaluminiumalloy" amount="3" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/items/weapons/其他/近战.png" sourcerect="892,16,98,602" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/items/weapons/其他/近战.png" sourcerect="892,16,98,602" origin="0.5,0.5" depth="0.55" />
+      <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+        <sprite name="square_riotshields" texture="%ModDir%/items/weapons/其他/近战.png" canbehiddenbyotherwearables="false" rotation="180" sourcerect="892,16,98,602" inheritlimbdepth="false" depth="0.58" limb="Torso" scale="0.25" origin="-0.2,0.5" />
+        <!--damagemodifier afflictiontypes="damage" armorsector="180.0,360.0" damagemultiplier="0" deflectprojectiles="false"/-->
+      </Wearable>
+      <Body width="65" height="600" density="15" />
+      <Holdable slots="Any,LeftHand+RightHand" canBeCombined="true" removeOnCombined="true" aimpos="65,-30" holdpos="65,-30" handle1="-40,0" handle2="-40,0" controlpose="true" blocksplayers="true" msg="ItemMsgPickUpSelect">
+        <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.75" setvalue="true" />
+        <StatusEffect type="OnDamaged" target="This">
+          <particleemitter particle="shrapnel" drawontop="true" particleamount="2" velocitymin="50" velocitymax="400" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="0.5" scalemax="1" highqualitycollisiondetection="False" />
+          <particleemitter particle="weldspark" drawontop="true" particleamount="5" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="0.1" scalemax="0.35" />
+          <Sound file="Content/Sounds/Damage/HitMetal1.ogg" range="800" selectionmode="Random" />
+          <Sound file="Content/Sounds/Damage/HitMetal2.ogg" range="800" />
+          <Sound file="Content/Sounds/Damage/HitMetal3.ogg" range="800" />
+          <Sound file="Content/Sounds/Damage/HitMetal4.ogg" range="800" />
+          <Sound file="Content/Sounds/Damage/HitMetal5.ogg" range="800" />
+          <Sound file="Content/Sounds/Damage/HitMetal6.ogg" range="800" />
+          <Explosion range="100.0" force="1" showeffects="false" camerashake="1.0" />
+        </StatusEffect>
+        <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+          <particleemitter particle="shrapnel" drawontop="true" particleamount="10" velocitymin="50" velocitymax="400" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="1" scalemax="2" highqualitycollisiondetection="False" />
+          <sound file="Content/Items/Door/DoorBreak1.ogg" range="800" selectionmode="Random" />
+          <sound file="Content/Items/Door/DoorBreak2.ogg" range="800" />
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <Quality>
+        <QualityStat stattype="Condition" value="0.15" />
+      </Quality>
+    </Item>
+    <Item name="热能刀" identifier="tsm_thermal_knife" subcategory="tsm_melee" category="Weapon" Tags="smallitem,weapon,gunsmith,mountableweapon,sharptool,provocativetohumanai" cargocontaineridentifier="metalcrate" scale="0.25" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+      <InventoryIcon texture="%ModDir%/items/weapons/其他/近战.png" sourcerect="1841,266,158,157" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/items/weapons/其他/近战.png" sourcerect="1194,386,411,114" depth="0.55" origin="0.5,0.5" />
+      <Deconstruct time="10">
+        <Item identifier="titanium" />
+        <Item identifier="aluminium" />
+        <Item identifier="zinc" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="40" />
+        <RequiredItem identifier="tsm_thermal_knife" amount="1" />
+        <Item identifier="titanium" amount="2" />
+      </Fabricate>
+      <Body width="400" height="50" density="25" />
+      <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="0,10" holdangle="20" reload="0.8" aimangle="-10" range="50" combatPriority="25" msg="ItemMsgPickUpSelect">
+        <Attack targetimpulse="5" severlimbsprobability="0.1" itemdamage="20" penetration="0.5" structuredamage="2" structuresoundtype="StructureSlash">
+          <Affliction identifier="lacerations" strength="25" />
+          <Affliction identifier="bleedingnonstop" strength="20" />
+          <Affliction identifier="burn" strength="5" />
+          <Affliction identifier="stun" strength="0.2" />
+          <StatusEffect type="OnUse" target="UseTarget">
+            <Conditional entitytype="eq Character" />
+            <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+            <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+            <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+            <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+            <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+            <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+          </StatusEffect>
+        </Attack>
+      </MeleeWeapon>
+      <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+      <Quality>
+        <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
+      </Quality>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <Item name="开山刀" identifier="tsm_kaishan_knife" subcategory="tsm_melee" category="Weapon" Tags="smallitem,weapon,gunsmith,mountableweapon,sharptool,provocativetohumanai" cargocontaineridentifier="metalcrate" scale="0.22" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+      <InventoryIcon texture="%ModDir%/items/weapons/其他/近战.png" sourcerect="1883,665,96,105" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/items/weapons/其他/近战.png" sourcerect="1139,665,453,54" depth="0.55" origin="0.5,0.5" />
+      <Deconstruct time="10">
+        <Item identifier="titanium" />
+        <Item identifier="aluminium" />
+        <Item identifier="zinc" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="40" />
+        <RequiredItem identifier="tsm_kaishan_knife" amount="1" />
+        <Item identifier="titanium" amount="2" />
+      </Fabricate>
+      <Body width="420" height="45" density="22" />
+      <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,0" handle1="-30,0" handle2="-48,6" holdangle="40" reload="0.7" aimangle="-10" range="50" combatPriority="25" msg="ItemMsgPickUpSelect">
+        <Attack targetimpulse="5" severlimbsprobability="0.1" itemdamage="5" penetration="0.3" structuredamage="20" structuresoundtype="StructureSlash">
+          <Affliction identifier="lacerations" strength="40" />
+          <Affliction identifier="bleedingnonstop" strength="40" />
+          <Affliction identifier="stun" strength="0.5" />
+          <StatusEffect type="OnUse" target="UseTarget">
+            <Conditional entitytype="eq Character" />
+            <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+            <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+            <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+            <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+            <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+            <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+          </StatusEffect>
+        </Attack>
+      </MeleeWeapon>
+      <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+      <Quality>
+        <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
+      </Quality>
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+    <Item name="钢刀" identifier="tsm_steel_knife" subcategory="tsm_melee" scale="0.27" category="Weapon" tags="mediumitem,weapon,tsmweapon,gunsmith,provocativetohumanai" description="" hideinmenus="false" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy">
+      <InventoryIcon texture="%ModDir%/items/weapons/其他/近战.png" sourcerect="1806,7,194,202" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/items/weapons/其他/近战.png" sourcerect="1171,65,493,81" depth="0.55" origin="0.5,0.5" />
+      <Body width="493" height="40" density="45" />
+      <Deconstruct time="10" chooserandom="true" amount="1">
+        <Item identifier="incendium" commonness="0.1" />
+        <Item identifier="physicorium" commonness="0.1" />
+        <Item identifier="dementonite" commonness="0.1" />
+        <Item identifier="fulgurium" commonness="0.1" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+        <RequiredSkill identifier="weapons" level="60" />
+        <RequiredItem identifier="tsm_steel_knife" amount="1" />
+        <Item identifier="tsm_kore" amount="1" />
+      </Fabricate>
+      <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" handle1="-42,3" handle2="-54,6" holdpos="60,-60" aimpos="80,60" holdangle="28" aimangle="30" reload="1.1" range="50" combatPriority="35" msg="ItemMsgPickUpSelect">
+        <StatusEffect type="OnActive" lifetime="1" targettype="This">
+          <Conditional entitytype="eq Character" />
+          <sound file="%ModDir%/items/weapons/其他/yh.ogg" range="300" />
+        </StatusEffect>
+        <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+          <sprite name="steel_knife" texture="%ModDir%/items/weapons/其他/近战.png" canbehiddenbyotherwearables="false" sourcerect="1132,232,497,84" rotation="50" inheritlimbdepth="true" depth="0.55" limb="Torso" scale="0.27" origin="0.8,-0.15" />
+        </Wearable>
+        <Attack targetimpulse="3" severlimbsprobability="5" itemdamage="30" penetration="0.5">
+          <Affliction identifier="internaldamage" strength="25" />
+          <Affliction identifier="lacerations" strength="40" />
+          <Affliction identifier="bleedingnonstop" strength="15" />
+          <Affliction identifier="stun" strength="0.5" />
+          <Sound file="%ModDir%/items/weapons/其他/yh1.ogg" range="500" />
+        </Attack>
+      </MeleeWeapon>
+      <Quality>
+        <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
+      </Quality>
+    </Item>
+    <Item name="行刑锤" identifier="tsm_beowulf_melee" subcategory="tsm_melee" scale="0.2" category="Weapon" tags="mediumitem,weapon,tsm_weapon,provocativetohumanai" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy">
+      <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+      <Deconstruct time="7">
+        <Item identifier="titaniumaluminiumalloy" amount="1" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20">
+        <RequiredSkill identifier="weapons" level="60" />
+        <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+        <RequiredItem identifier="tsm_beowulf_melee" amount="1" />
+      </Fabricate>
+      <InventoryIcon texture="%ModDir%/items/weapons/其他/近战.png" sourcerect="1872,837,128,129" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/items/weapons/其他/近战.png" sourcerect="1116,790,507,176" depth="0.55" origin="0.5,0.5" />
+      <Body width="700" height="150" density="45" />
+      <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" holdpos="16,-50" aimpos="60,0" handle1="-30,0" handle2="15,3" holdangle="20" reload="1.1" range="100" combatPriority="35" msg="ItemMsgPickUpSelect">
+        <Attack targetimpulse="6" severlimbsprobability="0.2" ballastfloradamage="100" structuredamage="40" itemdamage="100" penetration="0.3">
+          <Affliction identifier="blunttrauma" strength="45" />
+          <Affliction identifier="internaldamage" strength="5" />
+          <Affliction identifier="stun" strength="1" />
+          <Sound file="%ModDir%/items/weapons/其他/hammer.ogg" selectionmode="random" range="500" />
+          <Sound file="%ModDir%/items/weapons/其他/hammer.ogg" range="500" />
+        </Attack>
+        <StatusEffect type="OnImpact" target="This" Condition="-10.0" disabledeltatime="true">
+          <Explosion range="100.0" ballastfloradamage="100" levelwalldamage="120" itemdamage="100" force="5.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.1" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="Character,Contained" disabledeltatime="true" comparison="and">
+          <Conditional skillrequirement="true" weapons="lt 60" />
+          <Conditional recoilstabilized="lte 0" />
+          <Affliction identifier="stun" strength="3" />
+          <Affliction identifier="blunttrauma" strength="10" />
+        </StatusEffect>
+      </MeleeWeapon>
+      <LightComponent AllowInGameEditing="false" lightcolor="0,0,0,0" canbeselected="false" range="10.0" IsOn="true" castshadows="false">
+        <StatusEffect type="OnUse" target="This" disabledeltatime="false" targettype="This" IsOn="false">
+          <Conditional IsOn="eq True" targetitemcomponent="LightComponent" />
+          <Conditional hastag="eq door" />
+          <Explosion range="160.0" ballastfloradamage="15" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="0" applyFireEffects="false" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" disabledeltatime="false" targettype="This" IsOn="true" delay="1.3" stackable="false" checkconditionalalways="true">
+          <Conditional IsOn="eq False" targetitemcomponent="LightComponent" />
+        </StatusEffect>
+      </LightComponent>
+      <Quality>
+        <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
+      </Quality>
+      <SkillRequirementHint identifier="weapons" level="60" />
+    </Item>
+  </Items>

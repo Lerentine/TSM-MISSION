@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="林荷音幻化器" subcategory="tsmmissions" identifier="tsm_lin" scale="0.25" category="Equipment" hideinmenus="true" tags="smallitem,mobileradio" description="" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/npc/lerentine/Lerentine_heads.png" sourcerect="444,17,84,133" origin="0.5,0.5" />
+    <Sprite name="lin" texture="%ModDir%/npc/lerentine/Lerentine_heads.png" sourcerect="444,17,84,133" depth="0.55" />
+    <Body radius="50" height="70" density="6" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="silicon" />
+      <Item identifier="zinc" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredItem identifier="tsm_lin" amount="1" />
+    </Fabricate>
+    <WifiComponent range="55000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <Upgrade gameversion="0.18.0.0">
+      <WifiComponent>
+        <RequiredItems items="" />
+      </WifiComponent>
+    </Upgrade>
+    <Wearable slots="Any,Headset" displaycontainedstatus="false" msg="ItemMsgPickUpSelect">
+      <sprite name="lin Head" texture="%ModDir%/npc/linheyin/lin_head.png" limb="Head" depth="0.15" inheritdepth="false" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="833,165,234,281" canbehiddenbyotherwearables="true" hidelimb="true" origin="0.65,0.35" inheritorigin="false" inheritscale="false" Scale="0.14" hideotherwearables="false" />
+      <sprite name="lin Torso" texture="%ModDir%/npc/linheyin/lin.png" limb="Torso" depth="0.16" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="false" Scale="0.45" inheritlimbdepth="true" inheritorigin="true" origin="0.11,0.37" sourcerect="0,0,679,457" />
+      <sprite name="lin Right Hand" texture="%ModDir%/npc/linheyin/lin.png" limb="RightHand" depth="0.115" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true"  />
+      <sprite name="lin Left Hand" texture="%ModDir%/npc/linheyin/lin.png" limb="LeftHand" depth="0.26" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true"  />
+      <sprite name="lin Left Lower Arm" texture="%ModDir%/npc/linheyin/lin.png" limb="LeftForearm" depth="0.25" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Right Lower Arm" texture="%ModDir%/npc/linheyin/lin.png" limb="RightForearm" depth="0.11" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Left Upper Arm" texture="%ModDir%/npc/linheyin/lin.png" limb="LeftArm" depth="0.24" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Right Upper Arm" texture="%ModDir%/npc/linheyin/lin.png" limb="RightArm" depth="0.12" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Waist" texture="%ModDir%/npc/linheyin/lin.png" limb="Waist" depth="0.221" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Right Thigh" texture="%ModDir%/npc/linheyin/lin.png" limb="RightThigh" depth="0.32" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Left Thigh" texture="%ModDir%/npc/linheyin/lin.png" limb="LeftThigh" depth="0.33" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Right Leg" texture="%ModDir%/npc/linheyin/lin.png" limb="RightLeg" depth="0.321" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Left Leg" texture="%ModDir%/npc/linheyin/lin.png" limb="LeftLeg" depth="0.331" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Right Shoe" texture="%ModDir%/npc/linheyin/lin.png" limb="RightFoot" depth="0.322" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Left Shoe" texture="%ModDir%/npc/linheyin/lin.png" limb="LeftFoot" depth="0.332" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Boobs" texture="%ModDir%/npc/linheyin/lin.png" limb="Tail" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" origin="0.5,0.5" />
+      <sprite name="lin Boobs" texture="%ModDir%/npc/linheyin/lin.png" limb="Jaw" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" origin="0.5,0.5" />
+    </Wearable>
+  </Item>
+  <Item name="轻量化压电PUCS防护服" identifier="tsm_pucs_light" subcategory="tsmmissions" category="Diving" tags="diving,deepdiving,divinggear_wearableindoors,human,tsm_pucs_light" allowasextracargo="true" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="5" cargocontaineridentifier="">
+    <PreferredContainer primary="divingsuitcontainer" spawnprobability="0.0" />
+    <Deconstruct time="45">
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="rubber" />
+      <Item identifier="lead" />
+      <Item identifier="physicorium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true" HideIfNoRecipe="true">
+      <RequiredSkill identifier="electrical" level="80" />
+      <RequiredItem identifier="pucs" />
+      <RequiredItem identifier="elastinplant" amount="2" />
+      <RequiredItem identifier="elastin" amount="2" />
+      <RequiredItem identifier="physicorium" amount="2" />
+      <RequiredItem identifier="fulguriumbatterycell" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="384,704,128,128" origin="0.5,0.5" />
+    <Sprite name="PUCS Item" texture="pucssuit.png" sourcerect="418,263,153,131" depth="0.55" origin="0.5,0.5" />
+    <ContainedSprite name="PUCS In Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="Content/Items/Jobgear/Engineer/PUCS_Items.png" sourcerect="164,0,87,190" depth="0.55" origin="0.5,0.5" />
+    <ContainedSprite name="PUCS Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="Content/Items/Jobgear/Engineer/pucs.png" sourcerect="430,0,80,207" depth="0.55" origin="-0.12,-0.14" />
+    <ContainedSprite name="PUCS In Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="Content/Items/Jobgear/Engineer/PUCS_Items.png" sourcerect="0,191,225,66" depth="0.55" origin="0.6,0.5" />
+    <Body radius="45" width="34" density="20" />
+    <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="PUCS Helmet Wearable" texture="pucssuit.png" limb="Head" inheritlimbdepth="true" inheritscale="false" scale="0.52" hidelimb="false" alphaclipotherwearables="true" sourcerect="215,314,72,81" origin="0.57,0.5">
+        <LightComponent range="300.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
+          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="0.1" setvalue="true">
+            <Conditional IsDead="false" />
+          </StatusEffect>
+          <LightTexture texture="Content/Lights/divinghelmetlight.png" origin="0.05, 0.5" size="1.5,1.5" />
+        </LightComponent>
+      </sprite>
+      <sprite name="pucs Torso" texture="pucssuit.png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pucs Right Hand" texture="pucssuit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" sourcerect="290,157,26,37" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" origin="0.45,0.5" />
+      <sprite name="pucs Left Hand" texture="pucssuit.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pucs Right Upper Arm" texture="pucssuit.png" limb="RightArm" hidelimb="true" inherittexturescale="true" sourcerect="286,0,42,88" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" origin="0.45,0.5" />
+      <sprite name="pucs Left Upper Arm" texture="pucssuit.png" limb="LeftArm" hidelimb="true" inherittexturescale="true"  hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="350,1,42,88" origin="0.5,0.5" />
+      <sprite name="pucs Right Lower Arm" texture="pucssuit.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pucs Left Lower Arm" texture="pucssuit.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pucs Waist" texture="pucssuit.png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pucs Right Thigh" texture="pucssuit.png" limb="RightThigh" depthlimb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pucs Left Thigh" texture="pucssuit.png" limb="LeftThigh" depthlimb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="97,8,52,105" origin="0.45,0.5" />
+      <sprite name="pucs Right Leg" texture="pucssuit.png" limb="RightLeg" depthlimb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pucs Left Leg" texture="pucssuit.png" limb="LeftLeg" depthlimb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pucs Left Shoe" texture="pucssuit.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pucs Right Shoe" texture="pucssuit.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+      <!--StatusEffect type="OnWearing" target="Character" interval="5">
+        <GiveTalentInfo giverandom="false" talentidentifiers="tsm_lightningwizard_pucs" />
+      </StatusEffect-->
+      <StatusEffect type="OnWearing" target="Character" UseHullOxygen="true" ObstructVisionAmount="0.2" PressureProtection="7500.0" LowPassMultiplier="0.2" setvalue="true" disabledeltatime="true">
+        <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true" />
+        <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="250" loop="true" />
+        <TriggerAnimation Type="Walk" FileName="HumanWalkDivingSuit" priority="1" ExpectedSpecies="Human" />
+        <!-- high prio for run animation so e.g. affliction-based run animations won't make the character run faster -->
+        <TriggerAnimation Type="Run" FileName="HumanRunDivingSuit" priority="10" ExpectedSpecies="Human" />
+      </StatusEffect>
+      <!-- Refill oxygen when the suit is contained. -->
+      <StatusEffect type="OnContained" target="Contained" Condition="1.0" targetslot="0" interval="1" disabledeltatime="true">
+        <Conditional Voltage="gt 0.01" targetcontainer="true" targetgrandparent="true" targetitemcomponent="Powered" />
+        <RequiredItem items="refillableoxygensource" type="Contained" excludebroken="false" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained,Character" UseHullOxygen="false" OxygenAvailable="1000.0" comparison="And" targetslot="0">
+        <RequiredItem items="oxygensource" type="Contained" />
+      </StatusEffect>
+      <!-- consume oxygen if not in water and there's not enough oxygen in the hull -->
+      <StatusEffect type="OnWearing" target="Contained" UseHullOxygen="false" Condition="-0.3" comparison="And" targetslot="0">
+        <Conditional targetcontainer="true" targetgrandparent="true" IsDead="false" />
+        <Conditional targetcontainer="true" targetgrandparent="true" DecreasedOxygenConsumption="lt 99" />
+        <Conditional targetcontainer="true" targetgrandparent="true" HullOxygenPercentage="lt 50" />
+        <Conditional targetcontainer="true" targetgrandparent="true" NeedsAir="true" />
+        <Conditional InWater="false" />
+        <RequiredItem items="oxygensource" type="Contained" />
+      </StatusEffect>
+      <!-- consume oxygen if in water -->
+      <StatusEffect type="OnWearing" target="Contained" UseHullOxygen="false" Condition="-0.3" comparison="And" targetslot="0">
+        <Conditional targetcontainer="true" targetgrandparent="true" IsDead="false" />
+        <Conditional targetcontainer="true" targetgrandparent="true" DecreasedOxygenConsumption="lt 99" />
+        <Conditional targetcontainer="true" targetgrandparent="true" NeedsAir="true" />
+        <Conditional InWater="true" />
+        <RequiredItem items="oxygensource" type="Contained" />
+      </StatusEffect>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,bitewounds,lacerations,bleeding" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.15" damagesound="" deflectprojectiles="false" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="explosiondamage" damagemultiplier="0.15" damagesound="" deflectprojectiles="false" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.2" damagesound="LimbArmor" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.5" damagesound="LimbArmor" />
+      <StatValue stattype="WalkingSpeed" value="0.3" />
+      <StatValue stattype="SwimmingSpeed" value="0.05" />
+      <StatValue stattype="PropulsionSpeed" value="-0.2" />
+      <ItemComponent IsActiveConditionalComparison="Or">
+        <IsActive HullOxygenPercentage="lt 50" />
+        <IsActive InWater="eq true" />
+        <StatusEffect type="OnActive" target="Contained,Character" comparison="And">
+          <RequiredItem items="oxygensource" type="Contained" />
+          <Conditional condition="lt 5.0" />
+          <Sound file="Content/Items/WarningBeepSlow.ogg" range="250" loop="true" />
+        </StatusEffect>
+        <StatusEffect type="OnActive" target="Contained" playsoundonrequireditemfailure="true">
+          <RequiredItem items="oxygensource" type="Contained" matchonempty="true" />
+          <Conditional condition="lte 0.0" />
+          <Sound file="Content/Items/WarningBeep.ogg" range="250" loop="true" />
+        </StatusEffect>
+      </ItemComponent>
+    </Wearable>
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
+    <ItemContainer capacity="0" maxstacksize="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0" autoinject="true">
+      <Containable items="none" />
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="2" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="oxygensource,weldingtoolfuel" excludeditems="oxygenitetank" />
+        <Containable items="oxygenitetank">
+          <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="1.2" setvalue="true" comparison="And" targetslot="0">
+            <Conditional IsDead="false" />
+            <Conditional HullOxygenPercentage="lt 50" />
+            <Conditional DecreasedOxygenConsumption="lt 99" />
+            <Conditional NeedsAir="true" />
+          </StatusEffect>
+        </Containable>
+        <Containable items="weldingfueltank" blameequipperfordeath="true">
+          <StatusEffect type="OnWearing" target="Contained" Condition="-0.5" comparison="And">
+            <Conditional TargetContainer="true" TargetGrandparent="true" IsDead="false" />
+            <Conditional TargetContainer="true" TargetGrandparent="true" DecreasedOxygenConsumption="lt 99" />
+            <Conditional TargetContainer="true" TargetGrandparent="true" NeedsAir="true" />
+          </StatusEffect>
+          <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" Oxygen="-5.0" comparison="And">
+            <Conditional IsDead="false" />
+            <Conditional DecreasedOxygenConsumption="lt 99" />
+            <Conditional NeedsAir="true" />
+          </StatusEffect>
+        </Containable>
+        <Containable items="incendiumfueltank" blameequipperfordeath="true">
+          <StatusEffect type="OnWearing" target="Contained" Condition="-0.5" comparison="And">
+            <Conditional TargetContainer="true" TargetGrandparent="true" IsDead="false" />
+            <Conditional TargetContainer="true" TargetGrandparent="true" DecreasedOxygenConsumption="lt 99" />
+            <Conditional TargetContainer="true" TargetGrandparent="true" NeedsAir="true" />
+          </StatusEffect>
+          <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" comparison="And" targetlimb="Torso">
+            <Affliction identifier="burn" amount="20.0" />
+            <Conditional IsDead="false" />
+            <Conditional DecreasedOxygenConsumption="lt 99" />
+            <Conditional NeedsAir="true" />
+          </StatusEffect>
+        </Containable>
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="chem,syringe" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="loadable" hide="true"/>
+      </SubContainer>
+    </ItemContainer>
+    <aitarget maxsightrange="1500" />
+  </Item>
+  <Item name="绝缘服内衬" identifier="tsm_insulated_suit" subcategory="tsmmissions" category="Equipment" hideinmenus="true" tags="smallitem,clothing,vest" fireproof="false" cargocontaineridentifier="tsm_metalcrate" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon name="lin uniform Icon" texture="insulatedsuit.png" sourcerect="189,19,58,120" origin="0.5,0.5" />
+    <Sprite name="lin uniform" texture="%ModDir%/npc/lerentine/Lerentine_heads.png" sourcerect="468,183,89,38" depth="0.55" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="lin Torso" texture="insulatedsuit.png" limb="Torso" depthlimb="Jaw" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Right Hand" texture="insulatedsuit.png" limb="RightHand" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Left Hand" texture="insulatedsuit.png" limb="LeftHand" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Left Lower Arm" texture="insulatedsuit.png" limb="LeftForearm" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Right Lower Arm" texture="insulatedsuit.png" limb="RightForearm" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Left Upper Arm" texture="insulatedsuit.png" limb="LeftArm" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Right Upper Arm" texture="insulatedsuit.png" limb="RightArm" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Waist" texture="insulatedsuit.png" limb="Waist" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Right Thigh" texture="insulatedsuit.png" limb="RightThigh" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Left Thigh" texture="insulatedsuit.png" limb="LeftThigh" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Right Leg" texture="insulatedsuit.png" limb="RightLeg" inheritsourcerect="true" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Left Leg" texture="insulatedsuit.png" limb="LeftLeg" inheritsourcerect="true" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Right Shoe" texture="insulatedsuit.png" limb="RightFoot" inheritsourcerect="true" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Left Shoe" texture="insulatedsuit.png" limb="LeftFoot" inheritsourcerect="true" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="lin Boobs" texture="%ModDir%/npc/lerentine/Lerentine_heads.png" limb="Tail" hidelimb="true" inherittexturescale="false" sourcerect="0,0,1,1" inheritorigin="true" />
+      <sprite name="lin Boobs" texture="%ModDir%/npc/lerentine/Lerentine_heads.png" limb="Jaw" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      <damagemodifier afflictionidentifiers="burn" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      <damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      <SkillModifier skillidentifier="electrical" skillvalue="10" />
+    </Wearable>
+    <ItemContainer capacity="2">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest" />
+    </ItemContainer>
+  </Item>
+  <Item name="压电发射器" subcategory="tsmmissions" identifier="tsm_lin_tool" hideinmenus="true" category="Weapon" Tags="smallitem,tool,weapon,gun,weldingequipment,cuttingequipment,mountableweapon" cargocontaineridentifier="metalcrate" Scale="0.2" impactsoundtag="impact_metal_light">
+    <Price baseprice="1111" sold="false" />
+    <Deconstruct time="20">
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="50" requiresrecipe="true" HideIfNoRecipe="true">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredSkill identifier="mechanical" level="80" />
+      <RequiredSkill identifier="electrical" level="80" />
+      <RequiredItem identifier="nucleargun" />
+      <RequiredItem identifier="incendium" />
+      <RequiredItem identifier="fulgurium" />
+      <RequiredItem identifier="physicorium" />
+      <RequiredItem identifier="dementonite" />
+    </Fabricate>
+    <InventoryIcon texture="tool.png" sourcerect="942,6,325,352" origin="0.5,0.5" />
+    <Sprite texture="tool.png" sourcerect="0,0,429,155" depth="0.55" origin="0.5,0.5" />
+    <Body width="429" height="155" density="40" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-15" aimpos="50,0" handle1="-51,-27" handle2="-4,-30" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <!-- 焊接工具 -->
+    <RepairTool firedamage="20.0" structurefixamount="5.0" range="150" barrelpos="52,2" particles="weld" repairmultiple="true" repairthroughwalls="false" combatpriority="10" levelwallfixamount="-0.425" targetforce="10">
+      <RequiredItem items="reactorfuel" type="Contained" targetslot="0" msg="itemmsgreactorfuelrequired" />
+      <RequiredItems items="loadable" type="Contained" targetslot="1" msg="itemmsgbatterycellrequired"/>
+      <RequiredItems items="tsm_incendiumfueltank" type="Contained" targetslot="2" />
+      <RequiredSkill identifier="mechanical" level="50" />
+      <ParticleEmitter particle="weld" particlespersecond="50" copyentityangle="true" />
+      <ParticleEmitterHitStructure particle="weldspark" particlespersecond="200" anglemin="-40" anglemax="40" velocitymin="200" velocitymax="800" />
+      <ParticleEmitterHitStructure particle="GlowDot" particlespersecond="60" emitinterval="0.7" particleamount="10" scalemin="0.9" scalemax="1.0" anglemin="0" anglemax="360" velocitymin="10" velocitymax="50" />
+      <ParticleEmitterHitStructure particle="MistSmoke" particlespersecond="20" anglemin="-10" anglemax="10" velocitymin="0" velocitymax="50" />
+      <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="weldspark" particlespersecond="200" anglemin="-40" anglemax="40" velocitymin="200" velocitymax="800" />
+      <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="MistSmoke" particlespersecond="20" anglemin="-10" anglemax="10" velocitymin="10" velocitymax="100" />
+      <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100" />
+      <sound file="Content/Items/Tools/WeldingLoop.ogg" type="OnUse" range="500.0" loop="true" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="fuelrod" targetslot="0" Condition="-1.25" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="thoriumfuelrod" targetslot="0" Condition="-1.0" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="fulguriumfuelrod" targetslot="0" Condition="-0.55" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="fulguriumfuelrodvolatile" targetslot="0" Condition="-0.55" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="batterycell" targetslot="1" Condition="-0.7" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="fulguriumbatterycell" targetslot="1" Condition="-0.5" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="tsm_kep_battery" targetslot="1" Condition="-0.4" />
+      <StatusEffect type="OnSuccess" targettype="UseTarget" targets="door,ductblock" Stuck="5.0" Condition="3.0" />
+      <StatusEffect type="OnSuccess" targettype="UseTarget" Condition="-3.0" />
+      <StatusEffect type="OnSuccess" targettype="Limb">
+        <Affliction identifier="burn" amount="2.5" />
+      </StatusEffect>
+      <Fixable identifier="structure" />
+      <NonFixable identifier="thalamus,ice" />
+      <LightComponent LightColor="1.0,0.9,0.7,1.0" Flicker="0.5" canbeselected="false">
+        <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
+      </LightComponent>
+    </RepairTool>
+    <!-- 等离子切割工具 -->
+    <RepairTool firedamage="20.0" structurefixamount="-1.25" range="150" barrelpos="68,2" combatpriority="20" repairmultiple="true" repairthroughwalls="false" maxoverlappingwalldist="0.0" repairthroughholes="true" levelwallfixamount="-5.0" targetforce="10">
+      <RequiredItem items="reactorfuel" type="Contained" targetslot="0" msg="itemmsgreactorfuelrequired" />
+      <RequiredItems items="loadable" type="Contained" targetslot="1" msg="itemmsgbatterycellrequired"/>
+      <RequiredItems items="tsm_oxygenitetank" type="Contained" targetslot="2" />
+      <RequiredSkill identifier="mechanical" level="50" />
+      <ParticleEmitter particle="plasma" particlespersecond="50" copyentityangle="true" />
+      <ParticleEmitterHitStructure particle="plasmaspark" particlespersecond="100" anglemin="-40" anglemax="40" velocitymin="100" velocitymax="800" />
+      <ParticleEmitterHitStructure particle="plasmasmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="20" />
+      <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="plasmaspark" particlespersecond="100" anglemin="-40" anglemax="40" velocitymin="100" velocitymax="800" />
+      <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="plasmasmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100" />
+      <ParticleEmitterHitItem identifiers="ore" particle="iceshards" particlespersecond="5" anglemin="-40" anglemax="40" velocitymin="10" velocitymax="300" scalemin="0.5" scalemax="1.0" />
+      <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100" />
+      <sound file="Content/Items/Tools/PlasmaCutterLoop.ogg" type="OnUse" range="750.0" loop="true" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="fuelrod" targetslot="0" Condition="-1.25" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="thoriumfuelrod" targetslot="0" Condition="-1.0" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="fulguriumfuelrod" targetslot="0" Condition="-0.55" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="fulguriumfuelrodvolatile" targetslot="0" Condition="-0.55" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="batterycell" targetslot="1" Condition="-0.7" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="fulguriumbatterycell" targetslot="1" Condition="-0.5" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="tsm_kep_battery" targetslot="1" Condition="-0.4" />
+      <StatusEffect type="OnSuccess" targettype="UseTarget" targets="door,ductblock,aliendoor" Stuck="-20.0" />
+      <StatusEffect type="OnSuccess" targettype="UseTarget" Condition="-15.0" />
+      <StatusEffect type="OnSuccess" targettype="Limb" severlimbsprobability="0.005">
+        <Affliction identifier="burn" amount="4.0" />
+      </StatusEffect>
+      <Fixable identifier="structure" />
+      <LightComponent LightColor="0.8,0.7,1.0,1.0" Flicker="0.5" canbeselected="false">
+        <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
+      </LightComponent>
+    </RepairTool>
+    <!-- 原型蒸汽炮 -->
+    <RepairTool firedamage="70.0" structurefixamount="0.0" range="700" barrelpos="35,2" fireprobability="0.0" repairmultiple="true" repairthroughwalls="false" repairthroughholes="true" combatpriority="90" spread="25" unskilledspread="25">
+      <RequiredItem items="reactorfuel" type="Contained" targetslot="0" msg="itemmsgreactorfuelrequired" />
+      <RequiredItems items="loadable" type="Contained" targetslot="1" msg="itemmsgbatterycellrequired"/>
+      <RequiredItems items="tsm_flamerunique" type="Contained" targetslot="2" />
+      <RequiredSkill identifier="weapons" level="50" />
+      <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100" />
+      <ParticleEmitter particle="steamspray" particlespersecond="100" anglemin="0" anglemax="0" velocitymin="1500" velocitymax="2500" highqualitycollisiondetection="true" />
+      <ParticleEmitter particle="bubbles" particlespersecond="20" anglemin="-10" anglemax="10" scalemin="0.3" scalemax="0.7" velocitymin="5" velocitymax="100" copyentityangle="true" />
+      <sound file="Content/Items/Weapons/FlameThrowerLoop.ogg" type="OnUse" range="750.0" loop="true" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="fuelrod" targetslot="0" Condition="-2.5" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="thoriumfuelrod" targetslot="0" Condition="-2.0" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="fulguriumfuelrod" targetslot="0" Condition="-1.3" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="fulguriumfuelrodvolatile" targetslot="0" Condition="-1.2" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="batterycell" targetslot="1" Condition="-0.7" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="fulguriumbatterycell" targetslot="1" Condition="-0.5" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="tsm_kep_battery" targetslot="1" Condition="-0.4" />
+    </RepairTool>
+    <!-- 裂变模式 -->
+    <RangedWeapon reload="0.5" holdtrigger="true" barrelpos="170,25" spread="5" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.75">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="FlareBubbles" scalemin="1.4" scalemax="1.8" particleamount="14" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+      <ParticleEmitter particle="GlowDot" scalemin="4.0" scalemax="4.0" particleamount="20" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" colormultiplier="10,235,195,255" />
+      <ParticleEmitterCharge particle="chargenucleargun" particlespersecond="60" scalemultiplier="0.75,0.75" scalemin="1.0" scalemax="1.0" anglemin="0" anglemax="359" />
+      <Sound file="Content/Items/JobGear/Engineer/WEAPONS_rapidFissileAccelerator.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="Content/Items/JobGear/Engineer/WEAPONS_rapidFissileAccelerator2.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/JobGear/Engineer/WEAPONS_rapidFissileAccelerator3.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/JobGear/Engineer/WEAPONS_rapidFissileAccelerator4.ogg" type="OnUse" range="3000" />
+      <ChargeSound file="Content/Items/JobGear/Engineer/WEAPONS_rapidFissileAcceleratorStartLoop.ogg" range="1000" />
+      <StatusEffect type="OnUse" target="This">
+        <Explosion range="150.0" force="3" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <RequiredItem items="reactorfuel" type="Contained" targetslot="0" msg="itemmsgreactorfuelrequired" />
+      <RequiredItems items="loadable" type="Contained" targetslot="1" msg="itemmsgbatterycellrequired"/>
+      <RequiredItems items="tsm_nucleargun" type="Contained" targetslot="2" />
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredSkill identifier="electrical" level="50" />
+    </RangedWeapon>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
+      <GuiFrame relativesize="0.08,0.065" anchor="BottomCenter" relativeoffset="-0.092,0.072" style="MainMenuGUIButton" hidedragicons="true" draggable="false" />
+      <Button text="tsm_hj">
+        <StatusEffect type="OnUse" target="Contained" targetslot="2" setvalue="true">
+          <remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" delay="0.1">
+          <SpawnItem identifiers="tsm_incendiumfueltank" spawnposition="ThisInventory" Count="1" />
+        </StatusEffect>
+      </Button>
+    </CustomInterface>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
+      <GuiFrame relativesize="0.08,0.065" anchor="BottomCenter" relativeoffset="-0.011,0.072" style="MainMenuGUIButton" hidedragicons="true" draggable="false" />
+      <Button text="tsm_qg">
+        <StatusEffect type="OnUse" target="Contained" targetslot="2" setvalue="true">
+          <remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" delay="0.1">
+          <SpawnItem identifiers="tsm_oxygenitetank" spawnposition="ThisInventory" Count="1" />
+        </StatusEffect>
+      </Button>
+    </CustomInterface>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
+      <GuiFrame relativesize="0.08,0.065" anchor="BottomCenter" relativeoffset="0.07,0.072" style="MainMenuGUIButton" hidedragicons="true" draggable="false" />
+      <Button text="tsm_zq">
+        <StatusEffect type="OnUse" target="Contained" targetslot="2" setvalue="true">
+          <remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" delay="0.1">
+          <SpawnItem identifiers="tsm_flamerunique" spawnposition="ThisInventory" Count="1" />
+        </StatusEffect>
+      </Button>
+    </CustomInterface>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
+      <GuiFrame relativesize="0.08,0.065" anchor="BottomCenter" relativeoffset="0.15,0.072" style="MainMenuGUIButton" hidedragicons="true" draggable="false" />
+      <Button text="tsm_lb">
+        <StatusEffect type="OnUse" target="Contained" targetslot="2" setvalue="true">
+          <remove />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This" delay="0.1">
+          <SpawnItem identifiers="tsm_nucleargun" spawnposition="ThisInventory" Count="1" />
+        </StatusEffect>
+      </Button>
+    </CustomInterface>
+    <aitarget sightrange="2000" soundrange="500" fadeouttime="3" />
+    <ItemContainer capacity="0" maxstacksize="0" hideitems="false" SpawnWithId="tsm_incendiumfueltank" containedspritedepth="0.56" containedstateindicatorstyle="tank">
+      <Containable items="none" />
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="192,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="reactorfuel" rotation="45" itempos="-21.5,-7"/>
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="loadable" hide="true"/>
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="tsm_oxygentank" hide="true" />
+      </SubContainer>
+    </ItemContainer>
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
+      <QualityStat stattype="RepairToolStructureRepairMultiplier" value="0.1" />
+      <QualityStat stattype="RepairToolStructureDamageMultiplier" value="0.1" />
+      <QualityStat stattype="RepairToolDeattachTimeMultiplier" value="0.1" />
+    </Quality>
+    <SkillRequirementHint identifier="weapons" level="30" />
+    <SkillRequirementHint identifier="electrical" level="50" />
+    <SkillRequirementHint identifier="mechanical" level="50" />
+  </Item>
+  <!-- 用于多功能物品 -->
+  <Item name="焊接模式" identifier="tsm_incendiumfueltank" category="Fuel,Equipment" tags="tsm_oxygentank,tsm_incendiumfueltank" scale="0.5" hideinmenus="true" noninteractable="true">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="225,33,36,36" origin="0.5,0.5" />
+    <Body width="36" height="36" density="15" />
+  </Item>
+  <Item name="切割模式" identifier="tsm_oxygenitetank" category="Fuel,Equipment" tags="tsm_oxygentank,tsm_oxygenitetank" scale="0.5" hideinmenus="true" noninteractable="true">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="225,33,36,36" origin="0.5,0.5" />
+    <Body width="36" height="36" density="15" />
+  </Item>
+  <Item name="裂变模式" identifier="tsm_nucleargun" category="Fuel,Equipment" tags="tsm_oxygentank,tsm_nucleargun" scale="0.5" hideinmenus="true" noninteractable="true">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="225,33,36,36" origin="0.5,0.5" />
+    <Body width="36" height="36" density="15" />
+  </Item>
+  <Item name="蒸汽模式" identifier="tsm_flamerunique" category="Fuel,Equipment" tags="tsm_oxygentank,tsm_flamerunique" scale="0.5" hideinmenus="true" noninteractable="true">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,64,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="225,33,36,36" origin="0.5,0.5" />
+    <Body width="36" height="36" density="15" />
+  </Item>
+</Items>

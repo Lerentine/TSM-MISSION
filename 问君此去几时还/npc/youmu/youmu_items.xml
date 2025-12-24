@@ -30,4 +30,125 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <SkillRequirementHint identifier="weapons" level="30" />
   </Item>
+  <Item name="妖梦幻化器" subcategory="tsmmissions" identifier="tsm_youmu" scale="0.25" category="Equipment" tags="smallitem,mobileradio" description="" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/npc/youmu/youmu_head.png" sourcerect="224,79,168,213" origin="0.5,0.5" />
+    <Sprite name="lerentine_OAS" texture="%ModDir%/npc/lerentine/Lerentine_heads.png" sourcerect="444,17,84,133" depth="0.55" />
+    <Body radius="50" height="70" density="6" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="silicon" />
+      <Item identifier="zinc" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredItem identifier="tsm_youmu" amount="1" />
+    </Fabricate>
+    <WifiComponent range="55000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <Upgrade gameversion="0.18.0.0">
+      <WifiComponent>
+        <RequiredItems items="" />
+      </WifiComponent>
+    </Upgrade>
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Lerentin Head" texture="%ModDir%/npc/youmu/youmu_head.png" limb="Head" depth="0.15" inheritdepth="false" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="224,79,168,213" canbehiddenbyotherwearables="true" hidelimb="true" origin="0.45,0.28" inheritorigin="false" inheritscale="false" Scale="0.25" hideotherwearables="false" />
+      <sprite name="Lerentine Torso" texture="%ModDir%/npc/youmu/youmu.png" limb="Torso" inheritsourcerect="true" hidelimb="true" inherittexturescale="false" Scale="0.45" inheritlimbdepth="true" inheritorigin="true"/>
+      <sprite name="Lerentine Right Hand" texture="%ModDir%/npc/youmu/youmu.png" limb="RightHand" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Left Hand" texture="%ModDir%/npc/youmu/youmu.png" limb="LeftHand" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Left Lower Arm" texture="%ModDir%/npc/youmu/youmu.png" limb="LeftForearm" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Right Lower Arm" texture="%ModDir%/npc/youmu/youmu.png" limb="RightForearm" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Left Upper Arm" texture="%ModDir%/npc/youmu/youmu.png" limb="LeftArm" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Right Upper Arm" texture="%ModDir%/npc/youmu/youmu.png" limb="RightArm" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Waist" texture="%ModDir%/npc/youmu/youmu.png" limb="Waist" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Right Thigh" texture="%ModDir%/npc/youmu/youmu.png" limb="RightThigh" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Left Thigh" texture="%ModDir%/npc/youmu/youmu.png" limb="LeftThigh" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Right Leg" texture="%ModDir%/npc/youmu/youmu.png" limb="RightLeg" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Left Leg" texture="%ModDir%/npc/youmu/youmu.png" limb="LeftLeg" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Right Shoe" texture="%ModDir%/npc/youmu/youmu.png" limb="RightFoot" depthlimb="RightThigh" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Left Shoe" texture="%ModDir%/npc/youmu/youmu.png" limb="LeftFoot" depthlimb="LeftThigh" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentine Boobs" texture="%ModDir%/npc/youmu/youmu.png" limb="Tail" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
+      <sprite name="Lerentine Boobs" texture="%ModDir%/npc/youmu/youmu.png" limb="Jaw" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
+      <!--StatusEffect type="OnWearing" target="Character,Contained" noninteractable="true" condition="-10" targetslot="0">
+        <ReduceAffliction type="bloodloss" amount="2.5" />
+        <RequiredItem items="antibloodloss1" type="Contained" targetslot="0" />
+        <Conditional bloodloss="gt 5.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character,Contained" condition="-5" targetslot="0">
+        <ReduceAffliction type="bloodloss" amount="6" />
+        <RequiredItem items="antibloodloss2" type="Contained" targetslot="0" />
+        <Conditional bloodloss="gt 5.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character,Contained" condition="-5" targetslot="0">
+        <Affliction identifier="psychosis" amount="2.25" />
+        <ReduceAffliction type="bloodloss" amount="6" />
+        <RequiredItem items="alienblood" type="Contained" targetslot="0" />
+        <Conditional bloodloss="gt 5.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character,Contained" comparison="or" condition="-10" targetslot="1">
+        <ReduceAffliction type="damage" amount="5" />
+        <ReduceAffliction type="burn" amount="0.1" />
+        <Affliction identifier="oxygenlow" amount="2" />
+        <Affliction identifier="opiateaddiction" amount="0.5" />
+        <Affliction identifier="opiateoverdose" amount="1.0" />
+        <ReduceAffliction identifier="opiatewithdrawal" amount="3.0" />
+        <RequiredItem items="antidama1" type="Contained" targetslot="1" />
+        <Conditional internaldamage="gt 0.0" />
+        <Conditional blunttrauma="gt 0.0" />
+        <Conditional lacerations="gt 0.0" />
+        <Conditional bitewounds="gt 0.0" />
+        <Conditional gunshotwound="gt 0.0" />
+        <Conditional organdamage="gt 0.0" />
+        <Conditional explosiondamage="gt 0.0" />
+        <Conditional concussion="gt 0.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character,Contained" comparison="or" condition="-20" targetslot="1">
+        <ReduceAffliction type="damage" amount="15" />
+        <ReduceAffliction type="burn" amount="1" />
+        <Affliction identifier="oxygenlow" amount="6" />
+        <Affliction identifier="opiateaddiction" amount="1.5" />
+        <Affliction identifier="opiateoverdose" amount="4.5" />
+        <ReduceAffliction identifier="opiatewithdrawal" amount="20" />
+        <RequiredItem items="antidama2" type="Contained" targetslot="1" />
+        <Conditional internaldamage="gt 0.0" />
+        <Conditional blunttrauma="gt 0.0" />
+        <Conditional lacerations="gt 0.0" />
+        <Conditional bitewounds="gt 0.0" />
+        <Conditional gunshotwound="gt 0.0" />
+        <Conditional organdamage="gt 0.0" />
+        <Conditional explosiondamage="gt 0.0" />
+        <Conditional concussion="gt 0.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character,Contained" comparison="or" condition="-5" targetslot="1">
+        <Affliction identifier="burn" amount="0.02" />
+        <ReduceAffliction type="damage" amount="3" />
+        <ReduceAffliction identifier="oxygenlow" amount="3" />
+        <ReduceAffliction identifier="bloodloss" amount="2" />
+        <RequiredItem items="deusizine" type="Contained" targetslot="1" />
+        <Conditional internaldamage="gt 0.0" />
+        <Conditional blunttrauma="gt 0.0" />
+        <Conditional lacerations="gt 0.0" />
+        <Conditional bitewounds="gt 0.0" />
+        <Conditional gunshotwound="gt 0.0" />
+        <Conditional organdamage="gt 0.0" />
+        <Conditional explosiondamage="gt 0.0" />
+        <Conditional concussion="gt 0.0" />
+        <Conditional bloodloss="gt 5.0" />
+        <Conditional oxygenlow="gt 50.0" />
+      </StatusEffect-->
+    </Wearable>
+    <!--ItemContainer capacity="0" maxstacksize="0" autoinject="false" containedstateindicatorstyle="syringe">
+      <Containable items="none" />
+      <SlotIcon slotindex="0" texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,448,64,64" origin="0.5,0.45" />
+      <SlotIcon slotindex="1" texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,448,64,64" origin="0.5,0.45" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="antibloodloss1,antibloodloss2,alienblood" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="antidama1,antidama2,deusizine" />
+      </SubContainer>
+    </ItemContainer-->
+  </Item>
 </Items>

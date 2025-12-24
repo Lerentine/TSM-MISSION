@@ -1,104 +1,71 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Missions>
-  <!--原版-->
-  <!--MonsterMission name="" identifier="tsmmission11" tags="tsm4" type="Monster" 
-    description="" 
-    commonness="100" reward="30000" sonarlabel="" 
-    maxsonarmarkerdistance="10000" successmessage="" spawntype="Abyss" difficulty="7">
-    <monster character="Endwormhusk" min="6" max="8" />
-    <Reputation identifier="location" amount="4" />
-    <Reputation identifier="coalition" amount="2" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
-    <message header="" text="" />
-  </MonsterMission-->
-  <MonsterMission name="边界案例*其一" identifier="tsmmission11" type="Monster" tags="tsm_abyss" description="自从深渊门打开后，就会有很多来客造访浅滩深渊，上次我们观测到这批客人之后，我们在远处给他们打上了印记。这次居然在奇迹之海的地盘检测到了信号。所以战士们既然已手握刀剑，那就战斗到底吧！" commonness="100" reward="11500" sonarlabel="盘星" maxsonarmarkerdistance="30000" successmessage="列星陨坠" spawntype="Abyss" difficulty="5">
+  <MonsterMission name="边界案例*其一" identifier="tsmmission11" type="Monster" tags="tsm_abyss" commonness="100" reward="11500" sonarlabel="盘星" maxsonarmarkerdistance="30000" successmessage="列星陨坠" spawntype="Abyss" difficulty="5">
     <monster character="巨型捕勾兽" min="2" max="2" />
     <monster character="巨型捕勾兽" min="1" max="2" multiplayeronly="true" />
     <Reputation identifier="location" amount="3" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
     <message header="已记录到边界档案，编号011" text="我们的土地，容不得任何生物践踏。" />
   </MonsterMission>
-  <MonsterMission name="天狗吞日，大道无光" identifier="tsmmission12" type="Monster" tags="tsm_abyss" description="奇迹之海正在73前线阵地作战，现已无暇顾及这个地区的安危了，但奇迹之海保证击杀这些异兽的船长将获得[reward]mk奖励。" commonness="100" reward="11500" sonarlabel="目前" maxsonarmarkerdistance="30000" successmessage="恭喜你，成功了！" spawntype="Abyss" difficulty="5">
+  <MonsterMission name="天狗吞日，大道无光" identifier="tsmmission12" type="Monster" tags="tsm_abyss" commonness="100" reward="11500" sonarlabel="目前" maxsonarmarkerdistance="30000" successmessage="恭喜你，成功了！" spawntype="Abyss" difficulty="5">
     <monster character="巨型女妖" min="2" max="3" />
     <Reputation identifier="location" amount="3" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
     <message header="生光" text="真是一次亮眼的表现！" />
   </MonsterMission>
-  <!--MonsterMission name="BUG!BUG!" identifier="tsmmission13" type="Monster" tags="tsm1,DifficultHuntingAbyss" description="我们检测到几只大虫正在靠近该区域，预计5小时就能抵达这个站点，舰长请击退他们，否则我们都将葬身冰洋。" commonness="100" reward="18500" sonarlabel="BUG" maxsonarmarkerdistance="30000" successmessage="目标已消失，请尽快返航。" spawntype="Abyss" difficulty="6">
-    <monster character="doomworm" min="1" max="1" />
-    <monster character="endworm" min="2" max="3" />
-    <Reputation identifier="coalition" amount="4" />
-    <Reputation identifier="location" amount="4" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
-    <message header="虫群终结者" text="我们不再畏惧虫群！" />
-  </MonsterMission-->
-  <MonsterMission name="赛博狂欢" identifier="tsmmission14" type="Monster" tags="tsm_abyss" description="" commonness="100" reward="13000" sonarlabel="" maxsonarmarkerdistance="30000" successmessage="" spawntype="Abyss" difficulty="5">
+  <MonsterMission name="赛博狂欢" identifier="tsmmission14" type="Monster" tags="tsm_abyss" commonness="100" reward="13000" sonarlabel="" maxsonarmarkerdistance="30000" spawntype="Abyss" difficulty="5">
     <monster character="Cyborgworm" min="2" max="2" />
     <monster character="Cyborgworm" min="1" max="2" multiplayeronly="true" />
     <Reputation identifier="location" amount="4" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
     <message header="" text="" />
   </MonsterMission>
-  <!--MonsterMission name="风暴汇聚，托我登云" identifier="tsmmission15" tags="tsm1" type="Monster" description="一大群锤头鲨已经威胁[location1]和[location2]之间航道的安全了，这群锤头鲨风暴已经席卷了很多站点，有的地区都将他们封为神明了。所以请船长火速出击，歼灭他们。" commonness="100" reward="10000" sonarlabel="风暴" maxsonarmarkerdistance="10000" successmessage="他们的神坛由我抹去。" difficulty="5">
-    <monster character="hammerheadgold" min="6" max="8" />
-    <monster character="hammerhead" min="6" max="8" />
-    <monster character="watcher" min="1" max="1" />
-    <Reputation identifier="location" amount="4" />
-    <Reputation identifier="coalition" amount="2" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
-    <message header="不堪一击" text="旧神的覆灭，新神的崛起。" />
-  </MonsterMission-->
-  <MonsterMission name="捕钩兽来袭！" identifier="tsmmission16" type="Monster" tags="tsm_abyss" description="奇迹之海观测到有一群捕钩兽正在朝这个地区袭来，我们许诺给予将其击退的船长[reward]mk奖励。" commonness="100" reward="14500" sonarlabel="捕勾兽" maxsonarmarkerdistance="30000" successmessage="折断捕勾" spawntype="Abyss" difficulty="7">
+  <MonsterMission name="捕钩兽来袭！" identifier="tsmmission16" type="Monster" tags="tsm_abyss" commonness="100" reward="14500" sonarlabel="捕勾兽" maxsonarmarkerdistance="30000" successmessage="折断捕勾" spawntype="Abyss" difficulty="7">
     <monster character="Latcher" min="2" max="3" />
     <monster character="Latcher" min="2" max="2" multiplayeronly="true" />
     <Reputation identifier="location" amount="3" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
     <message header="未发生的冲击" text="船长，做的好，你又一次保卫了这个地区。" />
   </MonsterMission>
-  <!--MonsterMission name="哀叹的最初之兽" identifier="tsmmission17" tags="tsm1,DifficultHunting" type="Monster" description="船长，我们扫描到此地有多个爬行者巢母带着爬行者们在争夺地盘，但是他们的争斗影响到了我们航道的正常航行，先前我们派遣了一小队奇迹之海的战士去完成任务，但是很快就失联了。事态紧急，所以我们选择了你，这次任务是清除掉所有种群一个不留，并且寻找失联士兵的下落。" commonness="100" reward="9000" sonarlabel="爬行者" maxsonarmarkerdistance="10000" successmessage="爬行者的坟墓？不，我们的坟墓。" difficulty="5">
-    <monster character="crawler" min="12" max="14" />
-    <monster character="crawlerbroodmother" min="2" max="3" />
-    <Reputation identifier="location" amount="4" />
-    <Reputation identifier="coalition" amount="2" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
-    <message header="消散的过去" text="我们在爬行者肚子里面看到了穿着奇迹之海制服的战士，他们明明那么年轻，却要像士兵一样战斗，像兵器一样被使用，像物件一样被埋葬。到最后，却无法得到属于他们的荣耀和应有的赞誉，甚至连一段悼词和一座小小的坟墓也不会为他们准备。" />
-  </MonsterMission-->
   <!--EMBI产物-->
-  <MonsterMission name="魔法生物科技公司实验体" identifier="tsmmission21" type="Monster" tags="tsm_hunt_monster" description="木卫二魔法生物科技公司向东亚重工捐赠了一批经受改造的神秘生物，但是东亚重工在测试时收容失效了，我们先前已经派遣了日暮山过去镇压，但是在接触到实验体后便失去了讯息，请注意船长，这不是一群普通的脊刺！请务必小心！" commonness="100" reward="17500" sonarlabel="实验体1号" maxsonarmarkerdistance="10000" successmessage="这次任务务必保密，否则东亚重工会面临高额罚金。" difficulty="6">
+  <MonsterMission name="魔法生物科技公司实验体" identifier="tsmmission21" type="Monster" tags="tsm_hunt_monster" commonness="100" reward="17500" sonarlabel="实验体1号" maxsonarmarkerdistance="10000" difficulty="6">
     <monster character="embi_001" min="4" max="5" />
     <monster character="embi_001" min="3" max="5" multiplayeronly="true" />
     <Reputation identifier="tsm" amount="4" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
     <message header="收容失效" text="嘘！请噤音！" />
   </MonsterMission>
-  <MonsterMission name="EMBI试验场(1)" identifier="tsmmission23" tags="tsm_abyss_d" type="Monster" description="木卫二魔法生物科技公司发布了一个挑战，他们新的实验体已经可以投入使用了，正在招募勇敢不怕死的船员们去挑战新实验体的强度，他们会记录战斗时的数据。如果还有命回来的话，他们会提供一笔丰厚的奖金。" commonness="100" reward="23500" sonarlabel="新三王" maxsonarmarkerdistance="10000" successmessage="“神明在哀悼！让我听听...是谁在悲鸣——”" spawntype="Abyss" difficulty="7">
+  <MonsterMission name="EMBI试验场(1)" identifier="tsmmission23" tags="tsm_abyss_d" type="Monster" commonness="100" reward="23500" sonarlabel="新三王" maxsonarmarkerdistance="10000" spawntype="Abyss" difficulty="7">
     <monster character="embi_t037a" min="1" max="1" />
     <monster character="embi_009" min="1" max="1" />
     <monster character="embi_t044y" min="1" max="1" />
     <Reputation identifier="tsm" amount="5" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
     <message header="死亡丧钟" text="丧钟已经敲响了，但那是另外一个世界之门洞开的礼赞" />
+    <Metadata identifier="tsm_npc_lin_mission" value="1" Operation="Add"/>
   </MonsterMission>
-  <MonsterMission name="残星孤火" identifier="tsmmission24" tags="tsm_abyss_d" type="Monster" description="EMBI公司根据上次实战的数据对T044Y进行了改造，目前正在招募新的船员去挑战，不知道你是否对此感兴趣" commonness="100" reward="16500" sonarlabel="T044Y" maxsonarmarkerdistance="10000" successmessage="“大地的哭声回荡在深渊内，祂愤怒的咆哮着，口器不断摩擦出尖锐的啸声充斥着附近的海域，口中喷出的焰火在不断的燃烧着，不断的燃烧着......”" spawntype="Abyss" difficulty="7">
+  <MonsterMission name="残星孤火" identifier="tsmmission24" tags="tsm_abyss_d" type="Monster" commonness="100" reward="16500" sonarlabel="T044Y" maxsonarmarkerdistance="10000" spawntype="Abyss" difficulty="7">
     <monster character="T044Y" min="1" max="1" />
     <Reputation identifier="tsm" amount="4" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="790,1,234,234" color="255,255,255" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="790,1,234,234" color="255,255,255" />
     <message header="死者的烙印" text="深渊内，大地悲鸣，著我战时戎，星火而已。" />
+    <Metadata identifier="tsm_npc_lin_mission" value="1" Operation="Add"/>
   </MonsterMission>
-  <MonsterMission name="残木成炬" identifier="tsmmission25" tags="tsm_abyss_d" type="Monster" description="EMBI公司根据上次实战的数据对实验体009进行了改造，目前正在招募新的船员去挑战，不知道你是否对此感兴趣" commonness="100" reward="13500" sonarlabel="实验体009" maxsonarmarkerdistance="10000" successmessage="“荒疫的毒牙已被拔下，枯朽的炬火在深渊中徘徊，冰层之中尽是尸骸，但切莫害怕，因为我们钢铁tsm_beast在保佑着我们。”" spawntype="Abyss" difficulty="7">
+  <MonsterMission name="残木成炬" identifier="tsmmission25" tags="tsm_abyss_d" type="Monster" commonness="100" reward="13500" sonarlabel="实验体009" maxsonarmarkerdistance="10000" spawntype="Abyss" difficulty="7">
     <monster character="Experiment009" min="1" max="1" />
     <Reputation identifier="tsm" amount="3" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="252,0,236,234" color="255,255,255" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="252,0,236,234" color="255,255,255" />
     <message header="不会生锈的觉悟" text="冰层中，荒疫席卷，持我手中枪，不过尔尔。" />
+    <Metadata identifier="tsm_npc_lin_mission" value="1" Operation="Add"/>
   </MonsterMission>
-  <MonsterMission name="记忆爪牙" identifier="tsmmission26" tags="tsm_abyss_d" type="Monster" description="EMBI公司根据上次实战的数据对T037α进行了改造，目前正在招募新的船员去挑战。" commonness="100" reward="18500" sonarlabel="T037α" maxsonarmarkerdistance="10000" successmessage="“木卫二，电闪雷鸣，巨械在咆哮，防线仍在。”" spawntype="Abyss" difficulty="7">
+  <MonsterMission name="记忆爪牙" identifier="tsmmission26" tags="tsm_abyss_d" type="Monster" commonness="100" reward="18500" sonarlabel="T037α" maxsonarmarkerdistance="10000" spawntype="Abyss" difficulty="7">
     <monster character="T037α" min="1" max="1" />
     <Reputation identifier="tsm" amount="4" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="490,1,269,235" color="255,255,255" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="490,1,269,235" color="255,255,255" />
     <message header="渊面的黑暗" text="以我们的骨血诞生出新的世界" />
+    <Metadata identifier="tsm_npc_lin_mission" value="1" Operation="Add"/>
   </MonsterMission>
-  <!--新生-->
-  <NestMission identifier="tsmmission31" tags="tsm_hunt_monster_cave" type="Nest" spawntype="cave" reward="12000" itemspawnradius="800" approachitemsradius="800" monsterspawnradius="4000" nestobjectradius="1500" nestobjectamount="20" difficulty="3" commonness="100">
+  <NestMission name="猎杀实验体003" identifier="tsmmission31" tags="tsm_hunt_monster_cave" type="Nest" spawntype="cave" reward="12000" itemspawnradius="800" approachitemsradius="800" monsterspawnradius="4000" nestobjectradius="1500" nestobjectamount="20" difficulty="3" commonness="100">
     <Items>
       <Item identifier="tsm_mission_egg" />
       <Item identifier="tsm_mission_egg" />
@@ -107,10 +74,11 @@
     <monster character="embi_003" min="3" max="4" />
     <monster character="embi_003" min="5" max="7" multiplayeronly="true" />
     <Reputation identifier="tsm" amount="3" />
-    <Icon texture="%ModDir:2852411866%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
     <LocationType from="AnyOutpost" to="AnyOutpost" />
   </NestMission>
-  <NestMission identifier="tsmmission32" tags="tsm_hunt_monster_cave" type="Nest" spawntype="cave" reward="12000" itemspawnradius="800" approachitemsradius="800" monsterspawnradius="4000" nestobjectradius="1500" nestobjectamount="20" difficulty="3" commonness="100">
+  <!--新生-->
+  <NestMission name="长存不灭的过去" identifier="tsmmission32" tags="tsm_hunt_monster_cave" type="Nest" spawntype="cave" reward="12000" itemspawnradius="800" approachitemsradius="800" monsterspawnradius="4000" nestobjectradius="1500" nestobjectamount="20" difficulty="3" commonness="100">
     <Items>
       <Item identifier="guardianpod" />
       <Item identifier="guardianpod" />
@@ -119,32 +87,32 @@
     <monster character="tsm_portalguardian_cave" min="2" max="2" />
     <monster character="tsm_portalguardian_cave" min="2" max="4" multiplayeronly="true" />
     <Reputation identifier="location" amount="2" />
-    <Icon texture="%ModDir:2852411866%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
     <LocationType from="AnyOutpost" to="AnyOutpost" />
   </NestMission>
-  <MonsterMission name="波涛汹涌，巨浪滔天" identifier="tsmmission33" tags="tsm_hunt_monster" type="Monster" description="在前段时间我们驱赶了锤头鲨群后，可是这个地区还没有安宁多久，很快又来了一群新的原住民继续霸占这个航道，所以这次我们不能只是进行驱赶，而是要杀鸡儆猴。剿灭这群原住民！我们会给你丰厚的奖励。" commonness="100" reward="8000" sonarlabel="剑头鲨群" maxsonarmarkerdistance="10000" successmessage="戟尖血未冷" difficulty="5">
-    <monster character="剑头鲨" min="6" max="10" />
-    <monster character="画皮剑头鲨" min="5" max="10" />
+  <MonsterMission name="波涛汹涌，巨浪滔天" identifier="tsmmission33" tags="tsm_hunt_monster" type="Monster" commonness="100" reward="8000" sonarlabel="剑头鲨群" maxsonarmarkerdistance="10000" successmessage="戟尖血未冷" difficulty="5">
+    <monster character="Swordnosed" min="6" max="10" />
+    <monster character="Huskswordnosed" min="5" max="10" />
     <Reputation identifier="location" amount="2" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
     <message header="再添马下魂" text="这个航道总算能安宁一阵子了" />
   </MonsterMission>
-  <MonsterMission name="微观战争" identifier="tsmmission34" tags="tsm_hunt_monster" type="Monster" description="嘿嘿，你猜怎么着。我们使用微缩武器缩小了一些捕勾兽，由于他们体型变的太小了，所以他们全逃走了，所以船长趁还没有引起大骚乱之前解决掉他们！" commonness="100" reward="9000" sonarlabel="微观捕勾" maxsonarmarkerdistance="10000" successmessage="有趣的实验" difficulty="5">
-    <monster character="微观捕勾兽" min="4" max="6" />
-    <monster character="微观捕勾兽" min="2" max="4" multiplayeronly="true" />
+  <MonsterMission name="微观战争" identifier="tsmmission34" tags="tsm_hunt_monster" type="Monster" commonness="100" reward="9000" sonarlabel="微观捕勾" maxsonarmarkerdistance="10000" successmessage="有趣的实验" difficulty="5">
+    <monster character="tsm_latcher_m" min="4" max="6" />
+    <monster character="tsm_latcher_m" min="2" max="4" multiplayeronly="true" />
     <Reputation identifier="location" amount="2" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
     <message header="无法回头" text="如果真有一天得偿夙愿，斩断一切因果的锁链。" />
   </MonsterMission>
-  <MonsterMission name="摩洛克狂潮" identifier="tsmmission35" type="Monster" tags="tsm_hunt_monster" description="我们探测到一群不常规摩螺克正袭击在[location1]和[location2]之间行驶的船只。请注意，这次可能不是常规摩洛克，这些摩洛克异常残暴请小心！" commonness="100" reward="15000" sonarlabel="极具摩洛克" maxsonarmarkerdistance="30000" successmessage="摩螺克群已被清除。" difficulty="5">
-    <monster character="极具摩洛克" min="3" max="4" />
-    <monster character="极具摩洛克" min="1" max="2" multiplayeronly="true" />
+  <MonsterMission name="摩洛克狂潮" identifier="tsmmission35" type="Monster" tags="tsm_hunt_monster"  commonness="100" reward="15000" sonarlabel="极具摩洛克" maxsonarmarkerdistance="30000" successmessage="摩螺克群已被清除。" difficulty="5">
+    <monster character="极具摩洛克" min="2" max="3" />
+    <monster character="极具摩洛克" min="2" max="3" multiplayeronly="true" />
     <Reputation identifier="location" amount="3" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
     <message header="大清洗完成" text="已确认全部歼灭，请返航！" />
   </MonsterMission>
-  <AlienRuinClearMission name="他们的土地，他们的血" identifier="tsmmission36" description="越来越多的人涌入站点，导致站点已经快要人满为患了，所以我们决定开辟一个新的站点，我们扫描到在航道内有一处遗迹.经过勘探，那个位置极好，但是里面还有很多遗留的守卫，所以我们希望船长可以帮我们解决掉这些守卫，当然费用不是问题。" tags="tsm_hunt_monster_cave" type="ClearAlienRuins" difficulty="5" commonness="100" reward="13000" sonarlabel="分形守卫" targetenemies="分形破坏者,分形撕裂者" minenemycount="8" maxenemycount="12" requireruin="true" successmessage="“这里交织着永恒与毁灭”">
-    <Icon texture="%ModDir:2852411866%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+  <AlienRuinClearMission name="他们的土地，他们的血" identifier="tsmmission36" tags="tsm_hunt_monster_cave" type="ClearAlienRuins" difficulty="5" commonness="100" reward="13000" sonarlabel="target" targetenemies="FractalAzureVanguard,FractalCrimsonHarbinger" minenemycount="8" maxenemycount="12" requireruin="true" successmessage="“这里交织着永恒与毁灭”">
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
     <Reputation identifier="location" amount="3" />
     <LocationType from="City" to="Research" />
     <LocationType from="City" to="None" />
@@ -161,108 +129,90 @@
     <LocationType from="Research" to="Lair" />
     <message header="掠夺者" text="我们生来就是掠夺者" />
   </AlienRuinClearMission>
-  <MonsterMission name="魔女狩猎" identifier="tsmmission37" type="Monster" tags="tsm_abyss_d" description="我们定位到袭击的唱诗班孩子的船了，通过远距离观测她好像发生了二次变异。根据薇拉传来的情报看，这个变异蠕虫似乎是之前失踪的都尉-伯伦希尔的载体，我们不清楚在失踪的期间究竟发生了什么，薇拉目前还没有传回来更多的情报。但无论蠕虫是谁，如果放任不管的话，会造成更大的破坏。" commonness="100" reward="17500" sonarlabel="魔女" spawntype="Abyss" maxsonarmarkerdistance="30000" successmessage="魔女的下颚" difficulty="5">
-    <monster character="魔女的下颚" min="1" max="1" />
+  <MonsterMission name="魔女狩猎" identifier="tsmmission37" type="Monster" tags="tsm_abyss_d" commonness="100" reward="17500" sonarlabel="魔女" spawntype="Abyss" maxsonarmarkerdistance="30000" successmessage="魔女的下颚" difficulty="5">
+    <monster character="Vengeful_Witch" min="1" max="1" />
     <Reputation identifier="tsm" amount="5" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
-    <message header="永恒的墓碑" text="根据薇拉的上交的任务报告来看，在奇迹之海被联盟冲破并用大义的名义处死了伯伦希尔的导师索格拉迪斯。伯伦希尔在这之后就失去了踪迹，她被降临派哄骗成为了融合魔女的钥匙，那个巨大的变异蠕虫就是降临派的魔女的载体。我还记着以前在学院里一起学习的时候，她是那么喜欢唱歌，我还是蛮喜欢她拉着我们一起讲她导师的想法多么多么伟大，只可惜，以后再也没有机会听到了。" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+    <message header="永恒的墓碑" text="" />
+    <Metadata identifier="tsm_npc_lin_mission" value="1" Operation="Add"/>
   </MonsterMission>
-  <MonsterMission name="白化造物（一）" identifier="tsmmission38" type="Monster" tags="tsm_hunt_monster" description="航道内来了一群不速之客，但很明显这些生物并非普通变种，是某人的作品。好了水手们该清理垃圾了。" commonness="100" reward="14000" sonarlabel="白化棘刺" maxsonarmarkerdistance="30000" successmessage="白化家族首次现身" difficulty="5">
+  <MonsterMission name="白化造物（一）" identifier="tsmmission38" type="Monster" tags="tsm_hunt_monster" commonness="100" reward="14000" sonarlabel="白化棘刺" maxsonarmarkerdistance="30000" successmessage="白化家族首次现身" difficulty="5">
     <monster character="AlbinismSpineling_giant" min="4" max="6" />
     <monster character="AlbinismSpineling_giant" min="2" max="4" multiplayeronly="true" />
     <monster character="AlbinismSpineling" min="4" max="6" />
     <monster character="AlbinismSpineling" min="4" max="6" multiplayeronly="true" />
     <Reputation identifier="location" amount="3" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
     <message header="破晓白光" text="一场'雨'过后，血液海水互换了身份，抬头是满天划过的流星，足下尸山血海" />
   </MonsterMission>
-  <MonsterMission name="那段漫漫136万里的归途" identifier="tsmmission39" type="Monster" tags="tsm_hunt_monster" description="" commonness="100" reward="11000" sonarlabel="" maxsonarmarkerdistance="30000" successmessage="" difficulty="5">
-    <monster character="CorruptionMachinery" min="1" />
-    <monster character="Corruptionmachinery_buff" min="1" />
-    <monster character="CorruptionMachinery" min="1" max="2" multiplayeronly="true" />
+  <MonsterMission name="那段漫漫136万里的归途" identifier="tsmmission39" type="Monster" tags="tsm_hunt_monster" commonness="100" reward="11000" sonarlabel="" maxsonarmarkerdistance="30000" difficulty="5">
+    <monster character="CorruptionMachinery" min="2" max="2"/>
+    <monster character="CorruptionMachinery" min="2" max="3" multiplayeronly="true" />
     <Reputation identifier="location" amount="2" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
-    <message header="" text="。" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+    <message header="" text="" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_mission_fire_water" campaignonly="true" />
   </MonsterMission>
-  <MonsterMission name="血肉运输" identifier="tsmmission40" type="Monster" tags="tsm_hunt_monster" description="" commonness="100" reward="12000" sonarlabel="" maxsonarmarkerdistance="30000" successmessage="" difficulty="5">
-    <monster character="AlbinismMoloch" min="3" />
+  <MonsterMission name="血肉运输" identifier="tsmmission40" type="Monster" tags="tsm_hunt_monster" commonness="100" reward="12000" sonarlabel="" maxsonarmarkerdistance="30000" difficulty="5">
+    <monster character="AlbinismMoloch" min="3" max="3"/>
     <monster character="AlbinismMoloch" min="1" max="2" multiplayeronly="true" />
     <Reputation identifier="tsm" amount="2" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
     <message header="" text="" />
   </MonsterMission>
+  <NestMission name="黄道掠影" identifier="tsmmission46" tags="tsm_hunt_monster_cave" type="Nest" spawntype="cave" reward="14000" itemspawnradius="800" approachitemsradius="800" monsterspawnradius="4000" nestobjectradius="1500" nestobjectamount="20" difficulty="3" commonness="100">
+    <Items>
+      <Item identifier="tsm_egg" />
+      <Item identifier="tsm_egg" />
+      <Item identifier="tsm_egg" />
+      <Item identifier="tsm_egg" />
+      <Item identifier="tsm_egg" />
+    </Items>
+    <monster character="Eclipticshadow" min="3" max="5" />
+    <monster character="Eclipticshadow" min="4" max="5" multiplayeronly="true" />
+    <Reputation identifier="location" amount="3" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+    <LocationType from="AnyOutpost" to="AnyOutpost" />
+  </NestMission>
+  <NestMission name="穿云鲸" identifier="tsmmission47" tags="tsm_hunt_monster_cave" type="Nest" spawntype="cave" reward="13000" itemspawnradius="800" approachitemsradius="800" monsterspawnradius="4000" nestobjectradius="1500" nestobjectamount="20" difficulty="3" commonness="100">
+    <Items>
+      <Item identifier="tsm_egg" />
+      <Item identifier="tsm_egg" />
+      <Item identifier="tsm_egg" />
+      <Item identifier="tsm_egg" />
+      <Item identifier="tsm_egg" />
+    </Items>
+    <monster character="Skypiercingdolphin" min="3" max="5" />
+    <monster character="Skypiercingdolphin" min="5" max="7" multiplayeronly="true" />
+    <Reputation identifier="location" amount="3" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+    <LocationType from="AnyOutpost" to="AnyOutpost" />
+  </NestMission>
   <!--移植-->
-  <MonsterMission name="地震" identifier="tsmmission41" tags="tsm_abyss" type="Monster" description="该地区检测到巨型脉冲干扰，并且在航道内感受到，剧烈的震动，还请过往的船长远离这条航道，待奇迹之海解决后再通过。" commonness="100" reward="15000" sonarlabel="震源之中" maxsonarmarkerdistance="10000" successmessage="关于翻天覆地的变动已经临头了。" spawntype="Abyss" difficulty="6">
+  <MonsterMission name="地震" identifier="tsmmission41" tags="tsm_abyss" type="Monster" commonness="100" reward="15000" sonarlabel="震源之中" maxsonarmarkerdistance="10000" successmessage="关于翻天覆地的变动已经临头了。" spawntype="Abyss" difficulty="6">
     <monster character="欧罗巴之心" min="1" max="1" />
     <Reputation identifier="location" amount="3" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
     <message header="审判" text="我把岁月交给深渊，任它在我的坐骑下起起伏伏，我在双眼里挖掘我的坟墓。" />
   </MonsterMission>
-  <!--MonsterMission name="巨鲸潮" identifier="tsmmission42" tags="tsm4,DifficultHuntingAbyss" type="Monster" description="你知道吗，在地球有一种职业叫作捕鲸人，在欧罗巴也有这种职业，但此鲸非彼鲸，好了水手，前往目标区域，清除所有鲸类的生物。" commonness="100" reward="17500" sonarlabel="巨鲸" maxsonarmarkerdistance="10000" successmessage="巨鲸的末日" spawntype="Abyss" difficulty="5">
-    <monster character="末日巨鲸" min="1" max="2" />
-    <monster character="灭世巨鲸" min="1" max="1" />
-    <monster character="末日巨鲸" min="1" max="2" multiplayeronly="true" />
-    <monster character="灭世巨鲸" min="1" max="1" multiplayeronly="true" />
-    <Reputation identifier="location" amount="4" />
-    <Reputation identifier="coalition" amount="2" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
-    <message header="捕鲸人" text="恭喜你，成为了一个合格的捕鲸人。" />
-  </MonsterMission-->
-  <MonsterMission name="无畏舰队" identifier="tsmmission43" tags="tsm_abyss" type="Monster" description="前些日子，联盟的无畏舰队陨落在该区域了，但是根据收集到信息来看，他们还‘活’着，现在的任务就是确保他们真正死去，但请注意，这次最好是超机动作战。" commonness="100" reward="14500" sonarlabel="无畏舰" maxsonarmarkerdistance="10000" successmessage="超机动作战" spawntype="Abyss" difficulty="6">
+  <MonsterMission name="无畏舰队" identifier="tsmmission43" tags="tsm_abyss" type="Monster" commonness="100" reward="14500" sonarlabel="无畏舰" maxsonarmarkerdistance="10000" successmessage="超机动作战" spawntype="Abyss" difficulty="6">
     <monster character="死无对证" min="1" max="2" multiplayeronly="true" />
     <monster character="死无对证" min="1" max="1" />
     <monster character="埋骨" min="1" max="1" />
     <Reputation identifier="location" amount="3" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
     <message header="无畏逝去" text="真正的无畏舰队应该沉没在巨舰坟场。" />
   </MonsterMission>
-  <MonsterMission name="伪装者" identifier="tsmmission44" tags="tsm_abyss" type="Monster" description="船长，这次是矿站的委托，听说是他们的采矿船居然被矿山袭击了，我不清楚是在怎样的状态下说出这种离谱的话，但是也还请船长去调查一下。" commonness="100" reward="10000" sonarlabel="矿石菌种" maxsonarmarkerdistance="10000" successmessage="矿石奇遇" spawntype="Abyss" difficulty="5.5">
-    <monster character="祈鲸" min="1" max="3" multiplayeronly="true" />
-    <monster character="结晶脊鲸" min="1" max="2" multiplayeronly="true" />
-    <monster character="祈鲸" min="1" max="3" />
-    <monster character="结晶脊鲸" min="1" max="2" />
-    <Reputation identifier="location" amount="2" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
-    <message header="异端的出生" text="我感觉，总有一天，我们的恶行会让我们在这陌生的土地上长眠。" />
-  </MonsterMission>
-  <MonsterMission name="异相双生" identifier="tsmmission45" tags="tsm_abyss" type="Monster" description="我们在这片海域发现了两个异星造物，根据资料来看，是由一个双胞胎的大脑在驱使着两个机械体，我不知道这样直接剥取大脑的手法怎么样，但是这种做法我认为是非常残忍，但是我们没有能力去可怜这个双子，我们只能送他们往生，希望来世不要再出生在木卫二了。" commonness="100" reward="15000" sonarlabel="双子" maxsonarmarkerdistance="10000" successmessage="操作者 暴乱者 始作俑者" spawntype="Abyss" difficulty="5.5">
+  <MonsterMission name="异相双生" identifier="tsmmission45" tags="tsm_abyss" type="Monster" commonness="100" reward="15000" sonarlabel="双子" maxsonarmarkerdistance="10000" successmessage="操作者 暴乱者 始作俑者" spawntype="Abyss" difficulty="5.5">
     <monster character="破坏" min="1" max="1" />
     <monster character="毁灭" min="1" max="1" />
     <Reputation identifier="location" amount="3" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
     <message header="这其实是个悲哀的故事" text="文明与历史使它变得沉重" />
   </MonsterMission>
-  <NestMission identifier="tsmmission46" tags="tsm_hunt_monster_cave" type="Nest" spawntype="cave" reward="14000" itemspawnradius="800" approachitemsradius="800" monsterspawnradius="4000" nestobjectradius="1500" nestobjectamount="20" difficulty="3" commonness="100">
-    <Items>
-      <Item identifier="tsm_egg" />
-      <Item identifier="tsm_egg" />
-      <Item identifier="tsm_egg" />
-      <Item identifier="tsm_egg" />
-      <Item identifier="tsm_egg" />
-    </Items>
-    <monster character="Eclipticshadow" min="4" max="6" />
-    <monster character="Eclipticshadow" min="3" max="4" multiplayeronly="true" />
-    <Reputation identifier="location" amount="3" />
-    <Icon texture="%ModDir:2852411866%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
-    <LocationType from="AnyOutpost" to="AnyOutpost" />
-  </NestMission>
-  <NestMission identifier="tsmmission47" tags="tsm_hunt_monster_cave" type="Nest" spawntype="cave" reward="13000" itemspawnradius="800" approachitemsradius="800" monsterspawnradius="4000" nestobjectradius="1500" nestobjectamount="20" difficulty="3" commonness="100">
-    <Items>
-      <Item identifier="tsm_egg" />
-      <Item identifier="tsm_egg" />
-      <Item identifier="tsm_egg" />
-      <Item identifier="tsm_egg" />
-      <Item identifier="tsm_egg" />
-    </Items>
-    <monster character="Skypiercingdolphin" min="5" max="7" />
-    <monster character="Skypiercingdolphin" min="3" max="5" multiplayeronly="true" />
-    <Reputation identifier="location" amount="3" />
-    <Icon texture="%ModDir:2852411866%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
-    <LocationType from="AnyOutpost" to="AnyOutpost" />
-  </NestMission>
-  <!--前哨站-->
-  <AbandonedOutpostMission identifier="tsmmission51" tags="abandonedoutpost" achievementidentifier="abandonedoutpostdestroymonsters" successmessage="" type="OutpostDestroy" description="" reward="8000" difficulty="4" commonness="50" minleveldifficulty="5" maxleveldifficulty="35" allowretry="true" targetitem="reactor" sonarlabel="target" unhideentitysubcategories="abandonedmonster">
-    <Icon texture="%ModDir:2852411866%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+  <!--前哨站怪物-->
+  <AbandonedOutpostMission name="活骸" identifier="tsmmission51" tags="abandonedoutpost" achievementidentifier="abandonedoutpostdestroymonsters" type="OutpostDestroy" reward="8000" difficulty="4" commonness="50" minleveldifficulty="5" maxleveldifficulty="35" allowretry="true" targetitem="reactor" sonarlabel="target" unhideentitysubcategories="abandonedmonster">
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
     <LocationType identifier="Abandoned" />
     <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
     <Reputation identifier="tsm" amount="3" />
@@ -279,98 +229,682 @@
     <TriggerEvent state="0" delay="5" eventidentifier="tsmmission_indestructible_wall" campaignonly="true" />
     <message header="塔尔塔洛斯" text="奇迹之海找到了这批货物的信息，但请给我们一点时间解密这些信息，到时候我们会找到幕后黑手的，并且会让他们付出代价。" />
   </AbandonedOutpostMission>
-  <AbandonedOutpostMission identifier="tsmmission52" tags="abandonedoutpost" achievementidentifier="abandonedoutpostdestroymonsters" successmessage="" type="OutpostDestroy" description="" reward="10000" difficulty="5" commonness="50" minleveldifficulty="20" maxleveldifficulty="40" allowretry="true" targetitem="reactor" sonarlabel="target" unhideentitysubcategories="abandonedmonster">
-    <Icon texture="%ModDir:2852411866%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+  <AbandonedOutpostMission name="悲剧之城" identifier="tsmmission52" tags="abandonedoutpost" achievementidentifier="abandonedoutpostdestroymonsters" type="OutpostDestroy" reward="10000" difficulty="5" commonness="50" minleveldifficulty="20" maxleveldifficulty="40" allowretry="true" targetitem="reactor" sonarlabel="target" unhideentitysubcategories="abandonedmonster">
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
     <LocationType identifier="Abandoned" />
     <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
     <Reputation identifier="tsm" amount="3" />
     <Characters>
       <Character identifier="boneeater" min="2" max="3" asfaraspossible="true" requirekill="true" />
       <Character identifier="humaneyi" min="2" max="3" />
-      <Character identifier="Eyi_hugger" min="2" max="3" />
+      <Character identifier="eyihugger" min="2" max="3" />
       <Character identifier="boneeater" min="3" max="4" asfaraspossible="true" requirekill="true" multiplayeronly="true" />
       <Character identifier="humaneyi" min="1" max="2" />
       <Character identifier="humaneyi" min="3" max="5" multiplayeronly="true" />
-      <Character identifier="Eyi_hugger" min="4" max="6" multiplayeronly="true" />
+      <Character identifier="eyihugger" min="4" max="6" multiplayeronly="true" />
     </Characters>
     <TriggerEvent state="0" delay="5" eventidentifier="tsmmission_indestructible_wall" campaignonly="true" />
     <message header="" text="" />
   </AbandonedOutpostMission>
-  <!--跳帮-->
-  <MonsterMission name="人人秉持正义之名" identifier="tsmmission60" type="Monster" tags="tsm8" description="奇迹之海封锁了[location1]和[location2]之间的航道。而此刻你准备趟这趟浑水。" commonness="100" reward="15000" sonarlabel="HTC24—红松石" maxsonarmarkerdistance="30000" successmessage="生命的消散，就如同水消失在水中。" difficulty="5">
+  <!--奇迹之海-->
+  <MonsterMission name="人人秉持正义之名" identifier="tsmmission60" type="Monster" tags="tsm8" commonness="100" reward="15000" sonarlabel="HTC24—红松石" maxsonarmarkerdistance="30000" successmessage="生命的消散，就如同水消失在水中。" difficulty="5">
     <monster character="Ship" min="1" max="1" />
     <monster character="Ship1" min="1" max="1" />
     <monster character="Ship2" min="1" max="1" />
     <Reputation identifier="location" amount="4" />
     <Reputation identifier="tsm" amount="-5" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,512,234,234" color="255,255,255" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,512,234,234" color="255,255,255" />
     <message header="" text="" />
   </MonsterMission>
   <!--低声望-->
-  <MonsterMission identifier="tsmattack" showstartmessage="false" type="Monster" tags="tsmattack" commonness="100" difficulty="5">
+  <MonsterMission name="暗夜截杀" identifier="tsmattack" showstartmessage="false" type="Monster" tags="tsmattack" commonness="100" difficulty="5">
     <monster character="Ship" min="1" max="1" />
     <monster character="Ship1" min="1" max="1" />
     <monster character="Ship2" min="1" max="1" />
     <monster character="Ship3" min="1" max="1" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,512,234,234" color="255,255,255" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,512,234,234" color="255,255,255" />
     <message header="" text="" />
   </MonsterMission>
-  <!--AbandonedOutpostMission 
-    identifier="tsmmission53"
-    tags="abandonedoutpost"
-    achievementidentifier="abandonedoutpostdestroymonsters"
-    successmessage=""
-    type="OutpostDestroy"
-    description="" 
-    reward="10000"
-    difficulty="4"
-    commonness="40"
-    allowretry="true"
-    targetitem="reactor"
-    sonarlabel="target"
-    unhideentitysubcategories="abandonedmonster">
-    <Icon texture="%ModDir:2852411866%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
+  <!--事件任务-->
+  <MonsterMission name="林的试炼" identifier="tsmmission_event_lin" tags="tsm_event" type="Monster" commonness="100" reward="18500" sonarlabel="T037α" maxsonarmarkerdistance="10000" spawntype="Abyss" difficulty="7">
+    <monster character="T037α" min="1" max="1" />
+    <Reputation identifier="tsm" amount="5" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="490,1,269,235" color="255,255,255" />
+    <message header="" text="" />
+    <Metadata identifier="tsm_npc_lin_mission_over" value="true"/>
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_npc_lin_3" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_npc_lin_4" campaignonly="true" />
+  </MonsterMission>
+  <!--废弃站点cqb-->
+  <AbandonedOutpostMission name="拨云见日" identifier="tsm_combat_qrf" tags="abandonedoutpost" achievementidentifier="abandonedoutpostdestroymonsters" type="OutpostDestroy" description="" reward="12000" difficulty="5" commonness="65" allowretry="true" targetitem="reactor" minleveldifficulty="20" maxleveldifficulty="60" unhideentitysubcategories="abandonedhuman">
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="6,1129,345,344" color="255,255,255" />
+    <LocationType identifier="Abandoned" />
+    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+    <Reputation identifier="tsm" amount="+5" />
+    <Reputation identifier="coalition" amount="-10" />
+    <Characters>
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="crewmodule" identifier="rapidreaction_elite_p" />
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="crewmodule" identifier="rapidreaction_p" />
+      <Character requirekill="true" from="Combat_Npc_Customisation" moduleflags="crewmodule" identifier="moon_shadow" />
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="crewmodule" identifier="rapidreaction_breaker" multiplayeronly="true" />
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="crewmodule" identifier="rapidreaction_p" multiplayeronly="true" />
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="researchmodule" identifier="rapidreaction_elite_p" />
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="researchmodule" identifier="rapidreaction_breaker" />
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="researchmodule" identifier="rapidreaction" asfaraspossible="true" />
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="researchmodule" identifier="rapidreaction_elite_p" multiplayeronly="true" />
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="researchmodule" identifier="rapidreaction_p" multiplayeronly="true" />
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="engineeringmodule" identifier="rapidreaction_elite" asfaraspossible="true" />
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="engineeringmodule" identifier="rapidreaction_elite_p" />
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="engineeringmodule" identifier="rapidreaction" multiplayeronly="true" />
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="engineeringmodule" identifier="rapidreaction_p" multiplayeronly="true" />
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="engineeringmodule" identifier="rapidreaction_leader" asfaraspossible="true" multiplayeronly="true" />
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="securitymodule" identifier="rapidreaction_elite_p" />
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="securitymodule" identifier="rapidreaction" />
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="securitymodule" identifier="rapidreaction_leader" multiplayeronly="true" />
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="securitymodule" identifier="rapidreaction_p" multiplayeronly="true" />
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="securitymodule" identifier="rapidreaction_p" multiplayeronly="true" />
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="banditleader" identifier="rapidreaction_elite_p" />
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="banditleader" identifier="rapidreaction_leader" asfaraspossible="true" />
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="banditleader" identifier="rapidreaction" asfaraspossible="true" />
+      <Character requirekill="true" from="rapidreaction_npcs" moduleflags="banditleader" identifier="rapidreaction_elite" asfaraspossible="true" />
+    </Characters>
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_qrf_buff" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_qrf_buff_other" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
+    <message header="" text="" />
+  </AbandonedOutpostMission>
+  <AbandonedOutpostMission name="贝奥武夫的蛮人" identifier="tsm_combat_beowulf" tags="abandonedoutpost" type="OutpostDestroy" description="" reward="12000" difficulty="5" commonness="70" allowretry="true" targetitem="reactor" minleveldifficulty="25" maxleveldifficulty="60" unhideentitysubcategories="abandonedhuman">
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="6,1129,345,344" color="255,255,255,255" />
+    <LocationType identifier="Abandoned" />
+    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+    <Reputation identifier="separatists" amount="+5" />
+    <Reputation identifier="coalition" amount="-10" />
+    <Characters>
+      <Character requirekill="true" moduleflags="crewmodule" identifier="beowulf_elite_p" from="beowulf_npcs" />
+      <Character requirekill="true" moduleflags="crewmodule" identifier="beowulf_breaker" from="beowulf_npcs" />
+      <Character requirekill="true" moduleflags="crewmodule" identifier="beowulf_fire" from="beowulf_npcs" />
+      <Character requirekill="true" moduleflags="crewmodule" identifier="beowulf_elite_p" from="beowulf_npcs" multiplayeronly="true" />
+      <Character requirekill="true" moduleflags="crewmodule" identifier="beowulf" from="beowulf_npcs" multiplayeronly="true" />
+      <Character requirekill="true" moduleflags="researchmodule" identifier="beowulf" from="beowulf_npcs" />
+      <Character requirekill="true" moduleflags="researchmodule" identifier="beowulf_elite_p" from="beowulf_npcs" asfaraspossible="true" />
+      <Character requirekill="true" moduleflags="researchmodule" identifier="beowulf_leader" from="beowulf_npcs" multiplayeronly="true" />
+      <Character requirekill="true" moduleflags="researchmodule" identifier="beowulf_p" from="beowulf_npcs" multiplayeronly="true" />
+      <Character requirekill="true" moduleflags="researchmodule" identifier="beowulf_ex_p" from="beowulf_npcs" multiplayeronly="true" />
+      <Character requirekill="true" moduleflags="engineeringmodule" identifier="beowulf_p" from="beowulf_npcs" />
+      <Character requirekill="true" moduleflags="engineeringmodule" identifier="beowulf_p" from="beowulf_npcs" />
+      <Character requirekill="true" moduleflags="engineeringmodule" identifier="beowulf_elite" from="beowulf_npcs" />
+      <Character requirekill="true" moduleflags="engineeringmodule" identifier="beowulf" from="beowulf_npcs" multiplayeronly="true" />
+      <Character requirekill="true" moduleflags="engineeringmodule" identifier="beowulf_ex" from="beowulf_npcs" multiplayeronly="true" />
+      <Character requirekill="true" moduleflags="securitymodule" identifier="beowulf_leader" from="beowulf_npcs" multiplayeronly="true" />
+      <Character requirekill="true" moduleflags="securitymodule" identifier="beowulf_breaker" from="beowulf_npcs" asfaraspossible="true" />
+      <Character requirekill="true" moduleflags="securitymodule" identifier="beowulf_fox" from="Combat_Npc_Customisation" />
+      <Character requirekill="true" moduleflags="securitymodule" identifier="beowulf_p" from="beowulf_npcs" asfaraspossible="true" multiplayeronly="true" />
+      <Character requirekill="true" moduleflags="securitymodule" identifier="beowulf_fire" from="beowulf_npcs" />
+      <Character requirekill="true" moduleflags="banditleader" identifier="beowulf_roware" from="Combat_Npc_Customisation" />
+      <Character requirekill="true" moduleflags="banditleader" identifier="beowulf_leader" from="beowulf_npcs" />
+      <Character requirekill="true" moduleflags="banditleader" identifier="beowulf_sl" from="Combat_Npc_Customisation" />
+      <Character requirekill="true" moduleflags="banditleader" identifier="beowulf_elite_p" from="beowulf_npcs" asfaraspossible="true" multiplayeronly="true" />
+    </Characters>
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
+    <TriggerEvent state="0" delay="1" eventidentifier="tsm_combat_beowulf_event" campaignonly="true" />
+    <TriggerEvent state="0" delay="1" eventidentifier="tsm_beowulf_buff" campaignonly="true" />
+    <TriggerEvent state="0" delay="1" eventidentifier="tsm_beowulf_buff_other" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_beowulf_bb" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_beowulf_complete_1" campaignonly="true" />
+    <message header="" text="" />
+  </AbandonedOutpostMission>
+  <AbandonedOutpostMission name="支配的王锡" identifier="tsm_combat_occupation" tags="abandonedoutpost" type="OutpostDestroy" description="" reward="13000" difficulty="5" commonness="65" allowretry="true" targetitem="reactor" minleveldifficulty="50" unhideentitysubcategories="abandonedhuman">
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="6,1129,345,344" color="255,255,255,255" />
+    <LocationType identifier="Abandoned" />
+    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+    <Reputation identifier="separatists" amount="+5" />
+    <Reputation identifier="coalition" amount="-10" />
+    <Characters>
+      <Character requirekill="true" identifier="occupation_bug" from="Combat_Npc_Customisation" moduleflags="crewmodule" />
+      <Character requirekill="true" identifier="occupation" from="occupation_npcs" moduleflags="crewmodule" />
+      <Character requirekill="true" identifier="occupation_p" from="occupation_npcs" moduleflags="crewmodule" />
+      <Character requirekill="true" identifier="occupation_fire" from="occupation_npcs" moduleflags="crewmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="occupation_leader" from="occupation_npcs" moduleflags="crewmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="occupation_p" from="occupation_npcs" moduleflags="researchmodule" />
+      <Character requirekill="true" identifier="occupation_tarler" from="Combat_Npc_Customisation" moduleflags="researchmodule" />
+      <Character requirekill="true" identifier="occupation_p" from="occupation_npcs" moduleflags="researchmodule" asfaraspossible="true" />
+      <Character requirekill="true" identifier="occupation_elite_p" from="occupation_npcs" moduleflags="researchmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="occupation_p" from="occupation_npcs" moduleflags="researchmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="occupation" from="occupation_npcs" moduleflags="engineeringmodule" />
+      <Character requirekill="true" identifier="occupation_hgfb" from="Combat_Npc_Customisation" moduleflags="engineeringmodule" />
+      <Character requirekill="true" identifier="occupation_leader" from="occupation_npcs" moduleflags="engineeringmodule" asfaraspossible="true" multiplayeronly="true" />
+      <Character requirekill="true" identifier="occupation_elite_p" from="occupation_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="occupation_p" from="occupation_npcs" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="occupation_xlqf" from="Combat_Npc_Customisation" moduleflags="securitymodule" />
+      <Character requirekill="true" identifier="occupation_fire" from="occupation_npcs" moduleflags="securitymodule" />
+      <Character requirekill="true" identifier="occupation_qiuwu" from="Combat_Npc_Customisation" moduleflags="securitymodule" />
+      <Character requirekill="true" identifier="occupation_elite_p" from="occupation_npcs" moduleflags="securitymodule" asfaraspossible="true" multiplayeronly="true" />
+      <Character requirekill="true" identifier="occupation_ex" from="occupation_npcs" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="occupation_milan" from="Combat_Npc_Customisation" moduleflags="securitymodule" />
+      <Character requirekill="true" identifier="occupation_elite" from="occupation_npcs" moduleflags="securitymodule" asfaraspossible="true" multiplayeronly="true" />
+      <Character requirekill="true" identifier="occupation_p" from="occupation_npcs" moduleflags="banditleader" />
+      <Character requirekill="true" identifier="occupation_elite_p" from="occupation_npcs" moduleflags="banditleader" />
+      <Character requirekill="true" identifier="occupation_leader" from="occupation_npcs" moduleflags="banditleader" />
+      <Character requirekill="true" identifier="occupation_elite_p" from="occupation_npcs" moduleflags="banditleader" multiplayeronly="true" />
+    </Characters>
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
+    <TriggerEvent state="0" delay="1" eventidentifier="tsm_combat_occupation_event" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_occupation_buff" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_occupation_buff_other" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
+    <message header="" text="" />
+  </AbandonedOutpostMission>
+  <OutpostDestroyMission name="执法者" identifier="tsm_combat_coalition" tags="abandonedoutpost" textidentifier="" type="OutpostDestroy" reward="8000" difficulty="5" commonness="75" allowretry="true" unhideentitysubcategories="abandonedhuman" minleveldifficulty="5" maxleveldifficulty="30" achievementidentifier="abandonedoutpostassassinate">
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="6,1129,345,344" color="255,255,255,255" />
+    <LocationType identifier="Abandoned" />
+    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+    <Reputation identifier="separatists" amount="+3" />
+    <Reputation identifier="coalition" amount="-6" />
+    <Characters>
+      <Character requirekill="true" identifier="coalition_e" from="tsm_coalition_npcs" moduleflags="crewmodule" />
+      <Character requirekill="true" identifier="coalition" from="tsm_coalition_npcs" moduleflags="crewmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="coalition_e" from="tsm_coalition_npcs" moduleflags="researchmodule" asfaraspossible="true" />
+      <Character requirekill="true" identifier="coalition_themohavemailman" from="Combat_Npc_Customisation" moduleflags="researchmodule" />
+      <Character requirekill="true" identifier="coalition_AloneFllen" from="Combat_Npc_Customisation" moduleflags="researchmodule" />
+      <Character requirekill="true" identifier="coalition" from="tsm_coalition_npcs" moduleflags="engineeringmodule" />
+      <Character requirekill="true" identifier="coalition_e" from="tsm_coalition_npcs" moduleflags="engineeringmodule" />
+      <Character requirekill="true" identifier="coalition_e" from="tsm_coalition_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="coalition_leader_e" from="tsm_coalition_npcs" moduleflags="crewmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="coalition" from="tsm_coalition_npcs" moduleflags="securitymodule" />
+      <Character requirekill="true" identifier="coalition" from="tsm_coalition_npcs" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="coalition_e" from="tsm_coalition_npcs" moduleflags="securitymodule" />
+      <Character requirekill="true" identifier="coalition_syd" from="Combat_Npc_Customisation" moduleflags="securitymodule" />
+      <Character requirekill="true" identifier="coalition_e" from="tsm_coalition_npcs" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="coalition_e" from="tsm_coalition_npcs" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="coalition_e" from="tsm_coalition_npcs" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="coalition_leader" from="tsm_coalition_npcs" spawnpointtags="banditleader" asfaraspossible="true" multiplayeronly="true" />
+      <Character requirekill="true" identifier="coalition_leader_e" from="tsm_coalition_npcs" spawnpointtags="banditleader" />
+    </Characters>
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_pt_buff" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
+    <message header="" text="" />
+  </OutpostDestroyMission>
+  <OutpostDestroyMission name="树立旗帜" identifier="tsm_combat_separatists" tags="abandonedoutpost" textidentifier="" type="OutpostDestroy" reward="8000" difficulty="5" commonness="75" allowretry="true" unhideentitysubcategories="abandonedhuman" minleveldifficulty="5" maxleveldifficulty="30" achievementidentifier="abandonedoutpostassassinate">
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="6,1487,345,344" color="214,50,48" />
+    <LocationType identifier="Abandoned" />
+    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+    <Reputation identifier="separatists" amount="-6" />
+    <Reputation identifier="coalition" amount="+3" />
+    <Characters>
+      <Character requirekill="true" identifier="separatists_e" from="tsm_separatists_npcs" moduleflags="crewmodule" />
+      <Character requirekill="true" identifier="separatists" from="tsm_separatists_npcs" moduleflags="crewmodule" />
+      <Character requirekill="true" identifier="separatists_e" from="tsm_separatists_npcs" moduleflags="crewmodule" />
+      <Character requirekill="true" identifier="separatists_e" from="tsm_separatists_npcs" moduleflags="researchmodule" />
+      <Character requirekill="true" identifier="separatists_000032" from="Combat_Npc_Customisation" moduleflags="researchmodule" />
+      <Character requirekill="true" identifier="separatists_e" from="tsm_separatists_npcs" moduleflags="researchmodule" asfaraspossible="true" multiplayeronly="true" />
+      <Character requirekill="true" identifier="separatists" from="tsm_separatists_npcs" moduleflags="engineeringmodule" />
+      <Character requirekill="true" identifier="separatists" from="tsm_separatists_npcs" moduleflags="engineeringmodule" asfaraspossible="true" />
+      <Character requirekill="true" identifier="separatists" from="tsm_separatists_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="separatists_leader" from="tsm_separatists_npcs" moduleflags="engineeringmodule" asfaraspossible="true" multiplayeronly="true" />
+      <Character requirekill="true" identifier="separatists_e" from="tsm_separatists_npcs" moduleflags="securitymodule" />
+      <Character requirekill="true" identifier="separatists_e" from="tsm_separatists_npcs" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="separatists_leader" from="tsm_separatists_npcs" moduleflags="securitymodule" />
+      <Character requirekill="true" identifier="separatists_e" from="tsm_separatists_npcs" moduleflags="securitymodule" />
+      <Character requirekill="true" identifier="separatists" from="tsm_separatists_npcs" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="separatists" from="tsm_separatists_npcs" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="separatists_rbq" from="Combat_Npc_Customisation" moduleflags="securitymodule" />
+      <Character requirekill="true" identifier="separatists_leader" from="tsm_separatists_npcs" spawnpointtags="banditleader" asfaraspossible="true" moduleflags="crewmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="separatists_leader" from="tsm_separatists_npcs" spawnpointtags="banditleader" moduleflags="crewmodule" />
+    </Characters>
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_pt_buff" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
+    <message header="" text="" />
+  </OutpostDestroyMission>
+  <AbandonedOutpostMission name="突袭者-征服虚弱的灵魂" identifier="tsm_combat_Anonymous" tags="abandonedoutpost" achievementidentifier="tsm_combat_Anonymous" type="OutpostDestroy" description="" reward="11000" difficulty="5" commonness="70" allowretry="true" targetitem="reactor" minleveldifficulty="20" maxleveldifficulty="50" unhideentitysubcategories="abandonedhuman">
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="6,1487,345,344" color="255,255,255,255" />
+    <LocationType identifier="Abandoned" />
+    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+    <Reputation identifier="separatists" amount="-10" />
+    <Reputation identifier="coalition" amount="+5" />
+    <Characters>
+      <Character requirekill="true" identifier="Anonymous_p" from="Anonymous_npcs" moduleflags="crewmodule" />
+      <Character requirekill="true" identifier="Anonymous_elite" from="Anonymous_npcs" moduleflags="crewmodule" />
+      <Character requirekill="true" identifier="Anonymous_leader" from="Anonymous_npcs" moduleflags="crewmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="Anonymous" from="Anonymous_npcs" moduleflags="crewmodule" asfaraspossible="true" multiplayeronly="true" />
+      <Character requirekill="true" identifier="Anonymous_elite_p" from="Anonymous_npcs" moduleflags="researchmodule" />
+      <Character requirekill="true" identifier="Anonymous_p" from="Anonymous_npcs" moduleflags="researchmodule" />
+      <Character requirekill="true" identifier="Anonymous_p" from="Anonymous_npcs" moduleflags="researchmodule" />
+      <Character requirekill="true" identifier="Anonymous" from="Anonymous_npcs" moduleflags="researchmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="Anonymous_elite_p" from="Anonymous_npcs" moduleflags="researchmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="Anonymous_elite" from="Anonymous_npcs" moduleflags="engineeringmodule" />
+      <Character requirekill="true" identifier="Anonymous_xuefeng" from="Combat_Npc_Customisation" moduleflags="engineeringmodule" />
+      <Character requirekill="true" identifier="Anonymous_p" from="Anonymous_npcs" moduleflags="engineeringmodule" />
+      <Character requirekill="true" identifier="Anonymous" from="Anonymous_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="Anonymous" from="Anonymous_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="Anonymous_p" from="Anonymous_npcs" moduleflags="securitymodule" />
+      <Character requirekill="true" identifier="Anonymous" from="Anonymous_npcs" moduleflags="securitymodule" />
+      <Character requirekill="true" identifier="Anonymous_p" from="Anonymous_npcs" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="Anonymous_elite_p" from="Anonymous_npcs" moduleflags="securitymodule" />
+      <Character requirekill="true" identifier="Anonymous_leader" from="Anonymous_npcs" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="Anonymous_elite" from="Anonymous_npcs" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="Anonymous_p" from="Anonymous_npcs" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="Anonymous_elite" from="Anonymous_npcs" spawnpointtags="banditleader" asfaraspossible="true" multiplayeronly="true" />
+      <Character requirekill="true" identifier="Anonymous_elite_p" from="Anonymous_npcs" spawnpointtags="banditleader" />
+      <Character requirekill="true" identifier="Anonymous_geguji" from="Combat_Npc_Customisation" spawnpointtags="banditleader" />
+    </Characters>
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_anonymous_buff" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_anonymous_buff_other" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
+    <message header="" text="" />
+  </AbandonedOutpostMission>
+  <AbandonedOutpostMission name="野火-绽放的最后红花" identifier="tsm_combat_yehuo" tags="abandonedoutpost" achievementidentifier="abandonedoutpostdestroymonsters" type="OutpostDestroy" description="" reward="13000" difficulty="5" commonness="65" allowretry="true" targetitem="reactor" minleveldifficulty="50" unhideentitysubcategories="abandonedhuman">
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="6,1487,345,344" color="255,255,255,255" />
+    <LocationType identifier="Abandoned" />
+    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+    <Reputation identifier="separatists" amount="-15" />
+    <Reputation identifier="coalition" amount="+10" />
+    <Characters>
+      <Character requirekill="true" identifier="yehuo_elite" from="yehuo_npcs" moduleflags="crewmodule" />
+      <Character requirekill="true" identifier="yehuo_elite_p" from="yehuo_npcs" moduleflags="crewmodule" />
+      <Character requirekill="true" identifier="yehuo" from="yehuo_npcs" moduleflags="crewmodule" />
+      <Character requirekill="true" identifier="yehuo_p" from="yehuo_npcs" moduleflags="crewmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="yehuo" from="yehuo_npcs" moduleflags="crewmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="yehuo_p" from="yehuo_npcs" moduleflags="researchmodule" />
+      <Character requirekill="true" identifier="yehuo_ffufu" from="Combat_Npc_Customisation" moduleflags="researchmodule" />
+      <Character requirekill="true" identifier="yehuo_leader" from="yehuo_npcs" moduleflags="researchmodule" />
+      <Character requirekill="true" identifier="yehuo" from="yehuo_npcs" moduleflags="researchmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="yehuo_ex" from="yehuo_npcs" moduleflags="researchmodule" asfaraspossible="true" multiplayeronly="true" />
+      <Character requirekill="true" identifier="yehuo_p" from="yehuo_npcs" moduleflags="engineeringmodule" />
+      <Character requirekill="true" identifier="yehuo" from="yehuo_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="yehuo" from="yehuo_npcs" moduleflags="engineeringmodule" />
+      <Character requirekill="true" identifier="yehuo_cce" from="Combat_Npc_Customisation" moduleflags="engineeringmodule" asfaraspossible="true" />
+      <Character requirekill="true" identifier="yehuo_elite_p" from="yehuo_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="yehuo_p" from="yehuo_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="yehuo" from="yehuo_npcs" moduleflags="securitymodule" />
+      <Character requirekill="true" identifier="yehuo_leader" from="yehuo_npcs" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="yehuo_elite_p" from="yehuo_npcs" moduleflags="securitymodule" />
+      <Character requirekill="true" identifier="yehuo_ex" from="yehuo_npcs" moduleflags="securitymodule" />
+      <Character requirekill="true" identifier="yehuo_p" from="yehuo_npcs" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="yehuo_elite" from="yehuo_npcs" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="yehuo_p" from="yehuo_npcs" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="yehuo" from="yehuo_npcs" spawnpointtags="banditleader" asfaraspossible="true" multiplayeronly="true" />
+      <Character requirekill="true" identifier="yehuo_leader" from="yehuo_npcs" spawnpointtags="banditleader" asfaraspossible="true" />
+      <Character requirekill="true" identifier="yehuo_elite" from="yehuo_npcs" spawnpointtags="banditleader" asfaraspossible="true" />
+      <Character requirekill="true" identifier="yehuo_p" from="yehuo_npcs" spawnpointtags="banditleader" asfaraspossible="true" />
+    </Characters>
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_combat_yehuo_event" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_yehuo_buff" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_yehuo_buff_other" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
+    <message header="" text="" />
+  </AbandonedOutpostMission>
+  <OutpostDestroyMission name="串扰侵袭" identifier="tsm_combat_crosstalk" tags="abandonedoutpost" type="OutpostDestroy" reward="11000" difficulty="6" commonness="65" allowretry="true" minleveldifficulty="20" maxleveldifficulty="45" unhideentitysubcategories="abandonedhuman">
+    <Reputation identifier="coalition" amount="-5" />
+    <Reputation identifier="tsm" amount="+3" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="6,1129,345,344" color="255,255,255,255" />
     <LocationType identifier="Abandoned" />
     <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
     <Characters>
-      <Character identifier="zhaoge" min="4" max="7" asfaraspossible="true" requirekill="true" />
-     <Character identifier="OceanEnchantress" min="3" max="4" />
-     <Character identifier="zhaoge" min="1" max="2" />
-     <Character identifier="OceanEnchantress" min="2" max="3" multiplayeronly="true" />
-     <Character identifier="zhaoge" min="2" max="4" multiplayeronly="true" />
-     <Character identifier="Shadowcharm" min="3" max="4" multiplayeronly="true" asfaraspossible="true" requirekill="true" />
+      <Character identifier="crosstalk_p" from="crosstalk_npcs" moduleflags="crewmodule" requirekill="true" multiplayeronly="true" />
+      <Character identifier="crosstalk" from="crosstalk_npcs" moduleflags="crewmodule" requirekill="true" />
+      <Character identifier="crosstalk_leader" from="crosstalk_npcs" moduleflags="crewmodule" requirekill="true" asfaraspossible="true" multiplayeronly="true" />
+      <Character identifier="crosstalk" from="crosstalk_npcs" moduleflags="crewmodule" requirekill="true" />
+      <Character identifier="crosstalk_p" from="crosstalk_npcs" moduleflags="researchmodule" requirekill="true" multiplayeronly="true" />
+      <Character identifier="crosstalk_tianjie" from="Combat_Npc_Customisation" moduleflags="researchmodule" requirekill="true" />
+      <Character identifier="crosstalk_leader_p" from="crosstalk_npcs" moduleflags="researchmodule" requirekill="true" />
+      <Character identifier="crosstalk_p" from="crosstalk_npcs" moduleflags="researchmodule" requirekill="true" multiplayeronly="true" />
+      <Character identifier="crosstalk_p" from="crosstalk_npcs" moduleflags="engineeringmodule" requirekill="true" multiplayeronly="true" />
+      <Character identifier="crosstalk_leader_p" from="crosstalk_npcs" moduleflags="engineeringmodule" requirekill="true" multiplayeronly="true" />
+      <Character identifier="crosstalk" from="crosstalk_npcs" moduleflags="engineeringmodule" requirekill="true" />
+      <Character identifier="crosstalk" from="crosstalk_npcs" moduleflags="engineeringmodule" requirekill="true" multiplayeronly="true" />
+      <Character identifier="crosstalk_p" from="crosstalk_npcs" moduleflags="securitymodule" requirekill="true" />
+      <Character identifier="crosstalk_leader" from="crosstalk_npcs" moduleflags="securitymodule" requirekill="true" />
+      <Character identifier="crosstalk_p" from="crosstalk_npcs" moduleflags="securitymodule" requirekill="true" multiplayeronly="true" />
+      <Character identifier="crosstalk" from="crosstalk_npcs" moduleflags="securitymodule" requirekill="true" />
+      <Character identifier="crosstalk" from="crosstalk_npcs" moduleflags="securitymodule" asfaraspossible="true" requirekill="true" />
+      <Character identifier="crosstalk_leader" from="crosstalk_npcs" spawnpointtags="banditleader" requirekill="true" multiplayeronly="true" />
+      <Character identifier="crosstalk_ckhs233" from="Combat_Npc_Customisation" spawnpointtags="banditleader" asfaraspossible="true" requirekill="true" />
+      <Character identifier="crosstalk_leader_p" from="crosstalk_npcs" spawnpointtags="banditleader" asfaraspossible="true" requirekill="true" />
+      <Character identifier="crosstalk_p" from="crosstalk_npcs" spawnpointtags="banditleader" requirekill="true" multiplayeronly="true" />
     </Characters>
-    <TriggerEvent state="0" delay="5" eventidentifier="assassinationofjacovsubra1" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_crosstalk_buff" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_crosstalk_buff_other" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
     <message header="" text="" />
-  </AbandonedOutpostMission-->
-  <!--SalvageMission identifier="tsmmission52" tags="tsm3" type="Salvage" difficulty="3" commonness="90" reward="3500" achievementidentifier="salvagewreckmission" spawntype="wreck" showmessagewhenpickedup="true" itemidentifier="handheldterminal" containertag="locker" sonarlabel="沉船" successmessage="回收成功" name="危机！唱诗班的沉没" description="船长，奇迹之海运送基因....不不不，是运送唱诗班的船，突然被一个未知生命体的袭击沉没了，请赶快到达出事航道，我们需要第一时间回收沉船数据，要快！" requirewreck="true">
-    <Reputation identifier="location" amount="4" />
-    <Reputation identifier="coalition" amount="2" />
-    <Icon texture="%ModDir%/Texture/MissionIcons.png" sourcerect="0,0,234,234" color="255,255,255" />
-    <LocationType from="City" to="None" />
+  </OutpostDestroyMission>
+  <OutpostDestroyMission name="演习" identifier="tsm_combat_aria" tags="abandonedoutpost" type="OutpostDestroy" reward="13000" difficulty="6" commonness="60" allowretry="true" minleveldifficulty="20" maxleveldifficulty="50"  unhideentitysubcategories="abandonedhuman">
+    <Reputation identifier="tsm" amount="+3" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,761,345,354" color="255,255,255,255" />
+    <LocationType identifier="Abandoned" />
+    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+    <Characters>
+      <Character identifier="tsm_soldier_elite" from="tsm_npcs" requirekill="true" moduleflags="crewmodule" multiplayeronly="true" />
+      <Character identifier="tsm_soldier_ml" from="Combat_Npc_Customisation" requirekill="true" moduleflags="crewmodule" />
+      <Character identifier="tsm_soldier" from="tsm_npcs" requirekill="true" moduleflags="crewmodule" />
+      <Character identifier="tsm_advanced_bq" from="Combat_Npc_Customisation" requirekill="true" moduleflags="crewmodule" />
+      <Character identifier="tsm_soldier_p" from="tsm_npcs" requirekill="true" moduleflags="crewmodule" multiplayeronly="true" />
+      <Character identifier="tsm_advanced_2" from="tsm_npcs" requirekill="true" moduleflags="researchmodule" multiplayeronly="true" />
+      <Character identifier="tsm_soldier_sm" from="Combat_Npc_Customisation" requirekill="true" moduleflags="researchmodule" />
+      <Character identifier="tsm_soldier" from="tsm_npcs" requirekill="true" moduleflags="researchmodule" />
+      <Character identifier="tsm_soldier_elite_p" from="tsm_npcs" requirekill="true" moduleflags="researchmodule" multiplayeronly="true" />
+      <Character identifier="tsm_soldier_p" from="tsm_npcs" requirekill="true" moduleflags="researchmodule" multiplayeronly="true" />
+      <Character identifier="tsm_advanced_2" from="tsm_npcs" requirekill="true" moduleflags="engineeringmodule" multiplayeronly="true" />
+      <Character identifier="tsm_soldier_csms" from="Combat_Npc_Customisation" requirekill="true" moduleflags="engineeringmodule" />
+      <Character identifier="tsm_soldier_p" from="tsm_npcs" requirekill="true" moduleflags="engineeringmodule" />
+      <Character identifier="tsm_soldier" from="tsm_npcs" requirekill="true" moduleflags="engineeringmodule" multiplayeronly="true" />
+      <Character identifier="tsm_soldier_elite_p" from="tsm_npcs" requirekill="true" moduleflags="engineeringmodule" multiplayeronly="true" />
+      <Character identifier="tsm_soldier_elite" from="tsm_npcs" requirekill="true" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character identifier="tsm_advanced_smallthree" from="Combat_Npc_Customisation" requirekill="true" moduleflags="securitymodule" />
+      <Character identifier="tsm_advanced_2112" from="Combat_Npc_Customisation" requirekill="true" moduleflags="securitymodule" />
+      <Character identifier="tsm_soldier_p" from="tsm_npcs" requirekill="true" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character identifier="tsm_soldier" from="tsm_npcs" requirekill="true" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character identifier="tsm_advanced_1" from="tsm_npcs" requirekill="true" spawnpointtags="banditleader" />
+      <Character identifier="tsm_soldier_Finianna" from="Combat_Npc_Customisation" requirekill="true" spawnpointtags="banditleader" />
+      <Character identifier="tsm_advanced_bzgt" from="Combat_Npc_Customisation" requirekill="true" spawnpointtags="banditleader"  />
+      <Character identifier="tsm_soldier_p" from="tsm_npcs" requirekill="true" spawnpointtags="banditleader" multiplayeronly="true" />
+    </Characters>
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_combat_buff" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_combat_buff_other" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
+    <message header="" text="" />
+  </OutpostDestroyMission>
+  <OutpostDestroyMission name="军事顾问" identifier="tsm_combat_advisers" tags="abandonedoutpost" type="OutpostDestroy" reward="13000" difficulty="6" commonness="65" allowretry="true" minleveldifficulty="35" maxleveldifficulty="65" unhideentitysubcategories="abandonedhuman">
+    <Reputation identifier="separatists" amount="-4" />
+    <Reputation identifier="tsm" amount="-4" />
+    <Reputation identifier="coalition" amount="+8" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,761,345,354" color="255,255,255,255" />
+    <LocationType identifier="Abandoned" />
+    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+    <Characters>
+      <Character identifier="fkj_elite" from="tsm_npcs" moduleflags="crewmodule" multiplayeronly="true" />
+      <Character identifier="fkj_elite_p" from="tsm_npcs" moduleflags="crewmodule" />
+      <Character identifier="fkj_elite" from="tsm_npcs" moduleflags="crewmodule" />
+      <Character identifier="fkj_elite_p" from="tsm_npcs" moduleflags="crewmodule" asfaraspossible="true" multiplayeronly="true" />
+      <Character identifier="fkj_elite" from="tsm_npcs" moduleflags="crewmodule" />
+      <Character identifier="fkj_elite_p" from="tsm_npcs" moduleflags="crewmodule" asfaraspossible="true" multiplayeronly="true" />
+      <Character identifier="fkj_elite" from="tsm_npcs" moduleflags="crewmodule" />
+      <Character identifier="fkj_elite" from="tsm_npcs" moduleflags="researchmodule" multiplayeronly="true" />
+      <Character identifier="fkj_elite" from="tsm_npcs" moduleflags="researchmodule" />
+      <Character identifier="fkj_elite_p" from="tsm_npcs" moduleflags="researchmodule" />
+      <Character identifier="fkj_elite" from="tsm_npcs" moduleflags="researchmodule" multiplayeronly="true" />
+      <Character identifier="fkj_elite" from="tsm_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
+      <Character identifier="fkj_elite_p" from="tsm_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
+      <Character identifier="fkj_elite_p" from="tsm_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
+      <Character identifier="fkj_elite" from="tsm_npcs" moduleflags="researchmodule" />
+      <Character identifier="fkj_elite_p" from="tsm_npcs" moduleflags="securitymodule" asfaraspossible="true" multiplayeronly="true" />
+      <Character identifier="tsm_military_advisers" from="tsm_npcs" moduleflags="securitymodule" requirekill="true" />
+      <Character identifier="tsm_soldier_military_advisers" from="tsm_npcs" moduleflags="securitymodule" requirekill="true" multiplayeronly="true" />
+      <Character identifier="tsm_soldier_FFFFFour" from="Combat_Npc_Customisation" moduleflags="securitymodule" requirekill="true" />
+      <Character identifier="tsm_soldier_military_advisers" from="tsm_npcs" moduleflags="securitymodule" requirekill="true" />
+      <Character identifier="tsm_soldier_military_advisers" from="tsm_npcs" moduleflags="securitymodule" requirekill="true" />
+      <Character identifier="tsm_soldier_military_advisers" from="tsm_npcs" spawnpointtags="banditleader" requirekill="true" />
+      <Character identifier="tsm_military_advisers" from="tsm_npcs" spawnpointtags="banditleader" requirekill="true" />
+      <Character identifier="tsm_soldier_ay" from="Combat_Npc_Customisation" spawnpointtags="banditleader" multiplayeronly="true" requirekill="true" />
+      <Character identifier="tsm_soldier_military_advisers" from="tsm_npcs" spawnpointtags="banditleader" requirekill="true" multiplayeronly="true" />
+      <Character identifier="tsm_soldier_military_advisers" from="tsm_npcs" moduleflags="banditleader" requirekill="true" />
+    </Characters>
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_combat_tsm_event" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_combat_buff_cat" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_cat_bb" campaignonly="true" />
+    <message header="" text="" />
+  </OutpostDestroyMission>
+  <OutpostDestroyMission name="枪火" identifier="tsm_combat_nz" tags="abandonedoutpost" type="OutpostDestroy" reward="12000" description="" difficulty="6" commonness="65" allowretry="true" minleveldifficulty="25" maxleveldifficulty="55" unhideentitysubcategories="abandonedhuman">
+    <Reputation identifier="separatists" amount="+5" />
+    <Reputation identifier="coalition" amount="+5" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="784,1140,345,359" color="255,255,255,255" />
+    <LocationType identifier="Abandoned" />
+    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+    <Characters>
+      <Character requirekill="true" identifier="gunner_StayInHull" from="tsm_gunner_npcs" moduleflags="crewmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="gunner_StayInHull" from="tsm_gunner_npcs" moduleflags="crewmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="gunner_StayInHull" from="tsm_gunner_npcs" moduleflags="crewmodule" />
+      <Character requirekill="true" identifier="gunner_StayInHull" from="tsm_gunner_npcs" moduleflags="crewmodule" />
+      <Character requirekill="true" identifier="gunner_StayInHull" from="tsm_gunner_npcs" moduleflags="crewmodule" />
+      <Character requirekill="true" identifier="gunner_StayInHull" from="tsm_gunner_npcs" moduleflags="researchmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="gunner_StayInHull" from="tsm_gunner_npcs" moduleflags="researchmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="gunner_StayInHull" from="tsm_gunner_npcs" moduleflags="researchmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="gunner_StayInHull" from="tsm_gunner_npcs" moduleflags="researchmodule" />
+      <Character requirekill="true" identifier="gunner_StayInHull" from="tsm_gunner_npcs" moduleflags="researchmodule" />
+      <Character requirekill="true" identifier="gunner_StayInHull" from="tsm_gunner_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="gunner_Patrol" from="tsm_gunner_npcs" moduleflags="engineeringmodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="gunner_Patrol" from="tsm_gunner_npcs" moduleflags="engineeringmodule" />
+      <Character requirekill="true" identifier="gunner_Patrol" from="tsm_gunner_npcs" moduleflags="engineeringmodule" />
+      <Character requirekill="true" identifier="gunner_Patrol" from="tsm_gunner_npcs" moduleflags="researchmodule" />
+      <Character requirekill="true" identifier="gunner_Patrol" from="tsm_gunner_npcs" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="gunner_Patrol" from="tsm_gunner_npcs" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="gunner_Patrol" from="tsm_gunner_npcs" moduleflags="securitymodule" multiplayeronly="true" />
+      <Character requirekill="true" identifier="gunner_Patrol" from="tsm_gunner_npcs" moduleflags="securitymodule" />
+      <Character requirekill="true" identifier="gunner_Patrol" from="tsm_gunner_npcs" moduleflags="securitymodule" />
+      <Character requirekill="true" identifier="gunner_solomon" from="tsm_gunner_npcs" spawnpointtags="banditleader" />
+    </Characters>
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_nz_combat" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_darkstormynight" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
+    <message header="" text="" />
+  </OutpostDestroyMission>
+  <OutpostDestroyMission name="地狱泅渡" identifier="tsm_combat_adventists" tags="abandonedoutpost" type="OutpostDestroy" reward="10000" description="" difficulty="6" commonness="65" allowretry="true" minleveldifficulty="20" maxleveldifficulty="50" unhideentitysubcategories="abandonedhuman">
+    <Reputation identifier="tsm" amount="+3" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="0,761,345,354" color="255,255,255,255" />
+    <LocationType identifier="Abandoned" />
+    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+    <Characters>
+      <Character identifier="adventists" from="tsm_adventists_npcs" moduleflags="crewmodule" requirekill="true" />
+      <Character identifier="adventists_p" from="tsm_adventists_npcs" moduleflags="crewmodule" requirekill="true" />
+      <Character identifier="ship_combat_elite_e" from="ship_combat_npcs" moduleflags="crewmodule" multiplayeronly="true" requirekill="true" />
+      <Character identifier="adventists" from="tsm_adventists_npcs" moduleflags="crewmodule" multiplayeronly="true" requirekill="true" />
+      <Character identifier="adventists_p" from="tsm_adventists_npcs" moduleflags="researchmodule" requirekill="true" />
+      <Character identifier="ship_combat_elite_e" from="ship_combat_npcs" moduleflags="researchmodule" requirekill="true" />
+      <Character identifier="adventists" from="tsm_adventists_npcs" moduleflags="researchmodule" multiplayeronly="true" requirekill="true" />
+      <Character identifier="adventists_leader" from="tsm_adventists_npcs" moduleflags="researchmodule" multiplayeronly="true" requirekill="true" />
+      <Character identifier="ship_combat_elite_e" from="ship_combat_npcs" moduleflags="engineeringmodule" requirekill="true" />
+      <Character identifier="adventists" from="tsm_adventists_npcs" moduleflags="engineeringmodule" requirekill="true" />
+      <Character identifier="ship_combat_elite_e" from="ship_combat_npcs" moduleflags="engineeringmodule" multiplayeronly="true" requirekill="true" />
+      <Character identifier="adventists_p" from="tsm_adventists_npcs" moduleflags="engineeringmodule" multiplayeronly="true" requirekill="true" />
+      <Character identifier="adventists_p" from="tsm_adventists_npcs" moduleflags="securitymodule" requirekill="true" />
+      <Character identifier="adventists_p" from="tsm_adventists_npcs" moduleflags="securitymodule" requirekill="true" />
+      <Character identifier="ship_combat_elite_e" from="ship_combat_npcs" moduleflags="securitymodule" multiplayeronly="true" requirekill="true" />
+      <Character identifier="adventists" from="tsm_adventists_npcs" moduleflags="securitymodule" multiplayeronly="true" requirekill="true" />
+      <Character identifier="adventists_leader" from="tsm_adventists_npcs" moduleflags="securitymodule" multiplayeronly="true" requirekill="true" />
+      <Character identifier="adventists_bmyl" from="Combat_Npc_Customisation" spawnpointtags="banditleader" requirekill="true" />
+      <Character identifier="ship_combat_leader" from="ship_combat_npcs" spawnpointtags="banditleader" requirekill="true" />
+      <Character identifier="adventists_leader" from="tsm_adventists_npcs" spawnpointtags="banditleader" requirekill="true" />
+    </Characters>
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_combat_adventists_event" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_combat_adventists_event_tsm" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
+    <message header="" text="" />
+  </OutpostDestroyMission>
+  <!-- 船-->
+  <EscortMission name="黑船" identifier="tsm_combat_escort" tags="tsm_escort" type="Escort" difficulty="5" commonness="10" reward="5000" baseescortedcharacters="0" scalingescortedcharacters="0.8" terroristchance="10" terroristannouncedialogtag="tsm_escort_lm">
+    <Characters>
+      <Character from="tsm_coalition_npcs" identifier="coalition_leader" />
+      <Character from="tsm_coalition_npcs" identifier="coalition" />
+    </Characters>
+    <TerroristItems>
+      <Item identifier="tsm_fkj_ak74" equip="true" mindifficulty="10" />
+      <Item identifier="ceremonialsword" equip="true" mindifficulty="20">
+        <Item identifier="fkj_545_mag" amount="4" />
+      </Item>
+      <Item identifier="tsm_fkj_akm" equip="true" mindifficulty="20">
+        <Item identifier="fkj_762_mag" />
+        <Item identifier="fkj_762_mag" />
+        <Item identifier="fkj_762_mag" />
+      </Item>
+    </TerroristItems>
+    <Reputation identifier="separatists" amount="+2" />
+    <Reputation identifier="coalition" amount="+2" />
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="774,774,345,344" color="255,255,255,255" />
+    <LocationType from="AnyOutpost" to="AnyOutpost" />
+    <message header="" text="" />
+  </EscortMission>
+  <PirateMission name="觊觎天机" type="Pirate" tags="haulage_combat,tsm_hunt_monster" identifier="tsm_haulagecombat_1" description="" difficulty="5" sonarlabel="被占领的运输船" commonness="20" failuremessage="" addedmissiondifficultyperplayer="8">
+    <message header="" text="" />
+    <Reputation identifier="tsm" amount="+2" />
+    <SubmarineTypes>
+      <Submarine path="%ModDir%/ship/ARS-运输.sub" preferreddifficulty="25" alternatereward="5500" />
+      <Submarine path="%ModDir%/ship/pirates_tsm_1.sub" preferreddifficulty="25" alternatereward="5500" />
+    </SubmarineTypes>
+    <Characters>
+      <Character typeidentifier="ship_combat_leader" minamount="1" maxamount="2" />
+      <Character typeidentifier="ship_combat_elite" minamount="3" maxamount="4" />
+      <Character typeidentifier="ship_combat" minamount="2" maxamount="6" />
+    </Characters>
+    <CharacterTypes>
+      <CharacterType typeidentifier="ship_combat_leader">
+        <Character identifier="ship_combat_elite" from="ship_combat_npcs" preferreddifficulty="10" iscommander="true" />
+        <Character identifier="ship_combat_leader" from="ship_combat_npcs" preferreddifficulty="30" iscommander="true" />
+        <Character identifier="ship_combat_elite_e" from="ship_combat_npcs" preferreddifficulty="10" iscommander="true" />
+      </CharacterType>
+      <CharacterType typeidentifier="ship_combat_elite">
+        <Character identifier="ship_combat" from="ship_combat_npcs" preferreddifficulty="5" />
+        <Character identifier="ship_combat_elite" from="ship_combat_npcs" preferreddifficulty="15" />
+        <Character identifier="ship_combat_elite" from="ship_combat_npcs" preferreddifficulty="25" />
+        <Character identifier="ship_combat_e" from="ship_combat_npcs" preferreddifficulty="5" />
+        <Character identifier="ship_combat_elite_e" from="ship_combat_npcs" preferreddifficulty="15" />
+        <Character identifier="ship_combat_elite_e" from="ship_combat_npcs" preferreddifficulty="25" />
+      </CharacterType>
+      <CharacterType typeidentifier="ship_combat">
+        <Character identifier="ship_combat" from="ship_combat_npcs" preferreddifficulty="10" />
+        <Character identifier="ship_combat" from="ship_combat_npcs" preferreddifficulty="10" />
+        <Character identifier="ship_combat_elite" from="ship_combat_npcs" preferreddifficulty="25" />
+        <Character identifier="ship_combat" from="ship_combat_npcs" preferreddifficulty="25" />
+        <Character identifier="ship_combat" from="ship_combat_npcs" preferreddifficulty="10" />
+        <Character identifier="ship_combat" from="ship_combat_npcs" preferreddifficulty="20" />
+        <Character identifier="ship_combat_elite" from="ship_combat_npcs" preferreddifficulty="25" />
+        <Character identifier="ship_combat_e" from="ship_combat_npcs" preferreddifficulty="10" />
+        <Character identifier="ship_combat_e" from="ship_combat_npcs" preferreddifficulty="10" />
+        <Character identifier="ship_combat_elite_e" from="ship_combat_npcs" preferreddifficulty="25" />
+        <Character identifier="ship_combat_e" from="ship_combat_npcs" preferreddifficulty="25" />
+        <Character identifier="ship_combat_e" from="ship_combat_npcs" preferreddifficulty="10" />
+        <Character identifier="ship_combat_e" from="ship_combat_npcs" preferreddifficulty="20" />
+        <Character identifier="ship_combat_elite_e" from="ship_combat_npcs" preferreddifficulty="25" />
+      </CharacterType>
+    </CharacterTypes>
+    <Icon texture="%ModDir%/mission/MissionIcons.png" sourcerect="379,771,345,344" color="255,255,255,255,255" />
     <LocationType from="City" to="City" />
     <LocationType from="City" to="Outpost" />
     <LocationType from="City" to="Military" />
     <LocationType from="City" to="Research" />
     <LocationType from="City" to="Mine" />
-    <LocationType from="Outpost" to="None" />
     <LocationType from="Outpost" to="City" />
     <LocationType from="Outpost" to="Outpost" />
     <LocationType from="Outpost" to="Military" />
     <LocationType from="Outpost" to="Research" />
     <LocationType from="Outpost" to="Mine" />
-    <LocationType from="Research" to="None" />
-    <LocationType from="Research" to="City" />
-    <LocationType from="Research" to="Outpost" />
-    <LocationType from="Research" to="Military" />
-    <LocationType from="Research" to="Research" />
-    <LocationType from="Research" to="Mine" />
-    <LocationType from="Military" to="None" />
     <LocationType from="Military" to="City" />
     <LocationType from="Military" to="Outpost" />
     <LocationType from="Military" to="Military" />
     <LocationType from="Military" to="Research" />
     <LocationType from="Military" to="Mine" />
-    <message header="所有人都会沉没，直到再也沉不下去" text="奇迹之海已获取了沉船数据，我们会第一时间解析，等我们解析成功，会立刻下达下一步指令，请耐心等待，船长。只是可惜了这些唱诗班的孩子。" />
-  </SalvageMission-->
+    <LocationType from="Mine" to="City" />
+    <LocationType from="Mine" to="Outpost" />
+    <LocationType from="Mine" to="Military" />
+    <LocationType from="Mine" to="Research" />
+    <LocationType from="Mine" to="Mine" />
+  </PirateMission>
+  <!--原版覆盖-->
+  <Override>
+    <AbandonedOutpostMission
+            identifier="abandonedoutpostrescue2"
+            tags="abandonedoutpost"
+            type="AbandonedOutpost"
+            reward="7000"
+            difficulty="4"
+            commonness="70"
+            allowretry="true"
+            hostageskilledmessage="hostageskilled"
+            unhideentitysubcategories="abandonedhuman"
+            minleveldifficulty="15"
+            maxleveldifficulty="35">
+      <Icon texture="Content/UI/MissionIcons.png" sourcerect="512,256,256,256" color="214,50,48"/>
+      <LocationType identifier="Abandoned" />
+      <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+      <Characters>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="crewmodule"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="crewmodule" multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="crewmodule"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="crewmodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="researchmodule" />
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="researchmodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="researchmodule" />
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="researchmodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="engineeringmodule"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="engineeringmodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="engineeringmodule"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="engineeringmodule"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="securitymodule"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="securitymodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_med" from="tsm_abandonedoutpostnpcs" moduleflags="seccrewmodule"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="seccrewmodule" />
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" spawnpointtags="banditleader"/>
+        <Character identifier="tsm_hiredgun_med" from="tsm_abandonedoutpostnpcs" spawnpointtags="banditleader"  multiplayeronly="true"/>
+        <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
+        <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
+        <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" multiplayeronly="true"/>
+      </Characters>
+      <TriggerEvent state="0" delay="5" eventidentifier="tsm_pmc_combat" campaignonly="true" />
+      <TriggerEvent state="0" delay="5" eventidentifier="tsm_pmc_combat_hard" campaignonly="true" />
+      <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
+      <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
+      <message header="" text=""/>
+    </AbandonedOutpostMission>
+    <AbandonedOutpostMission
+            identifier="abandonedoutpostrescue3"
+            tags="abandonedoutpost"
+            type="AbandonedOutpost"
+            reward="10000"
+            difficulty="4"
+            commonness="100"
+            allowretry="true"
+            hostageskilledmessage="hostageskilled"
+            unhideentitysubcategories="abandonedhuman"
+            minleveldifficulty="35"
+            maxleveldifficulty="65">
+      <Icon texture="Content/UI/MissionIcons.png" sourcerect="512,256,256,256" color="214,50,48"/>
+      <LocationType identifier="Abandoned" />
+      <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+      <Characters>
+        <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" moduleflags="crewmodule"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="crewmodule" multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" moduleflags="crewmodule"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="crewmodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_med" from="tsm_abandonedoutpostnpcs" moduleflags="crewmodule"/>
+        <Character identifier="tsm_hiredgun_fire" from="tsm_abandonedoutpostnpcs" moduleflags="crewmodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" moduleflags="researchmodule" />
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="researchmodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" moduleflags="researchmodule" />
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="researchmodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_med" from="tsm_abandonedoutpostnpcs" moduleflags="researchmodule" />
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="researchmodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_kybszc" from="Combat_Npc_Customisation" moduleflags="engineeringmodule"/>
+        <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" moduleflags="engineeringmodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_med" from="tsm_abandonedoutpostnpcs" moduleflags="engineeringmodule"/>
+        <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" moduleflags="engineeringmodule"/>
+        <Character identifier="tsm_hiredgun" from="tsm_abandonedoutpostnpcs" moduleflags="securitymodule"/>
+        <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" moduleflags="securitymodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_fire" from="tsm_abandonedoutpostnpcs" moduleflags="securitymodule"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_med" from="tsm_abandonedoutpostnpcs" moduleflags="securitymodule"/>
+        <Character identifier="tsm_hiredgun_dyqc" from="Combat_Npc_Customisation" moduleflags="securitymodule" />
+        <Character identifier="tsm_hiredgun_fire" from="tsm_abandonedoutpostnpcs" spawnpointtags="banditleader"/>
+        <Character identifier="tsm_hiredgun_med" from="tsm_abandonedoutpostnpcs" spawnpointtags="banditleader"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_fire" from="tsm_abandonedoutpostnpcs" spawnpointtags="banditleader"  multiplayeronly="true"/>
+        <Character identifier="tsm_hiredgun_hard" from="tsm_abandonedoutpostnpcs" spawnpointtags="banditleader"  multiplayeronly="true"/>
+        <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
+        <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true"/>
+        <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" multiplayeronly="true"/>
+        <Character identifier="hostage" from="abandonedoutpostnpcs" asfaraspossible="true" requirerescue="true" multiplayeronly="true"/>
+      </Characters>
+      <TriggerEvent state="0" delay="5" eventidentifier="tsm_pmc_combat" campaignonly="true" />
+      <TriggerEvent state="0" delay="5" eventidentifier="tsm_pmc_combat_hard" campaignonly="true" />
+      <TriggerEvent state="0" delay="5" eventidentifier="tsm_forsaken" campaignonly="true" />
+      <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
+      <message header="" text=""/>
+    </AbandonedOutpostMission>
+  </Override>
 </Missions>

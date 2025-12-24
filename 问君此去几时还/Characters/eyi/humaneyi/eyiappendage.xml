@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<huskappendage>
+  <limb name="eyiappendage 1" id="33" height="31" width="19" ignorecollisions="True" flip="True">
+    <damagemodifier armorsector="0,360" afflictiontypes="damage" damagemultiplier="0.1" />
+    <damagemodifier armorsector="0,360" afflictiontypes="bleeding" damagemultiplier="0.1" />
+    <damagemodifier armorsector="0,360" afflictiontypes="burn" damagemultiplier="0.1" />
+    <sprite texture="%ModDir%/Characters/eyi/humaneyi/eyi.png" sourcerect="212,126,31,19" depth="0.11" origin="0.510,0.601" ignoretint="true" />
+    <attack range="40" damagerange="25" duration="0.1" targetforce="0" structuresoundtype="StructureBlunt" force="6" applyforceonlimbs="0" torque="0" context="Any" targettype="Character" hitdetectiontype="Distance" structuredamage="0" itemdamage="0" stun="0" onlyhumans="False" applyforcesonlyonce="False" targetimpulse="3" targetimpulseworld="0,0" targetforceworld="0,0" severlimbsprobability="0" stickchance="0" priority="0" afterattack="FollowThrough" cooldown="1" secondarycooldown="0" cooldownrandomfactor="0">
+      <StatusEffect type="OnUse" target="Parent" disabledeltatime="true">
+        <ReduceAffliction type="damage" strength="1.5" />
+      </StatusEffect>
+      <Affliction identifier="lacerations" strength="15" />
+      <Affliction identifier="bleeding" strength="5" />
+      <Affliction identifier="stun" strength="0.1" />
+    </attack>
+  </limb>
+  <limb name="eyiappendage 2-1" id="34" height="59" width="55" ignorecollisions="True" flip="True">
+    <damagemodifier armorsector="0,360" afflictiontypes="damage" damagemultiplier="0.1" />
+    <damagemodifier armorsector="0,360" afflictiontypes="bleeding" damagemultiplier="0.1" />
+    <damagemodifier armorsector="0,360" afflictiontypes="burn" damagemultiplier="0.1" />
+    <sprite texture="%ModDir%/Characters/eyi/humaneyi/eyi.png" sourcerect="56,29,87,82" depth="0.11" origin="0.661,0.526" ignoretint="true" />
+  </limb>
+  <limb name="eyiappendage 2-2" id="35" height="22" width="50" ignorecollisions="True" flip="True">
+    <damagemodifier armorsector="0,360" afflictiontypes="damage" damagemultiplier="0.1" />
+    <damagemodifier armorsector="0,360" afflictiontypes="bleeding" damagemultiplier="0.1" />
+    <damagemodifier armorsector="0,360" afflictiontypes="burn" damagemultiplier="0.1" />
+    <sprite texture="%ModDir%/Characters/eyi/humaneyi/eyi.png" sourcerect="110,152,33,76" depth="0.11" origin="0.86,0.13" ignoretint="true" />
+  </limb>
+  <limb name="eyiappendage 2-3" id="36" height="18" width="40" ignorecollisions="True" flip="True">
+    <damagemodifier armorsector="0,360" afflictiontypes="damage" damagemultiplier="0.1" />
+    <damagemodifier armorsector="0,360" afflictiontypes="bleeding" damagemultiplier="0.1" />
+    <damagemodifier armorsector="0,360" afflictiontypes="burn" damagemultiplier="0.1" />
+    <sprite texture="%ModDir%/Characters/eyi/humaneyi/eyi.png" sourcerect="26,190,27,60" depth="0.11" origin="0.83,0.1" ignoretint="true" />
+  </limb>
+  <limb name="eyiappendage 3-1" id="37" height="33" width="70" ignorecollisions="True" flip="True">
+    <damagemodifier armorsector="0,360" afflictiontypes="damage" damagemultiplier="0.1" />
+    <damagemodifier armorsector="0,360" afflictiontypes="bleeding" damagemultiplier="0.1" />
+    <damagemodifier armorsector="0,360" afflictiontypes="burn" damagemultiplier="0.1" />
+    <sprite texture="%ModDir%/Characters/eyi/humaneyi/eyi.png" sourcerect="392,21,51,105" depth="0.03" origin="0.48,0.414" ignoretint="true" />
+  </limb>
+  <limb name="eyiappendage 3-2" id="38" height="15" width="50" ignorecollisions="True" flip="True">
+    <damagemodifier armorsector="0,360" afflictiontypes="damage" damagemultiplier="0.1" />
+    <damagemodifier armorsector="0,360" afflictiontypes="bleeding" damagemultiplier="0.1" />
+    <damagemodifier armorsector="0,360" afflictiontypes="burn" damagemultiplier="0.1" />
+    <sprite texture="%ModDir%/Characters/eyi/humaneyi/eyi.png" sourcerect="305,21,24,75" depth="0.03" origin="0.29,0.31" ignoretint="true" />
+  </limb>
+  <limb name="eyiappendage 3-3" id="39" height="15" width="23" ignorecollisions="True" flip="True">
+    <damagemodifier armorsector="0,360" afflictiontypes="damage" damagemultiplier="0.1" />
+    <damagemodifier armorsector="0,360" afflictiontypes="bleeding" damagemultiplier="0.1" />
+    <damagemodifier armorsector="0,360" afflictiontypes="burn" damagemultiplier="0.1" />
+    <sprite texture="%ModDir%/Characters/eyi/humaneyi/eyi.png" sourcerect="299,150,37,60" depth="0.03" origin="0.353,0.177" ignoretint="true" />
+  </limb>
+  <limb name="tail 1-1" id="40" height="15" width="50" ignorecollisions="True" flip="True">
+    <damagemodifier armorsector="0,360" afflictiontypes="damage" damagemultiplier="0.1" />
+    <damagemodifier armorsector="0,360" afflictiontypes="bleeding" damagemultiplier="0.1" />
+    <damagemodifier armorsector="0,360" afflictiontypes="burn" damagemultiplier="0.1" />
+    <sprite texture="%ModDir%/Characters/eyi/humaneyi/eyi.png" sourcerect="181,252,121,86" depth="0.131" origin="0.457,0.562" ignoretint="true" />
+  </limb>
+  <limb name="tail 1-2" id="41" height="15" width="23" ignorecollisions="True" flip="True">
+    <damagemodifier armorsector="0,360" afflictiontypes="damage" damagemultiplier="0.1" />
+    <damagemodifier armorsector="0,360" afflictiontypes="bleeding" damagemultiplier="0.1" />
+    <damagemodifier armorsector="0,360" afflictiontypes="burn" damagemultiplier="0.1" />
+    <sprite texture="%ModDir%/Characters/eyi/humaneyi/eyi.png" sourcerect="71,309,87,113" depth="0.131" origin="0.940,0.22" ignoretint="true" />
+  </limb>
+  <joint name="Head to eyiappendage" limb1="1" limb2="33" limb1anchor="3.3,-18.7" limb2anchor="-3,0" upperlimit="0" lowerlimit="-20" canbesevered="False" limitenabled="True" />
+  <joint name="eyiappendage 2-1" limb1="0" limb2="34" limb1anchor="-21.9,37.1" limb2anchor="-3,0" upperlimit="20" lowerlimit="-20" canbesevered="False" limitenabled="True" />
+  <joint name="eyiappendage 2-2" limb1="34" limb2="35" limb1anchor="-46.3,30.3" limb2anchor="-3,0" upperlimit="20" lowerlimit="-5" canbesevered="False" limitenabled="True" />
+  <joint name="eyiappendage 2-3" limb1="35" limb2="36" limb1anchor="-16.2,-52.6" limb2anchor="-3,0" upperlimit="1" lowerlimit="-1" canbesevered="False" limitenabled="True" />
+  <joint name="eyiappendage 3-1" limb1="2" limb2="37" limb1anchor="-11.1,23.9" limb2anchor="11.1,23.6" upperlimit="1" lowerlimit="-1" canbesevered="False" limitenabled="True" />
+  <joint name="eyiappendage 3-2" limb1="37" limb2="38" limb1anchor="0.9,-47" limb2anchor="-0.9,14.5" upperlimit="5" lowerlimit="-1" canbesevered="False" limitenabled="True" />
+  <joint name="eyiappendage 3-3" limb1="38" limb2="39" limb1anchor="1.4,-37.3" limb2anchor="-3,0" upperlimit="1" lowerlimit="-1" canbesevered="False" limitenabled="True" />
+  <joint name="tail 1-1" limb1="12" limb2="40" limb1anchor="-17.4,-9.5" limb2anchor="14.5,16.6" upperlimit="5" lowerlimit="-10" canbesevered="False" limitenabled="True" />
+  <joint name="tail 1-2" limb1="22" limb2="41" limb1anchor="-8.6,-10.4" limb2anchor="-34.3,-19.1" upperlimit="3" lowerlimit="-6" canbesevered="False" limitenabled="True" />
+</huskappendage>

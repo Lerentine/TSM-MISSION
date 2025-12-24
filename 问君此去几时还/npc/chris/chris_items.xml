@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+ <!--克里斯-->
+  <Item name="克里斯" identifier="tsm_chris" subcategory="npc" scale="0.5" category="Equipment" tags="smallitem,mobileradio" cargocontaineridentifier="metalcrate" hideinmenus="true" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="crewcab" secondary="divingcab" />
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
+    <Sprite name="Headset" texture="Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="28,321,49,62" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="15" />
+    <Deconstruct time="5"></Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="tsm_chris" />
+    </Fabricate>
+    <WifiComponent range="40000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <Upgrade gameversion="0.18.0.0">
+      <WifiComponent>
+        <RequiredItems items="" />
+      </WifiComponent>
+    </Upgrade>
+    <Wearable limbtype="Any,Headset" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="false">
+      <sprite name="chris Head" texture="%ModDir%/npc/chris/heads.png" limb="Head" depth="0.15" hidelimb="true" inheritdepth="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.4" inheritsourcerect="false" sourcerect="4,0,148,145" origin="0.5,0.5" />
+      <sprite name="chris Torso" texture="%ModDir%/npc/chris/chris.png" limb="Torso" depth="0.16" depthlimb="Jaw" inheritdepth="false" inheritlimbdepth="true" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="chris Right Hand" texture="%ModDir%/npc/chris/chris.png" limb="RightHand" depth="0.115" inheritdepth="false" inheritlimbdepth="true" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="chris Left Hand" texture="%ModDir%/npc/chris/chris.png" limb="LeftHand" depth="0.26" inheritdepth="false" inheritlimbdepth="true" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="chris Left Lower Arm" texture="%ModDir%/npc/chris/chris.png" limb="LeftForearm" depth="0.25" inheritdepth="false" inheritlimbdepth="true" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="chris Right Lower Arm" texture="%ModDir%/npc/chris/chris.png" limb="RightForearm" depth="0.11" inheritdepth="false" inheritlimbdepth="true" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="chris Left Upper Arm" texture="%ModDir%/npc/chris/chris.png" limb="LeftArm" depth="0.24" inheritdepth="false" inheritlimbdepth="true" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="chris Right Upper Arm" texture="%ModDir%/npc/chris/chris.png" limb="RightArm" depth="0.12" inheritdepth="false" inheritlimbdepth="true" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="chris Waist" texture="%ModDir%/npc/chris/chris.png" limb="Waist" depth="0.221" inheritdepth="false" inheritlimbdepth="true" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="chris Right Thigh" texture="%ModDir%/npc/chris/chris.png" limb="RightThigh" depth="0.32" inheritdepth="false" inheritlimbdepth="true" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="chris Left Thigh" texture="%ModDir%/npc/chris/chris.png" limb="LeftThigh" depth="0.33" inheritdepth="false" inheritlimbdepth="true" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="chris Right Leg" texture="%ModDir%/npc/chris/chris.png" limb="RightLeg" depth="0.321" inheritdepth="false" inheritlimbdepth="true" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="chris Left Leg" texture="%ModDir%/npc/chris/chris.png" limb="LeftLeg" depth="0.331" inheritdepth="false" inheritlimbdepth="true" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="chris Right Shoe" texture="%ModDir%/npc/chris/chris.png" limb="RightFoot" depth="0.322" inheritdepth="false" inheritlimbdepth="true" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="chris Left Shoe" texture="%ModDir%/npc/chris/chris.png" limb="LeftFoot" depth="0.332" inheritdepth="false" inheritlimbdepth="true" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="chris Boobs" texture="%ModDir%/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+    </Wearable>
+  </Item>
+  <Item name="联盟M7战斗步枪" identifier="tsm_m7" subcategory="npc" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,lm_gun,provocativetohumanai,bulkyweapon,tsm_short_farsight,tsm_allowoverheadshooting" scale="0.165" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+     <!--Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="75" />
+      <RequiredItem identifier="tsm_m7" amount="1" />
+      <Item identifier="tsm_hpc" amount="1" />
+      <Item identifier="tsm_yx_crystallography" amount="1" />
+     </Fabricate-->
+    <Deconstruct time="10">
+      <Item identifier="tsm_hpc" />
+      <Item identifier="tsm_lm_weaponbox" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/npc/chris/weapons.png" sourcerect="970,58,132,126" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/npc/chris/weapons.png" sourcerect="1,8,798,233" depth="0.55" origin="0.5,0.5" />
+    <Body width="780" height="210" density="30" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,0" aimpos="68,5" handle1="-150,-50" handle2="50,12" holdangle="-35" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.7" setvalue="true" />
+      <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
+      <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.45" setvalue="true" />
+      <StatusEffect type="OnActive" target="This" cameraaimoffset="360" setvalue="true" interval="1"/>
+      <StatusEffect type="OnActive" target="Character,Contained,This" setvalue="true">
+        <Affliction identifier="tsm_headshoot_debuff" strength="5" />
+        <Conditional HasTag="tsm_headshoot" />
+      </StatusEffect>
+    </Holdable>
+    <!--握持坐标:握持坐标(握把到身体距离),瞄准坐标(握把到身体距离),主手位置,副手位置,闲置握持角度-->
+    <RangedWeapon reload="0.105" weapondamagemodifier="1.2" holdtrigger="true" barrelpos="390,7" spread="7" unskilledspread="30" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="%ModDir%/items/weapons/crosshair.png" sourcerect="617,701,195,197" />
+      <CrosshairPointer texture="%ModDir%/items/weapons/crosshair.png" sourcerect="886,703,195,195" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
+      <StatusEffect type="OnUse" target="This" forceplaysounds="True">
+        <Sound file="%ModDir%/items/weapons/木卫二联盟/MCX.ogg" type="OnUse" range="3000" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional skillrequirement="true" weapons="lt 65" />
+        <Conditional recoilstabilized="lte 0" />
+        <Conditional incrementalstun="lte 55" />
+        <Affliction identifier="incrementalstun" strength="10" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
+        <Conditional skillrequirement="true" weapons="lt 55" />
+        <Conditional recoilstabilized="lte 0" />
+        <Conditional incrementalstun="lte 70" />
+        <Affliction identifier="incrementalstun" strength="20" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and" setvalue="true">
+        <Conditional skillrequirement="true" weapons="lt 45" />
+        <Conditional recoilstabilized="lte 0" />
+        <Conditional incrementalstun="lte 90" />
+        <Affliction identifier="stun" strength="0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This">
+        <Conditional Condition="eq 0" targetcontaineditem="true" />
+        <Sound file="%ModDir%/items/weapons/reload_ogg/reload8.ogg" range="2000" loop="false" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This">
+        <!--后坐力,屏幕抖动-->
+        <Explosion range="100.0" force="0.5" camerashake="17" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" />
+      </StatusEffect>
+      <!--子弹落地音效（延迟0.5s）-->
+      <StatusEffect type="OnUse" delay="0.5" target="This" forceplaysounds="true">
+        <Conditional InWater="false" />
+        <Sound file="%ModDir%/items/weapons/木卫二联盟/bullet_general1.ogg" type="OnUse" range="1500" selectionmode="Random" />
+        <Sound file="%ModDir%/items/weapons/木卫二联盟/bullet_general2.ogg" type="OnUse" range="1500" />
+        <Sound file="%ModDir%/items/weapons/木卫二联盟/bullet_general3.ogg" type="OnUse" range="1500" />
+        <Sound file="%ModDir%/items/weapons/木卫二联盟/bullet_general4.ogg" type="OnUse" range="1500" />
+        <Sound file="%ModDir%/items/weapons/木卫二联盟/bullet_general5.ogg" type="OnUse" range="1500" />
+      </StatusEffect>
+      <!--抛弹壳-->
+      <StatusEffect type="OnUse" target="This">
+        <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="2.1" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="2" scalemax="2" />
+      </StatusEffect>
+      <!--动态散步-->
+      <StatusEffect type="Always" target="This" unskilledspread="-25">
+        <Conditional unskilledspread="gt 12" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This,Character" unskilledspread="+4" disabledeltatime="true" comparison="and">
+        <Conditional unskilledspread="lt 20" />
+        <Conditional CanRun="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This,Character" unskilledspread="+2" disabledeltatime="true" comparison="and">
+        <Conditional unskilledspread="lt 15" />
+        <Conditional CanRun="false" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" spread="-10">
+        <Conditional spread="gt 5" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.75" disabledeltatime="true" comparison="and">
+        <Conditional spread="lt 11" />
+        <Conditional CanRun="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This,Character" spread="+2.25" disabledeltatime="true" comparison="and">
+        <Conditional spread="lt 9" />
+        <Conditional CanRun="false" />
+      </StatusEffect>
+      <!--需要的弹匣以及武器等级-->
+      <RequiredItems items="68_51mag" type="Contained" target="This" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="65" />
+    </RangedWeapon>
+    <!--里容器-->
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
+      <!-- 外观 itempos(x)-=26 -->
+      <!--1.弹匣-->
+      <SlotIcon slotindex="0" texture="%ModDir%/items/weapons/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
+      <Containable items="68_51mag" hide="false" itempos="-13,-8" depth="0.56">
+        <!--换弹-->
+        <StatusEffect type="OnInserted" target="This" holdpos="20,-30" holdangle="70" maxchargetime="999" setvalue="true" />
+        <StatusEffect type="OnInserted" target="This" setvalue="true">
+          <Conditional isActive="eq true" />
+          <sound file="%ModDir%/items/weapons/reload_ogg/reload_2_4.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7" />
+        </StatusEffect>
+        <StatusEffect target="This" holdpos="60,0" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.4" maxchargetime="0" setvalue="true">
+          <conditional maxchargetime="eq 999" />
+        </StatusEffect>
+      </Containable>
+      <!--2.灯-->
+      <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="flashlight" hide="false" itempos="19,2" depth="0.56" setactive="true" />
+      </SubContainer>
+    </ItemContainer>
+    <aitarget sightrange="2500" soundrange="2500" fadeouttime="6" />
+    <!--品质-->
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
+    </Quality>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
+      <GuiFrame relativesize="0.09,0.07" anchor="CenterRight" pivot="CenterRight" relativeoffset="-0.02,0.15" style="ItemUI" />
+      <TickBox text="tsm_gun_up">
+        <StatusEffect type="OnUse" target="This,Character" aimpos="68,45" setvalue="true" IsOn="true" tags="tsm_headshoot"/>
+        <StatusEffect type="OnSecondaryUse" target="This" aimpos="68,5" setvalue="true" IsOn="false" tags=""/>
+      </TickBox>
+    </CustomInterface>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <!--等级提示-->
+    <SkillRequirementHint identifier="weapons" level="65" />
+  </Item>
+  <Item name="克里斯介绍信" identifier="tsm_chris_jl" subcategory="npc" allowstealingalways="true" category="Misc" hideinmenus="true" Tags="smallitem" scale="0.2" impactsoundtag="impact_soft">
+    <InventoryIcon texture="%ModDir%/npc/chris/chris_items.png" sourcerect="28,115,135,113" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/npc/chris/chris_items.png" sourcerect="28,115,135,113" origin="0.5,0.5" depth="0.8" />
+    <Body width="135" height="110" density="0" />
+    <Deconstruct time="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-10,0" msg="ItemMsgPickUpSelect" />
+    <Terminal canbeselected="true" msg="ItemMsgInteractSelect" AllowInGameEditing="false" AutoHideScrollbar="true" readonly="true" autoscrolltobottom="false" linestartsymbol="" marginmultiplier="1.5" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.8,0.75" anchor="Center" style="tsm_chris" hidedragicons="true" />
+    </Terminal>
+  </Item>
+  <Item name="贝奥武夫徽章" identifier="tsm_beowulf" subcategory="npc" allowstealingalways="true" category="Misc" hideinmenus="true" Tags="smallitem" scale="0.02" impactsoundtag="impact_soft">
+    <InventoryIcon texture="%ModDir%/items/misc/beowulf.png" sourcerect="90,87,649,646" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/misc/beowulf.png" sourcerect="90,87,649,646" origin="0.5,0.5" depth="0.8" />
+    <Body width="649" height="640" density="5" />
+    <Deconstruct time="2" />
+    <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-10,0" msg="ItemMsgPickUpSelect" />
+    <Terminal canbeselected="true" msg="ItemMsgInteractSelect" AllowInGameEditing="false" AutoHideScrollbar="true" readonly="true" autoscrolltobottom="false" linestartsymbol="" marginmultiplier="1.5" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.75,0.75" anchor="Center" style="tsm_beowulf" hidedragicons="true" />
+    </Terminal>
+  </Item>
+  <Item name="录音笔" identifier="tsm_rp" subcategory="npc" category="Misc" Tags="smallitem,tsm_audio" cargocontaineridentifier="metalcrate" impactsoundtag="impact_soft" scale="0.2">
+    <Sprite texture="%ModDir%/npc/chris/chris_items.png" sourcerect="213,102,112,127" depth="0.6" origin="0.5,0.5" />
+    <Body width="112" height="120" density="2" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="5,-55" holdangle="0" handle1="0,1" msg="ItemMsgPickUpSelect" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This" interval="0.5" duration="0.6">
+        <Conditional hastag="eq tsm_soundplayer" targetcontainer="true" />
+        <sound file="%ModDir%/npc/chris/recording_pen_chris.ogg" range="1000" loop="true" volume="0.7" />
+      </StatusEffect>
+    </ItemComponent>
+    <Terminal canbeselected="true" msg="ItemMsgInteractSelect" AllowInGameEditing="false" AutoHideScrollbar="true" readonly="true" autoscrolltobottom="false" linestartsymbol="" marginmultiplier="1.5" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.75,0.75" anchor="Center" style="tsm_chris_end" hidedragicons="true" />
+    </Terminal>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.08,0.12" anchor="BottomLeft" relativeoffset="0,0.31" style="ItemUI" />
+      <Button text="playable">
+        <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+          <Sound file="%ModDir%/npc/chris/recording_pen_chris.ogg" type="OnUse" range="300" />
+        </StatusEffect>
+      </Button>
+    </CustomInterface>
+  </Item>
+</Items>

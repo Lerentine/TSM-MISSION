@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Charactervariant inherit="huamn_war" speciesname="RiotSquad" Group="tsm">
+  <health vitality="115" />
+  <!--sound file="%ModDir%/Characters/war/奇迹之海/游荡1.ogg" state="Idle" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/游荡2.ogg" state="Idle" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/游荡3.ogg" state="Idle" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/出场1.ogg" state="Idle" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/出场2.ogg" state="Idle" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/出场3.ogg" state="Idle" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/受伤1.ogg" state="Damage" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/受伤2.ogg" state="Damage" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/受伤3.ogg" state="Damage" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/受伤4.ogg" state="Damage" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/受伤5.ogg" state="Damage" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/受伤6.ogg" state="Damage" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/受伤7.ogg" state="Damage" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/死亡1.ogg" state="Die" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/死亡2.ogg" state="Die" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/死亡3.ogg" state="Die" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/攻击1.ogg" state="Attack" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/攻击2.ogg" state="Attack" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/攻击3.ogg" state="Attack" range="1000" volume="4" gender="None" /-->
+  <inventory arrowslot="9" slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" commonness="1" accessiblewhenalive="False">
+    <Item identifier="coalitioncommendation" />
+    <Item identifier="tsm_thbq_ai_drum" slot="RightHand+LeftHand" />
+    <Item identifier="idcard" slot="Card" />
+    <Item identifier="tsm_map_suit_ai" slot="OuterClothes" />
+    <Item identifier="tsm_old_uniform" slot="InnerClothes" />
+    <Item identifier="tsm_riotcontrol_helmet" slot="Head" />
+  </inventory>
+  <inventory arrowslot="9" slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" commonness="1" accessiblewhenalive="False">
+    <Item identifier="antibleeding3" />
+    <Item identifier="tsm_gybq_ap" slot="RightHand+LeftHand" />
+    <Item identifier="idcard" slot="Card" />
+    <Item identifier="tsm_heavy_vest" slot="OuterClothes" />
+    <Item identifier="tsm_old_uniform" slot="InnerClothes" />
+    <Item identifier="tsm_riotcontrol_helmet" slot="Head" />
+  </inventory>
+  <inventory arrowslot="9" slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" commonness="1" accessiblewhenalive="False">
+    <Item identifier="antibleeding2" />
+    <Item identifier="tsm_thbq_ai_sulphuriteshard" slot="RightHand+LeftHand" />
+    <Item identifier="idcard" slot="Card" />
+    <Item identifier="tsm_map_suit_ai" slot="OuterClothes" />
+    <Item identifier="tsm_old_uniform" slot="InnerClothes" />
+    <Item identifier="tsm_riotcontrol_helmet" slot="Head" />
+  </inventory>
+  <inventory arrowslot="9" slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" commonness="1" accessiblewhenalive="False">
+    <Item identifier="opium" />
+    <Item identifier="tsm_thbq_ai_fulgurium" slot="RightHand+LeftHand" />
+    <Item identifier="idcard" slot="Card" />
+    <Item identifier="tsm_heavy_vest" slot="OuterClothes" />
+    <Item identifier="tsm_old_uniform" slot="InnerClothes" />
+    <Item identifier="tsm_riotcontrol_helmet" slot="Head" />
+  </inventory>
+  <inventory arrowslot="9" slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" commonness="1" accessiblewhenalive="False">
+    <Item identifier="antidama1" />
+    <Item identifier="tsm_fy_burn" slot="RightHand+LeftHand" />
+    <Item identifier="idcard" slot="Card" />
+    <Item identifier="tsm_map_suit_ai" slot="OuterClothes" />
+    <Item identifier="tsm_old_uniform" slot="InnerClothes" />
+    <Item identifier="tsm_riotcontrol_helmet" slot="Head" />
+  </inventory>
+  <inventory arrowslot="9" slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" commonness="1" accessiblewhenalive="False">
+    <Item identifier="antibloodloss2" />
+    <Item identifier="tsm_79_smg_drum" slot="RightHand+LeftHand" />
+    <Item identifier="idcard" slot="Card" />
+    <Item identifier="tsm_heavy_vest" slot="OuterClothes" />
+    <Item identifier="tsm_old_uniform" slot="InnerClothes" />
+    <Item identifier="tsm_riotcontrol_helmet" slot="Head" />
+  </inventory>
+</Charactervariant>

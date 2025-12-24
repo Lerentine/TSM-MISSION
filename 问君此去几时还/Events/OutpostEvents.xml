@@ -1,0 +1,1340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Randomevents>
+  <EventSprites>
+    <Sprite identifier="lin" texture="%ModDir%/Events/lin_photo.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <Sprite identifier="yan" texture="%ModDir%/Events/yan_photo.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <Sprite identifier="kls" texture="%ModDir%/Events/chris_photo.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <Sprite identifier="suger" texture="%ModDir%/Events/suger.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <Sprite identifier="Lerentine" texture="%ModDir%/Events/Lerentine.png" sourcerect="113,77,529,315" origin="0.5,0.5" />
+    <Sprite identifier="youmu" texture="%ModDir%/Events/youmu.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <Sprite identifier="hxl" texture="%ModDir%/Events/hxl1.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <Sprite identifier="lin_1" texture="%ModDir%/Events/lin_1.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <Sprite identifier="lin_2" texture="%ModDir%/Events/lin_2.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <Sprite identifier="jxg" texture="%ModDir%/Events/jxg.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <Sprite identifier="jxg_christmas" texture="%ModDir%/Events/jxg_christmas.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <Sprite identifier="tsm_office" texture="%ModDir%/Events/office.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <Sprite identifier="Khalid" texture="%ModDir%/Events/Khalid.png" sourcerect="0,0,0,0" origin="0.5,0.5" />
+  </EventSprites>
+  <EventPrefabs>
+    <!--军需官-->
+    <ScriptedEvent identifier="tsm_quartermaster_event" commonness="100">
+      <TagAction criteria="player" tag="player" />
+      <SpawnAction npcsetidentifier="tsm_outpost_npcs" npcidentifier="tsm_wz_ff" targettag="tsm_wz_ff" spawnlocation="Outpost" targetmoduletags="airlock" />
+      <StatusEffectAction targettag="tsm_wz_ff">
+        <StatusEffect target="This" UseHealthWindow="false" />
+      </StatusEffectAction>
+      <Label name="beginningofthejourney" />
+      <NPCWaitAction npctag="tsm_wz_ff" wait="false" />
+      <TriggerAction target1tag="tsm_wz_ff" target2tag="player" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
+      <ConversationAction targettag="triggerer_player" text="tsm.jxg.help" eventsprite="jxg_christmas">
+        <Option text="tsm.dh.yjsbm">
+          <ConversationAction targettag="triggerer_player" text="tsm.dh.xh1" eventsprite="jxg_christmas">
+            <Option text="tsm.dh.kw">
+              <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
+                <Success>
+                  <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1" />
+                  <ConversationAction targettag="triggerer_player" text="tsm.over" eventsprite="jxg_christmas"/>
+                  <SpawnAction itemidentifier="tsm_wz_cl_flare" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm.no.id" eventsprite="jxg_christmas"/>
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckItemAction>
+            </Option>
+            <Option text="tsm.dh.yl">
+              <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
+                <Success>
+                  <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1" />
+                  <ConversationAction targettag="triggerer_player" text="tsm.over" eventsprite="jxg_christmas"/>
+                  <SpawnAction itemidentifier="tsm_wz_yl_flare" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm.no.id" eventsprite="jxg_christmas"/>
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckItemAction>
+            </Option>
+            <Option text="tsm.dh.hw">
+              <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
+                <Success>
+                  <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1" />
+                  <ConversationAction targettag="triggerer_player" text="tsm.over" eventsprite="jxg_christmas"/>
+                  <SpawnAction itemidentifier="tsm_pgcflare" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm.no.id" eventsprite="jxg_christmas"/>
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckItemAction>
+            </Option>
+            <Option text="tsm.dh.dy">
+              <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
+                <Success>
+                  <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1" />
+                  <ConversationAction targettag="triggerer_player" text="tsm.over" eventsprite="jxg_christmas"/>
+                  <SpawnAction itemidentifier="tsm_ammunition_resupply" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm.no.id" eventsprite="jxg_christmas"/>
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckItemAction>
+            </Option>
+            <Option text="tsm.dh.bg">
+              <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
+                <Success>
+                  <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1" />
+                  <ConversationAction targettag="triggerer_player" text="tsm.over" eventsprite="jxg_christmas"/>
+                  <SpawnAction itemidentifier="tsm_triton_bag" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm.no.id" eventsprite="jxg_christmas"/>
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckItemAction>
+            </Option>
+            <Option text="tsm.dh.jiuzhou">
+              <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
+                <Success>
+                  <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1" />
+                  <ConversationAction targettag="triggerer_player" text="tsm.over" eventsprite="jxg_christmas"/>
+                  <SpawnAction itemidentifier="tsm_jz_uniform" targetinventory="triggerer_player" />
+                  <SpawnAction itemidentifier="tsm_jz_helmet" targetinventory="triggerer_player" />
+                  <SpawnAction itemidentifier="tsm_jz_vest" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm.no.id" eventsprite="jxg_christmas"/>
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckItemAction>
+            </Option>
+            <Option text="tsm.dh.nujiang">
+              <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
+                <Success>
+                  <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1" />
+                  <ConversationAction targettag="triggerer_player" text="tsm.over" eventsprite="jxg_christmas"/>
+                  <SpawnAction itemidentifier="tsm_helmet_outpost_combat" targetinventory="triggerer_player" />
+                  <SpawnAction itemidentifier="tsm_nujiang_uniform" targetinventory="triggerer_player" />
+                  <SpawnAction itemidentifier="tsm_heavy_vest" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm.no.id" eventsprite="jxg_christmas"/>
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckItemAction>
+            </Option>
+            <Option text="tsm.dh.mingfu">
+              <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
+                <Success>
+                  <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1" />
+                  <ConversationAction targettag="triggerer_player" text="tsm.over" eventsprite="jxg_christmas"/>
+                  <SpawnAction itemidentifier="tsm_mingfu_uniform" targetinventory="triggerer_player" />
+                  <SpawnAction itemidentifier="tsm_mingfu_vest" targetinventory="triggerer_player" />
+                  <SpawnAction itemidentifier="lm_mingfu_helmet" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm.no.id" eventsprite="jxg_christmas"/>
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckItemAction>
+            </Option>
+            <Option text="tsm.dh.niaochao">
+              <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_identifier" amount="1">
+                <Success>
+                  <RemoveItemAction targettag="triggerer_player" identifier="tsm_identifier" amount="1" />
+                  <ConversationAction targettag="triggerer_player" text="tsm.over" eventsprite="jxg_christmas"/>
+                  <SpawnAction itemidentifier="tsm_niaochao_uniform" targetinventory="triggerer_player" />
+                  <SpawnAction itemidentifier="tsm_niaochao_vest" targetinventory="triggerer_player" />
+                  <SpawnAction itemidentifier="tsm_niaochao_helmet" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm.no.id" eventsprite="jxg_christmas"/>
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckItemAction>
+            </Option>
+            <Option text="tsm.wait">
+              <ConversationAction text="tsm.wait1" dialogtype="Small" targettag="triggerer_player" eventsprite="jxg_christmas"/>
+              <ClearTagAction tag="triggerer_player" />
+              <GoTo name="beginningofthejourney" />
+            </Option>
+          </ConversationAction>
+        </Option>
+        <Option text="tsm.dh.faction">
+          <ConversationAction targettag="triggerer_player" text="tsm.dh.faction.25" eventsprite="jxg_christmas">
+            <Option text="tsm.dh.kw">
+              <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 25">
+                <Success>
+                  <ReputationAction targettype="Faction" identifier="tsm" increase="-4" />
+                  <ConversationAction targettag="triggerer_player" text="tsm.over" eventsprite="jxg_christmas"/>
+                  <SpawnAction itemidentifier="tsm_wz_cl_flare" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm.no.faction" eventsprite="jxg_christmas"/>
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckReputationAction>
+            </Option>
+            <Option text="tsm.dh.yl">
+              <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 25">
+                <Success>
+                  <ReputationAction targettype="Faction" identifier="tsm" increase="-4" />
+                  <ConversationAction targettag="triggerer_player" text="tsm.over" eventsprite="jxg_christmas"/>
+                  <SpawnAction itemidentifier="tsm_wz_yl_flare" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm.no.faction" eventsprite="jxg_christmas"/>
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckReputationAction>
+            </Option>
+            <Option text="tsm.dh.hw">
+              <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 25">
+                <Success>
+                  <ReputationAction targettype="Faction" identifier="tsm" increase="-3" />
+                  <ConversationAction targettag="triggerer_player" text="tsm.over" eventsprite="jxg_christmas"/>
+                  <SpawnAction itemidentifier="tsm_pgcflare" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm.no.faction" eventsprite="jxg_christmas"/>
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckReputationAction>
+            </Option>
+            <Option text="tsm.dh.dy">
+              <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 25">
+                <Success>
+                  <ReputationAction targettype="Faction" identifier="tsm" increase="-4" />
+                  <ConversationAction targettag="triggerer_player" text="tsm.over" eventsprite="jxg_christmas"/>
+                  <SpawnAction itemidentifier="tsm_ammunition_resupply" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm.no.faction" eventsprite="jxg_christmas"/>
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckReputationAction>
+            </Option>
+            <Option text="tsm.dh.bg">
+              <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 50">
+                <Success>
+                  <ReputationAction targettype="Faction" identifier="tsm" increase="-3" />
+                  <ConversationAction targettag="triggerer_player" text="tsm.over" eventsprite="jxg_christmas"/>
+                  <SpawnAction itemidentifier="tsm_triton_bag" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm.no.faction50" eventsprite="jxg_christmas"/>
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckReputationAction>
+            </Option>
+            <Option text="tsm.wait">
+              <ConversationAction text="tsm.wait1" dialogtype="Small" targettag="triggerer_player" eventsprite="jxg_christmas"/>
+              <ClearTagAction tag="triggerer_player" />
+              <GoTo name="beginningofthejourney" />
+            </Option>
+          </ConversationAction>
+        </Option>
+        <Option text="tsm.dh.vip">
+          <CheckReputationAction targettype="Faction" identifier="tsm" condition="gt 59">
+            <ConversationAction targettag="triggerer_player" text="tsm.dh.vip.js" eventsprite="jxg_christmas"/>
+            <Failure>
+              <ConversationAction targettag="triggerer_player" text="tsm.dh.vip.60.failure" eventsprite="jxg_christmas"/>
+              <GoTo name="beginningofthejourney" />
+            </Failure>
+            <Success>
+              <CheckDataAction identifier="tsm_vip_save_1" condition="eq true">
+                <Success>
+                  <ConversationAction targettag="triggerer_player" text="tsm.dh.vip.success" eventsprite="jxg_christmas"/>
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm.dh.vip.60.success" eventsprite="jxg_christmas"/>
+                  <SpawnAction npcsetidentifier="tsm_join_npc" npcidentifier="tsm_pifu" targettag="tsm_pifu" teamid="FriendlyNPC" spawnpointtag="admin" spawnlocation="Outpost" />
+                  <TagAction criteria="humanprefabidentifier:tsm_pifu" tag="pifu" continueifnotargetsfound="true" />
+                  <StatusEffectAction targettag="pifu">
+                    <StatusEffect target="This" enabledespawn="true">
+                      <GiveTalentInfo giverandom="false" talentidentifiers="tsm_vip_bodyguard" />
+                      <GiveTalentInfo giverandom="false" talentidentifiers="bigguns" />
+                      <GiveTalentInfo giverandom="false" talentidentifiers="lightningwizard" />
+                      <GiveTalentInfo giverandom="false" talentidentifiers="quickdraw" />
+                      <GiveTalentInfo giverandom="false" talentidentifiers="tsm_olympian" />
+                    </StatusEffect>
+                  </StatusEffectAction>
+                  <NPCChangeTeamAction npctag="tsm_pifu" teamid="Team1" addtocrew="true" />
+                  <SetDataAction identifier="tsm_vip_save_1" value="true" />
+                  <ConversationAction targettag="triggerer_player" text="tsm.dh.vip.rd.success" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckDataAction>
+            </Success>
+          </CheckReputationAction>
+        </Option>
+        <Option text="Merry Christmas">
+          <ConversationAction targettag="triggerer_player" text="圣诞节快乐" eventsprite="jxg_christmas"/>
+          <SpawnAction itemidentifier="tsm_m1" targetinventory="triggerer_player" />
+          <SpawnAction itemidentifier="tsm_sks_skins_christmas" targetinventory="triggerer_player" />
+          <ClearTagAction tag="triggerer_player" />
+          <GoTo name="beginningofthejourney" />
+        </Option>
+        <Option text="tsm.wait">
+          <ConversationAction text="tsm.wait1" dialogtype="Small" targettag="triggerer_player" eventsprite="jxg_christmas"/>
+          <ClearTagAction tag="triggerer_player" />
+          <GoTo name="beginningofthejourney" />
+        </Option>
+      </ConversationAction>
+      <NPCWaitAction npctag="tsm_wz_ff" wait="false" />
+    </ScriptedEvent>
+    <!--站点安保/npc增强-->
+    <ScriptedEvent identifier="tsm_security_enhanced">
+      <TagAction criteria="humanprefabidentifier:tsm_outpost_combat_police" tag="police" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:tsm_gendarmerie" tag="police" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:tsm_outpost_combat_sunset" tag="sunset" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:tsm_outpost_combat_advanced" tag="advanced" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:tsm_outpost_combat_nujiang" tag="nujiang" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabidentifier:tsm_wz_ff" tag="tsm_wz_ff" continueifnotargetsfound="true" />
+      <StatusEffectAction targettag="police">
+        <StatusEffect target="This">
+          <Affliction identifier="tsm_outpostenhanced_police" strength="50" />
+        </StatusEffect>
+      </StatusEffectAction>
+      <StatusEffectAction targettag="sunset">
+        <StatusEffect target="This">
+          <Affliction identifier="tsm_outpostenhanced_sunset" strength="50" />
+        </StatusEffect>
+      </StatusEffectAction>
+      <StatusEffectAction targettag="advanced">
+        <StatusEffect target="This">
+          <Affliction identifier="tsm_outpostenhanced_advanced" strength="50" />
+        </StatusEffect>
+      </StatusEffectAction>
+      <StatusEffectAction targettag="nujiang">
+        <StatusEffect target="This">
+          <Affliction identifier="tsm_outpostenhanced_nujiang" strength="50" />
+        </StatusEffect>
+      </StatusEffectAction>
+      <StatusEffectAction targettag="tsm_wz_ff">
+        <StatusEffect target="This">
+          <Affliction identifier="tsm_npc_jxg" strength="50" />
+        </StatusEffect>
+      </StatusEffectAction>
+    </ScriptedEvent>
+    <!--54区-->
+    <ScriptedEvent identifier="tsm_eyi_54_hy">
+      <TagAction criteria="player" tag="player" />
+      <NPCWaitAction npctag="tsm_54" wait="true" />
+      <SpawnAction npcsetidentifier="tsm_outpost_npcs" npcidentifier="tsm_54" targettag="tsm_54" spawnlocation="Outpost" spawnpointtag="tsm_military_main" />
+      <SpawnAction npcsetidentifier="tsm_outpost_npcs" npcidentifier="tsm_54" targettag="tsm_54" spawnlocation="Outpost" spawnpointtag="tsm_military_main" />
+      <SpawnAction npcsetidentifier="tsm_outpost_npcs" npcidentifier="tsm_outpostmanager" targettag="tsm_54" spawnlocation="Outpost" spawnpointtag="tsm_military_main" />
+      <TriggerAction target1tag="tsm_outpostmanager" target2tag="player" applytotarget1="tsm_outpostmanager" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
+      <ConversationAction targettag="triggerer_player" text="tsm_54_hy_q1" eventsprite="tsm_office">
+        <Option text="tsm_jx">
+          <ConversationAction targettag="triggerer_player" text="tsm_54_hy_q2" >
+            <Option text="tsm_jx">
+              <ConversationAction targettag="triggerer_player" text="tsm_54_hy_q3" >
+                <Option text="tsm_54_hy_a1">
+                  <ConversationAction targettag="triggerer_player" text="tsm_54_hy_q4" >
+                    <Option text="tsm_jx">
+                      <ConversationAction targettag="triggerer_player" text="tsm_54_hy_q5" >
+                        <Option text="tsm_jx">
+                          <ConversationAction targettag="triggerer_player" text="tsm_54_hy_q6" >
+                            <Option text="tsm_jx">
+                              <ConversationAction targettag="triggerer_player" text="tsm_54_hy_q7" >
+                                <Option text="tsm_jx">
+                                  <ConversationAction targettag="triggerer_player" text="tsm_54_hy_q8" >
+                                    <Option text="tsm_jx">
+                                      <ConversationAction targettag="triggerer_player" text="tsm_54_hy_q9" >
+                                        <Option text="tsm_54_hy_a2">
+                                          <SpawnAction npcsetidentifier="tsmnpc" npcidentifier="tsm_lsf" targettag="tsm_lsf" spawnlocation="Outpost" spawnpointtag="tsm_military_main" />
+                                          <NPCWaitAction npctag="tsm_lsf" wait="true" />
+                                          <ConversationAction targettag="triggerer_player" text="tsm_54_hy_q10" >
+                                            <Option text="tsm_jx">
+                                              <ConversationAction targettag="triggerer_player" text="tsm_54_hy_q11" >
+                                                <Option text="tsm_jx">
+                                                  <ConversationAction targettag="triggerer_player" text="tsm_54_hy_q12" >
+                                                    <Option text="tsm_jx">
+                                                      <ConversationAction targettag="triggerer_player" text="tsm_54_hy_q13" >
+                                                        <Option text="tsm_jx">
+                                                          <ConversationAction targettag="triggerer_player" text="tsm_54_hy_q14" >
+                                                            <Option text="tsm_54_hy_a3">
+                                                              <ConversationAction targettag="triggerer_player" text="tsm_54_hy_q15" >
+                                                                <Option text="tsm_54_hy_a4">
+                                                                  <ConversationAction targettag="triggerer_player" text="tsm_54_hy_q16" endconversation="true"/>
+                                                                  <SpawnAction itemidentifier="tsm_identifier" targetinventory="triggerer_player" />
+                                                                </Option>
+                                                              </ConversationAction>
+                                                            </Option>
+                                                          </ConversationAction>
+                                                        </Option>
+                                                      </ConversationAction>
+                                                    </Option>
+                                                  </ConversationAction>
+                                                </Option>
+                                              </ConversationAction>
+                                            </Option>
+                                          </ConversationAction>
+                                        </Option>
+                                      </ConversationAction>
+                                    </Option>
+                                  </ConversationAction>
+                                </Option>
+                              </ConversationAction>
+                            </Option>
+                          </ConversationAction>
+                        </Option>
+                      </ConversationAction>
+                    </Option>
+                  </ConversationAction>
+                </Option>
+              </ConversationAction>
+            </Option>
+          </ConversationAction>
+        </Option>
+      </ConversationAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="tsm_eyi_54_cf" commonness="100" requiredlayer="portaldevice">
+      <CheckDataAction identifier="tsm_eyi_54" condition="eq true">
+        <Success>
+        </Success>
+        <Failure>
+          <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 25">
+        <Failure>
+        </Failure>
+        <Success>
+          <TagAction criteria="crew" tag="crew" />
+          <TagAction criteria="bot" tag="bot" />
+          <Label name="waitforspotting" />
+          <WaitAction time="1" />
+          <CheckVisibilityAction entitytag="bot" excludedentitytag="crew" targettag="crew">
+            <Failure>
+              <Goto name="waitforspotting" />
+            </Failure>
+          </CheckVisibilityAction>
+          <WaitAction time="3" />
+          <ConversationAction text="tsm_eyi_54_jm" dialogtype="Small" />
+          <SpawnAction itemidentifier="tsm_eyi_54_hycf" spawnlocation="Mainsub" SpawnPointType="Cargo"/>
+        </Success>
+          </CheckReputationAction>
+        </Failure>
+      </CheckDataAction>
+    </ScriptedEvent>
+    <!--摄魂空间谈话-->
+    <ScriptedEvent identifier="tsm_space_shehun_talk">
+      <CheckDataAction identifier="tsm_space_shehun_talk_over" condition="eq true">
+        <Success>
+        </Success>
+        <Failure>
+          <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 15">
+            <Failure>
+            </Failure>
+            <Success>
+              <TagAction criteria="player" tag="player" />
+              <SpawnAction npcsetidentifier="tsmnpc" npcidentifier="doctors" targettag="doctors" spawnlocation="Outpost" targetmoduletags="airlock" />
+              <NPCWaitAction npctag="doctors" wait="true" />
+              <TriggerAction target1tag="doctors" target2tag="player" applytotarget1="doctors" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
+              <ConversationAction targettag="triggerer_player" text="tsm_space_shehun_q1" >
+                <Option text="tsm_space_shehun_a1">
+                  <ConversationAction targettag="triggerer_player" text="tsm_space_shehun_q2" >
+                    <Option text="tsm_space_shehun_a2">
+                      <ConversationAction targettag="triggerer_player" text="tsm_space_shehun_q3" >
+                        <Option text="tsm_space_shehun_a2">
+                          <ConversationAction targettag="triggerer_player" text="tsm_space_shehun_q3" >
+                            <Option text="tsm_space_shehun_a3">
+                              <ConversationAction targettag="triggerer_player" text="tsm_space_shehun_q4" >
+                                <Option text="tsm_space_shehun_a4">
+                                  <ConversationAction targettag="triggerer_player" text="tsm_space_shehun_q5" >
+                                    <Option text="tsm_space_shehun_a5">
+                                      <ConversationAction targettag="triggerer_player" text="tsm_space_shehun_q6" >
+                                        <Option text="tsm_space_shehun_a6">
+                                          <ConversationAction targettag="triggerer_player" text="tsm_space_shehun_q7" >
+                                            <Option text="tsm_space_shehun_a7">
+                                              <ConversationAction targettag="triggerer_player" text="tsm_space_shehun_q8" >
+                                                <Option text="tsm_space_shehun_a8">
+                                                  <ConversationAction targettag="triggerer_player" text="tsm_space_shehun_q9" >
+                                                    <Option text="tsm_space_shehun_a9">
+                                                      <SpawnAction itemidentifier="tsm_toolbox" targetinventory="triggerer_player" />
+                                                      <SetDataAction identifier="tsm_space_shehun_talk_over" value="true" />
+                                                      <ConversationAction targettag="triggerer_player" text="" endconversation="true"/>
+                                                    </Option>
+                                                  </ConversationAction>
+                                                </Option>
+                                              </ConversationAction>
+                                            </Option>
+                                          </ConversationAction>
+                                        </Option>
+                                      </ConversationAction>
+                                    </Option>
+                                  </ConversationAction>
+                                </Option>
+                              </ConversationAction>
+                            </Option>
+                          </ConversationAction>
+                        </Option>
+                      </ConversationAction>
+                    </Option>
+                  </ConversationAction>
+                </Option>
+              </ConversationAction>
+            </Success>
+          </CheckReputationAction>
+        </Failure>
+      </CheckDataAction>
+    </ScriptedEvent>
+    <!--站点悬赏令-->
+    <ScriptedEvent identifier="tsm_offer_reward_1" commonness="100">
+      <SpawnAction npcsetidentifier="tsm_outpost_npcs" npcidentifier="tsm_bountyhunter" targettag="missionnpc" spawnlocation="Outpost" targetmoduletags="airlock" />
+      <ConversationAction text="EventText.missionevent_cargo.c1" speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small" />
+      <MissionAction missiontag="tsm_origin1" />
+      <MissionAction missiontag="tsm_origin1" />
+      <MissionAction missiontag="tsm_origin1" />
+    </ScriptedEvent>
+    <ScriptedEvent identifier="tsm_offer_reward_2" commonness="100">
+      <SpawnAction npcsetidentifier="tsm_outpost_npcs" npcidentifier="tsm_bountyhunter" targettag="missionnpc" spawnlocation="Outpost" targetmoduletags="airlock" />
+      <ConversationAction text="EventText.missionevent_cargo.c1" speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small" />
+      <MissionAction missiontag="tsm_origin" />
+      <MissionAction missiontag="tsm_origin" />
+      <MissionAction missiontag="tsm_origin" />
+      <MissionAction missiontag="tsm_origin" />
+    </ScriptedEvent>
+    <ScriptedEvent identifier="tsm_offer_reward_3" commonness="100">
+      <SpawnAction npcsetidentifier="tsm_outpost_npcs" npcidentifier="tsm_bountyhunter" targettag="missionnpc" spawnlocation="Outpost" targetmoduletags="airlock" />
+      <ConversationAction text="EventText.missionevent_cargo.c1" speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small" />
+      <MissionAction missiontag="tsm_abyss" />
+      <MissionAction missiontag="tsm_hunt_monster_cave" />
+    </ScriptedEvent>
+    <ScriptedEvent identifier="tsm_offer_reward_4" commonness="100">
+      <SpawnAction npcsetidentifier="tsm_outpost_npcs" npcidentifier="tsm_bountyhunter" targettag="missionnpc" spawnlocation="Outpost" targetmoduletags="airlock" />
+      <ConversationAction text="EventText.missionevent_cargo.c1" speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small" />
+      <MissionAction missiontag="tsm_abyss_d" />
+      <MissionAction missiontag="tsm_abyss" />
+      <MissionAction missiontag="tsm_hunt_monster" />
+    </ScriptedEvent>
+    <ScriptedEvent identifier="tsm_missionevent_jlp" commonness="50">
+      <TagAction criteria="player" tag="player" />
+      <SpawnAction npcsetidentifier="tsmnpc" npcidentifier="tsmnpc_7" targettag="tsmnpc_7" spawnlocation="Outpost" targetmoduletags="airlock" />
+      <Label name="beginningofthejourney" />
+      <NPCWaitAction npctag="tsmnpc_7" wait="false" />
+      <TriggerAction target1tag="tsmnpc_7" target2tag="player" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
+      <ConversationAction targettag="triggerer_player" text="tsm.a8">
+        <Option text="tsm.a81">
+          <ConversationAction targettag="triggerer_player" dialogtype="Small" text="tsm.a82">
+            <Option text="tsm.a83">
+              <ConversationAction text="tsm.a84" dialogtype="Small" targettag="triggerer_player" />
+              <MissionAction missiontag="tsm8" />
+            </Option>
+          </ConversationAction>
+        </Option>
+        <Option text="tsm.a8a">
+          <ConversationAction targettag="triggerer_player" text="tsm.a8b">
+            <Option text="tsm.a8c" endconversation="true">
+              <ConversationAction targettag="triggerer_player" text="tsm.a8d" endconversation="true" />
+              <WaitAction time="3" />
+              <SpawnAction speciesname="adventists_heavy" spawnlocation="Outpost" />
+              <WaitAction time="0.1" />
+              <SpawnAction speciesname="adventists_heavy" spawnlocation="Outpost" />
+              <WaitAction time="0.1" />
+              <SpawnAction speciesname="adventists_heavy" spawnlocation="Outpost" />
+              <WaitAction time="0.1" />
+              <SpawnAction speciesname="adventists_heavy" spawnlocation="Outpost" />
+              <WaitAction time="0.1" />
+              <SpawnAction speciesname="adventists" spawnlocation="Outpost" />
+              <WaitAction time="0.1" />
+              <SpawnAction speciesname="adventists" spawnlocation="Outpost" />
+              <WaitAction time="0.1" />
+              <SpawnAction speciesname="adventists" spawnlocation="Outpost" />
+              <WaitAction time="0.1" />
+              <SpawnAction speciesname="adventists" spawnlocation="Outpost" />
+              <WaitAction time="0.1" />
+              <SpawnAction speciesname="adventists" spawnlocation="Outpost" />
+              <WaitAction time="0.1" />
+              <SpawnAction speciesname="adventists" spawnlocation="Outpost" />
+              <WaitAction time="0.1" />
+              <SpawnAction speciesname="adventists" spawnlocation="Outpost" />
+              <WaitAction time="0.1" />
+              <SpawnAction speciesname="adventists" spawnlocation="Outpost" />
+            </Option>
+          </ConversationAction>
+        </Option>
+        <Option text="tsm.b8" endconversation="false">
+          <ConversationAction text="...." targettag="triggerer_player" />
+          <GoTo name="beginningofthejourney" />
+        </Option>
+      </ConversationAction>
+      <NPCWaitAction npctag="tsmnpc_7" wait="false" />
+    </ScriptedEvent>
+    <!--黑市商人-->
+    <ScriptedEvent identifier="tsm_trader" commonness="100">
+      <TagAction criteria="player" tag="player" />
+      <SpawnAction npcsetidentifier="tsmnpc" npcidentifier="tsmnpc_8" targettag="tsmnpc_8" spawnlocation="Outpost" targetmoduletags="airlock" />
+      <StatusEffectAction targettag="tsmnpc_8">
+        <StatusEffect target="This" UseHealthWindow="false" />
+      </StatusEffectAction>
+      <Label name="beginningofthejourney" />
+      <NPCWaitAction npctag="tsmnpc_8" wait="false" />
+      <TriggerAction target1tag="tsmnpc_8" target2tag="player" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
+      <ConversationAction targettag="triggerer_player" text="tsm8.s1" >
+        <Option text="tsm8.exchange">
+          <ConversationAction targettag="triggerer_player" text="tsm8.praise1" >
+            <Option text="tsm8.exchange.suger.hhq">
+              <CheckMoneyAction amount="400">
+                <Success>
+                  <MoneyAction amount="-400" />
+                  <ConversationAction targettag="triggerer_player" text="tsm8.praise2" />
+                  <SpawnAction itemidentifier="tsm_suger" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm8.moneyless" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="tsm8.exchange.suger.combatuniform">
+              <CheckMoneyAction amount="300">
+                <Success>
+                  <MoneyAction amount="-300" />
+                  <ConversationAction targettag="triggerer_player" text="tsm8.praise2" />
+                  <SpawnAction itemidentifier="suger_combat_uniform" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm8.moneyless" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="tsm8.exchange.suger.colthes">
+              <CheckMoneyAction amount="250">
+                <Success>
+                  <MoneyAction amount="-250" />
+                  <ConversationAction targettag="triggerer_player" text="tsm8.praise2" />
+                  <SpawnAction itemidentifier="suger_clothes" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm8.moneyless" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="tsm8.exchange.suger.hat">
+              <CheckMoneyAction amount="150">
+                <Success>
+                  <MoneyAction amount="-150" />
+                  <ConversationAction targettag="triggerer_player" text="tsm8.praise2" />
+                  <SpawnAction itemidentifier="Extra_hat_male_tsm" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm8.moneyless" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="tsm8.exchange.suger.axe">
+              <CheckMoneyAction amount="450">
+                <Success>
+                  <MoneyAction amount="-450" />
+                  <ConversationAction targettag="triggerer_player" text="tsm8.praise2" />
+                  <SpawnAction itemidentifier="suger_boardingaxe" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm8.moneyless" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="tsm8.exchange.suger.handgun">
+              <CheckMoneyAction amount="1400">
+                <Success>
+                  <MoneyAction amount="-1400" />
+                  <ConversationAction targettag="triggerer_player" text="tsm8.praise2" />
+                  <SpawnAction itemidentifier="tsmmissions_Icarus" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm8.moneyless" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="tsm8.exchange.lerentine.hhq">
+              <CheckMoneyAction amount="400">
+                <Success>
+                  <MoneyAction amount="-400" />
+                  <ConversationAction targettag="triggerer_player" text="tsm8.praise2" />
+                  <SpawnAction itemidentifier="tsm_lerentine" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm8.moneyless" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="tsm8.exchange.lerentine.handgun">
+              <CheckMoneyAction amount="1400">
+                <Success>
+                  <MoneyAction amount="-1400" />
+                  <ConversationAction targettag="triggerer_player" text="tsm8.praise2" />
+                  <SpawnAction itemidentifier="tsm_grey_pupils" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm8.moneyless" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="tsm8.exchange.handgunammo">
+              <CheckMoneyAction amount="700">
+                <Success>
+                  <MoneyAction amount="-700" />
+                  <ConversationAction targettag="triggerer_player" text="tsm8.praise2" />
+                  <SpawnAction itemidentifier="handcannonround" amount="6" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm8.moneyless" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="tsm8.exchange.tsm_fkj_g3a4">
+              <CheckMoneyAction amount="1750">
+                <Success>
+                  <MoneyAction amount="-1750" />
+                  <ConversationAction targettag="triggerer_player" text="tsm8.praise2" />
+                  <SpawnAction itemidentifier="tsm_fkj_g3a4" amount="1" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm8.moneyless" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="tsm8.exchange.tsm_fkj_fal">
+              <CheckMoneyAction amount="1750">
+                <Success>
+                  <MoneyAction amount="-1750" />
+                  <ConversationAction targettag="triggerer_player" text="tsm8.praise2" />
+                  <SpawnAction itemidentifier="tsm_fkj_fal" amount="1" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm8.moneyless" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="tsm8.exchange.tsm_fkj_ace52">
+              <CheckMoneyAction amount="2000">
+                <Success>
+                  <MoneyAction amount="-2000" />
+                  <ConversationAction targettag="triggerer_player" text="tsm8.praise2" />
+                  <SpawnAction itemidentifier="tsm_fkj_ace52" amount="1" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm8.moneyless" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="tsm8.exchange.tsm_fkj_sg553">
+              <CheckMoneyAction amount="2000">
+                <Success>
+                  <MoneyAction amount="-2000" />
+                  <ConversationAction targettag="triggerer_player" text="tsm8.praise2" />
+                  <SpawnAction itemidentifier="tsm_fkj_sg553" amount="1" targetinventory="triggerer_player" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Success>
+                <Failure>
+                  <ConversationAction targettag="triggerer_player" text="tsm8.moneyless" />
+                  <ClearTagAction tag="triggerer_player" />
+                  <GoTo name="beginningofthejourney" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="tsm8.leave">
+              <ConversationAction text="tsm8.welcome" dialogtype="Small" targettag="triggerer_player" />
+              <ClearTagAction tag="triggerer_player" />
+              <GoTo name="beginningofthejourney" />
+            </Option>
+          </ConversationAction>
+        </Option>
+        <Option text="tsm8.leave">
+          <ConversationAction text="tsm8.welcome" dialogtype="Small" targettag="triggerer_player" />
+          <ClearTagAction tag="triggerer_player" />
+          <GoTo name="beginningofthejourney" />
+        </Option>
+      </ConversationAction>
+      <NPCWaitAction npctag="tsmnpc_8" wait="false" />
+    </ScriptedEvent>
+    <!--过封锁-->
+    <!--寒冷冰穴-->
+    <ScriptedEvent identifier="tsm_unlockpathcoldcaverns" commonness="1" unlockpathevent="true" unlockpathtooltip="lockedpathtooltiptsmreputation" unlockpathreputation="30" faction="tsm" biome="coldcaverns">
+      <SpawnAction npcsetidentifier="tsm_outpost_npcs" npcidentifier="tsm_caretakers" targettag="unlockpathnpc" spawnlocation="Outpost" spawnpointtag="unlockpath" />
+      <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 30">
+        <Success>
+          <ConversationAction text="EventText.unlockpathcoldcaverns.tsmc1" speakertag="unlockpathnpc" dialogtype="Regular" />
+          <UnlockPathAction />
+        </Success>
+        <Failure>
+          <Label name="retry" />
+          <ConversationAction text="EventText.unlockpathcoldcaverns.tsmc2" speakertag="unlockpathnpc" invokertag="player" dialogtype="Regular" eventsprite="captain">
+            <Option text="EventText.unlockpathcoldcaverns.tsmo1">
+              <CheckMoneyAction amount="2000">
+                <Success>
+                  <MoneyAction amount="-2000" />
+                  <UnlockPathAction />
+                  <ConversationAction speakertag="unlockpathnpc" waitforinteraction="false" targettag="player" text="EventText.unlockpathcoldcaverns.tsmo1.tsmc1" eventsprite="captain" />
+                </Success>
+                <Failure>
+                  <ConversationAction speakertag="unlockpathnpc" waitforinteraction="false" targettag="player" text="EventText.unlockpathcoldcaverns.tsmo1.nomoney" eventsprite="captain" />
+                  <GoTo name="retry" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="EventText.unlockpath.refusebribe.tsm">
+              <ConversationAction speakertag="unlockpathnpc" waitforinteraction="false" targettag="player" text="EventText.unlockpathcoldcaverns.tsmo2.tsmc1" eventsprite="captain" />
+              <GoTo name="retry" />
+            </Option>
+          </ConversationAction>
+        </Failure>
+      </CheckReputationAction>
+    </ScriptedEvent>
+    <!--欧罗巴海脊-->
+    <ScriptedEvent identifier="tsm_unlockpatheuropanridge" commonness="1" unlockpathevent="true" unlockpathtooltip="lockedpathtooltiptsmreputation" unlockpathreputation="40" faction="tsm" biome="europanridge">
+      <SpawnAction npcsetidentifier="tsm_outpost_npcs" npcidentifier="tsm_caretakers" targettag="unlockpathnpc" spawnlocation="Outpost" spawnpointtag="unlockpath" />
+      <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 40">
+        <Success>
+          <ConversationAction text="EventText.unlockpatheuropanridge.tsmc1" speakertag="unlockpathnpc" dialogtype="Regular" />
+          <UnlockPathAction />
+        </Success>
+        <Failure>
+          <Label name="retry" />
+          <ConversationAction text="EventText.unlockpatheuropanridge.tsmc2" speakertag="unlockpathnpc" invokertag="player" dialogtype="Regular" eventsprite="captain">
+            <Option text="EventText.unlockpatheuropanridge.tsmo1">
+              <CheckMoneyAction amount="4500">
+                <Success>
+                  <MoneyAction amount="-4500" />
+                  <UnlockPathAction />
+                  <ConversationAction speakertag="unlockpathnpc" waitforinteraction="false" targettag="player" text="EventText.unlockpatheuropanridge.tsmo1.tsmc1" eventsprite="captain" />
+                </Success>
+                <Failure>
+                  <ConversationAction speakertag="unlockpathnpc" waitforinteraction="false" targettag="player" text="EventText.unlockpatheuropanridge.tsmo1.nomoney" eventsprite="captain" />
+                  <GoTo name="retry" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="EventText.unlockpath.refusebribe.tsm">
+              <ConversationAction speakertag="unlockpathnpc" waitforinteraction="false" targettag="player" text="EventText.unlockpatheuropanridge.tsmo2.tsmc1" eventsprite="captain" />
+              <GoTo name="retry" />
+            </Option>
+          </ConversationAction>
+        </Failure>
+      </CheckReputationAction>
+    </ScriptedEvent>
+    <!--无光海原-->
+    <ScriptedEvent identifier="tsm_unlockpathaphoticplateau" commonness="1" unlockpathevent="true" unlockpathtooltip="lockedpathtooltiptsmreputation" unlockpathreputation="50" faction="tsm" biome="theaphoticplateau">
+      <SpawnAction npcsetidentifier="tsm_outpost_npcs" npcidentifier="tsm_caretakers" targettag="unlockpathnpc" spawnlocation="Outpost" spawnpointtag="unlockpath" />
+      <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 50">
+        <Success>
+          <ConversationAction text="EventText.unlockpathaphoticplateau.tsmc1" speakertag="unlockpathnpc" dialogtype="Regular" />
+          <UnlockPathAction />
+        </Success>
+        <Failure>
+          <Label name="retry" />
+          <ConversationAction text="EventText.unlockpathaphoticplateau.tsmc2" speakertag="unlockpathnpc" invokertag="player" dialogtype="Regular" eventsprite="captain">
+            <Option text="EventText.unlockpathaphoticplateau.tsmo1">
+              <CheckMoneyAction amount="9000">
+                <Success>
+                  <MoneyAction amount="-9000" />
+                  <UnlockPathAction />
+                  <ConversationAction speakertag="unlockpathnpc" waitforinteraction="false" targettag="player" text="EventText.unlockpathaphoticplateau.tsmo1.tsmc1" eventsprite="captain" />
+                </Success>
+                <Failure>
+                  <ConversationAction speakertag="unlockpathnpc" waitforinteraction="false" targettag="player" text="EventText.unlockpathaphoticplateau.tsmo1.nomoney" eventsprite="captain" />
+                  <GoTo name="retry" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="EventText.unlockpath.refusebribe.tsm">
+              <ConversationAction speakertag="unlockpathnpc" waitforinteraction="false" targettag="player" text="EventText.unlockpathaphoticplateau.tsmo2.tsmc1" eventsprite="captain" />
+              <GoTo name="retry" />
+            </Option>
+          </ConversationAction>
+        </Failure>
+      </CheckReputationAction>
+    </ScriptedEvent>
+    <!--浩瀚汪洋-->
+    <ScriptedEvent identifier="tsm_unlockpathgreatsea" commonness="1" unlockpathevent="true" unlockpathtooltip="lockedpathtooltiptsmreputation" unlockpathreputation="75" faction="tsm" biome="thegreatsea">
+      <SpawnAction npcsetidentifier="tsm_outpost_npcs" npcidentifier="tsm_caretakers" targettag="unlockpathnpc" spawnlocation="Outpost" spawnpointtag="unlockpath" />
+      <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 75">
+        <Success>
+          <ConversationAction text="EventText.unlockpathgreatsea.tsmc1" speakertag="unlockpathnpc" dialogtype="Regular" eventsprite="captain" />
+          <UnlockPathAction />
+        </Success>
+        <Failure>
+          <Label name="retry" />
+          <ConversationAction text="EventText.unlockpathgreatsea.tsmc2" speakertag="unlockpathnpc" invokertag="player" dialogtype="Regular" eventsprite="captain">
+            <Option text="EventText.unlockpathgreatsea.tsmo1">
+              <CheckMoneyAction amount="17000">
+                <Success>
+                  <MoneyAction amount="-17000" />
+                  <UnlockPathAction />
+                  <ConversationAction speakertag="unlockpathnpc" waitforinteraction="false" targettag="player" text="EventText.unlockpathgreatsea.tsmo1.tsmc1" eventsprite="captain" />
+                </Success>
+                <Failure>
+                  <ConversationAction speakertag="unlockpathnpc" waitforinteraction="false" targettag="player" text="EventText.unlockpathgreatsea.tsmo1.nomoney" eventsprite="captain" />
+                  <GoTo name="retry" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="EventText.unlockpath.refusebribe.tsm">
+              <ConversationAction speakertag="unlockpathnpc" waitforinteraction="false" targettag="player" text="EventText.unlockpathgreatsea.tsmo2.tsmc1" eventsprite="captain" />
+              <GoTo name="retry" />
+            </Option>
+          </ConversationAction>
+        </Failure>
+      </CheckReputationAction>
+    </ScriptedEvent>
+    <!--热液废土-->
+    <ScriptedEvent identifier="tsm_unlockpatsmsea" commonness="1" unlockpathevent="true" unlockpathtooltip="lockedpathtooltiptsmreputation" unlockpathreputation="75" faction="tsm" biome="tsm_sea">
+      <SpawnAction npcsetidentifier="tsm_outpost_npcs" npcidentifier="tsm_caretakers" targettag="unlockpathnpc" spawnlocation="Outpost" spawnpointtag="unlockpath" />
+      <CheckReputationAction targettype="faction" identifier="tsm" condition="gte 75">
+        <Success>
+          <ConversationAction text="EventText.unlockpathgreatsea.tsmc1" speakertag="unlockpathnpc" dialogtype="Regular" eventsprite="captain" />
+          <UnlockPathAction />
+        </Success>
+        <Failure>
+          <Label name="retry" />
+          <ConversationAction text="EventText.unlockpathgreatsea.tsmc2" speakertag="unlockpathnpc" invokertag="player" dialogtype="Regular" eventsprite="captain">
+            <Option text="EventText.unlockpathgreatsea.tsmo1">
+              <CheckMoneyAction amount="17000">
+                <Success>
+                  <MoneyAction amount="-17000" />
+                  <UnlockPathAction />
+                  <ConversationAction speakertag="unlockpathnpc" waitforinteraction="false" targettag="player" text="EventText.unlockpathgreatsea.tsmo1.tsmc1" eventsprite="captain" />
+                </Success>
+                <Failure>
+                  <ConversationAction speakertag="unlockpathnpc" waitforinteraction="false" targettag="player" text="EventText.unlockpathgreatsea.tsmo1.nomoney" eventsprite="captain" />
+                  <GoTo name="retry" />
+                </Failure>
+              </CheckMoneyAction>
+            </Option>
+            <Option text="EventText.unlockpath.refusebribe.tsm">
+              <ConversationAction speakertag="unlockpathnpc" waitforinteraction="false" targettag="player" text="EventText.unlockpathgreatsea.tsmo2.tsmc1" eventsprite="captain" />
+              <GoTo name="retry" />
+            </Option>
+          </ConversationAction>
+        </Failure>
+      </CheckReputationAction>
+    </ScriptedEvent>
+    <!--黑船-->
+    <ScriptedEvent identifier="tsm_opdeco_hrflyers_1" commonness="10">
+      <TagAction criteria="player" tag="player" />
+      <TagAction criteria="itemidentifier:opdeco_hrflyers" tag="potentialflyers" submarinetype="outpost" />
+      <TriggerAction target1tag="potentialflyers" target2tag="player" applytotarget2="triggerer_player" radius="150" waitforinteraction="true" />
+      <ConversationAction targettag="triggerer_player" text="tsm_opdeco_hrflyers_1.c1" eventsprite="BombScare1">
+        <Option text="tsm_opdeco_hrflyers_1.o1">
+          <ConversationAction targettag="triggerer_player" text="tsm_opdeco_hrflyers_1.o1.c1" eventsprite="BombScare1" />
+          <ConversationAction text="tsm_opdeco_hrflyers_1.o2" dialogtype="Small" targettag="triggerer_player" />
+          <MissionAction missiontag="tsm_escort" />
+        </Option>
+      </ConversationAction>
+    </ScriptedEvent>
+    <!--林-->
+    <!--开始对话，发放任务-->
+    <ScriptedEvent identifier="tsm_npc_lin_1" commonness="100">
+      <CheckDataAction identifier="tsm_npc_lin_mission_over" condition="eq true">
+        <Failure>
+          <CheckDataAction identifier="tsm_npc_lin_mission" condition="gt 2">
+            <Success>
+              <TagAction criteria="player" tag="triggerer_player" />
+              <TagAction criteria="crew" tag="sound" />
+              <SpawnAction npcsetidentifier="tsm_join_npc" npcidentifier="tsm_lin" targettag="tsm_lin" spawnlocation="Outpost" targetmoduletags="airlock" />
+              <StatusEffectAction targettag="tsm_lin">
+                <StatusEffect target="This" UseHealthWindow="false" />
+              </StatusEffectAction>
+              <ConversationAction text="tsm_lin_t1" speakertag="tsm_lin" endeventifinterrupted="false" dialogtype="Small" invokertag="player" eventsprite="lin">
+                <Option text="tsm_lin_p1">
+                  <ConversationAction targettag="triggerer_player" text="tsm_lin_t2" eventsprite="lin">
+                    <Option text="tsm_lin_p2">
+                      <ConversationAction targettag="triggerer_player" text="tsm_lin_t4" eventsprite="lin">
+                        <Option text="tsm_lin_p3">
+                          <ConversationAction targettag="triggerer_player" text="tsm_lin_t5" eventsprite="lin">
+                            <Option text="tsm_lin_p4">
+                              <ConversationAction targettag="triggerer_player" text="tsm_lin_t6" eventsprite="lin">
+                              </ConversationAction>
+                              <MissionAction missionidentifier="tsmmission_event_lin"/>
+                            </Option>
+                          </ConversationAction>
+                        </Option>
+                      </ConversationAction>
+                    </Option>
+                  </ConversationAction>
+                </Option>
+              </ConversationAction>
+              <NPCWaitAction npctag="tsm_lin" wait="false" />
+            </Success>
+            <Failure>
+            </Failure>
+          </CheckDataAction>
+        </Failure>
+        <Success>
+        </Success>
+      </CheckDataAction>
+    </ScriptedEvent>
+    <!--完成任务，入队-->
+    <ScriptedEvent identifier="tsm_npc_lin_2" commonness="100">
+      <CheckDataAction identifier="tsm_npc_lin_over" condition="eq true">
+        <Failure>
+          <CheckDataAction identifier="tsm_npc_lin_mission_over" condition="eq true">
+            <Success>
+              <SpawnAction npcsetidentifier="tsm_join_npc" npcidentifier="tsm_lin" targettag="tsm_lin" spawnlocation="Outpost" targetmoduletags="airlock" />
+              <TagAction criteria="player" tag="triggerer_player" />
+              <TagAction criteria="crew" tag="sound" />
+              <TagAction criteria="humanprefabidentifier:tsm_lin" tag="tsm_lin" continueifnotargetsfound="true" />
+              <StatusEffectAction targettag="tsm_lin">
+                <StatusEffect target="This" enabledespawn="true">
+                  <GiveTalentInfo giverandom="false" talentidentifiers="tsm_addrecipe_pucslight" />
+                </StatusEffect>
+              </StatusEffectAction>
+              <StatusEffectAction targettag="tsm_lin">
+                <StatusEffect target="This" UseHealthWindow="false" />
+              </StatusEffectAction>
+              <Label name="beginningofthejourney" />
+              <ConversationAction text="tsm_lin_t11" speakertag="tsm_lin" endeventifinterrupted="false" dialogtype="Small" invokertag="player" eventsprite="lin">
+                <Option text="tsm_lin_p14">
+                  <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_t037a_missionitem" amount="1">
+                    <Success>
+                      <RemoveItemAction targettag="triggerer_player" itemidentifier="tsm_t037a_missionitem" amount="1" />
+                      <ConversationAction targettag="triggerer_player" text="tsm_lin_t15" eventsprite="lin">
+                        <Option text="tsm_lin_p12">
+                          <ConversationAction targettag="triggerer_player" text="tsm_lin_t13" eventsprite="lin">
+                            <Option text="tsm_lin_p13">
+                              <ConversationAction targettag="triggerer_player" text="tsm_lin_t14" eventsprite="lin">
+                              </ConversationAction>
+                              <NPCChangeTeamAction npctag="tsm_lin" teamid="Team1" addtocrew="true" />
+                              <SetDataAction identifier="tsm_npc_lin_over" value="true" />
+                            </Option>
+                          </ConversationAction>
+                        </Option>
+                      </ConversationAction>
+                    </Success>
+                    <Failure>
+                      <ConversationAction targettag="triggerer_player" text="tsm_lin_p15" eventsprite="lin">
+                      </ConversationAction>
+                      <GoTo name="beginningofthejourney" />
+                    </Failure>
+                  </CheckItemAction>
+                </Option>
+                <Option text="tsm_lin_p11">
+                  <ConversationAction targettag="triggerer_player" text="tsm_lin_t12" eventsprite="lin">
+                  </ConversationAction>
+                  <GoTo name="beginningofthejourney" />
+                </Option>
+              </ConversationAction>
+            </Success>
+            <Failure>
+            </Failure>
+          </CheckDataAction>
+        </Failure>
+        <Success>
+        </Success>
+      </CheckDataAction>
+    </ScriptedEvent>
+    <!--任务发放pucs-->
+    <ScriptedEvent identifier="tsm_npc_lin_3">
+      <CheckDataAction identifier="tsm_npc_lin_3_complete" condition="eq true">
+        <Failure>
+          <SpawnAction itemidentifier="tsm_pucs_light" spawnlocation="Mainsub" SpawnPointType="Cargo"/>
+          <SpawnAction itemidentifier="tsm_pucs_light" spawnlocation="Mainsub" SpawnPointType="Cargo"/>
+          <SpawnAction itemidentifier="tsm_pucs_light" spawnlocation="Mainsub" SpawnPointType="Cargo"/>
+          <SetDataAction identifier="tsm_npc_lin_3_complete" value="true" />
+        </Failure>
+        <Success></Success>
+      </CheckDataAction>
+    </ScriptedEvent>
+    <!--任务道具刷新到雷龙身上-->
+    <ScriptedEvent identifier="tsm_npc_lin_4">
+      <TagAction criteria="speciesname:T037α" tag="T037α" />
+      <SpawnAction itemidentifier="tsm_t037a_missionitem" targetinventory="T037α"/>
+      <StatusEffectAction targettag="T037α">
+        <StatusEffect target="This">
+          <Affliction identifier="tsm_t037_over" strength="50" />
+        </StatusEffect>
+      </StatusEffectAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="tsm_t037_over">
+      <SetDataAction identifier="tsm_npc_lin_mission_over" value="true" />
+    </ScriptedEvent>
+    <!--克里斯入组-->
+    <ScriptedEvent identifier="tsm_chris_join">
+      <CheckDataAction identifier="tsm_chris_join_complete" condition="eq true">
+        <Failure>
+          <CheckDataAction identifier="tsm_beowulf_complete" condition="eq true">
+            <Success>
+              <TagAction criteria="player" tag="player" />
+              <SpawnAction npcsetidentifier="tsm_join_npc" npcidentifier="tsm_chris" targettag="tsm_chris" spawnlocation="Outpost" targetmoduletags="airlock" />
+              <StatusEffectAction targettag="tsm_chris">
+                <StatusEffect target="This" enabledespawn="true">
+                  <Affliction identifier="tsm_chris_ondead" strength="50" />
+                </StatusEffect>
+              </StatusEffectAction>
+              <Label name="tsm_check_beowulf" />
+              <TriggerAction target1tag="tsm_chris" target2tag="player" applytotarget1="tsm_chris" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
+              <ConversationAction targettag="triggerer_player" text="tsm_chris_c1" eventsprite="kls">
+                <Option text="tsm_chris_p1">
+                  <ConversationAction targettag="triggerer_player" text="tsm_chris_c2" eventsprite="kls">
+                    <Option text="tsm_chris_p2">
+                      <ConversationAction targettag="triggerer_player" text="tsm_chris_c3" eventsprite="kls">
+                        <Option text="tsm_chris_p3">
+                          <CheckItemAction targettag="triggerer_player" itemidentifiers="tsm_beowulf">
+                            <Success>
+                              <RemoveItemAction targettag="triggerer_player" itemidentifier="tsm_beowulf" />
+                              <ConversationAction targettag="triggerer_player" text="tsm_chris_c_e1" eventsprite="kls">
+                                <Option text="tsm_chris_p_e">
+                                  <ConversationAction targettag="triggerer_player" text="tsm_chris_c_e2" eventsprite="kls"/>
+                                  <NPCChangeTeamAction npctag="tsm_chris" teamid="Team1" addtocrew="true" />
+                                  <SetDataAction identifier="tsm_chris_join_complete" value="true" />
+                                </Option>
+                              </ConversationAction>
+                            </Success>
+                            <Failure>
+                              <ConversationAction targettag="triggerer_player" text="tsm_chris_c_n" eventsprite="kls"/>
+                              <GoTo name="tsm_check_beowulf" />
+                            </Failure>
+                          </CheckItemAction>
+                        </Option>
+                      </ConversationAction>
+                    </Option>
+                  </ConversationAction>
+                </Option>
+              </ConversationAction>
+            </Success>
+            <Failure></Failure>
+          </CheckDataAction>
+        </Failure>
+        <Success></Success>
+      </CheckDataAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="tsm_beowulf_complete_1">
+      <TagAction criteria="humanprefabidentifier:beowulf_sl" tag="mission_target" continueifnotargetsfound="true" />
+      <StatusEffectAction targettag="mission_target">
+        <StatusEffect target="This">
+          <Affliction identifier="tsm_beowulf_complete" strength="50" />
+        </StatusEffect>
+      </StatusEffectAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="tsm_beowulf_complete_2">
+      <SetDataAction value="true" identifier="tsm_beowulf_complete" />
+    </ScriptedEvent>
+    <!--燕入组-->
+    <ScriptedEvent identifier="tsm_yan_join">
+      <CheckDataAction identifier="tsm_yan_join_complete" condition="eq true">
+        <Failure>
+          <TagAction criteria="player" tag="player" />
+          <SpawnAction npcsetidentifier="tsm_join_npc" npcidentifier="tsm_yan" targettag="tsm_yan" spawnlocation="Outpost" targetmoduletags="airlock" />
+          <StatusEffectAction targettag="tsm_yan">
+            <StatusEffect target="This" enabledespawn="true">
+              <Affliction identifier="tsm_yan_ondead" strength="50" />
+            </StatusEffect>
+          </StatusEffectAction>
+          <Label name="beginningofthejourney" />
+          <TriggerAction target1tag="tsm_yan" target2tag="player" applytotarget1="tsm_yan" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
+          <ConversationAction targettag="triggerer_player" text="tsm_yan_t1" eventsprite="yan">
+            <Option text="tsm_yan_p1">
+              <ConversationAction targettag="triggerer_player" text="tsm_yan_t2" eventsprite="yan">
+                <Option text="tsm_yan_p2">
+                  <ConversationAction targettag="triggerer_player" text="tsm_yan_t3" eventsprite="yan">
+                    <Option text="tsm_yan_p3">
+                      <CheckItemAction targettag="triggerer_player" itemtags="yan_item" amount="4">
+                        <Success>
+                          <ConversationAction targettag="triggerer_player" text="tsm_yan_t4" eventsprite="yan">
+                            <Option text="tsm_yan_p_s1">
+                              <ConversationAction targettag="triggerer_player" text="tsm_yan_t_s1" eventsprite="yan">
+                                <Option text="tsm_yan_p_s2">
+                                  <ConversationAction targettag="triggerer_player" text="tsm_yan_t_s2" eventsprite="yan"/>
+                                  <NPCChangeTeamAction npctag="tsm_yan" teamid="Team1" addtocrew="true" />
+                                  <SetDataAction identifier="tsm_yan_join_complete" value="true" />
+                                </Option>
+                              </ConversationAction>
+                            </Option>
+                          </ConversationAction>
+                        </Success>
+                        <Failure>
+                          <ConversationAction targettag="triggerer_player" text="tsm_yan_t4">
+                            <Option text="tsm_yan_p_f">
+                              <ConversationAction targettag="triggerer_player" text="tsm_yan_t_f"/>
+                              <GoTo name="beginningofthejourney" />
+                            </Option>
+                          </ConversationAction>
+                        </Failure>
+                      </CheckItemAction>
+                    </Option>
+                    <Option text="tsm_yan_p4">
+                      <GoTo name="beginningofthejourney" />
+                    </Option>
+                  </ConversationAction>
+                </Option>
+              </ConversationAction>
+            </Option>
+          </ConversationAction>
+        </Failure>
+        <Success></Success>
+      </CheckDataAction>
+    </ScriptedEvent>
+  </EventPrefabs>
+  <!--入队NPC刷新-->
+  <!--克里斯-->
+  <EventSet identifier="tsm_npc_join_chris" leveltype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="true" ignorecooldown="true" additive="true" selectalways="true" commonness="100">
+    <EventSet identifier="chris_join" minleveldifficulty="0" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="1" additive="true" selectalways="true" locationtype="outpost,city,research,military,mine,colony,settlement,construction,camp,base,blockade,survey,excavation,study,lab,clinic,hospital,surgery,hydroponics,biosphere,nourishment,factory,shipyard,fusion">
+      <ScriptedEvent identifier="tsm_chris_join" commonness="100" />
+    </EventSet>
+  </EventSet>
+  <!--燕-->
+  <EventSet identifier="tsm_npc_join_yan" leveltype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="true" ignorecooldown="true" additive="true" selectalways="true" commonness="100">
+    <EventSet identifier="yan_join" minleveldifficulty="30" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="1" additive="true" selectalways="true" locationtype="tsm_military,tsm_city,tsm_mine">
+      <ScriptedEvent identifier="tsm_yan_join" commonness="70" />
+    </EventSet>
+  </EventSet>
+  <!--林-->
+  <EventSet identifier="tsm_npc_join_lin" leveltype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="true" ignorecooldown="true" additive="true" selectalways="true" commonness="100">
+    <EventSet identifier="lin_join" minleveldifficulty="0" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="2" additive="true" selectalways="true" locationtype="tsm_city,tsm_military,tsm_mine">
+      <ScriptedEvent identifier="tsm_npc_lin_1" />
+      <ScriptedEvent identifier="tsm_npc_lin_2" />
+    </EventSet>
+  </EventSet>
+  <!--黑市交易-->
+  <EventSet identifier="tsm_transaction" leveltype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="true" ignorecooldown="true" additive="true" selectalways="true" commonness="100">
+    <EventSet identifier="tsm_blackmarket_transaction" minleveldifficulty="0" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="1" additive="true" selectalways="true" locationtype="tsm_military,tsm_city,tsm_mine">
+      <ScriptedEvent identifier="tsm_trader" commonness="70" />
+    </EventSet>
+  </EventSet>
+  <!--任务刷新-->
+  <EventSet identifier="tsm_mission_bounty_easy" leveltype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="true" ignorecooldown="true" additive="true" selectalways="true" commonness="100">
+    <EventSet identifier="tsm_bounty_20" minleveldifficulty="0" maxleveldifficulty="20" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="1" additive="true" selectalways="true" locationtype="outpost,city,research,military,mine,colony,settlement,construction,camp,base,blockade,survey,excavation,study,lab,clinic,hospital,surgery,hydroponics,biosphere,nourishment,factory,shipyard,fusion">
+      <ScriptedEvent identifier="tsm_offer_reward_1" commonness="100" />
+    </EventSet>
+  </EventSet>
+  <EventSet identifier="tsm_mission_bounty_hard" leveltype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="true" ignorecooldown="true" additive="true" selectalways="true" commonness="100">
+    <EventSet identifier="tsm_bounty_100" minleveldifficulty="20" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="2" additive="true" selectalways="true" locationtype="outpost,city,research,military,mine,colony,settlement,construction,camp,base,blockade,survey,excavation,study,lab,clinic,hospital,surgery,hydroponics,biosphere,nourishment,factory,shipyard,fusion">
+      <ScriptedEvent identifier="tsm_offer_reward_2" commonness="80" />
+      <ScriptedEvent identifier="tsm_offer_reward_3" commonness="80" />
+      <ScriptedEvent identifier="tsm_offer_reward_4" commonness="80" />
+      <ScriptedEvent identifier="tsm_missionevent_jlp" commonness="40" />
+      <ScriptedEvent identifier="tsm_opdeco_hrflyers_1" commonness="65" />
+    </EventSet>
+  </EventSet>
+  <EventSet identifier="tsm_mission_oupost_easy" leveltype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="true" ignorecooldown="true" additive="true" selectalways="true" commonness="100">
+    <EventSet identifier="tsm_oupost_easy" minleveldifficulty="0" maxleveldifficulty="20" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="2" additive="true" selectalways="true" locationtype="tsm_city,tsm_military,tsm_mine">
+      <ScriptedEvent identifier="tsm_offer_reward_1" />
+      <ScriptedEvent identifier="tsm_offer_reward_1" />
+    </EventSet>
+  </EventSet>
+  <EventSet identifier="tsm_mission_oupost_hard" leveltype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="true" ignorecooldown="true" additive="true" selectalways="true" commonness="100">
+    <EventSet identifier="tsm_oupost_hard" minleveldifficulty="20" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="2" additive="true" selectalways="true" locationtype="tsm_city,tsm_military,tsm_mine">
+      <ScriptedEvent identifier="tsm_offer_reward_2" commonness="90" />
+      <ScriptedEvent identifier="tsm_offer_reward_3" commonness="90" />
+      <ScriptedEvent identifier="tsm_offer_reward_4" commonness="90" />
+    </EventSet>
+  </EventSet>
+  <!--奇迹之海站点事件-->
+  <!--摄魂空间-->
+  <EventSet identifier="tsm_space_talk" leveltype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="true" ignorecooldown="true" additive="true" selectalways="true" commonness="100">
+    <EventSet identifier="tsm_space_talk_1" minleveldifficulty="0" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="1" additive="true" selectalways="true" locationtype="tsm_city">
+      <ScriptedEvent identifier="tsm_space_shehun_talk" />
+    </EventSet>
+  </EventSet>
+  <!---->
+  <EventSet identifier="tsm_eyi_event" leveltype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="true" ignorecooldown="true" additive="true" selectalways="true" commonness="100">
+    <EventSet identifier="tsm_eyi_event_54" minleveldifficulty="0" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="1" additive="true" selectalways="true" locationtype="tsm_military">
+      <ScriptedEvent identifier="tsm_eyi_54_cf" />
+    </EventSet>
+  </EventSet>
+  <!--军需官刷新-->
+  <EventSet identifier="tsm_oupost_quartermaster" leveltype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="true" ignorecooldown="true" additive="true" selectalways="true" commonness="100">
+    <EventSet identifier="tsm_quartermaster" minleveldifficulty="0" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="1" additive="true" selectalways="true" locationtype="tsm_city,tsm_military,tsm_mine">
+      <ScriptedEvent identifier="tsm_quartermaster_event" />
+    </EventSet>
+  </EventSet>
+  <!--站点安保/npc增强-->
+  <EventSet identifier="tsm_outpost_npc_enhanced" leveltype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="true" ignorecooldown="true" additive="true" selectalways="true" commonness="100">
+    <EventSet identifier="tsm_outpost_enhanced" minleveldifficulty="0" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="1" additive="true" selectalways="true" locationtype="tsm_city,tsm_military,tsm_mine">
+      <ScriptedEvent identifier="tsm_security_enhanced" />
+    </EventSet>
+  </EventSet>
+
+</Randomevents>

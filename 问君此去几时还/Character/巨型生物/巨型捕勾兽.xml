@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Charactervariant inherit="Latcher" speciesname="巨型捕勾兽" usebosshealthbar="true" speciestranslationoverride="Latcher" texture="%ModDir%/Character/巨型生物/Latcher.png">
-  <health vitality="11000" />
-  <ragdoll scalemultiplier="1.5" />
-  <attack damagemultiplier="3" rangemultiplier="3" impactmultiplier="2" />
-  <ai combatstrength="30000" sight="0.5" hearing="3" avoidabyss="False" stayinabyss="False" />
-</Charactervariant>

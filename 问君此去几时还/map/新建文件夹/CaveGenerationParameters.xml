@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CaveGenerationParameters>
+  <Cave
+    identifier="tsm_sea_cave"
+    minwidth="7000"
+    maxwidth="9000"
+    minheight="7000"
+    maxheight="9000"
+    commonness="0"
+    minbranchcount="2"
+    maxbranchcount="4"
+    levelobjectamount="400"
+    destructiblewallratio="0.1">
+    <Wall
+      texture="Content/Map/Biomes/MushroomCave/LevelWall.png"
+      premultiplyalpha="false" />
+    <WallEdge
+      texture="Content/Map/Biomes/MushroomCave/LevelWallEdge.png" />
+    <WallDestroyed
+      texture="Content/Map/Biomes/DestructibleWall.png"
+      premultiplyalpha="false" />
+    <overridecommonness leveltype="tsm_sea" commonness="0.5" />
+  </Cave>
+</CaveGenerationParameters>

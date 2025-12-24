@@ -1,0 +1,998 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!--握把类-->
+  <Item name="直握把" identifier="tsm_grip_straight" subcategory="accessories" category="Equipment" Tags="smallitem,grip,tsm_grip_mounts" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="798,9,31,48" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="798,9,31,48" depth="0.56" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="31" height="48" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_straight_grip_buff" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="333" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="steel" amount="2" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
+      <RequiredItem identifier="tsm_plastic" amount="1" />
+      <RequiredItem identifier="titanium" amount="2" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+      <Item identifier="titanium" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="cqr阻手握把" identifier="tsm_grip_cqr" subcategory="accessories" category="Equipment" Tags="smallitem,grip,tsm_grip_mounts" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="399,6,94,51" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="399,6,94,51" depth="0.56" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="94" height="51" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_cqr_grip_buff" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="335" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="steel" amount="2" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
+      <RequiredItem identifier="tsm_plastic" amount="1" />
+      <RequiredItem identifier="tsm_item_box" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+      <Item identifier="plastic" />
+      <Item identifier="magnesium" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="三角握把" identifier="tsm_grip_triangle" subcategory="accessories" category="Equipment" Tags="smallitem,grip,tsm_grip_mounts" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="509,8,90,51" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="509,8,90,51" depth="0.56" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="90" height="51" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_triangle_grip_buff" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="333" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="steel" amount="2" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="1" />
+      <RequiredItem identifier="tsm_plastic" amount="1" />
+      <RequiredItem identifier="tsm_item_box" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+      <Item identifier="plastic" />
+      <Item identifier="iron" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="拇指握把" identifier="tsm_grip_thumb" subcategory="accessories" category="Equipment" Tags="smallitem,grip,tsm_grip_mounts" cargocontaineridentifier="tsm_metalcrate" Scale="0.18" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="633,3,83,58" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="633,3,100,73" depth="0.56" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="83" height="58" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_thumb_grip_buff" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="333" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="steel" amount="1" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="1" />
+      <RequiredItem identifier="tsm_plastic" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+      <Item identifier="copper" />
+      <Item identifier="silicon" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="轻型握把" identifier="tsm_grip_light" subcategory="accessories" category="Equipment" Tags="smallitem,grip,tsm_grip_mounts" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="1040,420,58,52" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="1040,420,58,52" depth="0.56" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="58" height="52" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_light_grip_buff" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="333" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="steel" amount="1" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="1" />
+      <RequiredItem identifier="tsm_plastic" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+      <Item identifier="lead" />
+      <Item identifier="zinc" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="脚架" identifier="tsm_grip_mounts" subcategory="accessories" category="Equipment" Tags="smallitem,tsm_grip_mounts,tsm_grip_mech" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="2349,470,130,140" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="870,227,37,97" depth="0.56" origin="0.5,0.5" />
+    <Body width="37" height="97" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_mounts_grip_buff" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="10" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="steel" amount="2" />
+      <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" amount="2" />
+      <RequiredItem identifier="tsm_plastic" amount="2" />
+      <RequiredItem identifier="titanium" amount="2" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+      <Item identifier="titanium" />
+      <Item identifier="tsm_plastic" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="装填握把" identifier="tsm_grip_reload" subcategory="accessories" category="Equipment" Tags="smallitem,grip,tsm_grip_reload" cargocontaineridentifier="tsm_metalcrate" Scale="0.15" impactsoundtag="impact_metal_light">
+    <PreferredContainer secondary="wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="wreckarmcab" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="2409,222,69,81" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="1860,255,47,81" depth="0.56" origin="0.5,0.5" />
+    <Body width="47" height="81" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_reload_grip_buff" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+      <Item identifier="aluminium" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="战术手电握把" identifier="tsm_grip_straight_light" subcategory="accessories" category="Equipment" Tags="smallitem,tool,provocative,grip,tsm_grip_mounts" cargocontaineridentifier="tsm_metalcrate" Scale="0.15" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="1959,230,137,126" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="1959,230,137,126" depth="0.56" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="137" height="105" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.1">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_straight_grip_buff" strength="2" />
+      </StatusEffect>
+      <LightComponent LightColor="0.5,0.5,0.5,1.0" directional="true" Flicker="0.02" range="800" powerconsumption="10" IsOn="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.01, 0.497" size="1.0,1.0" />
+        <IsActive targetcontaineditem="true" condition="gt 1.0" />
+      </LightComponent>
+      <LightComponent LightColor="0.5,0.5,0.5,1.0" directional="true" range="800" powerconsumption="10" IsOn="true" flicker="0.8" flickerspeed="1.0" pulsefrequency="0.1" pulseamount="0.5">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.01, 0.7" size="1.0,1.0" />
+        <IsActive targetcontaineditem="true" condition="lte 1.0" />
+      </LightComponent>
+    </Holdable>
+    <Price baseprice="353" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="steel" amount="2" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
+      <RequiredItem identifier="tsm_plastic" amount="1" />
+      <RequiredItem identifier="titanium" amount="2" />
+      <RequiredItem identifier="lightcomponent" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="tsm_grip_straight" amount="1" />
+      <RequiredItem tag="flashlight" description="fabricationdescription.flashlight" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+      <Item identifier="titanium" />
+      <Item identifier="lightcomponent" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <Containable items="mobilebattery">
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+      </Containable>
+    </ItemContainer>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <!--瞄具类-->
+  <Item name="红点瞄具" identifier="tsm_sight_reddot" subcategory="accessories" category="Equipment" Tags="smallitem,sighting,tsm_sight_low,tsm_sight_reddot" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="1058,206,67,40" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="1058,206,67,40" depth="0.536" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="67" height="40" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_sight_reddot" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="315" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+      <RequiredItem identifier="tin" amount="2" />
+      <RequiredItem identifier="copper" amount="2" />
+      <RequiredItem identifier="zinc" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="全息瞄具" identifier="tsm_sight_holographic" subcategory="accessories" category="Equipment" Tags="smallitem,sighting,tsm_sight_low,tsm_sight_holographic" cargocontaineridentifier="tsm_metalcrate" Scale="0.23" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="1440,280,54,44" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="1440,280,54,44" depth="0.536" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="54" height="44" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_sight_holographic" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="315" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="fpgacircuit" amount="2" />
+      <RequiredItem identifier="tin" amount="1" />
+      <RequiredItem identifier="copper" amount="2" />
+      <RequiredItem identifier="zinc" amount="2" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="组合瞄具" identifier="tsm_sight_double" subcategory="accessories" category="Equipment" Tags="smallitem,sighting,tsm_sight_high,qmk152" cargocontaineridentifier="tsm_metalcrate" Scale="0.06" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="1361,425,470,184" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="1361,425,470,184" depth="0.535" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="470" height="184" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_sight_double" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="392" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="tsm_sight_reddot" amount="1" />
+      <RequiredItem identifier="tsm_sight_holographic" amount="1" />
+      <RequiredItem identifier="tsm_item_box" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="M2三倍瞄具" identifier="tsm_sight_tripled" subcategory="accessories" category="Equipment" Tags="smallitem,sighting" cargocontaineridentifier="tsm_metalcrate" Scale="0.065" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="2246,0,232,179" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="2246,0,232,179" depth="0.535" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="232" height="179" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_sight_tripled" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="436" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="tsm_ic" amount="1" />
+      <RequiredItem identifier="tin" amount="1" />
+      <RequiredItem identifier="tsm_plastic" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="PSO AK瞄具" identifier="tsm_sight_pso" subcategory="accessories" category="Equipment" Tags="smallitem,tsm_sight_ak" cargocontaineridentifier="tsm_metalcrate" Scale="0.24" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="33,86,173,88" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="33,86,173,88" depth="0.535" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="173" height="88" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_sight_pso" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="436" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="tsm_ic" amount="1" />
+      <RequiredItem identifier="tin" amount="2" />
+      <RequiredItem identifier="tsm_plastic" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="C79 6倍机枪瞄具" identifier="tsm_sight_c79" subcategory="accessories" category="Equipment" Tags="smallitem,sighting,tsm_sight_mach" cargocontaineridentifier="tsm_metalcrate" Scale="0.24" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="327,92,109,47" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="327,92,109,47" depth="0.535" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="109" height="47" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_sight_c79" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="555" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="tsm_ic" amount="1" />
+      <RequiredItem identifier="aluminium" amount="4" />
+      <RequiredItem identifier="rubber" amount="3" />
+      <RequiredItem identifier="fulguriumbatterycell" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="HAMR 医疗监控瞄具" identifier="tsm_sight_hamr" subcategory="accessories" category="Equipment" Tags="smallitem,sighting" cargocontaineridentifier="tsm_metalcrate" Scale="0.24" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="455,91,89,48" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="455,91,89,48" depth="0.535" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="89" height="48" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect" />
+    <StatusHUD range="150" overlaycolor="0,50,25,30">
+      <StatusEffect type="OnActive" target="This,Character" drawhudwhenequipped="true" setvalue="true" comparison="And" />
+    </StatusHUD>
+    <Price baseprice="501" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="tsm_ic" amount="1" />
+      <RequiredItem identifier="aluminium" amount="2" />
+      <RequiredItem identifier="tsm_plastic" amount="1" />
+      <RequiredItem identifier="healthscanner" amount="1" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="6" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="tsm_ic" amount="1" />
+      <RequiredItem identifier="aluminium" amount="2" />
+      <RequiredItem identifier="tsm_plastic" amount="1" />
+      <RequiredItem identifier="healthscanner" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="tsm_ic" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="ACOG 4倍瞄具" identifier="tsm_sight_acog" subcategory="accessories" category="Equipment" Tags="smallitem,sighting,tsm_sight_high,qmk152" cargocontaineridentifier="tsm_metalcrate" Scale="0.24" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="641,83,88,54" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="641,80,88,57" depth="0.535" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="88" height="57" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_sight_acog" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="tsm_sight_tripled" amount="1" />
+      <RequiredItem identifier="tin" amount="2" />
+      <RequiredItem identifier="fulgurium" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="热成像瞄具" identifier="tsm_sight_thermal" subcategory="accessories" category="Equipment" Tags="smallitem,sighting,loadable" cargocontaineridentifier="tsm_metalcrate" Scale="0.2" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="2154,244,187,100" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="2154,244,187,108" depth="0.535" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="187" height="79" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="This,Character" comparison="and">
+        <Conditional ConditionPercentage="gt 5"/>
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_sight_thermal" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="721" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="tsm_ic" amount="1" />
+      <RequiredItem identifier="aluminium" amount="2" />
+      <RequiredItem tag="thermalgoggles" description="fabricationdescription.thermalgoggles" mincondition="1" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="6" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="tsm_ic" amount="1" />
+      <RequiredItem identifier="aluminium" amount="2" />
+      <RequiredItem identifier="thermalgoggles" mincondition="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="tsm_ic" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="95式步枪瞄具" identifier="tsm_95_sight" subcategory="accessories" category="Equipment" Tags="smallitem,tsm_sight" cargocontaineridentifier="tsm_metalcrate" Scale="0.28" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <InventoryIcon texture="%ModDir%/items/weapons/奇迹之海/tsm.png" sourcerect="2355,654,130,44" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/奇迹之海/tsm.png" sourcerect="2355,654,130,44" depth="0.54" origin="0.5,0.5" />
+    <Body width="130" height="44" density="10" />
+    <Holdable slots="Any" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_sight_95" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="fpgacircuit" amount="3" />
+      <RequiredItem identifier="tin" amount="3" />
+      <RequiredItem identifier="copper" amount="2" />
+      <RequiredItem identifier="zinc" amount="2" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="03步枪瞄具" identifier="tsm_03_sight" subcategory="accessories" category="Equipment" Tags="smallitem,tsm_03_sight,tsm_sight" cargocontaineridentifier="tsm_metalcrate" Scale="0.28" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <InventoryIcon texture="%ModDir%/items/weapons/奇迹之海/tsm.png" sourcerect="2346,836,134,44" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/奇迹之海/tsm.png" sourcerect="2346,836,134,44" depth="0.54" origin="0.5,0.5" />
+    <Body width="134" height="44" density="10" />
+    <Holdable slots="Any" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_sight_03" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="fpgacircuit" amount="3" />
+      <RequiredItem identifier="tin" amount="3" />
+      <RequiredItem identifier="tsm_95_sight" amount="1" />
+      <RequiredItem identifier="zinc" amount="2" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="QMK152" identifier="tsm_sight_qmk152" subcategory="accessories" category="Equipment" Tags="smallitem,tsm_sight_high,qmk152" cargocontaineridentifier="tsm_metalcrate" Scale="0.21" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="1050,336,93,63" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="1050,336,93,63" depth="0.535" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="93" height="63" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_sight_qmk152" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="tsm_03_sight" amount="1" />
+      <RequiredItem identifier="tsm_hpc" amount="1" />
+      <RequiredItem identifier="fulgurium" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="手枪瞄具" identifier="tsm_sighting_pistols" subcategory="accessories" category="Equipment" Tags="smallitem,sighting_pistols" cargocontaineridentifier="tsm_metalcrate" Scale="0.12" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="588,472,115,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="588,472,115,64" depth="0.53" origin="0.5,0.5" />
+    <Body width="115" height="64" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_straight_grip_buff" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="291" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="fpgacircuit" amount="1" />
+      <RequiredItem identifier="tin" amount="1" />
+      <RequiredItem identifier="copper" amount="2" />
+      <RequiredItem identifier="zinc" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <!--枪口配件-->
+  <Item name="射手导气箍" identifier="tsm_advanced_barrel" subcategory="accessories" category="Equipment" Tags="smallitem" cargocontaineridentifier="tsm_metalcrate" Scale="0.05" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="1495,38,97,102" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="1495,38,97,102" depth="0.565" origin="0.5,0.5" />
+    <Body width="97" height="102" density="8" />
+    <Holdable slots="Any" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <!--StatusEffect type="OnActive" target="Character">
+        <Affliction identifier="tsm_barrel2_buff" strength="2" />
+      </StatusEffect-->
+    </Holdable>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="steel" amount="1" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+      <RequiredItem identifier="tsm_item_box" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="titanium" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="消焰器" identifier="tsm_flame_arrester" subcategory="accessories" category="Equipment" Tags="smallitem,barrel" cargocontaineridentifier="tsm_metalcrate" Scale="0.08" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="1227,78,175,57" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="1227,78,175,57" depth="0.53" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="175" height="57" density="3" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_barrel_buff" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="321" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="steel" amount="1" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
+      <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
+      <RequiredItem identifier="tsm_item_box" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="制退器" identifier="tsm_recoil" subcategory="accessories" category="Equipment" Tags="smallitem,barrel" cargocontaineridentifier="tsm_metalcrate" Scale="0.08" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="1224,8,174,49" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="1224,8,174,49" depth="0.53" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="174" height="49" density="4" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_barrel1_buff" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="302" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="steel" amount="1" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
+      <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
+      <RequiredItem identifier="tsm_item_box" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="鱼鹰消音器" identifier="tsm_pistols_silencers" subcategory="accessories" category="Equipment" Tags="smallitem,barrel_pistols" cargocontaineridentifier="tsm_metalcrate" Scale="0.1" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="85,426,178,46" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="85,426,178,46" depth="0.532" origin="0.5,0.5" />
+    <Body width="178" height="46" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_barrel_silencers_buff" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="277" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="steel" amount="1" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
+      <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
+      <RequiredItem identifier="tsm_item_box" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="消音器" identifier="tsm_gun_silencers" subcategory="accessories" category="Equipment" Tags="smallitem,barrel" cargocontaineridentifier="tsm_metalcrate" Scale="0.1" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="82,345,174,46" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="82,345,174,46" depth="0.53" origin="0.5,0.5" />
+    <Body width="174" height="46" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_barrel_silencers_buff" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="277" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="steel" amount="1" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
+      <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
+      <RequiredItem identifier="tsm_item_box" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="自制消音器" identifier="tsm_gun_silencers_zz" subcategory="accessories" category="Equipment" Tags="smallitem" cargocontaineridentifier="tsm_metalcrate" Scale="0.45" impactsoundtag="impact_metal_light">
+    <PreferredContainer secondary="wreckstorage,abandonedstoragecab" minamount="0" maxamount="1" spawnprobability="0.03" />
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="413,755,71,52" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="93,734,64,29" depth="0.53" origin="0.5,0.5" />
+    <Body width="64" height="29" density="12" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_barrel_silencers_zz_buff" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Deconstruct time="5">
+      <Item identifier="weldingfueltank" />
+    </Deconstruct>
+    <ItemComponent characterusable="false">
+      <StatusEffect type="OnBroken" target="This">
+        <Sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="5000" frequency="2.0" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ExplosionMedium2.ogg" range="5000" frequency="2.0" />
+        <Sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="5000" frequency="2.0" />
+        <ParticleEmitter particle="shrapnel" anglemin="0" anglemax="360" distancemax="500" particleamount="270" velocitymin="1500" velocitymax="2000" scalemin="0.7" scalemax="1.2" />
+        <Explosion range="200.0" ballastfloradamage="30" structuredamage="5" levelwalldamage="20" itemdamage="30" force="5" debris="false" decal="explosion" decalsize="0.5">
+          <Affliction identifier="explosiondamage" strength="20" />
+          <Affliction identifier="stun" strength="1.5" />
+        </Explosion>
+        <Spawnitem identifier="aluminium" spawnposition="this" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <!--其他-->
+  <Item name="弹匣井快速装填阔口" identifier="tsm_reload_speed" subcategory="accessories" category="Equipment" Tags="smallitem,reload_speed,tsm_reload_speed" cargocontaineridentifier="tsm_metalcrate" Scale="0.25" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="62,259,55,23" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="62,259,55,23" depth="0.52" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="55" height="22" density="10" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_reload_speed_buff" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="363" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="tsm_tungsten" amount="1" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
+      <RequiredItem identifier="tsm_item_box" amount="1" />
+      <RequiredItem identifier="tsm_plastic" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+      <Item identifier="iron" />
+      <Item identifier="copper" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="短枪托" identifier="tsm_stock_pistols" subcategory="accessories" category="Equipment" Tags="smallitem,stock_pistols" cargocontaineridentifier="tsm_metalcrate" Scale="0.13" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="0,505,283,142" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="0,505,283,142" depth="0.54" origin="0.5,0.5" />
+    <Body width="283" height="142" density="15" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional SelectedItem="eq null" />
+        <Affliction identifier="tsm_pistols_stock_buff" strength="3" />
+      </StatusEffect>
+    </Holdable>
+    <Price baseprice="301" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" maxavailable="3" />
+      <Price locationtype="military" multiplier="1.10" minavailable="0" maxavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="steel" amount="1" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
+      <RequiredItem identifier="tsm_plastic" amount="1" />
+      <RequiredItem identifier="tsm_item_box" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <!--照明-->
+  <Item name="强光手电筒" identifier="tsm_flashlight" subcategory="TSM" category="Equipment" Tags="smallitem,tool,provocative,flashlight,tsm_gun_grenade" cargocontaineridentifier="tsm_metalcrate" Scale="0.2" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="divingcab" minamount="1" maxamount="2" spawnprobability="1" notcampaign="true" />
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.1" />
+    <PreferredContainer primary="storagecab" />
+    <Price baseprice="113" minavailable="1">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.25" />
+      <Price storeidentifier="merchantmine" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="mechanical" level="25" />
+      <RequiredItem identifier="aluminium" amount="2" />
+      <RequiredItem tag="lightcomponent" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="14,1137,90,23" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="14,1137,90,23" depth="0.53" origin="0.5,0.5" />
+    <Body width="90" height="23" density="15" />
+    <Holdable slots="Any,RightHand,LeftHand,Head" holdpos="30,-50" aimpos="60,10" handle1="-20,0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.2">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <LightComponent LightColor="200,200,200,255" Flicker="0.02" range="1200" powerconsumption="10" IsOn="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.01, 0.5" size="4.0,3.0" />
+        <IsActive targetcontaineditem="true" condition="gt 1.0" />
+      </LightComponent>
+      <LightComponent LightColor="200,200,200,255" range="1200" powerconsumption="10" IsOn="true" flicker="0.8" flickerspeed="1.0" pulsefrequency="0.1" pulseamount="0.5">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.01, 0.5" size="4.0,3.0" />
+        <IsActive targetcontaineditem="true" condition="lte 1.0" />
+      </LightComponent>
+    </Holdable>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <Containable items="mobilebattery">
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+      </Containable>
+    </ItemContainer>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="战术手电筒" identifier="tsm_flashlight_t" subcategory="TSM" category="Equipment" Tags="smallitem,tool,provocative,flashlight,tsm_gun_grenade" cargocontaineridentifier="tsm_metalcrate" Scale="0.05" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="divingcab" minamount="1" maxamount="2" spawnprobability="1" notcampaign="true" />
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.1" />
+    <PreferredContainer primary="storagecab" />
+    <Price baseprice="113" minavailable="1">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.25" />
+      <Price storeidentifier="merchantmine" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="aluminium" />
+      <Item identifier="lightcomponent" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="mechanical" level="25" />
+      <RequiredItem identifier="aluminium" amount="1" />
+      <RequiredItem tag="lightcomponent" amount="2" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="28,1200,383,136" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="28,1200,383,136" depth="0.53" origin="0.5,0.5" />
+    <Body width="383" height="136" density="15" />
+    <Holdable slots="Any,RightHand,LeftHand,Head" holdpos="30,-50" aimpos="60,10" handle1="-20,0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.1">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <LightComponent LightColor="150,150,150,255" Flicker="0.02" range="1200" powerconsumption="10" IsOn="true">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.01, 0.5" size="2.5,4.0" />
+        <IsActive targetcontaineditem="true" condition="gt 1.0" />
+      </LightComponent>
+      <LightComponent LightColor="150,150,150,255" range="1200" powerconsumption="10" IsOn="true" flicker="0.8" flickerspeed="1.0" pulsefrequency="0.1" pulseamount="0.5">
+        <LightTexture texture="Content/Lights/lightcone.png" origin="0.01, 0.5" size="2.5,4.0" />
+        <IsActive targetcontaineditem="true" condition="lte 1.0" />
+      </LightComponent>
+    </Holdable>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <Containable items="mobilebattery">
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+      </Containable>
+    </ItemContainer>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="激光指示器" identifier="tsm_jgzsq" subcategory="TSM" category="Equipment" Tags="smallitem,tool,provocative,flashlight,tsm_gun_grenade" cargocontaineridentifier="tsm_metalcrate" Scale="0.05" impactsoundtag="impact_metal_light">
+    <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.05" />
+    <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.05" />
+    <PreferredContainer primary="storagecab" />
+    <Price baseprice="413" minavailable="1">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.25" />
+      <Price storeidentifier="merchantmine" />
+    </Price>
+    <Deconstruct time="15">
+      <Item identifier="aluminium" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="35" />
+      <RequiredItem identifier="tsm_plastic" />
+      <RequiredItem identifier="tsm_item_box" />
+      <RequiredItem identifier="tsm_ic" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="28,1367,241,144" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/战备/accessories.png" sourcerect="28,1367,241,144" depth="0.53" origin="0.5,0.5" />
+    <Body width="241" height="144" density="15" />
+    <Holdable slots="Any" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.1">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <LightComponent LightColor="0,200,0,200" Flicker="0.02" range="800" powerconsumption="10" IsOn="true">
+        <LightTexture texture="%ModDir%/items/weapons/战备/laser.png" origin="0.0, 0.5" size="1.0,0.12" />
+        <IsActive targetcontaineditem="true" condition="gt 1.0" />
+      </LightComponent>
+      <LightComponent LightColor="0,200,0,200" range="800" powerconsumption="10" IsOn="true" flicker="0.8" flickerspeed="1.0" pulsefrequency="0.1" pulseamount="0.5">
+        <LightTexture texture="%ModDir%/items/weapons/战备/laser.png" origin="0.0, 0.5" size="1.0,0.12" />
+        <IsActive targetcontaineditem="true" condition="lte 1.0" />
+      </LightComponent>
+      <StatusEffect type="OnActive" target="Character" comparison="and">
+        <Conditional InWater="false" />
+        <Conditional SelectedItem="eq null" />
+        <RequiredItem items="mobilebattery" type="Contained" />
+        <Affliction identifier="tsm_ff" strength="2" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="Character" comparison="and">
+        <Conditional InWater="true" />
+        <Conditional SelectedItem="eq null" />
+        <RequiredItem items="mobilebattery" type="Contained" />
+        <Affliction identifier="tsm_ff1" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <Containable items="mobilebattery">
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+      </Containable>
+    </ItemContainer>
+    <AiTarget sightrange="3000" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+</Items>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--     SmallLevelConnectionLength 小关卡连接长度 "长度小于或等于此值的连接将生成可能的最小关卡（使用关卡生成参数中的最小宽度参数）"。
+        
+		LargeLevelConnectionLength（大级别连接长度） "长度大于或等于此值的连接将生成最大可能的级别（使用级别生成参数中的最大宽度参数）"。
+        
+		VoronoiSiteInterval "VoronoiSite之间的间隔时间。" +
+        "站点决定了 Voronoi 图形的形状。位置位于Voronoi单元的顶点。" +
+        "（减少该值会导致点的数量和地图的复杂性呈指数增长,调整时要小心）"
+			
+        MinConnectionDistance "小于此值的连接将被删除。
+		
+        MinLocationDistance（最小位置距离）"移除距离另一位置小于此值的位置"。
+
+		SmallLevelConnectionLength "Connections with a length smaller or equal to this generate the smallest possible levels (using the MinWidth parameter in the level generation paramaters)."
+        
+		LargeLevelConnectionLength "Connections with a length larger or equal to this generate the largest possible levels (using the MaxWidth parameter in the level generation paramaters)."
+        
+		VoronoiSiteInterval "How far from each other voronoi sites are placed. " +
+        "Sites determine shape of the voronoi graph. Locations are placed at the vertices of the voronoi cells. " +
+        "(Decreasing this value causes the number of sites, and the complexity of the map, to increase exponentially - be careful when adjusting)"
+			
+        MinConnectionDistance "Connections smaller than this are removed."
+		
+        MinLocationDistance "Locations that are closer than this to another location are removed."
+		
+        ConnectionIndicatorIterationMultiplier "ConnectionIterationMultiplier for the UI indicator lines between locations."
+
+        ConnectionIndicatorDisplacementMultiplier "ConnectionDisplacementMultiplier for the UI indicator lines between locations."
+
+        -->
+<Override>
+  <MapGenerationParameters DifficultyZones="6" GateCount="2,3,2,3,2,1" Width="9000" Height="1100" MinZoom="1.0" MaxZoom="3" VoronoiSiteInterval="280,130" VoronoiSiteVariance="180,10" MinLocationDistance="80" MinConnectionDistance="60" SmallLevelConnectionLength="100" LargeLevelConnectionLength="1000" ConnectionIndicatorIterationMultiplier="0.07" ConnectionIndicatorDisplacementMultiplier="0.1" LocationIconSize="50" LocationConnectionWidth="6" IndicatorColor="128,206,175,255" ConnectionColor="128,206,175,255" HighlightedConnectionColor="193,232,217,255" UnvisitedConnectionColor="200,200,200,255">
+    <PassedConnectionSprite texture="Content/Map/MapAtlas.png" sourcerect="1,641,45,16" />
+    <ConnectionSprite texture="Content/Map/MapAtlas.png" sourcerect="44,641,45,16" />
+    <ZoneIndicator texture="Content/Map/MapCircle.png" sourcerect="0,0,150,1024" origin="0.5,0.5" premultiplyalpha="false" />
+    <DecorativeGraphSprite texture="Content/Map/MapAtlas.png" sourcerect="0,0,1024,640" columns="4" rows="5" emptyframes="3" premultiplyalpha="false" />
+    <CurrentLocationIndicator texture="Content/Map/MapAtlas.png" sourcerect="512,768,128,128" origin="0.5,0.5" />
+    <SelectedLocationIndicator texture="Content/Map/MapAtlas.png" sourcerect="802,793,186,205" origin="0.5,0.5" />
+    <MissionIcon texture="Content/Map/MapAtlas.png" sourcerect="79,759,30,30" origin="0.5,0.5" />
+    <TypeChangeIcon texture="Content/Map/MapAtlas.png" sourcerect="41,759,30,30" origin="0.5,0.5" />
+    <MapTile texture="Content/Map/MapPieces/MapPieces.png" sourcerect="0,0,512,512" origin="0.5,0.5" biome="coldcaverns" />
+    <MapTile texture="Content/Map/MapPieces/MapPieces.png" sourcerect="512,0,512,512" origin="0.5,0.5" biome="coldcaverns" />
+    <MapTile texture="Content/Map/MapPieces/MapPieces.png" sourcerect="1024,0,512,512" origin="0.5,0.5" biome="coldcaverns" />
+    <MapTile texture="Content/Map/MapPieces/MapPieces.png" sourcerect="0,512,512,512" origin="0.5,0.5" biome="europanridge" />
+    <MapTile texture="Content/Map/MapPieces/MapPieces.png" sourcerect="512,512,512,512" origin="0.5,0.5" biome="europanridge" />
+    <MapTile texture="Content/Map/MapPieces/MapPieces.png" sourcerect="1024,512,512,512" origin="0.5,0.5" biome="europanridge" />
+    <MapTile texture="Content/Map/MapPieces/MapPieces.png" sourcerect="0,1024,512,512" origin="0.5,0.5" biome="theaphoticplateau" />
+    <MapTile texture="Content/Map/MapPieces/MapPieces.png" sourcerect="512,1024,512,512" origin="0.5,0.5" biome="theaphoticplateau" />
+    <MapTile texture="Content/Map/MapPieces/MapPieces.png" sourcerect="1024,1024,512,512" origin="0.5,0.5" biome="theaphoticplateau" />
+    <MapTile texture="Content/Map/MapPieces/MapPieces.png" sourcerect="0,1536,512,512" origin="0.5,0.5" biome="thegreatsea" />
+    <MapTile texture="Content/Map/MapPieces/MapPieces.png" sourcerect="512,1536,512,512" origin="0.5,0.5" biome="thegreatsea" />
+    <MapTile texture="Content/Map/MapPieces/MapPieces.png" sourcerect="1024,1536,512,512" origin="0.5,0.5" biome="thegreatsea" />
+    <MapTile texture="Content/Map/MapPieces/MapPieces.png" sourcerect="1536,0,512,512" origin="0.5,0.5" biome="hydrothermalwastes" />
+    <MapTile texture="Content/Map/MapPieces/MapPieces.png" sourcerect="1536,512,512,512" origin="0.5,0.5" biome="hydrothermalwastes" />
+    <MapTile texture="Content/Map/MapPieces/MapPieces.png" sourcerect="1536,1024,512,512" origin="0.5,0.5" biome="hydrothermalwastes" />
+    <MapTile texture="Content/Map/MapPieces/MapPieces.png" sourcerect="0,1536,512,512" origin="0.5,0.5" biome="endzone" />
+    <MapTile texture="Content/Map/MapPieces/MapPieces.png" sourcerect="512,1536,512,512" origin="0.5,0.5" biome="endzone" />
+    <MapTile texture="Content/Map/MapPieces/MapPieces.png" sourcerect="1024,1536,512,512" origin="0.5,0.5" biome="endzone" />
+
+    <!--MapTile texture="Content/Map/MapPieces/MapPieces.png" sourcerect="0,1536,512,512" origin="0.5,0.5" biome="tsm_sea" />
+    <MapTile texture="Content/Map/MapPieces/MapPieces.png" sourcerect="512,1536,512,512" origin="0.5,0.5" biome="tsm_sea" />
+    <MapTile texture="Content/Map/MapPieces/MapPieces.png" sourcerect="1024,1536,512,512" origin="0.5,0.5" biome="tsm_sea" /-->
+    <FogOfWarSprite texture="Content/Map/MapPieces/MapPieces.png" sourcerect="1536,1536,512,512" origin="0.5,0.5" />
+    <RadiationParams startingradiation="-200.0" radiationstep="40.0" radiationdamagedelay="10.0" radiationdamageamount="1.0" radiationdamagemultipliedperpixeldistance="250" criticalradiationthreshold="10" minimumoutpostamount="3" animationspeed="3.0" radiationareacolor="139,0,0,85" radiationbordertint="255,0,0,255" borderanimationspeed="16.66" />
+  </MapGenerationParameters>
+</Override>

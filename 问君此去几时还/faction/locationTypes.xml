@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <locationtypes>
-  <tsm_city identifier="tsm_city" replaceinradiation="Abandoned" nameidentifiers="city" commonnessperzone="1: 0.2, 2: 0.4, 3: 0.6, 4: 0.4, 5: 0.3" mincountperzone="1: 1" faction="tsm" secondaryfaction="None" AllowAsBiomeGate="true">
+  <tsm_city identifier="tsm_city" replaceinradiation="Abandoned" commonnessperzone="1: 0.2, 2: 0.4, 3: 0.6, 4: 0.4, 5: 0.3, 6: 0.5, 7:0.1" mincountperzone="1: 1" faction="tsm" secondaryfaction="None" AllowAsBiomeGate="true">
     <Symbol texture="%ModDir%/faction/tsm.png" sourcerect="128,16,103,112" color="255,255,255,255" />
     <RadiationSymbol texture="Content/Map/MapAtlas.png" sourcerect="896,512,128,128" color="245,105,105" />
-    <Portrait texture="%ModDir%/Map/堡垒都市.png" sourcerect="0,0,0,0" premultiplyalpha="false" />
+    <Portrait texture="%ModDir%/menu/堡垒都市.png" sourcerect="0,0,0,0" premultiplyalpha="false" />
     <Hireable identifier="assistant" commonness="8" />
     <Hireable identifier="engineer" commonness="5" />
     <Hireable identifier="mechanic" commonness="5" />
@@ -12,10 +12,10 @@
     <Hireable identifier="captain" commonness="5" />
     <Store maxreputationmodifier="0.15" sellpricemodifier="0.3" dailyspecialpricemodifier="0.7" requestgoodpricemodifier="2" initialbalance="10000" pricemodifierrange="5" dailyspecialscount="5" requestedgoodscount="3" />
   </tsm_city>
-  <tsm_military identifier="tsm_military" replaceinradiation="Abandoned" nameidentifiers="city" faction="tsm" commonnessperzone="1: 0.4, 2: 0.6, 3: 0.6, 4: 0.3, 5: 0.2" mincountperzone="1: 1" UsePortraitInMainMenu="true" secondaryfaction="None" AllowAsBiomeGate="true">
-    <Symbol texture="Content/Map/MapAtlas.png" sourcerect="640,512,128,128" color="128,206,175,255" />
+  <tsm_military identifier="tsm_military" replaceinradiation="Abandoned" faction="tsm" commonnessperzone="1: 0.4, 2: 0.6, 3: 0.6, 4: 0.3, 5: 0.2, 6: 0.5, 7:0.1" mincountperzone="1: 1" UsePortraitInMainMenu="true" secondaryfaction="None" AllowAsBiomeGate="true">
+    <Symbol texture="%ModDir%/faction/tsm.png" sourcerect="234,148,196,180" color="255,255,255,255" />
     <RadiationSymbol texture="Content/Map/MapAtlas.png" sourcerect="896,512,128,128" color="245,105,105" />
-    <Portrait texture="%ModDir%/Map/探寻.png" sourcerect="0,0,0,0" premultiplyalpha="false" />
+    <Portrait texture="%ModDir%/menu/探寻.png" sourcerect="0,0,0,0" premultiplyalpha="false" />
     <Hireable identifier="securityofficer" commonness="10" AlwaysAvailableIfMissingFromCrew="true" />
     <Hireable identifier="captain" commonness="3" AlwaysAvailableIfMissingFromCrew="true" />
     <Hireable identifier="assistant" commonness="2" AlwaysAvailableIfMissingFromCrew="true" />
@@ -24,10 +24,10 @@
     <Hireable identifier="medicaldoctor" commonness="2" AlwaysAvailableIfMissingFromCrew="true" />
     <Store maxreputationmodifier="0.1" sellpricemodifier="0.3" dailyspecialpricemodifier="0.5" requestgoodpricemodifier="2" initialbalance="8000" pricemodifierrange="5" />
   </tsm_military>
-  <tsm_mine identifier="tsm_mine" faction="tsm" replaceinradiation="Abandoned" nameidentifiers="generic,city" commonnessperzone="1: 0.4, 2: 0.6, 3: 0.6, 4: 0.5, 5: 0.3" mincountperzone="1: 1" secondaryfaction="None" AllowAsBiomeGate="true">
-    <Symbol texture="Content/Map/MapAtlas.png" sourcerect="256,640,128,128" color="128,206,175,255" />
+  <tsm_mine identifier="tsm_mine" faction="tsm" replaceinradiation="Abandoned" commonnessperzone="1: 0.4, 2: 0.6, 3: 0.6, 4: 0.5, 5: 0.3, 6: 0.5, 7:0.1" mincountperzone="1: 1" secondaryfaction="None" AllowAsBiomeGate="true">
+    <Symbol texture="%ModDir%/faction/tsm.png" sourcerect="0,148,167,160" color="255,255,255,255" />
     <RadiationSymbol texture="Content/Map/MapAtlas.png" sourcerect="896,512,128,128" color="245,105,105" />
-    <Portrait texture="%ModDir%/Map/冰面.png" sourcerect="0,0,2160,1427" premultiplyalpha="false" />
+    <Portrait texture="%ModDir%/menu/冰面.png" sourcerect="0,0,2160,1427" premultiplyalpha="false" />
     <Hireable identifier="engineer" commonness="5" AlwaysAvailableIfMissingFromCrew="true" />
     <Hireable identifier="mechanic" commonness="5" AlwaysAvailableIfMissingFromCrew="true" />
     <Hireable identifier="assistant" commonness="3" AlwaysAvailableIfMissingFromCrew="true" />

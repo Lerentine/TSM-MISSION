@@ -1,0 +1,1543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!--奇迹之海-->
+  <Item name="65式军帽" identifier="tsm_65_hat" subcategory="tsm" category="Equipment" hideinmenus="true" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" scale="0.38">
+    <PreferredContainer primary="secarmcab" amount="1" notcampaign="true" />
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
+    <!--Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredItem identifier="organicfiber" amount="2" />
+    </Fabricate-->
+    <Deconstruct time="10" />
+    <Sprite name="65 hat" texture="%ModDir%/items/Jobgear/65_uniform.png" depth="0.6" sourcerect="417,20,63,44" origin="0.5,0.5" />
+    <Body width="63" height="44" density="10" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <sprite name="65 hat Wearable" texture="%ModDir%/items/Jobgear/65_uniform.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.53" hidelimb="false" sourcerect="417,20,63,44" origin="0.5,0.8" />
+      <SkillModifier skillidentifier="helm" skillvalue="10" />
+      <SkillModifier skillidentifier="weapons" skillvalue="10" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.9" />
+    </Wearable>
+  </Item>
+  <Item name="三神丘作战头盔" identifier="tsm_kepcap" subcategory="TSM" aliases="captainscap" category="Equipment" tags="smallitem,clothing,tsm_kep_cap" cargocontaineridentifier="tsm_metalcrate" scale="0.4">
+    <Sprite name="kep cap" texture="%ModDir%/items/Jobgear/三神丘作战服_female.png" depth="0.6" sourcerect="666,6,113,72" origin="0.5,0.5" />
+    <Body width="113" height="72" density="12" />
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <Price baseprice="632" displaynonempty="true" minleveldifficulty="10">
+      <Price storeidentifier="merchantarmory" multiplier="1.25" minamount="0" maxamount="2" />
+      <Price storeidentifier="merchantcity" multiplier="1.6" minamount="0" maxamount="1" />
+      <Price storeidentifier="merchantresearch" multiplier="1.4" minamount="0" maxamount="1" />
+    </Price>
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <SkillModifier skillidentifier="weapons" skillvalue="10" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="kep cap Wearable" texture="%ModDir%/items/Jobgear/三神丘作战服_female.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="false" scale="1.5" hidelimb="false" sourcerect="666,6,113,72" origin="0.47,1" />
+      <StatusEffect tags="tsm_kepcap" type="OnWearing" target="Character" duration="1" stackable="false" setvalue="true" />
+    </Wearable>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="tank">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
+      <Containable items="oxygensource,weldingtoolfuel" excludeditems="oxygenitetank" />
+      <Containable items="oxygensource">
+        <StatusEffect type="OnWearing" target="Character" OxygenAvailable="1000.0" UseHullOxygen="true" />
+        <StatusEffect type="OnWearing" target="Contained" Condition="-0.2" comparison="And">
+          <Conditional TargetContainer="true" TargetGrandparent="true" IsDead="false" />
+          <Conditional TargetContainer="true" TargetGrandparent="true" DecreasedOxygenConsumption="lt 99" />
+          <Conditional TargetContainer="true" TargetGrandparent="true" NeedsAir="true" />
+        </StatusEffect>
+      </Containable>
+      <Containable items="oxygenitetank">
+        <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="1.2" setvalue="true" targetslot="0" comparison="And">
+          <Conditional IsDead="false" />
+          <Conditional DecreasedOxygenConsumption="lt 99" />
+          <Conditional NeedsAir="true" />
+        </StatusEffect>
+      </Containable>
+      <Containable items="weldingfueltank" blameequipperfordeath="true">
+        <StatusEffect type="OnWearing" target="Contained" Condition="-0.4" comparison="And">
+          <Conditional TargetContainer="true" TargetGrandparent="true" IsDead="false" />
+          <Conditional TargetContainer="true" TargetGrandparent="true" DecreasedOxygenConsumption="lt 99" />
+          <Conditional TargetContainer="true" TargetGrandparent="true" NeedsAir="true" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" Oxygen="-5.0" comparison="And">
+          <Conditional IsDead="false" />
+          <Conditional DecreasedOxygenConsumption="lt 99" />
+          <Conditional NeedsAir="true" />
+        </StatusEffect>
+      </Containable>
+      <Containable items="incendiumfueltank" blameequipperfordeath="true">
+        <StatusEffect type="OnWearing" target="Contained" Condition="-0.4" comparison="And">
+          <Conditional TargetContainer="true" TargetGrandparent="true" IsDead="false" />
+          <Conditional TargetContainer="true" TargetGrandparent="true" DecreasedOxygenConsumption="lt 99" />
+          <Conditional TargetContainer="true" TargetGrandparent="true" NeedsAir="true" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" comparison="And" targetlimb="Torso">
+          <Affliction identifier="burn" amount="20.0" />
+          <Conditional IsDead="false" />
+          <Conditional DecreasedOxygenConsumption="lt 99" />
+          <Conditional NeedsAir="true" />
+        </StatusEffect>
+      </Containable>
+    </ItemContainer>
+  </Item>
+  <Item name="前线医疗组头盔" identifier="tsm_medic_helmet" subcategory="TSM" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.1">
+    <Upgrade gameversion="0.18.0.0" scale="0.3" />
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="ballisticfiber" amount="4" />
+      <RequiredItem identifier="tsm_ic" amount="2" />
+      <RequiredItem identifier="tsm_tungsten" amount="3" />
+      <RequiredItem identifier="titanium" amount="2" />
+    </Fabricate>
+    <Sprite name="TSM PGC Helmet" texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="1570,1249,313,287" depth="0.6" origin="0.5,0.5" />
+    <Body width="313" height="287" density="15" />
+    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="triton_7L" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="TSM PGC Helmet" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.2" hidelimb="False" alphaclipotherwearables="false" sourcerect="1570,1249,313,287" origin="0.49,0.58" />
+      <StatValue stattype="movementspeed" value="-0.01" />
+      <StatusHUD overlaycolor="176,0,0,120" range="3000" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
+      <StatusEffect type="NotInWater" target="This" targetitemcomponent="StatusHUD" thermalgoggles="true" showtexts="false" setvalue="true">
+        <RequiredItem items="thermalgoggles" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="NotInWater" target="This" targetitemcomponent="StatusHUD" thermalgoggles="false" showtexts="true" setvalue="true">
+        <RequiredItem items="thermalgoggles" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="This" targetitemcomponent="StatusHUD" thermalgoggles="false" showtexts="false" setvalue="true">
+        <RequiredItem items="thermalgoggles" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" targetitemcomponent="StatusHUD" thermalgoggles="false" showtexts="false" setvalue="true">
+        <RequiredItem items="thermalgoggles" type="Contained" MatchOnEmpty="true" />
+      </StatusEffect>
+    </Wearable>
+    <ItemContainer hideitems="true" capacity="1" maxstacksize="1" containedstateindicatorstyle="" containedspritedepths="0.551,0.552">
+      <Containable items="thermalgoggles,healthscanner" excludebroken="false" />
+    </ItemContainer>
+    <StatusHUD drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="0" thermalgoggles="false" showdeadcharacters="false" showtexts="false" />
+  </Item>
+  <Item name="九州作战部头盔" identifier="tsm_jz_helmet" subcategory="TSM" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.3">
+    <Upgrade gameversion="0.18.0.0" scale="0.3" />
+    <PreferredContainer primary="secarmcab" amount="1" notcampaign="true" />
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab,outpostarmcab" amount="1" spawnprobability="0.01" />
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredItem identifier="tsm_riotcontrol_helmet" amount="1" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+      <RequiredItem identifier="tsm_plastic" amount="1" />
+      <RequiredItem identifier="ballisticfiber" amount="1" />
+      <RequiredItem identifier="aluminium" amount="4" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="1886,0,110,142" origin="0.5,0.5" />
+    <Sprite name="TSM jz Helmet" texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="1462,140,130,106" depth="0.58" origin="0.5,0.5" />
+    <Body width="212" height="121" density="19" />
+    <Holdable slots="RightHand" controlpose="true" holdpos="0,-30" handle1="-10,10" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
+    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="triton_7L" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="TSM jz Helmet" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="1462,140,130,106" origin="0.42,0.55">
+        <LightComponent LightColor="150,255,150,100" range="1600" castshadows="false" powerconsumption="infinity" IsOn="true" flicker="0.1" flickerspeed="0.3" pulsefrequency="0.1" pulseamount="0.1" />
+      </sprite>
+      <StatValue stattype="movementspeed" value="-0.02" />
+      <StatusEffect type="OnWearing" target="Contained,Character" interval="0.1" Condition="-0.05" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="tsm_nightvision" amount="100" />
+        <Conditional targetcontainer="true" targetitemcomponent="LightComponent" IsOn="true" />
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This,Character" voltage="1.0" interval="0.1" setvalue="true" comparison="and">
+        <Conditional IsLocalPlayer="true" tsm_nightvision="gt 0" />
+      </StatusEffect>
+    </Wearable>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <Containable items="mobilebattery" />
+    </ItemContainer>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
+      <GuiFrame relativesize="0.083,0.07" anchor="BottomLeft" relativeoffset="0.0043,0.4" style="ItemUI" />
+      <TickBox text="nightvision">
+        <StatusEffect type="OnUse" targettype="This" IsOn="true" HudTint="50,255,50,30" interval="0.1" />
+        <StatusEffect type="OnSecondaryUse" targettype="This" IsOn="false" HudTint="0,0,0,0" interval="0.1" />
+      </TickBox>
+    </CustomInterface>
+  </Item>
+  <Item name="奇迹之海防暴头盔" identifier="tsm_riotcontrol_helmet" subcategory="TSM" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.2">
+    <Deconstruct time="10">
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredItem identifier="lm_fast_helmet_headset" amount="1" />
+      <RequiredItem identifier="tsm_ballistic_faceshield_big" amount="1" />
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem identifier="aluminium" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredItem identifier="tsm_riotcontrol_helmet" amount="1" />
+    </Fabricate>
+    <Sprite name="fast Helmet icon" texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="545,349,167,140" depth="0.58" origin="0.5,0.5" />
+    <Body width="212" height="121" density="17" />
+    <Wearable slots="Any,Head" armorvalue="30.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="triton_7L" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="fast Helmet" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.41" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="545,349,167,140" origin="0.48,0.6" />
+      <!--StatusEffect type="OnWearing" target="This" comparison="And" setvalue="true">
+        <RequiredItem items="tsm_ballistic_faceshield_big" type="Contained" />
+        <Conditional Condition="gt 0" />
+        <SpawnItem identifier="tsm_collider_head" spawnposition="This" targetlimb="Head" limb="Head"/>
+      </StatusEffect-->
+      <StatValue stattype="movementspeed" value="-0.02" />
+    </Wearable>
+    <!--ItemContainer capacity="1" hideitems="false" keepopenwhenequipped="false" movableframe="false" showcontainedstateindicator="false">
+      <SlotIcon texture="%ModDir%/png/ui.png" sourcerect="1166,571,113,70" />
+      <Containable items="tsm_ballistic_faceshield_big">
+        <StatusEffect type="OnWearing" target="Contained" Interval="1" disabledeltatime="true" condition="-2">
+          <Conditional tsm_ondamaged_head="gt 0" TargetContainer="true" TargetGrandparent="true" />
+        </StatusEffect>
+      </Containable>
+    </ItemContainer-->
+    <WifiComponent range="40000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <Upgrade gameversion="0.18.0.0">
+      <WifiComponent>
+        <RequiredItems items="" />
+      </WifiComponent>
+    </Upgrade>
+  </Item>
+  <Item name="奇迹之海重型战斗头盔" identifier="tsm_heavycombat_helmet" subcategory="TSM" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.2">
+    <Deconstruct time="10">
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="titaniumaluminiumalloy" />
+      <RequiredItem identifier="rubber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredItem identifier="tsm_riotcontrol_helmet" amount="1" />
+      <RequiredItem identifier="tsm_protective_jaw" amount="1" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+      <RequiredItem identifier="rubber" amount="4" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredItem identifier="tsm_heavycombat_helmet" amount="1" />
+    </Fabricate>
+    <Sprite name="heavycombat Helmet icon" texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="550,529,167,153" depth="0.58" origin="0.5,0.5" />
+    <Body width="212" height="121" density="20" />
+    <Wearable slots="Any,Head" armorvalue="40.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.12" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="triton_7L" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="heavycombat Helmet" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.4" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="550,529,167,153" origin="0.45,0.55">
+        <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true" />
+      </sprite>
+      <!--StatusEffect type="OnWearing" target="This" comparison="And" setvalue="true">
+        <RequiredItem items="tsm_ballistic_faceshield_big" type="Contained" />
+        <Conditional Condition="gt 0" />
+        <SpawnItem identifier="tsm_collider_head" spawnposition="This" targetlimb="Head" limb="Head"/>
+      </StatusEffect-->
+      <StatValue stattype="movementspeed" value="-0.03" />
+    </Wearable>
+    <!--ItemContainer capacity="1" hideitems="false" keepopenwhenequipped="false" movableframe="false" showcontainedstateindicator="false">
+      <SlotIcon texture="%ModDir%/png/ui.png" sourcerect="1166,571,113,70" />
+      <Containable items="tsm_ballistic_faceshield_big">
+        <StatusEffect type="OnWearing" target="Contained" Interval="1" disabledeltatime="true" condition="-2">
+          <Conditional tsm_ondamaged_head="gt 0" TargetContainer="true" TargetGrandparent="true" />
+        </StatusEffect>
+      </Containable>
+    </ItemContainer-->
+    <WifiComponent range="40000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <Upgrade gameversion="0.18.0.0">
+      <WifiComponent>
+        <RequiredItems items="" />
+      </WifiComponent>
+    </Upgrade>
+  </Item>
+  <Item name="奇迹之海重型防毒头盔" identifier="tsm_helmet_respirator" subcategory="TSM" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.2">
+    <Deconstruct time="10">
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <Sprite name="respirator Helmet icon" texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="550,723,153,161" depth="0.58" origin="0.5,0.5" />
+    <Body width="153" height="161" density="18" />
+    <Wearable slots="Any,Head" armorvalue="40.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="triton_7L" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="radiationsickness" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="respirator Helmet" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.42" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="550,723,153,161" origin="0.45,0.53">
+        <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true" />
+      </sprite>
+      <StatusEffect type="OnWearing" target="This,Character" PressureProtection="1000.0" OxygenAvailable="1000.0" UseHullOxygen="false" />
+      <StatValue stattype="movementspeed" value="-0.02" />
+    </Wearable>
+  </Item>
+  <Item name="奇迹之海怒江作战头盔" identifier="tsm_helmet_outpost_combat" subcategory="TSM" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.2">
+    <Deconstruct time="10">
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <Sprite name="outpost_combat Helmet icon" texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="556,899,224,178" depth="0.58" origin="0.5,0.5" />
+    <Body width="224" height="178" density="21" />
+    <Holdable slots="RightHand" controlpose="true" holdpos="0,-30" handle1="-10,10" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
+    <Wearable slots="Any,Head" armorvalue="40.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.17" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="tsm_bl" armorsector="0.0,360.0" damagemultiplier="0.55" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="outpost_combat Helmet" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.42" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="556,899,224,178" origin="0.33,0.6">
+        <LightComponent LightColor="150,255,150,100" range="1600" castshadows="false" powerconsumption="infinity" IsOn="true" flicker="0.1" flickerspeed="0.3" pulsefrequency="0.1" pulseamount="0.1" />
+      </sprite>
+      <StatusEffect type="OnWearing" target="Contained,Character" interval="0.1" Condition="-0.015" disabledeltatime="true">
+        <Affliction identifier="tsm_nightvision" amount="60" />
+        <Conditional targetcontainer="true" targetitemcomponent="LightComponent" IsOn="true" />
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This,Character" voltage="1.0" interval="0.1" setvalue="true" comparison="and">
+        <Conditional IsLocalPlayer="true" tsm_nightvision="gt 0" />
+      </StatusEffect>
+      <StatValue stattype="movementspeed" value="-0.02" />
+    </Wearable>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <Containable items="mobilebattery" />
+    </ItemContainer>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
+      <GuiFrame relativesize="0.083,0.04" anchor="BottomLeft" relativeoffset="0.0043,0.4" style="ItemUI" />
+      <TickBox text="nightvision">
+        <StatusEffect type="OnUse" targettype="This" IsOn="true" HudTint="50,255,50,30" interval="0.1" />
+        <StatusEffect type="OnSecondaryUse" targettype="This" IsOn="false" HudTint="0,0,0,0" interval="0.1" />
+      </TickBox>
+    </CustomInterface>
+  </Item>
+  <Item name="'猫科动物'顾问伪装面罩" identifier="tsm_advisers_mask" subcategory="TSM" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.5">
+    <Deconstruct time="10">
+      <Item identifier="tsm_plastic" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/items/Jobgear/advisers_uniform_male.png" sourcerect="546,322,53,63" origin="0.5,0.5" />
+    <Sprite name="advisers_mask icon" texture="%ModDir%/items/Jobgear/advisers_uniform_male.png" sourcerect="418,109,65,65" depth="0.58" origin="0.5,0.5" />
+    <Body width="53" height="63" density="11" />
+    <Wearable slots="Any,Head" armorvalue="30.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="tsm_bl" armorsector="0.0,360.0" damagemultiplier="0.8" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.8" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="advisers_mask" texture="%ModDir%/items/Jobgear/advisers_uniform_male.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.47" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="418,109,65,65" origin="0.43,0.62" />
+    </Wearable>
+  </Item>
+  <Item name="奇迹之海鸟巢中队头盔" identifier="tsm_niaochao_helmet" subcategory="TSM" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.35">
+    <Upgrade gameversion="0.18.0.0" scale="0.3" />
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="ballisticfiber" amount="4" />
+      <RequiredItem identifier="tsm_ic" amount="2" />
+      <RequiredItem identifier="tsm_tungsten" amount="3" />
+      <RequiredItem identifier="titanium" amount="2" />
+    </Fabricate>
+    <Sprite name="TSM PGC Helmet" texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="1624,151,98,97" depth="0.58" origin="0.5,0.5" />
+    <Body width="98" height="97" density="18" />
+    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="lacerations,gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="triton_7L" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="TSM PGC Helmet" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="False" alphaclipotherwearables="false" sourcerect="1624,151,98,97" origin="0.49,0.56" />
+      <StatValue stattype="movementspeed" value="-0.01" />
+      <StatusHUD overlaycolor="176,0,0,120" range="3000" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="true" />
+      <StatusEffect type="NotInWater" target="This" targetitemcomponent="StatusHUD" thermalgoggles="true" showtexts="false" setvalue="true">
+        <RequiredItem items="tsm_thermalgoggles" type="Contained" />
+      </StatusEffect>
+      <!--不在水中-热成像-->
+      <StatusEffect type="NotInWater" target="This" targetitemcomponent="StatusHUD" thermalgoggles="false" showtexts="true" setvalue="true">
+        <RequiredItem items="tsm_healthscanner" type="Contained" />
+      </StatusEffect>
+      <!--不在水中-健康扫描仪-->
+      <StatusEffect type="InWater" target="This" targetitemcomponent="StatusHUD" thermalgoggles="false" showtexts="false" setvalue="true">
+        <RequiredItem items="tsm_thermalgoggles" type="Contained" />
+      </StatusEffect>
+      <!--在水中-热成像-->
+      <StatusEffect type="Always" target="This" targetitemcomponent="StatusHUD" thermalgoggles="false" showtexts="false" setvalue="true">
+        <RequiredItem items="tsm_healthscanner" type="Contained" MatchOnEmpty="true" />
+        <RequiredItem items="tsm_thermalgoggles" type="Contained" MatchOnEmpty="true" />
+      </StatusEffect>
+      <!--空-->
+      <StatusEffect type="OnWearing" target="Character" ObstructVisionAmount="0.1" setvalue="true" disabledeltatime="true" />
+    </Wearable>
+    <ItemContainer hideitems="true" capacity="1" maxstacksize="1" containedstateindicatorstyle="" containedspritedepths="0.551,0.552">
+      <Containable items="thermalgoggles,healthscanner" excludebroken="false" />
+    </ItemContainer>
+    <StatusHUD drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="0" thermalgoggles="false" showdeadcharacters="false" showtexts="false" />
+  </Item>
+  <Item name="奇迹之海突击通讯头盔" identifier="tsm_fast_helmet_headset" subcategory="TSM" variantof="lm_fast_helmet_headset">
+    <Sprite name="fast Helmet icon" texture="%ModDir%/items/Jobgear/tsm_helmet.png" sourcerect="143,145,217,198" depth="0.58" origin="0.5,0.5" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredItem identifier="tsm_plastic" amount="1" />
+      <RequiredItem identifier="iron" amount="1" />
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem identifier="headset" amount="1" />
+      <RequiredItem identifier="aluminium" amount="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredItem identifier="tsm_fast_helmet_headset" amount="1" />
+    </Fabricate>
+    <Wearable>
+      <sprite name="fast Helmet" texture="%ModDir%/items/Jobgear/tsm_helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.27" hidelimb="False" inheritorigin="false" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="0,0,500,500" origin="0.53,0.55" />
+    </Wearable>
+  </Item>
+  <Item name="奇迹之海冥府作战头盔" identifier="lm_mingfu_helmet" subcategory="TSM" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio,tsm_hashelmetinterface" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.17">
+    <Deconstruct time="10">
+      <Item identifier="plastic" />
+      <Item identifier="iron" />
+      <Item identifier="wire" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredItem identifier="tsm_plastic" amount="1" />
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem identifier="headset" amount="1" />
+      <RequiredItem identifier="aluminium" amount="3" />
+      <RequiredItem tag="wire" amount="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredItem identifier="lm_mingfu_helmet" amount="1" />
+    </Fabricate>
+    <Sprite name="mingfu Helmet icon" texture="%ModDir%/items/Jobgear/mingfu_helmet.png" sourcerect="143,137,185,211" depth="0.58" origin="0.5,0.5" />
+    <Body width="186" height="211" density="14" />
+    <StatusHUD overlaycolor="0,176,0,150" range="1500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="false" />
+    <Wearable slots="Any,Head" armorvalue="25.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0" damagesound="" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="triton_7L" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="tsm_bl" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+      <StatValue stattype="movementspeed" value="-0.01" />
+      <sprite name="fast Helmet" texture="%ModDir%/items/Jobgear/mingfu_helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.34" hidelimb="false" inheritorigin="false" alphaclipotherwearables="false" hidewearablesoftype="Hair, Beard, Moustache, Faceattachment" sourcerect="0,0,500,500" origin="0.5,0.5">
+        <LightComponent LightColor="166,166,166,200" range="1600" castshadows="false" powerconsumption="infinity" IsOn="true" flicker="0.1" flickerspeed="0.3" pulsefrequency="0.1" pulseamount="0.1" />
+      </sprite>
+      <StatusEffect type="OnWearing" target="Character" interval="0.5">
+        <LuaHook name="tsm_helmet_update" />
+      </StatusEffect>
+      <!--夜视仪-->
+      <StatusEffect type="OnWearing" target="This,Character" voltage="1.0" interval="0.1" setvalue="true" comparison="and">
+        <Conditional IsLocalPlayer="true" tsm_nightvision="gt 0" />
+        <RequiredItem items="tsm_helmet_nvd" type="Contained" targetslot="0" />
+      </StatusEffect>
+    </Wearable>
+    <WifiComponent range="30000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="false" allowuioverlap="true">
+      <GuiFrame relativesize="0.09,0.07" anchor="CenterRight" pivot="CenterRight" relativeoffset="-0.02,0.09" style="ItemUI" />
+      <TickBox text="tsm_on">
+        <StatusEffect type="OnUse" target="Contained" interval="0.5" targetslot="0" disabledeltatime="true" condition="-0.01">
+          <RequiredItems items="tsm_helmet_nvd" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="Contained" interval="0.5" targetslot="0" disabledeltatime="true" condition="-0.02">
+          <RequiredItems items="tsm_helmet_screen" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="Contained" interval="0.5" targetslot="0" disabledeltatime="true" condition="-0.02">
+          <Conditional InWater="false" />
+          <RequiredItems items="tsm_helmet_thermalgoggles" type="Contained" />
+        </StatusEffect>
+      </TickBox>
+    </CustomInterface>
+    <ItemContainer capacity="1" keepopenwhenequipped="false" movableframe="false" hideitems="true" containedstateindicatorslot="1" maxstacksize="1" allowswappingcontaineditems="true">
+      <SlotIcon slotindex="1" texture="%ModDir%/items/weapons/ui.png" sourcerect="1354,1218,103,103" origin="0.5,0.5" />
+      <Containable items="tsm_helmet_nvd">
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable">
+          <LuaHook name="tsm_helmet_update" />
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable">
+          <LuaHook name="tsm_helmet_update" />
+        </StatusEffect>
+      </Containable>
+      <Containable items="tsm_helmet_thermalgoggles">
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable">
+          <LuaHook name="tsm_helmet_update" />
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable">
+          <LuaHook name="tsm_helmet_update" />
+        </StatusEffect>
+      </Containable>
+      <Containable items="tsm_helmet_screen">
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable">
+          <LuaHook name="tsm_helmet_update" />
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable">
+          <LuaHook name="tsm_helmet_update" />
+        </StatusEffect>
+      </Containable>
+      <Containable items="tsm_ballistic_faceshield_aerjin">
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable">
+          <LuaHook name="tsm_helmet_update" />
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable">
+          <LuaHook name="tsm_helmet_update" />
+        </StatusEffect>
+      </Containable>
+      <SubContainer capacity="1" maxstacksize="0">
+        <Containable items="none" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="tsm_helmet_flashlight">
+          <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable" drawhudwhenequipped="true">
+            <LuaHook name="tsm_helmet_update" />
+          </StatusEffect>
+          <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable" drawhudwhenequipped="false">
+            <LuaHook name="tsm_helmet_update" />
+          </StatusEffect>
+        </Containable>
+      </SubContainer>
+    </ItemContainer>
+  </Item>
+  <Item name="操作者辅助系统(OAS)" subcategory="TSM" identifier="tsm_operatorassistancesystems" scale="0.25" category="Equipment" tags="smallitem,mobileradio" description="" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="crewcab" secondary="divingcab" />
+    <!--Price baseprice="40" buyingpricemultiplier="5">
+      <Price storeidentifier="merchantoutpost" maxavailable="0" />
+      <Price storeidentifier="merchantcity" maxavailable="0" />
+      <Price storeidentifier="merchantresearch" maxavailable="0" />
+      <Price storeidentifier="merchantmilitary" maxavailable="0" />
+      <Price storeidentifier="merchantmine" maxavailable="0" />
+    </Price-->
+    <InventoryIcon texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="1311,301,130,233" origin="0.5,0.5" />
+    <Sprite name="OAS" texture="%ModDir%/items/Jobgear/helmet.png" depth="0.55" sourcerect="1311,301,130,233" origin="0.35,0.5" />
+    <Body radius="130" height="233" density="13" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="silicon" />
+      <Item identifier="zinc" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="15" requiresrecipe="false">
+      <RequiredItem identifier="tsm_hengberley_star" amount="1" />
+      <RequiredItem identifier="autoinjectorheadset" amount="1" />
+      <RequiredItem identifier="silicon" amount="3" />
+      <RequiredItem identifier="tsm_ic" amount="1" />
+    </Fabricate>
+    <WifiComponent range="55000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <Upgrade gameversion="0.18.0.0">
+      <WifiComponent>
+        <RequiredItems items="" />
+      </WifiComponent>
+    </Upgrade>
+    <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+      <sprite name="Headset Wearable" texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="1311,301,130,233" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.25" hideotherwearables="false" origin="0.8,0.6" />
+      <StatusEffect type="OnWearing" target="Character,Contained" noninteractable="true" condition="-10" targetslot="0">
+        <ReduceAffliction type="bloodloss" amount="2.5" />
+        <RequiredItem items="antibloodloss1" type="Contained" targetslot="0" />
+        <Conditional bloodloss="gt 5.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character,Contained" condition="-5" targetslot="0">
+        <ReduceAffliction type="bloodloss" amount="6" />
+        <RequiredItem items="antibloodloss2" type="Contained" targetslot="0" />
+        <Conditional bloodloss="gt 5.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character,Contained" condition="-5" targetslot="0">
+        <Affliction identifier="psychosis" amount="2.25" />
+        <ReduceAffliction type="bloodloss" amount="6" />
+        <RequiredItem items="alienblood" type="Contained" targetslot="0" />
+        <Conditional bloodloss="gt 5.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character,Contained" comparison="or" condition="-10" targetslot="1">
+        <ReduceAffliction type="damage" amount="5" />
+        <ReduceAffliction type="burn" amount="0.1" />
+        <Affliction identifier="oxygenlow" amount="2" />
+        <Affliction identifier="opiateaddiction" amount="0.5" />
+        <Affliction identifier="opiateoverdose" amount="1.0" />
+        <ReduceAffliction identifier="opiatewithdrawal" amount="3.0" />
+        <RequiredItem items="antidama1" type="Contained" targetslot="1" />
+        <Conditional internaldamage="gt 0.0" />
+        <Conditional blunttrauma="gt 0.0" />
+        <Conditional lacerations="gt 0.0" />
+        <Conditional bitewounds="gt 0.0" />
+        <Conditional gunshotwound="gt 0.0" />
+        <Conditional organdamage="gt 0.0" />
+        <Conditional explosiondamage="gt 0.0" />
+        <Conditional concussion="gt 0.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character,Contained" comparison="or" condition="-20" targetslot="1">
+        <ReduceAffliction type="damage" amount="15" />
+        <ReduceAffliction type="burn" amount="1" />
+        <Affliction identifier="oxygenlow" amount="6" />
+        <Affliction identifier="opiateaddiction" amount="1.5" />
+        <Affliction identifier="opiateoverdose" amount="4.5" />
+        <ReduceAffliction identifier="opiatewithdrawal" amount="20" />
+        <RequiredItem items="antidama2" type="Contained" targetslot="1" />
+        <Conditional internaldamage="gt 0.0" />
+        <Conditional blunttrauma="gt 0.0" />
+        <Conditional lacerations="gt 0.0" />
+        <Conditional bitewounds="gt 0.0" />
+        <Conditional gunshotwound="gt 0.0" />
+        <Conditional organdamage="gt 0.0" />
+        <Conditional explosiondamage="gt 0.0" />
+        <Conditional concussion="gt 0.0" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character,Contained" comparison="or" condition="-5" targetslot="1">
+        <Affliction identifier="burn" amount="0.02" />
+        <ReduceAffliction type="damage" amount="3" />
+        <ReduceAffliction identifier="oxygenlow" amount="3" />
+        <ReduceAffliction identifier="bloodloss" amount="2" />
+        <RequiredItem items="deusizine" type="Contained" targetslot="1" />
+        <Conditional internaldamage="gt 0.0" />
+        <Conditional blunttrauma="gt 0.0" />
+        <Conditional lacerations="gt 0.0" />
+        <Conditional bitewounds="gt 0.0" />
+        <Conditional gunshotwound="gt 0.0" />
+        <Conditional organdamage="gt 0.0" />
+        <Conditional explosiondamage="gt 0.0" />
+        <Conditional concussion="gt 0.0" />
+        <Conditional bloodloss="gt 5.0" />
+        <Conditional oxygenlow="gt 50.0" />
+      </StatusEffect>
+    </Wearable>
+    <ItemContainer capacity="0" maxstacksize="0" autoinject="false" containedstateindicatorstyle="syringe">
+      <Containable items="none" />
+      <SlotIcon slotindex="0" texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,448,64,64" origin="0.5,0.45" />
+      <SlotIcon slotindex="1" texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,448,64,64" origin="0.5,0.45" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="antibloodloss1,antibloodloss2,alienblood" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="antidama1,antidama2,deusizine" />
+      </SubContainer>
+    </ItemContainer>
+  </Item>
+  <Item name="贝雷帽" identifier="tsm_beret" subcategory="TSM" category="Equipment" tags="smallitem,clothing" impactsoundtag="impact_metal_heavy" scale="0.4" cargocontaineridentifier="metalcrate">
+    <Deconstruct time="10">
+      <Item identifier="plastic" />
+      <Item identifier="rubber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="rubber" />
+    </Fabricate>
+    <Sprite name="beret hat" texture="%ModDir%/items/Jobgear/helmet.png" depth="0.6" sourcerect="1889,274,85,47" origin="0.5,0.5" />
+    <Body width="85" height="47" density="10" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <SkillModifier skillidentifier="helm" skillvalue="5" />
+      <sprite name="beret hat Wearable" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.6" hidelimb="false" sourcerect="1889,274,85,47" origin="0.52,1.3" />
+    </Wearable>
+  </Item>
+  <!--联盟-->
+  <Item name="联盟快速反应头盔" identifier="lm_rapidreaction_helmet" subcategory="tsm_coalition" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.35">
+    <Upgrade gameversion="0.18.0.0" scale="0.3" />
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+      <Item identifier="titanium" />
+    </Deconstruct>
+    <Sprite name="rapidreaction Helmet" texture="%ModDir%/items/Jobgear/rapid_reaction_female.png" sourcerect="422,4,90,86" depth="0.58" origin="0.5,0.5" />
+    <Body radius="35" density="50" />
+    <Wearable slots="Any,Head" armorvalue="30.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="triton_7L" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="tsm_bl" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.5" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="rapidreaction Helmet" texture="%ModDir%/items/Jobgear/rapid_reaction_female.png" limb="Head" inheritlimbdepth="true" inheritscale="false" scale="0.32" hidelimb="true" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="422,4,90,86" origin="0.5,0.57">
+        <LightComponent LightColor="150,255,150,100" range="1600" castshadows="false" powerconsumption="infinity" IsOn="true" flicker="0.1" flickerspeed="0.33" pulsefrequency="0.1" pulseamount="0.1" />
+      </sprite>
+      <StatValue stattype="movementspeed" value="-0.01" />
+      <StatusEffect type="OnWearing" target="Contained,Character" interval="0.1" Condition="-0.015" disabledeltatime="true">
+        <Affliction identifier="tsm_nightvision" amount="60" />
+        <Conditional targetcontainer="true" targetitemcomponent="LightComponent" IsOn="true" />
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This,Character" voltage="1.0" interval="0.1" setvalue="true" comparison="and">
+        <Conditional IsLocalPlayer="true" tsm_nightvision="gt 0" />
+      </StatusEffect>
+    </Wearable>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <Containable items="mobilebattery" />
+    </ItemContainer>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
+      <GuiFrame relativesize="0.083,0.04" anchor="BottomLeft" relativeoffset="0.0043,0.4" style="ItemUI" />
+      <TickBox text="nightvision">
+        <StatusEffect type="OnUse" targettype="This" IsOn="true" HudTint="50,255,50,30" interval="0.1" />
+        <StatusEffect type="OnSecondaryUse" targettype="This" IsOn="false" HudTint="0,0,0,0" interval="0.1" />
+      </TickBox>
+    </CustomInterface>
+  </Item>
+  <Item name="联盟突击头盔" identifier="lm_fast_helmet" subcategory="tsm_coalition" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.2">
+    <Price baseprice="331">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="steel" amount="1" />
+      <RequiredItem identifier="ballisticfiber" amount="1" />
+      <RequiredItem identifier="organicfiber" amount="1" />
+    </Fabricate>
+    <Sprite name="fast Helmet headset icon" texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="3,9,138,105" depth="0.58" origin="0.5,0.5" />
+    <Body width="138" height="105" density="13" />
+    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="" deflectprojectiles="true" />
+      <sprite name="fast Helmet headset" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" scale="0.4" ignorelimbscale="true" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="3,9,138,105" origin="0.56,0.78" />
+      <StatValue stattype="movementspeed" value="-0.01" />
+    </Wearable>
+  </Item>
+  <Item name="联盟突击头盔（防弹面罩）" identifier="lm_fast_helmet_faceshield" subcategory="tsm_coalition" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.2">
+    <Deconstruct time="10">
+      <Item identifier="titanium" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredItem identifier="lm_fast_helmet_headset" amount="1" />
+      <RequiredItem identifier="tsm_ballistic_faceshield_big" amount="1" />
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem identifier="aluminium" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredItem identifier="lm_fast_helmet_faceshield" amount="1" />
+    </Fabricate>
+    <Sprite name="fast Helmet icon" texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="3,525,170,135" depth="0.58" origin="0.5,0.5" />
+    <Body width="170" height="135" density="17" />
+    <Wearable slots="Any,Head" armorvalue="30.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="fast Helmet" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.42" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="3,525,170,135" origin="0.47,0.59" />
+      <StatValue stattype="movementspeed" value="-0.02" />
+      <!--StatusEffect type="OnWearing" target="This" comparison="And" setvalue="true">
+        <RequiredItem items="tsm_ballistic_faceshield_big" type="Contained" />
+        <Conditional Condition="gt 0" />
+        <SpawnItem identifier="tsm_collider_head" spawnposition="This" targetlimb="Head" limb="Head"/>
+      </StatusEffect-->
+    </Wearable>
+    <!--ItemContainer capacity="1" hideitems="false" keepopenwhenequipped="false" movableframe="false" showcontainedstateindicator="false">
+      <SlotIcon texture="%ModDir%/png/ui.png" sourcerect="1166,571,113,70" />
+      <Containable items="tsm_ballistic_faceshield_big">
+        <StatusEffect type="OnWearing" target="Contained" Interval="1" disabledeltatime="true" condition="-2">
+          <Conditional tsm_ondamaged_head="gt 0" TargetContainer="true" TargetGrandparent="true" />
+        </StatusEffect>
+      </Containable>
+    </ItemContainer-->
+    <WifiComponent range="40000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <Upgrade gameversion="0.18.0.0">
+      <WifiComponent>
+        <RequiredItems items="" />
+      </WifiComponent>
+    </Upgrade>
+  </Item>
+  <Item name="联盟突击头盔（热成像）" identifier="lm_fast_helmet_thermalgoggles" subcategory="tsm_coalition" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.2">
+    <Deconstruct time="10">
+      <Item identifier="titanium" />
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredItem identifier="lm_fast_helmet_headset" amount="1" />
+      <RequiredItem identifier="tsm_helmet_thermalgoggles" amount="1" />
+      <RequiredItem identifier="plastic" amount="1" />
+      <RequiredItem identifier="aluminium" amount="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredItem identifier="lm_fast_helmet_thermalgoggles" amount="1" />
+    </Fabricate>
+    <Sprite name="fast Helmet icon" texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="3,349,212,121" depth="0.58" origin="0.5,0.5" />
+    <Body width="212" height="121" density="16" />
+    <Wearable slots="Any,Head" armorvalue="25.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="" deflectprojectiles="true" />
+      <sprite name="fast Helmet" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.41" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="3,349,212,121" origin="0.4,0.73">
+        <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true" />
+      </sprite>
+      <StatValue stattype="movementspeed" value="-0.02" />
+    </Wearable>
+    <StatusHUD range="3000" showdeadcharacters="false">
+      <StatusEffect type="OnWearing" target="This,Character" drawhudwhenequipped="true" thermalgoggles="true" setvalue="true" comparison="And">
+        <Conditional HasStatusTag="eq active" />
+        <Conditional drawhudwhenequipped="eq false" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This,Character" drawhudwhenequipped="false" thermalgoggles="false" setvalue="true" comparison="And">
+        <Conditional HasStatusTag="neq active" />
+        <Conditional drawhudwhenequipped="eq true" />
+      </StatusEffect>
+    </StatusHUD>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <Containable items="mobilebattery" />
+      <StatusEffect type="OnWearing" target="Contained" condition="-0.45" disabledeltatime="true" interval="1">
+        <RequiredItem items="batterycell" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained" condition="-0.3" disabledeltatime="true" interval="1">
+        <RequiredItem items="fulguriumbatterycell" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" tags="active" duration="0.1" setvalue="true">
+        <Conditional condition="gt 0" targetcontained="true" />
+        <RequiredItem tag="mobilebattery" type="Contained" />
+      </StatusEffect>
+    </ItemContainer>
+    <WifiComponent range="40000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <Upgrade gameversion="0.18.0.0">
+      <WifiComponent>
+        <RequiredItems items="" />
+      </WifiComponent>
+    </Upgrade>
+  </Item>
+  <Item name="联盟突击头盔（护颚）" identifier="lm_fast_helmet_protectivejaw" subcategory="tsm_coalition" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.2">
+    <Deconstruct time="10">
+      <Item identifier="titanium" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredItem identifier="lm_fast_helmet_headset" amount="1" />
+      <RequiredItem identifier="tsm_protective_jaw" amount="1" />
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem identifier="steel" amount="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredItem identifier="lm_fast_helmet_protectivejaw" amount="1" />
+    </Fabricate>
+    <Sprite name="fast Helmet icon" texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="17,1046,138,146" depth="0.58" origin="0.5,0.5" />
+    <Body width="138" height="146" density="17" />
+    <Wearable slots="Any,Head" armorvalue="30.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="fast Helmet" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.42" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="17,1046,138,146" origin="0.54,0.53">
+        <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true" />
+      </sprite>
+      <StatValue stattype="movementspeed" value="-0.02" />
+    </Wearable>
+    <WifiComponent range="40000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <Upgrade gameversion="0.18.0.0">
+      <WifiComponent>
+        <RequiredItems items="" />
+      </WifiComponent>
+    </Upgrade>
+  </Item>
+  <Item name="联盟贝奥武夫中队头盔" identifier="lm_beowulf_helmet" subcategory="tsm_coalition" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.2">
+    <Deconstruct time="10">
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <Sprite name="beowulf Helmet icon" texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="7,865,138,146" depth="0.58" origin="0.5,0.5" />
+    <Body width="138" height="146" density="25" />
+    <Wearable slots="Any,Head" armorvalue="35.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="beowulf Helmet" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.4" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="7,865,138,146" origin="0.56,0.55">
+        <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true" />
+      </sprite>
+      <StatValue stattype="movementspeed" value="-0.03" />
+      <!--StatusEffect type="OnWearing" target="This" comparison="And" setvalue="true">
+        <RequiredItem items="tsm_ballistic_faceshield_big" type="Contained" />
+        <Conditional Condition="gt 0" />
+        <SpawnItem identifier="tsm_collider_head" spawnposition="This" targetlimb="Head" limb="Head"/>
+      </StatusEffect-->
+    </Wearable>
+    <!--ItemContainer capacity="1" hideitems="false" keepopenwhenequipped="false" movableframe="false" showcontainedstateindicator="false">
+      <SlotIcon texture="%ModDir%/png/ui.png" sourcerect="1166,571,113,70" />
+      <Containable items="tsm_ballistic_faceshield_big">
+        <StatusEffect type="OnWearing" target="Contained" Interval="1" disabledeltatime="true" condition="-2">
+          <Conditional tsm_ondamaged_head="gt 0" TargetContainer="true" TargetGrandparent="true" />
+        </StatusEffect>
+      </Containable>
+    </ItemContainer-->
+  </Item>
+  <Item name="联盟占领军作战头盔" identifier="lm_occupation_helmet" subcategory="tsm_coalition" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.1">
+    <Deconstruct time="10">
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <Sprite name="occupation Helmet icon" texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="1587,1649,342,290" depth="0.58" origin="0.5,0.5" />
+    <Body width="342" height="290" density="22" />
+    <Wearable slots="Any,Head" armorvalue="40.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="occupation Helmet" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" depthlimb="Torso" inheritscale="true" ignorelimbscale="true" scale="0.2" hidelimb="true" inheritorigin="false" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="1587,1649,342,290" origin="0.58,0.53">
+        <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true" />
+      </sprite>
+      <StatValue stattype="movementspeed" value="-0.03" />
+    </Wearable>
+  </Item>
+  <Item name="联盟重型作战头盔" identifier="lm_heavy_helmet" subcategory="tsm_coalition" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.2">
+    <Deconstruct time="10">
+      <Item identifier="titaniumaluminiumalloy" />
+      <Item identifier="tsm_item_box" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredItem identifier="lm_fast_helmet_faceshield" amount="1" />
+      <RequiredItem identifier="tsm_protective_jaw" amount="1" />
+      <RequiredItem identifier="tsm_item_box" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredItem identifier="lm_fast_helmet_protectivejaw" amount="1" />
+      <RequiredItem identifier="tsm_ballistic_faceshield_big" amount="1" />
+      <RequiredItem identifier="tsm_item_box" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredItem identifier="lm_heavy_helmet" amount="1" />
+    </Fabricate>
+    <Sprite name="occupation Helmet icon" texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="0,689,170,146" depth="0.58" origin="0.5,0.5" />
+    <Body width="170" height="146" density="23" />
+    <Wearable slots="Any,Head" armorvalue="40.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.65" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="occupation Helmet" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.41" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="0,689,170,146" origin="0.45,0.55">
+        <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true" />
+      </sprite>
+      <StatValue stattype="movementspeed" value="-0.03" />
+      <!--StatusEffect type="OnWearing" target="This" comparison="And" setvalue="true">
+        <RequiredItem items="tsm_ballistic_faceshield_big" type="Contained" />
+        <Conditional Condition="gt 0" />
+        <SpawnItem identifier="tsm_collider_head" spawnposition="This" targetlimb="Head" limb="Head"/>
+      </StatusEffect-->
+    </Wearable>
+    <!--ItemContainer capacity="1" hideitems="false" keepopenwhenequipped="false" movableframe="false" showcontainedstateindicator="false">
+      <SlotIcon texture="%ModDir%/png/ui.png" sourcerect="1166,571,113,70" />
+      <Containable items="tsm_ballistic_faceshield_big">
+        <StatusEffect type="OnWearing" target="Contained" Interval="1" disabledeltatime="true" condition="-2">
+          <Conditional tsm_ondamaged_head="gt 0" TargetContainer="true" TargetGrandparent="true" />
+        </StatusEffect>
+      </Containable>
+    </ItemContainer-->
+    <WifiComponent range="40000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <Upgrade gameversion="0.18.0.0">
+      <WifiComponent>
+        <RequiredItems items="" />
+      </WifiComponent>
+    </Upgrade>
+  </Item>
+  <Item name="联盟串扰小队头盔" identifier="lm_crosstalk_helmet" subcategory="tsm_coalition" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.2">
+    <Deconstruct time="10">
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <Sprite name="crosstalk Helmet icon" texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="1013,136,169,239" depth="0.58" origin="0.5,0.5" />
+    <Body width="169" height="239" density="15" />
+    <Wearable slots="Any,Head" armorvalue="40.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="crosstalk Helmet" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.4" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="1013,136,169,239" origin="0.53,0.4">
+        <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true" />
+      </sprite>
+      <StatValue stattype="movementspeed" value="-0.01" />
+    </Wearable>
+  </Item>
+  <Item name="联盟突击通讯头盔" identifier="lm_fast_helmet_headset" subcategory="tsm_coalition" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio,tsm_hashelmetinterface" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.15">
+    <Deconstruct time="10">
+      <Item identifier="plastic" />
+      <Item identifier="iron" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredItem identifier="tsm_plastic" amount="1" />
+      <RequiredItem identifier="iron" amount="1" />
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem identifier="headset" amount="1" />
+      <RequiredItem identifier="aluminium" amount="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredItem identifier="lm_fast_helmet_headset" amount="1" />
+    </Fabricate>
+    <Sprite name="fast Helmet icon" texture="%ModDir%/items/Jobgear/lm_helmet.png" sourcerect="143,156,214,187" depth="0.58" origin="0.5,0.5" />
+    <Body width="212" height="121" density="14" />
+    <StatusHUD overlaycolor="0,176,0,150" range="1500" thermalgoggles="false" showtexts="false" showdeadcharacters="false" drawhudwhenequipped="false" />
+    <Wearable slots="Any,Head" armorvalue="25.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0" damagesound="" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="triton_7L" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="tsm_bl" armorsector="0.0,360.0" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true" />
+      <StatValue stattype="movementspeed" value="-0.01" />
+      <sprite name="fast Helmet" texture="%ModDir%/items/Jobgear/lm_helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.27" hidelimb="False" inheritorigin="false" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="0,0,500,500" origin="0.53,0.56">
+        <LightComponent LightColor="166,200,166,200" range="1600" castshadows="false" powerconsumption="infinity" IsOn="true" flicker="0.1" flickerspeed="0.3" pulsefrequency="0.1" pulseamount="0.1" />
+      </sprite>
+      <StatusEffect type="OnWearing" target="Character" interval="0.5">
+        <LuaHook name="tsm_helmet_update" />
+      </StatusEffect>
+      <!--夜视仪-->
+      <StatusEffect type="OnWearing" target="This,Character" voltage="1.0" interval="0.1" setvalue="true" comparison="and">
+        <Conditional IsLocalPlayer="true" tsm_nightvision="gt 0" />
+        <RequiredItem items="tsm_helmet_nvd" type="Contained" targetslot="0" />
+      </StatusEffect>
+    </Wearable>
+    <WifiComponent range="30000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="false" allowuioverlap="true">
+      <GuiFrame relativesize="0.09,0.07" anchor="CenterRight" pivot="CenterRight" relativeoffset="-0.02,0.09" style="ItemUI" />
+      <TickBox text="tsm_on">
+        <StatusEffect type="OnUse" target="Contained" interval="0.5" targetslot="0" disabledeltatime="true" condition="-0.01">
+          <RequiredItems items="tsm_helmet_nvd" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="Contained" interval="0.5" targetslot="0" disabledeltatime="true" condition="-0.02">
+          <RequiredItems items="tsm_helmet_screen" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="Contained" interval="0.5" targetslot="0" disabledeltatime="true" condition="-0.02">
+          <Conditional InWater="false" />
+          <RequiredItems items="tsm_helmet_thermalgoggles" type="Contained" />
+        </StatusEffect>
+      </TickBox>
+    </CustomInterface>
+    <ItemContainer capacity="1" keepopenwhenequipped="false" movableframe="false" hideitems="true" maxstacksize="1" allowswappingcontaineditems="true">
+      <Containable items="tsm_helmet_nvd">
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable">
+          <LuaHook name="tsm_helmet_update" />
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable">
+          <LuaHook name="tsm_helmet_update" />
+        </StatusEffect>
+      </Containable>
+      <Containable items="tsm_ballistic_faceshield">
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable">
+          <LuaHook name="tsm_helmet_update" />
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable">
+          <LuaHook name="tsm_helmet_update" />
+        </StatusEffect>
+      </Containable>
+      <Containable items="tsm_helmet_thermalgoggles">
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable">
+          <LuaHook name="tsm_helmet_update" />
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable">
+          <LuaHook name="tsm_helmet_update" />
+        </StatusEffect>
+      </Containable>
+      <Containable items="tsm_helmet_screen">
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable">
+          <LuaHook name="tsm_helmet_update" />
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable">
+          <LuaHook name="tsm_helmet_update" />
+        </StatusEffect>
+      </Containable>
+      <Containable items="tsm_ballistic_faceshield_aerjin">
+        <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable">
+          <LuaHook name="tsm_helmet_update" />
+        </StatusEffect>
+        <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable">
+          <LuaHook name="tsm_helmet_update" />
+        </StatusEffect>
+      </Containable>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="tsm_protective_jaw">
+          <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable">
+            <LuaHook name="tsm_helmet_update" />
+          </StatusEffect>
+          <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable">
+            <ReduceAffliction type="tsm_armor_jaw" amount="50" />
+            <LuaHook name="tsm_helmet_update" />
+          </StatusEffect>
+        </Containable>
+        <Containable items="tsm_helmet_diving">
+          <StatusEffect type="OnWearing" target="Character" OxygenAvailable="1000.0" UseHullOxygen="false" />
+          <StatusEffect type="OnWearing" target="Contained" Condition="-0.3" comparison="And">
+            <Conditional TargetContainer="true" TargetGrandparent="true" IsDead="false" />
+            <Conditional TargetContainer="true" TargetGrandparent="true" DecreasedOxygenConsumption="lt 99" />
+            <Conditional TargetContainer="true" TargetGrandparent="true" NeedsAir="true" />
+          </StatusEffect>
+          <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable">
+            <LuaHook name="tsm_helmet_update" />
+          </StatusEffect>
+          <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable">
+            <LuaHook name="tsm_helmet_update" />
+          </StatusEffect>
+        </Containable>
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="tsm_helmet_flashlight">
+          <StatusEffect type="OnInserted" target="This" disabledeltatime="true" targetitemcomponent="Wearable" drawhudwhenequipped="true">
+            <LuaHook name="tsm_helmet_update" />
+          </StatusEffect>
+          <StatusEffect type="OnRemoved" target="This" disabledeltatime="true" targetitemcomponent="Wearable" drawhudwhenequipped="false">
+            <LuaHook name="tsm_helmet_update" />
+          </StatusEffect>
+        </Containable>
+      </SubContainer>
+    </ItemContainer>
+  </Item>
+  <!--反抗军-->
+  <Item name="反抗军突击头盔" identifier="fkj_fast_helmet" subcategory="tsm_separatists" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.2">
+    <Price baseprice="331">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" sold="false" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="steel" amount="1" />
+      <RequiredItem identifier="ballisticfiber" amount="1" />
+      <RequiredItem identifier="organicfiber" amount="1" />
+    </Fabricate>
+    <Sprite name="fast Helmet headset icon" texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="272,3,136,100" depth="0.58" origin="0.5,0.5" />
+    <Body width="136" height="100" density="13" />
+    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="" deflectprojectiles="true" />
+      <sprite name="fast Helmet headset" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.42" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="272,3,136,100" origin="0.53,0.75" />
+      <StatValue stattype="movementspeed" value="-0.01" />
+    </Wearable>
+  </Item>
+  <Item name="反抗军增强型突击头盔" identifier="fkj_fast_helmet_reinforce" subcategory="tsm_separatists" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.2">
+    <Deconstruct time="10">
+      <Item identifier="iron" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredItem identifier="fkj_fast_helmet" amount="1" />
+      <RequiredItem identifier="iron" amount="2" />
+      <RequiredItem identifier="plastic" amount="2" />
+    </Fabricate>
+    <Sprite name="fast Helmet icon" texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="272,178,136,108" depth="0.58" origin="0.5,0.5" />
+    <Body width="136" height="108" density="15" />
+    <Wearable slots="Any,Head" armorvalue="25.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.35" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="fast Helmet" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.42" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="272,178,136,108" origin="0.55,0.69"></sprite>
+      <StatValue stattype="movementspeed" value="-0.015" />
+    </Wearable>
+  </Item>
+  <Item name="反抗军热成像头盔" identifier="fkj_fast_helmet_thermalgoggles" subcategory="tsm_separatists" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.2">
+    <Deconstruct time="10">
+      <Item identifier="titanium" />
+      <Item identifier="aluminium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredItem identifier="fkj_fast_helmet_reinforce" amount="1" />
+      <RequiredItem identifier="tsm_helmet_thermalgoggles" amount="1" />
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem identifier="aluminium" amount="2" />
+    </Fabricate>
+    <Sprite name="fast Helmet icon" texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="273,349,204,108" depth="0.58" origin="0.5,0.5" />
+    <Body width="204" height="108" density="16" />
+    <Wearable slots="Any,Head" armorvalue="25.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="" deflectprojectiles="true" />
+      <sprite name="fast Helmet" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.42" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="273,349,204,108" origin="0.4,0.78">
+        <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true"></StatusEffect>
+      </sprite>
+      <StatValue stattype="movementspeed" value="-0.02" />
+    </Wearable>
+    <StatusHUD range="3000" showdeadcharacters="false">
+      <StatusEffect type="OnWearing" target="This,Character" drawhudwhenequipped="true" thermalgoggles="true" setvalue="true" comparison="And">
+        <Conditional HasStatusTag="eq active" />
+        <Conditional drawhudwhenequipped="eq false" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This,Character" drawhudwhenequipped="false" thermalgoggles="false" setvalue="true" comparison="And">
+        <Conditional HasStatusTag="neq active" />
+        <Conditional drawhudwhenequipped="eq true" />
+      </StatusEffect>
+    </StatusHUD>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <Containable items="mobilebattery" />
+      <StatusEffect type="OnWearing" target="Contained" condition="-0.45" disabledeltatime="true" interval="1">
+        <RequiredItem items="batterycell" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Contained" condition="-0.3" disabledeltatime="true" interval="1">
+        <RequiredItem items="fulguriumbatterycell" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" tags="active" duration="0.1" setvalue="true">
+        <Conditional condition="gt 0" targetcontained="true" />
+        <RequiredItem tag="mobilebattery" type="Contained" />
+      </StatusEffect>
+    </ItemContainer>
+  </Item>
+  <Item name="反抗军尖锐突袭者头盔" identifier="fkj_Anonymous_helmet" subcategory="tsm_separatists" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.2">
+    <Deconstruct time="10">
+      <Item identifier="titanium" />
+      <Item identifier="rubber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredItem identifier="fkj_fast_helmet_reinforce" amount="1" />
+      <RequiredItem identifier="tsm_ballistic_faceshield_small" amount="1" />
+      <RequiredItem identifier="rubber" amount="4" />
+      <RequiredItem identifier="aluminium" amount="5" />
+    </Fabricate>
+    <Sprite name="Anonymous Helmet icon" texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="273,529,144,107" depth="0.58" origin="0.5,0.5" />
+    <Body width="144" height="107" density="17" />
+    <Wearable slots="Any,Head" armorvalue="30.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="tsm_bl" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="Anonymous Helmet" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.42" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="273,529,144,107" origin="0.52,0.75" />
+      <StatValue stattype="movementspeed" value="-0.02" />
+      <!--StatusEffect type="OnWearing" target="This" comparison="And" setvalue="true">
+        <RequiredItem items="tsm_ballistic_faceshield_small" type="Contained" />
+        <Conditional Condition="gt 0" />
+        <SpawnItem identifier="tsm_collider_head" spawnposition="This" targetlimb="Head" limb="Head"/>
+      </StatusEffect-->
+    </Wearable>
+    <!--ItemContainer capacity="1" hideitems="false" keepopenwhenequipped="false" movableframe="false" showcontainedstateindicator="false">
+      <SlotIcon texture="%ModDir%/png/ui.png" sourcerect="1187,706,71,88" />
+      <Containable items="tsm_ballistic_faceshield_small">
+        <StatusEffect type="OnWearing" target="Contained" Interval="1" disabledeltatime="true" condition="-2">
+          <Conditional tsm_ondamaged_head="gt 0" TargetContainer="true" TargetGrandparent="true" />
+        </StatusEffect>
+      </Containable>
+    </ItemContainer-->
+  </Item>
+  <Item name="反抗军精英头盔" identifier="fkj_heavy_helmet" subcategory="tsm_separatists" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.2">
+    <Deconstruct time="10">
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <Sprite name="respirator Helmet icon" texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="293,890,153,155" depth="0.58" origin="0.5,0.5" />
+    <Body width="153" height="155" density="18" />
+    <Holdable slots="RightHand" controlpose="true" holdpos="0,-30" handle1="-10,10" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
+    <Wearable slots="Any,Head" armorvalue="40.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.65" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="tsm_bl" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="radiationsickness" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="respirator Helmet" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.42" hidelimb="true" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="293,890,153,155" origin="0.50,0.55">
+        <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true" />
+      </sprite>
+      <!--StatusEffect type="OnWearing" target="This" comparison="And" setvalue="true">
+        <RequiredItem items="tsm_ballistic_faceshield_small" type="Contained" />
+        <Conditional Condition="gt 0" />
+        <SpawnItem identifier="tsm_collider_head" spawnposition="This" targetlimb="Head" limb="Head"/>
+      </StatusEffect-->
+      <StatusEffect type="OnWearing" target="This,Character" PressureProtection="1000.0" OxygenAvailable="1000.0" UseHullOxygen="false" />
+      <StatValue stattype="movementspeed" value="-0.02" />
+    </Wearable>
+    <!--ItemContainer capacity="1" hideitems="false" keepopenwhenequipped="false" movableframe="false" showcontainedstateindicator="false">
+      <SlotIcon texture="%ModDir%/png/ui.png" sourcerect="1187,706,71,88" />
+      <Containable items="tsm_ballistic_faceshield_small">
+        <StatusEffect type="OnWearing" target="Contained" Interval="1" disabledeltatime="true" condition="-2">
+          <Conditional tsm_ondamaged_head="gt 0" TargetContainer="true" TargetGrandparent="true" />
+        </StatusEffect>
+      </Containable>
+    </ItemContainer-->
+  </Item>
+  <Item name="野火反抗军作战头盔" identifier="fkj_yehuo_helmet" subcategory="tsm_separatists" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_heavy" scale="0.2">
+    <Deconstruct time="10">
+      <Item identifier="aluminium" />
+      <Item identifier="rubber" />
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="30">
+      <RequiredItem identifier="fkj_Anonymous_helmet" amount="1" />
+      <RequiredItem identifier="tsm_protective_jaw" amount="1" />
+      <RequiredItem identifier="rubber" amount="5" />
+      <RequiredItem identifier="aluminium" amount="4" />
+    </Fabricate>
+    <Sprite name="yehuo Helmet icon" texture="%ModDir%/items/Jobgear/helmet.png" sourcerect="288,701,144,153" depth="0.58" origin="0.5,0.5" />
+    <Body width="144" height="153" density="22" />
+    <Wearable slots="Any,Head" armorvalue="30.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="tsm_bl" armorsector="0.0,360.0" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <sprite name="yehuo Helmet" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.42" hidelimb="False" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="288,701,144,153" origin="0.51,0.54">
+        <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" ObstructVision="true" />
+      </sprite>
+      <StatValue stattype="movementspeed" value="-0.03" />
+      <!--StatusEffect type="OnWearing" target="This" comparison="And" setvalue="true">
+        <RequiredItem items="tsm_ballistic_faceshield_small" type="Contained" />
+        <Conditional Condition="gt 0" />
+        <SpawnItem identifier="tsm_collider_head" spawnposition="This" targetlimb="Head" limb="Head"/>
+      </StatusEffect-->
+    </Wearable>
+    <!--ItemContainer capacity="1" hideitems="false" keepopenwhenequipped="false" movableframe="false" showcontainedstateindicator="false">
+      <SlotIcon texture="%ModDir%/png/ui.png" sourcerect="1187,706,71,88" />
+      <Containable items="tsm_ballistic_faceshield_small">
+        <StatusEffect type="OnWearing" target="Contained" Interval="1" disabledeltatime="true" condition="-2">
+          <Conditional tsm_ondamaged_head="gt 0" TargetContainer="true" TargetGrandparent="true" />
+        </StatusEffect>
+      </Containable>
+    </ItemContainer-->
+  </Item>
+  <Item name="反抗军突击通讯头盔" identifier="fkj_fast_helmet_headset" subcategory="tsm_separatists" variantof="lm_fast_helmet_headset">
+    <Sprite name="fast Helmet icon" texture="%ModDir%/items/Jobgear/fkj_helmet.png" sourcerect="139,156,218,199" depth="0.58" origin="0.5,0.5" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredItem identifier="tsm_plastic" amount="1" />
+      <RequiredItem identifier="iron" amount="1" />
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem identifier="headset" amount="1" />
+      <RequiredItem identifier="aluminium" amount="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredItem identifier="fkj_fast_helmet_headset" amount="1" />
+    </Fabricate>
+    <Wearable>
+      <sprite name="fast Helmet" texture="%ModDir%/items/Jobgear/fkj_helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.27" hidelimb="False" inheritorigin="false" alphaclipotherwearables="false" hidewearablesoftype="Hair" sourcerect="0,0,500,500" origin="0.52,0.545" />
+    </Wearable>
+  </Item>
+  <!--其他-->
+  <Item name="奔尼帽" identifier="tsm_boonie_hat" subcategory="tsm" category="Equipment" hideinmenus="true" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" scale="0.11">
+    <PreferredContainer primary="secarmcab" />
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredItem identifier="tsm_boonie_hat" amount="1" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Price baseprice="402" buyingpricemultiplier="1" minleveldifficulty="0">
+      <Price locationtype="outpost" minavailable="0" maxavailable="2" />
+      <Price locationtype="city" minavailable="0" maxavailable="2" />
+      <Price locationtype="military" minavailable="1" maxavailable="3" />
+    </Price>
+    <Sprite name="boonie hat" texture="%ModDir%/items/Jobgear/helmet.png" depth="0.6" sourcerect="0,1238,331,135" origin="0.5,0.5" />
+    <Body width="341" height="135" density="10" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <sprite name="boonie hat Wearable" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.12" hidelimb="false" sourcerect="0,1238,331,135" origin="0.48,1" />
+      <SkillModifier skillidentifier="helm" skillvalue="20" />
+      <SkillModifier skillidentifier="weapons" skillvalue="20" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.9" />
+    </Wearable>
+  </Item>
+  <Item name="死神战术头罩" identifier="tsm_kl_hat" subcategory="tsm" category="Equipment" hideinmenus="true" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" scale="0.11">
+    <PreferredContainer primary="secarmcab" />
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredItem identifier="tsm_kl_hat" amount="1" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Price baseprice="402" buyingpricemultiplier="1" minleveldifficulty="0">
+      <Price locationtype="outpost" minavailable="0" maxavailable="2" />
+      <Price locationtype="city" minavailable="0" maxavailable="2" />
+      <Price locationtype="military" minavailable="1" maxavailable="3" />
+    </Price>
+    <WifiComponent range="35000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <Upgrade gameversion="0.18.0.0">
+      <WifiComponent>
+        <RequiredItems items="" />
+      </WifiComponent>
+    </Upgrade>
+    <Sprite name="dead hat" texture="%ModDir%/items/Jobgear/helmet.png" depth="0.6" sourcerect="411,1236,341,472" origin="0.5,0.5" />
+    <Body width="341" height="472" density="10" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <sprite name="dead hat Wearable" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.11" hidelimb="true" sourcerect="411,1236,341,472" origin="0.38,0.32" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      <StatusEffect type="OnWearing" target="This" cameraaimoffset="350" setvalue="true" interval="1" />
+      <StatValue stattype="movementspeed" value="-0.01" />
+    </Wearable>
+  </Item>
+  <Item name="战地通讯帽" identifier="tsm_mm_hat" subcategory="tsm" category="Equipment" hideinmenus="true" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" scale="0.1">
+    <PreferredContainer primary="secarmcab" />
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredItem identifier="tsm_mm_hat" amount="1" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Price baseprice="402" buyingpricemultiplier="1" minleveldifficulty="0">
+      <Price locationtype="outpost" minavailable="0" maxavailable="2" />
+      <Price locationtype="city" minavailable="0" maxavailable="2" />
+      <Price locationtype="military" minavailable="1" maxavailable="3" />
+    </Price>
+    <WifiComponent range="38000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <Upgrade gameversion="0.18.0.0">
+      <WifiComponent>
+        <RequiredItems items="" />
+      </WifiComponent>
+    </Upgrade>
+    <Sprite name="zdtx hat" texture="%ModDir%/items/Jobgear/helmet.png" depth="0.6" sourcerect="798,1239,333,319" origin="0.5,0.5" />
+    <Body width="333" height="319" density="10" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <sprite name="zdtx hat Wearable" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.1" hidelimb="false" hidewearablesoftype="Hair" sourcerect="798,1239,333,319" origin="0.38,0.45" />
+      <SkillModifier skillidentifier="helm" skillvalue="10" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.85" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      <damagemodifier afflictiontypes="stun" armorsector="0.0,360.0" damagemultiplier="0.85" />
+    </Wearable>
+  </Item>
+  <Item name="特战防护帽" identifier="tsm_mm2_hat" subcategory="tsm" category="Equipment" hideinmenus="true" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" scale="0.1">
+    <PreferredContainer primary="secarmcab" />
+    <Fabricate suitablefabricators="tsm_fabricator_quality" requiredtime="20" requiresrecipe="false">
+      <RequiredItem identifier="tsm_mm2_hat" amount="1" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Price baseprice="402" buyingpricemultiplier="1" minleveldifficulty="0">
+      <Price locationtype="outpost" minavailable="0" maxavailable="2" />
+      <Price locationtype="city" minavailable="0" maxavailable="2" />
+      <Price locationtype="military" minavailable="1" maxavailable="3" />
+    </Price>
+    <WifiComponent range="38000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <Upgrade gameversion="0.18.0.0">
+      <WifiComponent>
+        <RequiredItems items="" />
+      </WifiComponent>
+    </Upgrade>
+    <Sprite name="tzfh hat" texture="%ModDir%/items/Jobgear/helmet.png" depth="0.6" sourcerect="1179,1236,280,306" origin="0.5,0.5" />
+    <Body width="280" height="306" density="10" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <sprite name="tzfh hat Wearable" texture="%ModDir%/items/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" scale="0.1" hidelimb="false" hidewearablesoftype="Hair" sourcerect="1179,1236,280,306" origin="0.45,0.5" />
+      <SkillModifier skillidentifier="weapons" skillvalue="10" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.95" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      <damagemodifier afflictiontypes="stun" armorsector="0.0,360.0" damagemultiplier="0.85" />
+    </Wearable>
+  </Item>
+</Items>

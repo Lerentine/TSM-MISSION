@@ -1,0 +1,93 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\GitRepo\\LuaCsForBarotrauma\\Barotrauma\\bin\\DebugWindows\\net6.0\\LocalMods\\JiuzhouHint\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\GitRepo\\LuaCsForBarotrauma\\Barotrauma\\bin\\DebugWindows\\net6.0\\LocalMods\\JiuzhouHint\\CSharp\\Client\\HitHint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CSharp\\Client\\HitHint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\GitRepo\\LuaCsForBarotrauma\\Barotrauma\\bin\\DebugWindows\\net6.0\\LocalMods\\JiuzhouHint\\filelist.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:filelist.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\GitRepo\\LuaCsForBarotrauma\\Barotrauma\\bin\\DebugWindows\\net6.0\\LocalMods\\JiuzhouHint\\CSharp\\Client\\GUIExtensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CSharp\\Client\\GUIExtensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\GitRepo\\LuaCsForBarotrauma\\Barotrauma\\bin\\DebugWindows\\net6.0\\LocalMods\\JiuzhouHint\\CSharp\\RunConfig.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CSharp\\RunConfig.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HitHint.cs",
+              "DocumentMoniker": "C:\\GitRepo\\LuaCsForBarotrauma\\Barotrauma\\bin\\DebugWindows\\net6.0\\LocalMods\\JiuzhouHint\\CSharp\\Client\\HitHint.cs",
+              "RelativeDocumentMoniker": "CSharp\\Client\\HitHint.cs",
+              "ToolTip": "C:\\GitRepo\\LuaCsForBarotrauma\\Barotrauma\\bin\\DebugWindows\\net6.0\\LocalMods\\JiuzhouHint\\CSharp\\Client\\HitHint.cs",
+              "RelativeToolTip": "CSharp\\Client\\HitHint.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T05:13:30.629Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "filelist.xml",
+              "DocumentMoniker": "C:\\GitRepo\\LuaCsForBarotrauma\\Barotrauma\\bin\\DebugWindows\\net6.0\\LocalMods\\JiuzhouHint\\filelist.xml",
+              "RelativeDocumentMoniker": "filelist.xml",
+              "ToolTip": "C:\\GitRepo\\LuaCsForBarotrauma\\Barotrauma\\bin\\DebugWindows\\net6.0\\LocalMods\\JiuzhouHint\\filelist.xml",
+              "RelativeToolTip": "filelist.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-02-20T05:15:32.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RunConfig.xml",
+              "DocumentMoniker": "C:\\GitRepo\\LuaCsForBarotrauma\\Barotrauma\\bin\\DebugWindows\\net6.0\\LocalMods\\JiuzhouHint\\CSharp\\RunConfig.xml",
+              "RelativeDocumentMoniker": "CSharp\\RunConfig.xml",
+              "ToolTip": "C:\\GitRepo\\LuaCsForBarotrauma\\Barotrauma\\bin\\DebugWindows\\net6.0\\LocalMods\\JiuzhouHint\\CSharp\\RunConfig.xml",
+              "RelativeToolTip": "CSharp\\RunConfig.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-02-20T05:15:31.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GUIExtensions.cs",
+              "DocumentMoniker": "C:\\GitRepo\\LuaCsForBarotrauma\\Barotrauma\\bin\\DebugWindows\\net6.0\\LocalMods\\JiuzhouHint\\CSharp\\Client\\GUIExtensions.cs",
+              "RelativeDocumentMoniker": "CSharp\\Client\\GUIExtensions.cs",
+              "ToolTip": "C:\\GitRepo\\LuaCsForBarotrauma\\Barotrauma\\bin\\DebugWindows\\net6.0\\LocalMods\\JiuzhouHint\\CSharp\\Client\\GUIExtensions.cs",
+              "RelativeToolTip": "CSharp\\Client\\GUIExtensions.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T05:13:29.441Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

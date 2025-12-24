@@ -1,0 +1,1464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<npcsets>
+  <!--定制-->
+  <npcset identifier="Combat_Npc_Customisation">
+    <!--联盟部队-->
+    <!--莫哈维邮差-->
+    <npc identifier="coalition_themohavemailman" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="5" aimaccuracy="1" reportrange="1500" skillmultiplier="2">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_stormyseas_uniform" equip="true" />
+        <Item identifier="lm_vest_elite" equip="true" />
+        <Item identifier="lm_fast_helmet_faceshield" equip="true" />
+        <Item identifier="headset" equip="true" />
+        <Item identifier="tsm_enhancement_ai" />
+        <Item identifier="tsm_medicalkits">
+          <Item identifier="tsm_enhancement_bing" />
+        </Item>
+        <Item identifier="tsm_lm_aug" equip="true">
+          <Item identifier="lm_556_mag" amount="6" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--赛伊德-->
+    <npc identifier="coalition_syd" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="5" aimaccuracy="0.6" reportrange="2000" skillmultiplier="2">
+      <ItemSet commonness="0.7">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_stormyseas_uniform" equip="true" />
+        <Item identifier="lm_vest_pt" equip="true" />
+        <Item identifier="divingknife">
+          <Item identifier="lm_fast_helmet_headset" equip="true" />
+        </Item>
+        <Item identifier="tsm_lm_m249" equip="true">
+          <Item identifier="tsm_556_45_mgmag" amount="3" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--AloneFllen-->
+    <npc identifier="coalition_AloneFllen" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="5" aimaccuracy="1" reportrange="1500" skillmultiplier="2">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_stormyseas_uniform" equip="true" />
+        <Item identifier="lm_vest_elite" equip="true" />
+        <Item identifier="lm_fast_helmet_faceshield" equip="true" />
+        <Item identifier="headset" equip="true" />
+        <Item identifier="tsm_enhancement_ai" />
+        <Item identifier="tsm_medicalkits">
+          <Item identifier="tsm_enhancement_bing" />
+        </Item>
+        <Item identifier="tsm_lm_aug" equip="true">
+          <Item identifier="lm_556_mag" amount="6" />
+        </Item>
+      </ItemSet>
+    </npc>
+
+    <!--反抗军部队-->
+    <!--RBQ-->
+    <npc identifier="separatists_rbq" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="10" aimaccuracy="1" reportrange="1500" skillmultiplier="2">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="fkj_abyssrambler_uniform" equip="true" />
+        <Item identifier="fkj_vest_elite" equip="true" />
+        <Item identifier="fkj_fast_helmet_reinforce" equip="true" />
+        <Item identifier="headset" equip="true" />
+        <Item identifier="tsm_enhancement_ai" />
+        <Item identifier="tsm_medicalkits">
+          <Item identifier="tsm_enhancement_bing" />
+        </Item>
+        <Item identifier="tsm_fkj_ak103_l" equip="true">
+          <Item identifier="fkj_762_mag" amount="6" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="fkj_abyssrambler_uniform" equip="true" />
+        <Item identifier="fkj_vest_elite" equip="true" />
+        <Item identifier="fkj_fast_helmet_reinforce" equip="true" />
+        <Item identifier="headset" equip="true" />
+        <Item identifier="tsm_enhancement_ai" />
+        <Item identifier="tsm_medicalkits">
+          <Item identifier="tsm_enhancement_bing" />
+        </Item>
+        <Item identifier="tsm_fkj_ak105_l" equip="true">
+          <Item identifier="fkj_545_mag" amount="6" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--000032-->
+    <npc identifier="separatists_000032" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="5" aimaccuracy="1" reportrange="1000" skillmultiplier="2">
+      <ItemSet commonness="0.4">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="fkj_abyssrambler_uniform" equip="true" />
+        <Item identifier="fkj_vest_pt" equip="true" />
+        <Item identifier="fkj_fast_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_bing" />
+        <Item identifier="headset" equip="true">
+          <Item identifier="tsm_enhancement_ai" />
+        </Item>
+        <Item identifier="tsm_fkj_ak103" equip="true">
+          <Item identifier="fkj_762_mag" amount="6" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.4">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="fkj_abyssrambler_uniform" equip="true" />
+        <Item identifier="fkj_vest_pt" equip="true" />
+        <Item identifier="fkj_fast_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_bing" />
+        <Item identifier="headset" equip="true">
+          <Item identifier="tsm_enhancement_ai" />
+        </Item>
+        <Item identifier="tsm_fkj_ak105" equip="true">
+          <Item identifier="fkj_545_mag" amount="6" />
+        </Item>
+      </ItemSet>
+    </npc>
+
+    <!--贝奥武夫-->
+    <!--殤-凌-->
+    <npc identifier="beowulf_sl" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="25" aimaccuracy="1" reportrange="2000" skillmultiplier="5">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_beowulf_uniform" equip="true" />
+        <Item identifier="lm_vest_beowulf" equip="true" />
+        <Item identifier="lm_beowulf_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_ai" />
+        <Item identifier="tsm_medicalkits_s">
+          <Item identifier="tsm_enhancement_jia" />
+        </Item>
+        <Item identifier="tsm_lm_mk18" equip="true">
+          <Item identifier="tsm_grip_reload" equip="true"/>
+          <Item identifier="tsm_sight_tripled" equip="true"/>
+          <Item identifier="tsm_recoil" equip="true"/>
+          <Item identifier="tsm_reload_speed" equip="true"/>
+          <Item identifier="lm_556gb_mag" amount="1" />
+          <Item identifier="lm_556cj_mag" amount="6" />
+          <Item identifier="tsm_beowulf" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--狐狸杀手-->
+    <npc identifier="beowulf_fox" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="25" aimaccuracy="1" reportrange="2000" skillmultiplier="3">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_beowulf_uniform" equip="true" />
+        <Item identifier="lm_vest_elite" equip="true" />
+        <Item identifier="lm_fast_helmet_protectivejaw" equip="true" />
+        <Item identifier="tsm_enhancement_combatship" />
+        <Item identifier="ceremonialsword">
+          <Item identifier="tsm_ai_grenade" equip="true" />
+        </Item>
+        <Item identifier="tsm_lm_m4" equip="true">
+          <Item identifier="tsm_flame_arrester" equip="true" />
+          <Item identifier="tsm_grip_thumb" equip="true" />
+          <Item identifier="tsm_sight_holographic" equip="true" />
+          <Item identifier="lm_556_physicorium_mag" amount="1" />
+          <Item identifier="lm_556cj_mag" amount="1" />
+          <Item identifier="lm_556cj_mag" amount="5" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_beowulf_uniform" equip="true" />
+        <Item identifier="lm_vest_beowulf" equip="true" />
+        <Item identifier="lm_fast_helmet_protectivejaw" equip="true" />
+        <Item identifier="tsm_enhancement_combatship" />
+        <Item identifier="ceremonialsword">
+          <Item identifier="tsm_medicalkits" />
+        </Item>
+        <Item identifier="tsm_lm_mk18" equip="true">
+          <Item identifier="tsm_recoil" equip="true" />
+          <Item identifier="tsm_grip_triangle" equip="true" />
+          <Item identifier="tsm_sight_double" equip="true" />
+          <Item identifier="lm_556_sulphuriteshard_mag" amount="1" />
+          <Item identifier="lm_556_incendium_mag" amount="1" />
+          <Item identifier="lm_556cj_mag" amount="1" />
+          <Item identifier="lm_556_mag" amount="4" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--罗威尔Roware-->
+    <npc identifier="beowulf_roware" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="25" aimaccuracy="1" reportrange="2000" skillmultiplier="5">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_beowulf_uniform" equip="true" />
+        <Item identifier="lm_vest_beowulf" equip="true" />
+        <Item identifier="lm_beowulf_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_ai" />
+        <Item identifier="tsm_medicalkits_s">
+          <Item identifier="tsm_enhancement_jia" />
+        </Item>
+        <Item identifier="tsm_lm_m4" equip="true">
+          <Item identifier="tsm_grip_reload" equip="true"/>
+          <Item identifier="tsm_flame_arrester" equip="true"/>
+          <Item identifier="lm_556gb_mag" amount="2" />
+          <Item identifier="lm_556cj_mag" amount="6" />
+        </Item>
+      </ItemSet>
+    </npc>
+
+    <!--快速反应-->
+    <!--月影-->
+    <npc identifier="moon_shadow" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="20" aimaccuracy="1" reportrange="2000" skillmultiplier="3">
+      <ItemSet commonness="0.6">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_rapidreaction_uniform" equip="true" />
+        <Item identifier="lm_rapidreaction_vest" equip="true" />
+        <Item identifier="lm_rapidreaction_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_combatship" />
+        <Item identifier="headset" equip="true">
+          <Item identifier="tsm_medicalkits" />
+        </Item>
+        <Item identifier="tsm_lm_aug" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
+          <Item identifier="lm_556gb_mag" amount="2" />
+          <Item identifier="lm_556_mag" amount="6" />
+        </Item>
+        <Item identifier="tsm_1911_pistols" equip="false">
+          <Item identifier="tsm_1143_mag" amount="3" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.4">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_rapidreaction_uniform" equip="true" />
+        <Item identifier="lm_rapidreaction_vest" equip="true" />
+        <Item identifier="lm_rapidreaction_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_combatship" />
+        <Item identifier="headset" equip="true">
+          <Item identifier="tsm_medicalkits" />
+        </Item>
+        <Item identifier="tsm_lm_97" equip="true">
+          <Item identifier="lm_556gb_mag" amount="2" />
+          <Item identifier="lm_556_mag" amount="6" />
+        </Item>
+        <Item identifier="tsm_1911_pistols" equip="false">
+          <Item identifier="tsm_1143_mag" amount="3" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--串扰侵袭-->
+    <!--天洁-->
+    <npc identifier="crosstalk_tianjie" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="20" aimaccuracy="1" reportrange="2000" skillmultiplier="3">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_stormyseas_uniform" equip="true" />
+        <Item identifier="lm_vest_elite" equip="true" />
+        <Item identifier="lm_fast_helmet_faceshield" equip="true" />
+        <Item identifier="tsm_enhancement_ai" />
+        <Item identifier="headset" equip="true">
+          <Item identifier="tsm_enhancement_yi" />
+        </Item>
+        <Item identifier="tsm_lm_aug" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
+          <Item identifier="lm_556cj_mag" amount="1" />
+          <Item identifier="lm_556_mag" amount="5" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--ckhs233-->
+    <npc identifier="crosstalk_ckhs233" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="20" aimaccuracy="1" reportrange="2000" skillmultiplier="3">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_stormyseas_uniform" equip="true" />
+        <Item identifier="lm_vest_elite" equip="true" />
+        <Item identifier="lm_fast_helmet_faceshield" equip="true" />
+        <Item identifier="tsm_enhancement_ai" />
+        <Item identifier="headset" equip="true">
+          <Item identifier="tsm_enhancement_yi" />
+        </Item>
+        <Item identifier="tsm_lm_aug" equip="true">
+          <Item identifier="lm_556cj_mag" amount="1" />
+          <Item identifier="lm_556_mag" amount="5" />
+        </Item>
+      </ItemSet>
+    </npc>
+
+    <!--咏叹调-->
+    <!--菲尼安娜-->
+    <npc identifier="tsm_soldier_Finianna" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="20" aimaccuracy="1" reportrange="2000" skillmultiplier="3">
+      <ItemSet commonness="0.7">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_helmet_respirator" equip="true" />
+        <Item identifier="tsm_pqc_melee">
+          <Item identifier="tsm_enhancement_combatship" />
+        </Item>
+        <Item identifier="tsm_qbz_191" equip="true">
+          <Item identifier="tsm_grip_cqr" equip="true" />
+          <Item identifier="tsm_recoil" equip="true" />
+          <Item identifier="tsm_sight_tripled" equip="true" />
+          <Item identifier="tsm_58_drum_cj" amount="4" />
+          <Item identifier="tsm_58_fulgurium_mag" amount="2" />
+        </Item>
+        <Item identifier="tsm_fn509_pistols" equip="true">
+          <Item identifier="tsm_9_krmag" amount="3" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.2">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_helmet_respirator" equip="true" />
+        <Item identifier="tsm_pmf_melee">
+          <Item identifier="tsm_enhancement_combatship" />
+        </Item>
+        <Item identifier="tsm_thbq" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
+          <Item identifier="tsm_magazinebg" amount="2" />
+          <Item identifier="tsm_magazine" amount="5" />
+          <Item identifier="tsm_identifier" amount="1" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.4">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_helmet_respirator" equip="true" />
+        <Item identifier="tsm_pmf_melee">
+          <Item identifier="tsm_enhancement_combatship" />
+        </Item>
+        <Item identifier="tsm_thbq" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
+          <Item identifier="tsm_drum_cj" amount="2" />
+          <Item identifier="tsm_magazine" amount="5" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--墨鳞-->
+    <npc identifier="tsm_soldier_ml" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="20" aimaccuracy="1" reportrange="2000" skillmultiplier="3">
+      <ItemSet commonness="0.7">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_helmet_respirator" equip="true" />
+        <Item identifier="tsm_pqc_melee">
+          <Item identifier="tsm_enhancement_combatship" />
+        </Item>
+        <Item identifier="tsm_qbz_191" equip="true">
+          <Item identifier="tsm_grip_cqr" equip="true" />
+          <Item identifier="tsm_recoil" equip="true" />
+          <Item identifier="tsm_sight_tripled" equip="true" />
+          <Item identifier="tsm_58_drum_cj" amount="4" />
+          <Item identifier="tsm_58_fulgurium_mag" amount="2" />
+        </Item>
+        <Item identifier="tsm_fn509_pistols" equip="true">
+          <Item identifier="tsm_9_krmag" amount="3" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.2">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_helmet_respirator" equip="true" />
+        <Item identifier="tsm_pmf_melee">
+          <Item identifier="tsm_enhancement_combatship" />
+        </Item>
+        <Item identifier="tsm_thbq" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
+          <Item identifier="tsm_magazinebg" amount="2" />
+          <Item identifier="tsm_magazine" amount="5" />
+          <Item identifier="tsm_identifier" amount="1" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.4">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_helmet_respirator" equip="true" />
+        <Item identifier="tsm_pmf_melee">
+          <Item identifier="tsm_enhancement_combatship" />
+        </Item>
+        <Item identifier="tsm_thbq" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
+          <Item identifier="tsm_drum_cj" amount="2" />
+          <Item identifier="tsm_magazine" amount="5" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--神茗-->
+    <npc identifier="tsm_soldier_sm" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="20" aimaccuracy="1" reportrange="2000" skillmultiplier="3">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_jz_helmet" equip="true" />
+        <Item identifier="tsm_medicalkits_s" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_heavy_vest" equip="true" />
+        </Item>
+        <Item identifier="tsm_zc" equip="true">
+          <Item identifier="tsm_rsmagazine" amount="3" />
+          <Item identifier="tsm_drum_cj" amount="3" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_jz_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_lightningwizard" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits_s" />
+        </Item>
+        <Item identifier="tsm_fy" equip="true">
+          <Item identifier="tsm_rsmagazine" amount="3" />
+          <Item identifier="tsm_magazinebg" amount="2" />
+          <Item identifier="tsm_drum_cj" amount="2" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_jz_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_lightningwizard" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits_s" />
+        </Item>
+        <Item identifier="tsm_xylz" equip="true">
+          <Item identifier="tsm_xymagazine_bg" amount="2" />
+          <Item identifier="tsm_identifier" amount="1" />
+          <Item identifier="tsm_xymagazine" amount="2" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_jz_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_lightningwizard" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits_s" />
+        </Item>
+        <Item identifier="tsm_qjb_201" equip="true">
+          <Item identifier="tsm_58_201cjmag" amount="2" />
+          <Item identifier="tsm_58_201mag" amount="1" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--彩色墨水-->
+    <npc identifier="tsm_soldier_csms" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="20" aimaccuracy="1" reportrange="2000" skillmultiplier="3">
+      <ItemSet commonness="0.6">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_helmet_respirator" equip="true" />
+        <Item identifier="tsm_pqc_melee">
+          <Item identifier="tsm_enhancement_combatship" />
+        </Item>
+        <Item identifier="tsm_qbz_191" equip="true">
+          <Item identifier="tsm_grip_cqr" equip="true" />
+          <Item identifier="tsm_recoil" equip="true" />
+          <Item identifier="tsm_sight_tripled" equip="true" />
+          <Item identifier="tsm_58_drum_cj" amount="4" />
+          <Item identifier="tsm_58_fulgurium_mag" amount="2" />
+        </Item>
+        <Item identifier="tsm_fn509_pistols" equip="true">
+          <Item identifier="tsm_9_krmag" amount="3" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.4">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_helmet_respirator" equip="true" />
+        <Item identifier="tsm_pmf_melee">
+          <Item identifier="tsm_enhancement_combatship" />
+        </Item>
+        <Item identifier="tsm_qbs" equip="true">
+          <Item identifier="tsm_fire_gun" equip="true" />
+          <Item identifier="shotgunslugexplosive" amount="24" />
+          <Item identifier="tsm_12_ld" amount="32" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.2">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_helmet_respirator" equip="true" />
+        <Item identifier="tsm_pmf_melee">
+          <Item identifier="tsm_enhancement_combatship" />
+        </Item>
+        <Item identifier="tsm_thbq" equip="true">
+          <Item identifier="tsm_ai_grenade" equip="true" />
+          <Item identifier="tsm_magazinebg" amount="2" />
+          <Item identifier="tsm_magazine" amount="5" />
+          <Item identifier="tsm_identifier" amount="1" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--smallthree-->
+    <npc identifier="tsm_advanced_smallthree" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="30" aimaccuracy="1" reportrange="2000" skillmultiplier="5">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_jz_helmet" equip="true" />
+        <Item identifier="tsm_medicalkits_s" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_heavy_vest" equip="true" />
+        </Item>
+        <Item identifier="tsm_zc" equip="true">
+          <Item identifier="tsm_rsmagazine" amount="3" />
+          <Item identifier="tsm_identifier" amount="1" />
+          <Item identifier="tsm_drum_cj" amount="3" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_jz_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_lightningwizard" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits_s" />
+        </Item>
+        <Item identifier="tsm_fy" equip="true">
+          <Item identifier="tsm_rsmagazine" amount="3" />
+          <Item identifier="tsm_magazinebg" amount="2" />
+          <Item identifier="tsm_drum_cj" amount="2" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_jz_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_lightningwizard" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits_s" />
+        </Item>
+        <Item identifier="tsm_xylz" equip="true">
+          <Item identifier="tsm_xymagazine_bg" amount="2" />
+          <Item identifier="tsm_xymagazine" amount="2" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_jz_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_lightningwizard" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits_s" />
+        </Item>
+        <Item identifier="tsm_qjb_201" equip="true">
+          <Item identifier="tsm_58_201cjmag" amount="2" />
+          <Item identifier="tsm_58_201mag" amount="1" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--冰镇骨头-->
+    <npc identifier="tsm_advanced_bzgt" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="40" aimaccuracy="1" reportrange="2000" skillmultiplier="5">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_heavycombat_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits" />
+        </Item>
+        <Item identifier="tsm_qbz_191" equip="true">
+          <Item identifier="tsm_grip_triangle" equip="true" />
+          <Item identifier="tsm_recoil" equip="true" />
+          <Item identifier="tsm_sight_double" equip="true" />
+          <Item identifier="tsm_58_drum_cj" amount="3" />
+          <Item identifier="tsm_58_mag_kr" amount="2" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.2">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_heavycombat_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_lightningwizard" />
+        <Item identifier="tsm_enhancement_combatship" >
+          <Item identifier="tsm_ai_grenade" equip="true" />
+        </Item>
+        <Item identifier="tsm_qbz_191" equip="true">
+          <Item identifier="tsm_grip_triangle" equip="true" />
+          <Item identifier="tsm_recoil" equip="true" />
+          <Item identifier="tsm_sight_qmk152" equip="true" />
+          <Item identifier="tsm_58_physicorium_mag" amount="2" />
+          <Item identifier="tsm_58_mag_cj" amount="5" />
+          <Item identifier="tsm_identifier" amount="1" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--薄青-->
+    <npc identifier="tsm_advanced_bq" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="40" aimaccuracy="1" reportrange="2000" skillmultiplier="5">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_jz_helmet" equip="true" />
+        <Item identifier="tsm_medicalkits_s" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_heavy_vest" equip="true" />
+        </Item>
+        <Item identifier="tsm_zc" equip="true">
+          <Item identifier="tsm_rsmagazine" amount="3" />
+          <Item identifier="tsm_drum_cj" amount="3" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_jz_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_lightningwizard" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits_s" />
+        </Item>
+        <Item identifier="tsm_fy" equip="true">
+          <Item identifier="tsm_rsmagazine" amount="3" />
+          <Item identifier="tsm_magazinebg" amount="2" />
+          <Item identifier="tsm_drum_cj" amount="2" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_jz_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_lightningwizard" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits_s" />
+        </Item>
+        <Item identifier="tsm_xylz" equip="true">
+          <Item identifier="tsm_xymagazine_bg" amount="2" />
+          <Item identifier="tsm_xymagazine" amount="12" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_jz_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_lightningwizard" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits_s" />
+        </Item>
+        <Item identifier="tsm_qjb_201" equip="true">
+          <Item identifier="tsm_58_201cjmag" amount="2" />
+          <Item identifier="tsm_58_201mag" amount="1" />
+          <Item identifier="tsm_identifier" amount="1" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--2112-->
+    <npc identifier="tsm_advanced_2112" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.3" aimspeed="30" aimaccuracy="0.9" reportrange="2000" skillmultiplier="5">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_jz_helmet" equip="true" />
+        <Item identifier="tsm_medicalkits_s" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_heavy_vest" equip="true" />
+        </Item>
+        <Item identifier="tsm_zc" equip="true">
+          <Item identifier="tsm_rsmagazine" amount="3" />
+          <Item identifier="tsm_drum_cj" amount="3" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_jz_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_lightningwizard" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits_s" />
+        </Item>
+        <Item identifier="tsm_fy" equip="true">
+          <Item identifier="tsm_rsmagazine" amount="3" />
+          <Item identifier="tsm_magazinebg" amount="2" />
+          <Item identifier="tsm_drum_cj" amount="2" />
+          <Item identifier="tsm_identifier" amount="1" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_jz_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_lightningwizard" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits_s" />
+        </Item>
+        <Item identifier="tsm_xylz" equip="true">
+          <Item identifier="tsm_xymagazine_bg" amount="2" />
+          <Item identifier="tsm_xymagazine" amount="12" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_advanced_uniform" equip="true" />
+        <Item identifier="tsm_jz_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_lightningwizard" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits_s" />
+        </Item>
+        <Item identifier="tsm_qjb_201" equip="true">
+          <Item identifier="tsm_58_201cjmag" amount="2" />
+          <Item identifier="tsm_58_201mag" amount="1" />
+        </Item>
+      </ItemSet>
+    </npc>
+
+    <!--猫科动物-->
+    <!--FFFFFour-->
+    <npc identifier="tsm_soldier_FFFFFour" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="20" aimaccuracy="1" reportrange="2500" skillmultiplier="3">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_old_uniform" equip="true" />
+        <Item identifier="tsm_old_vest" equip="true" />
+        <Item identifier="tsm_helmet_respirator" equip="true" />
+        <Item identifier="tsm_enhancement_combatship" />
+        <Item identifier="tsm_pqc_melee">
+          <Item identifier="headset" equip="true" />
+        </Item>
+        <Item identifier="tsm_advanced_03" equip="true">
+          <Item identifier="tsm_58_mag_cj" amount="3" />
+          <Item identifier="tsm_58_mag" amount="3" />
+        </Item>
+        <Item identifier="tsm_fn509_pistols" equip="true">
+          <Item identifier="tsm_9_krmag" amount="3" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_old_uniform" equip="true" />
+        <Item identifier="tsm_old_vest" equip="true" />
+        <Item identifier="tsm_helmet_respirator" equip="true" />
+        <Item identifier="tsm_enhancement_combatship" />
+        <Item identifier="tsm_pmf_melee">
+          <Item identifier="headset" equip="true" />
+        </Item>
+        <Item identifier="tsm_thbq" equip="true">
+          <Item identifier="tsm_magazinebg" amount="2" />
+          <Item identifier="tsm_magazine" amount="5" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--A Y-->
+    <npc identifier="tsm_soldier_ay" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="20" aimaccuracy="1" reportrange="2500" skillmultiplier="3">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_old_uniform" equip="true" />
+        <Item identifier="tsm_old_vest" equip="true" />
+        <Item identifier="tsm_helmet_respirator" equip="true" />
+        <Item identifier="tsm_enhancement_combatship" />
+        <Item identifier="tsm_pqc_melee">
+          <Item identifier="headset" equip="true" />
+        </Item>
+        <Item identifier="tsm_advanced_03" equip="true">
+          <Item identifier="tsm_58_mag_cj" amount="3" />
+          <Item identifier="tsm_58_mag" amount="3" />
+        </Item>
+        <Item identifier="tsm_fn509_pistols" equip="true">
+          <Item identifier="tsm_9_krmag" amount="3" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_old_uniform" equip="true" />
+        <Item identifier="tsm_old_vest" equip="true" />
+        <Item identifier="tsm_helmet_respirator" equip="true" />
+        <Item identifier="tsm_enhancement_combatship" />
+        <Item identifier="tsm_pmf_melee">
+          <Item identifier="headset" equip="true" />
+        </Item>
+        <Item identifier="tsm_thbq" equip="true">
+          <Item identifier="tsm_magazinebg" amount="2" />
+          <Item identifier="tsm_magazine" amount="5" />
+        </Item>
+      </ItemSet>
+    </npc>
+
+    <!--猫科增援-->
+    <!--白帝-->
+    <npc identifier="tsm_outpost_combat_baidi" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule" job="structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="10" aimaccuracy="1" reportrange="2000" skillmultiplier="3">
+      <ItemSet commonness="0.25">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_nujiang_uniform" equip="true" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_helmet_outpost_combat" equip="true" />
+        <Item identifier="tsm_stunbaton_melee" />
+        <Item identifier="tsm_ai_grenade" equip="true" />
+        <Item identifier="tsm_radiojammer" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="batterycell" />
+        </Item>
+        <Item identifier="tsm_thbq" equip="true">
+          <Item identifier="tsm_magazinebg" amount="2" />
+          <Item identifier="tsm_magazinecj" amount="5" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.7">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_nujiang_uniform" equip="true" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_helmet_outpost_combat" equip="true" />
+        <Item identifier="tsm_pqc_melee" />
+        <Item identifier="tsm_medicalkits_s" />
+        <Item identifier="tsm_radiojammer" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="batterycell" />
+        </Item>
+        <Item identifier="tsm_79_smg" equip="true">
+          <Item identifier="tsm_sight_reddot" equip="true" />
+          <Item identifier="tsm_45_smgmag" amount="6" />
+          <Item identifier="tsm_fire_gun" equip="true" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_nujiang_uniform" equip="true" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_helmet_outpost_combat" equip="true" />
+        <Item identifier="tsm_pqc_melee" />
+        <Item identifier="tsm_medicalkits_s" />
+        <Item identifier="tsm_radiojammer" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="batterycell" />
+        </Item>
+        <Item identifier="tsm_79_smg" equip="true">
+          <Item identifier="tsm_grip_triangle" equip="true" />
+          <Item identifier="tsm_45_smgmag" amount="6" />
+          <Item identifier="tsm_fire_gun" equip="true" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--奈亚-->
+    <npc identifier="tsm_outpost_combat_naiya" commonness="0" tags="TSM" moduleflags="crewmodule,engineeringmodule,securitymodule,banditleader" job="tsm_structuredefender" behavior="Active" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="30" aimaccuracy="1" reportrange="2000" skillmultiplier="4">
+      <ItemSet commonness="0.25">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_nujiang_uniform" equip="true" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_helmet_outpost_combat" equip="true" />
+        <Item identifier="tsm_stunbaton_melee" />
+        <Item identifier="tsm_ai_grenade" equip="true" />
+        <Item identifier="tsm_radiojammer" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="batterycell" />
+        </Item>
+        <Item identifier="tsm_thbq" equip="true">
+          <Item identifier="tsm_magazinebg" amount="2" />
+          <Item identifier="tsm_magazinecj" amount="5" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.7">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_nujiang_uniform" equip="true" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_helmet_outpost_combat" equip="true" />
+        <Item identifier="tsm_pqc_melee" />
+        <Item identifier="tsm_medicalkits_s" />
+        <Item identifier="tsm_radiojammer" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="batterycell" />
+        </Item>
+        <Item identifier="tsm_79_smg" equip="true">
+          <Item identifier="tsm_sight_reddot" equip="true" />
+          <Item identifier="tsm_45_smgmag" amount="6" />
+          <Item identifier="tsm_fire_gun" equip="true" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="tsm_nujiang_uniform" equip="true" />
+        <Item identifier="tsm_heavy_vest" equip="true" />
+        <Item identifier="tsm_helmet_outpost_combat" equip="true" />
+        <Item identifier="tsm_pqc_melee" />
+        <Item identifier="tsm_medicalkits_s" />
+        <Item identifier="tsm_radiojammer" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="batterycell" />
+        </Item>
+        <Item identifier="tsm_79_smg" equip="true">
+          <Item identifier="tsm_grip_triangle" equip="true" />
+          <Item identifier="tsm_45_smgmag" amount="6" />
+          <Item identifier="tsm_fire_gun" equip="true" />
+        </Item>
+      </ItemSet>
+    </npc>
+
+    <!--降临派-->
+    <!--薄暮银龙-->
+    <npc identifier="adventists_bmyl" commonness="0" tags="adventists" moduleflags="crewmodule,engineeringmodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="10" aimaccuracy="1" reportrange="1500" skillmultiplier="3">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="adventists_uniform" equip="true" />
+        <Item identifier="piratebodyarmor" equip="true" />
+        <Item identifier="piratecaptainhat" equip="true" />
+        <Item identifier="headset" equip="true" />
+        <Item identifier="tsm_enhancement_ai">
+          <Item identifier="tsm_enhancement_bing" />
+        </Item>
+        <Item identifier="handcannon" equip="true">
+          <Item identifier="handcannonround" amount="8" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="adventists_uniform" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="piratecaptainhat" equip="true" />
+        <Item identifier="headset" equip="true" />
+        <Item identifier="tsm_enhancement_ai">
+          <Item identifier="tsm_enhancement_bing" />
+        </Item>
+        <Item identifier="assaultrifle" equip="true">
+          <Item identifier="assaultriflemagazine" amount="6" />
+        </Item>
+      </ItemSet>
+    </npc>
+
+    <!--占领军-->
+    <!--邱芜-->
+    <npc identifier="occupation_qiuwu" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.25" healthmultiplierinmultiplayer="1.45" aimspeed="30" aimaccuracy="1" reportrange="2000" skillmultiplier="4">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_occupation_uniform" equip="true" />
+        <Item identifier="lm_vest_elite" equip="true" />
+        <Item identifier="lm_heavy_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits" />
+        </Item>
+        <Item identifier="tsm_lm_rm277" equip="true">
+          <Item identifier="tsm_grip_light" equip="true" />
+          <Item identifier="lm_68_51cj_magazine" amount="4" />
+          <Item identifier="lm_68_51_magazine" amount="4" />
+        </Item>
+        <Item identifier="tsm_de_handgun">
+          <Item identifier="tsm_127_mag" amount="4" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.3">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_occupation_uniform" equip="true" />
+        <Item identifier="lm_vest_occupation" equip="true" />
+        <Item identifier="lm_heavy_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits" />
+        </Item>
+        <Item identifier="tsm_lm_drh" equip="true">
+          <Item identifier="tsm_sight_reddot" equip="true" />
+          <Item identifier="lm_68_51kj_magazine" amount="3" />
+          <Item identifier="lm_68_51_magazine" amount="4" />
+        </Item>
+        <Item identifier="tsm_fn509_pistols">
+          <Item identifier="tsm_9_krmag" amount="4" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--TarLer-->
+    <npc identifier="occupation_tarler" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.25" healthmultiplierinmultiplayer="1.45" aimspeed="30" aimaccuracy="1" reportrange="2000" skillmultiplier="4">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_occupation_uniform" equip="true" />
+        <Item identifier="lm_vest_elite" equip="true" />
+        <Item identifier="lm_heavy_helmet" equip="true" />
+        <Item identifier="tsm_thermal_knife" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits" />
+        </Item>
+        <Item identifier="tsm_lm_mk14ebr" equip="true">
+          <Item identifier="lm_762_51_ap_mag" amount="4" />
+          <Item identifier="lm_762_51_mag" amount="4" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.3">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_occupation_uniform" equip="true" />
+        <Item identifier="lm_vest_occupation" equip="true" />
+        <Item identifier="lm_heavy_helmet" equip="true" />
+        <Item identifier="tsm_thermal_knife" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits" />
+        </Item>
+        <Item identifier="tsm_lm_cz806" equip="true">
+          <Item identifier="tsm_flame_arrester" equip="true" />
+          <Item identifier="tsm_sight_double" equip="true" />
+          <Item identifier="40mmstungrenade" amount="1" />
+          <Item identifier="40mmgrenade" amount="1" />
+          <Item identifier="lm_556_physicorium_mag" amount="1" />
+          <Item identifier="40mmgrenade" amount="1" />
+          <Item identifier="lm_556cj_mag" amount="4" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_occupation_uniform" equip="true" />
+        <Item identifier="lm_vest_occupation" equip="true" />
+        <Item identifier="lm_heavy_helmet" equip="true" />
+        <Item identifier="tsm_thermal_knife" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits" />
+        </Item>
+        <Item identifier="tsm_lm_ks23" equip="true">
+          <Item identifier="tsm_shotgunammo_4" amount="16" />
+        </Item>
+        <Item identifier="tsm_fn509_pistols">
+          <Item identifier="tsm_9_krmag" amount="4" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--知识管理者-->
+    <npc identifier="occupation_milan" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.25" healthmultiplierinmultiplayer="1.45" aimspeed="35" aimaccuracy="1" reportrange="2000" skillmultiplier="5">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_occupation_uniform" equip="true" />
+        <Item identifier="lm_vest_occupation" equip="true" />
+        <Item identifier="lm_occupation_helmet" equip="true" />
+        <Item identifier="tsm_steel_knife" equip="true" />
+        <Item identifier="tsm_enhancement_lightningwizard" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits_s" />
+        </Item>
+        <Item identifier="tsm_lm_mdr_c" equip="true">
+          <Item identifier="lm_762_51_ap_krmag" amount="3" />
+          <Item identifier="lm_762_51_mag" amount="4" />
+        </Item>
+        <Item identifier="handcannon">
+          <Item identifier="handcannonround" amount="12" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_occupation_uniform" equip="true" />
+        <Item identifier="lm_vest_occupation" equip="true" />
+        <Item identifier="lm_occupation_helmet" equip="true" />
+        <Item identifier="tsm_steel_knife" equip="true" />
+        <Item identifier="tsm_enhancement_lightningwizard" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits_s" />
+        </Item>
+        <Item identifier="tsm_lm_mcx" equip="true">
+          <Item identifier="tsm_grip_straight" equip="true" />
+          <Item identifier="lm_68_51kj_magazine" amount="2" />
+          <Item identifier="lm_68_51ap_krmagazine" amount="4" />
+        </Item>
+        <Item identifier="handcannon">
+          <Item identifier="handcannonround" amount="12" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--灰蛊风暴-->
+    <npc identifier="occupation_hgfb" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.2" aimspeed="25" aimaccuracy="1" reportrange="2000" skillmultiplier="3">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_occupation_uniform" equip="true" />
+        <Item identifier="lm_vest_elite" equip="true" />
+        <Item identifier="lm_heavy_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits" />
+        </Item>
+        <Item identifier="tsm_rpg" equip="true">
+          <Item identifier="tsm_r_thermobaric" amount="2" />
+          <Item identifier="tsm_r_heat" amount="2" />
+          <Item identifier="tsm_r_aix" amount="2" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_occupation_uniform" equip="true" />
+        <Item identifier="lm_vest_elite" equip="true" />
+        <Item identifier="lm_heavy_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits" />
+        </Item>
+        <Item identifier="tsm_m32_launcher" equip="true">
+          <Item identifier="40mmgrenade" amount="1" />
+          <Item identifier="40mmchemgrenade" amount="3" />
+          <Item identifier="tsm_grenade_fire" amount="2" />
+          <Item identifier="40mmgrenade" amount="3" />
+        </Item>
+        <Item identifier="tsm_92_pistols">
+          <Item identifier="tsm_9_mag" amount="3" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--心灵秋风-->
+    <npc identifier="occupation_xlqf" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.2" aimspeed="25" aimaccuracy="1" reportrange="2000" skillmultiplier="3">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_occupation_uniform" equip="true" />
+        <Item identifier="lm_vest_elite" equip="true" />
+        <Item identifier="lm_heavy_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits" />
+        </Item>
+        <Item identifier="tsm_rpg" equip="true">
+          <Item identifier="tsm_r_thermobaric" amount="2" />
+          <Item identifier="tsm_r_heat" amount="2" />
+          <Item identifier="tsm_r_aix" amount="2" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_occupation_uniform" equip="true" />
+        <Item identifier="lm_vest_elite" equip="true" />
+        <Item identifier="lm_heavy_helmet" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits" />
+        </Item>
+        <Item identifier="tsm_m32_launcher" equip="true">
+          <Item identifier="40mmgrenade" amount="1" />
+          <Item identifier="40mmchemgrenade" amount="3" />
+          <Item identifier="tsm_grenade_fire" amount="2" />
+          <Item identifier="40mmgrenade" amount="3" />
+        </Item>
+        <Item identifier="tsm_92_pistols">
+          <Item identifier="tsm_9_mag" amount="3" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--BUG-->
+    <npc identifier="occupation_bug" commonness="0" tags="coalition" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.25" healthmultiplierinmultiplayer="1.45" aimspeed="30" aimaccuracy="0.85" reportrange="2000" skillmultiplier="4">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="lm_occupation_uniform" equip="true" />
+        <Item identifier="lm_vest_elite" equip="true" />
+        <Item identifier="lm_heavy_helmet" equip="true" />
+        <Item identifier="tsm_thermal_knife" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits" />
+        </Item>
+        <Item identifier="tsm_lm_mk14ebr" equip="true">
+          <Item identifier="lm_762_51_ap_krmag" amount="4" />
+          <Item identifier="lm_762_51_mag" amount="4" />
+        </Item>
+        <Item identifier="tsm_de_handgun">
+          <Item identifier="tsm_127_mag" amount="4" />
+        </Item>
+        <ItemSet commonness="0.3">
+          <Item identifier="idcard" equip="true" />
+          <Item identifier="lm_occupation_uniform" equip="true" />
+          <Item identifier="lm_vest_occupation" equip="true" />
+          <Item identifier="lm_heavy_helmet" equip="true" />
+          <Item identifier="tsm_ai_grenade" equip="true" />
+          <Item identifier="tsm_enhancement_combatship">
+            <Item identifier="tsm_medicalkits" />
+          </Item>
+          <Item identifier="tsm_lm_cz806" equip="true">
+            <Item identifier="tsm_flame_arrester" equip="true" />
+            <Item identifier="tsm_sight_double" equip="true" />
+            <Item identifier="40mmstungrenade" amount="1" />
+            <Item identifier="40mmgrenade" amount="1" />
+            <Item identifier="lm_556gb_mag" amount="1" />
+            <Item identifier="40mmgrenade" amount="1" />
+            <Item identifier="lm_556cj_mag" amount="5" />
+          </Item>
+          <Item identifier="tsm_fn509_pistols">
+            <Item identifier="tsm_9_krmag" amount="4" />
+          </Item>
+        </ItemSet>
+        <ItemSet commonness="0.1">
+          <Item identifier="idcard" equip="true" />
+          <Item identifier="lm_occupation_uniform" equip="true" />
+          <Item identifier="lm_vest_occupation" equip="true" />
+          <Item identifier="lm_heavy_helmet" equip="true" />
+          <Item identifier="tsm_thermal_knife" />
+          <Item identifier="tsm_enhancement_combatship">
+            <Item identifier="tsm_medicalkits" />
+          </Item>
+          <Item identifier="tsm_lm_ks23" equip="true">
+            <Item identifier="tsm_shotgunammo_4" amount="16" />
+          </Item>
+          <Item identifier="tsm_fn509_pistols">
+            <Item identifier="tsm_9_krmag" amount="4" />
+          </Item>
+        </ItemSet>
+      </ItemSet>
+    </npc>
+
+    <!--野火-->
+    <!--CosmoChromE-->
+    <npc identifier="yehuo_cce" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Passive" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="30" aimaccuracy="1" reportrange="2000" skillmultiplier="5">
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="fkj_yehuo_uniform" equip="true" />
+        <Item identifier="fkj_vest_yehuo" equip="true" />
+        <Item identifier="fkj_yehuo_helmet" equip="true" />
+        <Item identifier="tsm_kaishan_knife" equip="true" />
+        <Item identifier="tsm_enhancement_lightningwizard" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits_s" />
+        </Item>
+        <Item identifier="tsm_fkj_561a" equip="true">
+          <Item identifier="tsm_sight_pso" equip="true" />
+          <Item identifier="fkj_762hz_mag" amount="1" />
+          <Item identifier="fkj_762cj_mag" amount="1" />
+          <Item identifier="fkj_762hz_mag" amount="2" />
+          <Item identifier="fkj_762cj_mag" amount="3" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--FFufu-->
+    <npc identifier="yehuo_ffufu" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="25" aimaccuracy="0.85" reportrange="2000" skillmultiplier="4">
+      <ItemSet commonness="0.2">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="fkj_yehuo_uniform" equip="true" />
+        <Item identifier="fkj_vest_yehuo" equip="true" />
+        <Item identifier="tsm_ai_grenade" equip="true" />
+        <Item identifier="tsm_thermal_knife">
+          <Item identifier="fkj_heavy_helmet" equip="true" />
+        </Item>
+        <Item identifier="tsm_lm_ks23" equip="true">
+          <Item identifier="tsm_shotgunammo_4" amount="20" />
+        </Item>
+        <Item identifier="tsm_de_handgun" equip="false">
+          <Item identifier="tsm_127_mag" amount="4" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.7">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="fkj_yehuo_uniform" equip="true" />
+        <Item identifier="fkj_heavy_vest" equip="true" />
+        <Item identifier="tsm_thermal_knife" />
+        <Item identifier="fkj_545cj_mag">
+          <Item identifier="fkj_heavy_helmet" equip="true" />
+        </Item>
+        <Item identifier="tsm_fkj_ak12" equip="true">
+          <Item identifier="tsm_grip_cqr" equip="true" />
+          <Item identifier="tsm_recoil" equip="true" />
+          <Item identifier="fkj_762cj_krmag" amount="3" />
+          <Item identifier="fkj_762hz_mag" amount="2" />
+        </Item>
+        <Item identifier="tsm_de_handgun" equip="false">
+          <Item identifier="tsm_127_mag" amount="4" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.3">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="fkj_yehuo_uniform" equip="true" />
+        <Item identifier="fkj_heavy_vest" equip="true" />
+        <Item identifier="tsm_thermal_knife" />
+        <Item identifier="fkj_762cj_mag">
+          <Item identifier="fkj_heavy_helmet" equip="true" />
+        </Item>
+        <Item identifier="tsm_fkj_jq430" equip="true">
+          <Item identifier="40mmstungrenade" equip="true" />
+          <Item identifier="40mmgrenade" />
+          <Item identifier="fkj_762cj_krmag" amount="3" />
+          <Item identifier="fkj_762hz_mag" amount="2" />
+        </Item>
+        <Item identifier="tsm_de_handgun" equip="false">
+          <Item identifier="tsm_127_mag" amount="4" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.3">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="fkj_yehuo_uniform" equip="true" />
+        <Item identifier="fkj_heavy_vest" equip="true" />
+        <Item identifier="tsm_thermal_knife" />
+        <Item identifier="fkj_762cj_mag">
+          <Item identifier="fkj_heavy_helmet" equip="true" />
+        </Item>
+        <Item identifier="tsm_fkj_jq430" equip="true">
+          <Item identifier="40mmgrenade" amount="1" />
+          <Item identifier="fkj_762hz_mag" amount="2" />
+          <Item identifier="fkj_762cj_krmag" amount="4" />
+        </Item>
+        <Item identifier="tsm_de_handgun" equip="false">
+          <Item identifier="tsm_127_mag" amount="4" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.2">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="fkj_yehuo_uniform" equip="true" />
+        <Item identifier="fkj_heavy_vest" equip="true" />
+        <Item identifier="tsm_thermal_knife" />
+        <Item identifier="40mmstungrenade">
+          <Item identifier="fkj_heavy_helmet" equip="true" />
+        </Item>
+        <Item identifier="tsm_fkj_a545" equip="true">
+          <Item identifier="tsm_sight_pso" equip="true" />
+          <Item identifier="fkj_545hz_mag" amount="1" />
+          <Item identifier="40mmgrenade" amount="1" />
+          <Item identifier="fkj_545_physicorium_mag" amount="1" />
+          <Item identifier="40mmstungrenade" amount="1" />
+          <Item identifier="fkj_545cj_krmag" amount="3" />
+        </Item>
+        <Item identifier="tsm_de_handgun" equip="false">
+          <Item identifier="tsm_127_mag" amount="4" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.2">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="fkj_yehuo_uniform" equip="true" />
+        <Item identifier="fkj_heavy_vest" equip="true" />
+        <Item identifier="tsm_thermal_knife">
+          <Item identifier="fkj_heavy_helmet" equip="true" />
+        </Item>
+        <Item identifier="tsm_fkj_a545" equip="true">
+          <Item identifier="tsm_sight_pso" equip="true" />
+          <Item identifier="fkj_545_incendium_mag" amount="1" />
+          <Item identifier="40mmstungrenade" amount="1" />
+          <Item identifier="fkj_545cj_krmag" amount="3" />
+        </Item>
+        <Item identifier="tsm_de_handgun" equip="false">
+          <Item identifier="tsm_127_mag" amount="4" />
+        </Item>
+      </ItemSet>
+    </npc>
+
+    <!--雇佣兵-->
+    <!--东㶭清川-->
+    <npc identifier="tsm_hiredgun_dyqc" commonness="0" tags="bandit" job="structuredefender" behavior="Patrol" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.45" aimspeed="10" aimaccuracy="1" reportrange="2500" skillmultiplier="3">
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="pmc_uniform" equip="true" />
+        <Item identifier="tsm_pmc_vest" equip="true" />
+        <Item identifier="captainsseparatistcap1" equip="true" />
+        <Item identifier="tsm_medicalkits" amount="1">
+        </Item>
+        <Item identifier="tsm_mg42">
+          <Item identifier="tsm_mg42_mag" amount="3"/>
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="pmc_uniform" equip="true" />
+        <Item identifier="tsm_pmc_vest" equip="true" />
+        <Item identifier="piratehelmet" equip="true" />
+        <Item identifier="40mmgrenade" amount="1">
+        </Item>
+        <Item identifier="grenadelauncher">
+          <Item identifier="40mmnuke" amount="1"/>
+          <Item identifier="40mmgrenade" amount="4"/>
+          <Item identifier="40mmchemgrenade" amount="3"/>
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="pmc_uniform" equip="true" />
+        <Item identifier="tsm_pmc_vest" equip="true" />
+        <Item identifier="piratehelmet" equip="true" />
+        <Item identifier="40mmnuke" equip="true">
+        </Item>
+        <Item identifier="grenadelauncher">
+          <Item identifier="40mmgrenade" amount="4"/>
+          <Item identifier="40mmchemgrenade" amount="3"/>
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--跨越悲伤之城-->
+    <npc identifier="tsm_hiredgun_kybszc" commonness="0" tags="bandit" job="medicaldoctor" behavior="StayInHull" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.45" aimspeed="10" aimaccuracy="1" reportrange="2500" skillmultiplier="3">
+      <ItemSet commonness="1">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="medicseparatistsuniform1" equip="true" />
+        <Item identifier="bodyarmor" equip="true" />
+        <Item identifier="captainsseparatistcap2" equip="true" />
+        <Item identifier="antidama2" amount="8"/>
+        <Item identifier="antibloodloss2" amount="8">
+        </Item>
+        <Item identifier="tsm_mp5sd">
+          <Item identifier="tsm_9_smgmag_kr" amount="4"/>
+          <Item identifier="tsm_medicalkits" amount="2"/>
+          <Item identifier="antibleeding3" amount="2"/>
+        </Item>
+      </ItemSet>
+    </npc>
+
+    <!--突袭者-->
+    <!--雪风会保护大家的-->
+    <npc identifier="Anonymous_xuefeng" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="25" aimaccuracy="0.9" reportrange="2000" skillmultiplier="3">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="fkj_anonymous_uniform" equip="true" />
+        <Item identifier="fkj_heavy_vest" equip="true" />
+        <Item identifier="fkj_Anonymous_helmet" equip="true" />
+        <Item identifier="tsm_kaishan_knife" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits_s" />
+        </Item>
+        <Item identifier="tsm_fkj_a545" equip="true">
+          <Item identifier="40mmgrenade" />
+          <Item identifier="fkj_545hz_mag" amount="2" />
+          <Item identifier="fkj_545cj_krmag" amount="3" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="fkj_anonymous_uniform" equip="true" />
+        <Item identifier="fkj_heavy_vest" equip="true" />
+        <Item identifier="fkj_Anonymous_helmet" equip="true" />
+        <Item identifier="tsm_kaishan_knife" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits_s" />
+        </Item>
+        <Item identifier="tsm_fkj_asval" equip="true">
+          <Item identifier="tsm_sight_pso" equip="true" />
+          <Item identifier="fkj_9_39_krap_mag" amount="8" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.15">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="fkj_anonymous_uniform" equip="true" />
+        <Item identifier="fkj_heavy_vest" equip="true" />
+        <Item identifier="fkj_Anonymous_helmet" equip="true" />
+        <Item identifier="tsm_ai_grenade" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits_s" />
+        </Item>
+        <Item identifier="tsm_fkj_ace52" equip="true">
+          <Item identifier="tsm_grip_mounts" equip="true" />
+          <Item identifier="tsm_recoil" equip="true" />
+          <Item identifier="fkj_762_51_ap_krmag" amount="3" />
+          <Item identifier="fkj_762_51_drum" amount="2" />
+        </Item>
+      </ItemSet>
+    </npc>
+    <!--鸽咕鸡-->
+    <npc identifier="Anonymous_geguji" commonness="0" tags="separatists" moduleflags="crewmodule,engineeringmodule,securitymodule" job="tsm_structuredefender" behavior="StayInHull" healthmultiplier="1.2" healthmultiplierinmultiplayer="1.4" aimspeed="25" aimaccuracy="0.9" reportrange="2000" skillmultiplier="3">
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="fkj_anonymous_uniform" equip="true" />
+        <Item identifier="fkj_heavy_vest" equip="true" />
+        <Item identifier="fkj_Anonymous_helmet" equip="true" />
+        <Item identifier="tsm_kaishan_knife" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits_s" />
+        </Item>
+        <Item identifier="tsm_fkj_a545" equip="true">
+          <Item identifier="40mmgrenade" />
+          <Item identifier="fkj_545hz_mag" amount="2" />
+          <Item identifier="fkj_545cj_krmag" amount="3" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.5">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="fkj_anonymous_uniform" equip="true" />
+        <Item identifier="fkj_heavy_vest" equip="true" />
+        <Item identifier="fkj_Anonymous_helmet" equip="true" />
+        <Item identifier="tsm_kaishan_knife" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits_s" />
+        </Item>
+        <Item identifier="tsm_fkj_asval" equip="true">
+          <Item identifier="tsm_sight_pso" equip="true" />
+          <Item identifier="fkj_9_39_krap_mag" amount="8" />
+        </Item>
+      </ItemSet>
+      <ItemSet commonness="0.15">
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="fkj_anonymous_uniform" equip="true" />
+        <Item identifier="fkj_heavy_vest" equip="true" />
+        <Item identifier="fkj_Anonymous_helmet" equip="true" />
+        <Item identifier="tsm_ai_grenade" equip="true" />
+        <Item identifier="tsm_enhancement_combatship">
+          <Item identifier="tsm_medicalkits_s" />
+        </Item>
+        <Item identifier="tsm_fkj_ace52" equip="true">
+          <Item identifier="tsm_grip_mounts" equip="true" />
+          <Item identifier="tsm_recoil" equip="true" />
+          <Item identifier="fkj_762_51_ap_krmag" amount="3" />
+          <Item identifier="fkj_762_51_drum" amount="2" />
+        </Item>
+      </ItemSet>
+    </npc>
+
+  </npcset>
+</npcsets>

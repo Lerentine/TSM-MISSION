@@ -1,2 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Eyi_huggerSwimFast footrotatestrength="15" type="Eyi_hugger" LegMoveAmount="1.7241129" LegCycleLength="5.3899717" FootAngle="65" HandMoveAmount="0.1,0" HandCycleSpeed="2.1006122" HandMoveOffset="0,0" ArmMoveStrength="0.40000004" HandMoveStrength="0" FixedHeadAngle="True" SteerTorque="1" LegTorque="12" AnimationType="SwimFast" MovementSpeed="3.4286313" CycleSpeed="3.4286313" HeadAngle="87" TorsoAngle="0" HeadTorque="40" TorsoTorque="30" FootTorque="5" ArmIKStrength="3" HandIKStrength="2.5" />

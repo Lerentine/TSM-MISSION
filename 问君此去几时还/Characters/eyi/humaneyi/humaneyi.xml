@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Character specifiertags="true" SpeciesName="humaneyi" SpeciesTranslationOverride="" DisplayName="" Group="eyi" Humanoid="True" HasInfo="True" CanInteract="True" Husk="True" UseHuskAppendage="True" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="100" Visibility="100" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="True" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="despawncontainer">
+  <ragdolls folder="%ModDir%/Characters/eyi/humaneyi/Ragdolls" />
+  <animations folder="%ModDir%/Characters/eyi/humaneyi/Animations" />
+  <huskappendage affliction="eyiinfection" path="%ModDir%/Characters/eyi/humaneyi/eyiappendage.xml" />
+  <bloodemitter Particle="blood" AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="5" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <bloodemitter Particle="waterblood" AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="1" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <health Vitality="50" DoesBleed="True" CrushDepth="6000" UseHealthWindow="True" BleedingReduction="10" BurnReduction="0" ConstantHealthRegeneration="1" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="False" PoisonVulnerability="0.5" EmpVulnerability="0" ApplyAfflictionColors="True" Immunities="">
+    <MedUISilhouette texture="Content/UI/Health/MedUI_Silhouette.png" columns="8" rows="2" sourcerect="0,0,1008,748" />
+    <MedUIExtra texture="Content/UI/Health/MedUIExtra.png" columns="4" rows="4" sourcerect="0,0,1024,1024" />
+    <Limb name="Head">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="1,0,126,374" highlightarea="41,0,45,54" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="1,515,126,374" />
+      <VitalityMultiplier type="damage" multiplier="0.5" />
+    </Limb>
+    <Limb name="Torso">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="631,0,126,374" highlightarea="29,56,70,134" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="631,515,126,374" />
+      <VitalityMultiplier type="damage" multiplier="0.5" />
+    </Limb>
+    <Limb name="LeftArm">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="379,0,126,374" highlightarea="1,69,27,140" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="379,515,126,374" />
+      <VitalityMultiplier type="damage" multiplier="1.0" />
+    </Limb>
+    <Limb name="RightArm">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="127,0,126,374" highlightarea="100,69,27,140" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="127,515,126,374" />
+      <VitalityMultiplier type="damage" multiplier="1.0" />
+    </Limb>
+    <Limb name="LeftLeg">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="505,0,126,374" highlightarea="3,180,57,194" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="505,515,126,374" />
+      <VitalityMultiplier type="damage" multiplier="1.0" />
+    </Limb>
+    <Limb name="RightLeg">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="253,0,126,374" highlightarea="68,180,57,194" />
+      <Highlightsprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="253,515,126,374" />
+      <VitalityMultiplier type="damage" multiplier="1.0" />
+    </Limb>
+  </health>
+  <sound file="%ModDir%/Characters/eyi/humaneyi/humaneyi_attack1.ogg" state="Attack" range="1000" volume="1" />
+  <sound file="%ModDir%/Characters/eyi/humaneyi/humaneyi_attack2.ogg" state="Attack" range="1000" volume="1" />
+  <sound file="%ModDir%/Characters/eyi/humaneyi/humaneyi_attack3.ogg" state="Attack" range="1000" volume="1" />
+  <sound file="%ModDir%/Characters/eyi/humaneyi/humaneyi_damage1.ogg" state="Damage" range="1000" volume="1" />
+  <sound file="%ModDir%/Characters/eyi/humaneyi/humaneyi_damage2.ogg" state="Damage" range="1000" volume="1" />
+  <sound file="%ModDir%/Characters/eyi/humaneyi/humaneyi_damage3.ogg" state="Damage" range="1000" volume="1" />
+  <sound file="%ModDir%/Characters/eyi/humaneyi/humaneyi_death1.ogg" state="Die" range="1000" volume="1" />
+  <sound file="%ModDir%/Characters/eyi/humaneyi/humaneyi_death2.ogg" state="Die" range="1000" volume="1" />
+  <sound file="%ModDir%/Characters/eyi/humaneyi/humaneyi_death3.ogg" state="Die" range="1000" volume="1" />
+  <sound file="%ModDir%/Characters/eyi/humaneyi/humaneyi_idle1.ogg" state="Idle" range="1000" volume="1" />
+  <sound file="%ModDir%/Characters/eyi/humaneyi/humaneyi_idle2.ogg" state="Idle" range="1000" volume="1" />
+  <sound file="%ModDir%/Characters/eyi/humaneyi/humaneyi_idle3.ogg" state="Idle" range="1000" volume="1" />
+  <sound file="%ModDir%/Characters/eyi/humaneyi/humaneyi_idle4.ogg" state="Idle" range="1000" volume="1" />
+  <sound file="%ModDir%/Characters/eyi/humaneyi/humaneyi_idle5.ogg" state="Idle" range="1000" volume="1" />
+  <names path="Content/Characters/Human/names.xml" />
+  <ai CombatStrength="90" Sight="0.5" Hearing="1" MaxPerceptionDistance="-1" AggressionHurt="150" AggressionGreed="5" FleeHealthThreshold="0" AttackWhenProvoked="True" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="True" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="False" RandomAttack="False" CanOpenDoors="True" UsePathFindingToGetInside="True" KeepDoorsClosed="False" AvoidAbyss="True" StayInAbyss="True" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Target">
+    <target Tag="decoy" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="provocative" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="weapon" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="nasonov" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="crawler" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="True" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="human" State="Attack" Priority="80" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="True" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="sonar" State="Attack" Priority="30" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="room" State="Attack" Priority="10" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="turret" State="Attack" Priority="1" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="swarmfeeder" State="Idle" Priority="0" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="True" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="True" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="huskinfected" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="True" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+  </ai>
+  <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="True" Commonness="0.6">
+    <Item identifier="tsm_eyi_embryo" />
+  </inventory>
+  <Vars>
+    <Var var="GENDER" tags="female,male" />
+  </Vars>
+  <StatusEffect type="OnDeath" target="This" delay="2" targetlimb="Torso">
+    <ParticleEmitter particle="bloodtrail" particleamount="50" scalemin="2" scalemax="5" velocitymin="200" velocitymax="1000" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="blackwaterblood" particleamount="50" scalemin="3" scalemax="5" velocitymin="0" velocitymax="20" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="heavygib" particleamount="3" scalemin="15" scalemax="15" velocitymin="0" velocitymax="0" anglemin="0" anglemax="360" />
+    <ParticleEmitter particle="gib" particleamount="100" scalemin="1" scalemax="2" velocitymin="100" velocitymax="300" anglemin="0" anglemax="360" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="This" delay="5">
+    <SpawnCharacter speciesname="skinbreaker" count="1" spread="0" />
+  </StatusEffect>
+</Character>

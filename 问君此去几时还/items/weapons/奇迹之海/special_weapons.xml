@@ -1,0 +1,562 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!--三神丘-->
+  <Item name="'三神丘'" identifier="tsm_kep" subcategory="TSM" category="Weapon" description="" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gunsmith,mountableweapon,tsm_gun,provocativetohumanai" Scale="0.15" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+      <Item identifier="plastic" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="25">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="fpgacircuit" amount="2" />
+      <RequiredItem identifier="physicorium" amount="3" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="1" />
+      <RequiredItem identifier="tsm_plastic" amount="2" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/items/weapons/奇迹之海/电磁穿透器.png" sourcerect="214,120,459,260" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/奇迹之海/电磁穿透器.png" sourcerect="99,451,784,181" depth="0.55" origin="0.5,0.5" />
+    <Body width="784" height="181" density="25" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-5" aimpos="65,5" handle1="-175,-35" handle2="30,30" holdangle="-45" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon launchimpulse="25.0" weapondamagemodifier="1.0" barrelpos="150,10" spread="6" unskilledspread="20" combatPriority="100" reload="1" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <Sound file="%ModDir%/items/weapons/奇迹之海/kepfire.ogg" type="OnUse" range="1000" selectionmode="Random" />
+      <StatusEffect type="OnUse" target="This">
+        <Explosion range="150.0" force="2" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained" targetslot="1" Condition="-5" disabledeltatime="true">
+        <RequiredItem items="tsm_kep_battery" type="Contained" msg="ItemMsgBatteryCellRequired" />
+      </StatusEffect>
+      <RequiredItems items="harpoonammo" type="Contained" msg="ItemMsgSpearRequired" />
+      <RequiredSkill identifier="weapons" level="50" />
+      <StatusEffect type="OnUse" delay="0.5" target="This">
+        <Sound file="%ModDir%/items/weapons/奇迹之海/reload5.ogg" type="OnUse" range="500" />
+      </StatusEffect>
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="10" slotsperrow="2" hideitems="false" iteminterval="0,-4" itempos="27,10" containedstateindicatorstyle="spear" containedstateindicatorslot="0" containedspritedepth="0.56">
+      <Containable items="harpoonammo" hide="true">
+        <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true" />
+        <StatusEffect type="OnInserted" target="This" setvalue="true">
+          <Conditional isActive="eq true" />
+          <sound file="%ModDir%/items/weapons/reload_ogg/reload2.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7" />
+        </StatusEffect>
+        <StatusEffect target="This" holdpos="60,-5" holdangle="-45" disabledeltatime="true" checkconditionalalways="true" delay="1.0" maxchargetime="0" setvalue="true">
+          <conditional maxchargetime="eq 999" />
+        </StatusEffect>
+      </Containable>
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="0,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="2" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="tsm_kep_battery" setactive="true" hide="true" itempos="-45,-1" rotation="20" />
+      </SubContainer>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="flashlight" hide="false" itempos="36,5" setactive="true" />
+      </SubContainer>
+    </ItemContainer>
+    <aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
+    </Quality>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <SkillRequirementHint identifier="weapons" level="50" />
+  </Item>
+  <!--三神丘弹药-->
+  <Item name="穿刺长矛" identifier="tsm_kep_spear" subcategory="TSM" description="酒是穿肠毒药\n\n动能穿透器穿刺型长矛弹药，极其尖利的刺头，可以穿透一部分墙壁。" category="Weapon" maxstacksize="32" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" sonarsize="3" tags="mediumitem,kep_bolt,harpoonammo,handheldammo" Scale="0.13" impactsoundtag="impact_metal_heavy">
+    <InventoryIcon texture="%ModDir%/items/weapons/奇迹之海/电磁穿透器.png" sourcerect="391,1000,557,49" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/奇迹之海/电磁穿透器.png" sourcerect="391,1000,557,49" depth="0.55" alpha="1" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <LightComponent lightcolor="0.0,1.0,0.8,1.0" range="0.0" IsOn="true" castshadows="false">
+      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="262,363,172,14" alpha="1" />
+    </LightComponent>
+    <Price baseprice="76" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="3" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="2" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="10" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="2" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="10" />
+    </Price>
+    <Deconstruct time="5" />
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="15" amount="8">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="carbon" />
+      <RequiredItem identifier="iron" />
+      <RequiredItem identifier="dementonite" />
+    </Fabricate>
+    <Body width="557" height="49" density="30" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Rope sourcepullforce="300" targetpullforce="100" projectilepullforce="5" maxlength="1500" snaponcollision="false" spritewidth="3" tile="true" origin="0.05,0.5" targetminmass="30" lerpforces="true" snapanimduration="0.5">
+      <Sprite texture="%ModDir%/items/weapons/奇迹之海/电磁穿透器.png" sourcerect="1405,371,441,19" depth="0.57" origin="0.5,0.5" />
+      <StatusEffect type="OnUse" target="This" Snapped="true" delay="1" checkconditionalalways="true">
+        <Conditional targetitemcomponent="Projectile" IsStuckToTarget="false" />
+      </StatusEffect>
+    </Rope>
+    <Projectile characterusable="false" launchimpulse="12" sticktocharacters="true" sticktoitems="true" sticktostructures="true" sticktodoors="false">
+      <Attack structuredamage="40" itemdamage="20" targetforce="20" penetration="0.3" severlimbsprobability="0.2">
+        <Affliction identifier="lacerations" strength="40" />
+        <Affliction identifier="bleedingnonstop" strength="35" />
+        <Affliction identifier="stun" strength="0.5" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="chainguntrail" copyentityangle="true" particlespersecond="40" initialdelay="0.05" colormultiplier="90,90,150,125" scalemin="0.5" scalemax="0.6" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" copyentityangle="true" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.6" scalemax="0.7" colormultiplier="255,150,200" lifetimemultiplier="3" />
+        <ParticleEmitter particle="weldspark" copyentityangle="true" anglemin="-40" anglemax="40" particleamount="8" velocitymin="-300" velocitymax="-800" scalemin="1" scalemax="1.2" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="UseTarget,This" checkconditionalalways="true" comparison="And">
+        <Conditional Snapped="false" />
+        <Conditional mass="lt 30" />
+        <Affliction identifier="drag" strength="1" />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="高爆长矛" identifier="tsm_kep_spear_he" subcategory="TSM" description="气是雷烟火炮\n\n动能穿透器高爆型长矛弹药，拥有小范围的爆炸伤害，注意误伤！" tags="mediumitem,kep_bolt,harpoonammo,handheldammo" category="Weapon" cargocontaineridentifier="tsm_metalcrate" maxstacksize="30" sonarsize="3" scale="0.13" impactsoundtag="impact_metal_heavy">
+    <Price baseprice="92">
+      <Price storeidentifier="merchantoutpost" multiplier="1.5" minavailable="3" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="2" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="10" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="2" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="10" />
+    </Price>
+    <Deconstruct time="5"></Deconstruct>
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="20" amount="6">
+      <RequiredSkill identifier="weapons" level="25" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="tsm_sulphur" amount="2"/>
+      <RequiredItem identifier="tin" />
+      <RequiredItem identifier="uex" amount="2"/>
+    </Fabricate>
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <InventoryIcon texture="%ModDir%/items/weapons/奇迹之海/电磁穿透器.png" sourcerect="392,776,521,47" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/奇迹之海/电磁穿透器.png" sourcerect="392,776,521,47" depth="0.55" alpha="1" origin="0.5,0.5" />
+    <Body width="521" height="47" density="40" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" hitscancount="1" removeonhit="true" spread="0">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="0,47,167,100" scalemultiplier="1,0.5" />
+      <Attack structuredamage="50" itemdamage="100" severlimbsprobability="5" penetration="0.1" targetforce="15">
+        <Affliction identifier="explosiondamage" strength="35" />
+        <Affliction identifier="bleedingnonstop" strength="40" />
+        <Affliction identifier="stun" strength="0.25" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <sound file="%ModDir%/items/weapons/奇迹之海/高爆.ogg" range="3000" />
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+        <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,225,180" />
+        <Explosion range="60.0" ballastfloradamage="100" structuredamage="5" itemdamage="200" force="10.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.3">
+          <Affliction identifier="explosiondamage" strength="20" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="霰弹长矛" identifier="tsm_kep_spear_12" subcategory="TSM" category="Weapon" description="财是惹祸根苗\n\n动能穿透器霰弹型长矛弹药，可以喷射出多枚箭头，造成大范围损伤" maxstacksize="32" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" sonarsize="3" tags="mediumitem,kep_bolt,harpoonammo,handheldammo" Scale="0.13" impactsoundtag="impact_metal_heavy">
+    <Price baseprice="45">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="4" sold="true" />
+      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="12" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="12" />
+    </Price>
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <LightComponent lightcolor="0.0,1.0,0.8,1.0" range="0.0" IsOn="true" castshadows="false">
+      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+      <sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="262,363,172,14" alpha="1" />
+    </LightComponent>
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="20" requiresrecipe="false" amount="8">
+      <RequiredItem identifier="magnesium" amount="1" />
+      <RequiredItem identifier="aluminium" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5"></Deconstruct>
+    <InventoryIcon texture="%ModDir%/items/weapons/奇迹之海/电磁穿透器.png" sourcerect="389,879,521,45" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/奇迹之海/电磁穿透器.png" sourcerect="100,891,141,27" depth="0.55" alpha="1" origin="0.5,0.5" />
+    <Body width="141" height="27" density="40" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" hitscancount="7" removeonhit="true" spread="10">
+      <Attack structuredamage="1" targetforce="4" itemdamage="15" penetration="0.1" severlimbsprobability="0.5">
+        <Affliction identifier="lacerations" strength="10" />
+        <Affliction identifier="bleedingnonstop" strength="12" />
+        <Affliction identifier="stun" strength="0.05" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="榴弹长矛" identifier="tsm_kep_spear_heat" subcategory="TSM" category="Weapon" description="财是惹祸根苗\n\n动能穿透器榴弹型长矛弹药，爆炸范围较大，有最小起爆距离。" maxstacksize="30" interactthroughwalls="true" cargocontaineridentifier="tsm_metalcrate" sonarsize="3" tags="mediumitem,kep_bolt,harpoonammo,handheldammo" Scale="0.13" impactsoundtag="impact_metal_heavy">
+    <Price baseprice="122" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="1.5" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="4" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" />
+      <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="4" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="iron" />
+    </Deconstruct>
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="20" amount="5">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="iron" amount="4" />
+      <RequiredItem identifier="uex" amount="3"/>
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/items/weapons/奇迹之海/电磁穿透器.png" sourcerect="389,1104,560,45" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/奇迹之海/电磁穿透器.png" sourcerect="102,797,144,33" depth="0.55" alpha="1" origin="0.5,0.5" />
+    <Body width="144" height="33" density="30" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="15.0" sticktocharacters="false">
+      <Attack structuredamage="40" penetration="1" severlimbsprobability="5">
+        <Affliction identifier="explosiondamage" strength="50" />
+        <Affliction identifier="stun" strength="1.5" />
+      </Attack>
+      <sound file="%ModDir%/items/weapons/奇迹之海/榴弹.ogg" type="OnImpact" range="3000" />
+      <StatusEffect type="OnContained" target="This" tags="discharged" setvalue="true" disabledeltatime="true">
+        <Conditional hastag="charged" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" tags="charged" setvalue="true" delay="0.1" checkconditionalalways="true" disabledeltatime="true">
+        <Conditional hastag="neq charged" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+        <Conditional hastag="charged" />
+        <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="2000" />
+        <Explosion range="300.0" ballastfloradamage="80" structuredamage="20" penetration="0.15" levelwalldamage="120" itemdamage="400" force="5.0" severlimbsprobability="0.4" decal="explosion" decalsize="0.3">
+          <Affliction identifier="burn" strength="60" />
+          <Affliction identifier="explosiondamage" strength="50" />
+          <Affliction identifier="bleedingnonstop" strength="100" probability="0.05" />
+          <Affliction identifier="stun" strength="1" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <!--三神丘专用电池-->
+  <Item name="三神丘专用电池" identifier="tsm_kep_battery" subcategory="TSM" description="给予'三神丘'动能穿透器强大的动力，提高射速以及射击动能。没电后，可以放入电池进行充电。" category="Weapon" maxstacksize="3" tags="smallitem,loadable,mobilebattery" health="150" scale="0.13" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
+    <Price baseprice="225" minavailable="1" minleveldifficulty="25">
+      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantcity" />
+      <Price storeidentifier="merchantresearch" minavailable="2" />
+      <Price storeidentifier="merchantmilitary" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+      <Price storeidentifier="merchantengineering" multiplier="0.9" minavailable="2" />
+    </Price>
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <InventoryIcon texture="%ModDir%/items/weapons/奇迹之海/电磁穿透器.png" sourcerect="233,987,65,109" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/奇迹之海/电磁穿透器.png" sourcerect="110,994,63,97" depth="0.8" />
+    <Body width="63" height="97" density="30" />
+    <Holdable slots="Any,RightHand,LeftHand" holdpos="30,-50" aimpos="60,5" handle1="-20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character">
+        <Affliction identifier="tsm_kepbatteries_buff" strength="2" />
+      </StatusEffect>
+    </Holdable>
+    <Quality>
+      <QualityStat stattype="Condition" value="0.1" />
+    </Quality>
+  </Item>
+  <!--救赎-->
+  <Item name="救赎" identifier="tsm_redemption" subcategory="TSM" category="Weapon" cargocontaineridentifier="tsm_metalcrate" allowasextracargo="true" tags="mediumitem,weapon,gun,mountableweapon,tsm_gun,gunsmith,provocativetohumanai" Scale="0.15" impactsoundtag="impact_metal_heavy">
+    <Deconstruct time="5">
+      <Item identifier="copper" />
+      <Item identifier="plastic" />
+      <Item identifier="lead" />
+      <Item identifier="titanium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="false">
+      <RequiredSkill identifier="electrical" level="55" />
+      <RequiredItem identifier="fpgacircuit" amount="2" />
+      <RequiredItem identifier="lead" amount="2" />
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="3" />
+      <RequiredItem identifier="dementonite" amount="1" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/items/weapons/奇迹之海/电磁穿透器.png" sourcerect="1801,1180,478,301" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/奇迹之海/电磁穿透器.png" sourcerect="1151,114,1085,166" depth="0.55" origin="0.5,0.5" />
+    <Body width="1085" height="166" density="25" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="80,-5" aimpos="75,-5" handle1="-360,-50" handle2="40,30" holdangle="-25" />
+    <!--reload受武器操作技能影响-->
+    <RangedWeapon reload="0.1" holdtrigger="true" barrelpos="600,0" spread="0" unskilledspread="2" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2" maxchargetime="0.75" reloadnoskill="0.25" reloadskillrequirement="60">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="FlareBubbles" scalemin="1.4" scalemax="1.8" particleamount="14" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+      <ParticleEmitter particle="GlowDot" scalemin="4.0" scalemax="4.0" particleamount="20" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" colormultiplier="235,195,10,255" />
+      <ParticleEmitterCharge particle="chargenucleargun" particlespersecond="60" scalemultiplier="0.75,0.75" scalemin="1.0" scalemax="1.0" anglemin="0" anglemax="359" />
+      <Sound file="%ModDir%/items/weapons/奇迹之海/Redemption1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="%ModDir%/items/weapons/奇迹之海/Redemption2.ogg" type="OnUse" range="3000" />
+      <ChargeSound file="%ModDir%/items/weapons/奇迹之海/重力投掷器充能.ogg" range="3000" />
+      <StatusEffect type="OnUse" target="This">
+        <Explosion range="75.0" force="1.5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <!--充能时间受品质影响-->
+      <StatusEffect type="OnSecondaryUse" target="This" maxchargetime="0.6427" setvalue="true" disabledeltatime="true">
+        <Conditional QualityLevel="eq 1" />
+      </StatusEffect>
+      <StatusEffect type="OnSecondaryUse" target="This" maxchargetime="0.5622" setvalue="true" disabledeltatime="true">
+        <Conditional QualityLevel="eq 2" />
+      </StatusEffect>
+      <StatusEffect type="OnSecondaryUse" target="This" maxchargetime="0.5" setvalue="true" disabledeltatime="true">
+        <Conditional QualityLevel="eq 3" />
+      </StatusEffect>
+      <RequiredItems items="chargefuel" type="Contained" />
+      <RequiredItems items="tsm_redemption_RestraintBox" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="30" />
+    </RangedWeapon>
+    <RepairTool firedamage="50.0" structurefixamount="-2" range="1000" barrelpos="300,2" combatpriority="10" repairmultiple="true" repairthroughwalls="false" maxoverlappingwalldist="0.0" repairthroughholes="true" levelwallfixamount="-25.0" targetforce="10">
+      <RequiredItems items="laserfuel" type="Contained" />
+      <RequiredItems items="tsm_redemption_RestraintBox" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="30" />
+      <StatusEffect type="OnUse" targettype="Contained" targets="tsm_redemption_RestraintBox" Condition="-10" />
+      <StatusEffect type="OnUse" targettype="UseTarget" targets="door,ductblock,aliendoor" Stuck="-100.0" />
+      <StatusEffect type="OnUse" targettype="UseTarget" Condition="-30.0" />
+      <StatusEffect type="OnUse" targettype="Limb" severlimbsprobability="0.5">
+        <Affliction identifier="burn" amount="30" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" targettype="UseTarget" SpeedMultiplier="0.4" setvalue="true" />
+      <ParticleEmitter particle="tsmlaserborebreak" particlespersecond="17" copyentityangle="true" velocitymin="10" velocitymax="40" />
+      <ParticleEmitter particle="tsmlaserboreflame" particlespersecond="25" copyentityangle="true" velocitymin="20" velocitymax="80" />
+      <ParticleEmitter particle="tsmlaserborespark" particlespersecond="10" copyentityangle="true" anglemin="-60" anglemax="60" velocitymin="250" velocitymax="750" />
+      <ParticleEmitterHitStructure particle="shrapnel" particlespersecond="5" anglemin="-90" anglemax="90" velocitymin="100" velocitymax="200" scalemin="0.5" scalemax="0.75" />
+      <ParticleEmitterHitStructure particle="tsmlaserborespark" particlespersecond="20" copyentityangle="true" anglemin="-90" anglemax="90" velocitymin="500" velocitymax="1000" />
+      <ParticleEmitterHitStructure particle="tsmlaserboresmoke" particlespersecond="3" copyentityangle="true" anglemin="-45" anglemax="45" velocitymin="-5" velocitymax="-25" />
+      <ParticleEmitterHitStructure particle="tsmlaserboreflare" particlespersecond="20" copyentityangle="false" />
+      <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="shrapnel" particlespersecond="5" anglemin="-90" anglemax="90" velocitymin="100" velocitymax="200" scalemin="0.5" scalemax="0.75" />
+      <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="tsmlaserborespark" particlespersecond="20" copyentityangle="true" anglemin="-90" anglemax="90" velocitymin="500" velocitymax="1000" />
+      <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="tsmlaserboresmoke" particlespersecond="3" copyentityangle="true" anglemin="-45" anglemax="45" velocitymin="-5" velocitymax="-25" />
+      <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="tsmlaserboreflare" particlespersecond="20" copyentityangle="false" />
+      <ParticleEmitter particle="plasma" particlespersecond="50" copyentityangle="true" />
+      <ParticleEmitterHitItem identifiers="ore" particle="iceshards" particlespersecond="5" anglemin="-40" anglemax="40" velocitymin="10" velocitymax="300" scalemin="0.5" scalemax="1.0" />
+      <ParticleEmitterHitItem identifiers="ore" particle="tsmlaserborespark" particlespersecond="10" copyentityangle="true" anglemin="-90" anglemax="90" velocitymin="500" velocitymax="1000" />
+      <ParticleEmitterHitItem identifiers="ore" particle="tsmlaserboreflare" particlespersecond="20" copyentityangle="false" />
+      <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="4" anglemin="-50" anglemax="50" velocitymin="10" velocitymax="250" scalemin="1.5" scalemax="2.5" />
+      <ParticleEmitterHitCharacter particle="tsmlaserboreflare" particlespersecond="20" copyentityangle="false" />
+      <!--sound file="%ModDir%/items/weapons/奇迹之海/穿刺.ogg" type="OnUse" range="500.0" loop="false" selectionmode="All" /-->
+      <sound file="%ModDir%/items/weapons/奇迹之海/切割.ogg" type="OnUse" range="500.0" loop="true" />
+      <Fixable identifier="structure" />
+      <LightComponent LightColor="0.8,0.7,1.0,1.0" Flicker="0.5">
+        <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
+      </LightComponent>
+      <LightComponent LightColor="1.0,1.0,1.0,0.7" range="650" Flicker="0.3">
+        <LightTexture texture="%ModDir%/items/weapons/奇迹之海/laserbore_beam.png" origin="-0.001, 0.5" size="1.0,0.5" />
+      </LightComponent>
+    </RepairTool>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="10,-5" containedstateindicatorslot="0" containedstateindicatorstyle="tank">
+      <Containable items="tsm_redemption_RestraintBox" hide="true" />
+      <SlotIcon slotindex="0" texture="Content/UI/InventoryUIAtlas.png" sourcerect="907,947,107,27" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+      <StatusEffect type="Always" target="Contained" targets="tsm_redemption_RestraintBox" tags="chargefuel" setvalue="true">
+        <Conditional hastag="charge_mode" targetcontainer="true" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="Contained" targets="tsm_redemption_RestraintBox" tags="laserfuel" setvalue="true">
+        <Conditional hastag="laser_mode" targetcontainer="true" />
+        <Conditional hastag="! charge_mode" targetcontainer="true" />
+      </StatusEffect>
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="flashlight" hide="false" itempos="36,5" setactive="true" />
+      </SubContainer>
+    </ItemContainer>
+    <aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.1" />
+    </Quality>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="true">
+      <GuiFrame relativesize="0.1,0.15" anchor="CenterLeft" pivot="BottomLeft" relativeoffset="0.006,0.225" style="ItemUI" />
+      <Button text="mode.laser">
+        <StatusEffect type="OnUse" target="This" tags="laser_mode" setvalue="true" disabledeltatime="true" />
+      </Button>
+      <Button text="mode.charge">
+        <StatusEffect type="OnUse" target="This" tags="charge_mode" setvalue="true" disabledeltatime="true" />
+      </Button>
+    </CustomInterface>
+  </Item>
+  <!--救赎弹药-->
+  <Item name="tsm_redemption_bolt" identifier="tsm_redemption_bolt" category="Weapon" Tags="smallitem,refillableoxygensource" scale="0.5" sonarsize="2" hideinmenus="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" origin="0.5,0.5" />
+    <Body width="170" height="10" density="20" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracernucleargun" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.75" />
+      <ParticleEmitter particle="FlareBubbles" emitacrossrayinterval="50" />
+      <Attack structuredamage="1" targetforce="5" itemdamage="20" severlimbsprobability="0.5" penetration="0.4">
+        <Affliction identifier="explosiondamage" strength="45" />
+        <Affliction identifier="burn" strength="20" />
+        <Affliction identifier="radiationsickness" strength="5" />
+        <Affliction identifier="stun" strength="0.5" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="muzzleflashnucleargun" anglemin="0" anglemax="360" particleamount="10" velocitymin="0" scalemin="0.5" scalemax="0.8" scalemultiplier="0.75,0.75" />
+        <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="150,255,195,180" />
+        <ParticleEmitter particle="FlareBubbles" particleamount="3" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget" disabledeltatime="true">
+        <Explosion range="125.0" ballastfloradamage="50" structuredamage="0" itemdamage="0" force="5.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" flashcolor="255,0,0,255" penetration="1">
+          <Affliction identifier="burn" strength="15" />
+          <Affliction identifier="radiationsickness" strength="30" />
+          <Affliction identifier="stun" strength="1" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item name="救赎能量拘束盒" identifier="tsm_redemption_RestraintBox" subcategory="TSM" Category="Weapon" Tags="smallitem,refillableoxygensource,handheldammo" maxstacksize="5" health="150" cargocontaineridentifier="tsm_metalcrate" scale="0.5">
+    <Price baseprice="213" displaynonempty="true" minavailable="2">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" minavailable="3" />
+      <Price storeidentifier="merchantresearch" />
+      <Price storeidentifier="merchantmilitary" />
+      <Price storeidentifier="merchantmine" />
+      <Price storeidentifier="merchantengineering" multiplier="0.9" minavailable="5" />
+      <Price storeidentifier="merchanttutorial" multiplier="0.5" minavailable="3" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+      <Item identifier="uranium" mincondition="0.95" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator,tsm_fabricator_ammo" requiredtime="5">
+      <RequiredSkill identifier="electrical" level="25" />
+      <RequiredItem identifier="uranium" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="lead" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="5">
+      <RequiredSkill identifier="electrical" level="15" />
+      <RequiredItem identifier="uranium" />
+      <RequiredItem identifier="tsm_redemption_RestraintBox" mincondition="0.0" maxcondition="0.0" usecondition="false" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/items/weapons/奇迹之海/电磁穿透器.png" sourcerect="1408,538,36,37" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/奇迹之海/电磁穿透器.png" depth="0.55" sourcerect="1408,538,36,37" />
+    <Body radius="36" height="37" density="20" />
+    <Holdable handle1="0,0" slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect"></Holdable>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" SpawnWithId="tsm_redemption_bolt" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
+      <Containable items="tsm_redemption_bolt" />
+      <StatusEffect type="OnUse" target="This" condition="-25.0" disabledeltatime="true">
+        <SpawnItem identifiers="tsm_redemption_bolt" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Quality>
+      <QualityStat stattype="Condition" value="0.1" />
+    </Quality>
+  </Item>
+  <!--陨星-->
+  <Item name="'陨星'" identifier="tsm_yx" subcategory="TSM" category="Weapon" description="" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gunsmith,mountableweapon,tsm_gun,provocativetohumanai" Scale="0.2" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+      <Item identifier="plastic" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="25">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="fpgacircuit" amount="2" />
+      <RequiredItem identifier="physicorium" amount="1" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="1" />
+      <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="1" />
+      <RequiredItem identifier="tsm_plastic" amount="2" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/items/weapons/奇迹之海/电磁穿透器.png" sourcerect="984,1243,223,247" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/奇迹之海/电磁穿透器.png" sourcerect="43,1258,584,182" depth="0.55" origin="0.5,0.5" />
+    <Body width="784" height="181" density="25" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-5" aimpos="63,5" handle1="-110,-45" handle2="30,30" holdangle="-45" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon launchimpulse="25.0" weapondamagemodifier="1.0" penetration="0.1" barrelpos="270,20" spread="6" unskilledspread="20" combatPriority="100" reload="0.75" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <StatusEffect type="OnUse" target="This" forceplaysounds="true">
+        <Sound file="%ModDir%/items/weapons/奇迹之海/meteorite.ogg" type="OnUse" range="1500" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This">
+        <Explosion range="150.0" force="2" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
+      </StatusEffect>
+      <RequiredItems items="tsm_yx_ammo" type="Contained" msg="ItemMsgSpearRequired" />
+      <RequiredSkill identifier="weapons" level="50" />
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnUse" delay="0.3" target="This">
+        <Sound file="%ModDir%/items/weapons/奇迹之海/reload5.ogg" type="OnUse" range="500" />
+      </StatusEffect>
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="spear" containedstateindicatorslot="0" containedspritedepth="0.56">
+      <Containable items="tsm_yx_ammo" hide="false" itempos="-9,-8">
+        <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true" />
+        <StatusEffect type="OnInserted" target="This" setvalue="true">
+          <Conditional isActive="eq true" />
+          <sound file="%ModDir%/items/weapons/奇迹之海/yx_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="0.7" />
+        </StatusEffect>
+        <StatusEffect target="This" holdpos="60,-5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.4" maxchargetime="0" setvalue="true">
+          <conditional maxchargetime="eq 999" />
+        </StatusEffect>
+      </Containable>
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="flashlight" hide="false" itempos="20,-2" setactive="true" />
+      </SubContainer>
+    </ItemContainer>
+    <aitarget sightrange="1500" soundrange="3000" fadeouttime="5" />
+    <Quality>
+      <QualityStat stattype="FirepowerMultiplier" value="0.05" />
+      <QualityStat stattype="Firingratemultiplier" value="0.03" />
+    </Quality>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <SkillRequirementHint identifier="weapons" level="50" />
+  </Item>
+  <Item name="陨星弹匣" identifier="tsm_yx_ammobox" subcategory="TSM" description="" scale="0.2" category="weapon" health="25" maxstacksize="6" cargocontaineridentifier="tsm_metalcrate" tags="tsm_yx_ammo,smallitem,tsm_cjzd,magazine,handheldammo" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <InventoryIcon texture="%ModDir%/items/weapons/奇迹之海/电磁穿透器.png" sourcerect="748,1333,112,67" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/weapons/奇迹之海/电磁穿透器.png" sourcerect="748,1333,112,67" depth="0.56" origin="0.5,0.5" />
+    <Body width="49" height="92" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_kep_spear_he" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="tsm_kep_spear_he" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="tsm_kep_spear_he" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Fabricate suitablefabricators="tsm_fabricator,tsm_fabricator_ammo" requiredtime="10" requiresrecipe="false" amount="2">
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="2" />
+      <RequiredItem identifier="uex" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator,tsm_fabricator_ammo" displayname="recycleitem" requiredtime="6">
+      <RequiredItem tag="tsm_yx_ammo" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="1" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="01" />
+      <RequiredItem identifier="uex" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="0.25" />
+      <Item identifier="uex" mincondition="0.9" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+</Items>

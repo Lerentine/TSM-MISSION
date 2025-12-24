@@ -1,0 +1,75 @@
+﻿<Character SpeciesName="Ship3" Tags="highpriority" SpeciesTranslationOverride="" DisplayName="" Group="tsm" Humanoid="False" HasInfo="False" CanInteract="True" CanClimb="True" ForceSlowClimbing="False" Husk="False" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="True" CanSpeak="True" ShowHealthBar="False" UseBossHealthBar="True" Noise="100" Visibility="100" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="False" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="True" SonarDisruption="0" DistantSonarRange="200" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="" MusicType="monster" MusicCommonness="1" MusicRangeMultiplier="1">
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <gibemitter Particle="shrapnel" AngleMin="0" AngleMax="360" ScaleMin="1" ScaleMax="1" VelocityMin="50" VelocityMax="1000" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="40" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+  <Inventory Slots="Any,Any,Any,Any,Any,Any,Any,Any,Any" AccessibleWhenAlive="False" Commonness="1">
+    <Item Identifier="tsm_identifier" />
+    <Item Identifier="tsm_shipammo_shell" />
+    <Item Identifier="tsm_shipammo_shell" />
+    <Item Identifier="tsm_shipammo_shell" />
+  </Inventory>
+  <health Vitality="4000" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0" ConstantHealthRegeneration="0" HealthRegenerationWhenEating="0" StunImmunity="True" PoisonImmunity="True" PoisonVulnerability="1" EmpVulnerability="0" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="" />
+  <sound File="%ModDir:2852411866%/Characters/war/Ship/开炮1.ogg" State="Attack" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir:2852411866%/Characters/war/Ship/开炮2.ogg" State="Attack" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir:2852411866%/Characters/war/Ship/开炮3.ogg" State="Attack" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir:2852411866%/Characters/war/Ship/开炮4.ogg" State="Attack" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir:2852411866%/Characters/war/Ship/开炮5.ogg" State="Attack" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir:2852411866%/Characters/war/Ship/开炮6.ogg" State="Attack" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir:2852411866%/Characters/war/Ship/开炮7.ogg" State="Attack" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir:2852411866%/Characters/war/Ship/徘徊1.ogg" State="Idle" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir:2852411866%/Characters/war/Ship/徘徊2.ogg" State="Idle" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir:2852411866%/Characters/war/Ship/徘徊3.ogg" State="Idle" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir:2852411866%/Characters/war/Ship/受伤1.ogg" State="Damage" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir:2852411866%/Characters/war/Ship/受伤2.ogg" State="Damage" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir:2852411866%/Characters/war/Ship/受伤3.ogg" State="Damage" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir:2852411866%/Characters/war/Ship/受伤4.ogg" State="Damage" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir:2852411866%/Characters/war/Ship/受伤5.ogg" State="Damage" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir:2852411866%/Characters/war/Ship/受伤6.ogg" State="Damage" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir:2852411866%/Characters/war/Ship/受伤7.ogg" State="Damage" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir:2852411866%/Characters/war/Ship/受伤8.ogg" State="Damage" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir:2852411866%/Characters/war/Ship/受伤9.ogg" State="Damage" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir:2852411866%/Characters/war/Ship/受伤10.ogg" State="Damage" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir:2852411866%/Characters/war/Ship/受伤11.ogg" State="Damage" Range="5000" Volume="1" Tags="" />
+  <sound File="%ModDir:2852411866%/Characters/war/Ship/受伤12.ogg" State="Damage" Range="5000" Volume="1" Tags="" />
+  <ai CombatStrength="1000" Sight="5" Hearing="5" MaxPerceptionDistance="-1" AggressionHurt="100" AggressionGreed="10" FleeHealthThreshold="0" AttackWhenProvoked="True" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="False" EnforceAggressiveBehaviorForMissions="False" TargetOuterWalls="True" RandomAttack="False" CanOpenDoors="False" UsePathFindingToGetInside="False" KeepDoorsClosed="False" AvoidAbyss="True" StayInAbyss="False" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Target" PlayDeadProbability="0">
+    <targetpriority Tag="decoy" State="Attack" Priority="5" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <targetpriority Tag="human" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <targetpriority Tag="sonar" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <targetpriority Tag="room" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <targetpriority Tag="stronger" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="Ship" State="Avoid" Priority="1" ReactDistance="1000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="Ship1" State="Avoid" Priority="1" ReactDistance="1000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="Ship2" State="Avoid" Priority="1" ReactDistance="1000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="Ship3" State="Avoid" Priority="1" ReactDistance="1000" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+  </ai>
+  <StatusEffect type="OnActive" target="This" stackable="false" interval="33">
+    <SpawnCharacter speciesname="sight" count="1" spread="100" />
+    <Sound file="%ModDir:2852411866%/Characters/war/Ship/瞄准器发射6.ogg" range="6000" dontmuffle="true" selectionmode="Random" />
+    <Sound file="%ModDir:2852411866%/Characters/war/Ship/瞄准器发射5.ogg" range="6000" dontmuffle="true" selectionmode="Random" />
+    <Sound file="%ModDir:2852411866%/Characters/war/Ship/瞄准器发射4.ogg" range="6000" dontmuffle="true" selectionmode="Random" />
+    <Sound file="%ModDir:2852411866%/Characters/war/Ship/瞄准器发射3.ogg" range="6000" dontmuffle="true" selectionmode="Random" />
+    <Sound file="%ModDir:2852411866%/Characters/war/Ship/瞄准器发射2.ogg" range="6000" dontmuffle="true" selectionmode="Random" />
+    <Sound file="%ModDir:2852411866%/Characters/war/Ship/瞄准器发射1.ogg" range="6000" dontmuffle="true" selectionmode="Random" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="This" stackable="false" interval="30">
+    <SpawnCharacter speciesname="sight2" count="1" spread="100" />
+    <Sound file="%ModDir:2852411866%/Characters/war/Ship/瞄准器发射6.ogg" range="6000" dontmuffle="true" selectionmode="Random" />
+    <Sound file="%ModDir:2852411866%/Characters/war/Ship/瞄准器发射5.ogg" range="6000" dontmuffle="true" selectionmode="Random" />
+    <Sound file="%ModDir:2852411866%/Characters/war/Ship/瞄准器发射4.ogg" range="6000" dontmuffle="true" selectionmode="Random" />
+    <Sound file="%ModDir:2852411866%/Characters/war/Ship/瞄准器发射3.ogg" range="6000" dontmuffle="true" selectionmode="Random" />
+    <Sound file="%ModDir:2852411866%/Characters/war/Ship/瞄准器发射2.ogg" range="6000" dontmuffle="true" selectionmode="Random" />
+    <Sound file="%ModDir:2852411866%/Characters/war/Ship/瞄准器发射1.ogg" range="6000" dontmuffle="true" selectionmode="Random" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="This" stackable="false">
+    <Sound file="%ModDir:2852411866%/Characters/war/Ship/坠毁.ogg" range="6000" dontmuffle="true" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="This" interval="11">
+    <Explosion range="1000" structuredamage="250" force="500" smoke="false" sparks="false" shockwave="true" underwaterbubble="true" severlimbsprobability="1.0" camerashake="50" camerashakerange="10000" flashrange="1000" flashduration="2.0">
+      <Affliction identifier="explosiondamage" strength="200" />
+      <Affliction identifier="burn" strength="80" />
+    </Explosion>
+    <ParticleEmitter particle="bubbles" particleamount="60" scalemin="1" scalemax="2" velocitymin="50" velocitymax="100" anglemin="0" anglemax="360" />
+    <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" range="10000" volume="2" />
+    <ParticleEmitter particle="underwaterexplosion" drawontop="True" particleamount="1" scalemin="7" scalemax="7" velocitymin="0" velocitymax="20" anglemin="0" anglemax="360" />
+  </StatusEffect>
+</Character>

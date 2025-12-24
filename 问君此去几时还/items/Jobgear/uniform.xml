@@ -1,0 +1,1040 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!--奇迹之海-->
+  <Item name="白色西服" identifier="tsm_suit_white" category="Equipment" subcategory="tsmmissions" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true">
+    <PreferredContainer primary="crewcab" />
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon name="suit Icon" texture="suit_white_male.png" sourcerect="451,11,50,39" origin="0.5,0.5" />
+    <Sprite name="Captain's Uniform 3" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="244,292,126,64" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="suit Torso" texture="suit_white_[gender].png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="suit Left Lower Arm" texture="suit_white_[gender].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="suit Right Lower Arm" texture="suit_white_[gender].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="suit Left Upper Arm" texture="suit_white_[gender].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="suit Right Upper Arm" texture="suit_white_[gender].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="suit Waist" texture="suit_white_[gender].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="suit Right Thigh" texture="suit_white_[gender].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="suit Left Thigh" texture="suit_white_[gender].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="suit Right Leg" texture="suit_white_[gender].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="suit Left Leg" texture="suit_white_[gender].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="suit Right Shoe" texture="suit_white_[gender].png" limb="RightFoot" hidelimb="true" depthlimb="RightThigh" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="suit Left Shoe" texture="suit_white_[gender].png" limb="LeftFoot" hidelimb="true" depthlimb="LeftThigh" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.9" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.9" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bleeding" damagemultiplier="0.85" />
+    </Wearable>
+  </Item>
+  <Item name="棕色西服" identifier="tsm_suit_brown" category="Equipment" subcategory="tsmmissions" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true">
+    <PreferredContainer primary="crewcab" />
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon name="suit Icon" texture="suit_brown_male.png" sourcerect="451,11,50,39" origin="0.5,0.5" />
+    <Sprite name="Captain's Uniform 3" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="244,292,126,64" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="suit Torso" texture="suit_brown_[gender].png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="suit Left Lower Arm" texture="suit_brown_[gender].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="suit Right Lower Arm" texture="suit_brown_[gender].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="suit Left Upper Arm" texture="suit_brown_[gender].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="suit Right Upper Arm" texture="suit_brown_[gender].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="suit Waist" texture="suit_brown_[gender].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="suit Right Thigh" texture="suit_brown_[gender].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="suit Left Thigh" texture="suit_brown_[gender].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="suit Right Leg" texture="suit_brown_[gender].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="suit Left Leg" texture="suit_brown_[gender].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="suit Right Shoe" texture="suit_brown_[gender].png" limb="RightFoot" hidelimb="true" depthlimb="RightThigh" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="suit Left Shoe" texture="suit_brown_[gender].png" limb="LeftFoot" hidelimb="true" depthlimb="LeftThigh" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.9" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.9" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bleeding" damagemultiplier="0.85" />
+    </Wearable>
+  </Item>
+  <Item name="站点警察制服" identifier="tsm_outpost_police" category="Equipment" subcategory="tsmmissions" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true">
+    <PreferredContainer primary="crewcab" />
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon name="outpost_police Icon" texture="outpost_police_uniform_male.png" sourcerect="432,1,80,82" origin="0.5,0.5" />
+    <Sprite name="outpost_police spr" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="244,292,126,64" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="outpost_police Torso" texture="outpost_police_uniform_[gender].png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="outpost_police Right Hand" texture="outpost_police_uniform_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="outpost_police Left Hand" texture="outpost_police_uniform_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="outpost_police Left Lower Arm" texture="outpost_police_uniform_[gender].png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="outpost_police Right Lower Arm" texture="outpost_police_uniform_[gender].png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="outpost_police Left Upper Arm" texture="outpost_police_uniform_[gender].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="outpost_police Right Upper Arm" texture="outpost_police_uniform_[gender].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="outpost_police Waist" texture="outpost_police_uniform_[gender].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="outpost_police Right Thigh" texture="outpost_police_uniform_[gender].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="outpost_police Left Thigh" texture="outpost_police_uniform_[gender].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="outpost_police Right Leg" texture="outpost_police_uniform_[gender].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="outpost_police Left Leg" texture="outpost_police_uniform_[gender].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="outpost_police Right Shoe" texture="outpost_police_uniform_[gender].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="outpost_police Left Shoe" texture="outpost_police_uniform_[gender].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.9" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.85" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bleeding" damagemultiplier="0.85" />
+    </Wearable>
+  </Item>
+  <Item name="奇迹之海宪兵纠察制服" identifier="tsm_gendarmerie_uniforms" subcategory="tsmmissions" category="Equipment" tags="smallitem,clothing" fireproof="true" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredItem identifier="organicfiber" amount="4" />
+      <RequiredItem identifier="ballisticfiber" amount="1" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <RequiredItem identifier="organicfiber" amount="3" />
+    </Deconstruct>
+    <InventoryIcon name="tsm_gendarmerie Icon" texture="tsm_gendarmerie_female.png" sourcerect="423,8,89,49" origin="0.5,0.5" />
+    <Sprite name="tsm_gendarmerie" texture="tsm_gendarmerie_female.png" sourcerect="423,8,89,49" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="tsm_gendarmerie Torso" texture="tsm_gendarmerie_[GENDER].png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="false" origin="0.45,0.4" inheritsourcerect="false" sourcerect="172,18,102,193" />
+      <sprite name="tsm_gendarmerie Right Hand" texture="tsm_gendarmerie_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="tsm_gendarmerie Left Hand" texture="tsm_gendarmerie_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="tsm_gendarmerie Right Lower Arm" texture="tsm_gendarmerie_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="tsm_gendarmerie Left Lower Arm" texture="tsm_gendarmerie_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="tsm_gendarmerie Right Upper Arm" texture="tsm_gendarmerie_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="tsm_gendarmerie Left Upper Arm" texture="tsm_gendarmerie_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="tsm_gendarmerie Waist" texture="tsm_gendarmerie_[GENDER].png" limb="Waist" hideotherwearables="true" hidelimb="true" inherittexturescale="false" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+      <sprite name="tsm_gendarmerie Right Thigh" texture="tsm_gendarmerie_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="tsm_gendarmerie Left Thigh" texture="tsm_gendarmerie_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="tsm_gendarmerie Right Leg" texture="tsm_gendarmerie_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="tsm_gendarmerie Left Leg" texture="tsm_gendarmerie_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="tsm_gendarmerie Left Shoe" texture="tsm_gendarmerie_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="tsm_gendarmerie Right Shoe" texture="tsm_gendarmerie_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.9" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.9" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bleeding" damagemultiplier="0.8" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="burn" damagemultiplier="0.5" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidburn" damagemultiplier="0.9" />
+      <SkillModifier skillidentifier="helm" skillvalue="10" />
+    </Wearable>
+  </Item>
+  <Item name="奇迹之海宪兵纠察帽" identifier="tsm_gendarmerie_hat" subcategory="tsmmissions" category="Equipment" hideinmenus="true" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" scale="0.38">
+    <Deconstruct time="10" />
+    <Sprite name="Ceremonial hat" texture="helmet.png" depth="0.6" sourcerect="1873,162,100,60" origin="0.5,0.5" />
+    <Body width="75" height="50" density="30" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <sprite name="Ceremonial hat Wearable" texture="helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.67" hidelimb="false" sourcerect="1873,162,100,60" origin="0.49,1.1" />
+      <SkillModifier skillidentifier="helm" skillvalue="15" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.85" />
+    </Wearable>
+  </Item>
+  <Item name="海军大幅帽" identifier="Extra_hat_male_tsm" subcategory="tsmmissions" category="Equipment" hideinmenus="true" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="最后的良心，秩序的天平" scale="0.38">
+    <Deconstruct time="10" />
+    <Sprite name="Ceremonial hat" texture="%ModDir%/npc/suger/suger_head.png" depth="0.6" sourcerect="470,22,100,60" origin="0.5,0.5" />
+    <Body width="75" height="50" density="30" />
+    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
+      <sprite name="Ceremonial hat Wearable" texture="%ModDir%/npc/suger/suger_head.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.67" hidelimb="false" sourcerect="470,22,100,60" origin="0.49,1.1" />
+      <SkillModifier skillidentifier="helm" skillvalue="10" />
+      <SkillModifier skillidentifier="weapons" skillvalue="10" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.9" />
+    </Wearable>
+  </Item>
+  <Item name="65式军服" identifier="tsm_65_uniform" subcategory="tsmmissions" aliases="securityuniform" category="Equipment" tags="smallitem,clothing,vest" fireproof="true" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="secarmcab" amount="1" notcampaign="true" />
+    <PreferredContainer secondary="wreckarmcab,abandonedarmcab,outpostarmcab" amount="1" spawnprobability="0.05" />
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <!--Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="ballisticfiber" amount="2" />
+      <RequiredItem identifier="organicfiber" amount="2" />
+      <RequiredItem identifier="aluminium" amount="3" />
+    </Fabricate-->
+    <InventoryIcon name="65 uniform Icon" texture="%ModDir%/items/Jobgear/65_uniform.png" sourcerect="465,212,117,44" origin="0.5,0.5" />
+    <Sprite name="65 uniform" texture="%ModDir%/items/Jobgear/65_uniform.png" sourcerect="465,212,117,44" depth="0.55" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="65 uniform Torso" texture="%ModDir%/items/Jobgear/65_uniform.png" limb="Torso" depthlimb="Jaw" hideotherwearables="false" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="178,27,77,154" origin="0.465,0.45" />
+      <sprite name="65 uniform Right Hand" texture="%ModDir%/items/Jobgear/65_uniform.png" limb="RightHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="65 uniform Left Hand" texture="%ModDir%/items/Jobgear/65_uniform.png" limb="LeftHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="65 uniform Left Lower Arm" texture="%ModDir%/items/Jobgear/65_uniform.png" limb="LeftForearm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="65 uniform Right Lower Arm" texture="%ModDir%/items/Jobgear/65_uniform.png" limb="RightForearm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="65 uniform Left Upper Arm" texture="%ModDir%/items/Jobgear/65_uniform.png" limb="LeftArm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="65 uniform Right Upper Arm" texture="%ModDir%/items/Jobgear/65_uniform.png" limb="RightArm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="65 uniform Waist" texture="%ModDir%/items/Jobgear/65_uniform.png" limb="Waist" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="65 uniform Right Thigh" texture="%ModDir%/items/Jobgear/65_uniform.png" limb="RightThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" origin="0.1,0.28" inheritsourcerect="true" />
+      <sprite name="65 uniform Left Thigh" texture="%ModDir%/items/Jobgear/65_uniform.png" limb="LeftThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" origin="0.1,0.28" inheritsourcerect="true" />
+      <sprite name="65 uniform Right Leg" texture="%ModDir%/items/Jobgear/65_uniform.png" limb="RightLeg" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" origin="0.09,0.25" inheritsourcerect="true" />
+      <sprite name="65 uniform Left Leg" texture="%ModDir%/items/Jobgear/65_uniform.png" limb="LeftLeg" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" origin="0.09,0.25" inheritsourcerect="true" />
+      <sprite name="65 uniform Right Shoe" texture="%ModDir%/items/Jobgear/65_uniform.png" limb="RightFoot" depthlimb="RightThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="65 uniform Left Shoe" texture="%ModDir%/items/Jobgear/65_uniform.png" limb="LeftFoot" depthlimb="LeftThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="65 Boobs" texture="%ModDir%/items/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.85" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.75" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.75" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.85" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.75" />
+      <damagemodifier afflictionidentifiers="stun" armorsector="0.0,360.0" damagemultiplier="0.8" />
+    </Wearable>
+    <ItemContainer capacity="4">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
+    </ItemContainer>
+  </Item>
+  <Item name="冥府作战服" identifier="tsm_mingfu_uniform" subcategory="tsmmissions" aliases="securityuniform" category="Equipment" tags="smallitem,clothing,vest" fireproof="true" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="ballisticfiber" amount="2" />
+      <RequiredItem identifier="organicfiber" amount="2" />
+      <RequiredItem identifier="aluminium" amount="3" />
+      <RequiredItem identifier="tsm_old_uniform" amount="1" />
+    </Fabricate>
+    <InventoryIcon name="mf uniform Icon" texture="%ModDir%/items/Jobgear/mf_female.png" sourcerect="455,115,129,100" origin="0.5,0.5" />
+    <Sprite name="mf uniform" texture="%ModDir%/items/Jobgear/mf_female.png" sourcerect="461,22,117,53" depth="0.55" origin="0.5,0.5" />
+    <Body width="117" height="50" density="13" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="mf uniform Torso" texture="%ModDir%/items/Jobgear/mf_[gender].png" limb="Torso" depthlimb="Jaw" hideotherwearables="false" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="174,22,90,158" origin="0.5,0.5" />
+      <sprite name="mf uniform Right Hand" texture="%ModDir%/items/Jobgear/mf_[gender].png" limb="RightHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="mf uniform Left Hand" texture="%ModDir%/items/Jobgear/mf_[gender].png" limb="LeftHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="mf uniform Left Lower Arm" texture="%ModDir%/items/Jobgear/mf_[gender].png" limb="LeftForearm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="mf uniform Right Lower Arm" texture="%ModDir%/items/Jobgear/mf_[gender].png" limb="RightForearm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="mf uniform Left Upper Arm" texture="%ModDir%/items/Jobgear/mf_[gender].png" limb="LeftArm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="mf uniform Right Upper Arm" texture="%ModDir%/items/Jobgear/mf_[gender].png" limb="RightArm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="mf uniform Waist" texture="%ModDir%/items/Jobgear/mf_[gender].png" limb="Waist" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="mf uniform Right Thigh" texture="%ModDir%/items/Jobgear/mf_[gender].png" limb="RightThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" origin="0.1,0.28" inheritsourcerect="true" />
+      <sprite name="mf uniform Left Thigh" texture="%ModDir%/items/Jobgear/mf_[gender].png" limb="LeftThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" origin="0.1,0.28" inheritsourcerect="true" />
+      <sprite name="mf uniform Right Leg" texture="%ModDir%/items/Jobgear/mf_[gender].png" limb="RightLeg" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" origin="0.09,0.25" inheritsourcerect="true" />
+      <sprite name="mf uniform Left Leg" texture="%ModDir%/items/Jobgear/mf_[gender].png" limb="LeftLeg" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" origin="0.09,0.25" inheritsourcerect="true" />
+      <sprite name="mf uniform Right Shoe" texture="%ModDir%/items/Jobgear/mf_[gender].png" limb="RightFoot" depthlimb="RightThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="mf uniform Left Shoe" texture="%ModDir%/items/Jobgear/mf_[gender].png" limb="LeftFoot" depthlimb="LeftThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="mf Boobs" texture="%ModDir%/items/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.85" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.75" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.75" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.85" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.75" />
+      <damagemodifier afflictionidentifiers="stun" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      <SkillModifier skillidentifier="medical" skillvalue="-5" />
+      <SkillModifier skillidentifier="mechanical" skillvalue="-7" />
+      <SkillModifier skillidentifier="electrical" skillvalue="-7" />
+    </Wearable>
+    <ItemContainer capacity="4">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
+    </ItemContainer>
+  </Item>
+  <Item name="鸟巢作战服" identifier="tsm_niaochao_uniform" subcategory="tsmmissions" aliases="securityuniform" category="Equipment" tags="smallitem,clothing,vest" fireproof="true" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="ballisticfiber" amount="2" />
+      <RequiredItem identifier="organicfiber" amount="2" />
+      <RequiredItem identifier="aluminium" amount="3" />
+      <RequiredItem identifier="tsm_old_uniform" amount="1" />
+    </Fabricate>
+    <InventoryIcon name="niaochao uniform Icon" texture="%ModDir%/items/Jobgear/niaochao_female.png" sourcerect="457,0,118,64" origin="0.5,0.5" />
+    <Sprite name="niaochao uniform" texture="%ModDir%/items/Jobgear/niaochao_female.png" sourcerect="457,0,118,64" depth="0.55" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="niaochao uniform Torso" texture="%ModDir%/items/Jobgear/niaochao_[gender].png" limb="Torso" depthlimb="Jaw" hideotherwearables="false" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="174,22,90,158" origin="0.465,0.45" />
+      <sprite name="niaochao uniform Right Hand" texture="%ModDir%/items/Jobgear/niaochao_[gender].png" limb="RightHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="niaochao uniform Left Hand" texture="%ModDir%/items/Jobgear/niaochao_[gender].png" limb="LeftHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="niaochao uniform Left Lower Arm" texture="%ModDir%/items/Jobgear/niaochao_[gender].png" limb="LeftForearm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="niaochao uniform Right Lower Arm" texture="%ModDir%/items/Jobgear/niaochao_[gender].png" limb="RightForearm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="niaochao uniform Left Upper Arm" texture="%ModDir%/items/Jobgear/niaochao_[gender].png" limb="LeftArm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="niaochao uniform Right Upper Arm" texture="%ModDir%/items/Jobgear/niaochao_[gender].png" limb="RightArm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="niaochao uniform Waist" texture="%ModDir%/items/Jobgear/niaochao_[gender].png" limb="Waist" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="niaochao uniform Right Thigh" texture="%ModDir%/items/Jobgear/niaochao_[gender].png" limb="RightThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="niaochao uniform Left Thigh" texture="%ModDir%/items/Jobgear/niaochao_[gender].png" limb="LeftThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="niaochao uniform Right Leg" texture="%ModDir%/items/Jobgear/niaochao_[gender].png" limb="RightLeg" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="niaochao uniform Left Leg" texture="%ModDir%/items/Jobgear/niaochao_[gender].png" limb="LeftLeg" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="niaochao uniform Right Shoe" texture="%ModDir%/items/Jobgear/niaochao_[gender].png" limb="RightFoot" depthlimb="RightThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="niaochao uniform Left Shoe" texture="%ModDir%/items/Jobgear/niaochao_[gender].png" limb="LeftFoot" depthlimb="LeftThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="niaochao Boobs" texture="%ModDir%/items/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.85" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.75" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.75" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.85" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.75" />
+      <damagemodifier afflictionidentifiers="stun" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      <SkillModifier skillidentifier="medical" skillvalue="-5" />
+      <SkillModifier skillidentifier="mechanical" skillvalue="-7" />
+      <SkillModifier skillidentifier="electrical" skillvalue="-7" />
+    </Wearable>
+    <ItemContainer capacity="4">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
+    </ItemContainer>
+  </Item>
+  <Item name="怒江作战服" identifier="tsm_nujiang_uniform" subcategory="tsmmissions" aliases="securityuniform" category="Equipment" tags="smallitem,clothing,vest" fireproof="true" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <InventoryIcon name="nj uniform Icon" texture="%ModDir%/items/Jobgear/tsm_nujiang_male.png" sourcerect="423,7,73,165" origin="0.5,0.5" />
+    <Sprite name="nj uniform" texture="%ModDir%/items/Jobgear/tsm_nujiang_male.png" sourcerect="421,206,89,40" depth="0.55" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="nj uniform Torso" texture="%ModDir%/items/Jobgear/tsm_nujiang_[gender].png" limb="Torso" depthlimb="Jaw" hideotherwearables="false" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="185,20,72,131" origin="0.43,0.54" />
+      <sprite name="nj uniform Right Hand" texture="%ModDir%/items/Jobgear/tsm_nujiang_[gender].png" limb="RightHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="nj uniform Left Hand" texture="%ModDir%/items/Jobgear/tsm_nujiang_[gender].png" limb="LeftHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="nj uniform Left Lower Arm" texture="%ModDir%/items/Jobgear/tsm_nujiang_[gender].png" limb="LeftForearm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="nj uniform Right Lower Arm" texture="%ModDir%/items/Jobgear/tsm_nujiang_[gender].png" limb="RightForearm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="nj uniform Left Upper Arm" texture="%ModDir%/items/Jobgear/tsm_nujiang_[gender].png" limb="LeftArm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="nj uniform Right Upper Arm" texture="%ModDir%/items/Jobgear/tsm_nujiang_[gender].png" limb="RightArm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="nj uniform Waist" texture="%ModDir%/items/Jobgear/tsm_nujiang_[gender].png" limb="Waist" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="nj uniform Right Thigh" texture="%ModDir%/items/Jobgear/tsm_nujiang_[gender].png" limb="RightThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" origin="0.09,0.28" inheritsourcerect="true" />
+      <sprite name="nj uniform Left Thigh" texture="%ModDir%/items/Jobgear/tsm_nujiang_[gender].png" limb="LeftThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" origin="0.09,0.28" inheritsourcerect="true" />
+      <sprite name="nj uniform Right Leg" texture="%ModDir%/items/Jobgear/tsm_nujiang_[gender].png" limb="RightLeg" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" origin="0.08,0.25" inheritsourcerect="true" />
+      <sprite name="nj uniform Left Leg" texture="%ModDir%/items/Jobgear/tsm_nujiang_[gender].png" limb="LeftLeg" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" origin="0.08,0.25" inheritsourcerect="true" />
+      <sprite name="nj uniform Right Shoe" texture="%ModDir%/items/Jobgear/tsm_nujiang_[gender].png" limb="RightFoot" depthlimb="RightThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" origin="0.05,0.1" inheritsourcerect="true" />
+      <sprite name="nj uniform Left Shoe" texture="%ModDir%/items/Jobgear/tsm_nujiang_[gender].png" limb="LeftFoot" depthlimb="LeftThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="nj Boobs" texture="%ModDir%/items/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="burn" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.85" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.55" />
+      <damagemodifier afflictionidentifiers="stun" armorsector="0.0,360.0" damagemultiplier="0.75" />
+      <SkillModifier skillidentifier="medical" skillvalue="-5" />
+      <SkillModifier skillidentifier="mechanical" skillvalue="-5" />
+      <SkillModifier skillidentifier="electrical" skillvalue="-5" />
+    </Wearable>
+    <ItemContainer capacity="4">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
+    </ItemContainer>
+  </Item>
+  <Item name="日暮山作战服" identifier="tsm_sundawn_uniform" subcategory="tsmmissions" aliases="securityuniform" category="Equipment" tags="smallitem,clothing,vest" fireproof="true" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="ballisticfiber" amount="3" />
+      <RequiredItem identifier="organicfiber" amount="2" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+      <RequiredItem identifier="tsm_old_uniform" amount="1" />
+    </Fabricate>
+    <InventoryIcon name="sundawn Icon" texture="%ModDir%/items/Jobgear/sundawn_uniform.png" sourcerect="423,27,82,174" origin="0.5,0.5" />
+    <Sprite name="sundawn" texture="%ModDir%/items/Jobgear/stormyseas_female.png" sourcerect="423,8,89,49" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="sundawn Torso" texture="%ModDir%/items/Jobgear/sundawn_uniform.png" limb="Torso" depthlimb="Jaw" hidelimb="true" inherittexturescale="false" inheritorigin="false" origin="0.5,0.45" scale="0.47" inheritsourcerect="false" sourcerect="179,16,82,162" />
+      <sprite name="sundawn Right Hand" texture="%ModDir%/items/Jobgear/sundawn_uniform.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="291,164,24,39" origin="0.5,0.45" />
+      <sprite name="sundawn Left Hand" texture="%ModDir%/items/Jobgear/sundawn_uniform.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="356,171,22,32" origin="0.5,0.45" />
+      <sprite name="sundawn Right Lower Arm" texture="%ModDir%/items/Jobgear/sundawn_uniform.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="285,3,44,80" origin="0.5,0.55" />
+      <sprite name="sundawn Left Lower Arm" texture="%ModDir%/items/Jobgear/sundawn_uniform.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="352,3,44,80" origin="0.5,0.55" />
+      <sprite name="sundawn Right Upper Arm" texture="%ModDir%/items/Jobgear/sundawn_uniform.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="288,87,29,75" origin="0.5,0.5" />
+      <sprite name="sundawn Left Upper Arm" texture="%ModDir%/items/Jobgear/sundawn_uniform.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="354,87,32,74" origin="0.5,0.5" />
+      <sprite name="sundawn Waist" texture="%ModDir%/items/Jobgear/sundawn_uniform.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="189,195,56,52" origin="0.4,0.45" />
+      <sprite name="sundawn Right Thigh" texture="%ModDir%/items/Jobgear/sundawn_uniform.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="14,9,58,108" origin="0.5,0.5" />
+      <sprite name="sundawn Left Thigh" texture="%ModDir%/items/Jobgear/sundawn_uniform.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="94,9,58,108" origin="0.45,0.5" />
+      <sprite name="sundawn Right Leg" texture="%ModDir%/items/Jobgear/sundawn_uniform.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="23,131,40,117" origin="0.35,0.58" />
+      <sprite name="sundawn Left Leg" texture="%ModDir%/items/Jobgear/sundawn_uniform.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="103,131,40,117" origin="0.4,0.58" />
+      <sprite name="sundawn Left Shoe" texture="%ModDir%/items/Jobgear/sundawn_uniform.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="277,205,60,50" origin="0.5,0.45" />
+      <sprite name="sundawn Right Shoe" texture="%ModDir%/items/Jobgear/sundawn_uniform.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="277,205,60,50" origin="0.5,0.45" />
+      <sprite name="sundawn Boobs" texture="%ModDir%/items/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.75" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.85" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.7" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.80" />
+      <SkillModifier skillidentifier="medical" skillvalue="+10" />
+      <SkillModifier skillidentifier="weapons" skillvalue="-10" />
+      <SkillModifier skillidentifier="mechanical" skillvalue="-10" />
+      <SkillModifier skillidentifier="electrical" skillvalue="-10" />
+    </Wearable>
+    <ItemContainer capacity="4">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
+    </ItemContainer>
+  </Item>
+  <Item name="先进作战服" identifier="tsm_advanced_uniform" subcategory="tsmmissions" aliases="securityuniform" category="Equipment" tags="smallitem,clothing,vest" fireproof="true" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+      <Item identifier="titanium" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="ballisticfiber" amount="3" />
+      <RequiredItem identifier="organicfiber" amount="3" />
+      <RequiredItem identifier="titanium" amount="3" />
+      <RequiredItem identifier="tsm_old_uniform" amount="1" />
+    </Fabricate>
+    <InventoryIcon name="advanced uniform Icon" texture="%ModDir%/items/Jobgear/advanced_uniform_male.png" sourcerect="423,200,89,56" origin="0.5,0.5" />
+    <Sprite name="advanced uniform" texture="%ModDir%/items/Jobgear/advanced_uniform_male.png" sourcerect="423,200,89,56" depth="0.55" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="advanced Torso" texture="%ModDir%/items/Jobgear/advanced_uniform_[GENDER].png" limb="Torso" hidelimb="false" depthlimb="Jaw" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" origin="0.41,0.47" sourcerect="176,0,96,192" />
+      <sprite name="advanced Right Hand" texture="%ModDir%/items/Jobgear/advanced_uniform_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="advanced Left Hand" texture="%ModDir%/items/Jobgear/advanced_uniform_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="advanced Right Lower Arm" texture="%ModDir%/items/Jobgear/advanced_uniform_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="advanced Left Lower Arm" texture="%ModDir%/items/Jobgear/advanced_uniform_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="advanced Right Upper Arm" texture="%ModDir%/items/Jobgear/advanced_uniform_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="advanced Left Upper Arm" texture="%ModDir%/items/Jobgear/advanced_uniform_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="advanced Waist" texture="%ModDir%/items/Jobgear/advanced_uniform_male.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="176,0,96,192" origin="0.5,0.5" />
+      <sprite name="advanced Right Thigh" texture="%ModDir%/items/Jobgear/advanced_uniform_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="advanced Left Thigh" texture="%ModDir%/items/Jobgear/advanced_uniform_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="advanced Right Leg" texture="%ModDir%/items/Jobgear/advanced_uniform_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="advanced Left Leg" texture="%ModDir%/items/Jobgear/advanced_uniform_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="advanced Left Shoe" texture="%ModDir%/items/Jobgear/advanced_uniform_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="advanced Right Shoe" texture="%ModDir%/items/Jobgear/advanced_uniform_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="advanced Boobs" texture="%ModDir%/items/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.7" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.7" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.65" />
+      <SkillModifier skillidentifier="weapons" skillvalue="+10" />
+      <SkillModifier skillidentifier="mechanical" skillvalue="-10" />
+      <SkillModifier skillidentifier="electrical" skillvalue="-10" />
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.85" setvalue="true" />
+    </Wearable>
+    <ItemContainer capacity="8">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
+    </ItemContainer>
+  </Item>
+  <Item name="九州作战服" identifier="tsm_jz_uniform" subcategory="tsmmissions" aliases="securityuniform" category="Equipment" tags="smallitem,clothing,vest" fireproof="true" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <!--Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <RequiredItem identifier="ballisticfiber" amount="2"/>
+    <RequiredItem identifier="organicfiber" amount="2"/>
+    <RequiredItem identifier="rubber" amount="2"/>
+    <RequiredItem identifier="tsm_old_uniform" amount="1"/>
+    </Fabricate-->
+    <InventoryIcon name="jz uniform Icon" texture="%ModDir%/items/Jobgear/九州作战服.png" sourcerect="442,0,128,107" origin="0.5,0.5" />
+    <Sprite name="jz uniform" texture="%ModDir%/items/Jobgear/九州作战服.png" sourcerect="453,209,117,44" depth="0.55" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="jz uniform Torso" texture="%ModDir%/items/Jobgear/九州作战服.png" limb="Torso" depthlimb="Jaw" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="182,14,63,136" origin="0.48,0.55" />
+      <sprite name="jz Right Hand" texture="%ModDir%/items/Jobgear/jz_vest.png" limb="RightHand" hideotherwearables="false" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="382,256,46,49" scale="0.35" origin="0.15,0.37" />
+      <sprite name="jz Left Hand" texture="%ModDir%/items/Jobgear/jz_vest.png" limb="LeftHand" hideotherwearables="false" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="482,257,45,49" scale="0.35" origin="0.15,0.37" />
+      <sprite name="jz uniform Left Lower Arm" texture="%ModDir%/items/Jobgear/九州作战服.png" hideotherwearables="false" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="jz uniform Right Lower Arm" texture="%ModDir%/items/Jobgear/九州作战服.png" hideotherwearables="false" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="jz uniform Left Upper Arm" texture="%ModDir%/items/Jobgear/九州作战服.png" hideotherwearables="false" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="jz uniform Right Upper Arm" texture="%ModDir%/items/Jobgear/九州作战服.png" hideotherwearables="false" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="jz uniform Waist" texture="%ModDir%/items/Jobgear/九州作战服.png" limb="Waist" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="jz uniform Right Thigh" texture="%ModDir%/items/Jobgear/九州作战服.png" hideotherwearables="false" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="false" origin="0.1,0.28" inheritsourcerect="true" />
+      <sprite name="jz uniform Left Thigh" texture="%ModDir%/items/Jobgear/九州作战服.png" hideotherwearables="false" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="false" origin="0.1,0.28" inheritsourcerect="true" />
+      <sprite name="jz uniform Right Leg" texture="%ModDir%/items/Jobgear/九州作战服.png" hideotherwearables="false" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="false" origin="0.09,0.2" inheritsourcerect="true" />
+      <sprite name="jz uniform Left Leg" texture="%ModDir%/items/Jobgear/九州作战服.png" hideotherwearables="false" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="false" origin="0.09,0.2" inheritsourcerect="true" />
+      <sprite name="jz uniform Right Shoe" texture="%ModDir%/items/Jobgear/九州作战服.png" hideotherwearables="false" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" origin="0.08,0.1" inheritsourcerect="true" />
+      <sprite name="jz uniform Left Shoe" texture="%ModDir%/items/Jobgear/九州作战服.png" hideotherwearables="false" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" origin="0.08,0.1" inheritsourcerect="true" />
+      <sprite name="jz Boobs" texture="%ModDir%/items/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.85" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.7" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.75" />
+      <damagemodifier afflictionidentifiers="burn" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      <SkillModifier skillidentifier="medical" skillvalue="-5" />
+      <SkillModifier skillidentifier="mechanical" skillvalue="-5" />
+      <SkillModifier skillidentifier="electrical" skillvalue="-5" />
+    </Wearable>
+    <ItemContainer capacity="4">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
+    </ItemContainer>
+  </Item>
+  <Item name="九州常服" identifier="tsm_common_uniform" subcategory="tsmmissions" category="Equipment" hideinmenus="true" tags="smallitem,clothing,vest" fireproof="false" cargocontaineridentifier="tsm_metalcrate" description="九州配发的常服，但是女款" scale="0.5" impactsoundtag="impact_soft">
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+     <RequiredItem identifier="organicfiber" amount="2"/>
+     <RequiredItem identifier="rubber" amount="1"/>
+     </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon name="common_uniform uniform Icon" texture="%ModDir%/items/Jobgear/regularclothing_female.png" sourcerect="469,4,134,98" origin="0.5,0.5" />
+    <Sprite name="common_uniform uniform" texture="%ModDir%/items/Jobgear/regularclothing_female.png" sourcerect="501,218,89,38" depth="0.55" origin="0.5,0.5" />
+    <Body width="89" height="38" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="common_uniform Torso" texture="%ModDir%/items/Jobgear/regularclothing_[gender].png" limb="Torso" depthlimb="Jaw" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="common_uniform Right Hand" texture="%ModDir%/items/Jobgear/regularclothing_[gender].png" limb="RightHand" sourcerect="0,0,1,1" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="common_uniform Left Hand" texture="%ModDir%/items/Jobgear/regularclothing_[gender].png" limb="LeftHand" sourcerect="0,0,1,1" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="common_uniform Left Lower Arm" texture="%ModDir%/items/Jobgear/regularclothing_[gender].png" limb="LeftForearm" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="common_uniform Right Lower Arm" texture="%ModDir%/items/Jobgear/regularclothing_[gender].png" limb="RightForearm" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="common_uniform Left Upper Arm" texture="%ModDir%/items/Jobgear/regularclothing_[gender].png" limb="LeftArm" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="common_uniform Right Upper Arm" texture="%ModDir%/items/Jobgear/regularclothing_[gender].png" limb="RightArm" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="common_uniform Waist" texture="%ModDir%/items/Jobgear/regularclothing_[gender].png" limb="Waist" sourcerect="0,0,1,1" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="common_uniform Right Thigh" texture="%ModDir%/items/Jobgear/regularclothing_[gender].png" limb="RightThigh" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="common_uniform Left Thigh" texture="%ModDir%/items/Jobgear/regularclothing_[gender].png" limb="LeftThigh" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="common_uniform Right Leg" texture="%ModDir%/items/Jobgear/regularclothing_[gender].png" limb="RightLeg" inheritsourcerect="true" inheritdepth="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="common_uniform Left Leg" texture="%ModDir%/items/Jobgear/regularclothing_[gender].png" limb="LeftLeg" inheritsourcerect="true" inheritdepth="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="common_uniform Right Shoe" texture="%ModDir%/items/Jobgear/regularclothing_[gender].png" limb="RightFoot" inheritsourcerect="true" inheritdepth="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="common_uniform Left Shoe" texture="%ModDir%/items/Jobgear/regularclothing_[gender].png" limb="LeftFoot" inheritsourcerect="true" inheritdepth="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Hidden Boobs" texture="%ModDir%/items/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      <damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      <SkillModifier skillidentifier="helm" skillvalue="5" />
+    </Wearable>
+    <ItemContainer capacity="4">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest" />
+    </ItemContainer>
+  </Item>
+  <Item name="三神丘作战服" identifier="tsm_kepuniform" subcategory="tsmmissions" aliases="securityuniform" category="Equipment" tags="smallitem,clothing,tsm_kep_uniform,vset" fireproof="true" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Price baseprice="445" displaynonempty="true" minleveldifficulty="10">
+      <Price storeidentifier="merchantarmory" multiplier="1.25" minamount="0" maxamount="2" />
+      <Price storeidentifier="merchantcity" multiplier="1.6" minamount="0" maxamount="1" />
+      <Price storeidentifier="merchantresearch" multiplier="1.4" minamount="0" maxamount="1" />
+    </Price>
+    <InventoryIcon name="kep uniform Icon" texture="%ModDir%/items/Jobgear/三神丘作战服_male.png" sourcerect="668,144,109,104" origin="0.5,0.5" />
+    <Sprite name="kep uniform" texture="%ModDir%/items/Jobgear/三神丘作战服_female.png" sourcerect="679,93,117,46" depth="0.55" origin="0.5,0.5" />
+    <Body width="100" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="kep Uniform Torso" texture="%ModDir%/items/Jobgear/三神丘作战服_[gender].png" limb="Torso" depthlimb="Jaw" hideotherwearables="false" hidelimb="true" inherittexturescale="false" inheritorigin="true" inheritsourcerect="true" scale="0.525" />
+      <sprite name="kep Uniform Right Hand" texture="%ModDir%/items/Jobgear/三神丘作战服_[gender].png" limb="RightHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="kep Uniform Left Hand" texture="%ModDir%/items/Jobgear/三神丘作战服_[gender].png" limb="LeftHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="kep Uniform Right Lower Arm" texture="%ModDir%/items/Jobgear/三神丘作战服_[gender].png" limb="RightArm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="294,6,25,72" origin="0.51,0.5" />
+      <sprite name="kep Uniform Left Lower Arm" texture="%ModDir%/items/Jobgear/三神丘作战服_[gender].png" limb="LeftArm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="358,6,25,72" origin="0.51,0.5" />
+      <sprite name="kep Uniform Right Upper Arm" texture="%ModDir%/items/Jobgear/三神丘作战服_[gender].png" limb="RightForearm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="295,89,19,65" origin="0.5,0.5" />
+      <sprite name="kep Uniform Left Upper Arm" texture="%ModDir%/items/Jobgear/三神丘作战服_[gender].png" limb="LeftForearm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="360,91,19,64" origin="0.5,0.5" />
+      <sprite name="kep Uniform Waist" texture="%ModDir%/items/Jobgear/三神丘作战服_[gender].png" limb="Waist" hidelimb="true" hideotherwearables="false" inheritlimbdepth="true" inherittexturescale="false" scale="0.52" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="kep Uniform Right Thigh" texture="%ModDir%/items/Jobgear/三神丘作战服_[gender].png" limb="RightThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="18,14,48,97" origin="0.5,0.5" />
+      <sprite name="kep Uniform Left Thigh" texture="%ModDir%/items/Jobgear/三神丘作战服_[gender].png" limb="LeftThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="95,14,48,97" origin="0.5,0.5" />
+      <sprite name="kep Uniform Right Leg" texture="%ModDir%/items/Jobgear/三神丘作战服_[gender].png" limb="RightLeg" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="kep Uniform Left Leg" texture="%ModDir%/items/Jobgear/三神丘作战服_[gender].png" limb="LeftLeg" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="kep Uniform Left Shoe" texture="%ModDir%/items/Jobgear/三神丘作战服_[gender].png" limb="LeftFoot" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="kep Uniform Right Shoe" texture="%ModDir%/items/Jobgear/三神丘作战服_[gender].png" limb="RightFoot" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="mf Boobs" texture="%ModDir%/items/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,lacerations,bitewounds" damagemultiplier="0.9" deflectprojectiles="false" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.7" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.9" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.7" />
+      <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" interval="1">
+        <Affliction identifier="tsm_kep_buff" amount="2" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" comparison="or" interval="1">
+        <Conditional HasStatusTag="tsm_kepcape" />
+        <Conditional HasStatusTag="tsm_kepcap" />
+        <Affliction identifier="tsm_kep_buff_2" amount="5" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" comparison="and" interval="1">
+        <Conditional HasStatusTag="tsm_kepcape" />
+        <Conditional HasStatusTag="tsm_kepcap" />
+        <Affliction identifier="tsm_kep_buff_3" amount="5" />
+      </StatusEffect>
+    </Wearable>
+  </Item>
+  <Item name="老式作战服" identifier="tsm_old_uniform" aliases="securityuniform" subcategory="tsmmissions" category="Equipment" tags="smallitem,clothing,vest" fireproof="false" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Price baseprice="184" minavailable="1">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="merchantresearch" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" minavailable="1" />
+      <Price storeidentifier="merchantmine" minavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredItem identifier="organicfiber" amount="2" />
+      <RequiredItem identifier="ballisticfiber" amount="1" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon name="old uniform Icon" texture="%ModDir%/items/Jobgear/tsm_old_uniform_male.png" sourcerect="466,199,30,51" origin="0.5,0.5" />
+    <Sprite name="old uniform" texture="%ModDir%/items/Jobgear/tsm_old_uniform_female.png" sourcerect="431,3,117,62" depth="0.58" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="old uniform Torso" texture="%ModDir%/items/Jobgear/tsm_old_uniform_[gender].png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="old uniform Right Hand" texture="%ModDir%/items/Jobgear/tsm_old_uniform_[gender].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="old uniform Left Hand" texture="%ModDir%/items/Jobgear/tsm_old_uniform_[gender].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="old uniform Left Lower Arm" texture="%ModDir%/items/Jobgear/tsm_old_uniform_[gender].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="old uniform Right Lower Arm" texture="%ModDir%/items/Jobgear/tsm_old_uniform_[gender].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="old uniform Left Upper Arm" texture="%ModDir%/items/Jobgear/tsm_old_uniform_[gender].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="old uniform Right Upper Arm" texture="%ModDir%/items/Jobgear/tsm_old_uniform_[gender].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="old uniform Waist" texture="%ModDir%/items/Jobgear/tsm_old_uniform_[gender].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="old uniform Right Thigh" texture="%ModDir%/items/Jobgear/tsm_old_uniform_[gender].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="old uniform Left Thigh" texture="%ModDir%/items/Jobgear/tsm_old_uniform_[gender].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="old uniform Right Leg" texture="%ModDir%/items/Jobgear/tsm_old_uniform_[gender].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="old uniform Left Leg" texture="%ModDir%/items/Jobgear/tsm_old_uniform_[gender].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="old uniform Right Shoe" texture="%ModDir%/items/Jobgear/tsm_old_uniform_[gender].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="old uniform Left Shoe" texture="%ModDir%/items/Jobgear/tsm_old_uniform_[gender].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="old Boobs" texture="%ModDir%/items/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.85" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.85" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.9" />
+    </Wearable>
+    <ItemContainer capacity="2">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
+    </ItemContainer>
+  </Item>
+  <Item name="'猫科动物'顾问服" identifier="tsm_advisers_uniform" subcategory="tsmmissions" aliases="securityuniform" category="Equipment" tags="smallitem,clothing,vest" fireproof="true" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <InventoryIcon name="advanced uniform Icon" texture="%ModDir%/items/Jobgear/advisers_uniform_male.png" sourcerect="440,294,77,95" origin="0.5,0.5" />
+    <Sprite name="advanced uniform" texture="%ModDir%/items/Jobgear/advisers_uniform_female.png" sourcerect="477,348,117,44" depth="0.55" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="advanced uniform Torso" texture="%ModDir%/items/Jobgear/advisers_uniform_[gender].png" limb="Torso" depthlimb="Jaw" hideotherwearables="false" hidelimb="false" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="180,15,65,135" origin="0.5,0.52" scale="0.6" />
+      <sprite name="advanced uniform Right Hand" texture="%ModDir%/items/Jobgear/advisers_uniform_[gender].png" limb="RightHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="288,152,29,45" origin="0.35,0.5" />
+      <sprite name="advanced uniform Left Hand" texture="%ModDir%/items/Jobgear/advisers_uniform_[gender].png" limb="LeftHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="351,134,32,63" origin="0.4,0.7" />
+      <sprite name="advanced uniform Right Upper Arm" texture="%ModDir%/items/Jobgear/advisers_uniform_[gender].png" limb="RightArm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="282,9,37,77" origin="0.5,0.5" />
+      <sprite name="advanced uniform Left Upper Arm" texture="%ModDir%/items/Jobgear/advisers_uniform_[gender].png" limb="LeftArm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="347,9,37,77" origin="0.5,0.5" />
+      <sprite name="advanced uniform Right Lower Arm" texture="%ModDir%/items/Jobgear/advisers_uniform_[gender].png" limb="RightForearm" hideotherwearables="false" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="282,86,36,67" origin="0.5,0.5" />
+      <sprite name="advanced uniform Left Lower Arm" texture="%ModDir%/items/Jobgear/advisers_uniform_[gender].png" limb="LeftForearm" hideotherwearables="false" hidelimb="false" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="347,87,35,68" origin="0.5,0.5" />
+      <sprite name="advanced uniform Waist" texture="%ModDir%/items/Jobgear/advisers_uniform_[gender].png" limb="Waist" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="182,188,63,63" origin="0.5,0.5" />
+      <sprite name="advanced uniform Right Thigh" texture="%ModDir%/items/Jobgear/advisers_uniform_[gender].png" limb="RightThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="15,14,49,103" origin="0.5,0.5" />
+      <sprite name="advanced uniform Left Thigh" texture="%ModDir%/items/Jobgear/advisers_uniform_[gender].png" limb="LeftThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="94,13,49,103" origin="0.5,0.5" />
+      <sprite name="advanced uniform Right Leg" texture="%ModDir%/items/Jobgear/advisers_uniform_[gender].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="15,134,44,112" origin="0.5,0.4" />
+      <sprite name="advanced uniform Left Leg" texture="%ModDir%/items/Jobgear/advisers_uniform_[gender].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="101,134,37,112" origin="0.5,0.4" />
+      <sprite name="advanced uniform Right Shoe" texture="%ModDir%/items/Jobgear/advisers_uniform_[gender].png" limb="RightFoot" depthlimb="RightLeg" hideotherwearables="false" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="276,202,58,52" scale="0.55" origin="0.4,0.5" />
+      <sprite name="advanced uniform Left Shoe" texture="%ModDir%/items/Jobgear/advisers_uniform_[gender].png" limb="LeftFoot" depthlimb="LeftLeg" hideotherwearables="false" hidelimb="true" inherittexturescale="false" inheritorigin="false" inheritsourcerect="false" sourcerect="339,201,58,52" scale="0.55" origin="0.5,0.5" />
+      <sprite name="advanced Boobs" texture="%ModDir%/items/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.85" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.65" />
+    </Wearable>
+    <ItemContainer capacity="4">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
+    </ItemContainer>
+  </Item>
+  <!--联盟-->
+  <Item name="联盟快速反应作战服" identifier="lm_rapidreaction_uniform" subcategory="tsm_coalition" aliases="securityuniform" category="Equipment" tags="smallitem,clothing,vest" fireproof="true" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <InventoryIcon name="rapid reaction uniform Icon" texture="%ModDir%/items/Jobgear/rapid_reaction_female.png" sourcerect="464,166,48,90" origin="0.5,0.5" />
+    <Sprite name="rapid reaction uniform" texture="%ModDir%/items/Jobgear/rapid_reaction_male.png" sourcerect="433,214,102,42" depth="0.55" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="rapid reaction uniform Torso" texture="%ModDir%/items/Jobgear/rapid_reaction_[gender].png" limb="Torso" depthlimb="Jaw" hideotherwearables="false" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="rapid reaction uniform Right Hand" texture="%ModDir%/items/Jobgear/rapid_reaction_[gender].png" limb="RightHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="rapid reaction uniform Left Hand" texture="%ModDir%/items/Jobgear/rapid_reaction_[gender].png" limb="LeftHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="rapid reaction uniform Left Lower Arm" texture="%ModDir%/items/Jobgear/rapid_reaction_[gender].png" limb="LeftForearm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="rapid reaction uniform Right Lower Arm" texture="%ModDir%/items/Jobgear/rapid_reaction_[gender].png" limb="RightForearm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="rapid reaction uniform Left Upper Arm" texture="%ModDir%/items/Jobgear/rapid_reaction_[gender].png" limb="LeftArm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="rapid reaction uniform Right Upper Arm" texture="%ModDir%/items/Jobgear/rapid_reaction_[gender].png" limb="RightArm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="rapid reaction uniform Waist" texture="%ModDir%/items/Jobgear/rapid_reaction_[gender].png" limb="Waist" hidelimb="true" hideotherwearables="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="rapid reaction uniform Right Thigh" texture="%ModDir%/items/Jobgear/rapid_reaction_[gender].png" limb="RightThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="rapid reaction uniform Left Thigh" texture="%ModDir%/items/Jobgear/rapid_reaction_[gender].png" limb="LeftThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="rapid reaction uniform Right Leg" texture="%ModDir%/items/Jobgear/rapid_reaction_[gender].png" limb="RightLeg" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="rapid reaction uniform Left Leg" texture="%ModDir%/items/Jobgear/rapid_reaction_[gender].png" limb="LeftLeg" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="rapid reaction uniform Right Shoe" texture="%ModDir%/items/Jobgear/rapid_reaction_[gender].png" limb="RightFoot" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="rapid reaction uniform Left Shoe" texture="%ModDir%/items/Jobgear/rapid_reaction_[gender].png" limb="LeftFoot" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="rapid reaction Boobs" texture="%ModDir%/items/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.9" />
+      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.7" />
+      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.6" />
+      <damagemodifier afflictionidentifiers="burn" armorsector="0.0,360.0" damagemultiplier="0.75" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      <SkillModifier skillidentifier="medical" skillvalue="-10" />
+      <SkillModifier skillidentifier="helm" skillvalue="-5" />
+      <SkillModifier skillidentifier="weapons" skillvalue="+5" />
+    </Wearable>
+    <ItemContainer capacity="4">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
+    </ItemContainer>
+  </Item>
+  <Item name="联盟骇浪作战服" identifier="lm_stormyseas_uniform" aliases="securityuniform" subcategory="tsm_coalition" category="Equipment" tags="smallitem,clothing,vest" fireproof="false" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredItem identifier="organicfiber" amount="3" />
+      <RequiredItem identifier="ballisticfiber" amount="2" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <RequiredItem identifier="organicfiber" amount="2" />
+    </Deconstruct>
+    <InventoryIcon name="stormy seas Icon" texture="%ModDir%/items/Jobgear/stormyseas_female.png" sourcerect="423,8,89,49" origin="0.5,0.5" />
+    <Sprite name="stormy seas" texture="%ModDir%/items/Jobgear/stormyseas_female.png" sourcerect="423,8,89,49" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="stormy seas Torso" texture="%ModDir%/items/Jobgear/stormyseas_[GENDER].png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" sourcerect="159,0,113,192" />
+      <sprite name="stormy seas Right Hand" texture="%ModDir%/items/Jobgear/stormyseas_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="stormy seas Left Hand" texture="%ModDir%/items/Jobgear/stormyseas_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="stormy seas Right Lower Arm" texture="%ModDir%/items/Jobgear/stormyseas_[GENDER].png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="stormy seas Left Lower Arm" texture="%ModDir%/items/Jobgear/stormyseas_[GENDER].png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="stormy seas Right Upper Arm" texture="%ModDir%/items/Jobgear/stormyseas_[GENDER].png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="stormy seas Left Upper Arm" texture="%ModDir%/items/Jobgear/stormyseas_[GENDER].png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="stormy seas Waist" texture="%ModDir%/items/Jobgear/stormyseas_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="stormy seas Right Thigh" texture="%ModDir%/items/Jobgear/stormyseas_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="stormy seas Left Thigh" texture="%ModDir%/items/Jobgear/stormyseas_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="stormy seas Right Leg" texture="%ModDir%/items/Jobgear/stormyseas_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="stormy seas Left Leg" texture="%ModDir%/items/Jobgear/stormyseas_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="stormy seas Left Shoe" texture="%ModDir%/items/Jobgear/stormyseas_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="stormy seas Right Shoe" texture="%ModDir%/items/Jobgear/stormyseas_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="stormy seas Boobs" texture="%ModDir%/items/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.9" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.85" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.85" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.8" />
+      <SkillModifier skillidentifier="medical" skillvalue="-5" />
+      <SkillModifier skillidentifier="helm" skillvalue="5" />
+      <ItemContainer capacity="4">
+        <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
+      </ItemContainer>
+    </Wearable>
+  </Item>
+  <Item name="联盟占领军作战服" identifier="lm_occupation_uniform" aliases="securityuniform" subcategory="tsm_coalition" category="Equipment" tags="smallitem,clothing,vest" fireproof="true" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="10">
+      <RequiredItem identifier="organicfiber" amount="2" />
+      <RequiredItem identifier="ballisticfiber" amount="1" />
+    </Deconstruct>
+    <InventoryIcon name="occupation Icon" texture="%ModDir%/items/Jobgear/occupation_female.png" sourcerect="409,0,99,89" origin="0.5,0.5" />
+    <Sprite name="occupation" texture="%ModDir%/items/Jobgear/stormyseas_female.png" sourcerect="423,8,89,49" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="occupation Torso" texture="%ModDir%/items/Jobgear/occupation_[GENDER].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="occupation Right Hand" texture="%ModDir%/items/Jobgear/stormyseas_[GENDER].png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1"/>
+      <sprite name="occupation Left Hand" texture="%ModDir%/items/Jobgear/stormyseas_[GENDER].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1"/>
+      <sprite name="occupation Right Lower Arm" texture="%ModDir%/items/Jobgear/occupation_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="occupation Left Lower Arm" texture="%ModDir%/items/Jobgear/occupation_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="occupation Right Upper Arm" texture="%ModDir%/items/Jobgear/occupation_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"/>
+      <sprite name="occupation Left Upper Arm" texture="%ModDir%/items/Jobgear/occupation_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="occupation Waist" texture="%ModDir%/items/Jobgear/occupation_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true"  />
+      <sprite name="occupation Right Thigh" texture="%ModDir%/items/Jobgear/occupation_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="occupation Left Thigh" texture="%ModDir%/items/Jobgear/occupation_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="occupation Right Leg" texture="%ModDir%/items/Jobgear/occupation_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="occupation Left Leg" texture="%ModDir%/items/Jobgear/occupation_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="occupation Left Shoe" texture="%ModDir%/items/Jobgear/occupation_female.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false" sourcerect="288,192,72,64" origin="0.38,0.7"/>
+      <sprite name="occupation Right Shoe" texture="%ModDir%/items/Jobgear/occupation_female.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="false" inheritsourcerect="false"  sourcerect="364,192,72,64" origin="0.30,0.7"/>
+      <sprite name="occupation Boobs" texture="%ModDir%/items/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.85" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.8" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.8" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.4" />
+      <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.75" />
+      <SkillModifier skillidentifier="weapons" skillvalue="+5" />
+      <SkillModifier skillidentifier="medical" skillvalue="-10" />
+      <SkillModifier skillidentifier="electrical" skillvalue="-15" />
+      <SkillModifier skillidentifier="mechanical" skillvalue="-15" />
+      <ItemContainer capacity="6">
+        <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
+      </ItemContainer>
+    </Wearable>
+  </Item>
+  <Item name="联盟贝奥武夫作战服" identifier="lm_beowulf_uniform" aliases="securityuniform" subcategory="tsm_coalition" category="Equipment" tags="smallitem,clothing,vest" fireproof="true" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="10">
+      <RequiredItem identifier="organicfiber" amount="1" />
+      <RequiredItem identifier="ballisticfiber" amount="1" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredItem identifier="lm_stormyseas_uniform" amount="1" />
+      <RequiredItem identifier="ballisticfiber" amount="2" />
+      <RequiredItem identifier="titanium" amount="2" />
+    </Fabricate>
+    <InventoryIcon name="beowulf uniform Icon" texture="%ModDir%/items/Jobgear/beowulf_uniform_female.png" sourcerect="433,184,69,68" origin="0.5,0.5" />
+    <Sprite name="beowulf uniform" texture="%ModDir%/items/Jobgear/beowulf_uniform_female.png" sourcerect="420,6,117,53" depth="0.55" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="beowulf uniform Torso" texture="%ModDir%/items/Jobgear/beowulf_uniform_[gender].png" limb="Torso" hideotherwearables="false" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="beowulf uniform Right Hand" texture="%ModDir%/items/Jobgear/tsm_old_uniform_[gender].png" limb="RightHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="beowulf uniform Left Hand" texture="%ModDir%/items/Jobgear/tsm_old_uniform_[gender].png" limb="LeftHand" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="beowulf uniform Left Upper Arm" texture="%ModDir%/items/Jobgear/beowulf_uniform_[gender].png" limb="LeftArm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="beowulf uniform Right Upper Arm" texture="%ModDir%/items/Jobgear/beowulf_uniform_[gender].png" limb="RightArm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="beowulf uniform Left Lower Arm" texture="%ModDir%/items/Jobgear/beowulf_uniform_[gender].png" limb="LeftForearm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="beowulf uniform Right Lower Arm" texture="%ModDir%/items/Jobgear/beowulf_uniform_[gender].png" limb="RightForearm" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="beowulf uniform Waist" texture="%ModDir%/items/Jobgear/beowulf_uniform_female.png" limb="Waist" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="beowulf uniform Right Thigh" texture="%ModDir%/items/Jobgear/beowulf_uniform_[gender].png" limb="RightThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="beowulf uniform Left Thigh" texture="%ModDir%/items/Jobgear/beowulf_uniform_[gender].png" limb="LeftThigh" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="beowulf uniform Right Leg" texture="%ModDir%/items/Jobgear/beowulf_uniform_[gender].png" limb="RightLeg" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="beowulf uniform Left Leg" texture="%ModDir%/items/Jobgear/beowulf_uniform_[gender].png" limb="LeftLeg" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="beowulf uniform Right Shoe" texture="%ModDir%/items/Jobgear/beowulf_uniform_[gender].png" limb="RightFoot" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="beowulf uniform Left Shoe" texture="%ModDir%/items/Jobgear/beowulf_uniform_[gender].png" limb="LeftFoot" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="beowulf Boobs" texture="%ModDir%/items/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.85" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.85" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.85" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.5" />
+      <SkillModifier skillidentifier="weapons" skillvalue="+5" />
+      <SkillModifier skillidentifier="medical" skillvalue="-5" />
+      <ItemContainer capacity="4">
+        <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
+      </ItemContainer>
+    </Wearable>
+  </Item>
+  <!--反抗军-->
+  <Item name="反抗军尖锐突袭者作战服" identifier="fkj_anonymous_uniform" aliases="securityuniform" subcategory="tsm_separatists" category="Equipment" tags="smallitem,clothing,vest" fireproof="true" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredItem identifier="organicfiber" amount="4" />
+      <RequiredItem identifier="ballisticfiber" amount="3" />
+      <RequiredItem identifier="fkj_abyssrambler_uniform" amount="1" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <RequiredItem identifier="ballisticfiber" amount="1" />
+      <RequiredItem identifier="organicfiber" amount="1" />
+    </Deconstruct>
+    <InventoryIcon name="Anonymous Icon" texture="%ModDir%/items/Jobgear/Anonymous_female.png" sourcerect="423,0,90,57" origin="0.5,0.5" />
+    <Sprite name="Anonymous" texture="%ModDir%/items/Jobgear/Anonymous_female.png" sourcerect="422,0,90,57" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Anonymous Torso" texture="%ModDir%/items/Jobgear/Anonymous_[GENDER].png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="false" origin="0.48,0.43" inheritsourcerect="false" sourcerect="159,0,113,192" />
+      <sprite name="Anonymous Right Hand" texture="%ModDir%/items/Jobgear/Anonymous_[GENDER].png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Anonymous Left Hand" texture="%ModDir%/items/Jobgear/Anonymous_[GENDER].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Anonymous Right Lower Arm" texture="%ModDir%/items/Jobgear/Anonymous_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Anonymous Left Lower Arm" texture="%ModDir%/items/Jobgear/Anonymous_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Anonymous Right Upper Arm" texture="%ModDir%/items/Jobgear/Anonymous_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Anonymous Left Upper Arm" texture="%ModDir%/items/Jobgear/Anonymous_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Anonymous Waist" texture="%ModDir%/items/Jobgear/Anonymous_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Anonymous Right Thigh" texture="%ModDir%/items/Jobgear/Anonymous_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Anonymous Left Thigh" texture="%ModDir%/items/Jobgear/Anonymous_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Anonymous Right Leg" texture="%ModDir%/items/Jobgear/Anonymous_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Anonymous Left Leg" texture="%ModDir%/items/Jobgear/Anonymous_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Anonymous Left Shoe" texture="%ModDir%/items/Jobgear/Anonymous_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Anonymous Right Shoe" texture="%ModDir%/items/Jobgear/Anonymous_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Anonymous Boobs" texture="%ModDir%/items/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.9" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.7" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.8" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.7" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidburn" damagemultiplier="0.85" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="burn" damagemultiplier="0.85" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.9" />
+      <SkillModifier skillidentifier="medical" skillvalue="-5" />
+    </Wearable>
+    <ItemContainer capacity="4">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
+    </ItemContainer>
+  </Item>
+  <Item name="反抗军作战服" identifier="fkj_abyssrambler_uniform" aliases="securityuniform" subcategory="tsm_separatists" category="Equipment" tags="smallitem,clothing,vest" fireproof="false" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredItem identifier="ballisticfiber" amount="1" />
+      <RequiredItem identifier="organicfiber" amount="4" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <RequiredItem identifier="organicfiber" amount="2" />
+    </Deconstruct>
+    <InventoryIcon name="abyssrambler Icon" texture="%ModDir%/items/Jobgear/abyssrambler_uniform_female.png" sourcerect="423,8,89,49" origin="0.5,0.5" />
+    <Sprite name="abyssrambler" texture="%ModDir%/items/Jobgear/abyssrambler_uniform_female.png" sourcerect="423,8,89,49" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="abyss rambler Torso" texture="%ModDir%/items/Jobgear/abyssrambler_uniform_[GENDER].png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="false" origin="0.49,0.47" inheritsourcerect="false" sourcerect="159,0,113,192" />
+      <sprite name="abyssrambler Right Hand" texture="%ModDir%/items/Jobgear/abyssrambler_uniform_[GENDER].png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="abyssrambler Left Hand" texture="%ModDir%/items/Jobgear/abyssrambler_uniform_[GENDER].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="abyssrambler Right Lower Arm" texture="%ModDir%/items/Jobgear/abyssrambler_uniform_[GENDER].png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="abyssrambler Left Lower Arm" texture="%ModDir%/items/Jobgear/abyssrambler_uniform_[GENDER].png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="abyssrambler Right Upper Arm" texture="%ModDir%/items/Jobgear/abyssrambler_uniform_[GENDER].png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="abyssrambler Left Upper Arm" texture="%ModDir%/items/Jobgear/abyssrambler_uniform_[GENDER].png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="abyssrambler Waist" texture="%ModDir%/items/Jobgear/abyssrambler_uniform_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="abyssrambler Right Thigh" texture="%ModDir%/items/Jobgear/abyssrambler_uniform_[GENDER].png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="abyssrambler Left Thigh" texture="%ModDir%/items/Jobgear/abyssrambler_uniform_[GENDER].png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="abyssrambler Right Leg" texture="%ModDir%/items/Jobgear/abyssrambler_uniform_[GENDER].png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="abyssrambler Left Leg" texture="%ModDir%/items/Jobgear/abyssrambler_uniform_[GENDER].png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="abyssrambler Left Shoe" texture="%ModDir%/items/Jobgear/abyssrambler_uniform_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="abyssrambler Right Shoe" texture="%ModDir%/items/Jobgear/abyssrambler_uniform_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="abyssrambler Boobs" texture="%ModDir%/items/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.9" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.8" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.75" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.75" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn,bleeding" damagemultiplier="0.85" />
+      <SkillModifier skillidentifier="medical" skillvalue="-5" />
+    </Wearable>
+    <ItemContainer capacity="2">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
+    </ItemContainer>
+  </Item>
+  <Item name="野火反抗军作战服" identifier="fkj_yehuo_uniform" aliases="securityuniform" subcategory="tsm_separatists" category="Equipment" tags="smallitem,clothing,vest" fireproof="true" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredItem identifier="ballisticfiber" amount="4" />
+      <RequiredItem identifier="titanium" amount="2" />
+      <RequiredItem identifier="aluminium" amount="3" />
+      <RequiredItem identifier="fkj_anonymous_uniform" amount="1" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <RequiredItem identifier="ballisticfiber" />
+    </Deconstruct>
+    <InventoryIcon name="ye huo Icon" texture="%ModDir%/items/Jobgear/yehuo_uniform_female.png" sourcerect="423,8,89,49" origin="0.5,0.5" />
+    <Sprite name="ye huo" texture="%ModDir%/items/Jobgear/yehuo_uniform_female.png" sourcerect="423,8,89,49" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="ye huo Torso" texture="%ModDir%/items/Jobgear/yehuo_uniform_[GENDER].png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="false" origin="0.5,0.46" inheritsourcerect="false" sourcerect="159,0,113,192" />
+      <sprite name="ye huo Right Hand" texture="%ModDir%/items/Jobgear/yehuo_uniform_[GENDER].png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="ye huo Left Hand" texture="%ModDir%/items/Jobgear/yehuo_uniform_[GENDER].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="ye huo Right Lower Arm" texture="%ModDir%/items/Jobgear/yehuo_uniform_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="ye huo Left Lower Arm" texture="%ModDir%/items/Jobgear/yehuo_uniform_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="ye huo Right Upper Arm" texture="%ModDir%/items/Jobgear/yehuo_uniform_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="ye huo Left Upper Arm" texture="%ModDir%/items/Jobgear/yehuo_uniform_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="ye huo Waist" texture="%ModDir%/items/Jobgear/yehuo_uniform_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="ye huo Right Thigh" texture="%ModDir%/items/Jobgear/yehuo_uniform_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="ye huo Left Thigh" texture="%ModDir%/items/Jobgear/yehuo_uniform_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="ye huo Right Leg" texture="%ModDir%/items/Jobgear/yehuo_uniform_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="ye huo Left Leg" texture="%ModDir%/items/Jobgear/yehuo_uniform_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="ye huo Left Shoe" texture="%ModDir%/items/Jobgear/yehuo_uniform_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="ye huo Right Shoe" texture="%ModDir%/items/Jobgear/yehuo_uniform_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="ye huo Boobs" texture="%ModDir%/items/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.80" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.7" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.90" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.75" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.65" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidburn" damagemultiplier="0.7" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="burn" damagemultiplier="0.7" />
+      <SkillModifier skillidentifier="electrical" skillvalue="-10" />
+      <SkillModifier skillidentifier="mechanical" skillvalue="-10" />
+    </Wearable>
+    <ItemContainer capacity="4">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
+    </ItemContainer>
+  </Item>
+  <!--降临派-->
+  <Item name="降临派首领教袍" identifier="adventists_uniform" aliases="adventistsuniform" subcategory="the_adventists" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
+    <Sprite name="adventists" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="904,294,118,59" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="adventists Uniform Torso" texture="%ModDir%/items/Jobgear/the_adventists_fanatic_[gender].png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="adventists Uniform Right Hand" texture="%ModDir%/items/Jobgear/the_adventists_fanatic_[gender].png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="adventists Uniform Left Hand" texture="%ModDir%/items/Jobgear/the_adventists_fanatic_[gender].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="adventists Uniform Right Lower Arm" texture="%ModDir%/items/Jobgear/the_adventists_fanatic_[gender].png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="adventists Uniform Left Lower Arm" texture="%ModDir%/items/Jobgear/the_adventists_fanatic_[gender].png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="adventists Uniform Right Upper Arm" texture="%ModDir%/items/Jobgear/the_adventists_fanatic_[gender].png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="adventists Uniform Left Upper Arm" texture="%ModDir%/items/Jobgear/the_adventists_fanatic_[gender].png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="adventists Uniform Waist" texture="%ModDir%/items/Jobgear/the_adventists_fanatic_[gender].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="adventists Uniform Right Thigh" texture="%ModDir%/items/Jobgear/the_adventists_fanatic_[gender].png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="adventists Uniform Left Thigh" texture="%ModDir%/items/Jobgear/the_adventists_fanatic_[gender].png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="adventists Uniform Right Leg" texture="%ModDir%/items/Jobgear/the_adventists_fanatic_[gender].png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="adventists Uniform Left Leg" texture="%ModDir%/items/Jobgear/the_adventists_fanatic_[gender].png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="adventists Uniform Left Shoe" texture="%ModDir%/items/Jobgear/the_adventists_fanatic_[gender].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="adventists Uniform Right Shoe" texture="%ModDir%/items/Jobgear/the_adventists_fanatic_[gender].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.85" />
+    </Wearable>
+  </Item>
+  <Item name="降临派防风安全外套" identifier="adventists_Wind_proof" aliases="adventistsuniform" subcategory="the_adventists" category="Equipment" tags="smallitem,clothing" fireproof="true" cargocontaineridentifier="metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="10">
+      <RequiredItem identifier="organicfiber" amount="1" />
+    </Deconstruct>
+    <InventoryIcon name="the_adventists_combat Icon" texture="%ModDir%/items/Jobgear/the_adventists_combat_female.png" sourcerect="423,8,89,49" origin="0.5,0.5" />
+    <Sprite name="the_adventists_combat" texture="%ModDir%/items/Jobgear/the_adventists_combat_female.png" sourcerect="423,8,89,49" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="the_adventists_combat Torso" texture="the_adventists_combat_[GENDER].png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="the_adventists_combat Right Hand" texture="the_adventists_combat_[GENDER].png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="the_adventists_combat Left Hand" texture="the_adventists_combat_[GENDER].png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="the_adventists_combat Right Lower Arm" texture="the_adventists_combat_[GENDER].png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="the_adventists_combat Left Lower Arm" texture="the_adventists_combat_[GENDER].png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="the_adventists_combat Right Upper Arm" texture="the_adventists_combat_[GENDER].png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="the_adventists_combat Left Upper Arm" texture="the_adventists_combat_[GENDER].png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="the_adventists_combat Waist" texture="the_adventists_combat_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="the_adventists_combat Right Thigh" texture="the_adventists_combat_[GENDER].png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="the_adventists_combat Left Thigh" texture="the_adventists_combat_[GENDER].png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="the_adventists_combat Right Leg" texture="the_adventists_combat_[GENDER].png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="the_adventists_combat Left Leg" texture="the_adventists_combat_[GENDER].png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="the_adventists_combat Left Shoe" texture="the_adventists_combat_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="the_adventists_combat Right Shoe" texture="the_adventists_combat_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.90" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.9" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.90" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="burn" damagemultiplier="0.80" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidburn" damagemultiplier="0.90" />
+      <SkillModifier skillidentifier="mechanical" skillvalue="5" />
+    </Wearable>
+  </Item>
+  <!--雇佣兵-->
+  <Item name="雇佣兵作战服" identifier="pmc_uniform" aliases="securityuniform" subcategory="tsmmissions" category="Equipment" tags="smallitem,clothing,vest" fireproof="true" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="10">
+      <RequiredItem identifier="ballisticfiber" amount="1" />
+      <RequiredItem identifier="organicfiber" amount="1" />
+    </Deconstruct>
+    <InventoryIcon name="Anonymous Icon" texture="%ModDir%/items/Jobgear/pmc.png" sourcerect="163,0,99,184" origin="0.5,0.5" />
+    <Sprite name="Anonymous" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="904,294,118,59" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="pmc head" texture="%ModDir%/items/Jobgear/pmc.png" limb="Head" hidelimb="false" inheritorigin="false" inherittexturescale="false" scale="0.32" origin="0.48,-0.05" inheritsourcerect="false" sourcerect="607,48,95,63" />
+      <sprite name="pmc Torso" texture="%ModDir%/items/Jobgear/pmc.png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Right Hand" texture="%ModDir%/items/Jobgear/pmc.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Left Hand" texture="%ModDir%/items/Jobgear/pmc.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Right Lower Arm" texture="%ModDir%/items/Jobgear/pmc.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Left Lower Arm" texture="%ModDir%/items/Jobgear/pmc.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Right Upper Arm" texture="%ModDir%/items/Jobgear/pmc.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Left Upper Arm" texture="%ModDir%/items/Jobgear/pmc.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Waist" texture="%ModDir%/items/Jobgear/pmc.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Right Thigh" texture="%ModDir%/items/Jobgear/pmc.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Left Thigh" texture="%ModDir%/items/Jobgear/pmc.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Right Leg" texture="%ModDir%/items/Jobgear/pmc.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Left Leg" texture="%ModDir%/items/Jobgear/pmc.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Left Shoe" texture="%ModDir%/items/Jobgear/pmc.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Right Shoe" texture="%ModDir%/items/Jobgear/pmc.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Boobs" texture="%ModDir%/items/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.7" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.8" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.75" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.85" />
+      <SkillModifier skillidentifier="medical" skillvalue="-5" />
+    </Wearable>
+    <ItemContainer capacity="4">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
+    </ItemContainer>
+  </Item>
+  <Item name="雇佣兵作战服" identifier="pmc_uniform1" aliases="securityuniform" subcategory="tsmmissions" category="Equipment" tags="smallitem,clothing,vest" fireproof="true" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="10">
+      <RequiredItem identifier="ballisticfiber" amount="1" />
+      <RequiredItem identifier="organicfiber" amount="1" />
+    </Deconstruct>
+    <InventoryIcon name="Anonymous Icon" texture="%ModDir%/items/Jobgear/pmc_uniform1_male.png" sourcerect="174,24,87,142" origin="0.5,0.5" />
+    <Sprite name="Anonymous" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="904,294,118,59" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="pmc Torso" texture="%ModDir%/items/Jobgear/pmc_uniform1_[GENDER].png" limb="Torso" depthlimb="Jaw" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Right Hand" texture="%ModDir%/items/Jobgear/pmc_uniform1_[GENDER].png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Left Hand" texture="%ModDir%/items/Jobgear/pmc_uniform1_[GENDER].png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Right Lower Arm" texture="%ModDir%/items/Jobgear/pmc_uniform1_[GENDER].png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Left Lower Arm" texture="%ModDir%/items/Jobgear/pmc_uniform1_[GENDER].png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Right Upper Arm" texture="%ModDir%/items/Jobgear/pmc_uniform1_[GENDER].png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Left Upper Arm" texture="%ModDir%/items/Jobgear/pmc_uniform1_[GENDER].png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Waist" texture="%ModDir%/items/Jobgear/pmc_uniform1_[GENDER].png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Right Thigh" texture="%ModDir%/items/Jobgear/pmc_uniform1_[GENDER].png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Left Thigh" texture="%ModDir%/items/Jobgear/pmc_uniform1_[GENDER].png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Right Leg" texture="%ModDir%/items/Jobgear/pmc_uniform1_[GENDER].png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Left Leg" texture="%ModDir%/items/Jobgear/pmc_uniform1_[GENDER].png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Left Shoe" texture="%ModDir%/items/Jobgear/pmc_uniform1_[GENDER].png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Right Shoe" texture="%ModDir%/items/Jobgear/pmc_uniform1_[GENDER].png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Boobs" texture="%ModDir%/items/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.7" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.8" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.75" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.85" />
+      <SkillModifier skillidentifier="medical" skillvalue="-5" />
+    </Wearable>
+    <ItemContainer capacity="4">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
+    </ItemContainer>
+    <Price baseprice="563" buyingpricemultiplier="1" minleveldifficulty="0">
+      <Price locationtype="outpost" minavailable="0" maxavailable="1" />
+      <Price locationtype="city" minavailable="0" maxavailable="2" />
+      <Price locationtype="military" minavailable="0" maxavailable="3" />
+    </Price>
+  </Item>
+  <Item name="雇佣兵作战服" identifier="pmc_uniform2" aliases="securityuniform" subcategory="tsmmissions" category="Equipment" tags="smallitem,clothing,vest" fireproof="true" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="10">
+      <RequiredItem identifier="ballisticfiber" amount="1" />
+      <RequiredItem identifier="organicfiber" amount="1" />
+    </Deconstruct>
+    <InventoryIcon name="Anonymous Icon" texture="%ModDir%/items/Jobgear/pmc_uniform2.png" sourcerect="173,20,99,169" origin="0.5,0.5" />
+    <Sprite name="Anonymous" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="904,294,118,59" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="pmc Torso" texture="%ModDir%/items/Jobgear/pmc_uniform2.png" limb="Torso" depthlimb="Jaw" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Right Hand" texture="%ModDir%/items/Jobgear/pmc_uniform2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Left Hand" texture="%ModDir%/items/Jobgear/pmc_uniform2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Right Lower Arm" texture="%ModDir%/items/Jobgear/pmc_uniform2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Left Lower Arm" texture="%ModDir%/items/Jobgear/pmc_uniform2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Right Upper Arm" texture="%ModDir%/items/Jobgear/pmc_uniform2.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Left Upper Arm" texture="%ModDir%/items/Jobgear/pmc_uniform2.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Waist" texture="%ModDir%/items/Jobgear/pmc_uniform2.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Right Thigh" texture="%ModDir%/items/Jobgear/pmc_uniform2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Left Thigh" texture="%ModDir%/items/Jobgear/pmc_uniform2.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Right Leg" texture="%ModDir%/items/Jobgear/pmc_uniform2.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Left Leg" texture="%ModDir%/items/Jobgear/pmc_uniform2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Left Shoe" texture="%ModDir%/items/Jobgear/pmc_uniform2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Right Shoe" texture="%ModDir%/items/Jobgear/pmc_uniform2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="pmc Boobs" texture="%ModDir%/items/Jobgear/wu.png" limb="Tail" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.7" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.8" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.75" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.85" />
+      <SkillModifier skillidentifier="medical" skillvalue="-5" />
+    </Wearable>
+    <ItemContainer capacity="4">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
+    </ItemContainer>
+    <Price baseprice="563" buyingpricemultiplier="1" minleveldifficulty="0">
+      <Price locationtype="outpost" minavailable="0" maxavailable="1" />
+      <Price locationtype="city" minavailable="0" maxavailable="2" />
+      <Price locationtype="military" minavailable="1" maxavailable="3" />
+    </Price>
+  </Item>
+
+</Items>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="铁门" identifier="tsm_door_iron1" subcategory="tsmmissions" category="Decorative" tags="smallitem,button" allowedlinks="door" linkable="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true" >
+    <Sprite texture="%ModDir%/items/doors/doors.png" sourcerect="0,352,153,304" depth="0.8" origin="0.5,0.5" />
+    <Controller direction="None" canbepicked="true" msg="ItemMsgPressSelect">
+      <RequiredItem identifier="idcard" type="Picked" msg="ItemMsgUnauthorizedAccess" />
+      <sound file="%ModDir%/items/doors/door1.ogg" type="OnUse" range="500.0" volume="2" />
+    </Controller>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem identifier="screwdriver" type="Equipped" />
+      <output name="signal_out" displayname="connection.signalout" />
+      <output name="signal_in" displayname="connection.signalin" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="铁门" identifier="tsm_door_iron2" subcategory="tsmmissions" category="Decorative" tags="smallitem,button" allowedlinks="door" linkable="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true" >
+    <Sprite texture="%ModDir%/items/doors/doors.png" sourcerect="0,686,153,305" depth="0.8" origin="0.5,0.5" />
+    <Controller direction="None" canbepicked="true" msg="ItemMsgPressSelect">
+      <RequiredItem identifier="idcard" type="Picked" msg="ItemMsgUnauthorizedAccess" />
+      <sound file="%ModDir%/items/doors/door2.ogg" type="OnUse" range="500.0" volume="2" />
+    </Controller>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem identifier="screwdriver" type="Equipped" />
+      <output name="signal_out" displayname="connection.signalout" />
+      <output name="signal_in" displayname="connection.signalin" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="通道" identifier="tsm_door_cave1" subcategory="tsmmissions" category="Decorative" tags="smallitem,button" allowedlinks="door" linkable="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true" >
+    <Sprite texture="%ModDir%/items/doors/doors.png" sourcerect="445,7,557,554" depth="0.8" origin="0.5,0.5" />
+    <Controller direction="None" canbepicked="true" msg="ItemMsgPressSelect">
+      <RequiredItem identifier="idcard" type="Picked" msg="ItemMsgUnauthorizedAccess" />
+    </Controller>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem identifier="screwdriver" type="Equipped" />
+      <output name="signal_out" displayname="connection.signalout" />
+      <output name="signal_in" displayname="connection.signalin" />
+    </ConnectionPanel>
+  </Item>
+</Items>

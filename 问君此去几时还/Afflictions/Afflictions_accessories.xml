@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+  <!--握把-->
+  <Affliction identifier="tsm_straight_grip_buff" isbuff="true" type="grip" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1" >
+      <StatValue stattype="RangedSpreadReduction" value="0.35" />
+      <StatValue stattype="FlowResistance" value="0.6" />
+      <StatValue stattype="MovementSpeed" value="-0.1" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_cqr_grip_buff" isbuff="true" type="grip" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1" resistancefor="stun" minresistance="0.25" maxresistance="0.25">
+      <StatValue stattype="RangedSpreadReduction" value="0.2" />
+      <StatValue stattype="MovementSpeed" value="-0.15" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_triangle_grip_buff" isbuff="true" type="grip" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1" resistancefor="stun" minresistance="0.07" maxresistance="0.07">
+      <StatValue stattype="RangedSpreadReduction" value="0.20" />
+      <StatValue stattype="FlowResistance" value="0.3" />
+      <StatValue stattype="MovementSpeed" value="-0.1" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_thumb_grip_buff" isbuff="true" type="grip" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="RangedSpreadReduction" value="0.1" />
+      <StatValue stattype="MovementSpeed" value="0.1" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_light_grip_buff" isbuff="true" type="grip" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="RangedSpreadReduction" value="0.2" />
+      <StatValue stattype="FlowResistance" value="0.20" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_mounts_grip_buff" isbuff="true" type="grip" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1" resistancefor="stun" minresistance="0.3" maxresistance="0.3">
+      <StatValue stattype="RangedSpreadReduction" value="0.5" />
+      <StatValue stattype="FlowResistance" value="0.5" />
+      <StatValue stattype="MovementSpeed" value="-0.3" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_reload_grip_buff" isbuff="true" type="grip" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="RangedSpreadReduction" value="0.1" />
+      <StatValue stattype="MovementSpeed" value="-0.07" />
+    </Effect>
+  </Affliction>
+  <!--枪托-->
+  <Affliction identifier="tsm_pistols_stock_buff" isbuff="true" type="other" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1" resistancefor="stun" minresistance="0.2" maxresistance="0.2">
+      <StatValue stattype="RangedSpreadReduction" value="0.3" />
+      <StatValue stattype="FlowResistance" value="0.2" />
+      <StatValue stattype="MovementSpeed" value="-0.1" />
+    </Effect>
+  </Affliction>
+  <!--弹匣井阔口-->
+  <Affliction identifier="tsm_reload_speed_buff" isbuff="true" type="other" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1" >
+      <StatValue stattype="RangedSpreadReduction" value="-0.05" />
+      <StatValue stattype="MovementSpeed" value="-0.03" />
+    </Effect>
+  </Affliction>
+  <!--瞄具-->
+  <Affliction identifier="tsm_sight_reddot" isbuff="true" type="sight" limbspecific="false" indicatorlimb="Head" showiconthreshold="infinity" maxstrength="3" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="skillgainspeed" value="0.3" />
+      <StatValue stattype="rangedspreadreduction" value="0.2" />
+      <StatValue stattype="MovementSpeed" value="-0.04" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_sight_holographic" isbuff="true" type="sight" limbspecific="false" indicatorlimb="Head" showiconthreshold="infinity" maxstrength="3" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="skillgainspeed" value="0.3" />
+      <StatValue stattype="rangedspreadreduction" value="0.2" />
+      <StatValue stattype="MovementSpeed" value="-0.04" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_sight_double" isbuff="true" type="sight" limbspecific="false" indicatorlimb="Head" showiconthreshold="infinity" maxstrength="3" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="RangedSpreadReduction" value="0.2" />
+      <StatValue stattype="MovementSpeed" value="-0.07" />
+      <StatValue stattype="skillgainspeed" value="0.13" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_sight_pso" isbuff="true" type="sight" limbspecific="false" indicatorlimb="Head" showiconthreshold="infinity" maxstrength="3" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="skillgainspeed" value="0.05" />
+      <StatValue stattype="RangedSpreadReduction" value="0.15" />
+      <StatValue stattype="MovementSpeed" value="-0.1" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_sight_tripled" isbuff="true" type="sight" limbspecific="false" indicatorlimb="Head" showiconthreshold="infinity" maxstrength="3" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="RangedSpreadReduction" value="0.18" />
+      <StatValue stattype="MovementSpeed" value="-0.03" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_sight_acog" isbuff="true" type="sight" limbspecific="false" indicatorlimb="Head" showiconthreshold="infinity" maxstrength="3" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="RangedSpreadReduction" value="0.15" />
+      <StatValue stattype="MovementSpeed" value="-0.06" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_sight_c79" isbuff="true" type="sight" limbspecific="false" indicatorlimb="Head" showiconthreshold="infinity" maxstrength="3" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="RangedSpreadReduction" value="0.13" />
+      <StatValue stattype="MovementSpeed" value="-0.12" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_sight_hamr" isbuff="true" type="sight" limbspecific="false" indicatorlimb="Head" showiconthreshold="infinity" maxstrength="3" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="skillgainspeed" value="0.1" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_sight_thermal" isbuff="true" type="sight" limbspecific="false" indicatorlimb="Head" showiconthreshold="infinity" maxstrength="3" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1" ThermalOverlayRange="1500" ThermalOverlayColor="180,180,180,180">
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_sight_95" isbuff="true" type="sight" limbspecific="false" indicatorlimb="Head" showiconthreshold="infinity" maxstrength="3" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="skillgainspeed" value="0.25" />
+      <StatValue stattype="RangedSpreadReduction" value="0.07" />
+      <StatValue stattype="MovementSpeed" value="-0.05" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_sight_03" isbuff="true" type="sight" limbspecific="false" indicatorlimb="Head" showiconthreshold="infinity" maxstrength="3" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="RangedSpreadReduction" value="0.1" />
+      <StatValue stattype="MovementSpeed" value="-0.05" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_sight_qmk152" isbuff="true" type="sight" limbspecific="false" indicatorlimb="Head" showiconthreshold="infinity" maxstrength="3" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="WeaponsSkillBonus" value="5" />
+      <StatValue stattype="RangedSpreadReduction" value="0.12" />
+      <StatValue stattype="MovementSpeed" value="-0.07" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_sight_lpvo" isbuff="true" type="sight" limbspecific="false" indicatorlimb="Head" showiconthreshold="infinity" maxstrength="3" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="WeaponsSkillBonus" value="10" />
+      <StatValue stattype="MovementSpeed" value="-0.15" />
+    </Effect>
+  </Affliction>
+  <!--友军火力-->
+  <Affliction identifier="tsm_ff" isbuff="true" type="sight" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="TeamAttackMultiplier" value="-0.7" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_ff1" isbuff="true" type="sight" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="TeamAttackMultiplier" value="-0.3" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_ff_helmet" isbuff="true" type="sight" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="TeamAttackMultiplier" value="-0.1" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_ff_helmet1" isbuff="true" type="sight" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="TeamAttackMultiplier" value="-0.2" />
+    </Effect>
+  </Affliction>
+  <!--枪口-->
+  <Affliction identifier="tsm_barrel_buff" isbuff="true" type="barrel" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="AttackMultiplier" value="0.1" />
+      <StatValue stattype="RangedSpreadReduction" value="0.05" />
+      <StatValue stattype="MovementSpeed" value="-0.05" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_barrel1_buff" isbuff="true" type="barrel" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="MovementSpeed" value="-0.03" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_silence_buff" isbuff="true" type="barrel" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="SoundRangeMultiplier" value="-0.6" />
+      <StatValue stattype="RangedSpreadReduction" value="-0.05" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_barrel_silencers_buff" isbuff="true" type="barrel" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="SoundRangeMultiplier" value="-0.6" />
+      <StatValue stattype="RangedSpreadReduction" value="-0.05" />
+      <StatValue stattype="MovementSpeed" value="-0.05" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_barrel_silencers_zz_buff" isbuff="true" type="barrel" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="SoundRangeMultiplier" value="-0.6" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_buff_qbu191" isbuff="true" type="barrel" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="AttackMultiplier" value="0.50" />
+      <StatValue stattype="RangedAttackSpeed" value="-0.45" />
+      <StatValue stattype="MovementSpeed" value="-0.02" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_buff_qbz191" isbuff="true" type="barrel" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="RangedAttackSpeed" value="0.1" />
+      <StatValue stattype="AttackMultiplier" value="0.07" />
+      <StatValue stattype="MovementSpeed" value="-0.02" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_buff_201" isbuff="true" type="barrel" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="RangedAttackSpeed" value="0.05" />
+      <StatValue stattype="AttackMultiplier" value="0.05" />
+      <StatValue stattype="MovementSpeed" value="-0.03" />
+    </Effect>
+  </Affliction>
+  <!--扩容弹匣减速-->
+  <Affliction identifier="tsm_drum_buff" isbuff="true" type="mag" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="MovementSpeed" value="-0.15" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_krmag_buff" isbuff="true" type="mag" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="MovementSpeed" value="-0.1" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_krmag_xf_buff" isbuff="true" type="mag" limbspecific="false" indicatorlimb="Head" showiconthreshold="1000" maxstrength="1" affectmachines="false">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1">
+      <StatValue stattype="MovementSpeed" value="-0.2" />
+      <StatValue stattype="RangedSpreadReduction" value="-0.25" />
+    </Effect>
+  </Affliction>
+  <!--医疗包后遗症-->
+  <!--快速-->
+  <Affliction identifier="tsm_aftermath_fast" isbuff="true" type="aftermath" limbspecific="false" indicatorlimb="Head" showiconthreshold="0" showicontoothersthreshold="0" showinhealthscannerthreshold="0" maxstrength="100" affectmachines="false">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-1">
+      <StatValue stattype="RepairSpeed" value="-0.5" />
+      <StatValue stattype="WeaponsSkillBonus" value="-35" />
+      <StatValue stattype="movementspeed" value="-0.30" />
+      <StatValue stattype="medicalskillbonus" value="-15" />
+    </Effect>
+    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="796,299,90,91" color="100,255,100,255" origin="0,0" />
+  </Affliction>
+  <!--慢速-->
+  <Affliction identifier="tsm_aftermath_slow" isbuff="true" type="aftermath" limbspecific="false" indicatorlimb="Head" showiconthreshold="0" showicontoothersthreshold="0" showinhealthscannerthreshold="0" maxstrength="100" affectmachines="false">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-1">
+      <StatValue stattype="RepairSpeed" value="-0.3" />
+      <StatValue stattype="WeaponsSkillBonus" value="-25" />
+      <StatValue stattype="movementspeed" value="-0.15" />
+      <!--AbilityFlag flagtype="MustWalk" /-->
+    </Effect>
+    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="796,299,90,91" color="255,100,100,255" origin="0,0" />
+  </Affliction>
+  <!--头盔-->
+  <Affliction identifier="tsm_armor_faceshield_100" type="buff" isbuff="true" limbspecific="false" maxstrength="3" affectmachines="false" indicatorlimb="Head" showiconthreshold="infinity">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1" ResistanceLimbs="Head" resistancefor="gunshotwound,stun,explosiondamage" minresistance="0.35" maxresistance="0.35">
+      <StatValue stattype="RangedSpreadReduction" value="-0.1" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_armor_faceshield_80" type="buff" isbuff="true" limbspecific="false" maxstrength="3" affectmachines="false" indicatorlimb="Head" showiconthreshold="infinity">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-1" ResistanceLimbs="Head" resistancefor="gunshotwound,explosiondamage" minresistance="0.3" maxresistance="0.3" MinAfflictionOverlayAlphaMultiplier="1" MaxAfflictionOverlayAlphaMultiplier="1">
+      <StatValue stattype="RangedSpreadReduction" value="-0.1" />
+    </Effect>
+    <AfflictionOverlay texture="%ModDir%/Afflictions/damage_80.png" sourcerect="0,0,0,0" color="255,255,255,255" />
+  </Affliction>
+  <Affliction identifier="tsm_armor_faceshield_60" type="buff" isbuff="true" limbspecific="false" maxstrength="3" affectmachines="false" indicatorlimb="Head" showiconthreshold="infinity">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-1" ResistanceLimbs="Head" resistancefor="gunshotwound,explosiondamage" minresistance="0.25" maxresistance="0.25" MinAfflictionOverlayAlphaMultiplier="1" MaxAfflictionOverlayAlphaMultiplier="1">
+      <StatValue stattype="RangedSpreadReduction" value="-0.1" />
+    </Effect>
+    <AfflictionOverlay texture="%ModDir%/Afflictions/damage_60.png" sourcerect="0,0,0,0" color="255,255,255,255" />
+  </Affliction>
+  <Affliction identifier="tsm_armor_faceshield_40" type="buff" isbuff="true" limbspecific="false" maxstrength="3" affectmachines="false" indicatorlimb="Head" showiconthreshold="infinity">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-1" ResistanceLimbs="Head" resistancefor="gunshotwound,explosiondamage" minresistance="0.15" maxresistance="0.15" MinAfflictionOverlayAlphaMultiplier="1" MaxAfflictionOverlayAlphaMultiplier="1">
+      <StatValue stattype="RangedSpreadReduction" value="-0.1" />
+    </Effect>
+    <AfflictionOverlay texture="%ModDir%/Afflictions/damage_40.png" sourcerect="0,0,0,0" color="255,255,255,255" />
+  </Affliction>
+  <Affliction identifier="tsm_armor_faceshield_20" type="buff" isbuff="true" limbspecific="false" maxstrength="3" affectmachines="false" indicatorlimb="Head" showiconthreshold="infinity">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-1" ResistanceLimbs="Head" resistancefor="gunshotwound,explosiondamage" minresistance="0.1" maxresistance="0.1" MinAfflictionOverlayAlphaMultiplier="1" MaxAfflictionOverlayAlphaMultiplier="1">
+      <StatValue stattype="RangedSpreadReduction" value="-0.1" />
+    </Effect>
+    <AfflictionOverlay texture="%ModDir%/Afflictions/damage_20.png" sourcerect="0,0,0,0" color="255,255,255,255" />
+  </Affliction>
+  <Affliction identifier="tsm_armor_faceshield_aerjin_100" type="buff" isbuff="true" limbspecific="false" maxstrength="2" affectmachines="false" indicatorlimb="Head" showiconthreshold="infinity">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-1" ResistanceLimbs="Head" resistancefor="gunshotwound,explosiondamage" minresistance="0.75" maxresistance="0.75" MinAfflictionOverlayAlphaMultiplier="1" MaxAfflictionOverlayAlphaMultiplier="1">
+      <StatValue stattype="RangedSpreadReduction" value="-0.25" />
+      <StatusEffect target="Character" type="OnActive" interval="0.3" LowPassMultiplier="0.2" setvalue="true" />
+    </Effect>
+    <AfflictionOverlay texture="%ModDir%/Afflictions/aerjin.png" sourcerect="0,0,0,0" color="255,255,255,255" />
+  </Affliction>
+  <Affliction identifier="tsm_armor_faceshield_aerjin_80" type="buff" isbuff="true" limbspecific="false" maxstrength="2" affectmachines="false" indicatorlimb="Head" showiconthreshold="infinity">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-1" ResistanceLimbs="Head" resistancefor="gunshotwound,explosiondamage" minresistance="0.6" maxresistance="0.6" MinAfflictionOverlayAlphaMultiplier="1" MaxAfflictionOverlayAlphaMultiplier="1">
+      <StatValue stattype="RangedSpreadReduction" value="-0.25" />
+      <StatusEffect target="Character" type="OnActive" interval="0.3" LowPassMultiplier="0.2" setvalue="true" />
+    </Effect>
+    <AfflictionOverlay texture="%ModDir%/Afflictions/aerjin_80.png" sourcerect="0,0,0,0" color="255,255,255,255" />
+  </Affliction>
+  <Affliction identifier="tsm_armor_faceshield_aerjin_50" type="buff" isbuff="true" limbspecific="false" maxstrength="2" affectmachines="false" indicatorlimb="Head" showiconthreshold="infinity">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-1" ResistanceLimbs="Head" resistancefor="gunshotwound,explosiondamage" minresistance="0.4" maxresistance="0.4" MinAfflictionOverlayAlphaMultiplier="1" MaxAfflictionOverlayAlphaMultiplier="1">
+      <StatValue stattype="RangedSpreadReduction" value="-0.25" />
+      <StatusEffect target="Character" type="OnActive" interval="0.3" LowPassMultiplier="0.2" setvalue="true" />
+    </Effect>
+    <AfflictionOverlay texture="%ModDir%/Afflictions/aerjin_50.png" sourcerect="0,0,0,0" color="255,255,255,255" />
+  </Affliction>
+  <Affliction identifier="tsm_armor_faceshield_aerjin_20" type="buff" isbuff="true" limbspecific="false" maxstrength="2" affectmachines="false" indicatorlimb="Head" showiconthreshold="infinity">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-1" ResistanceLimbs="Head" resistancefor="gunshotwound,explosiondamage" minresistance="0.15" maxresistance="0.15" MinAfflictionOverlayAlphaMultiplier="1" MaxAfflictionOverlayAlphaMultiplier="1">
+      <StatValue stattype="RangedSpreadReduction" value="-0.25" />
+      <StatusEffect target="Character" type="OnActive" interval="0.3" LowPassMultiplier="0.2" setvalue="true" />
+    </Effect>
+    <AfflictionOverlay texture="%ModDir%/Afflictions/aerjin_20.png" sourcerect="0,0,0,0" color="255,255,255,255" />
+  </Affliction>
+  <Affliction identifier="tsm_armor_faceshield_mf_100" type="buff" isbuff="true" limbspecific="false" maxstrength="2" affectmachines="false" indicatorlimb="Head" showiconthreshold="infinity">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-1" ResistanceLimbs="Head" resistancefor="gunshotwound,explosiondamage" minresistance="0.4" maxresistance="0.4" MinAfflictionOverlayAlphaMultiplier="1" MaxAfflictionOverlayAlphaMultiplier="1">
+      <StatValue stattype="RangedSpreadReduction" value="-0.05" />
+    </Effect>
+    <AfflictionOverlay texture="%ModDir%/Afflictions/tsm_pm.png" sourcerect="0,0,0,0" color="255,255,255,255" />
+  </Affliction>
+  <!--护颚-->
+  <Affliction identifier="tsm_armor_jaw" type="buff" isbuff="true" limbspecific="false" maxstrength="3" affectmachines="false" indicatorlimb="Head" showiconthreshold="infinity">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1" ResistanceLimbs="Head" resistancefor="damage,bleeding,stun" minresistance="0.2" maxresistance="0.2" >
+      <StatValue stattype="RangedSpreadReduction" value="-0.05" />
+    </Effect>
+  </Affliction>
+  <!--其他-->
+  <Affliction identifier="tsm_headshoot_debuff" type="buff" isbuff="true" limbspecific="false" maxstrength="2" affectmachines="false" indicatorlimb="Head" showiconthreshold="infinity">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-1" >
+      <StatValue stattype="RangedSpreadReduction" value="-0.4" />
+    </Effect>
+  </Affliction>
+  <Affliction identifier="tsm_teargas_debuff" type="buff" isbuff="true" limbspecific="false" maxstrength="20" affectmachines="false" indicatorlimb="Head" showiconthreshold="0">
+    <Effect minstrength="0" maxstrength="20" strengthchange="-1" >
+      <StatValue stattype="RangedSpreadReduction" value="-0.6" />
+      <StatusEffect target="Character">
+        <!--Conditional IsLocalPlayer="True" /-->
+        <Sound file="%ModDir%/Afflictions/ks.ogg" loop="false" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="11,562,126,126" color="255,255,255,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="tsm_slow" description="目前受到冲击，没办法全速行动" identifier="tsm_slow" type="slow" limbspecific="false" maxstrength="3" showiconthreshold="1000" treatmentthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000">
+    <Effect minstrength="0" maxstrength="0.15" strengthchange="-1">
+      <StatusEffect target="Character" SpeedMultiplier="0.3" setvalue="true" comparison="and">
+        <Conditional mass="lt 150" />
+        <Conditional recoilstabilized="lte 0" />
+      </StatusEffect>
+      <StatusEffect target="Character" SpeedMultiplier="0.65" setvalue="true" comparison="and">
+        <Conditional mass="lt 150" />
+        <Conditional recoilstabilized="gt 0" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="0.15" maxstrength="0.45" strengthchange="-1">
+      <StatusEffect target="Character" SpeedMultiplier="0.2" setvalue="true" comparison="and">
+        <Conditional mass="lt 150" />
+        <Conditional recoilstabilized="lte 0" />
+      </StatusEffect>
+      <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true" comparison="and">
+        <Conditional mass="lt 150" />
+        <Conditional recoilstabilized="gt 0" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="0.45" maxstrength="3" strengthchange="-1">
+      <StatusEffect target="Character" SpeedMultiplier="0.1" setvalue="true" comparison="and">
+        <Conditional mass="lt 150" />
+        <Conditional recoilstabilized="lte 0" />
+      </StatusEffect>
+      <StatusEffect target="Character" SpeedMultiplier="0.55" setvalue="true" comparison="and">
+        <Conditional mass="lt 150" />
+        <Conditional recoilstabilized="gt 0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,768,128,128" color="143,111,160,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="tsm_stop" description="目前受到了强大的冲击而不能动弹" identifier="tsm_stop" type="stop" limbspecific="false" maxstrength="30" showiconthreshold="1000" treatmentthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000">
+    <Effect minstrength="0" maxstrength="30" strengthchange="-1">
+      <StatusEffect target="Character" SpeedMultiplier="0" setvalue="true" comparison="and">
+        <Conditional mass="lt 150" />
+        <Conditional recoilstabilized="lte 0" />
+      </StatusEffect>
+      <StatusEffect target="Character" SpeedMultiplier="0.5" setvalue="true" comparison="and">
+        <Conditional mass="lt 150" />
+        <Conditional recoilstabilized="gt 0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="768,768,128,128" color="143,111,160,255" origin="0,0" />
+  </Affliction>
+  <!--支援背包+望远镜-->
+  <Affliction name="支援背包buff" type="buff" identifier="tsm_zy_buff" isbuff="true" limbspecific="false" showiconthreshold="10" maxstrength="3">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1"/>
+  </Affliction>
+  <Affliction identifier="tsm_burneyes_buff" type="buff" showiconthreshold="infinity" limbspecific="false" maxstrength="2" affectmachines="false">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-1" minafflictionoverlayalphamultiplier="1" maxafflictionoverlayalphamultiplier="1">
+      <StatusEffect target="Character" >
+        <Affliction identifier="tsm_burneyes_debuff" strength="5" />
+      </StatusEffect>
+    </Effect>
+    <AfflictionOverlay texture="%ModDir%/Afflictions/sy.png" />
+  </Affliction>
+  <Affliction name="视网膜灼烧" identifier="tsm_burneyes_debuff" type="buff" showiconthreshold="0" showinhealthscannerthreshold="0" limbspecific="false" maxstrength="100" affectmachines="false">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-5" minafflictionoverlayalphamultiplier="0" maxafflictionoverlayalphamultiplier="1">
+    </Effect>
+    <AfflictionOverlay texture="%ModDir%/Afflictions/screenblack.png" />
+    <icon texture="%ModDir%/Afflictions/Afflictionicons.png" sourcerect="174,579,90,91" color="255,255,255,255" origin="0,0" />
+  </Affliction>
+</Afflictions>

@@ -25,28 +25,24 @@
       <Item identifier="fpgacgircuit" />
     </Deconstruct>
     <Wearable slots="Any,Headset" displaycontainedstatus="false" msg="ItemMsgPickUpSelect">
-      <sprite name="hxl Head" texture="%ModDir%/npc/hxl/hxl_head.png" limb="Head" sourcerect="50,49,115,126" canbehiddenbyotherwearables="true" inheritsourcerect="false" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="false" Scale="1" hideotherwearables="false" inheritorigin="false" origin="0.49,0.505" />
-      <sprite name="hxl Torso" texture="%ModDir%/npc/hxl/hxlbody.png" limb="Torso" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.48,0.57" />
-      <sprite name="hxl Right Hand" texture="%ModDir%/npc/hxl/hxlbody.png" limb="RightHand" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.395,0.43" />
-      <sprite name="hxl Left Hand" texture="%ModDir%/npc/hxl/hxlbody.png" limb="LeftHand" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.40,0.39" />
-      <sprite name="hxl Left Lower Arm" texture="%ModDir%/npc/hxl/hxlbody.png" limb="LeftForearm" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.39,0.55" />
-      <sprite name="hxl Right Lower Arm" texture="%ModDir%/npc/hxl/hxlbody.png" limb="RightForearm" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.40,0.55" />
-      <sprite name="hxl Left Upper Arm" texture="%ModDir%/npc/hxl/hxlbody.png" limb="LeftArm" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.46,0.43" />
-      <sprite name="hxl Right Upper Arm" texture="%ModDir%/npc/hxl/hxlbody.png" limb="RightArm" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.46,0.43" />
-      <sprite name="hxl Waist" texture="%ModDir%/npc/hxl/hxlbody.png" limb="Waist" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.47,0.63" />
-      <sprite name="hxl Right Thigh" texture="%ModDir%/npc/hxl/hxlbody.png" limb="RightThigh" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.38,0.51" />
-      <sprite name="hxl Left Thigh" texture="%ModDir%/npc/hxl/hxlbody.png" limb="LeftThigh" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.47,0.51" />
-      <sprite name="hxl Right Leg" texture="%ModDir%/npc/hxl/hxlbody.png" limb="RightLeg" inheritsourcerect="true" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.31,0.43" />
-      <sprite name="hxl Left Leg" texture="%ModDir%/npc/hxl/hxlbody.png" limb="LeftLeg" inheritsourcerect="true" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.41,0.43" />
-      <sprite name="hxl Right Shoe" texture="%ModDir%/npc/hxl/hxlbody.png" limb="RightFoot" inheritsourcerect="true" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.46,0.465" />
-      <sprite name="hxl Left Shoe" texture="%ModDir%/npc/hxl/hxlbody.png" limb="LeftFoot" inheritsourcerect="true" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.45,0.465" />
+      <sprite name="hxl Head" texture="%ModDir%/npc/hxl/hxl_head.png" limb="Head" depth="0.15" inheritdepth="false" inheritlimbdepth="true" sourcerect="50,49,115,126" canbehiddenbyotherwearables="true" inheritsourcerect="false" hidelimb="true" inheritscale="true" ignorelimbscale="false" hideotherwearables="false" inheritorigin="false" origin="0.49,0.505" />
+      <sprite name="hxl Torso" texture="%ModDir%/npc/hxl/hxlbody.png" limb="Torso" depth="0.16" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.48,0.57" />
+      <sprite name="hxl Right Hand" texture="%ModDir%/npc/hxl/hxlbody.png" limb="RightHand" depth="0.115" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.395,0.43" />
+      <sprite name="hxl Left Hand" texture="%ModDir%/npc/hxl/hxlbody.png" limb="LeftHand" depth="0.26" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.40,0.39" />
+      <sprite name="hxl Left Lower Arm" texture="%ModDir%/npc/hxl/hxlbody.png" limb="LeftForearm" depth="0.25" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.39,0.55" />
+      <sprite name="hxl Right Lower Arm" texture="%ModDir%/npc/hxl/hxlbody.png" limb="RightForearm" depth="0.11" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.40,0.55" />
+      <sprite name="hxl Left Upper Arm" texture="%ModDir%/npc/hxl/hxlbody.png" limb="LeftArm" depth="0.24" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.46,0.43" />
+      <sprite name="hxl Right Upper Arm" texture="%ModDir%/npc/hxl/hxlbody.png" limb="RightArm" depth="0.12" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.46,0.43" />
+      <sprite name="hxl Waist" texture="%ModDir%/npc/hxl/hxlbody.png" limb="Waist" depth="0.221" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.47,0.63" />
+      <sprite name="hxl Right Thigh" texture="%ModDir%/npc/hxl/hxlbody.png" limb="RightThigh" depth="0.32" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.38,0.51" />
+      <sprite name="hxl Left Thigh" texture="%ModDir%/npc/hxl/hxlbody.png" limb="LeftThigh" depth="0.33" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.47,0.51" />
+      <sprite name="hxl Right Leg" texture="%ModDir%/npc/hxl/hxlbody.png" limb="RightLeg" depth="0.321" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.31,0.43" />
+      <sprite name="hxl Left Leg" texture="%ModDir%/npc/hxl/hxlbody.png" limb="LeftLeg" depth="0.331" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.41,0.43" />
+      <sprite name="hxl Right Shoe" texture="%ModDir%/npc/hxl/hxlbody.png" limb="RightFoot"  depth="0.322" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.46,0.465" />
+      <sprite name="hxl Left Shoe" texture="%ModDir%/npc/hxl/hxlbody.png" limb="LeftFoot" depth="0.332" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" origin="0.45,0.465" />
       <sprite name="hxl Boobs" texture="%ModDir%/npc/hxl/hxlbody.png" limb="Tail" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
       <sprite name="hxl Boobs" texture="%ModDir%/npc/hxl/hxlbody.png" limb="Jaw" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
-      <!--StatusEffect type="OnWearing" target="Character" SoundRange="55000" setvalue="true">
-          <AiTarget soundrange="55000" />
-          <Affliction identifier="radio" strength="150" />
-        </StatusEffect-->
-      <StatusEffect type="OnWearing" target="Character,Contained" noninteractable="true" condition="-10" targetslot="0">
+      <!--StatusEffect type="OnWearing" target="Character,Contained" noninteractable="true" condition="-10" targetslot="0">
         <ReduceAffliction type="bloodloss" amount="2.5" />
         <RequiredItem items="antibloodloss1" type="Contained" targetslot="0" />
         <Conditional bloodloss="gt 5.0" />
@@ -112,9 +108,9 @@
         <Conditional concussion="gt 0.0" />
         <Conditional bloodloss="gt 5.0" />
         <Conditional oxygenlow="gt 50.0" />
-      </StatusEffect>
+      </StatusEffect-->
     </Wearable>
-    <ItemContainer capacity="0" maxstacksize="0" autoinject="false" containedstateindicatorstyle="syringe">
+    <!--ItemContainer capacity="0" maxstacksize="0" autoinject="false" containedstateindicatorstyle="syringe">
       <Containable items="none" />
       <SlotIcon slotindex="0" texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,448,64,64" origin="0.5,0.45" />
       <SlotIcon slotindex="1" texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,448,64,64" origin="0.5,0.45" />
@@ -124,9 +120,9 @@
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="antidama1,antidama2,deusizine" />
       </SubContainer>
-    </ItemContainer>
+    </ItemContainer-->
   </Item>
-  <Item name="幻下琅的衣服" identifier="tsm_hxl_unform" subcategory="tsmmissions" category="Equipment" hideinmenus="true" tags="smallitem,clothing,vest" fireproof="false" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
+  <Item name="幻下的衣服" identifier="tsm_hxl_unform" subcategory="tsmmissions" category="Equipment" hideinmenus="true" tags="smallitem,clothing,vest" fireproof="false" cargocontaineridentifier="tsm_metalcrate" description="" scale="0.5" impactsoundtag="impact_soft">
     <Deconstruct time="10">
       <Item identifier="organicfiber" />
     </Deconstruct>
@@ -250,7 +246,7 @@
       <RequiredItems items="shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
-    <ItemContainer capacity="1" maxstacksize="12" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
+    <ItemContainer capacity="1" maxstacksize="12" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <Containable items="shotgunammo" />
       <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
       <SubContainer capacity="1" maxstacksize="1">
@@ -263,94 +259,30 @@
     </Quality>
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
-  <Item name="手枪弹匣（9mm）" identifier="tsm_9_mag" scale="0.28" category="weapon" subcategory="tsmmissions" maxstacksize="8" maxstacksizecharacterinventory="6" cargocontaineridentifier="metalcrate" hideinmenus="true" linkable="true" tags="smallitem,tsm_9_mag,tsm_9_mag_18,handheldammo,pistolammoitem,magazine" impactsoundtag="impact_metal_light" health="18" description="">
-    <InventoryIcon texture="%ModDir%/npc/hxl/hxl_weapons.png" sourcerect="706,9,35,65" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/npc/hxl/hxl_weapons.png" sourcerect="706,9,35,65" depth="0.56" origin="0.5,0.5" />
-    <Body width="46" height="76" density="40" />
-    <!--Price baseprice="112" displaynonempty="true">
-      <Price storeidentifier="merchantoutpost" minavailable="0" maxavailable="3" multiplier="1.5" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" maxavailable="4" />
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" multiplier="1" minavailable="1" maxavailable="4" />
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
-      <Price storeidentifier="merchantarmory" multiplier="1" minavailable="1" maxavailable="4" />
-    </Price>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" amount="2">
-      <RequiredItem identifier="steel" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" />
-    </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5" amount="1">
-      <RequiredItem identifier="tsm_9_mag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="0.5" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="0.5" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" mincondition="0.5" />
-    </Fabricate-->
-    <Deconstruct time="10">
-      <Item identifier="steel" outcondition="0.5" />
-      <Item identifier="copper" mincondition="0.9" />
-    </Deconstruct>
-    <ItemContainer maxstacksize="1" hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_9_ammo" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-      <Containable items="tsm_9_ammo" />
-      <StatusEffect type="OnUse" target="This" condition="-1.0" disabledeltatime="true">
-        <SpawnItem identifiers="tsm_9_ammo" spawnposition="ThisInventory" />
-      </StatusEffect>
-    </ItemContainer>
-    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-  </Item>
-  <Item identifier="tsm_9_ammo" category="Weapon" interactthroughwalls="true" subcategory="tsmmissions" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
-    <Body width="17" height="6" density="30" />
-    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-    <Projectile characterusable="false" hitscan="true" removeonhit="true">
-      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
-      <Attack structuredamage="0" targetforce="2" itemdamage="1" severlimbsprobability="0.1">
-        <Affliction identifier="bleeding" strength="10" />
-        <Affliction identifier="bleeding" strength="10" probability="0.3" />
-        <Affliction identifier="gunshotwound" strength="12" />
-        <Affliction identifier="gunshotwound" strength="4" probability="0.25" />
-        <Affliction identifier="stun" strength="0.2" probability="0.25" />
-      </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <Conditional entitytype="eq Structure" />
-        <Conditional hastag="eq door" />
-        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
-        <Remove />
-      </StatusEffect>
-    </Projectile>
-  </Item>
-  <Item name="幻下琅站点" identifier="tsm_hxl_unform_ai" subcategory="tsmmissions" category="Equipment" hideinmenus="true" tags="smallitem,clothing,vest" fireproof="false" scale="0.5" impactsoundtag="impact_soft" noninteractable="True">
+  <Item name="雨琅的衣服" identifier="tsm_hxl_unform_yl" subcategory="tsmmissions" category="Equipment" hideinmenus="true" tags="smallitem,clothing,vest" fireproof="false" scale="0.5" impactsoundtag="impact_soft" >
     <Deconstruct time="10">
       <Item identifier="organicfiber" />
     </Deconstruct>
-    <InventoryIcon name="hxl uniform Icon" texture="%ModDir%/npc/hxl/hxl_weapons.png" sourcerect="233,19,185,214" origin="0.5,0.5" />
+    <InventoryIcon name="hxl uniform Icon" texture="%ModDir%/npc/hxl/hxlClothes.png" sourcerect="423,16,89,41" origin="0.5,0.5" />
     <Sprite name="hxl uniform" texture="%ModDir%/npc/hxl/hxlClothes.png" sourcerect="423,16,89,41" depth="0.55" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="hxl Head" texture="%ModDir%/npc/hxl/hxl_head.png" limb="Head" sourcerect="50,49,115,126" canbehiddenbyotherwearables="true" inheritsourcerect="false" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="false" Scale="1" hideotherwearables="false" inheritorigin="false" origin="0.49,0.51" />
-      <sprite name="hxl Torso" texture="%ModDir%/npc/hxl/hxlClothes_ai.png" limb="Torso" depthlimb="Jaw" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" sourcerect="169,10,89,213" origin="0.52,0.38" />
-      <sprite name="hxl Right Hand" texture="%ModDir%/npc/hxl/hxlClothes_ai.png" limb="RightHand" inheritsourcerect="true" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
-      <sprite name="hxl Left Hand" texture="%ModDir%/npc/hxl/hxlClothes_ai.png" limb="LeftHand" inheritsourcerect="true" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
-      <sprite name="hxl Left Lower Arm" texture="%ModDir%/npc/hxl/hxlClothes_ai.png" limb="LeftForearm" inheritsourcerect="true" hidelimb="true" hideotherwearables="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
-      <sprite name="hxl Right Lower Arm" texture="%ModDir%/npc/hxl/hxlClothes_ai.png" limb="RightForearm" inheritsourcerect="true" hidelimb="true" hideotherwearables="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
-      <sprite name="hxl Left Upper Arm" texture="%ModDir%/npc/hxl/hxlClothes_ai.png" limb="LeftArm" inheritsourcerect="true" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
-      <sprite name="hxl Right Upper Arm" texture="%ModDir%/npc/hxl/hxlClothes_ai.png" limb="RightArm" inheritsourcerect="true" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
-      <sprite name="hxl Waist" texture="%ModDir%/npc/hxl/hxlClothes_ai.png" limb="Waist" inheritsourcerect="false" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" sourcerect="0,0,1,1" />
-      <sprite name="hxl Right Thigh" texture="%ModDir%/npc/hxl/hxlClothes_ai.png" limb="RightThigh" inheritsourcerect="true" hideotherwearables="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
-      <sprite name="hxl Left Thigh" texture="%ModDir%/npc/hxl/hxlClothes_ai.png" limb="LeftThigh" inheritsourcerect="true" hideotherwearables="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
-      <sprite name="hxl Right Leg" texture="%ModDir%/npc/hxl/hxlClothes_ai.png" limb="RightLeg" inheritsourcerect="true" hideotherwearables="true" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
-      <sprite name="hxl Left Leg" texture="%ModDir%/npc/hxl/hxlClothes_ai.png" limb="LeftLeg" inheritsourcerect="true" hideotherwearables="true" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
-      <sprite name="hxl Right Shoe" texture="%ModDir%/npc/hxl/hxlClothes_ai.png" limb="RightFoot" inheritsourcerect="true" hideotherwearables="true" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
-      <sprite name="Lerentin Left Shoe" texture="%ModDir%/npc/hxl/hxlClothes_ai.png" limb="LeftFoot" inheritsourcerect="true" hideotherwearables="true" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
-      <sprite name="Lerentin Boobs" texture="%ModDir%/npc/hxl/hxlClothes_ai.png" limb="Tail" hidelimb="true" inherittexturescale="false" sourcerect="0,0,1,1" inheritorigin="true" />
-      <sprite name="Lerentin Boobs" texture="%ModDir%/npc/hxl/hxlClothes_ai.png" limb="Jaw" hidelimb="true" inherittexturescale="false" sourcerect="0,0,1,1" inheritorigin="true" />
+      <sprite name="hxl Torso" texture="%ModDir%/npc/hxl/hxlClothes_yl.png" limb="Torso" depthlimb="Jaw" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" sourcerect="169,10,89,213" origin="0.52,0.38" />
+      <sprite name="hxl Right Hand" texture="%ModDir%/npc/hxl/hxlClothes_yl.png" limb="RightHand" inheritsourcerect="true" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="hxl Left Hand" texture="%ModDir%/npc/hxl/hxlClothes_yl.png" limb="LeftHand" inheritsourcerect="true" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="hxl Left Lower Arm" texture="%ModDir%/npc/hxl/hxlClothes_yl.png" limb="LeftForearm" inheritsourcerect="true" hidelimb="true" hideotherwearables="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="hxl Right Lower Arm" texture="%ModDir%/npc/hxl/hxlClothes_yl.png" limb="RightForearm" inheritsourcerect="true" hidelimb="true" hideotherwearables="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="hxl Left Upper Arm" texture="%ModDir%/npc/hxl/hxlClothes_yl.png" limb="LeftArm" inheritsourcerect="true" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="hxl Right Upper Arm" texture="%ModDir%/npc/hxl/hxlClothes_yl.png" limb="RightArm" inheritsourcerect="true" hideotherwearables="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="hxl Waist" texture="%ModDir%/npc/hxl/hxlClothes_yl.png" limb="Waist" inheritsourcerect="false" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" sourcerect="0,0,1,1" />
+      <sprite name="hxl Right Thigh" texture="%ModDir%/npc/hxl/hxlClothes_yl.png" limb="RightThigh" inheritsourcerect="true" hideotherwearables="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="hxl Left Thigh" texture="%ModDir%/npc/hxl/hxlClothes_yl.png" limb="LeftThigh" inheritsourcerect="true" hideotherwearables="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="hxl Right Leg" texture="%ModDir%/npc/hxl/hxlClothes_yl.png" limb="RightLeg" inheritsourcerect="true" hideotherwearables="true" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="hxl Left Leg" texture="%ModDir%/npc/hxl/hxlClothes_yl.png" limb="LeftLeg" inheritsourcerect="true" hideotherwearables="true" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="hxl Right Shoe" texture="%ModDir%/npc/hxl/hxlClothes_yl.png" limb="RightFoot" inheritsourcerect="true" hideotherwearables="true" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentin Left Shoe" texture="%ModDir%/npc/hxl/hxlClothes_yl.png" limb="LeftFoot" inheritsourcerect="true" hideotherwearables="true" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="Lerentin Boobs" texture="%ModDir%/npc/hxl/hxlClothes_yl.png" limb="Tail" hidelimb="true" inherittexturescale="false" sourcerect="0,0,1,1" inheritorigin="true" />
+      <sprite name="Lerentin Boobs" texture="%ModDir%/npc/hxl/hxlClothes_yl.png" limb="Jaw" hidelimb="true" inherittexturescale="false" sourcerect="0,0,1,1" inheritorigin="true" />
       <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.8" />
       <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.75" />
       <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.8" />
@@ -364,15 +296,15 @@
       <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest" />
     </ItemContainer>
   </Item>
-  <Item name="幻象" identifier="hxl_knife" category="Weapon" Tags="smallitem,weapon,gunsmith,mountableweapon,sharptool" cargocontaineridentifier="metalcrate" scale="0.25" impactsoundtag="impact_metal_light" RequireAimToUse="True">
-    <InventoryIcon texture="%ModDir%/npc/hxl/hxl_weapons.png" sourcerect="1,92,103,103" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/npc/hxl/hxl_weapons.png" sourcerect="7,0,201,47" depth="0.55" origin="0.5,0.5" />
+  <Item name="幻象" identifier="hxl_knife" subcategory="tsm_melee" category="Weapon" Tags="smallitem,weapon,gunsmith,mountableweapon,sharptool,provocativetohumanai" cargocontaineridentifier="metalcrate" scale="0.25" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <InventoryIcon texture="%ModDir:2852411866%/npc/hxl/hxl_weapons.png" sourcerect="1,92,103,103" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2852411866%/npc/hxl/hxl_weapons.png" sourcerect="7,0,201,47" depth="0.55" origin="0.5,0.5" />
     <Body width="200" height="40" density="25" />
     <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="50,0" handle1="-15,0" holdangle="20" reload="0.55" range="50" combatPriority="25" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="5" severlimbsprobability="0.1" itemdamage="20" penetration="0.15" structuredamage="2" structuresoundtype="StructureSlash">
         <Affliction identifier="lacerations" strength="35" />
         <Affliction identifier="bleedingnonstop" strength="30" />
-        <Affliction identifier="cyanidepoisoning" strength="3" />
+        <Affliction identifier="triton_7L" strength="5" />
         <Affliction identifier="stun" strength="0.2" />
         <StatusEffect type="OnUse" target="UseTarget">
           <Conditional entitytype="eq Character" />

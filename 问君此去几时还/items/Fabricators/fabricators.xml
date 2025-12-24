@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="武器弹药制造台" identifier="tsm_fabricator" tags="tsm_fabricator,donttakeitems,dontsellitems" category="Machine" linkable="true" allowedlinks="deconstructor,locker" description="" scale="0.07" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
+    <Upgrade gameversion="0.10.4.0">
+      <Repairable Msg="ItemMsgRepairWrench" />
+    </Upgrade>
+    <Price baseprice="333" soldeverywhere="false">
+      <Price storeidentifier="outpost" multiplier="1.1" minavailable="1" />
+      <Price storeidentifier="city" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="research" multiplier="1" minavailable="1" />
+      <Price storeidentifier="military" multiplier="1" minavailable="1" />
+      <Price storeidentifier="mine" multiplier="0.8" minavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="electrical" level="20" />
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredItem identifier="steel" amount="2" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="plastic" amount="1" />
+      <Item identifier="copper" amount="1" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="steel" />
+      <Item identifier="copper" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Body width="2500" height="2000" density="40" />
+    <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="256,960,64,64" origin="0.5,0.45" />
+    <Sprite texture="%ModDir%/items/Fabricators/Fabricators.png" sourcerect="688,886,2720,2337" depth="0.8" />
+    <BrokenSprite texture="%ModDir%/items/Fabricators/Damaged.png" sourcerect="688,886,2720,2337" depth="0.8" maxcondition="20" fadein="true" />
+    <BrokenSprite texture="%ModDir%/items/Fabricators/Damaged.png" sourcerect="688,886,2720,2337" depth="0.8" maxcondition="0" />
+    <Fabricator canbeselected="true" powerconsumption="500.0" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.4,0.45" style="ItemUI" anchor="Center" />
+      <sound file="%ModDir%/items/Fabricators/Fabricators.ogg" type="OnActive" range="1000.0" volumeproperty="RelativeVoltage" loop="true" />
+      <poweronsound file="Content/Items/PowerOnLight1.ogg" range="600" loop="false" />
+      <StatusEffect type="InWater" target="This" condition="-0.5" />
+    </Fabricator>
+    <ConnectionPanel selectkey="Action" canbeselected="true" hudpriority="10" msg="ItemMsgRewireScrewdriver">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredSkill identifier="electrical" level="55" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand" AllowWhenBroken="true">
+        <Sound file="Content/Sounds/Damage/Electrocution1.ogg" range="1000" />
+        <Explosion range="100.0" force="1.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+        <Affliction identifier="stun" strength="4" />
+        <Affliction identifier="burn" strength="5" />
+      </StatusEffect>
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <output name="condition_out" displayname="connection.conditionout" />
+    </ConnectionPanel>
+    <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="itemmsgforceopencrowbar" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem identifier="crowbar" type="Equipped" />
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.5" setvalue="true" />
+      <StatusEffect type="Always" target="This" disabledeltatime="true" stackable="false" setvalue="true" condition="100" allowwhenbroken="true">
+        <Conditional attached="false" />
+      </StatusEffect>
+    </Holdable>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.50" mindeteriorationdelay="60" maxdeteriorationdelay="120" RepairThreshold="80" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.1,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="wrench" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemax="360" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <ParticleEmitter particle="smoke" particlespersecond="2" scalemin="1" scalemax="2.5" anglemax="360" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
+      <ParticleEmitter particle="heavysmoke" particlespersecond="2" scalemin="1.0" scalemax="2.5" anglemax="360" distancemax="60" mincondition="0.0" maxcondition="15.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand" AllowWhenBroken="true">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="4" />
+      </StatusEffect>
+    </Repairable>
+    <ItemContainer capacity="10" canbeselected="true" hideitems="true" slotsperrow="10" uilabel="" allowuioverlap="true" />
+    <ItemContainer capacity="1" canbeselected="true" hideitems="true" slotsperrow="1" uilabel="" allowuioverlap="true" />
+  </Item>
+  <Item name="弹药制作台" identifier="tsm_fabricator_ammo" tags="tsm_fabricator_ammo,donttakeitems,dontsellitems" category="Machine" linkable="true" allowedlinks="deconstructor,locker" description="" scale="0.08" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
+    <Upgrade gameversion="0.10.4.0">
+      <Repairable Msg="ItemMsgRepairWrench" />
+    </Upgrade>
+    <Price baseprice="333" soldeverywhere="false">
+      <Price storeidentifier="outpost" multiplier="1.1" minavailable="1" />
+      <Price storeidentifier="city" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="research" multiplier="1" minavailable="1" />
+      <Price storeidentifier="military" multiplier="1" minavailable="1" />
+      <Price storeidentifier="mine" multiplier="0.8" minavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="electrical" level="20" />
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredItem identifier="steel" amount="2" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="plastic" amount="1" />
+      <Item identifier="copper" amount="1" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="steel" />
+      <Item identifier="copper" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Body width="2000" height="1000" density="40" />
+    <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="256,960,64,64" origin="0.5,0.45" />
+    <Sprite texture="%ModDir%/items/Fabricators/ammoandquality.png" sourcerect="2754,244,2248,1288" depth="0.8" />
+    <BrokenSprite texture="%ModDir%/items/Fabricators/ammoandquality.png" sourcerect="2740,1752,2248,1288" depth="0.8" maxcondition="20" fadein="true" />
+    <BrokenSprite texture="%ModDir%/items/Fabricators/ammoandquality.png" sourcerect="2740,1752,2248,1288" depth="0.8" maxcondition="0" />
+    <Fabricator canbeselected="true" powerconsumption="0" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.4,0.45" style="ItemUI" anchor="Center" />
+      <sound file="%ModDir%/items/Fabricators/Fabricators.ogg" type="OnActive" range="1000.0" volumeproperty="RelativeVoltage" loop="true" />
+      <poweronsound file="Content/Items/PowerOnLight1.ogg" range="600" loop="false" />
+      <StatusEffect type="InWater" target="This" condition="-0.5" />
+    </Fabricator>
+    <ConnectionPanel selectkey="Action" canbeselected="true" hudpriority="10" msg="ItemMsgRewireScrewdriver">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredSkill identifier="electrical" level="55" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand" AllowWhenBroken="true">
+        <Sound file="Content/Sounds/Damage/Electrocution1.ogg" range="1000" />
+        <Explosion range="100.0" force="1.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+        <Affliction identifier="stun" strength="4" />
+        <Affliction identifier="burn" strength="5" />
+      </StatusEffect>
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <output name="condition_out" displayname="connection.conditionout" />
+    </ConnectionPanel>
+    <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="itemmsgforceopencrowbar" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem identifier="crowbar" type="Equipped" />
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.5" setvalue="true" />
+      <StatusEffect type="Always" target="This" disabledeltatime="true" stackable="false" setvalue="true" condition="100" allowwhenbroken="true">
+        <Conditional attached="false" />
+      </StatusEffect>
+    </Holdable>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.50" mindeteriorationdelay="60" maxdeteriorationdelay="120" RepairThreshold="80" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.1,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="wrench" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemax="360" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <ParticleEmitter particle="smoke" particlespersecond="2" scalemin="1" scalemax="2.5" anglemax="360" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
+      <ParticleEmitter particle="heavysmoke" particlespersecond="2" scalemin="1.0" scalemax="2.5" anglemax="360" distancemax="60" mincondition="0.0" maxcondition="15.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand" AllowWhenBroken="true">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="4" />
+      </StatusEffect>
+    </Repairable>
+    <ItemContainer capacity="10" canbeselected="true" hideitems="true" slotsperrow="10" uilabel="" allowuioverlap="true" />
+    <ItemContainer capacity="1" canbeselected="true" hideitems="true" slotsperrow="1" uilabel="" allowuioverlap="true" />
+  </Item>
+  <Item name="品质升级台" identifier="tsm_fabricator_quality" tags="tsm_fabricator_quality,donttakeitems,dontsellitems" category="Machine" linkable="true" allowedlinks="deconstructor,locker" description="" scale="0.06" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
+    <Upgrade gameversion="0.10.4.0">
+      <Repairable Msg="ItemMsgRepairWrench" />
+    </Upgrade>
+    <Price baseprice="333" soldeverywhere="false">
+      <Price storeidentifier="outpost" multiplier="1.1" minavailable="1" />
+      <Price storeidentifier="city" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="research" multiplier="1" minavailable="1" />
+      <Price storeidentifier="military" multiplier="1" minavailable="1" />
+      <Price storeidentifier="mine" multiplier="0.8" minavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="electrical" level="20" />
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredItem identifier="steel" amount="2" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="plastic" amount="1" />
+      <Item identifier="copper" amount="1" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="steel" />
+      <Item identifier="copper" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Body width="1700" height="1300" density="40" />
+    <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="256,960,64,64" origin="0.5,0.45" />
+    <Sprite texture="%ModDir%/items/Fabricators/ammoandquality.png" sourcerect="351,91,1822,1459" depth="0.8" />
+    <BrokenSprite texture="%ModDir%/items/Fabricators/ammoandquality.png" sourcerect="235,1790,1822,1459" depth="0.8" maxcondition="20" fadein="true" />
+    <BrokenSprite texture="%ModDir%/items/Fabricators/ammoandquality.png" sourcerect="235,1790,1822,1459" depth="0.8" maxcondition="0" />
+    <Fabricator canbeselected="true" powerconsumption="0" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.4,0.45" style="ItemUI" anchor="Center" />
+      <sound file="%ModDir%/items/Fabricators/Fabricators.ogg" type="OnActive" range="1000.0" volumeproperty="RelativeVoltage" loop="true" />
+      <poweronsound file="Content/Items/PowerOnLight1.ogg" range="600" loop="false" />
+      <StatusEffect type="InWater" target="This" condition="-0.5" />
+    </Fabricator>
+    <ConnectionPanel selectkey="Action" canbeselected="true" hudpriority="10" msg="ItemMsgRewireScrewdriver">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredSkill identifier="electrical" level="55" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand" AllowWhenBroken="true">
+        <Sound file="Content/Sounds/Damage/Electrocution1.ogg" range="1000" />
+        <Explosion range="100.0" force="1.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+        <Affliction identifier="stun" strength="4" />
+        <Affliction identifier="burn" strength="5" />
+      </StatusEffect>
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <output name="condition_out" displayname="connection.conditionout" />
+    </ConnectionPanel>
+    <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="itemmsgforceopencrowbar" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem identifier="crowbar" type="Equipped" />
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.5" setvalue="true" />
+      <StatusEffect type="Always" target="This" disabledeltatime="true" stackable="false" setvalue="true" condition="100" allowwhenbroken="true">
+        <Conditional attached="false" />
+      </StatusEffect>
+    </Holdable>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.50" mindeteriorationdelay="60" maxdeteriorationdelay="120" RepairThreshold="80" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.1,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="55" />
+      <RequiredItem items="wrench" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemax="360" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <ParticleEmitter particle="smoke" particlespersecond="2" scalemin="1" scalemax="2.5" anglemax="360" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
+      <ParticleEmitter particle="heavysmoke" particlespersecond="2" scalemin="1.0" scalemax="2.5" anglemax="360" distancemax="60" mincondition="0.0" maxcondition="15.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand" AllowWhenBroken="true">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="4" />
+      </StatusEffect>
+    </Repairable>
+    <ItemContainer capacity="10" canbeselected="true" hideitems="true" slotsperrow="10" uilabel="" allowuioverlap="true" />
+    <ItemContainer capacity="1" canbeselected="true" hideitems="true" slotsperrow="1" uilabel="" allowuioverlap="true" />
+  </Item>
+  <Item name="皮肤制作台" identifier="tsm_fabricator_skin" tags="tsm_fabricator_skin,donttakeitems,dontsellitems" category="Machine" linkable="true" allowedlinks="deconstructor,locker" description="" scale="0.3" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
+    <Upgrade gameversion="0.10.4.0">
+      <Repairable Msg="ItemMsgRepairWrench" />
+    </Upgrade>
+    <Price baseprice="35" soldeverywhere="false">
+      <Price storeidentifier="outpost" multiplier="1.1" minavailable="1" />
+      <Price storeidentifier="city" multiplier="0.9" minavailable="1" />
+      <Price storeidentifier="research" multiplier="1" minavailable="1" />
+      <Price storeidentifier="military" multiplier="1" minavailable="1" />
+      <Price storeidentifier="mine" multiplier="0.8" minavailable="1" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredItem identifier="plastic" amount="1" />
+      <Item identifier="copper" amount="1" />
+    </Fabricate>
+    <Deconstruct time="20">
+      <Item identifier="copper" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Body width="64" height="64" density="10" />
+    <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="256,960,64,64" origin="0.5,0.45" />
+    <Sprite texture="%ModDir%/items/weapons/皮肤/skins.png" sourcerect="2360,15,132,95" depth="0.8" origin="0.5,0.5" />
+    <BrokenSprite texture="%ModDir%/items/weapons/皮肤/skins.png" sourcerect="2360,15,132,95" depth="0.8" maxcondition="0" origin="0.5,0.5" />
+    <Fabricator canbeselected="true" powerconsumption="0" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.4,0.45" style="ItemUI" anchor="Center" />
+      <sound file="%ModDir%/items/Fabricators/skin.ogg" type="OnActive" range="1000.0" volumeproperty="RelativeVoltage" loop="true" />
+      <poweronsound file="Content/Items/PowerOnLight1.ogg" range="600" loop="false" />
+    </Fabricator>
+    <ConnectionPanel selectkey="Action" canbeselected="true" hudpriority="10" msg="ItemMsgRewireScrewdriver">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredSkill identifier="electrical" level="55" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand" AllowWhenBroken="true">
+        <Sound file="Content/Sounds/Damage/Electrocution1.ogg" range="1000" />
+        <Explosion range="100.0" force="1.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+        <Affliction identifier="stun" strength="4" />
+        <Affliction identifier="burn" strength="5" />
+      </StatusEffect>
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <output name="condition_out" displayname="connection.conditionout" />
+    </ConnectionPanel>
+    <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="itemmsgforceopencrowbar" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem identifier="crowbar" type="Equipped" />
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.5" setvalue="true" />
+      <StatusEffect type="Always" target="This" disabledeltatime="true" stackable="false" setvalue="true" condition="100" allowwhenbroken="true">
+        <Conditional attached="false" />
+      </StatusEffect>
+    </Holdable>
+    <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="0.50" mindeteriorationdelay="60" maxdeteriorationdelay="120" RepairThreshold="80" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="0.1,0.27" style="ItemUI" />
+      <RequiredSkill identifier="mechanical" level="0" />
+      <RequiredItem items="wrench" type="Equipped" />
+      <ParticleEmitter particle="damagebubbles" particlespersecond="2" scalemin="0.5" scalemax="1.5" anglemax="360" velocitymin="-10" velocitymax="10" mincondition="0.0" maxcondition="50.0" />
+      <ParticleEmitter particle="smoke" particlespersecond="2" scalemin="1" scalemax="2.5" anglemax="360" velocitymin="-50" velocitymax="50" mincondition="15.0" maxcondition="50.0" />
+      <ParticleEmitter particle="heavysmoke" particlespersecond="2" scalemin="1.0" scalemax="2.5" anglemax="360" distancemax="60" mincondition="0.0" maxcondition="15.0" />
+      <StatusEffect type="OnFailure" target="Character" targetlimbs="LeftHand,RightHand" AllowWhenBroken="true">
+        <Sound file="Content/Items/MechanicalRepairFail.ogg" range="1000" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="stun" strength="4" />
+      </StatusEffect>
+    </Repairable>
+    <ItemContainer capacity="4" canbeselected="true" hideitems="true" slotsperrow="4" uilabel="" allowuioverlap="true" />
+    <ItemContainer capacity="2" canbeselected="true" hideitems="true" slotsperrow="2" uilabel="" allowuioverlap="true" />
+  </Item>
+</Items>

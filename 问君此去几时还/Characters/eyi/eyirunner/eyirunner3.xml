@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Charactervariant inherit="eyirunner" speciesname="eyirunner3" speciestranslationoverride="eyirunner" texture="%ModDir%/Characters/eyi/eyirunner/eyirunner3.png">
+  <health vitality="140" />
+  <ragdoll scalemultiplier="0.92" />
+  <attack damagemultiplier="0.95" rangemultiplier="0.95" impactmultiplier="0.95" />
+</Charactervariant>

@@ -1,0 +1,8 @@
+<Randomevents>
+  <EventPrefabs>
+    <ScriptedEvent identifier="tsm_personality_spawnnpc">
+      <SpawnAction npcsetidentifier="tsm_personality_npcset" npcidentifier="tsm_example_npc" targettag="newnpc" spawnlocation="Outpost" targetmoduletags="airlock,cityairlock" />
+      <NPCChangeTeamAction npctag="newnpc" teamid="Team1" addtocrew="true" />
+	</ScriptedEvent>
+  </EventPrefabs>
+</Randomevents>

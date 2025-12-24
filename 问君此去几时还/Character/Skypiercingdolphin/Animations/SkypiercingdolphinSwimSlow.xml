@@ -1,2 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<SkypiercingdolphinSwimSlow UseSineMovement="False" Flip="True" FlipCooldown="2" FlipDelay="1" Mirror="True" MirrorLerp="False" WaveAmplitude="10.33605" WaveLength="115.77806" RotateTowardsMovement="True" TailTorque="50" TailTorqueMultiplier="1" FootAngles="" UpdateAnimationWhenNotMoving="False" TailAngle="90" SteerTorque="50" LegTorque="25" MovementSpeed="5.5" CycleSpeed="1" HeadAngle="85" TorsoAngle="85" HeadTorque="100" TorsoTorque="100" FootTorque="25" AnimationType="SwimSlow" ArmIKStrength="1" HandIKStrength="1" />

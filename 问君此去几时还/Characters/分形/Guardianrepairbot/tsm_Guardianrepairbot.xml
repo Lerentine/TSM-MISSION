@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Character SpeciesName="tsm_Guardianrepairbot" SpeciesTranslationOverride="" DisplayName="" Group="ancientalien" Humanoid="False" HasInfo="False" CanInteract="True" Husk="False" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" CanSpeak="False" ShowHealthBar="False" UseBossHealthBar="False" Noise="100" Visibility="500" BloodDecal="" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="1" CanEat="False" EatingSpeed="10" UsePathFinding="False" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="True" CanEnterSubmarine="False" AITurretPriority="2" AISlowTurretPriority="0">
+<ragdolls folder="Content/Characters/Guardianrepairbot/Ragdolls/" />
+<animations folder="Content/Characters/Guardianrepairbot/Animations/" />
+<health Vitality="60" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="1" ConstantHealthRegeneration="0" HealthRegenerationWhenEating="0" StunImmunity="True" PoisonImmunity="True" ApplyAfflictionColors="False">
+  <Limb>
+    <VitalityMultiplier type="burn" multiplier="0.25" />
+    <VitalityMultiplier identifier="bitewounds" multiplier="0.5" />
+  </Limb>
+</health>
+<sound gender="None" File="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_idle1.ogg" State="Idle" Range="3000" Volume="1" Tags="" />
+<sound gender="None" File="Content/Characters/Fractalguardian/FRACTALGUARDIAN1_idle2.ogg" State="Idle" Range="3000" Volume="1" Tags="" />
+<sound gender="None" File="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_idle1.ogg" State="Idle" Range="3000" Volume="1" Tags="" />
+<sound gender="None" File="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_idle2.ogg" State="Idle" Range="3000" Volume="1" Tags="" />
+<sound gender="None" File="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_idle3.ogg" State="Idle" Range="3000" Volume="1" Tags="" />
+<sound gender="None" File="Content/Characters/Fractalguardian/FRACTALGUARDIAN2_idle4.ogg" State="Idle" Range="3000" Volume="1" Tags="" />
+<ai CombatStrength="0" Sight="10" Hearing="10" AggressionHurt="0" AggressionGreed="0" FleeHealthThreshold="0" AttackWhenProvoked="False" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="False" EnforceAggressiveBehaviorForMissions="False" TargetOuterWalls="False" RandomAttack="False" CanOpenDoors="False" UsePathFindingToGetInside="False" KeepDoorsClosed="False" AvoidAbyss="False" StayInAbyss="False" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="0" AggressionCumulation="0" WallTargetingMethod="Target">
+  <target Tag="tsm_portalguardian_cave" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="2000" SweepStrength="5" SweepSpeed="1" circlerotationspeed="0.5" dynamiccirclerotationspeed="true" CircleRandomRotationFactor="0.5" circlestrikedistancemultiplier="0" circlemaxrandomoffset="0" circlestartdistance="400"/>
+  <target Tag="fractalguardian_emp" State="Attack" Priority="1" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="2000" SweepStrength="5" SweepSpeed="1" circlerotationspeed="0.5" dynamiccirclerotationspeed="true" CircleRandomRotationFactor="0.5" circlestrikedistancemultiplier="0" circlemaxrandomoffset="0" circlestartdistance="400"/>
+  <target Tag="fractalguardian" State="Attack" Priority="1" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="2000" SweepStrength="5" SweepSpeed="1" circlerotationspeed="0.5" dynamiccirclerotationspeed="true" CircleRandomRotationFactor="0.5" circlestrikedistancemultiplier="0" circlemaxrandomoffset="0" circlestartdistance="400"/>
+  <target Tag="fractalguardian2" State="Attack" Priority="1" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="2000" SweepStrength="5" SweepSpeed="1" circlerotationspeed="0.5" dynamiccirclerotationspeed="true" CircleRandomRotationFactor="0.5" circlestrikedistancemultiplier="0" circlemaxrandomoffset="0" circlestartdistance="400"/>
+  <target Tag="fractalguardian3" State="Attack" Priority="1" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" Offset="0,0" AttackPattern="Circle" PrioritizeSubCenter="False" SweepDistance="2000" SweepStrength="5" SweepSpeed="1" circlerotationspeed="0.5" dynamiccirclerotationspeed="true" CircleRandomRotationFactor="0.5" circlestrikedistancemultiplier="0" circlemaxrandomoffset="0" circlestartdistance="400"/>
+</ai>
+<StatusEffect type="OnDeath" target="This" targetlimb="Torso">
+  <ParticleEmitter particle="shrapnel" anglemin="0" anglemax="360" particleamount="100" velocitymin="100" velocitymax="1000" scalemin="0.3" scalemax="0.5" />
+  <Explosion range="150" force="10" flash="true" shockwave="true" sparks="true" flames="true" smoke="true" underwaterbubble="true" structuredamage="50" itemdamage="50">
+    <Affliction identifier="stun" strength="0.75" />
+  </Explosion>
+  <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" range="5000.0" selectionmode="Random" />
+  <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" range="5000.0" selectionmode="Random" />
+  <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" range="5000.0" selectionmode="Random" />
+</StatusEffect>
+<inventory slots="RightHand,Any,Any" accessiblewhenalive="False" accessiblebyowner="True">
+  <Item identifier="guardianrepairtool" slot="RightHand" />
+</inventory>
+<StatusEffect type="OnDeath" target="This" delay="0.2">
+  <RemoveCharacter />
+</StatusEffect>
+</Character>

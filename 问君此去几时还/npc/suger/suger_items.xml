@@ -4,7 +4,7 @@
   <Item name="阿糖幻化器" subcategory="tsmmissions" identifier="tsm_suger" scale="0.25" category="Equipment" tags="smallitem,mobileradio" description="" cargocontaineridentifier="tsm_metalcrate" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/npc/suger/suger_head.png" sourcerect="488,283,84,133" origin="0.5,0.5" />
     <Sprite name="Headset" texture="%ModDir%/npc/suger/suger_head.png" sourcerect="488,283,84,133" origin="0.5,0.5" />
-    <Body radius="110" height="205" density="6" />
+    <Body radius="84" height="133" density="6" />
     <Deconstruct time="10">
       <Item identifier="fpgacircuit" />
       <Item identifier="silicon" />
@@ -25,24 +25,24 @@
       </WifiComponent>
     </Upgrade>
     <Wearable slots="Any,Headset" displaycontainedstatus="false" msg="ItemMsgPickUpSelect">
-      <sprite name="AT Head" texture="%ModDir%/npc/suger/suger_head.png" limb="Head" sourcerect="0,0,160,160" inheritsourcerect="false" alphaclipotherwearables="false" hidelimb="true" hidewearablesoftype="moustache,beard,hair,faceattachment,husk,herpes" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="false" Scale="1" hideotherwearables="false" inheritorigin="false" origin="0.47048324,0.48" />
-      <sprite name="AT Torso" texture="%ModDir%/npc/suger/suger_body.png" limb="Torso" sourcerect="144,0,112,160" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.49,0.545" />
-      <sprite name="AT Right Hand" texture="%ModDir%/npc/suger/suger_body.png" limb="RightHand" sourcerect="256,151,64,57" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.36,0.53" />
-      <sprite name="AT Left Hand" texture="%ModDir%/npc/suger/suger_body.png" limb="LeftHand" sourcerect="320,151,64,57" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.36,0.52" />
-      <sprite name="AT Left Lower Arm" texture="%ModDir%/npc/suger/suger_body.png" limb="LeftForearm" sourcerect="320,80,64,72" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.37812376,0.565" />
-      <sprite name="AT Right Lower Arm" texture="%ModDir%/npc/suger/suger_body.png" limb="RightForearm" sourcerect="256,80,64,72" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.41425222,0.565" />
-      <sprite name="AT Left Upper Arm" texture="%ModDir%/npc/suger/suger_body.png" limb="LeftArm" sourcerect="320,0,64,80" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.42934397,0.43" />
-      <sprite name="AT Right Upper Arm" texture="%ModDir%/npc/suger/suger_body.png" limb="RightArm" sourcerect="256,0,64,80" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.423565,0.43" />
-      <sprite name="AT Waist" texture="%ModDir%/npc/suger/suger_body.png" limb="Waist" sourcerect="144,160,112,96" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.72,0.55" />
-      <sprite name="AT Right Thigh" texture="%ModDir%/npc/suger/suger_body.png" limb="RightThigh" sourcerect="0,0,64,112" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.38,0.48" />
-      <sprite name="AT Left Thigh" texture="%ModDir%/npc/suger/suger_body.png" limb="LeftThigh" sourcerect="64,0,80,112" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.49,0.48" />
-      <sprite name="AT Right Leg" texture="%ModDir%/npc/suger/suger_body.png" limb="RightLeg" sourcerect="0,112,64,144" inheritsourcerect="false" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.35,0.415" />
-      <sprite name="AT Left Leg" texture="%ModDir%/npc/suger/suger_body.png" limb="LeftLeg" sourcerect="64,112,80,144" inheritsourcerect="false" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.45,0.415" />
-      <sprite name="AT Right Shoe" texture="%ModDir%/npc/suger/suger_body.png" limb="RightFoot" sourcerect="256,208,64,48" inheritsourcerect="false" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.5,0.475" />
-      <sprite name="AT Left Shoe" texture="%ModDir%/npc/suger/suger_body.png" limb="LeftFoot" sourcerect="320,208,64,48" inheritsourcerect="false" inheritdepth="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.45,0.475" />
+      <sprite name="suger Head" texture="%ModDir%/npc/suger/suger_head.png" limb="Head" depth="0.15" inheritdepth="false" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="0,0,160,160" canbehiddenbyotherwearables="true" hidelimb="true" origin="0.42,0.51" inheritorigin="false" inheritscale="false" Scale="0.25" hideotherwearables="false" />
+      <sprite name="suger Torso" texture="%ModDir%/npc/suger/suger_body.png" limb="Torso" depth="0.16" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="false" Scale="0.45" inheritlimbdepth="true" inheritorigin="true" origin="0.11,0.37" />
+      <sprite name="suger Right Hand" texture="%ModDir%/npc/suger/suger_body.png" limb="RightHand" depth="0.115" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="suger Left Hand" texture="%ModDir%/npc/suger/suger_body.png" limb="LeftHand" depth="0.26" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="suger Left Lower Arm" texture="%ModDir%/npc/suger/suger_body.png" limb="LeftForearm" depth="0.25" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="suger Right Lower Arm" texture="%ModDir%/npc/suger/suger_body.png" limb="RightForearm" depth="0.11" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="suger Left Upper Arm" texture="%ModDir%/npc/suger/suger_body.png" limb="LeftArm" depth="0.24" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="suger Right Upper Arm" texture="%ModDir%/npc/suger/suger_body.png" limb="RightArm" depth="0.12" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="suger Waist" texture="%ModDir%/npc/suger/suger_body.png" limb="Waist" depth="0.221" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="suger Right Thigh" texture="%ModDir%/npc/suger/suger_body.png" limb="RightThigh" depth="0.32" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="suger Left Thigh" texture="%ModDir%/npc/suger/suger_body.png" limb="LeftThigh" depth="0.33" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="suger Right Leg" texture="%ModDir%/npc/suger/suger_body.png" limb="RightLeg" depth="0.321" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="suger Left Leg" texture="%ModDir%/npc/suger/suger_body.png" limb="LeftLeg" depth="0.331" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="suger Right Shoe" texture="%ModDir%/npc/suger/suger_body.png" limb="RightFoot" depth="0.322" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="suger Left Shoe" texture="%ModDir%/npc/suger/suger_body.png" limb="LeftFoot" depth="0.332" inheritdepth="false" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
       <sprite name="AT Boobs" texture="%ModDir%/npc/suger/suger_body.png" limb="Tail" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
       <sprite name="AT Boobs" texture="%ModDir%/npc/suger/suger_body.png" limb="Jaw" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
-      <StatusEffect type="OnWearing" target="Character,Contained" noninteractable="true" condition="-10" targetslot="0">
+      <!--StatusEffect type="OnWearing" target="Character,Contained" noninteractable="true" condition="-10" targetslot="0">
         <ReduceAffliction type="bloodloss" amount="2.5" />
         <RequiredItem items="antibloodloss1" type="Contained" targetslot="0" />
         <Conditional bloodloss="gt 5.0" />
@@ -114,9 +114,9 @@
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" multiplyafflictionsbymaxvitality="true">
         <Affliction identifier="Suger_Tail_Spawn" strength="10" />
-      </StatusEffect>
+      </StatusEffect-->
     </Wearable>
-    <ItemContainer capacity="0" maxstacksize="0" autoinject="false" containedstateindicatorstyle="syringe">
+    <!--ItemContainer capacity="0" maxstacksize="0" autoinject="false" containedstateindicatorstyle="syringe">
       <Containable items="none" />
       <SlotIcon slotindex="0" texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,448,64,64" origin="0.5,0.45" />
       <SlotIcon slotindex="1" texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,448,64,64" origin="0.5,0.45" />
@@ -126,42 +126,7 @@
       <SubContainer capacity="1" maxstacksize="1">
         <Containable items="antidama1,antidama2,deusizine" />
       </SubContainer>
-    </ItemContainer>
-  </Item>
-  <Item name="阿糖作战服站点" identifier="tsm_suger_uniform" subcategory="tsmmissions" aliases="securityuniform" category="Equipment" tags="smallitem,clothing,vest" hideinmenus="true" fireproof="true" description="站点防穿模" scale="0.5" noninteractable="True" impactsoundtag="impact_soft">
-    <InventoryIcon name="pgc uniform Icon" texture="%ModDir%/npc/suger/suger_head.png" sourcerect="296,151,54,99" origin="0.5,0.5" />
-    <Sprite name="pgc uniform" texture="%ModDir%/npc/suger/suger_head.png" sourcerect="263,22,133,63" depth="0.55" origin="0.5,0.5" />
-    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
-    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="AT Head" texture="%ModDir%/npc/suger/suger_head.png" limb="Head" sourcerect="0,0,160,160" inheritsourcerect="false" alphaclipotherwearables="false" hidelimb="true" hidewearablesoftype="moustache,beard,hair,faceattachment,husk,herpes" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="false" Scale="1" hideotherwearables="false" inheritorigin="false" origin="0.47048324,0.48" />
-      <sprite name="AT Torso" texture="%ModDir%/npc/suger/suger_uniform_body_ai.png" limb="Torso" depthlimb="Jaw" sourcerect="130,14,104,206" inheritsourcerect="false" hidewearablesoftype="hair" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.575,0.33" />
-      <sprite name="AT Right Hand" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="RightHand" sourcerect="256,151,64,57" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.38,0.52" />
-      <sprite name="AT Left Hand" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="LeftHand" sourcerect="320,151,64,57" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.38,0.51" />
-      <sprite name="AT Left Lower Arm" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="LeftForearm" sourcerect="320,80,64,72" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.37812376,0.565" />
-      <sprite name="AT Right Lower Arm" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="RightForearm" sourcerect="256,80,64,72" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.41425222,0.565" />
-      <sprite name="AT Left Upper Arm" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="LeftArm" sourcerect="320,0,64,80" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.425,0.435" />
-      <sprite name="AT Right Upper Arm" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="RightArm" sourcerect="256,0,64,80" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.420,0.435" />
-      <sprite name="AT Waist" texture="%ModDir%/npc/suger/suger_uniform_body_ai.png" limb="Waist" sourcerect="272,0,144,144" hideotherwearables="true" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" origin="0.80608195,0.26" />
-      <sprite name="AT Right Thigh" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="RightThigh" sourcerect="0,0,64,112" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.38,0.48" />
-      <sprite name="AT Left Thigh" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="LeftThigh" sourcerect="64,0,80,112" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.49,0.48" />
-      <sprite name="AT Right Leg" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="RightLeg" sourcerect="0,112,64,144" inheritsourcerect="false" inheritdepth="false" depth="0.121" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.35,0.415" />
-      <sprite name="AT Left Leg" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="LeftLeg" sourcerect="64,112,80,144" inheritsourcerect="false" inheritdepth="false" depth="0.131" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.45,0.415" />
-      <sprite name="AT Right Shoe" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="RightFoot" sourcerect="256,208,63,48" inheritsourcerect="false" inheritdepth="false" depth="0.122" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.5,0.475" />
-      <sprite name="AT Left Shoe" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="LeftFoot" sourcerect="320,208,64,48" inheritsourcerect="false" inheritdepth="false" depth="0.132" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.45,0.475" />
-      <sprite name="pgc Boobs" texture="%ModDir%/npc/suger/suger_uniform_ai.png" limb="Tail" hidelimb="true" sourcerect="0,0,1,1" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" />
-      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.85" />
-      <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.75" />
-      <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.75" />
-      <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.85" />
-      <damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.75" />
-      <damagemodifier afflictionidentifiers="stun" armorsector="0.0,360.0" damagemultiplier="0.8" />
-      <SkillModifier skillidentifier="medical" skillvalue="-5" />
-      <SkillModifier skillidentifier="mechanical" skillvalue="-7" />
-      <SkillModifier skillidentifier="electrical" skillvalue="-7" />
-    </Wearable>
-    <ItemContainer capacity="4">
-      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,cargoscooter,vest,mobilecontainer" />
-    </ItemContainer>
+    </ItemContainer-->
   </Item>
   <Item name="阿糖作战服" identifier="suger_combat_uniform" subcategory="tsmmissions" aliases="securityuniform" hideinmenus="true" category="Equipment" tags="smallitem,clothing,vest" fireproof="false" scale="0.5" impactsoundtag="impact_soft">
     <Deconstruct time="10">
@@ -171,20 +136,20 @@
     <Sprite name="at uniform" texture="%ModDir%/npc/suger/suger_head.png" sourcerect="263,22,133,63" depth="0.55" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="AT Torso" texture="%ModDir%/npc/suger/suger_uniform_body.png" limb="Torso" depthlimb="Jaw" sourcerect="112,0,144,256" inheritsourcerect="false" hidewearablesoftype="hair" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.575,0.33"></sprite>
-      <sprite name="AT Right Hand" texture="%ModDir%/npc/suger/suger_uniform.png" limb="RightHand" sourcerect="256,151,64,57" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.38,0.52" />
-      <sprite name="AT Left Hand" texture="%ModDir%/npc/suger/suger_uniform.png" limb="LeftHand" sourcerect="320,151,64,57" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.38,0.51" />
-      <sprite name="AT Left Lower Arm" texture="%ModDir%/npc/suger/suger_uniform.png" limb="LeftForearm" sourcerect="320,80,64,72" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.37812376,0.565" />
-      <sprite name="AT Right Lower Arm" texture="%ModDir%/npc/suger/suger_uniform.png" limb="RightForearm" sourcerect="256,80,64,72" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.41425222,0.565" />
-      <sprite name="AT Left Upper Arm" texture="%ModDir%/npc/suger/suger_uniform.png" limb="LeftArm" sourcerect="320,0,64,80" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.425,0.435" />
-      <sprite name="AT Right Upper Arm" texture="%ModDir%/npc/suger/suger_uniform.png" limb="RightArm" sourcerect="256,0,64,80" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.420,0.435" />
-      <sprite name="AT Waist" texture="%ModDir%/npc/suger/suger_uniform_body.png" limb="Waist" sourcerect="272,0,144,144" hideotherwearables="true" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritorigin="false" origin="0.80608195,0.26" />
-      <sprite name="AT Right Thigh" texture="%ModDir%/npc/suger/suger_uniform.png" limb="RightThigh" sourcerect="0,0,64,112" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.38,0.48" />
-      <sprite name="AT Left Thigh" texture="%ModDir%/npc/suger/suger_uniform.png" limb="LeftThigh" sourcerect="64,0,80,112" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.49,0.48" />
-      <sprite name="AT Right Leg" texture="%ModDir%/npc/suger/suger_uniform.png" limb="RightLeg" sourcerect="0,112,64,144" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.35,0.415" />
-      <sprite name="AT Left Leg" texture="%ModDir%/npc/suger/suger_uniform.png" limb="LeftLeg" sourcerect="64,112,80,144" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.45,0.415" />
-      <sprite name="AT Right Shoe" texture="%ModDir%/npc/suger/suger_uniform.png" limb="RightFoot" sourcerect="256,208,63,48" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.5,0.475" />
-      <sprite name="AT Left Shoe" texture="%ModDir%/npc/suger/suger_uniform.png" limb="LeftFoot" sourcerect="320,208,64,48" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.45,0.475" />
+      <sprite name="AT Torso" texture="%ModDir%/npc/suger/suger_uniform.png" limb="Torso" depthlimb="Jaw" sourcerect="170,12,93,216" inheritsourcerect="false" hidewearablesoftype="hair" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.49,0.33"></sprite>
+      <sprite name="AT Right Hand" texture="%ModDir%/npc/suger/suger_uniform.png" limb="RightHand" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="AT Left Hand" texture="%ModDir%/npc/suger/suger_uniform.png" limb="LeftHand" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="AT Left Lower Arm" texture="%ModDir%/npc/suger/suger_uniform.png" limb="LeftForearm" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="AT Right Lower Arm" texture="%ModDir%/npc/suger/suger_uniform.png" limb="RightForearm" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="AT Left Upper Arm" texture="%ModDir%/npc/suger/suger_uniform.png" limb="LeftArm" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="AT Right Upper Arm" texture="%ModDir%/npc/suger/suger_uniform.png" limb="RightArm" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="AT Waist" texture="%ModDir%/npc/suger/suger_uniform.png" limb="Waist" sourcerect="0,0,1,1" hideotherwearables="true" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritorigin="true" />
+      <sprite name="AT Right Thigh" texture="%ModDir%/npc/suger/suger_uniform.png" limb="RightThigh" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="AT Left Thigh" texture="%ModDir%/npc/suger/suger_uniform.png" limb="LeftThigh" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="AT Right Leg" texture="%ModDir%/npc/suger/suger_uniform.png" limb="RightLeg" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="AT Left Leg" texture="%ModDir%/npc/suger/suger_uniform.png" limb="LeftLeg" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true"  />
+      <sprite name="AT Right Shoe" texture="%ModDir%/npc/suger/suger_uniform.png" limb="RightFoot" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="AT Left Shoe" texture="%ModDir%/npc/suger/suger_uniform.png" limb="LeftFoot" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
       <sprite name="At Boobs" texture="%ModDir%/npc/suger/suger_uniform.png" limb="Tail" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
       <sprite name="AT Boobs" texture="%ModDir%/npc/suger/suger_uniform.png" limb="Jaw" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
       <damagemodifier afflictionidentifiers="explosiondamage" armorsector="0.0,360.0" damagemultiplier="0.8" />
@@ -192,7 +157,6 @@
       <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.8" />
       <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.75" />
       <damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.75" />
-      <damagemodifier afflictiontypes="damage" armorsector="0.0,360.0" damagemultiplier="0.85" />
       <SkillModifier skillidentifier="helm" skillvalue="15" />
       <SkillModifier skillidentifier="weapons" skillvalue="10" />
       <SkillModifier skillidentifier="medical" skillvalue="10" />
@@ -207,24 +171,24 @@
     <Deconstruct time="10">
       <Item identifier="organicfiber" />
     </Deconstruct>
-    <InventoryIcon name="suger uniform Icon" texture="%ModDir%/npc/suger/suger_clothes.png" sourcerect="402,242,114,122" origin="0.5,0.5" />
+    <InventoryIcon name="suger uniform Icon" texture="%ModDir%/npc/suger/suger_clothes.png" sourcerect="289,286,117,122" origin="0.5,0.5" />
     <Sprite name="suger uniform" texture="%ModDir%/npc/suger/suger_head.png" sourcerect="263,22,133,63" depth="0.55" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="suger Torso" texture="%ModDir%/npc/suger/suger_clothes.png" limb="Torso" depthlimb="Jaw" sourcerect="156,14,68,140" inheritsourcerect="false" hidewearablesoftype="hair" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.575,0.49" />
-      <sprite name="suger Right Hand" texture="%ModDir%/npc/suger/suger_clothes.png" limb="RightHand" sourcerect="266,153,31,37" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.3,0.7" />
-      <sprite name="suger Left Hand" texture="%ModDir%/npc/suger/suger_clothes.png" limb="LeftHand" sourcerect="331,151,28,36" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.3,0.7" />
-      <sprite name="suger Left Lower Arm" texture="%ModDir%/npc/suger/suger_clothes.png" limb="RightForearm" sourcerect="474,99,42,63" inheritsourcerect="false" hidelimb="true" inherittexturescale="false" inheritlimbdepth="true" inheritorigin="false" scale="0.45" origin="0.4,0.6" />
-      <sprite name="suger Right Lower Arm" texture="%ModDir%/npc/suger/suger_clothes.png" limb="LeftForearm" sourcerect="399,93,43,64" inheritsourcerect="false" hidelimb="true" inherittexturescale="false" inheritlimbdepth="true" inheritorigin="false" scale="0.45" origin="0.44,0.6" />
-      <sprite name="suger Left Upper Arm" texture="%ModDir%/npc/suger/suger_clothes.png" limb="RightArm" sourcerect="266,0,38,104" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.425,0.4" />
-      <sprite name="suger Right Upper Arm" texture="%ModDir%/npc/suger/suger_clothes.png" limb="LeftArm" sourcerect="328,0,39,103" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.420,0.4" />
-      <sprite name="suger Waist" texture="%ModDir%/npc/suger/suger_clothes.png" limb="Waist" sourcerect="148,182,94,72" hideotherwearables="true" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritorigin="false" origin="0.75,0.3" />
-      <sprite name="suger Right Thigh" texture="%ModDir%/npc/suger/suger_clothes.png" limb="RightThigh" sourcerect="0,0,50,100" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.48,0.48" />
-      <sprite name="suger Left Thigh" texture="%ModDir%/npc/suger/suger_clothes.png" limb="LeftThigh" sourcerect="75,0,52,99" inheritsourcerect="false" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.53,0.48" />
-      <sprite name="suger Right Leg" texture="%ModDir%/npc/suger/suger_clothes.png" limb="RightLeg" sourcerect="4,123,36,97" hidelimb="false" inherittexturescale="true" inheritorigin="false" origin="0.48,0.49" />
-      <sprite name="suger Left Leg" texture="%ModDir%/npc/suger/suger_clothes.png" limb="LeftLeg" sourcerect="79,122,36,97" hidelimb="false" inherittexturescale="true" inheritorigin="false" origin="0.51,0.49" />
-      <sprite name="suger Right Shoe" texture="%ModDir%/npc/suger/suger_clothes.png" limb="RightFoot" sourcerect="258,215,53,31" hidelimb="false" inherittexturescale="true" inheritorigin="false" origin="0.58,0.53" />
-      <sprite name="suger Left Shoe" texture="%ModDir%/npc/suger/suger_clothes.png" limb="LeftFoot" sourcerect="318,216,53,31" hidelimb="false" inherittexturescale="true" inheritorigin="false" origin="0.55,0.53" />
+      <sprite name="suger Torso" texture="%ModDir%/npc/suger/suger_clothes.png" limb="Torso" depthlimb="Jaw" sourcerect="186,20,68,146" inheritsourcerect="false" hidewearablesoftype="hair" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="false" origin="0.50,0.5" />
+      <sprite name="suger Right Hand" texture="%ModDir%/npc/suger/suger_clothes.png" limb="RightHand" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true"/>
+      <sprite name="suger Left Hand" texture="%ModDir%/npc/suger/suger_clothes.png" limb="LeftHand" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true"  />
+      <sprite name="suger Left Lower Arm" texture="%ModDir%/npc/suger/suger_clothes.png" limb="RightForearm" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true"  />
+      <sprite name="suger Right Lower Arm" texture="%ModDir%/npc/suger/suger_clothes.png" limb="LeftForearm" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true"  />
+      <sprite name="suger Left Upper Arm" texture="%ModDir%/npc/suger/suger_clothes.png" limb="RightArm" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="suger Right Upper Arm" texture="%ModDir%/npc/suger/suger_clothes.png" limb="LeftArm" inheritsourcerect="true" hidelimb="true" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="suger Waist" texture="%ModDir%/npc/suger/suger_clothes.png" limb="Waist" sourcerect="0,0,1,1" inheritsourcerect="false" hidelimb="true" inherittexturescale="true" inheritorigin="true" />
+      <sprite name="suger Right Thigh" texture="%ModDir%/npc/suger/suger_clothes.png" limb="RightThigh" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true" />
+      <sprite name="suger Left Thigh" texture="%ModDir%/npc/suger/suger_clothes.png" limb="LeftThigh" inheritsourcerect="true" hidelimb="false" inherittexturescale="true" inheritlimbdepth="true" inheritorigin="true"  />
+      <sprite name="suger Right Leg" texture="%ModDir%/npc/suger/suger_clothes.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true"  inheritlimbdepth="true" inheritsourcerect="true"/>
+      <sprite name="suger Left Leg" texture="%ModDir%/npc/suger/suger_clothes.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritlimbdepth="true" inheritsourcerect="true"/>
+      <sprite name="suger Right Shoe" texture="%ModDir%/npc/suger/suger_clothes.png" limb="RightFoot" hidelimb="false" inherittexturescale="true" inheritorigin="true"  inheritlimbdepth="true" inheritsourcerect="true"/>
+      <sprite name="suger Left Shoe" texture="%ModDir%/npc/suger/suger_clothes.png" limb="LeftFoot"  hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritlimbdepth="true" inheritsourcerect="true"/>
       <sprite name="suger Boobs" texture="%ModDir%/npc/suger/suger_clothes.png" limb="Tail" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
       <sprite name="suger Boobs" texture="%ModDir%/npc/suger/suger_clothes.png" limb="Jaw" hidelimb="true" inherittexturescale="true" sourcerect="0,0,1,1" inheritorigin="true" />
       <damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.9" />
@@ -318,7 +282,7 @@
     <RangedWeapon barrelpos="29,11" spread="0" unskilledspread="8" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2" reload="1">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-      <Sound file="%ModDir%/Sounds/Icarus.ogg" type="OnUse" range="3000" volume="2" />
+      <Sound file="%%ModDir%/npc/suger/Icarus.ogg" type="OnUse" range="3000" volume="2" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
       <StatusEffect type="OnUse" target="This">
         <Explosion range="150.0" force="4" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="70" />
@@ -352,16 +316,5 @@
       </TickBox>
     </CustomInterface>
     <SkillRequirementHint identifier="weapons" level="90" />
-  </Item>
-  <Item name="海军大幅帽" identifier="Extra_hat_male_tsm" subcategory="tsmmissions" category="Equipment" hideinmenus="true" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="最后的良心，秩序的天平" scale="0.38">
-    <Deconstruct time="10" />
-    <Sprite name="Ceremonial hat" texture="%ModDir%/npc/suger/suger_head.png" depth="0.6" sourcerect="470,22,100,60" origin="0.5,0.5" />
-    <Body width="75" height="50" density="30" />
-    <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
-      <sprite name="Ceremonial hat Wearable" texture="%ModDir%/npc/suger/suger_head.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.67" hidelimb="false" sourcerect="470,22,100,60" origin="0.49,1.1" />
-      <SkillModifier skillidentifier="helm" skillvalue="10" />
-      <SkillModifier skillidentifier="weapons" skillvalue="10" />
-      <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.9" />
-    </Wearable>
   </Item>
 </Items>

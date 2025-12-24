@@ -1,0 +1,57 @@
+<Conversations identifier="tsm_conversations" Language="Simplified Chinese" nowhitespace="True">
+<!--
+原版文件位置：
+Content\NPCConversations\SimplifiedChinese\NpcConversations_SimplifiedChinese.xml
+
+对话NPC可以通过三种方式筛选: allowedjobs (职业), speakertags (性格), flags.
+也可以用 minintensity 和 maxintensity 控制对话是否触发.
+有多个对话分支并列时，flag更多的对话权重更高
+
+flags：
+Initial: 刚进入巡回时 (开始下潜)
+Casual: intensity <= 0.2
+EndLevel: 在结局关卡
+InRadiation: 当前关卡受木星辐射影响
+SubmarineDeep: 超过压碎深度 ("致命压力")
+
+Inside: 在Hull中
+Outside: 不在Hull中
+Underwater: 在水中
+Psychosis & PsychosisSelf: 精神病，用法见原版文件
+
+EnterOutpost: 说话者是站点NPC并且刚对接到 (友好或敌对任务) 站点时触发 (欢迎玩家或者"欢迎"玩家)
+OutpostNPC, OutpostNPCCoalition, OutpostNPCSeparatists, OutpostNPCtsm 各个派系的站点NPC，用法见原版文件
+LowReputation: 声望低于20% (-60以下)
+HighReputation: 声望高于80% (+60以上)
+Bandit 站点敌人，用法见原版文件
+escort 被护送的人，原版似乎没用上
+
+Affliction的Effect也可以给予flag, 原版有7种：
+GunshotWound 枪伤 > 0
+Bloodloss 失血 > 5
+DrunkMedium  DrunkHigh 醉酒 40-80 80-100
+OpiateWithdrawalLow OpiateWithdrawalMedium OpiateWithdrawalHigh 阿片戒断 20-40 40-80 80-100
+这种对话只会随机触发，不会让npc立即报告情况
+
+-->
+
+<Conversation line="这是tsm_npc性格的人随机触发的对话。" speaker="0" speakertags="tsm_conversation">
+  <Conversation line="这是第二句话。" speaker="0">
+    <Conversation line="这是第三句话的第一种可能。" speaker="0">
+      <Conversation line="" speaker="0" /> <!-- 空白对话代表下面同级的对话可能不触发 -->
+      <Conversation line="这是有可能触发的 来自其他npc的回复。其他npc也可以通过相同方法筛选。" speaker="1" />
+	</Conversation>
+    <Conversation line="这是第三句话的第二种可能。" speaker="0" />
+    <Conversation line="这是第三句话的第三种可能。" speaker="0" />
+  </Conversation>
+</Conversation>
+
+<Conversation line="这是tsm_npc性格的人 枪伤>0 时随机触发的对话。我中枪啦！" speaker="0" speakertags="tsm_conversation" flags="GunshotWound" />
+
+<Conversation line="这是tsm_npc性格的人在水下巡回开始时随机触发的对话。下潜！" speaker="0" speakertags="tsm_conversation" flags="Initial" />
+
+<Conversation line="这是tsm_npc性格的人在潜艇超过压碎深度时随机触发的对话。致命压力！" speaker="0" speakertags="tsm_conversation" flags="SubmarineDeep" />
+
+<Conversation line="这是tsm_npc性格的人在intensity在0.3-0.5之间时随机触发的对话。" speaker="0" speakertags="tsm_conversation" minintensity="0.3" maxintensity="0.5" />
+
+</Conversations>

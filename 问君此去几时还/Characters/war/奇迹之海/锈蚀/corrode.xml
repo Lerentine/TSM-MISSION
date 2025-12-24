@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Charactervariant inherit="huamn_war" speciesname="corrode" Group="tsm">
+  <health vitality="130" />
+  <!--sound file="%ModDir%/Characters/war/奇迹之海/锈蚀/徘徊2.ogg" state="Idle" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/锈蚀/徘徊1.ogg" state="Idle" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/锈蚀/受伤1.ogg" state="Damage" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/锈蚀/受伤2.ogg" state="Damage" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/锈蚀/受伤3.ogg" state="Damage" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/锈蚀/受伤4.ogg" state="Damage" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/锈蚀/受伤5.ogg" state="Damage" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/锈蚀/死亡1.ogg" state="Die" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/锈蚀/死亡2.ogg" state="Die" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/锈蚀/死亡3.ogg" state="Die" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/锈蚀/攻击1.ogg" state="Attack" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/锈蚀/攻击2.ogg" state="Attack" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/锈蚀/攻击3.ogg" state="Attack" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/锈蚀/攻击4.ogg" state="Attack" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/锈蚀/攻击5.ogg" state="Attack" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir%/Characters/war/奇迹之海/锈蚀/攻击6.ogg" state="Attack" range="1000" volume="4" gender="None" /-->
+  <inventory arrowslot="9" slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" commonness="1" accessiblewhenalive="False">
+    <Item identifier="antibleeding3" />
+    <Item identifier="tsm_square_riotshields_hand" slot="LeftHand" />
+    <Item identifier="tsm_qjb_201_ap" slot="RightHand" />
+    <Item identifier="idcard" slot="Card" />
+    <Item identifier="tsm_rz_3a_ai" slot="OuterClothes" />
+    <Item identifier="tsm_sundawn_uniform" slot="InnerClothes" />
+    <Item identifier="tsm_heavycombat_helmet" slot="Head" />
+  </inventory>
+  <inventory arrowslot="9" slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" commonness="1" accessiblewhenalive="False">
+    <Item identifier="antidama2" />
+    <Item identifier="tsm_lm_minigun_ai" slot="RightHand+LeftHand" />
+    <Item identifier="tsm_square_riotshields" slot="Bag" />
+    <Item identifier="idcard" slot="Card" />
+    <Item identifier="tsm_rz_3a_ai" slot="OuterClothes" />
+    <Item identifier="tsm_sundawn_uniform" slot="InnerClothes" />
+    <Item identifier="tsm_heavycombat_helmet" slot="Head" />
+  </inventory>
+  <inventory arrowslot="9" slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" commonness="1" accessiblewhenalive="False">
+    <Item identifier="tsm_medicalkits_s" />
+    <Item identifier="tsm_qjy_201_ap" slot="RightHand+LeftHand" />
+    <Item identifier="idcard" slot="Card" />
+    <Item identifier="tsm_rz_3a_ai" slot="OuterClothes" />
+    <Item identifier="tsm_sundawn_uniform" slot="InnerClothes" />
+    <Item identifier="tsm_helmet_respirator" slot="Head" />
+  </inventory>
+  <inventory arrowslot="9" slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" commonness="0.6" accessiblewhenalive="False">
+    <Item identifier="endocrinebooster" />
+    <Item identifier="tsm_mg42_ai" slot="RightHand+LeftHand" />
+    <Item identifier="tsm_square_riotshields" slot="Bag" />
+    <Item identifier="idcard" slot="Card" />
+    <Item identifier="tsm_rz_3a_ai" slot="OuterClothes" />
+    <Item identifier="tsm_sundawn_uniform" slot="InnerClothes" />
+    <Item identifier="tsm_helmet_respirator" slot="Head" />
+  </inventory>
+</Charactervariant>

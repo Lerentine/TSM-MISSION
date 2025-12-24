@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Items>
-  <Item name="博丽灵梦" identifier="tsm_touhou_4" nameidentifier="tsm_touhou" width="600" height="598" scale="1.0" noninteractable="true" category="Decorative" hideinmenus="true">
-    <sprite texture="%ModDir%/ldnr/touhou/touhou.png" sourcerect="0,0,600,598" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
-  </Item>
-</Items>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Randomevents>
+  <EventPrefabs>
+    <ScriptedEvent identifier="tsm_openblindbox_lm">
+      <SpawnAction ItemTag="lm_gun" TargetTag="lm_gun" targetinventory="itemusingplayer" />
+      <RNGAction Chance="0.5">
+        <Success>
+          <RNGAction Chance="0.5">
+            <Success></Success>
+            <Failure>
+              <StatusEffectAction TargetTag="lm_gun">
+                <StatusEffect target="This" TargetItemComponent="Quality" quality="1" setValue="true" />
+              </StatusEffectAction>
+            </Failure>
+          </RNGAction>
+        </Success>
+        <Failure>
+          <RNGAction Chance="0.3">
+            <Success>
+              <StatusEffectAction TargetTag="lm_gun">
+                <StatusEffect target="This" TargetItemComponent="Quality" quality="2" setValue="true" />
+              </StatusEffectAction>
+            </Success>
+            <Failure>
+              <StatusEffectAction TargetTag="lm_gun">
+                <StatusEffect target="This" TargetItemComponent="Quality" quality="3" setValue="true" />
+              </StatusEffectAction>
+            </Failure>
+          </RNGAction>
+        </Failure>
+      </RNGAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="tsm_openblindbox_fkj">
+      <SpawnAction ItemTag="fkj_gun" TargetTag="fkj_gun" targetinventory="itemusingplayer" />
+      <RNGAction Chance="0.5">
+        <Success>
+          <RNGAction Chance="0.5">
+            <Success></Success>
+            <Failure>
+              <StatusEffectAction TargetTag="fkj_gun">
+                <StatusEffect target="This" TargetItemComponent="Quality" quality="1" setValue="true" />
+              </StatusEffectAction>
+            </Failure>
+          </RNGAction>
+        </Success>
+        <Failure>
+          <RNGAction Chance="0.3">
+            <Success>
+              <StatusEffectAction TargetTag="fkj_gun">
+                <StatusEffect target="This" TargetItemComponent="Quality" quality="2" setValue="true" />
+              </StatusEffectAction>
+            </Success>
+            <Failure>
+              <StatusEffectAction TargetTag="fkj_gun">
+                <StatusEffect target="This" TargetItemComponent="Quality" quality="3" setValue="true" />
+              </StatusEffectAction>
+            </Failure>
+          </RNGAction>
+        </Failure>
+      </RNGAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="tsm_openblindbox_tsm">
+      <SpawnAction ItemTag="tsm_gun" TargetTag="tsm_gun" targetinventory="itemusingplayer" />
+      <RNGAction Chance="0.5">
+        <Success>
+          <RNGAction Chance="0.5">
+            <Success></Success>
+            <Failure>
+              <StatusEffectAction TargetTag="tsm_gun">
+                <StatusEffect target="This" TargetItemComponent="Quality" quality="1" setValue="true" />
+              </StatusEffectAction>
+            </Failure>
+          </RNGAction>
+        </Success>
+        <Failure>
+          <RNGAction Chance="0.3">
+            <Success>
+              <StatusEffectAction TargetTag="tsm_gun">
+                <StatusEffect target="This" TargetItemComponent="Quality" quality="2" setValue="true" />
+              </StatusEffectAction>
+            </Success>
+            <Failure>
+              <StatusEffectAction TargetTag="tsm_gun">
+                <StatusEffect target="This" TargetItemComponent="Quality" quality="3" setValue="true" />
+              </StatusEffectAction>
+            </Failure>
+          </RNGAction>
+        </Failure>
+      </RNGAction>
+    </ScriptedEvent>
+  </EventPrefabs>
+</Randomevents>
