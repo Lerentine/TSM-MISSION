@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Slideshows>
+  <Slideshow identifier="Test Slide">
+    <Slide text="slideshowtext1">
+      <Portrait texture="%ModDir%/slide1.png" sourcerect="0,0,838,562" premultiplyalpha="false" />
+    </Slide>
+    <Slide text="slideshowtext2">
+      <Portrait texture="%ModDir%/slide2.png" sourcerect="0,0,838,562" premultiplyalpha="false" />
+    </Slide>
+    <Slide text="slideshowtext3">
+      <Portrait texture="%ModDir%/slide3.png" sourcerect="0,0,838,562" premultiplyalpha="false" />
+    </Slide>
+    <Slide text="">
+      <Portrait texture="%ModDir%/slide4.png" sourcerect="0,0,838,562" premultiplyalpha="false" />
+    </Slide>
+    <Slide text="">
+      <Portrait texture="%ModDir%/slide5.png" sourcerect="0,0,838,562" premultiplyalpha="false" />
+    </Slide>
+    <Slide text="campaignending3">
+      <Portrait texture="%ModDir%/slide6.png" sourcerect="0,0,838,562" premultiplyalpha="false" />
+    </Slide>
+  </Slideshow>
+</Slideshows>

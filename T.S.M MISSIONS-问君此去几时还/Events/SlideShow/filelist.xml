@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Slide Show Test" modversion="0.0.1" corepackage="False">
+  <Slideshows file="%ModDir%/Slideshows.xml" />
+  <Text file="%ModDir%/Texts.xml" />
+  <RandomEvents file="%ModDir%/Events.xml" />
+</contentpackage>

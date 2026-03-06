@@ -1,0 +1,12 @@
+<Randomevents>
+  <EventPrefabs>
+    <ScriptedEvent identifier="show_test_slideshow">
+      <TagAction criteria="player" tag="player" />
+      <StatusEffectAction targettag="player">
+        <StatusEffect target="This">
+          <LuaHook name="play_testslide" />
+        </StatusEffect>
+      </StatusEffectAction>
+    </ScriptedEvent>
+  </EventPrefabs>
+</Randomevents>
